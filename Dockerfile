@@ -10,6 +10,12 @@ RUN apt-get update -y\
  && rm -rf /var/tmp/*\
  && /openaf/opack install ghcopilot
 
+COPY entrypoint.sh /usr/local/bin/mini-a-ghc-entrypoint.sh
+RUN chmod 755 /usr/local/bin/mini-a-ghc-entrypoint.sh
+
 ENV OAF_MINI_A_LIBS="@ghcopilot/ghcopilot.js"
 
 USER openaf
+
+ENTRYPOINT ["/usr/local/bin/mini-a-ghc-entrypoint.sh"]
+CMD ["mini-a"]
