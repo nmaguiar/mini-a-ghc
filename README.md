@@ -27,6 +27,26 @@ Compared to the base `openaf/mini-a:deb-t8` image, this image:
 - A GitHub account with Copilot access.
 - A GitHub token that can be used by the Copilot CLI (for example from `gh auth token` on a machine where `gh` is already authenticated).
 
+### If `gh` is not available
+
+You can create a token directly in the GitHub web UI:
+
+1. Open GitHub `Settings`.
+2. Go to `Developer settings` -> `Personal access tokens`.
+3. Create a new token:
+   - Prefer `Fine-grained tokens` and grant only the repositories/organizations you need.
+   - If your organization or workflow requires it, use `Tokens (classic)` instead.
+4. Copy the token once GitHub shows it and store it securely.
+5. Export it before starting the container:
+
+```bash
+export GH_TOKEN="<your-token>"
+```
+
+GitHub's current token-management docs:
+
+- Fine-grained and classic token creation: <https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens>
+
 ## Important `OAF_MODEL` notes
 
 Mini-A reads model/provider configuration from `OAF_MODEL`.
