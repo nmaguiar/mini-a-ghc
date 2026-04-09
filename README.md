@@ -7,6 +7,11 @@
 
 This image is designed so you can run Mini-A with a GitHub Copilot-backed `OAF_MODEL` out of the box.
 
+## Image security scans
+
+[![.github/sec-build.svg](.github/sec-build.svg)](.github/sec-build.md)<br>
+[![.github/sec-latest.svg](.github/sec-latest.svg)](.github/sec-latest.md)<br>
+
 ## What this image adds on top of `openaf/mini-a`
 
 Compared to the base `openaf/mini-a:deb-t8` image, this image:
