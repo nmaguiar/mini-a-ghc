@@ -2,7 +2,7 @@ FROM openaf/mini-a:deb-t8
 
 USER root
 RUN apt-get update -y\
- && apt-get install -y curl bash\
+ && apt-get install -y curl bash gh\
  && curl -fsSL https://gh.io/copilot-install | bash\
  && apt-get clean\
  && rm -rf /var/lib/apt/lists/*\
@@ -18,4 +18,4 @@ ENV OAF_MINI_A_LIBS="@ghcopilot/ghcopilot.js"
 USER openaf
 
 ENTRYPOINT ["/usr/local/bin/mini-a-ghc-entrypoint.sh"]
-CMD ["mini-a"]
+CMD ["/openaf/opack", "exec", "mini-a"]

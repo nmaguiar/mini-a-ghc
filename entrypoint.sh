@@ -11,15 +11,16 @@ cleanup() {
 trap cleanup EXIT
 
 /openaf/oafp data="$OAF_MODEL" path=token outfile="$token_file"
-gh auth login --with-token < "$token_file"
+/usr/bin/gh auth login --with-token < "$token_file"
 
 cleanup
 trap - EXIT
 
+cd /openaf/mini-a
 if [ "$#" -eq 0 ]; then
-  set -- mini-a
+  /openaf/opack exec mini-a
 elif [[ "$1" == -* || "$1" == *=* ]]; then
-  set -- mini-a "$@"
+  /openaf/opack exec mini-a "$@"
 fi
 
 exec "$@"
