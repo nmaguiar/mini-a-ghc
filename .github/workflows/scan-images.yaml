@@ -1,0 +1,52 @@
+name: Scan Images
+
+on:
+  workflow_dispatch:
+  schedule:
+  - cron: '07 7 * * *'
+
+jobs:
+  Scan-Images:
+    runs-on    : ubuntu-latest
+    timeout-minutes: 60
+    permissions:
+      contents: write
+      pull-requests: write
+    name       : Scan images
+    steps      :
+    - uses: actions/checkout@v4
+      name: Checkout
+
+    - name: Cache OpenAF runtime
+      uses: actions/cache@v4
+      with:
+        key : oaf-nightly
+        path: /tmp/oaf
+
+    - name: Restore the trivy databases from cache
+      run : |
+        wget https://openaf.io/trivy-db.tgz
+        docker run --rm -v trivy-db:/volume -v $(pwd):/backup busybox tar xzf /backup/trivy-db.tgz -C /volume
+
+    - uses: openaf/ojob-action@v7
+      name: Check build
+      with:
+        ojob: 'ojob.io/sec/genSecBadge'
+        args: 'image=nmaguiar/mini-a-ghc:build file=.github/sec-build.svg reportFile=.github/sec-build.yaml'
+        dist: 'nightly'
+
+    - uses: openaf/ojob-action@v7
+      name: Generate sec-build.md
+      with:
+        ojob: 'ojob.io/util/toMDTree'
+        args: 'inputFile=.github/sec-build.yaml file=.github/sec-build.md'
+        dist: 'nightly'
+
+    - uses: openaf/ojob-action@v7
+      name: Update badges
+      env :
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        ojob: 'ojob.io/git/hub/contentIn'
+        args: 'message="update\ badge\ {{date}}/{{time}}" title="Update\ badge" paths=.github/'
+        dist: 'nightly'
