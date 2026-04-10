@@ -142,7 +142,9 @@ The image also adds a few shell conveniences:
 You can also run the model listing directly through the entrypoint:
 
 ```bash
-docker run --rm -ti openaf/mini-a-ghc list
+docker run --rm -ti \
+  -e OAF_MODEL="$OAF_MODEL" \
+  openaf/mini-a-ghc list
 ```
 
 ## Optional initialization hook
