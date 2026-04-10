@@ -114,6 +114,15 @@ docker run --rm -ti \
   mcp="(cmd: 'ojob mcps/mcp-time.yaml')"
 ```
 
+If the first argument is an executable available in the container, the entrypoint runs it directly instead of launching `mini-a`. For example:
+
+```bash
+docker run --rm -ti \
+  -e OAF_MODEL="$OAF_MODEL" \
+  openaf/mini-a-ghc \
+  bash
+```
+
 Common options:
 
 - `useshell=true` to allow shell commands.

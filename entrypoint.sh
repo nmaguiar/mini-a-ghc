@@ -35,12 +35,14 @@ cd /home/openaf
 if [ "$#" -eq 0 ]; then
   run_init_script
   /openaf/opack exec mini-a
-elif [[ "$1" == -* || "$1" == *=* ]]; then
-  run_init_script
-  /openaf/opack exec mini-a "$@"
 elif [ "$1" = "list" ]; then
   /openaf/oafp libs="@AWS/aws.js,@ghcopilot/ghcopilot.js" in=llmmodels data="()" 
   exit 0
 fi
 
-exec "$@"
+if command -v "$1" >/dev/null 2>&1 || [ -x "$1" ]; then
+  exec "$@"
+fi
+
+run_init_script
+/openaf/opack exec mini-a "$@"
