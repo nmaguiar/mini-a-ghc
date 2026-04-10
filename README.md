@@ -170,8 +170,15 @@ Example `init.sh` to install `kubectl`:
 #!/usr/bin/env bash
 set -euo pipefail
 
+arch="$(uname -m)"
+case "$arch" in
+  x86_64) kubectl_arch="amd64" ;;
+  aarch64|arm64) kubectl_arch="arm64" ;;
+  *) echo "Unsupported architecture: $arch" >&2; exit 1 ;;
+esac
+
 mkdir -p "$HOME/.local/bin"
-curl -fsSLo "$HOME/.local/bin/kubectl" "https://dl.k8s.io/release/$(curl -fsSL https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
+curl -fsSLo "$HOME/.local/bin/kubectl" "https://dl.k8s.io/release/$(curl -fsSL https://dl.k8s.io/release/stable.txt)/bin/linux/${kubectl_arch}/kubectl"
 chmod +x "$HOME/.local/bin/kubectl"
 export PATH="$HOME/.local/bin:$PATH"
 ```
@@ -182,7 +189,15 @@ Example `init.sh` to install the AWS CLI:
 #!/usr/bin/env bash
 set -euo pipefail
 
-curl -fsSLo /tmp/awscliv2.zip https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip
+arch="$(uname -m)"
+case "$arch" in
+  x86_64) aws_arch="x86_64" ;;
+  aarch64|arm64) aws_arch="aarch64" ;;
+  *) echo "Unsupported architecture: $arch" >&2; exit 1 ;;
+esac
+
+mkdir -p "$HOME/.local/bin"
+curl -fsSLo /tmp/awscliv2.zip "https://awscli.amazonaws.com/awscli-exe-linux-${aws_arch}.zip"
 cd /tmp
 unzip -q awscliv2.zip
 ./aws/install --bin-dir "$HOME/.local/bin" --install-dir "$HOME/.local/aws-cli" --update
