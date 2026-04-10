@@ -178,6 +178,7 @@ docker run --rm -ti -e OAF_MODEL="$OAF_MODEL" openaf/mini-a-ghc
 
 ## References
 
+- Mini-A: <https://mini-a.ai>
 - Mini-A project: <https://github.com/openaf/mini-a>
 - Mini-A usage/docs: <https://github.com/openaf/mini-a/blob/master/USAGE.md>
 - `ghcopilot` opack: <https://github.com/openaf/openaf-opacks/tree/master/ghcopilot>
