@@ -2,28 +2,29 @@
 
 This file provides practical `OAF_MODEL` recipes for `openaf/mini-a-ghc`.
 
-## Why two token fields?
+## Token location
 
-- `ghcopilot` provider docs use `options.token`.
-- `mini-a-ghc` entrypoint extracts top-level `token` from `OAF_MODEL` to run `gh auth login` before Mini-A starts.
+For `ghcopilot`, set the token in `options.token`.
 
-For this image, set both fields to the same value.
+`mini-a-ghc` also reads `options.token` from `OAF_MODEL` during startup to run `gh auth login` before Mini-A starts.
+
+That login step is only attempted when `OAF_MODEL` contains `ghcopilot`.
 
 ## Canonical SLON/OpenAF-style value
 
 ```bash
 export GH_TOKEN="<your-token>"
-export OAF_MODEL="(type: ghcopilot, token: '$GH_TOKEN', options: (model: gpt-4.1, token: '$GH_TOKEN', timeout: 900000, useStdio: true))"
+export OAF_MODEL="(type: ghcopilot, options: (model: gpt-4.1, token: '$GH_TOKEN', timeout: 900000, useStdio: true))"
 ```
 
 ## Alternative model choices
 
 ```bash
 # gpt-4o
-export OAF_MODEL="(type: ghcopilot, token: '$GH_TOKEN', options: (model: gpt-4o, token: '$GH_TOKEN', timeout: 900000, useStdio: true))"
+export OAF_MODEL="(type: ghcopilot, options: (model: gpt-4o, token: '$GH_TOKEN', timeout: 900000, useStdio: true))"
 
 # gpt-4.1 with additional settings
-export OAF_MODEL="(type: ghcopilot, token: '$GH_TOKEN', options: (model: gpt-4.1, token: '$GH_TOKEN', timeout: 900000, useStdio: true, autoRestart: true, logLevel: 'info'))"
+export OAF_MODEL="(type: ghcopilot, options: (model: gpt-4.1, token: '$GH_TOKEN', timeout: 900000, useStdio: true, autoRestart: true, logLevel: 'info'))"
 ```
 
 ## JSON-like reference representation
@@ -33,7 +34,6 @@ If you store model settings elsewhere and convert/inject at runtime:
 ```json
 {
   "type": "ghcopilot",
-  "token": "${GH_TOKEN}",
   "options": {
     "model": "gpt-4.1",
     "token": "${GH_TOKEN}",
@@ -49,6 +49,24 @@ Interactive:
 
 ```bash
 docker run --rm -ti -e OAF_MODEL="$OAF_MODEL" openaf/mini-a-ghc
+```
+
+Interactive with initialization script:
+
+```bash
+docker run --rm -ti \
+  -e OAF_MODEL="$OAF_MODEL" \
+  -e INIT_SCRIPT=/work/init.sh \
+  -v "$(pwd)":/work -w /work \
+  openaf/mini-a-ghc
+```
+
+List models exposed by the configured provider:
+
+```bash
+docker run --rm -ti \
+  -e OAF_MODEL="$OAF_MODEL" \
+  openaf/mini-a-ghc list
 ```
 
 One-shot goal:
@@ -68,3 +86,8 @@ docker run --rm -d \
   -p 12345:12345 \
   openaf/mini-a-ghc onport=12345
 ```
+
+## Notes
+
+- The container starts in `/home/openaf`.
+- `INIT_SCRIPT`, if set, runs as the `openaf` user before Mini-A starts.

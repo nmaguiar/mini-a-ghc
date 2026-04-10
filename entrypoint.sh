@@ -8,19 +8,39 @@ cleanup() {
   rm -f "$token_file"
 }
 
+run_init_script() {
+  if [ -z "${INIT_SCRIPT:-}" ]; then
+    return
+  fi
+
+  if [ ! -f "$INIT_SCRIPT" ]; then
+    echo "INIT_SCRIPT does not exist: $INIT_SCRIPT" >&2
+    exit 1
+  fi
+
+  /usr/bin/env bash "$INIT_SCRIPT"
+}
+
 trap cleanup EXIT
 
-/openaf/oafp data="$OAF_MODEL" path=token outfile="$token_file"
-/usr/bin/gh auth login --with-token < "$token_file"
+if [[ "${OAF_MODEL:-}" == *ghcopilot* ]]; then
+  /openaf/oafp data="$OAF_MODEL" path=options.token outfile="$token_file"
+  /usr/bin/gh auth login --with-token < "$token_file"
 
-cleanup
-trap - EXIT
+  cleanup
+  trap - EXIT
+fi
 
-cd /openaf/mini-a
+cd /home/openaf
 if [ "$#" -eq 0 ]; then
+  run_init_script
   /openaf/opack exec mini-a
 elif [[ "$1" == -* || "$1" == *=* ]]; then
+  run_init_script
   /openaf/opack exec mini-a "$@"
+elif [ "$1" = "list" ]; then
+  /openaf/oafp libs="@AWS/aws.js,@ghcopilot/ghcopilot.js" in=llmmodels data="()" 
+  exit 0
 fi
 
 exec "$@"

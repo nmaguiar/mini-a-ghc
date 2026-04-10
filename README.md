@@ -19,12 +19,14 @@ Compared to the base `openaf/mini-a:deb-t8` image, this image:
 1. Installs `gh` (GitHub CLI).
 2. Installs GitHub Copilot CLI.
 3. Installs the OpenAF `ghcopilot` opack.
-4. Sets `OAF_MINI_A_LIBS="@ghcopilot/ghcopilot.js"` so the provider is loaded automatically.
-5. Uses a custom entrypoint that:
-   - extracts a token from `OAF_MODEL` with `oafp`,
-   - logs `gh` in non-interactively,
+4. Installs `colorFormats.yaml` and shell aliases for common OpenAF helpers.
+5. Sets `OAF_MINI_A_LIBS="@ghcopilot/ghcopilot.js"` so the provider is loaded automatically.
+6. Uses a custom entrypoint that:
+   - conditionally extracts a token from `OAF_MODEL` with `oafp`,
+   - logs `gh` in non-interactively when `OAF_MODEL` uses `ghcopilot`,
    - removes the temporary token file,
-   - starts Mini-A.
+   - optionally runs `INIT_SCRIPT`,
+   - starts Mini-A from `/home/openaf`.
 
 ## Prerequisites
 
@@ -56,20 +58,18 @@ GitHub's current token-management docs:
 
 Mini-A reads model/provider configuration from `OAF_MODEL`.
 
-For `ghcopilot`, upstream provider docs define the token under `options.token`. This image entrypoint also extracts `token` from `OAF_MODEL` before startup to authenticate `gh`.
-
-To keep both expectations satisfied, use **both** `token` (top-level) and `options.token` with the same value.
+For `ghcopilot`, the token should be set under `options.token`. This image entrypoint also reads `options.token` from `OAF_MODEL` before startup to authenticate `gh`.
 
 ### Recommended `OAF_MODEL`
 
 ```bash
 export GH_TOKEN="<your-token>"
-export OAF_MODEL="(type: ghcopilot, options: (model: gpt-5-mini, timeout: 900000, token: $GH_TOKEN))""
+export OAF_MODEL="(type: ghcopilot, options: (model: gpt-5-mini, timeout: 900000, token: '$GH_TOKEN'))"
 ```
 
 > Tip: keep timeout high for agent workloads (`900000` ms = 15 minutes).
 
-More examples (including JSON/YAML-style definitions) are in [`docs/OAF_MODEL.md`](docs/OAF_MODEL.md).
+More examples (including JSON/YAML-style definitions) are in [`OAF_MODEL.md`](OAF_MODEL.md).
 
 ## Quick start
 
@@ -121,14 +121,77 @@ Common options:
 - `rules="..."` to provide runtime rules.
 - `knowledge="..."` to inject reference knowledge.
 
+## Convenience commands in the container
+
+The image also adds a few shell conveniences:
+
+- `mini-a` as an alias for `/openaf/opack exec mini-a`
+- `list` as a shortcut to print available LLM models
+- `oafptab`, `oaf-light-theme`, and `oaf-dark-theme` for OpenAF output formatting
+- `PATH` includes `/openaf` and `/openaf/ojobs`
+
+You can also run the model listing directly through the entrypoint:
+
+```bash
+docker run --rm -ti openaf/mini-a-ghc list
+```
+
+## Optional initialization hook
+
+If you set `INIT_SCRIPT`, the entrypoint executes that script right before `opack exec mini-a`.
+
+- `INIT_SCRIPT` should point to a script file available inside the container.
+- The script runs as the `openaf` user, from `/home/openaf`.
+- The script is only executed when the container is launching Mini-A. It is not executed when the container is used to run some other command directly.
+- If the file does not exist, startup fails with an error.
+
+Example:
+
+```bash
+docker run --rm -ti \
+  -e OAF_MODEL="$OAF_MODEL" \
+  -e INIT_SCRIPT=/work/init.sh \
+  -v "$(pwd)":/work -w /work \
+  openaf/mini-a-ghc
+```
+
+Example `init.sh` to install `kubectl`:
+
+```bash
+#!/usr/bin/env bash
+set -euo pipefail
+
+mkdir -p "$HOME/.local/bin"
+curl -fsSLo "$HOME/.local/bin/kubectl" "https://dl.k8s.io/release/$(curl -fsSL https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
+chmod +x "$HOME/.local/bin/kubectl"
+export PATH="$HOME/.local/bin:$PATH"
+```
+
+Example `init.sh` to install the AWS CLI:
+
+```bash
+#!/usr/bin/env bash
+set -euo pipefail
+
+curl -fsSLo /tmp/awscliv2.zip https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip
+cd /tmp
+unzip -q awscliv2.zip
+./aws/install --bin-dir "$HOME/.local/bin" --install-dir "$HOME/.local/aws-cli" --update
+export PATH="$HOME/.local/bin:$PATH"
+```
+
+After the hook runs, Mini-A starts with those tools available in the container session.
+
 ## Authentication flow in this image
 
 At startup, entrypoint behavior is:
 
-1. `oafp` reads `token` from `OAF_MODEL` into `/tmp/token.txt`.
+1. If `OAF_MODEL` contains `ghcopilot`, `oafp` reads `options.token` into `/tmp/token.txt`.
 2. `gh auth login --with-token` is executed.
 3. `/tmp/token.txt` is removed.
-4. Mini-A starts.
+4. The working directory is set to `/home/openaf`.
+5. If `INIT_SCRIPT` is set, that script is executed.
+6. Mini-A starts, or the container runs the explicit command you passed.
 
 If startup fails at authentication, validate token presence in `OAF_MODEL` (see recommended format above).
 
@@ -155,8 +218,15 @@ This image installs Copilot CLI during build, but if you build custom derivative
 ### `gh auth login` fails
 
 - Confirm your token is valid and not expired.
-- Confirm `OAF_MODEL` includes top-level `token`.
-- Confirm `options.token` is also set for the provider runtime.
+- Confirm `OAF_MODEL` includes `options.token`.
+- If you are not using `ghcopilot`, no `gh` login is attempted at startup.
+
+### `INIT_SCRIPT` fails
+
+- Confirm `INIT_SCRIPT` points to a file that exists inside the container.
+- Confirm the script can be executed by `bash`.
+- Confirm the script does not require `sudo` or root-only write access.
+- Confirm any mounted paths used by the script are available in the container.
 
 ## Example: use host-provided token dynamically
 
@@ -164,7 +234,7 @@ If you already use `gh` on the host:
 
 ```bash
 export GH_TOKEN="$(gh auth token)"
-export OAF_MODEL="(type: ghcopilot, token: '$GH_TOKEN', options: (model: gpt-4.1, token: '$GH_TOKEN', timeout: 900000, useStdio: true))"
+export OAF_MODEL="(type: ghcopilot, options: (model: gpt-4.1, token: '$GH_TOKEN', timeout: 900000, useStdio: true))"
 
 docker run --rm -ti -e OAF_MODEL="$OAF_MODEL" openaf/mini-a-ghc
 ```
