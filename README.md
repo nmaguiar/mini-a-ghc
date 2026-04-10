@@ -64,7 +64,7 @@ To keep both expectations satisfied, use **both** `token` (top-level) and `optio
 
 ```bash
 export GH_TOKEN="<your-token>"
-export OAF_MODEL="(type: ghcopilot, token: '$GH_TOKEN', options: (model: gpt-4.1, token: '$GH_TOKEN', timeout: 900000, useStdio: true))"
+export OAF_MODEL="(type: ghcopilot, options: (model: gpt-5-mini, timeout: 900000, token: $GH_TOKEN))""
 ```
 
 > Tip: keep timeout high for agent workloads (`900000` ms = 15 minutes).
