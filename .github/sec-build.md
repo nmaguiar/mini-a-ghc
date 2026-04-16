@@ -9667,7 +9667,7 @@
 │                       │      │                  ├ [16]: https://nvd.nist.gov/vuln/detail/CVE-2024-2236 
 │                       │      │                  ╰ [17]: https://www.cve.org/CVERecord?id=CVE-2024-2236 
 │                       │      ├ PublishedDate   : 2024-03-06T22:15:57.977Z 
-│                       │      ╰ LastModifiedDate: 2026-02-25T20:17:20.547Z 
+│                       │      ╰ LastModifiedDate: 2026-04-15T00:35:42.02Z 
 │                       ├ [3]  ╭ VulnerabilityID : CVE-2026-3184 
 │                       │      ├ PkgID           : liblastlog2-2@2.41-4ubuntu4.2 
 │                       │      ├ PkgName         : liblastlog2-2 
@@ -9944,7 +9944,7 @@
 │                       │      │                  ├ [12]: https://nvd.nist.gov/vuln/detail/CVE-2024-56433 
 │                       │      │                  ╰ [13]: https://www.cve.org/CVERecord?id=CVE-2024-56433 
 │                       │      ├ PublishedDate   : 2024-12-26T09:15:07.267Z 
-│                       │      ╰ LastModifiedDate: 2024-12-26T09:15:07.267Z 
+│                       │      ╰ LastModifiedDate: 2026-04-15T00:35:42.02Z 
 │                       ├ [9]  ╭ VulnerabilityID : CVE-2026-3184 
 │                       │      ├ PkgID           : mount@2.41-4ubuntu4.2 
 │                       │      ├ PkgName         : mount 
@@ -10049,7 +10049,7 @@
 │                       │      │                  ├ [12]: https://nvd.nist.gov/vuln/detail/CVE-2024-56433 
 │                       │      │                  ╰ [13]: https://www.cve.org/CVERecord?id=CVE-2024-56433 
 │                       │      ├ PublishedDate   : 2024-12-26T09:15:07.267Z 
-│                       │      ╰ LastModifiedDate: 2024-12-26T09:15:07.267Z 
+│                       │      ╰ LastModifiedDate: 2026-04-15T00:35:42.02Z 
 │                       ├ [11] ╭ VulnerabilityID : CVE-2025-45582 
 │                       │      ├ PkgID           : tar@1.35+dfsg-3.1build1 
 │                       │      ├ PkgName         : tar 
