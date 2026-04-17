@@ -9933,7 +9933,7 @@
 │                       │      │                  ├ [4] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
 │                       │      │                  │       24-56433 
 │                       │      │                  ├ [5] : https://errata.almalinux.org/9/ALSA-2025-20559.html 
-│                       │      │                  ├ [6] : https://errata.rockylinux.org/RLSA-2025:20559 
+│                       │      │                  ├ [6] : https://errata.rockylinux.org/RLSA-2025:20145 
 │                       │      │                  ├ [7] : https://github.com/shadow-maint/shadow/blob/e2512d574
 │                       │      │                  │       1d4a44bdd81a8c2d0029b6222728cf0/etc/login.defs#L238-L
 │                       │      │                  │       241 
@@ -10038,7 +10038,7 @@
 │                       │      │                  ├ [4] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
 │                       │      │                  │       24-56433 
 │                       │      │                  ├ [5] : https://errata.almalinux.org/9/ALSA-2025-20559.html 
-│                       │      │                  ├ [6] : https://errata.rockylinux.org/RLSA-2025:20559 
+│                       │      │                  ├ [6] : https://errata.rockylinux.org/RLSA-2025:20145 
 │                       │      │                  ├ [7] : https://github.com/shadow-maint/shadow/blob/e2512d574
 │                       │      │                  │       1d4a44bdd81a8c2d0029b6222728cf0/etc/login.defs#L238-L
 │                       │      │                  │       241 
@@ -10113,7 +10113,7 @@
 │                       │      │                  ├ [5] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
 │                       │      │                  │       25-45582 
 │                       │      │                  ├ [6] : https://errata.almalinux.org/9/ALSA-2026-0067.html 
-│                       │      │                  ├ [7] : https://errata.rockylinux.org/RLSA-2026:0067 
+│                       │      │                  ├ [7] : https://errata.rockylinux.org/RLSA-2026:0002 
 │                       │      │                  ├ [8] : https://github.com/i900008/vulndb/blob/main/Gnu_tar_v
 │                       │      │                  │       uln.md 
 │                       │      │                  ├ [9] : https://linux.oracle.com/cve/CVE-2025-45582.html 
@@ -10560,7 +10560,17 @@
                  │      │                      e24a079 
                  │      ├ FilePath  : openaf/openaf.jar 
                  │      ╰ AnalyzedBy: jar 
-                 ├ [38] ╭ Name      : io.sigpipe:jbsdiff 
+                 ├ [38] ╭ Name      : io.minio:minio 
+                 │      ├ Identifier ╭ PURL: pkg:maven/io.minio/minio@9.0.0 
+                 │      │            ╰ UID : c3d88819980fb569 
+                 │      ├ Version   : 9.0.0 
+                 │      ├ Layer      ╭ Digest: sha256:5272aeec1d6ae882560c3710b22e3e668e6ea1e4ee3bab3b096a4167e
+                 │      │            │         5d733f3 
+                 │      │            ╰ DiffID: sha256:723834ba15c051e9167c35b343ea8b69e2e40df0ff8f55e0e43d089da
+                 │      │                      e24a079 
+                 │      ├ FilePath  : openaf/S3/minio-9.0.0.jar 
+                 │      ╰ AnalyzedBy: jar 
+                 ├ [39] ╭ Name      : io.sigpipe:jbsdiff 
                  │      ├ Identifier ╭ PURL: pkg:maven/io.sigpipe/jbsdiff@1.0 
                  │      │            ╰ UID : e618a95843fba36b 
                  │      ├ Version   : 1.0 
@@ -10570,7 +10580,7 @@
                  │      │                      e24a079 
                  │      ├ FilePath  : openaf/openaf.jar 
                  │      ╰ AnalyzedBy: jar 
-                 ├ [39] ╭ Name      : jakarta.activation:jakarta.activation-api 
+                 ├ [40] ╭ Name      : jakarta.activation:jakarta.activation-api 
                  │      ├ Identifier ╭ PURL: pkg:maven/jakarta.activation/jakarta.activation-api@1.2.2 
                  │      │            ╰ UID : 5d2ee0e1a121653f 
                  │      ├ Version   : 1.2.2 
@@ -10580,7 +10590,7 @@
                  │      │                      e24a079 
                  │      ├ FilePath  : openaf/openaf.jar 
                  │      ╰ AnalyzedBy: jar 
-                 ├ [40] ╭ Name      : javax.xml.bind:jaxb-api 
+                 ├ [41] ╭ Name      : javax.xml.bind:jaxb-api 
                  │      ├ Identifier ╭ PURL: pkg:maven/javax.xml.bind/jaxb-api@2.3.1 
                  │      │            ╰ UID : d465243f613cf5b8 
                  │      ├ Version   : 2.3.1 
@@ -10590,7 +10600,7 @@
                  │      │                      e24a079 
                  │      ├ FilePath  : openaf/openaf.jar 
                  │      ╰ AnalyzedBy: jar 
-                 ├ [41] ╭ Name      : jline:jline 
+                 ├ [42] ╭ Name      : jline:jline 
                  │      ├ Identifier ╭ PURL: pkg:maven/jline/jline@2.14.6 
                  │      │            ╰ UID : 509c1c4b5bcd42a1 
                  │      ├ Version   : 2.14.6 
@@ -10600,7 +10610,7 @@
                  │      │                      e24a079 
                  │      ├ FilePath  : openaf/openaf.jar 
                  │      ╰ AnalyzedBy: jar 
-                 ├ [42] ╭ Name      : org.apache.commons:commons-collections4 
+                 ├ [43] ╭ Name      : org.apache.commons:commons-collections4 
                  │      ├ Identifier ╭ PURL: pkg:maven/org.apache.commons/commons-collections4@4.5.0 
                  │      │            ╰ UID : 72513cdccf1d063 
                  │      ├ Version   : 4.5.0 
@@ -10610,7 +10620,7 @@
                  │      │                      e24a079 
                  │      ├ FilePath  : openaf/openaf.jar 
                  │      ╰ AnalyzedBy: jar 
-                 ├ [43] ╭ Name      : org.apache.commons:commons-compress 
+                 ├ [44] ╭ Name      : org.apache.commons:commons-compress 
                  │      ├ Identifier ╭ PURL: pkg:maven/org.apache.commons/commons-compress@1.28.0 
                  │      │            ╰ UID : a82eeb62843349ae 
                  │      ├ Version   : 1.28.0 
@@ -10620,7 +10630,7 @@
                  │      │                      e24a079 
                  │      ├ FilePath  : openaf/openaf.jar 
                  │      ╰ AnalyzedBy: jar 
-                 ├ [44] ╭ Name      : org.apache.commons:commons-csv 
+                 ├ [45] ╭ Name      : org.apache.commons:commons-csv 
                  │      ├ Identifier ╭ PURL: pkg:maven/org.apache.commons/commons-csv@1.14.1 
                  │      │            ╰ UID : 250a69832ed56f8d 
                  │      ├ Version   : 1.14.1 
@@ -10630,7 +10640,7 @@
                  │      │                      e24a079 
                  │      ├ FilePath  : openaf/openaf.jar 
                  │      ╰ AnalyzedBy: jar 
-                 ├ [45] ╭ Name      : org.apache.commons:commons-email 
+                 ├ [46] ╭ Name      : org.apache.commons:commons-email 
                  │      ├ Identifier ╭ PURL: pkg:maven/org.apache.commons/commons-email@1.6.0 
                  │      │            ╰ UID : 973048c510561123 
                  │      ├ Version   : 1.6.0 
@@ -10640,7 +10650,7 @@
                  │      │                      e24a079 
                  │      ├ FilePath  : openaf/openaf.jar 
                  │      ╰ AnalyzedBy: jar 
-                 ├ [46] ╭ Name      : org.apache.commons:commons-lang3 
+                 ├ [47] ╭ Name      : org.apache.commons:commons-lang3 
                  │      ├ Identifier ╭ PURL: pkg:maven/org.apache.commons/commons-lang3@3.20.0 
                  │      │            ╰ UID : 85a4dd2e7bf06fed 
                  │      ├ Version   : 3.20.0 
@@ -10650,7 +10660,7 @@
                  │      │                      e24a079 
                  │      ├ FilePath  : openaf/openaf.jar 
                  │      ╰ AnalyzedBy: jar 
-                 ├ [47] ╭ Name      : org.apache.commons:commons-math3 
+                 ├ [48] ╭ Name      : org.apache.commons:commons-math3 
                  │      ├ Identifier ╭ PURL: pkg:maven/org.apache.commons/commons-math3@3.6.1 
                  │      │            ╰ UID : ce9b8a6c7e85850 
                  │      ├ Version   : 3.6.1 
@@ -10660,7 +10670,7 @@
                  │      │                      e24a079 
                  │      ├ FilePath  : openaf/openaf.jar 
                  │      ╰ AnalyzedBy: jar 
-                 ├ [48] ╭ Name      : org.bouncycastle:bcprov-jdk18on 
+                 ├ [49] ╭ Name      : org.bouncycastle:bcprov-jdk18on 
                  │      ├ Identifier ╭ PURL: pkg:maven/org.bouncycastle/bcprov-jdk18on@1.82 
                  │      │            ╰ UID : ba3bda42b1145eb2 
                  │      ├ Version   : 1.82 
@@ -10670,7 +10680,7 @@
                  │      │                      e24a079 
                  │      ├ FilePath  : openaf/S3/bcprov-jdk18on-1.82.jar 
                  │      ╰ AnalyzedBy: jar 
-                 ├ [49] ╭ Name      : org.eclipse.jetty.compression:jetty-compression-common 
+                 ├ [50] ╭ Name      : org.eclipse.jetty.compression:jetty-compression-common 
                  │      ├ Identifier ╭ PURL: pkg:maven/org.eclipse.jetty.compression/jetty-compression-common@1
                  │      │            │       2.1.7 
                  │      │            ╰ UID : a0626719897fe494 
@@ -10681,7 +10691,7 @@
                  │      │                      e24a079 
                  │      ├ FilePath  : openaf/openaf.jar 
                  │      ╰ AnalyzedBy: jar 
-                 ├ [50] ╭ Name      : org.eclipse.jetty.websocket:jetty-websocket-core-client 
+                 ├ [51] ╭ Name      : org.eclipse.jetty.websocket:jetty-websocket-core-client 
                  │      ├ Identifier ╭ PURL: pkg:maven/org.eclipse.jetty.websocket/jetty-websocket-core-client@
                  │      │            │       12.1.7 
                  │      │            ╰ UID : cc581b450a167c29 
@@ -10692,7 +10702,7 @@
                  │      │                      e24a079 
                  │      ├ FilePath  : openaf/openaf.jar 
                  │      ╰ AnalyzedBy: jar 
-                 ├ [51] ╭ Name      : org.eclipse.jetty.websocket:jetty-websocket-core-common 
+                 ├ [52] ╭ Name      : org.eclipse.jetty.websocket:jetty-websocket-core-common 
                  │      ├ Identifier ╭ PURL: pkg:maven/org.eclipse.jetty.websocket/jetty-websocket-core-common@
                  │      │            │       12.1.7 
                  │      │            ╰ UID : daed1d58fbcd63da 
@@ -10703,7 +10713,7 @@
                  │      │                      e24a079 
                  │      ├ FilePath  : openaf/openaf.jar 
                  │      ╰ AnalyzedBy: jar 
-                 ├ [52] ╭ Name      : org.eclipse.jetty.websocket:jetty-websocket-jetty-api 
+                 ├ [53] ╭ Name      : org.eclipse.jetty.websocket:jetty-websocket-jetty-api 
                  │      ├ Identifier ╭ PURL: pkg:maven/org.eclipse.jetty.websocket/jetty-websocket-jetty-api@12
                  │      │            │       .1.7 
                  │      │            ╰ UID : bc26f0f120e16fd6 
@@ -10714,7 +10724,7 @@
                  │      │                      e24a079 
                  │      ├ FilePath  : openaf/openaf.jar 
                  │      ╰ AnalyzedBy: jar 
-                 ├ [53] ╭ Name      : org.eclipse.jetty.websocket:jetty-websocket-jetty-client 
+                 ├ [54] ╭ Name      : org.eclipse.jetty.websocket:jetty-websocket-jetty-client 
                  │      ├ Identifier ╭ PURL: pkg:maven/org.eclipse.jetty.websocket/jetty-websocket-jetty-client
                  │      │            │       @12.1.7 
                  │      │            ╰ UID : ac51b48ce04fe1fb 
@@ -10725,7 +10735,7 @@
                  │      │                      e24a079 
                  │      ├ FilePath  : openaf/openaf.jar 
                  │      ╰ AnalyzedBy: jar 
-                 ├ [54] ╭ Name      : org.eclipse.jetty.websocket:jetty-websocket-jetty-common 
+                 ├ [55] ╭ Name      : org.eclipse.jetty.websocket:jetty-websocket-jetty-common 
                  │      ├ Identifier ╭ PURL: pkg:maven/org.eclipse.jetty.websocket/jetty-websocket-jetty-common
                  │      │            │       @12.1.7 
                  │      │            ╰ UID : fe9e4f7ecb0fae56 
@@ -10736,7 +10746,7 @@
                  │      │                      e24a079 
                  │      ├ FilePath  : openaf/openaf.jar 
                  │      ╰ AnalyzedBy: jar 
-                 ├ [55] ╭ Name      : org.eclipse.jetty:jetty-client 
+                 ├ [56] ╭ Name      : org.eclipse.jetty:jetty-client 
                  │      ├ Identifier ╭ PURL: pkg:maven/org.eclipse.jetty/jetty-client@12.1.7 
                  │      │            ╰ UID : 35d0f51f64058948 
                  │      ├ Version   : 12.1.7 
@@ -10746,7 +10756,7 @@
                  │      │                      e24a079 
                  │      ├ FilePath  : openaf/openaf.jar 
                  │      ╰ AnalyzedBy: jar 
-                 ├ [56] ╭ Name      : org.eclipse.jetty:jetty-http 
+                 ├ [57] ╭ Name      : org.eclipse.jetty:jetty-http 
                  │      ├ Identifier ╭ PURL: pkg:maven/org.eclipse.jetty/jetty-http@12.1.7 
                  │      │            ╰ UID : 3d81d7777215552f 
                  │      ├ Version   : 12.1.7 
@@ -10756,7 +10766,7 @@
                  │      │                      e24a079 
                  │      ├ FilePath  : openaf/openaf.jar 
                  │      ╰ AnalyzedBy: jar 
-                 ├ [57] ╭ Name      : org.eclipse.jetty:jetty-io 
+                 ├ [58] ╭ Name      : org.eclipse.jetty:jetty-io 
                  │      ├ Identifier ╭ PURL: pkg:maven/org.eclipse.jetty/jetty-io@12.1.7 
                  │      │            ╰ UID : ecfd485e808fac08 
                  │      ├ Version   : 12.1.7 
@@ -10766,7 +10776,7 @@
                  │      │                      e24a079 
                  │      ├ FilePath  : openaf/openaf.jar 
                  │      ╰ AnalyzedBy: jar 
-                 ├ [58] ╭ Name      : org.eclipse.jetty:jetty-util 
+                 ├ [59] ╭ Name      : org.eclipse.jetty:jetty-util 
                  │      ├ Identifier ╭ PURL: pkg:maven/org.eclipse.jetty/jetty-util@12.1.7 
                  │      │            ╰ UID : 55174ef89c50ef33 
                  │      ├ Version   : 12.1.7 
@@ -10776,7 +10786,7 @@
                  │      │                      e24a079 
                  │      ├ FilePath  : openaf/openaf.jar 
                  │      ╰ AnalyzedBy: jar 
-                 ├ [59] ╭ Name      : org.fusesource.hawtjni:hawtjni-runtime 
+                 ├ [60] ╭ Name      : org.fusesource.hawtjni:hawtjni-runtime 
                  │      ├ Identifier ╭ PURL: pkg:maven/org.fusesource.hawtjni/hawtjni-runtime@1.17 
                  │      │            ╰ UID : cf88955c9d0ae18b 
                  │      ├ Version   : 1.17 
@@ -10786,7 +10796,7 @@
                  │      │                      e24a079 
                  │      ├ FilePath  : openaf/openaf.jar 
                  │      ╰ AnalyzedBy: jar 
-                 ├ [60] ╭ Name      : org.fusesource.jansi:jansi 
+                 ├ [61] ╭ Name      : org.fusesource.jansi:jansi 
                  │      ├ Identifier ╭ PURL: pkg:maven/org.fusesource.jansi/jansi@1.18 
                  │      │            ╰ UID : 8ad8d3ab8ae11065 
                  │      ├ Version   : 1.18 
@@ -10796,7 +10806,7 @@
                  │      │                      e24a079 
                  │      ├ FilePath  : openaf/openaf.jar 
                  │      ╰ AnalyzedBy: jar 
-                 ├ [61] ╭ Name      : org.fusesource.jansi:jansi-freebsd32 
+                 ├ [62] ╭ Name      : org.fusesource.jansi:jansi-freebsd32 
                  │      ├ Identifier ╭ PURL: pkg:maven/org.fusesource.jansi/jansi-freebsd32@1.8 
                  │      │            ╰ UID : 87b73bc3f694180c 
                  │      ├ Version   : 1.8 
@@ -10806,7 +10816,7 @@
                  │      │                      e24a079 
                  │      ├ FilePath  : openaf/openaf.jar 
                  │      ╰ AnalyzedBy: jar 
-                 ├ [62] ╭ Name      : org.fusesource.jansi:jansi-freebsd64 
+                 ├ [63] ╭ Name      : org.fusesource.jansi:jansi-freebsd64 
                  │      ├ Identifier ╭ PURL: pkg:maven/org.fusesource.jansi/jansi-freebsd64@1.8 
                  │      │            ╰ UID : 68d99c3788225531 
                  │      ├ Version   : 1.8 
@@ -10816,7 +10826,7 @@
                  │      │                      e24a079 
                  │      ├ FilePath  : openaf/openaf.jar 
                  │      ╰ AnalyzedBy: jar 
-                 ├ [63] ╭ Name      : org.fusesource.jansi:jansi-linux32 
+                 ├ [64] ╭ Name      : org.fusesource.jansi:jansi-linux32 
                  │      ├ Identifier ╭ PURL: pkg:maven/org.fusesource.jansi/jansi-linux32@1.8 
                  │      │            ╰ UID : b748a87749ace306 
                  │      ├ Version   : 1.8 
@@ -10826,7 +10836,7 @@
                  │      │                      e24a079 
                  │      ├ FilePath  : openaf/openaf.jar 
                  │      ╰ AnalyzedBy: jar 
-                 ├ [64] ╭ Name      : org.fusesource.jansi:jansi-linux64 
+                 ├ [65] ╭ Name      : org.fusesource.jansi:jansi-linux64 
                  │      ├ Identifier ╭ PURL: pkg:maven/org.fusesource.jansi/jansi-linux64@1.8 
                  │      │            ╰ UID : 26eee13eafbc9417 
                  │      ├ Version   : 1.8 
@@ -10836,7 +10846,7 @@
                  │      │                      e24a079 
                  │      ├ FilePath  : openaf/openaf.jar 
                  │      ╰ AnalyzedBy: jar 
-                 ├ [65] ╭ Name      : org.fusesource.jansi:jansi-native 
+                 ├ [66] ╭ Name      : org.fusesource.jansi:jansi-native 
                  │      ├ Identifier ╭ PURL: pkg:maven/org.fusesource.jansi/jansi-native@1.8 
                  │      │            ╰ UID : 6fdce73a584d6707 
                  │      ├ Version   : 1.8 
@@ -10846,7 +10856,7 @@
                  │      │                      e24a079 
                  │      ├ FilePath  : openaf/openaf.jar 
                  │      ╰ AnalyzedBy: jar 
-                 ├ [66] ╭ Name      : org.fusesource.jansi:jansi-osx 
+                 ├ [67] ╭ Name      : org.fusesource.jansi:jansi-osx 
                  │      ├ Identifier ╭ PURL: pkg:maven/org.fusesource.jansi/jansi-osx@1.8 
                  │      │            ╰ UID : 907023130116e83c 
                  │      ├ Version   : 1.8 
@@ -10856,7 +10866,7 @@
                  │      │                      e24a079 
                  │      ├ FilePath  : openaf/openaf.jar 
                  │      ╰ AnalyzedBy: jar 
-                 ├ [67] ╭ Name      : org.fusesource.jansi:jansi-windows32 
+                 ├ [68] ╭ Name      : org.fusesource.jansi:jansi-windows32 
                  │      ├ Identifier ╭ PURL: pkg:maven/org.fusesource.jansi/jansi-windows32@1.8 
                  │      │            ╰ UID : ab926f311d1d4210 
                  │      ├ Version   : 1.8 
@@ -10866,7 +10876,7 @@
                  │      │                      e24a079 
                  │      ├ FilePath  : openaf/openaf.jar 
                  │      ╰ AnalyzedBy: jar 
-                 ├ [68] ╭ Name      : org.fusesource.jansi:jansi-windows64 
+                 ├ [69] ╭ Name      : org.fusesource.jansi:jansi-windows64 
                  │      ├ Identifier ╭ PURL: pkg:maven/org.fusesource.jansi/jansi-windows64@1.8 
                  │      │            ╰ UID : edf1cd987a2068b8 
                  │      ├ Version   : 1.8 
@@ -10876,7 +10886,7 @@
                  │      │                      e24a079 
                  │      ├ FilePath  : openaf/openaf.jar 
                  │      ╰ AnalyzedBy: jar 
-                 ├ [69] ╭ Name      : org.jetbrains:annotations 
+                 ├ [70] ╭ Name      : org.jetbrains:annotations 
                  │      ├ Identifier ╭ PURL: pkg:maven/org.jetbrains/annotations@13.0 
                  │      │            ╰ UID : c0161a29fedca08e 
                  │      ├ Version   : 13.0 
@@ -10886,7 +10896,7 @@
                  │      │                      e24a079 
                  │      ├ FilePath  : openaf/S3/annotations-13.0.jar 
                  │      ╰ AnalyzedBy: jar 
-                 ├ [70] ╭ Name      : org.jsoup:jsoup 
+                 ├ [71] ╭ Name      : org.jsoup:jsoup 
                  │      ├ Identifier ╭ PURL: pkg:maven/org.jsoup/jsoup@1.22.1 
                  │      │            ╰ UID : 7e7898d1782c7621 
                  │      ├ Version   : 1.22.1 
@@ -10896,7 +10906,7 @@
                  │      │                      e24a079 
                  │      ├ FilePath  : openaf/Jsoup/jsoup-1.22.1.jar 
                  │      ╰ AnalyzedBy: jar 
-                 ├ [71] ╭ Name      : org.jspecify:jspecify 
+                 ├ [72] ╭ Name      : org.jspecify:jspecify 
                  │      ├ Identifier ╭ PURL: pkg:maven/org.jspecify/jspecify@1.0.0 
                  │      │            ╰ UID : ed86e540bb7b216a 
                  │      ├ Version   : 1.0.0 
@@ -10906,7 +10916,7 @@
                  │      │                      e24a079 
                  │      ├ FilePath  : openaf/S3/jspecify-1.0.0.jar 
                  │      ╰ AnalyzedBy: jar 
-                 ├ [72] ╭ Name      : org.semver4j:semver4j 
+                 ├ [73] ╭ Name      : org.semver4j:semver4j 
                  │      ├ Identifier ╭ PURL: pkg:maven/org.semver4j/semver4j@6.0.0 
                  │      │            ╰ UID : 452bf269462d8b69 
                  │      ├ Version   : 6.0.0 
@@ -10916,7 +10926,7 @@
                  │      │                      e24a079 
                  │      ├ FilePath  : openaf/openaf.jar 
                  │      ╰ AnalyzedBy: jar 
-                 ├ [73] ╭ Name      : org.slf4j:slf4j-api 
+                 ├ [74] ╭ Name      : org.slf4j:slf4j-api 
                  │      ├ Identifier ╭ PURL: pkg:maven/org.slf4j/slf4j-api@2.0.17 
                  │      │            ╰ UID : e6e431b8b5e0302a 
                  │      ├ Version   : 2.0.17 
@@ -10926,7 +10936,7 @@
                  │      │                      e24a079 
                  │      ├ FilePath  : openaf/openaf.jar 
                  │      ╰ AnalyzedBy: jar 
-                 ├ [74] ╭ Name      : org.slf4j:slf4j-nop 
+                 ├ [75] ╭ Name      : org.slf4j:slf4j-nop 
                  │      ├ Identifier ╭ PURL: pkg:maven/org.slf4j/slf4j-nop@2.0.17 
                  │      │            ╰ UID : 67713c09148cf9b 
                  │      ├ Version   : 2.0.17 
@@ -10936,7 +10946,7 @@
                  │      │                      e24a079 
                  │      ├ FilePath  : openaf/openaf.jar 
                  │      ╰ AnalyzedBy: jar 
-                 ├ [75] ╭ Name      : org.snmp4j:snmp4j 
+                 ├ [76] ╭ Name      : org.snmp4j:snmp4j 
                  │      ├ Identifier ╭ PURL: pkg:maven/org.snmp4j/snmp4j@3.9.7 
                  │      │            ╰ UID : 2bdda8a0d94fe3fd 
                  │      ├ Version   : 3.9.7 
@@ -10946,7 +10956,7 @@
                  │      │                      e24a079 
                  │      ├ FilePath  : openaf/openaf.jar 
                  │      ╰ AnalyzedBy: jar 
-                 ├ [76] ╭ Name      : org.snmp4j:snmp4j-agent 
+                 ├ [77] ╭ Name      : org.snmp4j:snmp4j-agent 
                  │      ├ Identifier ╭ PURL: pkg:maven/org.snmp4j/snmp4j-agent@3.8.3 
                  │      │            ╰ UID : 7d83d9c8b188faec 
                  │      ├ Version   : 3.8.3 
@@ -10956,7 +10966,7 @@
                  │      │                      e24a079 
                  │      ├ FilePath  : openaf/openaf.jar 
                  │      ╰ AnalyzedBy: jar 
-                 ╰ [77] ╭ Name      : org.xerial.snappy:snappy-java 
+                 ╰ [78] ╭ Name      : org.xerial.snappy:snappy-java 
                         ├ Identifier ╭ PURL: pkg:maven/org.xerial.snappy/snappy-java@1.1.10.8 
                         │            ╰ UID : af735d5e5d938188 
                         ├ Version   : 1.1.10.8 
