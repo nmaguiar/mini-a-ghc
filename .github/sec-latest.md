@@ -1,4 +1,4 @@
-````yaml
+```yaml
 ╭ [0] ╭ Target         : nmaguiar/mini-a-ghc:latest (ubuntu 25.10) 
 │     ├ Class          : os-pkgs 
 │     ├ Type           : ubuntu 
@@ -10976,4 +10976,4 @@
                         │                      e24a079 
                         ├ FilePath  : openaf/S3/snappy-java-1.1.10.8.jar 
                         ╰ AnalyzedBy: jar 
-````
+```
