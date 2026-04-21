@@ -8922,10 +8922,7 @@
 │     │                 │       │                ╰ [4]: GPL-2.0-only 
 │     │                 │       ├ Maintainer    : Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com> 
 │     │                 │       ├ Repository     ─ Class: official 
-│     │                 │       ├ Layer          ╭ Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4
-│     │                 │       │                │         e3efe8cb21ebe87263e 
-│     │                 │       │                ╰ DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871
-│     │                 │       │                          b432dd377c7e5624bc7 
+
 │     │                 │       ├ Digest        : sha256:014c000644528a116204dab36cfafd7442616ccfda6a67d0c4c606
 │     │                 │       │                 67e2658c58 
 │     │                 │       ├ InstalledFiles ╭ [0] : /usr/bin/select-editor 
@@ -9580,7 +9577,9 @@
 │                       │      │                            1b432dd377c7e5624bc7 
 │                       │      ├ SeveritySource  : ubuntu 
 │                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-3184 
-
+│                       │      ├ DataSource       ╭ ID  : ubuntu 
+│                       │      │                  ├ Name: Ubuntu CVE Tracker 
+│                       │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
 │                       │      ├ Fingerprint     : sha256:4a1a8bb86f76d64ee5235d853096e4bcfed1661865516f907e61c
 │                       │      │                   85f90a9654e 
 │                       │      ├ Title           : util-linux: util-linux: Access control bypass due to
