@@ -32,8 +32,8 @@
     - libsystemd0@257.9-0ubuntu2.4
     - ubuntu-keyring@2023.11.28.1
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     Digest: sha256:5c7db3942fd905c368040650b06516eaf7f96af3521d28f25c2d15524fa57359
     InstalledFiles:
     - /usr/bin/apt
@@ -232,8 +232,8 @@
     - libc6@2.42-0ubuntu3.1
     - libcrypt1@1:4.4.38-1build1
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     Digest: sha256:d6ac6917838cb1f1e653ae875caa3cd726852813c73e18b137c47ee6f7849e3d
     InstalledFiles:
     - /usr/bin/locale-check
@@ -300,8 +300,8 @@
     - libdebconfclient0@0.279ubuntu1
     - libselinux1@3.8.1-1build1
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     Digest: sha256:53adb1ea0ee603f5615752b90cd38458ecf0c7308832c6a080d68a981daed3b9
     InstalledFiles:
     - /usr/sbin/update-passwd
@@ -353,8 +353,8 @@
     - base-files@14ubuntu3
     - debianutils@5.23.2
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     Digest: sha256:8f5f9b383b07149ce0e967a251d46622242058f395d348502fc8404bbd6de6aa
     InstalledFiles:
     - /usr/bin/bash
@@ -401,8 +401,8 @@
     Repository:
       Class: official
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     InstalledFiles:
     - /usr/bin/dh_bash-completion
     - /usr/share/bash-completion/bash_completion
@@ -966,8 +966,8 @@
     Repository:
       Class: official
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     InstalledFiles:
     - /usr/bin/logger
     - /usr/bin/renice
@@ -996,7 +996,7 @@
     Name: bubblewrap
     Identifier:
       PURL: pkg:deb/ubuntu/bubblewrap@0.11.0-2?arch=amd64&distro=ubuntu-25.10
-      UID: 4c280002e777c73
+      UID: 8f42c1b9ec05e012
     Version: 0.11.0
     Release: '2'
     Arch: amd64
@@ -1012,11 +1012,11 @@
       Class: official
     DependsOn:
     - libc6@2.42-0ubuntu3.1
-    - libcap2@1:2.75-7ubuntu2
+    - libcap2@1:2.75-7ubuntu2.2
     - libselinux1@3.8.1-1build1
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     InstalledFiles:
     - /usr/bin/bwrap
     - /usr/lib/sysctl.d/50-bubblewrap.conf
@@ -1053,8 +1053,8 @@
     - debconf@1.5.91
     - openssl@3.5.3-1ubuntu3.3
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     InstalledFiles:
     - /usr/sbin/update-ca-certificates
     - /usr/share/ca-certificates/mozilla/ACCVRAIZ1.crt
@@ -1240,8 +1240,8 @@
     Repository:
       Class: official
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     Digest: sha256:be48c687f892c8a8552fda28390044cb74afca9d9bbda1d1edd557bf86a42eeb
     InstalledFiles:
     - /usr/share/doc/coreutils/changelog.gz
@@ -1262,8 +1262,8 @@
     Repository:
       Class: official
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     Digest: sha256:98ecaa3d286f33259312bcba2490c012a74ce10d98de78c5f12b4669356063c6
     InstalledFiles:
     - /usr/share/doc/coreutils-from-uutils/changelog.gz
@@ -1300,8 +1300,8 @@
     - libcurl4t64@8.14.1-2ubuntu1.2
     - zlib1g@1:1.3.dfsg+really1.3.1-1ubuntu2
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     InstalledFiles:
     - /usr/bin/curl
     - /usr/bin/wcurl
@@ -1335,8 +1335,8 @@
     DependsOn:
     - debianutils@5.23.2
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     Digest: sha256:08c51b234ad83c5d389316fad000a8c8f925903c3ee0e21b70b7b5f286ebab69
     InstalledFiles:
     - /usr/bin/dash
@@ -1364,8 +1364,8 @@
     Repository:
       Class: official
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     Digest: sha256:8d5a58907bfda17bc360de3a48d656a86e805f61d56c5fa531cf12dc733e9784
     InstalledFiles:
     - /usr/bin/debconf
@@ -1518,8 +1518,8 @@
     Repository:
       Class: official
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     Digest: sha256:a46001d9a979327d807fa72604264628eea1d2c88c1442a36f764849e0601a60
     InstalledFiles:
     - /usr/bin/ischroot
@@ -1629,8 +1629,8 @@
     Repository:
       Class: official
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     Digest: sha256:fa28fe7c453ccfaea7465accdc06f61f6ecd87d9bde0146a1df23c3507eb5659
     InstalledFiles:
     - /usr/bin/cmp
@@ -1665,8 +1665,8 @@
     DependsOn:
     - tar@1.35+dfsg-3.1build1
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     InstalledFiles:
     - /usr/bin/dpkg
     - /usr/bin/dpkg-deb
@@ -1847,8 +1847,8 @@
     DependsOn:
     - logsave@1.47.2-3ubuntu2
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     Digest: sha256:97cd6120fedc55bcf13662f3d42663eed441405bd2b34405e7e6886503538110
     InstalledFiles:
     - /usr/bin/chattr
@@ -1943,8 +1943,8 @@
     Repository:
       Class: official
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     Digest: sha256:3a33a890caf607b12ac5147d5db1ef57ea68670ac1a23012685d3f04dffd9be2
     InstalledFiles:
     - /usr/bin/find
@@ -1982,8 +1982,8 @@
     Repository:
       Class: official
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     Digest: sha256:5b58d85e04c3f8b52eb0da599fd618deb0969ccd6f14fe61f0181e63cb11e6bc
     InstalledFiles:
     - /usr/share/doc/gcc-15-base/README.Debian.amd64.gz
@@ -2011,8 +2011,8 @@
     DependsOn:
     - libc6@2.42-0ubuntu3.1
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     InstalledFiles:
     - /usr/bin/gh
     - /usr/share/bash-completion/completions/gh
@@ -2229,8 +2229,8 @@
     Repository:
       Class: official
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     InstalledFiles:
     - /usr/bin/gnu[
     - /usr/bin/gnuarch
@@ -2488,8 +2488,8 @@
     - libgpg-error0@1.51-4
     - zlib1g@1:1.3.dfsg+really1.3.1-1ubuntu2
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     InstalledFiles:
     - /usr/bin/gpgv
     - /usr/share/doc/gpgv/NEWS.Debian.gz
@@ -2515,8 +2515,8 @@
     Repository:
       Class: official
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     Digest: sha256:fc0fdc5983ea3d3579ccf335e51dec69684a0dd9bb915734999c5733add9507a
     InstalledFiles:
     - /usr/bin/egrep
@@ -2555,8 +2555,8 @@
     Repository:
       Class: official
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     Digest: sha256:5ad33064665977c3aefd430d55fc9886ce159323c0c5b1508932584d855b7353
     InstalledFiles:
     - /usr/bin/gunzip
@@ -2602,8 +2602,8 @@
     Repository:
       Class: official
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     Digest: sha256:41e8679f87db3937458d27e3d1c892e59e440ad636eb2298cf322f8be6f3e3e3
     InstalledFiles:
     - /usr/bin/hostname
@@ -2628,8 +2628,8 @@
     Repository:
       Class: official
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     Digest: sha256:24a27aafc1e036fc26c053b9785807003203360e2734ac94dac5b52b447f84f0
     InstalledFiles:
     - /usr/bin/deb-systemd-helper
@@ -2665,8 +2665,8 @@
     Repository:
       Class: official
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     InstalledFiles:
     - /usr/share/doc/krb5-locales/changelog.Debian.gz
     - /usr/share/doc/krb5-locales/copyright
@@ -2693,8 +2693,8 @@
     DependsOn:
     - libc6@2.42-0ubuntu3.1
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     Digest: sha256:77f8d49c031182bbd6c4fe4ec9ad49edb5d4607f2dac795fc6932dce0e8f541e
     InstalledFiles:
     - /usr/lib/x86_64-linux-gnu/libacl.so.1.1.2302
@@ -2725,8 +2725,8 @@
     DependsOn:
     - libc6@2.42-0ubuntu3.1
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     InstalledFiles:
     - /usr/lib/x86_64-linux-gnu/libapparmor.so.1.24.2
     - /usr/share/doc/libapparmor1/changelog.Debian.gz
@@ -2764,8 +2764,8 @@
     - libzstd1@1.5.7+dfsg-1build2
     - zlib1g@1:1.3.dfsg+really1.3.1-1ubuntu2
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     Digest: sha256:c05ba63a56eb3201bf48a24cdc24584fe6514fdd9fe632b45b58f2e76681c12b
     InstalledFiles:
     - /usr/lib/x86_64-linux-gnu/libapt-pkg.so.7.0.0
@@ -2840,8 +2840,8 @@
     DependsOn:
     - libc6@2.42-0ubuntu3.1
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     Digest: sha256:7738dfaa4fefac3985f3c3eada5d5601a7bcf759c405434897e912c767d6f19f
     InstalledFiles:
     - /usr/lib/x86_64-linux-gnu/libattr.so.1.1.2502
@@ -2869,8 +2869,8 @@
     Repository:
       Class: official
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     Digest: sha256:d2d15168151e7f23e3fae6a5ee712f2f6006eb5c0e5e3a3121b9939a51c2b4e6
     InstalledFiles:
     - /usr/share/doc/libaudit-common/changelog.Debian.gz
@@ -2901,8 +2901,8 @@
     - libc6@2.42-0ubuntu3.1
     - libcap-ng0@0.8.5-4build2
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     Digest: sha256:6c2dd3f249be865da3018c577c7ad97f0331c66c5997ac7efd0b8aa385176dad
     InstalledFiles:
     - /usr/lib/x86_64-linux-gnu/libaudit.so.1.0.0
@@ -2944,8 +2944,8 @@
     DependsOn:
     - libc6@2.42-0ubuntu3.1
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     InstalledFiles:
     - /usr/lib/x86_64-linux-gnu/libblkid.so.1.1.0
     - /usr/share/doc/libblkid1/NEWS.Debian.gz
@@ -2972,8 +2972,8 @@
     DependsOn:
     - libc6@2.42-0ubuntu3.1
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     InstalledFiles:
     - /usr/lib/x86_64-linux-gnu/libbrotlicommon.so.1.1.0
     - /usr/lib/x86_64-linux-gnu/libbrotlidec.so.1.1.0
@@ -3015,8 +3015,8 @@
     - libc6@2.42-0ubuntu3.1
     - libmd0@1.1.0-2build3
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     Digest: sha256:b0cf00fca9a1fd4220535c36b936a2dea4d9b66dabee630b39c5c0098d7b7d67
     InstalledFiles:
     - /usr/lib/x86_64-linux-gnu/libbsd.so.0.12.2
@@ -3044,8 +3044,8 @@
     DependsOn:
     - libc6@2.42-0ubuntu3.1
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     Digest: sha256:2eca5aa3957c1901829080d54021ad3b886a013a439219c31b86310216807ece
     InstalledFiles:
     - /usr/lib/x86_64-linux-gnu/libbz2.so.1.0.4
@@ -3103,8 +3103,8 @@
     DependsOn:
     - libc6@2.42-0ubuntu3.1
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     InstalledFiles:
     - /usr/bin/getconf
     - /usr/bin/getent
@@ -3188,8 +3188,8 @@
     DependsOn:
     - libgcc-s1@15.2.0-4ubuntu4
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     InstalledFiles:
     - /usr/lib/x86_64-linux-gnu/gconv/ANSI_X3.110.so
     - /usr/lib/x86_64-linux-gnu/gconv/ARMSCII-8.so
@@ -3498,8 +3498,8 @@
     DependsOn:
     - libc6@2.42-0ubuntu3.1
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     Digest: sha256:a0db94168c4755842fb30af13c917d614218205b7b770a794878f360d544abfd
     InstalledFiles:
     - /usr/lib/x86_64-linux-gnu/libcap-ng.so.0.0.0
@@ -3507,18 +3507,18 @@
     - /usr/share/doc/libcap-ng0/changelog.Debian.gz
     - /usr/share/doc/libcap-ng0/copyright
     AnalyzedBy: dpkg
-  - ID: libcap2@1:2.75-7ubuntu2
+  - ID: libcap2@1:2.75-7ubuntu2.2
     Name: libcap2
     Identifier:
-      PURL: pkg:deb/ubuntu/libcap2@2.75-7ubuntu2?arch=amd64&distro=ubuntu-25.10&epoch=1
-      UID: 94e043357645a645
+      PURL: pkg:deb/ubuntu/libcap2@2.75-7ubuntu2.2?arch=amd64&distro=ubuntu-25.10&epoch=1
+      UID: 32b0ee7ab4ded7c5
     Version: '2.75'
-    Release: 7ubuntu2
+    Release: 7ubuntu2.2
     Epoch: 1
     Arch: amd64
     SrcName: libcap2
     SrcVersion: '2.75'
-    SrcRelease: 7ubuntu2
+    SrcRelease: 7ubuntu2.2
     SrcEpoch: 1
     Licenses:
     - BSD-3-Clause
@@ -3530,9 +3530,8 @@
     DependsOn:
     - libc6@2.42-0ubuntu3.1
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
-    Digest: sha256:f593d836cef0fb7f250a2dd422a0a314f06b2f167b771058d6c326ec6f673560
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     InstalledFiles:
     - /usr/lib/x86_64-linux-gnu/libcap.so.2.75
     - /usr/lib/x86_64-linux-gnu/libpsx.so.2.75
@@ -3571,8 +3570,8 @@
     DependsOn:
     - libc6@2.42-0ubuntu3.1
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     Digest: sha256:c8e602fdb8c7a1e5aaf3f105d801eb1dc741dc440f583b86a3103bf7bdfc2882
     InstalledFiles:
     - /usr/lib/x86_64-linux-gnu/libcom_err.so.2.1
@@ -3598,8 +3597,8 @@
     DependsOn:
     - libc6@2.42-0ubuntu3.1
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     Digest: sha256:bc5a7789099f627f0eefb9850cb6551fc8f7ea8ccb8c331756d3c706539ac4e0
     InstalledFiles:
     - /usr/lib/x86_64-linux-gnu/libcrypt.so.1.1.0
@@ -3646,8 +3645,8 @@
     - libzstd1@1.5.7+dfsg-1build2
     - zlib1g@1:1.3.dfsg+really1.3.1-1ubuntu2
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     InstalledFiles:
     - /usr/lib/x86_64-linux-gnu/libcurl.so.4.8.0
     - /usr/share/doc/libcurl4t64/changelog.Debian.gz
@@ -3682,8 +3681,8 @@
     DependsOn:
     - libc6@2.42-0ubuntu3.1
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     Digest: sha256:5dc03d94a639c12008795ebf87b0c671385dd1b1eb8e7e5e8e851a489a305d27
     InstalledFiles:
     - /usr/lib/x86_64-linux-gnu/libdb-5.3.so
@@ -3711,8 +3710,8 @@
     DependsOn:
     - libc6@2.42-0ubuntu3.1
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     Digest: sha256:69de050e7c2be7a01dc3cee617576ec93b4fcf0348185454e9bf048cca40ec1f
     InstalledFiles:
     - /usr/lib/x86_64-linux-gnu/libdebconfclient.so.0.0.0
@@ -3751,8 +3750,8 @@
     DependsOn:
     - libc6@2.42-0ubuntu3.1
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     Digest: sha256:08ee739aaf98f55166bff9d05dac55414be00d890c267c39be7b42bfcb70c600
     InstalledFiles:
     - /usr/lib/x86_64-linux-gnu/libe2p.so.2.3
@@ -3786,8 +3785,8 @@
     DependsOn:
     - libc6@2.42-0ubuntu3.1
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     InstalledFiles:
     - /usr/lib/x86_64-linux-gnu/libffi.so.8.2.0
     - /usr/share/doc/libffi8/changelog.Debian.gz
@@ -3811,8 +3810,8 @@
     - gcc-15-base@15.2.0-4ubuntu4
     - libc6@2.42-0ubuntu3.1
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     Digest: sha256:d6b402572df890d133095f12007a172a57c0215bafc1ffb7c8095d771eab6921
     InstalledFiles:
     - /usr/lib/x86_64-linux-gnu/libgcc_s.so.1
@@ -3839,8 +3838,8 @@
     - libc6@2.42-0ubuntu3.1
     - libgpg-error0@1.51-4
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     Digest: sha256:a4e2cf8fb36a6d59f278fb937008353dc315bc16793f0d3856f26ab6b59c39ed
     InstalledFiles:
     - /usr/lib/x86_64-linux-gnu/libgcrypt.so.20.5.0
@@ -3879,8 +3878,8 @@
     DependsOn:
     - libc6@2.42-0ubuntu3.1
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     Digest: sha256:e2ada598e3d8fbf80e74f530fd2c41ef48cc7f735a95bbce0a064219a60c09e5
     InstalledFiles:
     - /usr/lib/x86_64-linux-gnu/libgmp.so.10.5.0
@@ -3927,8 +3926,8 @@
     - libtasn1-6@4.20.0-2ubuntu0.25.10.1
     - libunistring5@1.3-2
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     InstalledFiles:
     - /usr/lib/x86_64-linux-gnu/libgnutls.so.30.40.3
     - /usr/share/doc/libgnutls30t64/AUTHORS.gz
@@ -3963,8 +3962,8 @@
     DependsOn:
     - libc6@2.42-0ubuntu3.1
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     Digest: sha256:f8c21f0337f33498862fe47331904a6c3dc8c7ad0fb4f4ab2cbc5a5ba1d55bc9
     InstalledFiles:
     - /usr/lib/x86_64-linux-gnu/libgpg-error.so.0.38.0
@@ -3995,8 +3994,8 @@
     - libkrb5-3@1.21.3-5ubuntu2
     - libkrb5support0@1.21.3-5ubuntu2
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     InstalledFiles:
     - /usr/lib/x86_64-linux-gnu/libgssapi_krb5.so.2.2
     - /usr/share/doc/libgssapi-krb5-2/copyright
@@ -4031,8 +4030,8 @@
     - libgmp10@2:6.3.0+dfsg-5ubuntu1
     - libnettle8t64@3.10.1-1
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     InstalledFiles:
     - /usr/lib/x86_64-linux-gnu/libhogweed.so.6.10
     - /usr/share/doc/libhogweed6t64/copyright
@@ -4068,8 +4067,8 @@
     - libc6@2.42-0ubuntu3.1
     - libunistring5@1.3-2
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     InstalledFiles:
     - /usr/lib/x86_64-linux-gnu/libidn2.so.0.4.0
     - /usr/share/doc/libidn2-0/AUTHORS
@@ -4099,8 +4098,8 @@
     - libc6@2.42-0ubuntu3.1
     - libkrb5support0@1.21.3-5ubuntu2
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     InstalledFiles:
     - /usr/lib/x86_64-linux-gnu/libk5crypto.so.3.1
     - /usr/share/doc/libk5crypto3/copyright
@@ -4127,8 +4126,8 @@
     DependsOn:
     - libc6@2.42-0ubuntu3.1
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     InstalledFiles:
     - /usr/lib/x86_64-linux-gnu/libkeyutils.so.1.10
     - /usr/share/doc/libkeyutils1/changelog.Debian.gz
@@ -4158,8 +4157,8 @@
     - libkrb5support0@1.21.3-5ubuntu2
     - libssl3t64@3.5.3-1ubuntu3.3
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     InstalledFiles:
     - /usr/lib/x86_64-linux-gnu/krb5/plugins/preauth/spake.so
     - /usr/lib/x86_64-linux-gnu/libkrb5.so.3.3
@@ -4187,8 +4186,8 @@
     DependsOn:
     - libc6@2.42-0ubuntu3.1
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     InstalledFiles:
     - /usr/lib/x86_64-linux-gnu/libkrb5support.so.0.1
     - /usr/share/doc/libkrb5support0/changelog.Debian.gz
@@ -4231,8 +4230,8 @@
     - libc6@2.42-0ubuntu3.1
     - libsqlite3-0@3.46.1-8
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     InstalledFiles:
     - /usr/lib/x86_64-linux-gnu/liblastlog2.so.2.0.0
     - /usr/share/doc/liblastlog2-2/NEWS.Debian.gz
@@ -4279,8 +4278,8 @@
     Repository:
       Class: official
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     InstalledFiles:
     - /usr/share/doc/libldap-common/NEWS.Debian.gz
     - /usr/share/doc/libldap-common/changelog.Debian.gz
@@ -4332,8 +4331,8 @@
     - libsasl2-2@2.1.28+dfsg1-9ubuntu1
     - libssl3t64@3.5.3-1ubuntu3.3
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     InstalledFiles:
     - /usr/lib/x86_64-linux-gnu/liblber.so.2.0.200
     - /usr/lib/x86_64-linux-gnu/libldap.so.2.0.200
@@ -4363,8 +4362,8 @@
     - libc6@2.42-0ubuntu3.1
     - libxxhash0@0.8.3-2
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     Digest: sha256:ca97e80d3fc01b86bc64ec5b22958cd8da078def38c1c44a88cfdacb339891ca
     InstalledFiles:
     - /usr/lib/x86_64-linux-gnu/liblz4.so.1.10.0
@@ -4403,8 +4402,8 @@
     DependsOn:
     - libc6@2.42-0ubuntu3.1
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     Digest: sha256:53af162c263b0c57811f9833888a4f70cc05b265d591d4ba5bbc057f9ea67e8d
     InstalledFiles:
     - /usr/lib/x86_64-linux-gnu/liblzma.so.5.8.1
@@ -4441,8 +4440,8 @@
     DependsOn:
     - libc6@2.42-0ubuntu3.1
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     Digest: sha256:ff989178c3dc95a434238bd6dfc903ba57962d7571cfd72ebea00396c6ed202d
     InstalledFiles:
     - /usr/lib/x86_64-linux-gnu/libmd.so.0.1.0
@@ -4486,8 +4485,8 @@
     - libc6@2.42-0ubuntu3.1
     - libselinux1@3.8.1-1build1
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     InstalledFiles:
     - /usr/lib/x86_64-linux-gnu/libmount.so.1.1.0
     - /usr/share/doc/libmount1/NEWS.Debian.gz
@@ -4513,8 +4512,8 @@
     - libc6@2.42-0ubuntu3.1
     - libtinfo6@6.5+20250216-2build1
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     Digest: sha256:4920a73f26ca171ecc68a445dcfceeaef2cc69701cb8b0359ef998d6f58cef20
     InstalledFiles:
     - /usr/lib/x86_64-linux-gnu/libformw.so.6.5
@@ -4549,8 +4548,8 @@
     DependsOn:
     - libc6@2.42-0ubuntu3.1
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     InstalledFiles:
     - /usr/lib/x86_64-linux-gnu/libnettle.so.8.10
     - /usr/share/doc/libnettle8t64/NEWS.gz
@@ -4582,8 +4581,8 @@
     DependsOn:
     - libc6@2.42-0ubuntu3.1
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     InstalledFiles:
     - /usr/lib/x86_64-linux-gnu/libnghttp2.so.14.28.3
     - /usr/share/doc/libnghttp2-14/AUTHORS
@@ -4622,8 +4621,8 @@
     - libc6@2.42-0ubuntu3.1
     - libffi8@3.5.2-1build1
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     InstalledFiles:
     - /usr/lib/x86_64-linux-gnu/libp11-kit.so.0.4.1
     - /usr/share/doc/libp11-kit0/changelog.Debian.gz
@@ -4657,8 +4656,8 @@
     Repository:
       Class: official
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     Digest: sha256:b66f6802facbe3a9eac20da69770d63815ff1e7fe27d2456d6af0424b612dfec
     InstalledFiles:
     - /usr/lib/x86_64-linux-gnu/security/pam_access.so
@@ -4746,8 +4745,8 @@
     - libselinux1@3.8.1-1build1
     - libsystemd0@257.9-0ubuntu2.4
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     Digest: sha256:5e388343f47b69bbbc30afe90c1c8e7df24286a80636b62b23e7b48d13a6552c
     InstalledFiles:
     - /usr/lib/systemd/system/pam_namespace.service
@@ -4793,8 +4792,8 @@
     - debconf@1.5.91
     - libpam-modules@1.7.0-5ubuntu2
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     Digest: sha256:9719c80da63dcd03bcf608c9104103dd5a27a73490293ab4ceb19e9990a2f056
     InstalledFiles:
     - /usr/sbin/pam-auth-update
@@ -4910,8 +4909,8 @@
     - libaudit1@1:4.0.5-1build1
     - libc6@2.42-0ubuntu3.1
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     Digest: sha256:50c92418dc28a5f9f7d448236dc30e52bc55988e5de6043ed59dddd7e5d9a62d
     InstalledFiles:
     - /usr/lib/x86_64-linux-gnu/libpam.so.0.85.1
@@ -4948,8 +4947,8 @@
     DependsOn:
     - libc6@2.42-0ubuntu3.1
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     Digest: sha256:5486870ccd3285970e15e9d6a6c68da1eabe438515790430f0a75dcc218a6c5b
     InstalledFiles:
     - /usr/lib/x86_64-linux-gnu/libpcre2-8.so.0.14.0
@@ -4984,8 +4983,8 @@
     - libc6@2.42-0ubuntu3.1
     - libsystemd0@257.9-0ubuntu2.4
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     Digest: sha256:56eb466afb2baf37e4f21bd14c3257fc1aa449e50afdd53c89e011c86e4d1548
     InstalledFiles:
     - /usr/lib/x86_64-linux-gnu/libproc2.so.0.0.2
@@ -5016,8 +5015,8 @@
     - libidn2-0@2.3.8-4
     - libunistring5@1.3-2
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     InstalledFiles:
     - /usr/lib/x86_64-linux-gnu/libpsl.so.5.3.4
     - /usr/share/doc/libpsl5t64/changelog.Debian.gz
@@ -5049,8 +5048,8 @@
     - libnettle8t64@3.10.1-1
     - zlib1g@1:1.3.dfsg+really1.3.1-1ubuntu2
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     InstalledFiles:
     - /usr/lib/x86_64-linux-gnu/librtmp.so.1
     - /usr/share/doc/librtmp1/changelog.Debian.gz
@@ -5093,8 +5092,8 @@
     - libsasl2-modules-db@2.1.28+dfsg1-9ubuntu1
     - libssl3t64@3.5.3-1ubuntu3.3
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     InstalledFiles:
     - /usr/lib/x86_64-linux-gnu/libsasl2.so.2.0.25
     - /usr/share/doc/libsasl2-2/README.Debian
@@ -5137,8 +5136,8 @@
     - libc6@2.42-0ubuntu3.1
     - libssl3t64@3.5.3-1ubuntu3.3
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     InstalledFiles:
     - /usr/lib/x86_64-linux-gnu/sasl2/libanonymous.so.2.0.25
     - /usr/lib/x86_64-linux-gnu/sasl2/libcrammd5.so.2.0.25
@@ -5186,8 +5185,8 @@
     - libc6@2.42-0ubuntu3.1
     - libdb5.3t64@5.3.28+dfsg2-9ubuntu1
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     InstalledFiles:
     - /usr/lib/x86_64-linux-gnu/sasl2/libsasldb.so.2.0.25
     - /usr/share/doc/libsasl2-modules-db/changelog.Debian.gz
@@ -5212,8 +5211,8 @@
     DependsOn:
     - libc6@2.42-0ubuntu3.1
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     Digest: sha256:5c5fe3d32ce8ceb021b9d61eb722dad2ee7e6f387c6344245de1e41ad23f19ac
     InstalledFiles:
     - /usr/lib/x86_64-linux-gnu/libseccomp.so.2.6.0
@@ -5241,8 +5240,8 @@
     - libc6@2.42-0ubuntu3.1
     - libpcre2-8-0@10.46-1
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     Digest: sha256:58c80f381334c019c8a397ddec57276b509b3cff9200726f7a001a3b404fd6e8
     InstalledFiles:
     - /usr/lib/tmpfiles.d/libselinux1.conf
@@ -5269,8 +5268,8 @@
     Repository:
       Class: official
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     Digest: sha256:6407d075b747041d4ba67fe6c26251491b87e42ed838d3c493cea01f4218f602
     InstalledFiles:
     - /usr/share/doc/libsemanage-common/changelog.Debian.gz
@@ -5303,8 +5302,8 @@
     - libsemanage-common@3.8.1-1
     - libsepol2@3.8.1-1
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     Digest: sha256:2dc336fcdeda2b38d207d756719479d33388872ff324400146298dbab613def5
     InstalledFiles:
     - /usr/lib/x86_64-linux-gnu/libsemanage.so.2
@@ -5334,8 +5333,8 @@
     DependsOn:
     - libc6@2.42-0ubuntu3.1
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     Digest: sha256:fa6d98611b86955964b34f5b0df69122d4648aa1cb95f2650d90230308cf9169
     InstalledFiles:
     - /usr/lib/x86_64-linux-gnu/libsepol.so.2
@@ -5377,8 +5376,8 @@
     DependsOn:
     - libc6@2.42-0ubuntu3.1
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     InstalledFiles:
     - /usr/lib/x86_64-linux-gnu/libsmartcols.so.1.1.0
     - /usr/share/doc/libsmartcols1/NEWS.Debian.gz
@@ -5407,8 +5406,8 @@
     DependsOn:
     - libc6@2.42-0ubuntu3.1
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     Digest: sha256:d53713d24b7aedeb9fca53c30571bac34820d5b5d0bee255ab236d2e0652befd
     InstalledFiles:
     - /usr/lib/x86_64-linux-gnu/libsqlite3.so.0.8.6
@@ -5449,8 +5448,8 @@
     - libc6@2.42-0ubuntu3.1
     - libcom-err2@1.47.2-3ubuntu2
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     Digest: sha256:3112a7540643cf93c745376c3d635fb8373069b700dee0f59d76a8bebe1903d5
     InstalledFiles:
     - /usr/lib/x86_64-linux-gnu/libss.so.2.0
@@ -5478,8 +5477,8 @@
     - libssl3t64@3.5.3-1ubuntu3.3
     - zlib1g@1:1.3.dfsg+really1.3.1-1ubuntu2
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     InstalledFiles:
     - /usr/lib/x86_64-linux-gnu/libssh2.so.1.0.1
     - /usr/share/doc/libssh2-1t64/AUTHORS
@@ -5512,8 +5511,8 @@
     - openssl-provider-legacy@3.5.3-1ubuntu3.3
     - zlib1g@1:1.3.dfsg+really1.3.1-1ubuntu2
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     InstalledFiles:
     - /usr/lib/x86_64-linux-gnu/engines-3/afalg.so
     - /usr/lib/x86_64-linux-gnu/engines-3/loader_attic.so
@@ -5544,8 +5543,8 @@
     - libc6@2.42-0ubuntu3.1
     - libgcc-s1@15.2.0-4ubuntu4
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     Digest: sha256:b8c22d58331521eb920a8c00fc4ecd986f4efff8a60bff73ced30684f56252f6
     InstalledFiles:
     - /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.34
@@ -5559,7 +5558,7 @@
     Name: libsystemd0
     Identifier:
       PURL: pkg:deb/ubuntu/libsystemd0@257.9-0ubuntu2.4?arch=amd64&distro=ubuntu-25.10
-      UID: fd185bb82858f50a
+      UID: b7d2a4bb150d8fb
     Version: '257.9'
     Release: 0ubuntu2.4
     Arch: amd64
@@ -5580,10 +5579,10 @@
       Class: official
     DependsOn:
     - libc6@2.42-0ubuntu3.1
-    - libcap2@1:2.75-7ubuntu2
+    - libcap2@1:2.75-7ubuntu2.2
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     InstalledFiles:
     - /usr/lib/x86_64-linux-gnu/libsystemd.so.0.40.0
     - /usr/share/doc/libsystemd0/NEWS.Debian.gz
@@ -5612,8 +5611,8 @@
     DependsOn:
     - libc6@2.42-0ubuntu3.1
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     InstalledFiles:
     - /usr/lib/x86_64-linux-gnu/libtasn1.so.6.6.4
     - /usr/share/doc/libtasn1-6/AUTHORS
@@ -5643,8 +5642,8 @@
     DependsOn:
     - libc6@2.42-0ubuntu3.1
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     Digest: sha256:bfffbdb3d1287339e0b4a40c1940755353a1a5bfb6b1f09ca5ec45035432c2b6
     InstalledFiles:
     - /usr/lib/x86_64-linux-gnu/libtic.so.6.5
@@ -5656,7 +5655,7 @@
     Name: libudev1
     Identifier:
       PURL: pkg:deb/ubuntu/libudev1@257.9-0ubuntu2.4?arch=amd64&distro=ubuntu-25.10
-      UID: 42f14767e4eb4adf
+      UID: 2df6338002659505
     Version: '257.9'
     Release: 0ubuntu2.4
     Arch: amd64
@@ -5677,10 +5676,10 @@
       Class: official
     DependsOn:
     - libc6@2.42-0ubuntu3.1
-    - libcap2@1:2.75-7ubuntu2
+    - libcap2@1:2.75-7ubuntu2.2
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     InstalledFiles:
     - /usr/lib/x86_64-linux-gnu/libudev.so.1.7.10
     - /usr/share/doc/libudev1/NEWS.Debian.gz
@@ -5725,8 +5724,8 @@
     DependsOn:
     - libc6@2.42-0ubuntu3.1
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     InstalledFiles:
     - /usr/lib/x86_64-linux-gnu/libunistring.so.5.2.0
     - /usr/share/doc/libunistring5/changelog.Debian.gz
@@ -5767,8 +5766,8 @@
     DependsOn:
     - libc6@2.42-0ubuntu3.1
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     InstalledFiles:
     - /usr/lib/x86_64-linux-gnu/libuuid.so.1.3.0
     - /usr/share/doc/libuuid1/NEWS.Debian.gz
@@ -5796,8 +5795,8 @@
     DependsOn:
     - libc6@2.42-0ubuntu3.1
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     Digest: sha256:6d8286d995aeef1ffc85790ff7d8bef957a214d94bc1277d716b6b2f5b8cbe51
     InstalledFiles:
     - /usr/lib/x86_64-linux-gnu/libxxhash.so.0.8.3
@@ -5826,8 +5825,8 @@
     DependsOn:
     - libc6@2.42-0ubuntu3.1
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     Digest: sha256:357b36efc6d9fdbfcd14e6c044d6f05d4cf901980066958d9a8ae183f972d9a4
     InstalledFiles:
     - /usr/lib/x86_64-linux-gnu/libzstd.so.1.5.7
@@ -5875,8 +5874,8 @@
     - libpam-runtime@1.7.0-5ubuntu2
     - libpam0g@1.7.0-5ubuntu2
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     InstalledFiles:
     - /usr/bin/login
     - /usr/bin/newgrp
@@ -5926,8 +5925,8 @@
     Repository:
       Class: official
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     Digest: sha256:6448d4fe20b68b23bc9f59a01452ce4499d72edba9bc5ead7c69f8b00110cff5
     InstalledFiles:
     - /usr/share/apport/package-hooks/source_shadow.py
@@ -5975,8 +5974,8 @@
     DependsOn:
     - libc6@2.42-0ubuntu3.1
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     Digest: sha256:25808957df8f7f9404964ca3c00979dfc304f0f7df6b06d36170e3e9e72272b0
     InstalledFiles:
     - /usr/sbin/logsave
@@ -6005,8 +6004,8 @@
     DependsOn:
     - libc6@2.42-0ubuntu3.1
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     Digest: sha256:8ccec85e069f802a586a8a4c388764571950d823596624585f0cc69510abf690
     InstalledFiles:
     - /usr/bin/mawk
@@ -6061,8 +6060,8 @@
     Repository:
       Class: official
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     InstalledFiles:
     - /usr/bin/mount
     - /usr/bin/umount
@@ -6107,8 +6106,8 @@
     Repository:
       Class: official
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     Digest: sha256:eec208c9947975f1a560000cd59bcecf6b9a8d4e69f39d6439fc15afc29dac35
     InstalledFiles:
     - /usr/share/doc/ncurses-base/FAQ
@@ -6181,8 +6180,8 @@
     Repository:
       Class: official
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     Digest: sha256:9dd5294a2637a6e3a669a21ede19998a4f9c1299e706ea929867f534de036a84
     InstalledFiles:
     - /usr/bin/clear
@@ -6226,8 +6225,8 @@
     - libc6@2.42-0ubuntu3.1
     - libssl3t64@3.5.3-1ubuntu3.3
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     InstalledFiles:
     - /usr/bin/c_rehash
     - /usr/bin/openssl
@@ -6489,8 +6488,8 @@
     - libc6@2.42-0ubuntu3.1
     - libssl3t64@3.5.3-1ubuntu3.3
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     InstalledFiles:
     - /usr/lib/x86_64-linux-gnu/ossl-modules/legacy.so
     - /usr/share/doc/openssl-provider-legacy/copyright
@@ -6529,8 +6528,8 @@
     - libsemanage2@3.8.1-1
     - login.defs@1:4.17.4-2ubuntu2
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     Digest: sha256:ad06647d80fc3f1e5199a25307412ced9998062ffd553e01f33ed4078eba0889
     InstalledFiles:
     - /usr/bin/chage
@@ -6898,8 +6897,8 @@
     Repository:
       Class: official
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     Digest: sha256:b41ed6c326d4168c7099d753e840de80a384be92e39d083904a0f07647625a2d
     InstalledFiles:
     - /usr/bin/perl
@@ -7557,8 +7556,8 @@
     - libsystemd0@257.9-0ubuntu2.4
     - libtinfo6@6.5+20250216-2build1
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     Digest: sha256:f088dfbdcdb949934171cf6857d2ba1e073510ce359fc7ef60af0d04d21d9c70
     InstalledFiles:
     - /usr/bin/free
@@ -7741,8 +7740,8 @@
     Repository:
       Class: official
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     InstalledFiles:
     - /usr/share/doc/publicsuffix/README.Debian
     - /usr/share/doc/publicsuffix/changelog.Debian.gz
@@ -7774,8 +7773,8 @@
     - libgcc-s1@15.2.0-4ubuntu4
     - libselinux1@3.8.1-1build1
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     InstalledFiles:
     - /usr/bin/coreutils
     - /usr/lib/cargo/bin/coreutils/[
@@ -8434,8 +8433,8 @@
     Repository:
       Class: official
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     Digest: sha256:ca581e6cee8e22a32b88539d8dfc90533274fd80a99b8ebb5dc8b2b2e7f93dd5
     InstalledFiles:
     - /usr/bin/sed
@@ -8470,8 +8469,8 @@
     Repository:
       Class: official
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     Digest: sha256:014c000644528a116204dab36cfafd7442616ccfda6a67d0c4c60667e2658c58
     InstalledFiles:
     - /usr/bin/select-editor
@@ -8535,8 +8534,8 @@
     - libssl3t64@3.5.3-1ubuntu3.3
     - zlib1g@1:1.3.dfsg+really1.3.1-1ubuntu2
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     InstalledFiles:
     - /usr/bin/cvtsudoers.ws
     - /usr/bin/sudo.ws
@@ -8612,8 +8611,8 @@
     - libpam0g@1.7.0-5ubuntu2
     - sudo@1.9.17p2-1ubuntu1.1
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     InstalledFiles:
     - /usr/lib/cargo/bin/su
     - /usr/lib/cargo/bin/sudo
@@ -8650,8 +8649,8 @@
     DependsOn:
     - libc6@2.42-0ubuntu3.1
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     Digest: sha256:3c62dcbc9c6feb11291c2245645bb13d1cd30e341288b17e3fd09ccefa39ed65
     InstalledFiles:
     - /usr/lib/init/init-d-script
@@ -8693,8 +8692,8 @@
     Repository:
       Class: official
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     Digest: sha256:6f8ffd06673b253675aee3c111bcde2467809c5edf714ec53cfd45cce9090342
     InstalledFiles:
     - /usr/bin/tar
@@ -8726,8 +8725,8 @@
     Repository:
       Class: official
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     Digest: sha256:36de43b15853ccae0028e9a767613770c704833f82586f28eb262f0311adb8a8
     InstalledFiles:
     - /etc/apt/trusted.gpg.d/ubuntu-keyring-2012-cdimage.gpg
@@ -8773,8 +8772,8 @@
     Repository:
       Class: official
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     InstalledFiles:
     - /usr/bin/choom
     - /usr/bin/chrt
@@ -9045,8 +9044,8 @@
     DependsOn:
     - libc6@2.42-0ubuntu3.1
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     Digest: sha256:f8100c77fdf80754b2e0fa46366fae640ed933458be85cc633dc3cf1fa30176b
     InstalledFiles:
     - /usr/lib/x86_64-linux-gnu/libz.so.1.3.1
@@ -9054,6 +9053,47 @@
     - /usr/share/doc/zlib1g/copyright
     AnalyzedBy: dpkg
   Vulnerabilities:
+  - VulnerabilityID: CVE-2026-27456
+    PkgID: bsdutils@1:2.41-4ubuntu4.2
+    PkgName: bsdutils
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/bsdutils@2.41-4ubuntu4.2?arch=amd64&distro=ubuntu-25.10&epoch=1
+      UID: 411fc06346b75c80
+    InstalledVersion: 1:2.41-4ubuntu4.2
+    Status: affected
+    Layer:
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-27456
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:22bb7d394f132c2dce7fcca0a57546174d3decf57dfa25a7acaff2174f362621
+    Title: 'util-linux: TOCTOU in the mount program when setting up loop devices'
+    Description: util-linux is a random collection of Linux utilities. Prior to version 2.41.4, a TOCTOU (Time-of-Check-Time-of-Use) vulnerability has been identified in the SUID binary /usr/bin/mount from util-linux. The mount binary, when setting up loop devices, validates the source file path with user privileges via fork() + setuid() + realpath(), but subsequently re-canonicalizes and opens it with root privileges (euid=0) without verifying that the path has not been replaced between both operations. Neither O_NOFOLLOW, nor inode comparison, nor post-open fstat() are employed. This allows a local unprivileged user to replace the source file with a symlink pointing to any root-owned file or device during the race window, causing the SUID binary to open and mount it as root. Exploitation requires an /etc/fstab entry with user,loop options whose path points to a directory where the attacker has write permission, and that /usr/bin/mount has the SUID bit set (the default configuration on virtually all Linux distributions). The impact is unauthorized read access to root-protected files and block devices, including backup images, disk volumes, and any file containing a valid filesystem. This issue has been patched in version 2.41.4.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-59
+    - CWE-269
+    - CWE-367
+    VendorSeverity:
+      redhat: 2
+      ubuntu: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:N/A:N
+        V3Score: 4.7
+    References:
+    - https://access.redhat.com/security/cve/CVE-2026-27456
+    - https://github.com/util-linux/util-linux/commit/5e390467b26a3cf3fecc04e1a0d482dff3162fc4
+    - https://github.com/util-linux/util-linux/releases/tag/v2.41.4
+    - https://github.com/util-linux/util-linux/security/advisories/GHSA-qq4x-vfq4-9h9g
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-27456
+    - https://www.cve.org/CVERecord?id=CVE-2026-27456
+    PublishedDate: '2026-04-03T22:16:25.4Z'
+    LastModifiedDate: '2026-04-22T16:08:55.1Z'
   - VulnerabilityID: CVE-2026-3184
     PkgID: bsdutils@1:2.41-4ubuntu4.2
     PkgName: bsdutils
@@ -9063,15 +9103,15 @@
     InstalledVersion: 1:2.41-4ubuntu4.2
     Status: affected
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     SeveritySource: ubuntu
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-3184
     DataSource:
       ID: ubuntu
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Fingerprint: sha256:de8533e494e84fd90f0314fda4a2af75148386c0e7807a43588863229d9a4727
+    Fingerprint: sha256:77d747d4986b4d6f6e5a50e9ffcc320c856a58ac4308e020e6664a851a376128
     Title: 'util-linux: util-linux: Access control bypass due to improper hostname canonicalization'
     Description: A flaw was found in util-linux. Improper hostname canonicalization in the `login(1)` utility, when invoked with the `-h` option, can modify the supplied remote hostname before setting `PAM_RHOST`. A remote attacker could exploit this by providing a specially crafted hostname, potentially bypassing host-based Pluggable Authentication Modules (PAM) access control rules that rely on fully qualified domain names. This could lead to unauthorized access.
     Severity: MEDIUM
@@ -9091,6 +9131,78 @@
     - https://www.cve.org/CVERecord?id=CVE-2026-3184
     PublishedDate: '2026-04-03T19:17:23.377Z'
     LastModifiedDate: '2026-04-07T13:20:55.2Z'
+  - VulnerabilityID: CVE-2026-2219
+    PkgID: dpkg@1.22.21ubuntu3.1
+    PkgName: dpkg
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/dpkg@1.22.21ubuntu3.1?arch=amd64&distro=ubuntu-25.10
+      UID: 441b18c6d9fcf5d3
+    InstalledVersion: 1.22.21ubuntu3.1
+    Status: affected
+    Layer:
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-2219
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:68f7ba230b307db20a88483be78445f00c6be5c3b330e7c8027f05440a782322
+    Title: It was discovered that dpkg-deb (a component of dpkg, the Debian packa ...
+    Description: It was discovered that dpkg-deb (a component of dpkg, the Debian package management system) does not properly validate the end of the data stream when uncompressing a zstd-compressed .deb archive, which may result in denial of service (infinite loop spinning the CPU).
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-835
+    VendorSeverity:
+      ubuntu: 2
+    References:
+    - https://bugs.debian.org/1129722
+    - https://git.dpkg.org/cgit/dpkg/dpkg.git/commit/?id=6610297a62c0780dd0e80b0e302ef64fdcc9d313
+    - https://www.cve.org/CVERecord?id=CVE-2026-2219
+    PublishedDate: '2026-03-07T09:16:07.823Z'
+    LastModifiedDate: '2026-03-09T15:15:57.87Z'
+  - VulnerabilityID: CVE-2026-27456
+    PkgID: libblkid1@2.41-4ubuntu4.2
+    PkgName: libblkid1
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/libblkid1@2.41-4ubuntu4.2?arch=amd64&distro=ubuntu-25.10
+      UID: ddaca4141760dfcf
+    InstalledVersion: 2.41-4ubuntu4.2
+    Status: affected
+    Layer:
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-27456
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:df196e6c7daf6878bc9e0827269a02490e82ae1e0636799e9f2dd025384b76e5
+    Title: 'util-linux: TOCTOU in the mount program when setting up loop devices'
+    Description: util-linux is a random collection of Linux utilities. Prior to version 2.41.4, a TOCTOU (Time-of-Check-Time-of-Use) vulnerability has been identified in the SUID binary /usr/bin/mount from util-linux. The mount binary, when setting up loop devices, validates the source file path with user privileges via fork() + setuid() + realpath(), but subsequently re-canonicalizes and opens it with root privileges (euid=0) without verifying that the path has not been replaced between both operations. Neither O_NOFOLLOW, nor inode comparison, nor post-open fstat() are employed. This allows a local unprivileged user to replace the source file with a symlink pointing to any root-owned file or device during the race window, causing the SUID binary to open and mount it as root. Exploitation requires an /etc/fstab entry with user,loop options whose path points to a directory where the attacker has write permission, and that /usr/bin/mount has the SUID bit set (the default configuration on virtually all Linux distributions). The impact is unauthorized read access to root-protected files and block devices, including backup images, disk volumes, and any file containing a valid filesystem. This issue has been patched in version 2.41.4.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-59
+    - CWE-269
+    - CWE-367
+    VendorSeverity:
+      redhat: 2
+      ubuntu: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:N/A:N
+        V3Score: 4.7
+    References:
+    - https://access.redhat.com/security/cve/CVE-2026-27456
+    - https://github.com/util-linux/util-linux/commit/5e390467b26a3cf3fecc04e1a0d482dff3162fc4
+    - https://github.com/util-linux/util-linux/releases/tag/v2.41.4
+    - https://github.com/util-linux/util-linux/security/advisories/GHSA-qq4x-vfq4-9h9g
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-27456
+    - https://www.cve.org/CVERecord?id=CVE-2026-27456
+    PublishedDate: '2026-04-03T22:16:25.4Z'
+    LastModifiedDate: '2026-04-22T16:08:55.1Z'
   - VulnerabilityID: CVE-2026-3184
     PkgID: libblkid1@2.41-4ubuntu4.2
     PkgName: libblkid1
@@ -9100,15 +9212,15 @@
     InstalledVersion: 2.41-4ubuntu4.2
     Status: affected
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     SeveritySource: ubuntu
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-3184
     DataSource:
       ID: ubuntu
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Fingerprint: sha256:4a1a8bb86f76d64ee5235d853096e4bcfed1661865516f907e61c85f90a9654e
+    Fingerprint: sha256:1ccb5b5cd98a155f8711f5833db202d2d7214fa5f6771845bce45f26313178ae
     Title: 'util-linux: util-linux: Access control bypass due to improper hostname canonicalization'
     Description: A flaw was found in util-linux. Improper hostname canonicalization in the `login(1)` utility, when invoked with the `-h` option, can modify the supplied remote hostname before setting `PAM_RHOST`. A remote attacker could exploit this by providing a specially crafted hostname, potentially bypassing host-based Pluggable Authentication Modules (PAM) access control rules that rely on fully qualified domain names. This could lead to unauthorized access.
     Severity: MEDIUM
@@ -9128,6 +9240,262 @@
     - https://www.cve.org/CVERecord?id=CVE-2026-3184
     PublishedDate: '2026-04-03T19:17:23.377Z'
     LastModifiedDate: '2026-04-07T13:20:55.2Z'
+  - VulnerabilityID: CVE-2026-4046
+    PkgID: libc-bin@2.42-0ubuntu3.1
+    PkgName: libc-bin
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/libc-bin@2.42-0ubuntu3.1?arch=amd64&distro=ubuntu-25.10
+      UID: 32f722fad25bcb3d
+    InstalledVersion: 2.42-0ubuntu3.1
+    Status: affected
+    Layer:
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-4046
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:c4cd7122f9a7197351a004208f515e0535c4cd67106a76d13c3f6ef91c8b7dc1
+    Title: 'glibc: glibc: Denial of Service via iconv() function with specific character sets'
+    Description: |-
+      The iconv() function in the GNU C Library versions 2.43 and earlier may crash due to an assertion failure when converting inputs from the IBM1390 or IBM1399 character sets, which may be used to remotely crash an application.
+
+
+
+      This vulnerability can be trivially mitigated by removing the IBM1390 and IBM1399 character sets from systems that do not need them.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-617
+    VendorSeverity:
+      photon: 3
+      redhat: 2
+      ubuntu: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L
+        V3Score: 5.3
+    References:
+    - https://access.redhat.com/security/cve/CVE-2026-4046
+    - https://inbox.sourceware.org/libc-announce/76814edf-cf7f-47ec-979d-2dce0a2c76bf@gotplt.org/T/#u
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-4046
+    - https://packages.fedoraproject.org/pkgs/glibc/glibc-gconv-extra/
+    - https://sourceware.org/bugzilla/show_bug.cgi?id=33980
+    - https://sourceware.org/git/?p=glibc.git;a=blob_plain;f=advisories/GLIBC-SA-2026-0007
+    - https://sourceware.org/git/?p=glibc.git;a=blob_plain;f=advisories/GLIBC-SA-2026-0007;hb=HEAD
+    - https://www.cve.org/CVERecord?id=CVE-2026-4046
+    PublishedDate: '2026-03-30T18:16:19.573Z'
+    LastModifiedDate: '2026-04-20T22:16:23.623Z'
+  - VulnerabilityID: CVE-2026-4437
+    PkgID: libc-bin@2.42-0ubuntu3.1
+    PkgName: libc-bin
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/libc-bin@2.42-0ubuntu3.1?arch=amd64&distro=ubuntu-25.10
+      UID: 32f722fad25bcb3d
+    InstalledVersion: 2.42-0ubuntu3.1
+    Status: affected
+    Layer:
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-4437
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:a24ae4a44fdcea51bd4e87aa5ced5314a3f9531763cbdaf81aee300127680fd7
+    Title: 'glibc: glibc: Incorrect DNS response parsing via crafted DNS server response'
+    Description: Calling gethostbyaddr or gethostbyaddr_r with a configured nsswitch.conf that specifies the library's DNS backend in the GNU C Library version 2.34 to version 2.43 could, with a crafted response from the configured DNS server, result in a violation of the DNS specification that causes the application to treat a non-answer section of the DNS response as a valid answer.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-125
+    VendorSeverity:
+      azure: 2
+      photon: 2
+      redhat: 2
+      ubuntu: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:L
+        V3Score: 6.5
+    References:
+    - https://access.redhat.com/security/cve/CVE-2026-4437
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-4437
+    - https://sourceware.org/bugzilla/show_bug.cgi?id=34014
+    - https://www.cve.org/CVERecord?id=CVE-2026-4437
+    - https://www.openwall.com/lists/oss-security/2026/03/23/2
+    PublishedDate: '2026-03-20T20:16:49.477Z'
+    LastModifiedDate: '2026-04-07T18:41:36.647Z'
+  - VulnerabilityID: CVE-2026-4438
+    PkgID: libc-bin@2.42-0ubuntu3.1
+    PkgName: libc-bin
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/libc-bin@2.42-0ubuntu3.1?arch=amd64&distro=ubuntu-25.10
+      UID: 32f722fad25bcb3d
+    InstalledVersion: 2.42-0ubuntu3.1
+    Status: affected
+    Layer:
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-4438
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:c94b6a38b7b4357eada7d255662a7bb9708286face55bfa44be7f6a36298fb99
+    Title: 'glibc: glibc: Invalid DNS hostname returned via gethostbyaddr functions'
+    Description: Calling gethostbyaddr or gethostbyaddr_r with a configured nsswitch.conf that specifies the library's DNS backend in the GNU C library version 2.34 to version 2.43 could result in an invalid DNS hostname being returned to the caller in violation of the DNS specification.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-20
+    - CWE-88
+    VendorSeverity:
+      azure: 2
+      photon: 4
+      redhat: 1
+      ubuntu: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N
+        V3Score: 4
+    References:
+    - https://access.redhat.com/security/cve/CVE-2026-4438
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-4438
+    - https://sourceware.org/bugzilla/show_bug.cgi?id=34015
+    - https://www.cve.org/CVERecord?id=CVE-2026-4438
+    - https://www.openwall.com/lists/oss-security/2026/03/23/2
+    PublishedDate: '2026-03-20T20:16:49.623Z'
+    LastModifiedDate: '2026-04-07T18:40:02.177Z'
+  - VulnerabilityID: CVE-2026-4046
+    PkgID: libc6@2.42-0ubuntu3.1
+    PkgName: libc6
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/libc6@2.42-0ubuntu3.1?arch=amd64&distro=ubuntu-25.10
+      UID: 67fff5c1ddc17a00
+    InstalledVersion: 2.42-0ubuntu3.1
+    Status: affected
+    Layer:
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-4046
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:688222a61cfb2bf695f00d1b796bf0a02b3f41140493391e8d7565c779db29f1
+    Title: 'glibc: glibc: Denial of Service via iconv() function with specific character sets'
+    Description: |-
+      The iconv() function in the GNU C Library versions 2.43 and earlier may crash due to an assertion failure when converting inputs from the IBM1390 or IBM1399 character sets, which may be used to remotely crash an application.
+
+
+
+      This vulnerability can be trivially mitigated by removing the IBM1390 and IBM1399 character sets from systems that do not need them.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-617
+    VendorSeverity:
+      photon: 3
+      redhat: 2
+      ubuntu: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L
+        V3Score: 5.3
+    References:
+    - https://access.redhat.com/security/cve/CVE-2026-4046
+    - https://inbox.sourceware.org/libc-announce/76814edf-cf7f-47ec-979d-2dce0a2c76bf@gotplt.org/T/#u
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-4046
+    - https://packages.fedoraproject.org/pkgs/glibc/glibc-gconv-extra/
+    - https://sourceware.org/bugzilla/show_bug.cgi?id=33980
+    - https://sourceware.org/git/?p=glibc.git;a=blob_plain;f=advisories/GLIBC-SA-2026-0007
+    - https://sourceware.org/git/?p=glibc.git;a=blob_plain;f=advisories/GLIBC-SA-2026-0007;hb=HEAD
+    - https://www.cve.org/CVERecord?id=CVE-2026-4046
+    PublishedDate: '2026-03-30T18:16:19.573Z'
+    LastModifiedDate: '2026-04-20T22:16:23.623Z'
+  - VulnerabilityID: CVE-2026-4437
+    PkgID: libc6@2.42-0ubuntu3.1
+    PkgName: libc6
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/libc6@2.42-0ubuntu3.1?arch=amd64&distro=ubuntu-25.10
+      UID: 67fff5c1ddc17a00
+    InstalledVersion: 2.42-0ubuntu3.1
+    Status: affected
+    Layer:
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-4437
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:df9e74ba09a63ad6b07012db17982fa4444ac0cfe4b4001c383aeda4d56e51c2
+    Title: 'glibc: glibc: Incorrect DNS response parsing via crafted DNS server response'
+    Description: Calling gethostbyaddr or gethostbyaddr_r with a configured nsswitch.conf that specifies the library's DNS backend in the GNU C Library version 2.34 to version 2.43 could, with a crafted response from the configured DNS server, result in a violation of the DNS specification that causes the application to treat a non-answer section of the DNS response as a valid answer.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-125
+    VendorSeverity:
+      azure: 2
+      photon: 2
+      redhat: 2
+      ubuntu: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:L
+        V3Score: 6.5
+    References:
+    - https://access.redhat.com/security/cve/CVE-2026-4437
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-4437
+    - https://sourceware.org/bugzilla/show_bug.cgi?id=34014
+    - https://www.cve.org/CVERecord?id=CVE-2026-4437
+    - https://www.openwall.com/lists/oss-security/2026/03/23/2
+    PublishedDate: '2026-03-20T20:16:49.477Z'
+    LastModifiedDate: '2026-04-07T18:41:36.647Z'
+  - VulnerabilityID: CVE-2026-4438
+    PkgID: libc6@2.42-0ubuntu3.1
+    PkgName: libc6
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/libc6@2.42-0ubuntu3.1?arch=amd64&distro=ubuntu-25.10
+      UID: 67fff5c1ddc17a00
+    InstalledVersion: 2.42-0ubuntu3.1
+    Status: affected
+    Layer:
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-4438
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:da49878fbf1211d8e18753a98e064a4768b177df7e77f46a417f02aee4f6f553
+    Title: 'glibc: glibc: Invalid DNS hostname returned via gethostbyaddr functions'
+    Description: Calling gethostbyaddr or gethostbyaddr_r with a configured nsswitch.conf that specifies the library's DNS backend in the GNU C library version 2.34 to version 2.43 could result in an invalid DNS hostname being returned to the caller in violation of the DNS specification.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-20
+    - CWE-88
+    VendorSeverity:
+      azure: 2
+      photon: 4
+      redhat: 1
+      ubuntu: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N
+        V3Score: 4
+    References:
+    - https://access.redhat.com/security/cve/CVE-2026-4438
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-4438
+    - https://sourceware.org/bugzilla/show_bug.cgi?id=34015
+    - https://www.cve.org/CVERecord?id=CVE-2026-4438
+    - https://www.openwall.com/lists/oss-security/2026/03/23/2
+    PublishedDate: '2026-03-20T20:16:49.623Z'
+    LastModifiedDate: '2026-04-07T18:40:02.177Z'
   - VulnerabilityID: CVE-2024-2236
     PkgID: libgcrypt20@1.11.0-7build1
     PkgName: libgcrypt20
@@ -9137,15 +9505,15 @@
     InstalledVersion: 1.11.0-7build1
     Status: affected
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     SeveritySource: ubuntu
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2024-2236
     DataSource:
       ID: ubuntu
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Fingerprint: sha256:48af6f789db001a55cec1ec8b99931e41496f959cad70a44b90967959e456da4
+    Fingerprint: sha256:c0fc060c55f506a88f5469b531a949178230c58986d00e971f9c0411198eabad
     Title: 'libgcrypt: vulnerable to Marvin Attack'
     Description: A timing-based side-channel flaw was found in libgcrypt's RSA implementation. This issue may allow a remote attacker to initiate a Bleichenbacher-style attack, which can lead to the decryption of RSA ciphertexts.
     Severity: LOW
@@ -9183,6 +9551,47 @@
     - https://www.cve.org/CVERecord?id=CVE-2024-2236
     PublishedDate: '2024-03-06T22:15:57.977Z'
     LastModifiedDate: '2026-04-15T00:35:42.02Z'
+  - VulnerabilityID: CVE-2026-27456
+    PkgID: liblastlog2-2@2.41-4ubuntu4.2
+    PkgName: liblastlog2-2
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/liblastlog2-2@2.41-4ubuntu4.2?arch=amd64&distro=ubuntu-25.10
+      UID: 6aa63af50fb78d18
+    InstalledVersion: 2.41-4ubuntu4.2
+    Status: affected
+    Layer:
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-27456
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:9398e9565731b023a4a219ca2d9659af5174930c8da0695b8c48447576788013
+    Title: 'util-linux: TOCTOU in the mount program when setting up loop devices'
+    Description: util-linux is a random collection of Linux utilities. Prior to version 2.41.4, a TOCTOU (Time-of-Check-Time-of-Use) vulnerability has been identified in the SUID binary /usr/bin/mount from util-linux. The mount binary, when setting up loop devices, validates the source file path with user privileges via fork() + setuid() + realpath(), but subsequently re-canonicalizes and opens it with root privileges (euid=0) without verifying that the path has not been replaced between both operations. Neither O_NOFOLLOW, nor inode comparison, nor post-open fstat() are employed. This allows a local unprivileged user to replace the source file with a symlink pointing to any root-owned file or device during the race window, causing the SUID binary to open and mount it as root. Exploitation requires an /etc/fstab entry with user,loop options whose path points to a directory where the attacker has write permission, and that /usr/bin/mount has the SUID bit set (the default configuration on virtually all Linux distributions). The impact is unauthorized read access to root-protected files and block devices, including backup images, disk volumes, and any file containing a valid filesystem. This issue has been patched in version 2.41.4.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-59
+    - CWE-269
+    - CWE-367
+    VendorSeverity:
+      redhat: 2
+      ubuntu: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:N/A:N
+        V3Score: 4.7
+    References:
+    - https://access.redhat.com/security/cve/CVE-2026-27456
+    - https://github.com/util-linux/util-linux/commit/5e390467b26a3cf3fecc04e1a0d482dff3162fc4
+    - https://github.com/util-linux/util-linux/releases/tag/v2.41.4
+    - https://github.com/util-linux/util-linux/security/advisories/GHSA-qq4x-vfq4-9h9g
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-27456
+    - https://www.cve.org/CVERecord?id=CVE-2026-27456
+    PublishedDate: '2026-04-03T22:16:25.4Z'
+    LastModifiedDate: '2026-04-22T16:08:55.1Z'
   - VulnerabilityID: CVE-2026-3184
     PkgID: liblastlog2-2@2.41-4ubuntu4.2
     PkgName: liblastlog2-2
@@ -9192,15 +9601,15 @@
     InstalledVersion: 2.41-4ubuntu4.2
     Status: affected
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     SeveritySource: ubuntu
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-3184
     DataSource:
       ID: ubuntu
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Fingerprint: sha256:2e486d76769f017a1b1e02862856cafc296c75e5ee26a69d1892fc5502b09a0f
+    Fingerprint: sha256:4e1d2d6361b4adbd631e7de92910e457e631d585b488ce39e37d0dbe0468b45e
     Title: 'util-linux: util-linux: Access control bypass due to improper hostname canonicalization'
     Description: A flaw was found in util-linux. Improper hostname canonicalization in the `login(1)` utility, when invoked with the `-h` option, can modify the supplied remote hostname before setting `PAM_RHOST`. A remote attacker could exploit this by providing a specially crafted hostname, potentially bypassing host-based Pluggable Authentication Modules (PAM) access control rules that rely on fully qualified domain names. This could lead to unauthorized access.
     Severity: MEDIUM
@@ -9220,6 +9629,47 @@
     - https://www.cve.org/CVERecord?id=CVE-2026-3184
     PublishedDate: '2026-04-03T19:17:23.377Z'
     LastModifiedDate: '2026-04-07T13:20:55.2Z'
+  - VulnerabilityID: CVE-2026-27456
+    PkgID: libmount1@2.41-4ubuntu4.2
+    PkgName: libmount1
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/libmount1@2.41-4ubuntu4.2?arch=amd64&distro=ubuntu-25.10
+      UID: e278fd35c2ddbe27
+    InstalledVersion: 2.41-4ubuntu4.2
+    Status: affected
+    Layer:
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-27456
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:d3334ed5a9faecb4012c28ef034f9da4e254520fc9fd1454c57f3ddcc3887e6c
+    Title: 'util-linux: TOCTOU in the mount program when setting up loop devices'
+    Description: util-linux is a random collection of Linux utilities. Prior to version 2.41.4, a TOCTOU (Time-of-Check-Time-of-Use) vulnerability has been identified in the SUID binary /usr/bin/mount from util-linux. The mount binary, when setting up loop devices, validates the source file path with user privileges via fork() + setuid() + realpath(), but subsequently re-canonicalizes and opens it with root privileges (euid=0) without verifying that the path has not been replaced between both operations. Neither O_NOFOLLOW, nor inode comparison, nor post-open fstat() are employed. This allows a local unprivileged user to replace the source file with a symlink pointing to any root-owned file or device during the race window, causing the SUID binary to open and mount it as root. Exploitation requires an /etc/fstab entry with user,loop options whose path points to a directory where the attacker has write permission, and that /usr/bin/mount has the SUID bit set (the default configuration on virtually all Linux distributions). The impact is unauthorized read access to root-protected files and block devices, including backup images, disk volumes, and any file containing a valid filesystem. This issue has been patched in version 2.41.4.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-59
+    - CWE-269
+    - CWE-367
+    VendorSeverity:
+      redhat: 2
+      ubuntu: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:N/A:N
+        V3Score: 4.7
+    References:
+    - https://access.redhat.com/security/cve/CVE-2026-27456
+    - https://github.com/util-linux/util-linux/commit/5e390467b26a3cf3fecc04e1a0d482dff3162fc4
+    - https://github.com/util-linux/util-linux/releases/tag/v2.41.4
+    - https://github.com/util-linux/util-linux/security/advisories/GHSA-qq4x-vfq4-9h9g
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-27456
+    - https://www.cve.org/CVERecord?id=CVE-2026-27456
+    PublishedDate: '2026-04-03T22:16:25.4Z'
+    LastModifiedDate: '2026-04-22T16:08:55.1Z'
   - VulnerabilityID: CVE-2026-3184
     PkgID: libmount1@2.41-4ubuntu4.2
     PkgName: libmount1
@@ -9229,15 +9679,15 @@
     InstalledVersion: 2.41-4ubuntu4.2
     Status: affected
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     SeveritySource: ubuntu
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-3184
     DataSource:
       ID: ubuntu
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Fingerprint: sha256:6152938e8fd757721a889753e97d05d59ce46b33087e3220f40a4f610a9e45ba
+    Fingerprint: sha256:cbb01aabf7dce9261c55d9e89de812f752a599c4776cdc48d0b7de2b12f110a0
     Title: 'util-linux: util-linux: Access control bypass due to improper hostname canonicalization'
     Description: A flaw was found in util-linux. Improper hostname canonicalization in the `login(1)` utility, when invoked with the `-h` option, can modify the supplied remote hostname before setting `PAM_RHOST`. A remote attacker could exploit this by providing a specially crafted hostname, potentially bypassing host-based Pluggable Authentication Modules (PAM) access control rules that rely on fully qualified domain names. This could lead to unauthorized access.
     Severity: MEDIUM
@@ -9257,6 +9707,47 @@
     - https://www.cve.org/CVERecord?id=CVE-2026-3184
     PublishedDate: '2026-04-03T19:17:23.377Z'
     LastModifiedDate: '2026-04-07T13:20:55.2Z'
+  - VulnerabilityID: CVE-2026-27456
+    PkgID: libsmartcols1@2.41-4ubuntu4.2
+    PkgName: libsmartcols1
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/libsmartcols1@2.41-4ubuntu4.2?arch=amd64&distro=ubuntu-25.10
+      UID: 5caf4ed7c33e8ba9
+    InstalledVersion: 2.41-4ubuntu4.2
+    Status: affected
+    Layer:
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-27456
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:9f191601c4da5faaa3bdc861774c3fb8551ea64955ff7de8a56127709fafb396
+    Title: 'util-linux: TOCTOU in the mount program when setting up loop devices'
+    Description: util-linux is a random collection of Linux utilities. Prior to version 2.41.4, a TOCTOU (Time-of-Check-Time-of-Use) vulnerability has been identified in the SUID binary /usr/bin/mount from util-linux. The mount binary, when setting up loop devices, validates the source file path with user privileges via fork() + setuid() + realpath(), but subsequently re-canonicalizes and opens it with root privileges (euid=0) without verifying that the path has not been replaced between both operations. Neither O_NOFOLLOW, nor inode comparison, nor post-open fstat() are employed. This allows a local unprivileged user to replace the source file with a symlink pointing to any root-owned file or device during the race window, causing the SUID binary to open and mount it as root. Exploitation requires an /etc/fstab entry with user,loop options whose path points to a directory where the attacker has write permission, and that /usr/bin/mount has the SUID bit set (the default configuration on virtually all Linux distributions). The impact is unauthorized read access to root-protected files and block devices, including backup images, disk volumes, and any file containing a valid filesystem. This issue has been patched in version 2.41.4.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-59
+    - CWE-269
+    - CWE-367
+    VendorSeverity:
+      redhat: 2
+      ubuntu: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:N/A:N
+        V3Score: 4.7
+    References:
+    - https://access.redhat.com/security/cve/CVE-2026-27456
+    - https://github.com/util-linux/util-linux/commit/5e390467b26a3cf3fecc04e1a0d482dff3162fc4
+    - https://github.com/util-linux/util-linux/releases/tag/v2.41.4
+    - https://github.com/util-linux/util-linux/security/advisories/GHSA-qq4x-vfq4-9h9g
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-27456
+    - https://www.cve.org/CVERecord?id=CVE-2026-27456
+    PublishedDate: '2026-04-03T22:16:25.4Z'
+    LastModifiedDate: '2026-04-22T16:08:55.1Z'
   - VulnerabilityID: CVE-2026-3184
     PkgID: libsmartcols1@2.41-4ubuntu4.2
     PkgName: libsmartcols1
@@ -9266,15 +9757,15 @@
     InstalledVersion: 2.41-4ubuntu4.2
     Status: affected
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     SeveritySource: ubuntu
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-3184
     DataSource:
       ID: ubuntu
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Fingerprint: sha256:b10d99088ff27e40dc2c16327f7373e68843e2352767ca16d073a5e6d7359219
+    Fingerprint: sha256:d3deab7af44bc6fc72c168b7f8d54d6583e63997be99642c3b10619bab1501e9
     Title: 'util-linux: util-linux: Access control bypass due to improper hostname canonicalization'
     Description: A flaw was found in util-linux. Improper hostname canonicalization in the `login(1)` utility, when invoked with the `-h` option, can modify the supplied remote hostname before setting `PAM_RHOST`. A remote attacker could exploit this by providing a specially crafted hostname, potentially bypassing host-based Pluggable Authentication Modules (PAM) access control rules that rely on fully qualified domain names. This could lead to unauthorized access.
     Severity: MEDIUM
@@ -9294,6 +9785,47 @@
     - https://www.cve.org/CVERecord?id=CVE-2026-3184
     PublishedDate: '2026-04-03T19:17:23.377Z'
     LastModifiedDate: '2026-04-07T13:20:55.2Z'
+  - VulnerabilityID: CVE-2026-27456
+    PkgID: libuuid1@2.41-4ubuntu4.2
+    PkgName: libuuid1
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/libuuid1@2.41-4ubuntu4.2?arch=amd64&distro=ubuntu-25.10
+      UID: 23db7c315eddf1f4
+    InstalledVersion: 2.41-4ubuntu4.2
+    Status: affected
+    Layer:
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-27456
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:c62bc47cabbf54be985eaa48b9d2d5fe598848142a2a87ad2bfe5f96075228e8
+    Title: 'util-linux: TOCTOU in the mount program when setting up loop devices'
+    Description: util-linux is a random collection of Linux utilities. Prior to version 2.41.4, a TOCTOU (Time-of-Check-Time-of-Use) vulnerability has been identified in the SUID binary /usr/bin/mount from util-linux. The mount binary, when setting up loop devices, validates the source file path with user privileges via fork() + setuid() + realpath(), but subsequently re-canonicalizes and opens it with root privileges (euid=0) without verifying that the path has not been replaced between both operations. Neither O_NOFOLLOW, nor inode comparison, nor post-open fstat() are employed. This allows a local unprivileged user to replace the source file with a symlink pointing to any root-owned file or device during the race window, causing the SUID binary to open and mount it as root. Exploitation requires an /etc/fstab entry with user,loop options whose path points to a directory where the attacker has write permission, and that /usr/bin/mount has the SUID bit set (the default configuration on virtually all Linux distributions). The impact is unauthorized read access to root-protected files and block devices, including backup images, disk volumes, and any file containing a valid filesystem. This issue has been patched in version 2.41.4.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-59
+    - CWE-269
+    - CWE-367
+    VendorSeverity:
+      redhat: 2
+      ubuntu: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:N/A:N
+        V3Score: 4.7
+    References:
+    - https://access.redhat.com/security/cve/CVE-2026-27456
+    - https://github.com/util-linux/util-linux/commit/5e390467b26a3cf3fecc04e1a0d482dff3162fc4
+    - https://github.com/util-linux/util-linux/releases/tag/v2.41.4
+    - https://github.com/util-linux/util-linux/security/advisories/GHSA-qq4x-vfq4-9h9g
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-27456
+    - https://www.cve.org/CVERecord?id=CVE-2026-27456
+    PublishedDate: '2026-04-03T22:16:25.4Z'
+    LastModifiedDate: '2026-04-22T16:08:55.1Z'
   - VulnerabilityID: CVE-2026-3184
     PkgID: libuuid1@2.41-4ubuntu4.2
     PkgName: libuuid1
@@ -9303,15 +9835,15 @@
     InstalledVersion: 2.41-4ubuntu4.2
     Status: affected
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     SeveritySource: ubuntu
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-3184
     DataSource:
       ID: ubuntu
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Fingerprint: sha256:1896600808e61a1a90acfd6a7493e567900642079a385c91375fefb7b27f06ba
+    Fingerprint: sha256:5e3e4a2dd1d8e2e1bdad11404380802999852a0abba8c0acd623c5c32022b6a7
     Title: 'util-linux: util-linux: Access control bypass due to improper hostname canonicalization'
     Description: A flaw was found in util-linux. Improper hostname canonicalization in the `login(1)` utility, when invoked with the `-h` option, can modify the supplied remote hostname before setting `PAM_RHOST`. A remote attacker could exploit this by providing a specially crafted hostname, potentially bypassing host-based Pluggable Authentication Modules (PAM) access control rules that rely on fully qualified domain names. This could lead to unauthorized access.
     Severity: MEDIUM
@@ -9331,6 +9863,47 @@
     - https://www.cve.org/CVERecord?id=CVE-2026-3184
     PublishedDate: '2026-04-03T19:17:23.377Z'
     LastModifiedDate: '2026-04-07T13:20:55.2Z'
+  - VulnerabilityID: CVE-2026-27456
+    PkgID: login@1:4.16.0-2+really2.41-4ubuntu4.2
+    PkgName: login
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/login@4.16.0-2%2Breally2.41-4ubuntu4.2?arch=amd64&distro=ubuntu-25.10&epoch=1
+      UID: 7a0cd09a7bc5697e
+    InstalledVersion: 1:4.16.0-2+really2.41-4ubuntu4.2
+    Status: affected
+    Layer:
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-27456
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:a2c4cfb5fa398f71f66593f4417638be0a977825fdb1ab4012cc80df2fb9c9bb
+    Title: 'util-linux: TOCTOU in the mount program when setting up loop devices'
+    Description: util-linux is a random collection of Linux utilities. Prior to version 2.41.4, a TOCTOU (Time-of-Check-Time-of-Use) vulnerability has been identified in the SUID binary /usr/bin/mount from util-linux. The mount binary, when setting up loop devices, validates the source file path with user privileges via fork() + setuid() + realpath(), but subsequently re-canonicalizes and opens it with root privileges (euid=0) without verifying that the path has not been replaced between both operations. Neither O_NOFOLLOW, nor inode comparison, nor post-open fstat() are employed. This allows a local unprivileged user to replace the source file with a symlink pointing to any root-owned file or device during the race window, causing the SUID binary to open and mount it as root. Exploitation requires an /etc/fstab entry with user,loop options whose path points to a directory where the attacker has write permission, and that /usr/bin/mount has the SUID bit set (the default configuration on virtually all Linux distributions). The impact is unauthorized read access to root-protected files and block devices, including backup images, disk volumes, and any file containing a valid filesystem. This issue has been patched in version 2.41.4.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-59
+    - CWE-269
+    - CWE-367
+    VendorSeverity:
+      redhat: 2
+      ubuntu: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:N/A:N
+        V3Score: 4.7
+    References:
+    - https://access.redhat.com/security/cve/CVE-2026-27456
+    - https://github.com/util-linux/util-linux/commit/5e390467b26a3cf3fecc04e1a0d482dff3162fc4
+    - https://github.com/util-linux/util-linux/releases/tag/v2.41.4
+    - https://github.com/util-linux/util-linux/security/advisories/GHSA-qq4x-vfq4-9h9g
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-27456
+    - https://www.cve.org/CVERecord?id=CVE-2026-27456
+    PublishedDate: '2026-04-03T22:16:25.4Z'
+    LastModifiedDate: '2026-04-22T16:08:55.1Z'
   - VulnerabilityID: CVE-2026-3184
     PkgID: login@1:4.16.0-2+really2.41-4ubuntu4.2
     PkgName: login
@@ -9340,15 +9913,15 @@
     InstalledVersion: 1:4.16.0-2+really2.41-4ubuntu4.2
     Status: affected
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     SeveritySource: ubuntu
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-3184
     DataSource:
       ID: ubuntu
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Fingerprint: sha256:04095f2a1910ac365aa9ffea516a006af5852741f1fe674f3f5ea7aa121a3254
+    Fingerprint: sha256:f04f73d632d126638c44b38ec17b346d63da29188f46a3b0cea6ed2a4b8ff169
     Title: 'util-linux: util-linux: Access control bypass due to improper hostname canonicalization'
     Description: A flaw was found in util-linux. Improper hostname canonicalization in the `login(1)` utility, when invoked with the `-h` option, can modify the supplied remote hostname before setting `PAM_RHOST`. A remote attacker could exploit this by providing a specially crafted hostname, potentially bypassing host-based Pluggable Authentication Modules (PAM) access control rules that rely on fully qualified domain names. This could lead to unauthorized access.
     Severity: MEDIUM
@@ -9377,15 +9950,15 @@
     InstalledVersion: 1:4.17.4-2ubuntu2
     Status: affected
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     SeveritySource: ubuntu
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2024-56433
     DataSource:
       ID: ubuntu
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Fingerprint: sha256:929f71baf6c8661ae4148c2c222aaad7e53691ba0ace6a983087c471cc339053
+    Fingerprint: sha256:740e05d1ca33a0a2816d75ff61e4698d446f215585a1bd47d708fdaaf9dad216
     Title: 'shadow-utils: Default subordinate ID configuration in /etc/login.defs could lead to compromise'
     Description: 'shadow-utils (aka shadow) 4.4 through 4.17.0 establishes a default /etc/subuid behavior (e.g., uid 100000 through 165535 for the first user account) that can realistically conflict with the uids of users defined on locally administered networks, potentially leading to account takeover, e.g., by leveraging newuidmap for access to an NFS home directory (or same-host resources in the case of remote logins by these local network users). NOTE: it may also be argued that system administrators should not have assigned uids, within local networks, that are within the range that can occur in /etc/subuid.'
     Severity: LOW
@@ -9409,7 +9982,7 @@
     - https://bugzilla.redhat.com/show_bug.cgi?id=2334165
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-56433
     - https://errata.almalinux.org/9/ALSA-2025-20559.html
-    - https://errata.rockylinux.org/RLSA-2025:20145
+    - https://errata.rockylinux.org/RLSA-2025:20559
     - https://github.com/shadow-maint/shadow/blob/e2512d5741d4a44bdd81a8c2d0029b6222728cf0/etc/login.defs#L238-L241
     - https://github.com/shadow-maint/shadow/issues/1157
     - https://github.com/shadow-maint/shadow/releases/tag/4.4
@@ -9419,6 +9992,47 @@
     - https://www.cve.org/CVERecord?id=CVE-2024-56433
     PublishedDate: '2024-12-26T09:15:07.267Z'
     LastModifiedDate: '2026-04-15T00:35:42.02Z'
+  - VulnerabilityID: CVE-2026-27456
+    PkgID: mount@2.41-4ubuntu4.2
+    PkgName: mount
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/mount@2.41-4ubuntu4.2?arch=amd64&distro=ubuntu-25.10
+      UID: f2821a9fde7aa805
+    InstalledVersion: 2.41-4ubuntu4.2
+    Status: affected
+    Layer:
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-27456
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:4e02604b466dd5e6359b85a3d33be68f60f2eea0a272a956346dd39e9665e6ff
+    Title: 'util-linux: TOCTOU in the mount program when setting up loop devices'
+    Description: util-linux is a random collection of Linux utilities. Prior to version 2.41.4, a TOCTOU (Time-of-Check-Time-of-Use) vulnerability has been identified in the SUID binary /usr/bin/mount from util-linux. The mount binary, when setting up loop devices, validates the source file path with user privileges via fork() + setuid() + realpath(), but subsequently re-canonicalizes and opens it with root privileges (euid=0) without verifying that the path has not been replaced between both operations. Neither O_NOFOLLOW, nor inode comparison, nor post-open fstat() are employed. This allows a local unprivileged user to replace the source file with a symlink pointing to any root-owned file or device during the race window, causing the SUID binary to open and mount it as root. Exploitation requires an /etc/fstab entry with user,loop options whose path points to a directory where the attacker has write permission, and that /usr/bin/mount has the SUID bit set (the default configuration on virtually all Linux distributions). The impact is unauthorized read access to root-protected files and block devices, including backup images, disk volumes, and any file containing a valid filesystem. This issue has been patched in version 2.41.4.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-59
+    - CWE-269
+    - CWE-367
+    VendorSeverity:
+      redhat: 2
+      ubuntu: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:N/A:N
+        V3Score: 4.7
+    References:
+    - https://access.redhat.com/security/cve/CVE-2026-27456
+    - https://github.com/util-linux/util-linux/commit/5e390467b26a3cf3fecc04e1a0d482dff3162fc4
+    - https://github.com/util-linux/util-linux/releases/tag/v2.41.4
+    - https://github.com/util-linux/util-linux/security/advisories/GHSA-qq4x-vfq4-9h9g
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-27456
+    - https://www.cve.org/CVERecord?id=CVE-2026-27456
+    PublishedDate: '2026-04-03T22:16:25.4Z'
+    LastModifiedDate: '2026-04-22T16:08:55.1Z'
   - VulnerabilityID: CVE-2026-3184
     PkgID: mount@2.41-4ubuntu4.2
     PkgName: mount
@@ -9428,15 +10042,15 @@
     InstalledVersion: 2.41-4ubuntu4.2
     Status: affected
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     SeveritySource: ubuntu
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-3184
     DataSource:
       ID: ubuntu
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Fingerprint: sha256:1a3ea69f038baaf5919c858202d1e845d99c0bd677730229aec92abaf3bb9997
+    Fingerprint: sha256:411ece6493abf1ab0b7f784517676182eb5821c5cd43873ebca9e6c0ddbd1627
     Title: 'util-linux: util-linux: Access control bypass due to improper hostname canonicalization'
     Description: A flaw was found in util-linux. Improper hostname canonicalization in the `login(1)` utility, when invoked with the `-h` option, can modify the supplied remote hostname before setting `PAM_RHOST`. A remote attacker could exploit this by providing a specially crafted hostname, potentially bypassing host-based Pluggable Authentication Modules (PAM) access control rules that rely on fully qualified domain names. This could lead to unauthorized access.
     Severity: MEDIUM
@@ -9465,15 +10079,15 @@
     InstalledVersion: 1:4.17.4-2ubuntu2
     Status: affected
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     SeveritySource: ubuntu
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2024-56433
     DataSource:
       ID: ubuntu
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Fingerprint: sha256:f131efcf394fa308d5faa2bc34296747f63540adb195acb4316f6152f2323a7a
+    Fingerprint: sha256:e87913be66aed94268107e28af726243472cac77f1961ec93bda560e4099b547
     Title: 'shadow-utils: Default subordinate ID configuration in /etc/login.defs could lead to compromise'
     Description: 'shadow-utils (aka shadow) 4.4 through 4.17.0 establishes a default /etc/subuid behavior (e.g., uid 100000 through 165535 for the first user account) that can realistically conflict with the uids of users defined on locally administered networks, potentially leading to account takeover, e.g., by leveraging newuidmap for access to an NFS home directory (or same-host resources in the case of remote logins by these local network users). NOTE: it may also be argued that system administrators should not have assigned uids, within local networks, that are within the range that can occur in /etc/subuid.'
     Severity: LOW
@@ -9497,7 +10111,7 @@
     - https://bugzilla.redhat.com/show_bug.cgi?id=2334165
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-56433
     - https://errata.almalinux.org/9/ALSA-2025-20559.html
-    - https://errata.rockylinux.org/RLSA-2025:20145
+    - https://errata.rockylinux.org/RLSA-2025:20559
     - https://github.com/shadow-maint/shadow/blob/e2512d5741d4a44bdd81a8c2d0029b6222728cf0/etc/login.defs#L238-L241
     - https://github.com/shadow-maint/shadow/issues/1157
     - https://github.com/shadow-maint/shadow/releases/tag/4.4
@@ -9516,15 +10130,15 @@
     InstalledVersion: 1.35+dfsg-3.1build1
     Status: affected
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     SeveritySource: ubuntu
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-45582
     DataSource:
       ID: ubuntu
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Fingerprint: sha256:324d1e39fe043c7492817d657c9afb6d4cf0a4eb1bb39ae34153ef8ab30f6d1d
+    Fingerprint: sha256:b9ca60adf9a405917198f8b2514df158fc486bb8b2463dbb2cf3cc42a6fc4b0f
     Title: 'tar: Tar path traversal'
     Description: 'GNU Tar through 1.35 allows file overwrite via directory traversal in crafted TAR archives, with a certain two-step process. First, the victim must extract an archive that contains a ../ symlink to a critical directory. Second, the victim must extract an archive that contains a critical file, specified via a relative pathname that begins with the symlink name and ends with that critical file''s name. Here, the extraction follows the symlink and overwrites the critical file. This bypasses the protection mechanism of "Member name contains ''..''" that would occur for a single TAR archive that attempted to specify the critical file via a ../ approach. For example, the first archive can contain "x -> ../../../../../home/victim/.ssh" and the second archive can contain x/authorized_keys. This can affect server applications that automatically extract any number of user-supplied TAR archives, and were relying on the blocking of traversal. This can also affect software installation processes in which "tar xf" is run more than once (e.g., when installing a package can automatically install two dependencies that are set up as untrusted tarballs instead of official packages). NOTE: the official GNU Tar manual has an otherwise-empty directory for each "tar xf" in its Security Rules of Thumb; however, third-party advice leads users to run "tar xf" more than once into the same directory.'
     Severity: MEDIUM
@@ -9548,7 +10162,7 @@
     - https://bugzilla.redhat.com/show_bug.cgi?id=2379592
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-45582
     - https://errata.almalinux.org/9/ALSA-2026-0067.html
-    - https://errata.rockylinux.org/RLSA-2026:0002
+    - https://errata.rockylinux.org/RLSA-2026:0067
     - https://github.com/i900008/vulndb/blob/main/Gnu_tar_vuln.md
     - https://linux.oracle.com/cve/CVE-2025-45582.html
     - https://linux.oracle.com/errata/ELSA-2026-0067.html
@@ -9561,6 +10175,47 @@
     - https://www.gnu.org/software/tar/manual/html_node/Security-rules-of-thumb.html
     PublishedDate: '2025-07-11T17:15:37.183Z'
     LastModifiedDate: '2025-11-02T01:15:32.307Z'
+  - VulnerabilityID: CVE-2026-27456
+    PkgID: util-linux@2.41-4ubuntu4.2
+    PkgName: util-linux
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/util-linux@2.41-4ubuntu4.2?arch=amd64&distro=ubuntu-25.10
+      UID: 4a5ea37c462ea4f5
+    InstalledVersion: 2.41-4ubuntu4.2
+    Status: affected
+    Layer:
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-27456
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:dbcb5ab5fb16cff012f80c488f074c1adea5589168b9bf942573395b79c40927
+    Title: 'util-linux: TOCTOU in the mount program when setting up loop devices'
+    Description: util-linux is a random collection of Linux utilities. Prior to version 2.41.4, a TOCTOU (Time-of-Check-Time-of-Use) vulnerability has been identified in the SUID binary /usr/bin/mount from util-linux. The mount binary, when setting up loop devices, validates the source file path with user privileges via fork() + setuid() + realpath(), but subsequently re-canonicalizes and opens it with root privileges (euid=0) without verifying that the path has not been replaced between both operations. Neither O_NOFOLLOW, nor inode comparison, nor post-open fstat() are employed. This allows a local unprivileged user to replace the source file with a symlink pointing to any root-owned file or device during the race window, causing the SUID binary to open and mount it as root. Exploitation requires an /etc/fstab entry with user,loop options whose path points to a directory where the attacker has write permission, and that /usr/bin/mount has the SUID bit set (the default configuration on virtually all Linux distributions). The impact is unauthorized read access to root-protected files and block devices, including backup images, disk volumes, and any file containing a valid filesystem. This issue has been patched in version 2.41.4.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-59
+    - CWE-269
+    - CWE-367
+    VendorSeverity:
+      redhat: 2
+      ubuntu: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:N/A:N
+        V3Score: 4.7
+    References:
+    - https://access.redhat.com/security/cve/CVE-2026-27456
+    - https://github.com/util-linux/util-linux/commit/5e390467b26a3cf3fecc04e1a0d482dff3162fc4
+    - https://github.com/util-linux/util-linux/releases/tag/v2.41.4
+    - https://github.com/util-linux/util-linux/security/advisories/GHSA-qq4x-vfq4-9h9g
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-27456
+    - https://www.cve.org/CVERecord?id=CVE-2026-27456
+    PublishedDate: '2026-04-03T22:16:25.4Z'
+    LastModifiedDate: '2026-04-22T16:08:55.1Z'
   - VulnerabilityID: CVE-2026-3184
     PkgID: util-linux@2.41-4ubuntu4.2
     PkgName: util-linux
@@ -9570,15 +10225,15 @@
     InstalledVersion: 2.41-4ubuntu4.2
     Status: affected
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     SeveritySource: ubuntu
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-3184
     DataSource:
       ID: ubuntu
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Fingerprint: sha256:1ee0320026e3e2f31960bfa45ed701d1b27c6dfa4ac752c839ccc6e47c25e256
+    Fingerprint: sha256:ca495ac73241edf413e24eac9da288fca6482027ed6228f5485e84ab9c35c5d6
     Title: 'util-linux: util-linux: Access control bypass due to improper hostname canonicalization'
     Description: A flaw was found in util-linux. Improper hostname canonicalization in the `login(1)` utility, when invoked with the `-h` option, can modify the supplied remote hostname before setting `PAM_RHOST`. A remote attacker could exploit this by providing a specially crafted hostname, potentially bypassing host-based Pluggable Authentication Modules (PAM) access control rules that rely on fully qualified domain names. This could lead to unauthorized access.
     Severity: MEDIUM
@@ -9608,8 +10263,8 @@
       UID: 13b037b1fd5d66f
     Version: 2.7.1
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     FilePath: openaf/S3/simple-xml-safe-2.7.1.jar
     AnalyzedBy: jar
   - Name: com.fasterxml.jackson.core:jackson-annotations
@@ -9618,8 +10273,8 @@
       UID: a68585b707b894c6
     Version: '2.21'
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     FilePath: openaf/openaf.jar
     AnalyzedBy: jar
   - Name: com.fasterxml.jackson.core:jackson-core
@@ -9628,8 +10283,8 @@
       UID: a0ae06e5352781bf
     Version: 2.21.1
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     FilePath: openaf/openaf.jar
     AnalyzedBy: jar
   - Name: com.fasterxml.jackson.core:jackson-databind
@@ -9638,8 +10293,8 @@
       UID: f5a07e107dd30f70
     Version: 2.21.1
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     FilePath: openaf/openaf.jar
     AnalyzedBy: jar
   - Name: com.fasterxml.jackson.dataformat:jackson-dataformat-toml
@@ -9648,8 +10303,8 @@
       UID: 207de139b4c562ba
     Version: 2.21.2
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     FilePath: openaf/openaf.jar
     AnalyzedBy: jar
   - Name: com.fasterxml.jackson.datatype:jackson-datatype-jsr310
@@ -9658,8 +10313,8 @@
       UID: a59b09281de99c7f
     Version: 2.21.1
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     FilePath: openaf/ghcopilot/jackson-datatype-jsr310-2.21.1.jar
     AnalyzedBy: jar
   - Name: com.github.mwiede:jsch
@@ -9668,8 +10323,8 @@
       UID: 98eb7bafeacbc106
     Version: 2.28.0
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     FilePath: openaf/openaf.jar
     AnalyzedBy: jar
   - Name: com.github.vertical-blank:sql-formatter
@@ -9678,8 +10333,8 @@
       UID: b476ea318a48e65d
     Version: 2.0.5
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     FilePath: openaf/openaf.jar
     AnalyzedBy: jar
   - Name: com.google.code.gson:gson
@@ -9688,8 +10343,8 @@
       UID: 55058bf256f684f6
     Version: 2.13.2
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     FilePath: openaf/openaf.jar
     AnalyzedBy: jar
   - Name: com.google.errorprone:error_prone_annotations
@@ -9698,8 +10353,8 @@
       UID: eb9200afd679f03a
     Version: 2.41.0
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     FilePath: openaf/S3/error_prone_annotations-2.41.0.jar
     AnalyzedBy: jar
   - Name: com.google.guava:failureaccess
@@ -9708,8 +10363,8 @@
       UID: a4d08553078f3494
     Version: 1.0.3
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     FilePath: openaf/S3/failureaccess-1.0.3.jar
     AnalyzedBy: jar
   - Name: com.google.guava:guava
@@ -9718,8 +10373,8 @@
       UID: 1c289ba755aff307
     Version: 33.5.0-jre
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     FilePath: openaf/S3/guava-33.5.0-jre.jar
     AnalyzedBy: jar
   - Name: com.google.guava:listenablefuture
@@ -9728,8 +10383,8 @@
       UID: dea9132e00506d46
     Version: 9999.0-empty-to-avoid-conflict-with-guava
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     FilePath: openaf/S3/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar
     AnalyzedBy: jar
   - Name: com.google.j2objc:j2objc-annotations
@@ -9738,8 +10393,8 @@
       UID: 33e5dd761cf08520
     Version: '3.1'
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     FilePath: openaf/S3/j2objc-annotations-3.1.jar
     AnalyzedBy: jar
   - Name: com.googlecode.juniversalchardet:juniversalchardet
@@ -9748,8 +10403,8 @@
       UID: 5447189855b6db87
     Version: 1.0.3
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     FilePath: openaf/openaf.jar
     AnalyzedBy: jar
   - Name: com.jcraft:jsch.agentproxy.connector-factory
@@ -9758,8 +10413,8 @@
       UID: a99fffa9ec19f7cf
     Version: 0.0.9
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     FilePath: openaf/openaf.jar
     AnalyzedBy: jar
   - Name: com.jcraft:jsch.agentproxy.core
@@ -9768,8 +10423,8 @@
       UID: afb96fc5c6b4a255
     Version: 0.0.9
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     FilePath: openaf/openaf.jar
     AnalyzedBy: jar
   - Name: com.jcraft:jsch.agentproxy.jsch
@@ -9778,8 +10433,8 @@
       UID: 8066e61c44eb14ea
     Version: 0.0.9
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     FilePath: openaf/openaf.jar
     AnalyzedBy: jar
   - Name: com.jcraft:jsch.agentproxy.pageant
@@ -9788,8 +10443,8 @@
       UID: c0284278b99b17bc
     Version: 0.0.9
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     FilePath: openaf/openaf.jar
     AnalyzedBy: jar
   - Name: com.jcraft:jsch.agentproxy.sshagent
@@ -9798,8 +10453,8 @@
       UID: bd9e5fa40773f9dc
     Version: 0.0.9
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     FilePath: openaf/openaf.jar
     AnalyzedBy: jar
   - Name: com.jcraft:jsch.agentproxy.svnkit-trilead-ssh2
@@ -9808,8 +10463,8 @@
       UID: 4bc35c3b9b6add62
     Version: 0.0.9
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     FilePath: openaf/openaf.jar
     AnalyzedBy: jar
   - Name: com.jcraft:jsch.agentproxy.usocket-jna
@@ -9818,8 +10473,8 @@
       UID: c30290a3390d8666
     Version: 0.0.9
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     FilePath: openaf/openaf.jar
     AnalyzedBy: jar
   - Name: com.jcraft:jsch.agentproxy.usocket-nc
@@ -9828,8 +10483,8 @@
       UID: 48390e4cf4a3666a
     Version: 0.0.9
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     FilePath: openaf/openaf.jar
     AnalyzedBy: jar
   - Name: com.sun.activation:javax.activation
@@ -9838,8 +10493,8 @@
       UID: 76398eb1d6d13adc
     Version: 1.2.0
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     FilePath: openaf/openaf.jar
     AnalyzedBy: jar
   - Name: com.sun.mail:javax.mail
@@ -9848,8 +10503,8 @@
       UID: 1e7beb37baabc57a
     Version: 1.6.2
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     FilePath: openaf/openaf.jar
     AnalyzedBy: jar
   - Name: com.warrenstrange:googleauth
@@ -9858,8 +10513,8 @@
       UID: 99ee628fb0243c8d
     Version: 1.5.0
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     FilePath: openaf/openaf.jar
     AnalyzedBy: jar
   - Name: commons-cli:commons-cli
@@ -9868,8 +10523,8 @@
       UID: 3475d2ee4b04dbe0
     Version: 1.11.0
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     FilePath: openaf/openaf.jar
     AnalyzedBy: jar
   - Name: commons-codec:commons-codec
@@ -9878,8 +10533,8 @@
       UID: 2426b259c63a1b24
     Version: 1.21.0
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     FilePath: openaf/openaf.jar
     AnalyzedBy: jar
   - Name: commons-io:commons-io
@@ -9888,8 +10543,8 @@
       UID: 2061cef217097cbb
     Version: 2.21.0
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     FilePath: openaf/openaf.jar
     AnalyzedBy: jar
   - Name: commons-logging:commons-logging
@@ -9898,8 +10553,8 @@
       UID: 2ad3f2cbc57ed9d5
     Version: 1.3.6
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     FilePath: openaf/openaf.jar
     AnalyzedBy: jar
   - Name: commons-net:commons-net
@@ -9908,8 +10563,8 @@
       UID: f30479acbb8d626f
     Version: 3.12.0
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     FilePath: openaf/openaf.jar
     AnalyzedBy: jar
   - Name: de.vandermeer:asciilist-j7
@@ -9918,8 +10573,8 @@
       UID: 5d38f221ce7d2a1
     Version: 1.0.0
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     FilePath: openaf/openaf.jar
     AnalyzedBy: jar
   - Name: de.vandermeer:asciitable-j7
@@ -9928,8 +10583,8 @@
       UID: 4ec0aaacbd72cc14
     Version: 1.0.1
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     FilePath: openaf/openaf.jar
     AnalyzedBy: jar
   - Name: dnsjava:dnsjava
@@ -9938,8 +10593,8 @@
       UID: 7aac8b1c2f9d99a1
     Version: 3.6.4
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     FilePath: openaf/openaf.jar
     AnalyzedBy: jar
   - Name: io.github.copilot-community-sdk:copilot-sdk
@@ -9948,8 +10603,8 @@
       UID: df5c33fd7390b4be
     Version: 1.0.11
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     FilePath: openaf/ghcopilot/copilot-sdk-1.0.11.jar
     AnalyzedBy: jar
   - Name: io.jsonwebtoken:jjwt-api
@@ -9958,8 +10613,8 @@
       UID: fe506a80a2899a4a
     Version: 0.13.0
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     FilePath: openaf/openaf.jar
     AnalyzedBy: jar
   - Name: io.jsonwebtoken:jjwt-gson
@@ -9968,8 +10623,8 @@
       UID: cc7c47a353e36bec
     Version: 0.13.0
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     FilePath: openaf/openaf.jar
     AnalyzedBy: jar
   - Name: io.jsonwebtoken:jjwt-impl
@@ -9978,8 +10633,8 @@
       UID: fb75cc968ac3dc0d
     Version: 0.13.0
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     FilePath: openaf/openaf.jar
     AnalyzedBy: jar
   - Name: io.minio:minio
@@ -9988,8 +10643,8 @@
       UID: c3d88819980fb569
     Version: 9.0.0
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     FilePath: openaf/S3/minio-9.0.0.jar
     AnalyzedBy: jar
   - Name: io.sigpipe:jbsdiff
@@ -9998,8 +10653,8 @@
       UID: e618a95843fba36b
     Version: '1.0'
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     FilePath: openaf/openaf.jar
     AnalyzedBy: jar
   - Name: jakarta.activation:jakarta.activation-api
@@ -10008,8 +10663,8 @@
       UID: 5d2ee0e1a121653f
     Version: 1.2.2
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     FilePath: openaf/openaf.jar
     AnalyzedBy: jar
   - Name: javax.xml.bind:jaxb-api
@@ -10018,8 +10673,8 @@
       UID: d465243f613cf5b8
     Version: 2.3.1
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     FilePath: openaf/openaf.jar
     AnalyzedBy: jar
   - Name: jline:jline
@@ -10028,8 +10683,8 @@
       UID: 509c1c4b5bcd42a1
     Version: 2.14.6
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     FilePath: openaf/openaf.jar
     AnalyzedBy: jar
   - Name: org.apache.commons:commons-collections4
@@ -10038,8 +10693,8 @@
       UID: 72513cdccf1d063
     Version: 4.5.0
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     FilePath: openaf/openaf.jar
     AnalyzedBy: jar
   - Name: org.apache.commons:commons-compress
@@ -10048,8 +10703,8 @@
       UID: a82eeb62843349ae
     Version: 1.28.0
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     FilePath: openaf/openaf.jar
     AnalyzedBy: jar
   - Name: org.apache.commons:commons-csv
@@ -10058,8 +10713,8 @@
       UID: 250a69832ed56f8d
     Version: 1.14.1
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     FilePath: openaf/openaf.jar
     AnalyzedBy: jar
   - Name: org.apache.commons:commons-email
@@ -10068,8 +10723,8 @@
       UID: 973048c510561123
     Version: 1.6.0
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     FilePath: openaf/openaf.jar
     AnalyzedBy: jar
   - Name: org.apache.commons:commons-lang3
@@ -10078,8 +10733,8 @@
       UID: 85a4dd2e7bf06fed
     Version: 3.20.0
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     FilePath: openaf/openaf.jar
     AnalyzedBy: jar
   - Name: org.apache.commons:commons-math3
@@ -10088,19 +10743,9 @@
       UID: ce9b8a6c7e85850
     Version: 3.6.1
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     FilePath: openaf/openaf.jar
-    AnalyzedBy: jar
-  - Name: org.bouncycastle:bcprov-jdk18on
-    Identifier:
-      PURL: pkg:maven/org.bouncycastle/bcprov-jdk18on@1.82
-      UID: ba3bda42b1145eb2
-    Version: '1.82'
-    Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
-    FilePath: openaf/S3/bcprov-jdk18on-1.82.jar
     AnalyzedBy: jar
   - Name: org.eclipse.jetty.compression:jetty-compression-common
     Identifier:
@@ -10108,8 +10753,8 @@
       UID: a0626719897fe494
     Version: 12.1.7
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     FilePath: openaf/openaf.jar
     AnalyzedBy: jar
   - Name: org.eclipse.jetty.websocket:jetty-websocket-core-client
@@ -10118,8 +10763,8 @@
       UID: cc581b450a167c29
     Version: 12.1.7
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     FilePath: openaf/openaf.jar
     AnalyzedBy: jar
   - Name: org.eclipse.jetty.websocket:jetty-websocket-core-common
@@ -10128,8 +10773,8 @@
       UID: daed1d58fbcd63da
     Version: 12.1.7
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     FilePath: openaf/openaf.jar
     AnalyzedBy: jar
   - Name: org.eclipse.jetty.websocket:jetty-websocket-jetty-api
@@ -10138,8 +10783,8 @@
       UID: bc26f0f120e16fd6
     Version: 12.1.7
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     FilePath: openaf/openaf.jar
     AnalyzedBy: jar
   - Name: org.eclipse.jetty.websocket:jetty-websocket-jetty-client
@@ -10148,8 +10793,8 @@
       UID: ac51b48ce04fe1fb
     Version: 12.1.7
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     FilePath: openaf/openaf.jar
     AnalyzedBy: jar
   - Name: org.eclipse.jetty.websocket:jetty-websocket-jetty-common
@@ -10158,8 +10803,8 @@
       UID: fe9e4f7ecb0fae56
     Version: 12.1.7
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     FilePath: openaf/openaf.jar
     AnalyzedBy: jar
   - Name: org.eclipse.jetty:jetty-client
@@ -10168,8 +10813,8 @@
       UID: 35d0f51f64058948
     Version: 12.1.7
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     FilePath: openaf/openaf.jar
     AnalyzedBy: jar
   - Name: org.eclipse.jetty:jetty-http
@@ -10178,8 +10823,8 @@
       UID: 3d81d7777215552f
     Version: 12.1.7
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     FilePath: openaf/openaf.jar
     AnalyzedBy: jar
   - Name: org.eclipse.jetty:jetty-io
@@ -10188,8 +10833,8 @@
       UID: 30f6598d7163432d
     Version: 12.1.8
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     FilePath: openaf/openaf.jar
     AnalyzedBy: jar
   - Name: org.eclipse.jetty:jetty-util
@@ -10198,8 +10843,8 @@
       UID: 55174ef89c50ef33
     Version: 12.1.7
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     FilePath: openaf/openaf.jar
     AnalyzedBy: jar
   - Name: org.fusesource.hawtjni:hawtjni-runtime
@@ -10208,8 +10853,8 @@
       UID: cf88955c9d0ae18b
     Version: '1.17'
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     FilePath: openaf/openaf.jar
     AnalyzedBy: jar
   - Name: org.fusesource.jansi:jansi
@@ -10218,8 +10863,8 @@
       UID: 8ad8d3ab8ae11065
     Version: '1.18'
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     FilePath: openaf/openaf.jar
     AnalyzedBy: jar
   - Name: org.fusesource.jansi:jansi-freebsd32
@@ -10228,8 +10873,8 @@
       UID: 87b73bc3f694180c
     Version: '1.8'
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     FilePath: openaf/openaf.jar
     AnalyzedBy: jar
   - Name: org.fusesource.jansi:jansi-freebsd64
@@ -10238,8 +10883,8 @@
       UID: 68d99c3788225531
     Version: '1.8'
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     FilePath: openaf/openaf.jar
     AnalyzedBy: jar
   - Name: org.fusesource.jansi:jansi-linux32
@@ -10248,8 +10893,8 @@
       UID: b748a87749ace306
     Version: '1.8'
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     FilePath: openaf/openaf.jar
     AnalyzedBy: jar
   - Name: org.fusesource.jansi:jansi-linux64
@@ -10258,8 +10903,8 @@
       UID: 26eee13eafbc9417
     Version: '1.8'
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     FilePath: openaf/openaf.jar
     AnalyzedBy: jar
   - Name: org.fusesource.jansi:jansi-native
@@ -10268,8 +10913,8 @@
       UID: 6fdce73a584d6707
     Version: '1.8'
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     FilePath: openaf/openaf.jar
     AnalyzedBy: jar
   - Name: org.fusesource.jansi:jansi-osx
@@ -10278,8 +10923,8 @@
       UID: 907023130116e83c
     Version: '1.8'
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     FilePath: openaf/openaf.jar
     AnalyzedBy: jar
   - Name: org.fusesource.jansi:jansi-windows32
@@ -10288,8 +10933,8 @@
       UID: ab926f311d1d4210
     Version: '1.8'
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     FilePath: openaf/openaf.jar
     AnalyzedBy: jar
   - Name: org.fusesource.jansi:jansi-windows64
@@ -10298,8 +10943,8 @@
       UID: edf1cd987a2068b8
     Version: '1.8'
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     FilePath: openaf/openaf.jar
     AnalyzedBy: jar
   - Name: org.jetbrains:annotations
@@ -10308,8 +10953,8 @@
       UID: c0161a29fedca08e
     Version: '13.0'
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     FilePath: openaf/S3/annotations-13.0.jar
     AnalyzedBy: jar
   - Name: org.jsoup:jsoup
@@ -10318,8 +10963,8 @@
       UID: 7e7898d1782c7621
     Version: 1.22.1
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     FilePath: openaf/Jsoup/jsoup-1.22.1.jar
     AnalyzedBy: jar
   - Name: org.jspecify:jspecify
@@ -10328,8 +10973,8 @@
       UID: ed86e540bb7b216a
     Version: 1.0.0
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     FilePath: openaf/S3/jspecify-1.0.0.jar
     AnalyzedBy: jar
   - Name: org.semver4j:semver4j
@@ -10338,8 +10983,8 @@
       UID: 452bf269462d8b69
     Version: 6.0.0
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     FilePath: openaf/openaf.jar
     AnalyzedBy: jar
   - Name: org.slf4j:slf4j-api
@@ -10348,8 +10993,8 @@
       UID: e6e431b8b5e0302a
     Version: 2.0.17
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     FilePath: openaf/openaf.jar
     AnalyzedBy: jar
   - Name: org.slf4j:slf4j-nop
@@ -10358,8 +11003,8 @@
       UID: 67713c09148cf9b
     Version: 2.0.17
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     FilePath: openaf/openaf.jar
     AnalyzedBy: jar
   - Name: org.snmp4j:snmp4j
@@ -10368,8 +11013,8 @@
       UID: 2bdda8a0d94fe3fd
     Version: 3.9.7
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     FilePath: openaf/openaf.jar
     AnalyzedBy: jar
   - Name: org.snmp4j:snmp4j-agent
@@ -10378,8 +11023,8 @@
       UID: 7d83d9c8b188faec
     Version: 3.8.3
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     FilePath: openaf/openaf.jar
     AnalyzedBy: jar
   - Name: org.xerial.snappy:snappy-java
@@ -10388,7 +11033,7 @@
       UID: af735d5e5d938188
     Version: 1.1.10.8
     Layer:
-      Digest: sha256:b4e3c1977fac0598375918f3bd1264edc63ba43caccc4e3efe8cb21ebe87263e
-      DiffID: sha256:92ed5f6e4850d782c787f623858ecd462fa1bb99b1871b432dd377c7e5624bc7
+      Digest: sha256:0da4fd8a679d45ad0b61ea73ee3c9803f66cfda8658cdb1385c4e6a0ac2e66f6
+      DiffID: sha256:7f4362fb477606f30d5fc3e02b4ae9dc88cbce83482565b0d7daeae05f3ca86d
     FilePath: openaf/S3/snappy-java-1.1.10.8.jar
     AnalyzedBy: jar
