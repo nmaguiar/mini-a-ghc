@@ -10251,7 +10251,7 @@
     - https://github.com/uutils/coreutils/issues/10020
     - https://www.cve.org/CVERecord?id=CVE-2026-35341
     PublishedDate: '2026-04-22T17:16:36.06Z'
-    LastModifiedDate: '2026-04-22T21:23:52.62Z'
+    LastModifiedDate: '2026-04-24T19:05:55.067Z'
   - VulnerabilityID: CVE-2026-35342
     PkgID: rust-coreutils@0.2.2-0ubuntu2.1
     PkgName: rust-coreutils
@@ -10467,7 +10467,7 @@
     - https://github.com/uutils/coreutils/issues/9696
     - https://www.cve.org/CVERecord?id=CVE-2026-35348
     PublishedDate: '2026-04-22T17:16:37.04Z'
-    LastModifiedDate: '2026-04-22T21:23:52.62Z'
+    LastModifiedDate: '2026-04-24T18:57:20.927Z'
   - VulnerabilityID: CVE-2026-35349
     PkgID: rust-coreutils@0.2.2-0ubuntu2.1
     PkgName: rust-coreutils
@@ -10528,7 +10528,7 @@
     - https://github.com/uutils/coreutils/issues/9750
     - https://www.cve.org/CVERecord?id=CVE-2026-35350
     PublishedDate: '2026-04-22T17:16:37.327Z'
-    LastModifiedDate: '2026-04-22T21:23:52.62Z'
+    LastModifiedDate: '2026-04-24T19:04:01.207Z'
   - VulnerabilityID: CVE-2026-35351
     PkgID: rust-coreutils@0.2.2-0ubuntu2.1
     PkgName: rust-coreutils
@@ -10589,7 +10589,7 @@
     - https://github.com/uutils/coreutils/issues/10020
     - https://www.cve.org/CVERecord?id=CVE-2026-35352
     PublishedDate: '2026-04-22T17:16:37.597Z'
-    LastModifiedDate: '2026-04-22T21:23:52.62Z'
+    LastModifiedDate: '2026-04-24T19:03:53.083Z'
   - VulnerabilityID: CVE-2026-35353
     PkgID: rust-coreutils@0.2.2-0ubuntu2.1
     PkgName: rust-coreutils
@@ -10650,7 +10650,7 @@
     - https://github.com/uutils/coreutils/issues/10014
     - https://www.cve.org/CVERecord?id=CVE-2026-35354
     PublishedDate: '2026-04-22T17:16:37.867Z'
-    LastModifiedDate: '2026-04-22T21:23:52.62Z'
+    LastModifiedDate: '2026-04-24T19:04:08.917Z'
   - VulnerabilityID: CVE-2026-35355
     PkgID: rust-coreutils@0.2.2-0ubuntu2.1
     PkgName: rust-coreutils
@@ -10742,7 +10742,7 @@
     - https://github.com/uutils/coreutils/issues/10011
     - https://www.cve.org/CVERecord?id=CVE-2026-35357
     PublishedDate: '2026-04-22T17:16:38.267Z'
-    LastModifiedDate: '2026-04-22T21:23:52.62Z'
+    LastModifiedDate: '2026-04-24T19:02:53.557Z'
   - VulnerabilityID: CVE-2026-35358
     PkgID: rust-coreutils@0.2.2-0ubuntu2.1
     PkgName: rust-coreutils
@@ -10805,7 +10805,7 @@
     - https://github.com/uutils/coreutils/issues/10017
     - https://www.cve.org/CVERecord?id=CVE-2026-35359
     PublishedDate: '2026-04-22T17:16:38.537Z'
-    LastModifiedDate: '2026-04-22T21:23:52.62Z'
+    LastModifiedDate: '2026-04-24T19:02:25.72Z'
   - VulnerabilityID: CVE-2026-35360
     PkgID: rust-coreutils@0.2.2-0ubuntu2.1
     PkgName: rust-coreutils
@@ -10835,7 +10835,7 @@
     - https://github.com/uutils/coreutils/issues/10019
     - https://www.cve.org/CVERecord?id=CVE-2026-35360
     PublishedDate: '2026-04-22T17:16:38.673Z'
-    LastModifiedDate: '2026-04-22T21:23:52.62Z'
+    LastModifiedDate: '2026-04-24T19:02:11.56Z'
   - VulnerabilityID: CVE-2026-35361
     PkgID: rust-coreutils@0.2.2-0ubuntu2.1
     PkgName: rust-coreutils
@@ -10928,7 +10928,7 @@
     - https://github.com/uutils/coreutils/issues/9749
     - https://www.cve.org/CVERecord?id=CVE-2026-35363
     PublishedDate: '2026-04-22T17:16:39.12Z'
-    LastModifiedDate: '2026-04-22T21:23:52.62Z'
+    LastModifiedDate: '2026-04-24T19:02:00.463Z'
   - VulnerabilityID: CVE-2026-35364
     PkgID: rust-coreutils@0.2.2-0ubuntu2.1
     PkgName: rust-coreutils
@@ -10958,7 +10958,7 @@
     - https://github.com/uutils/coreutils/issues/10015
     - https://www.cve.org/CVERecord?id=CVE-2026-35364
     PublishedDate: '2026-04-22T17:16:39.737Z'
-    LastModifiedDate: '2026-04-22T21:23:52.62Z'
+    LastModifiedDate: '2026-04-24T19:19:11.777Z'
   - VulnerabilityID: CVE-2026-35365
     PkgID: rust-coreutils@0.2.2-0ubuntu2.1
     PkgName: rust-coreutils
@@ -11051,7 +11051,7 @@
     - https://github.com/uutils/coreutils/issues/10021
     - https://www.cve.org/CVERecord?id=CVE-2026-35367
     PublishedDate: '2026-04-22T17:16:40.423Z'
-    LastModifiedDate: '2026-04-22T21:23:52.62Z'
+    LastModifiedDate: '2026-04-24T19:19:05.067Z'
   - VulnerabilityID: CVE-2026-35368
     PkgID: rust-coreutils@0.2.2-0ubuntu2.1
     PkgName: rust-coreutils
@@ -11081,7 +11081,7 @@
     - https://github.com/uutils/coreutils/issues/10327
     - https://www.cve.org/CVERecord?id=CVE-2026-35368
     PublishedDate: '2026-04-22T17:16:40.56Z'
-    LastModifiedDate: '2026-04-22T21:23:52.62Z'
+    LastModifiedDate: '2026-04-24T19:18:55.67Z'
   - VulnerabilityID: CVE-2026-35369
     PkgID: rust-coreutils@0.2.2-0ubuntu2.1
     PkgName: rust-coreutils
@@ -11355,7 +11355,7 @@
     - https://github.com/uutils/coreutils/pull/11512
     - https://www.cve.org/CVERecord?id=CVE-2026-35377
     PublishedDate: '2026-04-22T17:16:42.577Z'
-    LastModifiedDate: '2026-04-22T21:23:52.62Z'
+    LastModifiedDate: '2026-04-24T19:06:46.293Z'
   - VulnerabilityID: CVE-2026-35378
     PkgID: rust-coreutils@0.2.2-0ubuntu2.1
     PkgName: rust-coreutils
@@ -11479,7 +11479,7 @@
     - https://github.com/uutils/coreutils/releases/tag/0.8.0
     - https://www.cve.org/CVERecord?id=CVE-2026-35381
     PublishedDate: '2026-04-22T17:16:43.2Z'
-    LastModifiedDate: '2026-04-22T21:23:52.62Z'
+    LastModifiedDate: '2026-04-24T19:19:34.493Z'
   - VulnerabilityID: CVE-2025-45582
     PkgID: tar@1.35+dfsg-3.1build1
     PkgName: tar
@@ -12150,6 +12150,16 @@
       Digest: sha256:01d5f6c4f6d779c13607eb44fb8a395a01901e6514baa24ff2151aa3dcb3c015
       DiffID: sha256:ac87e296ad3f624ddcebd42c2e36ec66b01301dbbba94e542c38702591813379
     FilePath: openaf/openaf.jar
+    AnalyzedBy: jar
+  - Name: org.bouncycastle:bcprov-jdk18on
+    Identifier:
+      PURL: pkg:maven/org.bouncycastle/bcprov-jdk18on@1.84
+      UID: aa9cc21dd2336977
+    Version: '1.84'
+    Layer:
+      Digest: sha256:01d5f6c4f6d779c13607eb44fb8a395a01901e6514baa24ff2151aa3dcb3c015
+      DiffID: sha256:ac87e296ad3f624ddcebd42c2e36ec66b01301dbbba94e542c38702591813379
+    FilePath: openaf/S3/bcprov-jdk18on-1.84.jar
     AnalyzedBy: jar
   - Name: org.eclipse.jetty.compression:jetty-compression-common
     Identifier:
