@@ -11022,7 +11022,7 @@
 │                       │      ├ References       ╭ [0]: https://github.com/uutils/coreutils/issues/10020 
 │                       │      │                  ╰ [1]: https://www.cve.org/CVERecord?id=CVE-2026-35341 
 │                       │      ├ PublishedDate   : 2026-04-22T17:16:36.06Z 
-│                       │      ╰ LastModifiedDate: 2026-04-22T21:23:52.62Z 
+│                       │      ╰ LastModifiedDate: 2026-04-24T19:05:55.067Z 
 │                       ├ [30] ╭ VulnerabilityID : CVE-2026-35342 
 │                       │      ├ PkgID           : rust-coreutils@0.2.2-0ubuntu2.1 
 │                       │      ├ PkgName         : rust-coreutils 
@@ -11291,7 +11291,7 @@
 │                       │      ├ References       ╭ [0]: https://github.com/uutils/coreutils/issues/9696 
 │                       │      │                  ╰ [1]: https://www.cve.org/CVERecord?id=CVE-2026-35348 
 │                       │      ├ PublishedDate   : 2026-04-22T17:16:37.04Z 
-│                       │      ╰ LastModifiedDate: 2026-04-22T21:23:52.62Z 
+│                       │      ╰ LastModifiedDate: 2026-04-24T18:57:20.927Z 
 │                       ├ [37] ╭ VulnerabilityID : CVE-2026-35349 
 │                       │      ├ PkgID           : rust-coreutils@0.2.2-0ubuntu2.1 
 │                       │      ├ PkgName         : rust-coreutils 
@@ -11366,7 +11366,7 @@
 │                       │      ├ References       ╭ [0]: https://github.com/uutils/coreutils/issues/9750 
 │                       │      │                  ╰ [1]: https://www.cve.org/CVERecord?id=CVE-2026-35350 
 │                       │      ├ PublishedDate   : 2026-04-22T17:16:37.327Z 
-│                       │      ╰ LastModifiedDate: 2026-04-22T21:23:52.62Z 
+│                       │      ╰ LastModifiedDate: 2026-04-24T19:04:01.207Z 
 │                       ├ [39] ╭ VulnerabilityID : CVE-2026-35351 
 │                       │      ├ PkgID           : rust-coreutils@0.2.2-0ubuntu2.1 
 │                       │      ├ PkgName         : rust-coreutils 
@@ -11441,7 +11441,7 @@
 │                       │      ├ References       ╭ [0]: https://github.com/uutils/coreutils/issues/10020 
 │                       │      │                  ╰ [1]: https://www.cve.org/CVERecord?id=CVE-2026-35352 
 │                       │      ├ PublishedDate   : 2026-04-22T17:16:37.597Z 
-│                       │      ╰ LastModifiedDate: 2026-04-22T21:23:52.62Z 
+│                       │      ╰ LastModifiedDate: 2026-04-24T19:03:53.083Z 
 │                       ├ [41] ╭ VulnerabilityID : CVE-2026-35353 
 │                       │      ├ PkgID           : rust-coreutils@0.2.2-0ubuntu2.1 
 │                       │      ├ PkgName         : rust-coreutils 
@@ -11515,7 +11515,7 @@
 │                       │      ├ References       ╭ [0]: https://github.com/uutils/coreutils/issues/10014 
 │                       │      │                  ╰ [1]: https://www.cve.org/CVERecord?id=CVE-2026-35354 
 │                       │      ├ PublishedDate   : 2026-04-22T17:16:37.867Z 
-│                       │      ╰ LastModifiedDate: 2026-04-22T21:23:52.62Z 
+│                       │      ╰ LastModifiedDate: 2026-04-24T19:04:08.917Z 
 │                       ├ [43] ╭ VulnerabilityID : CVE-2026-35355 
 │                       │      ├ PkgID           : rust-coreutils@0.2.2-0ubuntu2.1 
 │                       │      ├ PkgName         : rust-coreutils 
@@ -11628,7 +11628,7 @@
 │                       │      ├ References       ╭ [0]: https://github.com/uutils/coreutils/issues/10011 
 │                       │      │                  ╰ [1]: https://www.cve.org/CVERecord?id=CVE-2026-35357 
 │                       │      ├ PublishedDate   : 2026-04-22T17:16:38.267Z 
-│                       │      ╰ LastModifiedDate: 2026-04-22T21:23:52.62Z 
+│                       │      ╰ LastModifiedDate: 2026-04-24T19:02:53.557Z 
 │                       ├ [46] ╭ VulnerabilityID : CVE-2026-35358 
 │                       │      ├ PkgID           : rust-coreutils@0.2.2-0ubuntu2.1 
 │                       │      ├ PkgName         : rust-coreutils 
@@ -11706,7 +11706,7 @@
 │                       │      ├ References       ╭ [0]: https://github.com/uutils/coreutils/issues/10017 
 │                       │      │                  ╰ [1]: https://www.cve.org/CVERecord?id=CVE-2026-35359 
 │                       │      ├ PublishedDate   : 2026-04-22T17:16:38.537Z 
-│                       │      ╰ LastModifiedDate: 2026-04-22T21:23:52.62Z 
+│                       │      ╰ LastModifiedDate: 2026-04-24T19:02:25.72Z 
 │                       ├ [48] ╭ VulnerabilityID : CVE-2026-35360 
 │                       │      ├ PkgID           : rust-coreutils@0.2.2-0ubuntu2.1 
 │                       │      ├ PkgName         : rust-coreutils 
@@ -11742,7 +11742,7 @@
 │                       │      ├ References       ╭ [0]: https://github.com/uutils/coreutils/issues/10019 
 │                       │      │                  ╰ [1]: https://www.cve.org/CVERecord?id=CVE-2026-35360 
 │                       │      ├ PublishedDate   : 2026-04-22T17:16:38.673Z 
-│                       │      ╰ LastModifiedDate: 2026-04-22T21:23:52.62Z 
+│                       │      ╰ LastModifiedDate: 2026-04-24T19:02:11.56Z 
 │                       ├ [49] ╭ VulnerabilityID : CVE-2026-35361 
 │                       │      ├ PkgID           : rust-coreutils@0.2.2-0ubuntu2.1 
 │                       │      ├ PkgName         : rust-coreutils 
@@ -11856,7 +11856,7 @@
 │                       │      ├ References       ╭ [0]: https://github.com/uutils/coreutils/issues/9749 
 │                       │      │                  ╰ [1]: https://www.cve.org/CVERecord?id=CVE-2026-35363 
 │                       │      ├ PublishedDate   : 2026-04-22T17:16:39.12Z 
-│                       │      ╰ LastModifiedDate: 2026-04-22T21:23:52.62Z 
+│                       │      ╰ LastModifiedDate: 2026-04-24T19:02:00.463Z 
 │                       ├ [52] ╭ VulnerabilityID : CVE-2026-35364 
 │                       │      ├ PkgID           : rust-coreutils@0.2.2-0ubuntu2.1 
 │                       │      ├ PkgName         : rust-coreutils 
@@ -11894,7 +11894,7 @@
 │                       │      ├ References       ╭ [0]: https://github.com/uutils/coreutils/issues/10015 
 │                       │      │                  ╰ [1]: https://www.cve.org/CVERecord?id=CVE-2026-35364 
 │                       │      ├ PublishedDate   : 2026-04-22T17:16:39.737Z 
-│                       │      ╰ LastModifiedDate: 2026-04-22T21:23:52.62Z 
+│                       │      ╰ LastModifiedDate: 2026-04-24T19:19:11.777Z 
 │                       ├ [53] ╭ VulnerabilityID : CVE-2026-35365 
 │                       │      ├ PkgID           : rust-coreutils@0.2.2-0ubuntu2.1 
 │                       │      ├ PkgName         : rust-coreutils 
@@ -12011,7 +12011,7 @@
 │                       │      ├ References       ╭ [0]: https://github.com/uutils/coreutils/issues/10021 
 │                       │      │                  ╰ [1]: https://www.cve.org/CVERecord?id=CVE-2026-35367 
 │                       │      ├ PublishedDate   : 2026-04-22T17:16:40.423Z 
-│                       │      ╰ LastModifiedDate: 2026-04-22T21:23:52.62Z 
+│                       │      ╰ LastModifiedDate: 2026-04-24T19:19:05.067Z 
 │                       ├ [56] ╭ VulnerabilityID : CVE-2026-35368 
 │                       │      ├ PkgID           : rust-coreutils@0.2.2-0ubuntu2.1 
 │                       │      ├ PkgName         : rust-coreutils 
@@ -12049,7 +12049,7 @@
 │                       │      ├ References       ╭ [0]: https://github.com/uutils/coreutils/issues/10327 
 │                       │      │                  ╰ [1]: https://www.cve.org/CVERecord?id=CVE-2026-35368 
 │                       │      ├ PublishedDate   : 2026-04-22T17:16:40.56Z 
-│                       │      ╰ LastModifiedDate: 2026-04-22T21:23:52.62Z 
+│                       │      ╰ LastModifiedDate: 2026-04-24T19:18:55.67Z 
 │                       ├ [57] ╭ VulnerabilityID : CVE-2026-35369 
 │                       │      ├ PkgID           : rust-coreutils@0.2.2-0ubuntu2.1 
 │                       │      ├ PkgName         : rust-coreutils 
@@ -12410,7 +12410,7 @@
 │                       │      ├ References       ╭ [0]: https://github.com/uutils/coreutils/pull/11512 
 │                       │      │                  ╰ [1]: https://www.cve.org/CVERecord?id=CVE-2026-35377 
 │                       │      ├ PublishedDate   : 2026-04-22T17:16:42.577Z 
-│                       │      ╰ LastModifiedDate: 2026-04-22T21:23:52.62Z 
+│                       │      ╰ LastModifiedDate: 2026-04-24T19:06:46.293Z 
 │                       ├ [66] ╭ VulnerabilityID : CVE-2026-35378 
 │                       │      ├ PkgID           : rust-coreutils@0.2.2-0ubuntu2.1 
 │                       │      ├ PkgName         : rust-coreutils 
@@ -12574,7 +12574,7 @@
 │                       │      │                  ├ [1]: https://github.com/uutils/coreutils/releases/tag/0.8.0 
 │                       │      │                  ╰ [2]: https://www.cve.org/CVERecord?id=CVE-2026-35381 
 │                       │      ├ PublishedDate   : 2026-04-22T17:16:43.2Z 
-│                       │      ╰ LastModifiedDate: 2026-04-22T21:23:52.62Z 
+│                       │      ╰ LastModifiedDate: 2026-04-24T19:19:34.493Z 
 │                       ├ [70] ╭ VulnerabilityID : CVE-2025-45582 
 │                       │      ├ PkgID           : tar@1.35+dfsg-3.1build1 
 │                       │      ├ PkgName         : tar 
@@ -13305,7 +13305,17 @@
                  │      │                      1813379 
                  │      ├ FilePath  : openaf/openaf.jar 
                  │      ╰ AnalyzedBy: jar 
-                 ├ [49] ╭ Name      : org.eclipse.jetty.compression:jetty-compression-common 
+                 ├ [49] ╭ Name      : org.bouncycastle:bcprov-jdk18on 
+                 │      ├ Identifier ╭ PURL: pkg:maven/org.bouncycastle/bcprov-jdk18on@1.84 
+                 │      │            ╰ UID : aa9cc21dd2336977 
+                 │      ├ Version   : 1.84 
+                 │      ├ Layer      ╭ Digest: sha256:01d5f6c4f6d779c13607eb44fb8a395a01901e6514baa24ff2151aa3d
+                 │      │            │         cb3c015 
+                 │      │            ╰ DiffID: sha256:ac87e296ad3f624ddcebd42c2e36ec66b01301dbbba94e542c3870259
+                 │      │                      1813379 
+                 │      ├ FilePath  : openaf/S3/bcprov-jdk18on-1.84.jar 
+                 │      ╰ AnalyzedBy: jar 
+                 ├ [50] ╭ Name      : org.eclipse.jetty.compression:jetty-compression-common 
                  │      ├ Identifier ╭ PURL: pkg:maven/org.eclipse.jetty.compression/jetty-compression-common@1
                  │      │            │       2.1.7 
                  │      │            ╰ UID : a0626719897fe494 
@@ -13316,7 +13326,7 @@
                  │      │                      1813379 
                  │      ├ FilePath  : openaf/openaf.jar 
                  │      ╰ AnalyzedBy: jar 
-                 ├ [50] ╭ Name      : org.eclipse.jetty.websocket:jetty-websocket-core-client 
+                 ├ [51] ╭ Name      : org.eclipse.jetty.websocket:jetty-websocket-core-client 
                  │      ├ Identifier ╭ PURL: pkg:maven/org.eclipse.jetty.websocket/jetty-websocket-core-client@
                  │      │            │       12.1.7 
                  │      │            ╰ UID : cc581b450a167c29 
@@ -13327,7 +13337,7 @@
                  │      │                      1813379 
                  │      ├ FilePath  : openaf/openaf.jar 
                  │      ╰ AnalyzedBy: jar 
-                 ├ [51] ╭ Name      : org.eclipse.jetty.websocket:jetty-websocket-core-common 
+                 ├ [52] ╭ Name      : org.eclipse.jetty.websocket:jetty-websocket-core-common 
                  │      ├ Identifier ╭ PURL: pkg:maven/org.eclipse.jetty.websocket/jetty-websocket-core-common@
                  │      │            │       12.1.7 
                  │      │            ╰ UID : daed1d58fbcd63da 
@@ -13338,7 +13348,7 @@
                  │      │                      1813379 
                  │      ├ FilePath  : openaf/openaf.jar 
                  │      ╰ AnalyzedBy: jar 
-                 ├ [52] ╭ Name      : org.eclipse.jetty.websocket:jetty-websocket-jetty-api 
+                 ├ [53] ╭ Name      : org.eclipse.jetty.websocket:jetty-websocket-jetty-api 
                  │      ├ Identifier ╭ PURL: pkg:maven/org.eclipse.jetty.websocket/jetty-websocket-jetty-api@12
                  │      │            │       .1.7 
                  │      │            ╰ UID : bc26f0f120e16fd6 
@@ -13349,7 +13359,7 @@
                  │      │                      1813379 
                  │      ├ FilePath  : openaf/openaf.jar 
                  │      ╰ AnalyzedBy: jar 
-                 ├ [53] ╭ Name      : org.eclipse.jetty.websocket:jetty-websocket-jetty-client 
+                 ├ [54] ╭ Name      : org.eclipse.jetty.websocket:jetty-websocket-jetty-client 
                  │      ├ Identifier ╭ PURL: pkg:maven/org.eclipse.jetty.websocket/jetty-websocket-jetty-client
                  │      │            │       @12.1.7 
                  │      │            ╰ UID : ac51b48ce04fe1fb 
@@ -13360,7 +13370,7 @@
                  │      │                      1813379 
                  │      ├ FilePath  : openaf/openaf.jar 
                  │      ╰ AnalyzedBy: jar 
-                 ├ [54] ╭ Name      : org.eclipse.jetty.websocket:jetty-websocket-jetty-common 
+                 ├ [55] ╭ Name      : org.eclipse.jetty.websocket:jetty-websocket-jetty-common 
                  │      ├ Identifier ╭ PURL: pkg:maven/org.eclipse.jetty.websocket/jetty-websocket-jetty-common
                  │      │            │       @12.1.7 
                  │      │            ╰ UID : fe9e4f7ecb0fae56 
@@ -13371,7 +13381,7 @@
                  │      │                      1813379 
                  │      ├ FilePath  : openaf/openaf.jar 
                  │      ╰ AnalyzedBy: jar 
-                 ├ [55] ╭ Name      : org.eclipse.jetty:jetty-client 
+                 ├ [56] ╭ Name      : org.eclipse.jetty:jetty-client 
                  │      ├ Identifier ╭ PURL: pkg:maven/org.eclipse.jetty/jetty-client@12.1.7 
                  │      │            ╰ UID : 35d0f51f64058948 
                  │      ├ Version   : 12.1.7 
@@ -13381,7 +13391,7 @@
                  │      │                      1813379 
                  │      ├ FilePath  : openaf/openaf.jar 
                  │      ╰ AnalyzedBy: jar 
-                 ├ [56] ╭ Name      : org.eclipse.jetty:jetty-http 
+                 ├ [57] ╭ Name      : org.eclipse.jetty:jetty-http 
                  │      ├ Identifier ╭ PURL: pkg:maven/org.eclipse.jetty/jetty-http@12.1.7 
                  │      │            ╰ UID : 3d81d7777215552f 
                  │      ├ Version   : 12.1.7 
@@ -13391,7 +13401,7 @@
                  │      │                      1813379 
                  │      ├ FilePath  : openaf/openaf.jar 
                  │      ╰ AnalyzedBy: jar 
-                 ├ [57] ╭ Name      : org.eclipse.jetty:jetty-io 
+                 ├ [58] ╭ Name      : org.eclipse.jetty:jetty-io 
                  │      ├ Identifier ╭ PURL: pkg:maven/org.eclipse.jetty/jetty-io@12.1.8 
                  │      │            ╰ UID : 30f6598d7163432d 
                  │      ├ Version   : 12.1.8 
@@ -13401,7 +13411,7 @@
                  │      │                      1813379 
                  │      ├ FilePath  : openaf/openaf.jar 
                  │      ╰ AnalyzedBy: jar 
-                 ├ [58] ╭ Name      : org.eclipse.jetty:jetty-util 
+                 ├ [59] ╭ Name      : org.eclipse.jetty:jetty-util 
                  │      ├ Identifier ╭ PURL: pkg:maven/org.eclipse.jetty/jetty-util@12.1.7 
                  │      │            ╰ UID : 55174ef89c50ef33 
                  │      ├ Version   : 12.1.7 
@@ -13411,7 +13421,7 @@
                  │      │                      1813379 
                  │      ├ FilePath  : openaf/openaf.jar 
                  │      ╰ AnalyzedBy: jar 
-                 ├ [59] ╭ Name      : org.fusesource.hawtjni:hawtjni-runtime 
+                 ├ [60] ╭ Name      : org.fusesource.hawtjni:hawtjni-runtime 
                  │      ├ Identifier ╭ PURL: pkg:maven/org.fusesource.hawtjni/hawtjni-runtime@1.17 
                  │      │            ╰ UID : cf88955c9d0ae18b 
                  │      ├ Version   : 1.17 
@@ -13421,7 +13431,7 @@
                  │      │                      1813379 
                  │      ├ FilePath  : openaf/openaf.jar 
                  │      ╰ AnalyzedBy: jar 
-                 ├ [60] ╭ Name      : org.fusesource.jansi:jansi 
+                 ├ [61] ╭ Name      : org.fusesource.jansi:jansi 
                  │      ├ Identifier ╭ PURL: pkg:maven/org.fusesource.jansi/jansi@1.18 
                  │      │            ╰ UID : 8ad8d3ab8ae11065 
                  │      ├ Version   : 1.18 
@@ -13431,7 +13441,7 @@
                  │      │                      1813379 
                  │      ├ FilePath  : openaf/openaf.jar 
                  │      ╰ AnalyzedBy: jar 
-                 ├ [61] ╭ Name      : org.fusesource.jansi:jansi-freebsd32 
+                 ├ [62] ╭ Name      : org.fusesource.jansi:jansi-freebsd32 
                  │      ├ Identifier ╭ PURL: pkg:maven/org.fusesource.jansi/jansi-freebsd32@1.8 
                  │      │            ╰ UID : 87b73bc3f694180c 
                  │      ├ Version   : 1.8 
@@ -13441,7 +13451,7 @@
                  │      │                      1813379 
                  │      ├ FilePath  : openaf/openaf.jar 
                  │      ╰ AnalyzedBy: jar 
-                 ├ [62] ╭ Name      : org.fusesource.jansi:jansi-freebsd64 
+                 ├ [63] ╭ Name      : org.fusesource.jansi:jansi-freebsd64 
                  │      ├ Identifier ╭ PURL: pkg:maven/org.fusesource.jansi/jansi-freebsd64@1.8 
                  │      │            ╰ UID : 68d99c3788225531 
                  │      ├ Version   : 1.8 
@@ -13451,7 +13461,7 @@
                  │      │                      1813379 
                  │      ├ FilePath  : openaf/openaf.jar 
                  │      ╰ AnalyzedBy: jar 
-                 ├ [63] ╭ Name      : org.fusesource.jansi:jansi-linux32 
+                 ├ [64] ╭ Name      : org.fusesource.jansi:jansi-linux32 
                  │      ├ Identifier ╭ PURL: pkg:maven/org.fusesource.jansi/jansi-linux32@1.8 
                  │      │            ╰ UID : b748a87749ace306 
                  │      ├ Version   : 1.8 
@@ -13461,7 +13471,7 @@
                  │      │                      1813379 
                  │      ├ FilePath  : openaf/openaf.jar 
                  │      ╰ AnalyzedBy: jar 
-                 ├ [64] ╭ Name      : org.fusesource.jansi:jansi-linux64 
+                 ├ [65] ╭ Name      : org.fusesource.jansi:jansi-linux64 
                  │      ├ Identifier ╭ PURL: pkg:maven/org.fusesource.jansi/jansi-linux64@1.8 
                  │      │            ╰ UID : 26eee13eafbc9417 
                  │      ├ Version   : 1.8 
@@ -13471,7 +13481,7 @@
                  │      │                      1813379 
                  │      ├ FilePath  : openaf/openaf.jar 
                  │      ╰ AnalyzedBy: jar 
-                 ├ [65] ╭ Name      : org.fusesource.jansi:jansi-native 
+                 ├ [66] ╭ Name      : org.fusesource.jansi:jansi-native 
                  │      ├ Identifier ╭ PURL: pkg:maven/org.fusesource.jansi/jansi-native@1.8 
                  │      │            ╰ UID : 6fdce73a584d6707 
                  │      ├ Version   : 1.8 
@@ -13481,7 +13491,7 @@
                  │      │                      1813379 
                  │      ├ FilePath  : openaf/openaf.jar 
                  │      ╰ AnalyzedBy: jar 
-                 ├ [66] ╭ Name      : org.fusesource.jansi:jansi-osx 
+                 ├ [67] ╭ Name      : org.fusesource.jansi:jansi-osx 
                  │      ├ Identifier ╭ PURL: pkg:maven/org.fusesource.jansi/jansi-osx@1.8 
                  │      │            ╰ UID : 907023130116e83c 
                  │      ├ Version   : 1.8 
@@ -13491,7 +13501,7 @@
                  │      │                      1813379 
                  │      ├ FilePath  : openaf/openaf.jar 
                  │      ╰ AnalyzedBy: jar 
-                 ├ [67] ╭ Name      : org.fusesource.jansi:jansi-windows32 
+                 ├ [68] ╭ Name      : org.fusesource.jansi:jansi-windows32 
                  │      ├ Identifier ╭ PURL: pkg:maven/org.fusesource.jansi/jansi-windows32@1.8 
                  │      │            ╰ UID : ab926f311d1d4210 
                  │      ├ Version   : 1.8 
@@ -13501,7 +13511,7 @@
                  │      │                      1813379 
                  │      ├ FilePath  : openaf/openaf.jar 
                  │      ╰ AnalyzedBy: jar 
-                 ├ [68] ╭ Name      : org.fusesource.jansi:jansi-windows64 
+                 ├ [69] ╭ Name      : org.fusesource.jansi:jansi-windows64 
                  │      ├ Identifier ╭ PURL: pkg:maven/org.fusesource.jansi/jansi-windows64@1.8 
                  │      │            ╰ UID : edf1cd987a2068b8 
                  │      ├ Version   : 1.8 
@@ -13511,7 +13521,7 @@
                  │      │                      1813379 
                  │      ├ FilePath  : openaf/openaf.jar 
                  │      ╰ AnalyzedBy: jar 
-                 ├ [69] ╭ Name      : org.jetbrains:annotations 
+                 ├ [70] ╭ Name      : org.jetbrains:annotations 
                  │      ├ Identifier ╭ PURL: pkg:maven/org.jetbrains/annotations@13.0 
                  │      │            ╰ UID : c0161a29fedca08e 
                  │      ├ Version   : 13.0 
@@ -13521,7 +13531,7 @@
                  │      │                      1813379 
                  │      ├ FilePath  : openaf/S3/annotations-13.0.jar 
                  │      ╰ AnalyzedBy: jar 
-                 ├ [70] ╭ Name      : org.jsoup:jsoup 
+                 ├ [71] ╭ Name      : org.jsoup:jsoup 
                  │      ├ Identifier ╭ PURL: pkg:maven/org.jsoup/jsoup@1.22.1 
                  │      │            ╰ UID : 7e7898d1782c7621 
                  │      ├ Version   : 1.22.1 
@@ -13531,7 +13541,7 @@
                  │      │                      1813379 
                  │      ├ FilePath  : openaf/Jsoup/jsoup-1.22.1.jar 
                  │      ╰ AnalyzedBy: jar 
-                 ├ [71] ╭ Name      : org.jspecify:jspecify 
+                 ├ [72] ╭ Name      : org.jspecify:jspecify 
                  │      ├ Identifier ╭ PURL: pkg:maven/org.jspecify/jspecify@1.0.0 
                  │      │            ╰ UID : ed86e540bb7b216a 
                  │      ├ Version   : 1.0.0 
@@ -13541,7 +13551,7 @@
                  │      │                      1813379 
                  │      ├ FilePath  : openaf/S3/jspecify-1.0.0.jar 
                  │      ╰ AnalyzedBy: jar 
-                 ├ [72] ╭ Name      : org.semver4j:semver4j 
+                 ├ [73] ╭ Name      : org.semver4j:semver4j 
                  │      ├ Identifier ╭ PURL: pkg:maven/org.semver4j/semver4j@6.0.0 
                  │      │            ╰ UID : 452bf269462d8b69 
                  │      ├ Version   : 6.0.0 
@@ -13551,7 +13561,7 @@
                  │      │                      1813379 
                  │      ├ FilePath  : openaf/openaf.jar 
                  │      ╰ AnalyzedBy: jar 
-                 ├ [73] ╭ Name      : org.slf4j:slf4j-api 
+                 ├ [74] ╭ Name      : org.slf4j:slf4j-api 
                  │      ├ Identifier ╭ PURL: pkg:maven/org.slf4j/slf4j-api@2.0.17 
                  │      │            ╰ UID : e6e431b8b5e0302a 
                  │      ├ Version   : 2.0.17 
@@ -13561,7 +13571,7 @@
                  │      │                      1813379 
                  │      ├ FilePath  : openaf/openaf.jar 
                  │      ╰ AnalyzedBy: jar 
-                 ├ [74] ╭ Name      : org.slf4j:slf4j-nop 
+                 ├ [75] ╭ Name      : org.slf4j:slf4j-nop 
                  │      ├ Identifier ╭ PURL: pkg:maven/org.slf4j/slf4j-nop@2.0.17 
                  │      │            ╰ UID : 67713c09148cf9b 
                  │      ├ Version   : 2.0.17 
@@ -13571,7 +13581,7 @@
                  │      │                      1813379 
                  │      ├ FilePath  : openaf/openaf.jar 
                  │      ╰ AnalyzedBy: jar 
-                 ├ [75] ╭ Name      : org.snmp4j:snmp4j 
+                 ├ [76] ╭ Name      : org.snmp4j:snmp4j 
                  │      ├ Identifier ╭ PURL: pkg:maven/org.snmp4j/snmp4j@3.9.7 
                  │      │            ╰ UID : 2bdda8a0d94fe3fd 
                  │      ├ Version   : 3.9.7 
@@ -13581,7 +13591,7 @@
                  │      │                      1813379 
                  │      ├ FilePath  : openaf/openaf.jar 
                  │      ╰ AnalyzedBy: jar 
-                 ├ [76] ╭ Name      : org.snmp4j:snmp4j-agent 
+                 ├ [77] ╭ Name      : org.snmp4j:snmp4j-agent 
                  │      ├ Identifier ╭ PURL: pkg:maven/org.snmp4j/snmp4j-agent@3.8.3 
                  │      │            ╰ UID : 7d83d9c8b188faec 
                  │      ├ Version   : 3.8.3 
@@ -13591,7 +13601,7 @@
                  │      │                      1813379 
                  │      ├ FilePath  : openaf/openaf.jar 
                  │      ╰ AnalyzedBy: jar 
-                 ╰ [77] ╭ Name      : org.xerial.snappy:snappy-java 
+                 ╰ [78] ╭ Name      : org.xerial.snappy:snappy-java 
                         ├ Identifier ╭ PURL: pkg:maven/org.xerial.snappy/snappy-java@1.1.10.8 
                         │            ╰ UID : af735d5e5d938188 
                         ├ Version   : 1.1.10.8 
