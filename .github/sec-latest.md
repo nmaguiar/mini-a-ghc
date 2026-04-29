@@ -2962,7 +2962,10 @@
 │     │                 │       │                ╰ [1]: LGPL-2.1-only 
 │     │                 │       ├ Maintainer    : Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com> 
 │     │                 │       ├ Repository     ─ Class: official 
-
+│     │                 │       ├ Layer          ╭ Digest: sha256:01d5f6c4f6d779c13607eb44fb8a395a01901e6514baa
+│     │                 │       │                │         24ff2151aa3dcb3c015 
+│     │                 │       │                ╰ DiffID: sha256:ac87e296ad3f624ddcebd42c2e36ec66b01301dbbba94
+│     │                 │       │                          e542c38702591813379 
 │     │                 │       ├ Digest        : sha256:d2d15168151e7f23e3fae6a5ee712f2f6006eb5c0e5e3a3121b993
 │     │                 │       │                 9a51c2b4e6 
 │     │                 │       ├ InstalledFiles ╭ [0]: /usr/share/doc/libaudit-common/changelog.Debian.gz 
@@ -9565,9 +9568,13 @@
 │                       │      ├ CweIDs           ╭ [0]: CWE-59 
 │                       │      │                  ├ [1]: CWE-269 
 │                       │      │                  ╰ [2]: CWE-367 
-│                       │      ├ VendorSeverity   ╭ redhat: 2 
+│                       │      ├ VendorSeverity   ╭ julia : 2 
+│                       │      │                  ├ redhat: 2 
 │                       │      │                  ╰ ubuntu: 2 
-│                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:N
+│                       │      ├ CVSS             ╭ julia  ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:N
+│                       │      │                  │        │           /A:N 
+│                       │      │                  │        ╰ V3Score : 4.7 
+│                       │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:N
 │                       │      │                           │           /A:N 
 │                       │      │                           ╰ V3Score : 4.7 
 │                       │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2026-27456 
@@ -9707,9 +9714,13 @@
 │                       │      ├ CweIDs           ╭ [0]: CWE-59 
 │                       │      │                  ├ [1]: CWE-269 
 │                       │      │                  ╰ [2]: CWE-367 
-│                       │      ├ VendorSeverity   ╭ redhat: 2 
+│                       │      ├ VendorSeverity   ╭ julia : 2 
+│                       │      │                  ├ redhat: 2 
 │                       │      │                  ╰ ubuntu: 2 
-│                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:N
+│                       │      ├ CVSS             ╭ julia  ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:N
+│                       │      │                  │        │           /A:N 
+│                       │      │                  │        ╰ V3Score : 4.7 
+│                       │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:N
 │                       │      │                           │           /A:N 
 │                       │      │                           ╰ V3Score : 4.7 
 │                       │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2026-27456 
@@ -10149,9 +10160,13 @@
 │                       │      ├ CweIDs           ╭ [0]: CWE-59 
 │                       │      │                  ├ [1]: CWE-269 
 │                       │      │                  ╰ [2]: CWE-367 
-│                       │      ├ VendorSeverity   ╭ redhat: 2 
+│                       │      ├ VendorSeverity   ╭ julia : 2 
+│                       │      │                  ├ redhat: 2 
 │                       │      │                  ╰ ubuntu: 2 
-│                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:N
+│                       │      ├ CVSS             ╭ julia  ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:N
+│                       │      │                  │        │           /A:N 
+│                       │      │                  │        ╰ V3Score : 4.7 
+│                       │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:N
 │                       │      │                           │           /A:N 
 │                       │      │                           ╰ V3Score : 4.7 
 │                       │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2026-27456 
@@ -10256,9 +10271,13 @@
 │                       │      ├ CweIDs           ╭ [0]: CWE-59 
 │                       │      │                  ├ [1]: CWE-269 
 │                       │      │                  ╰ [2]: CWE-367 
-│                       │      ├ VendorSeverity   ╭ redhat: 2 
+│                       │      ├ VendorSeverity   ╭ julia : 2 
+│                       │      │                  ├ redhat: 2 
 │                       │      │                  ╰ ubuntu: 2 
-│                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:N
+│                       │      ├ CVSS             ╭ julia  ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:N
+│                       │      │                  │        │           /A:N 
+│                       │      │                  │        ╰ V3Score : 4.7 
+│                       │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:N
 │                       │      │                           │           /A:N 
 │                       │      │                           ╰ V3Score : 4.7 
 │                       │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2026-27456 
@@ -10363,9 +10382,13 @@
 │                       │      ├ CweIDs           ╭ [0]: CWE-59 
 │                       │      │                  ├ [1]: CWE-269 
 │                       │      │                  ╰ [2]: CWE-367 
-│                       │      ├ VendorSeverity   ╭ redhat: 2 
+│                       │      ├ VendorSeverity   ╭ julia : 2 
+│                       │      │                  ├ redhat: 2 
 │                       │      │                  ╰ ubuntu: 2 
-│                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:N
+│                       │      ├ CVSS             ╭ julia  ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:N
+│                       │      │                  │        │           /A:N 
+│                       │      │                  │        ╰ V3Score : 4.7 
+│                       │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:N
 │                       │      │                           │           /A:N 
 │                       │      │                           ╰ V3Score : 4.7 
 │                       │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2026-27456 
@@ -10470,9 +10493,13 @@
 │                       │      ├ CweIDs           ╭ [0]: CWE-59 
 │                       │      │                  ├ [1]: CWE-269 
 │                       │      │                  ╰ [2]: CWE-367 
-│                       │      ├ VendorSeverity   ╭ redhat: 2 
+│                       │      ├ VendorSeverity   ╭ julia : 2 
+│                       │      │                  ├ redhat: 2 
 │                       │      │                  ╰ ubuntu: 2 
-│                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:N
+│                       │      ├ CVSS             ╭ julia  ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:N
+│                       │      │                  │        │           /A:N 
+│                       │      │                  │        ╰ V3Score : 4.7 
+│                       │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:N
 │                       │      │                           │           /A:N 
 │                       │      │                           ╰ V3Score : 4.7 
 │                       │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2026-27456 
@@ -10577,9 +10604,13 @@
 │                       │      ├ CweIDs           ╭ [0]: CWE-59 
 │                       │      │                  ├ [1]: CWE-269 
 │                       │      │                  ╰ [2]: CWE-367 
-│                       │      ├ VendorSeverity   ╭ redhat: 2 
+│                       │      ├ VendorSeverity   ╭ julia : 2 
+│                       │      │                  ├ redhat: 2 
 │                       │      │                  ╰ ubuntu: 2 
-│                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:N
+│                       │      ├ CVSS             ╭ julia  ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:N
+│                       │      │                  │        │           /A:N 
+│                       │      │                  │        ╰ V3Score : 4.7 
+│                       │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:N
 │                       │      │                           │           /A:N 
 │                       │      │                           ╰ V3Score : 4.7 
 │                       │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2026-27456 
@@ -10746,9 +10777,13 @@
 │                       │      ├ CweIDs           ╭ [0]: CWE-59 
 │                       │      │                  ├ [1]: CWE-269 
 │                       │      │                  ╰ [2]: CWE-367 
-│                       │      ├ VendorSeverity   ╭ redhat: 2 
+│                       │      ├ VendorSeverity   ╭ julia : 2 
+│                       │      │                  ├ redhat: 2 
 │                       │      │                  ╰ ubuntu: 2 
-│                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:N
+│                       │      ├ CVSS             ╭ julia  ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:N
+│                       │      │                  │        │           /A:N 
+│                       │      │                  │        ╰ V3Score : 4.7 
+│                       │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:N
 │                       │      │                           │           /A:N 
 │                       │      │                           ╰ V3Score : 4.7 
 │                       │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2026-27456 
@@ -12746,9 +12781,13 @@
 │                       │      ├ CweIDs           ╭ [0]: CWE-59 
 │                       │      │                  ├ [1]: CWE-269 
 │                       │      │                  ╰ [2]: CWE-367 
-│                       │      ├ VendorSeverity   ╭ redhat: 2 
+│                       │      ├ VendorSeverity   ╭ julia : 2 
+│                       │      │                  ├ redhat: 2 
 │                       │      │                  ╰ ubuntu: 2 
-│                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:N
+│                       │      ├ CVSS             ╭ julia  ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:N
+│                       │      │                  │        │           /A:N 
+│                       │      │                  │        ╰ V3Score : 4.7 
+│                       │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:N
 │                       │      │                           │           /A:N 
 │                       │      │                           ╰ V3Score : 4.7 
 │                       │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2026-27456 
