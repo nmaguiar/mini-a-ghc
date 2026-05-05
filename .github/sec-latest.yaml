@@ -9172,7 +9172,8 @@
       PURL: pkg:deb/ubuntu/curl@8.14.1-2ubuntu1.2?arch=amd64&distro=ubuntu-25.10
       UID: 528931dd8c8372ba
     InstalledVersion: 8.14.1-2ubuntu1.2
-    Status: affected
+    FixedVersion: 8.14.1-2ubuntu1.3
+    Status: fixed
     Layer:
       Digest: sha256:01d5f6c4f6d779c13607eb44fb8a395a01901e6514baa24ff2151aa3dcb3c015
       DiffID: sha256:ac87e296ad3f624ddcebd42c2e36ec66b01301dbbba94e542c38702591813379
@@ -9197,6 +9198,7 @@
     - https://access.redhat.com/security/cve/CVE-2026-5545
     - https://curl.se/docs/CVE-2026-5545.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-5545
+    - https://ubuntu.com/security/notices/USN-8227-1
     - https://www.cve.org/CVERecord?id=CVE-2026-5545
   - VulnerabilityID: CVE-2026-6253
     PkgID: curl@8.14.1-2ubuntu1.2
@@ -9205,7 +9207,8 @@
       PURL: pkg:deb/ubuntu/curl@8.14.1-2ubuntu1.2?arch=amd64&distro=ubuntu-25.10
       UID: 528931dd8c8372ba
     InstalledVersion: 8.14.1-2ubuntu1.2
-    Status: affected
+    FixedVersion: 8.14.1-2ubuntu1.3
+    Status: fixed
     Layer:
       Digest: sha256:01d5f6c4f6d779c13607eb44fb8a395a01901e6514baa24ff2151aa3dcb3c015
       DiffID: sha256:ac87e296ad3f624ddcebd42c2e36ec66b01301dbbba94e542c38702591813379
@@ -9230,6 +9233,7 @@
     - https://access.redhat.com/security/cve/CVE-2026-6253
     - https://curl.se/docs/CVE-2026-6253.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-6253
+    - https://ubuntu.com/security/notices/USN-8227-1
     - https://www.cve.org/CVERecord?id=CVE-2026-6253
   - VulnerabilityID: CVE-2026-6429
     PkgID: curl@8.14.1-2ubuntu1.2
@@ -9238,7 +9242,8 @@
       PURL: pkg:deb/ubuntu/curl@8.14.1-2ubuntu1.2?arch=amd64&distro=ubuntu-25.10
       UID: 528931dd8c8372ba
     InstalledVersion: 8.14.1-2ubuntu1.2
-    Status: affected
+    FixedVersion: 8.14.1-2ubuntu1.3
+    Status: fixed
     Layer:
       Digest: sha256:01d5f6c4f6d779c13607eb44fb8a395a01901e6514baa24ff2151aa3dcb3c015
       DiffID: sha256:ac87e296ad3f624ddcebd42c2e36ec66b01301dbbba94e542c38702591813379
@@ -9263,7 +9268,34 @@
     - https://access.redhat.com/security/cve/CVE-2026-6429
     - https://curl.se/docs/CVE-2026-6429.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-6429
+    - https://ubuntu.com/security/notices/USN-8227-1
     - https://www.cve.org/CVERecord?id=CVE-2026-6429
+  - VulnerabilityID: CVE-2026-7168
+    PkgID: curl@8.14.1-2ubuntu1.2
+    PkgName: curl
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/curl@8.14.1-2ubuntu1.2?arch=amd64&distro=ubuntu-25.10
+      UID: 528931dd8c8372ba
+    InstalledVersion: 8.14.1-2ubuntu1.2
+    FixedVersion: 8.14.1-2ubuntu1.3
+    Status: fixed
+    Layer:
+      Digest: sha256:01d5f6c4f6d779c13607eb44fb8a395a01901e6514baa24ff2151aa3dcb3c015
+      DiffID: sha256:ac87e296ad3f624ddcebd42c2e36ec66b01301dbbba94e542c38702591813379
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-7168
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:5b9fb9cbc7f522de24035e0778c85fc2ff38b303f0d648322badd3d313b22f22
+    Description: cross-proxy Digest auth state leak
+    Severity: MEDIUM
+    VendorSeverity:
+      ubuntu: 2
+    References:
+    - https://ubuntu.com/security/notices/USN-8227-1
+    - https://www.cve.org/CVERecord?id=CVE-2026-7168
   - VulnerabilityID: CVE-2026-4873
     PkgID: curl@8.14.1-2ubuntu1.2
     PkgName: curl
@@ -9271,7 +9303,8 @@
       PURL: pkg:deb/ubuntu/curl@8.14.1-2ubuntu1.2?arch=amd64&distro=ubuntu-25.10
       UID: 528931dd8c8372ba
     InstalledVersion: 8.14.1-2ubuntu1.2
-    Status: affected
+    FixedVersion: 8.14.1-2ubuntu1.3
+    Status: fixed
     Layer:
       Digest: sha256:01d5f6c4f6d779c13607eb44fb8a395a01901e6514baa24ff2151aa3dcb3c015
       DiffID: sha256:ac87e296ad3f624ddcebd42c2e36ec66b01301dbbba94e542c38702591813379
@@ -9296,6 +9329,7 @@
     - https://access.redhat.com/security/cve/CVE-2026-4873
     - https://curl.se/docs/CVE-2026-4873.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-4873
+    - https://ubuntu.com/security/notices/USN-8227-1
     - https://www.cve.org/CVERecord?id=CVE-2026-4873
   - VulnerabilityID: CVE-2026-5773
     PkgID: curl@8.14.1-2ubuntu1.2
@@ -9304,7 +9338,8 @@
       PURL: pkg:deb/ubuntu/curl@8.14.1-2ubuntu1.2?arch=amd64&distro=ubuntu-25.10
       UID: 528931dd8c8372ba
     InstalledVersion: 8.14.1-2ubuntu1.2
-    Status: affected
+    FixedVersion: 8.14.1-2ubuntu1.3
+    Status: fixed
     Layer:
       Digest: sha256:01d5f6c4f6d779c13607eb44fb8a395a01901e6514baa24ff2151aa3dcb3c015
       DiffID: sha256:ac87e296ad3f624ddcebd42c2e36ec66b01301dbbba94e542c38702591813379
@@ -9329,6 +9364,7 @@
     - https://access.redhat.com/security/cve/CVE-2026-5773
     - https://curl.se/docs/CVE-2026-5773.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-5773
+    - https://ubuntu.com/security/notices/USN-8227-1
     - https://www.cve.org/CVERecord?id=CVE-2026-5773
   - VulnerabilityID: CVE-2026-6276
     PkgID: curl@8.14.1-2ubuntu1.2
@@ -9337,7 +9373,8 @@
       PURL: pkg:deb/ubuntu/curl@8.14.1-2ubuntu1.2?arch=amd64&distro=ubuntu-25.10
       UID: 528931dd8c8372ba
     InstalledVersion: 8.14.1-2ubuntu1.2
-    Status: affected
+    FixedVersion: 8.14.1-2ubuntu1.3
+    Status: fixed
     Layer:
       Digest: sha256:01d5f6c4f6d779c13607eb44fb8a395a01901e6514baa24ff2151aa3dcb3c015
       DiffID: sha256:ac87e296ad3f624ddcebd42c2e36ec66b01301dbbba94e542c38702591813379
@@ -9362,6 +9399,7 @@
     - https://access.redhat.com/security/cve/CVE-2026-6276
     - https://curl.se/docs/CVE-2026-6276.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-6276
+    - https://ubuntu.com/security/notices/USN-8227-1
     - https://www.cve.org/CVERecord?id=CVE-2026-6276
   - VulnerabilityID: CVE-2026-2219
     PkgID: dpkg@1.22.21ubuntu3.1
@@ -9746,7 +9784,8 @@
       PURL: pkg:deb/ubuntu/libcurl4t64@8.14.1-2ubuntu1.2?arch=amd64&distro=ubuntu-25.10
       UID: 7f081f5df30ce970
     InstalledVersion: 8.14.1-2ubuntu1.2
-    Status: affected
+    FixedVersion: 8.14.1-2ubuntu1.3
+    Status: fixed
     Layer:
       Digest: sha256:01d5f6c4f6d779c13607eb44fb8a395a01901e6514baa24ff2151aa3dcb3c015
       DiffID: sha256:ac87e296ad3f624ddcebd42c2e36ec66b01301dbbba94e542c38702591813379
@@ -9771,6 +9810,7 @@
     - https://access.redhat.com/security/cve/CVE-2026-5545
     - https://curl.se/docs/CVE-2026-5545.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-5545
+    - https://ubuntu.com/security/notices/USN-8227-1
     - https://www.cve.org/CVERecord?id=CVE-2026-5545
   - VulnerabilityID: CVE-2026-6253
     PkgID: libcurl4t64@8.14.1-2ubuntu1.2
@@ -9779,7 +9819,8 @@
       PURL: pkg:deb/ubuntu/libcurl4t64@8.14.1-2ubuntu1.2?arch=amd64&distro=ubuntu-25.10
       UID: 7f081f5df30ce970
     InstalledVersion: 8.14.1-2ubuntu1.2
-    Status: affected
+    FixedVersion: 8.14.1-2ubuntu1.3
+    Status: fixed
     Layer:
       Digest: sha256:01d5f6c4f6d779c13607eb44fb8a395a01901e6514baa24ff2151aa3dcb3c015
       DiffID: sha256:ac87e296ad3f624ddcebd42c2e36ec66b01301dbbba94e542c38702591813379
@@ -9804,6 +9845,7 @@
     - https://access.redhat.com/security/cve/CVE-2026-6253
     - https://curl.se/docs/CVE-2026-6253.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-6253
+    - https://ubuntu.com/security/notices/USN-8227-1
     - https://www.cve.org/CVERecord?id=CVE-2026-6253
   - VulnerabilityID: CVE-2026-6429
     PkgID: libcurl4t64@8.14.1-2ubuntu1.2
@@ -9812,7 +9854,8 @@
       PURL: pkg:deb/ubuntu/libcurl4t64@8.14.1-2ubuntu1.2?arch=amd64&distro=ubuntu-25.10
       UID: 7f081f5df30ce970
     InstalledVersion: 8.14.1-2ubuntu1.2
-    Status: affected
+    FixedVersion: 8.14.1-2ubuntu1.3
+    Status: fixed
     Layer:
       Digest: sha256:01d5f6c4f6d779c13607eb44fb8a395a01901e6514baa24ff2151aa3dcb3c015
       DiffID: sha256:ac87e296ad3f624ddcebd42c2e36ec66b01301dbbba94e542c38702591813379
@@ -9837,7 +9880,34 @@
     - https://access.redhat.com/security/cve/CVE-2026-6429
     - https://curl.se/docs/CVE-2026-6429.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-6429
+    - https://ubuntu.com/security/notices/USN-8227-1
     - https://www.cve.org/CVERecord?id=CVE-2026-6429
+  - VulnerabilityID: CVE-2026-7168
+    PkgID: libcurl4t64@8.14.1-2ubuntu1.2
+    PkgName: libcurl4t64
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/libcurl4t64@8.14.1-2ubuntu1.2?arch=amd64&distro=ubuntu-25.10
+      UID: 7f081f5df30ce970
+    InstalledVersion: 8.14.1-2ubuntu1.2
+    FixedVersion: 8.14.1-2ubuntu1.3
+    Status: fixed
+    Layer:
+      Digest: sha256:01d5f6c4f6d779c13607eb44fb8a395a01901e6514baa24ff2151aa3dcb3c015
+      DiffID: sha256:ac87e296ad3f624ddcebd42c2e36ec66b01301dbbba94e542c38702591813379
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-7168
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:659f7b1e452eb45a7079fd2350a15be8ab89183efea6842a035d8429ec11019f
+    Description: cross-proxy Digest auth state leak
+    Severity: MEDIUM
+    VendorSeverity:
+      ubuntu: 2
+    References:
+    - https://ubuntu.com/security/notices/USN-8227-1
+    - https://www.cve.org/CVERecord?id=CVE-2026-7168
   - VulnerabilityID: CVE-2026-4873
     PkgID: libcurl4t64@8.14.1-2ubuntu1.2
     PkgName: libcurl4t64
@@ -9845,7 +9915,8 @@
       PURL: pkg:deb/ubuntu/libcurl4t64@8.14.1-2ubuntu1.2?arch=amd64&distro=ubuntu-25.10
       UID: 7f081f5df30ce970
     InstalledVersion: 8.14.1-2ubuntu1.2
-    Status: affected
+    FixedVersion: 8.14.1-2ubuntu1.3
+    Status: fixed
     Layer:
       Digest: sha256:01d5f6c4f6d779c13607eb44fb8a395a01901e6514baa24ff2151aa3dcb3c015
       DiffID: sha256:ac87e296ad3f624ddcebd42c2e36ec66b01301dbbba94e542c38702591813379
@@ -9870,6 +9941,7 @@
     - https://access.redhat.com/security/cve/CVE-2026-4873
     - https://curl.se/docs/CVE-2026-4873.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-4873
+    - https://ubuntu.com/security/notices/USN-8227-1
     - https://www.cve.org/CVERecord?id=CVE-2026-4873
   - VulnerabilityID: CVE-2026-5773
     PkgID: libcurl4t64@8.14.1-2ubuntu1.2
@@ -9878,7 +9950,8 @@
       PURL: pkg:deb/ubuntu/libcurl4t64@8.14.1-2ubuntu1.2?arch=amd64&distro=ubuntu-25.10
       UID: 7f081f5df30ce970
     InstalledVersion: 8.14.1-2ubuntu1.2
-    Status: affected
+    FixedVersion: 8.14.1-2ubuntu1.3
+    Status: fixed
     Layer:
       Digest: sha256:01d5f6c4f6d779c13607eb44fb8a395a01901e6514baa24ff2151aa3dcb3c015
       DiffID: sha256:ac87e296ad3f624ddcebd42c2e36ec66b01301dbbba94e542c38702591813379
@@ -9903,6 +9976,7 @@
     - https://access.redhat.com/security/cve/CVE-2026-5773
     - https://curl.se/docs/CVE-2026-5773.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-5773
+    - https://ubuntu.com/security/notices/USN-8227-1
     - https://www.cve.org/CVERecord?id=CVE-2026-5773
   - VulnerabilityID: CVE-2026-6276
     PkgID: libcurl4t64@8.14.1-2ubuntu1.2
@@ -9911,7 +9985,8 @@
       PURL: pkg:deb/ubuntu/libcurl4t64@8.14.1-2ubuntu1.2?arch=amd64&distro=ubuntu-25.10
       UID: 7f081f5df30ce970
     InstalledVersion: 8.14.1-2ubuntu1.2
-    Status: affected
+    FixedVersion: 8.14.1-2ubuntu1.3
+    Status: fixed
     Layer:
       Digest: sha256:01d5f6c4f6d779c13607eb44fb8a395a01901e6514baa24ff2151aa3dcb3c015
       DiffID: sha256:ac87e296ad3f624ddcebd42c2e36ec66b01301dbbba94e542c38702591813379
@@ -9936,6 +10011,7 @@
     - https://access.redhat.com/security/cve/CVE-2026-6276
     - https://curl.se/docs/CVE-2026-6276.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-6276
+    - https://ubuntu.com/security/notices/USN-8227-1
     - https://www.cve.org/CVERecord?id=CVE-2026-6276
   - VulnerabilityID: CVE-2024-2236
     PkgID: libgcrypt20@1.11.0-7build1
@@ -10468,7 +10544,7 @@
     - https://bugzilla.redhat.com/show_bug.cgi?id=2334165
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-56433
     - https://errata.almalinux.org/9/ALSA-2025-20559.html
-    - https://errata.rockylinux.org/RLSA-2025:20145
+    - https://errata.rockylinux.org/RLSA-2025:20559
     - https://github.com/shadow-maint/shadow/blob/e2512d5741d4a44bdd81a8c2d0029b6222728cf0/etc/login.defs#L238-L241
     - https://github.com/shadow-maint/shadow/issues/1157
     - https://github.com/shadow-maint/shadow/releases/tag/4.4
@@ -10606,7 +10682,7 @@
     - https://bugzilla.redhat.com/show_bug.cgi?id=2334165
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-56433
     - https://errata.almalinux.org/9/ALSA-2025-20559.html
-    - https://errata.rockylinux.org/RLSA-2025:20145
+    - https://errata.rockylinux.org/RLSA-2025:20559
     - https://github.com/shadow-maint/shadow/blob/e2512d5741d4a44bdd81a8c2d0029b6222728cf0/etc/login.defs#L238-L241
     - https://github.com/shadow-maint/shadow/issues/1157
     - https://github.com/shadow-maint/shadow/releases/tag/4.4
@@ -10677,7 +10753,7 @@
     - https://github.com/uutils/coreutils/releases/tag/0.6.0
     - https://www.cve.org/CVERecord?id=CVE-2026-35339
     PublishedDate: '2026-04-22T17:16:35.767Z'
-    LastModifiedDate: '2026-04-22T21:23:52.62Z'
+    LastModifiedDate: '2026-05-04T20:14:43.883Z'
   - VulnerabilityID: CVE-2026-35340
     PkgID: rust-coreutils@0.2.2-0ubuntu2.1
     PkgName: rust-coreutils
@@ -10708,7 +10784,7 @@
     - https://github.com/uutils/coreutils/releases/tag/0.6.0
     - https://www.cve.org/CVERecord?id=CVE-2026-35340
     PublishedDate: '2026-04-22T17:16:35.923Z'
-    LastModifiedDate: '2026-04-22T21:23:52.62Z'
+    LastModifiedDate: '2026-05-04T20:12:01.5Z'
   - VulnerabilityID: CVE-2026-35341
     PkgID: rust-coreutils@0.2.2-0ubuntu2.1
     PkgName: rust-coreutils
@@ -10769,7 +10845,7 @@
     - https://github.com/uutils/coreutils/releases/tag/0.6.0
     - https://www.cve.org/CVERecord?id=CVE-2026-35342
     PublishedDate: '2026-04-22T17:16:36.217Z'
-    LastModifiedDate: '2026-04-22T21:23:52.62Z'
+    LastModifiedDate: '2026-05-04T20:11:32.34Z'
   - VulnerabilityID: CVE-2026-35343
     PkgID: rust-coreutils@0.2.2-0ubuntu2.1
     PkgName: rust-coreutils
@@ -10800,7 +10876,7 @@
     - https://github.com/uutils/coreutils/releases/tag/0.7.0
     - https://www.cve.org/CVERecord?id=CVE-2026-35343
     PublishedDate: '2026-04-22T17:16:36.357Z'
-    LastModifiedDate: '2026-04-22T21:23:52.62Z'
+    LastModifiedDate: '2026-05-04T20:10:47.587Z'
   - VulnerabilityID: CVE-2026-35344
     PkgID: rust-coreutils@0.2.2-0ubuntu2.1
     PkgName: rust-coreutils
@@ -10830,7 +10906,7 @@
     - https://github.com/uutils/coreutils/issues/9745
     - https://www.cve.org/CVERecord?id=CVE-2026-35344
     PublishedDate: '2026-04-22T17:16:36.49Z'
-    LastModifiedDate: '2026-04-22T21:23:52.62Z'
+    LastModifiedDate: '2026-05-04T20:09:48.593Z'
   - VulnerabilityID: CVE-2026-35345
     PkgID: rust-coreutils@0.2.2-0ubuntu2.1
     PkgName: rust-coreutils
@@ -10861,7 +10937,7 @@
     - https://github.com/uutils/coreutils/issues/10328
     - https://www.cve.org/CVERecord?id=CVE-2026-35345
     PublishedDate: '2026-04-22T17:16:36.627Z'
-    LastModifiedDate: '2026-04-22T21:23:52.62Z'
+    LastModifiedDate: '2026-05-04T20:04:25.093Z'
   - VulnerabilityID: CVE-2026-35346
     PkgID: rust-coreutils@0.2.2-0ubuntu2.1
     PkgName: rust-coreutils
@@ -11078,10 +11154,13 @@
     VendorSeverity:
       ubuntu: 2
     References:
+    - http://www.openwall.com/lists/oss-security/2026/05/04/4
+    - http://www.openwall.com/lists/oss-security/2026/05/04/5
+    - http://www.openwall.com/lists/oss-security/2026/05/04/6
     - https://github.com/uutils/coreutils/issues/10020
     - https://www.cve.org/CVERecord?id=CVE-2026-35352
     PublishedDate: '2026-04-22T17:16:37.597Z'
-    LastModifiedDate: '2026-04-24T19:03:53.083Z'
+    LastModifiedDate: '2026-05-04T18:16:28.37Z'
   - VulnerabilityID: CVE-2026-35353
     PkgID: rust-coreutils@0.2.2-0ubuntu2.1
     PkgName: rust-coreutils
@@ -11259,14 +11338,19 @@
     CweIDs:
     - CWE-706
     VendorSeverity:
+      nvd: 2
       ubuntu: 2
+    CVSS:
+      nvd:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 5.5
     References:
     - https://github.com/uutils/coreutils/issues/9746
     - https://github.com/uutils/coreutils/pull/11163
     - https://github.com/uutils/coreutils/releases/tag/0.7.0
     - https://www.cve.org/CVERecord?id=CVE-2026-35358
     PublishedDate: '2026-04-22T17:16:38.393Z'
-    LastModifiedDate: '2026-04-22T21:23:52.62Z'
+    LastModifiedDate: '2026-05-04T19:03:00.59Z'
   - VulnerabilityID: CVE-2026-35359
     PkgID: rust-coreutils@0.2.2-0ubuntu2.1
     PkgName: rust-coreutils
@@ -11486,7 +11570,7 @@
     - https://github.com/uutils/coreutils/releases/tag/0.7.0
     - https://www.cve.org/CVERecord?id=CVE-2026-35365
     PublishedDate: '2026-04-22T17:16:39.9Z'
-    LastModifiedDate: '2026-04-22T21:23:52.62Z'
+    LastModifiedDate: '2026-05-04T18:53:45.707Z'
   - VulnerabilityID: CVE-2026-35366
     PkgID: rust-coreutils@0.2.2-0ubuntu2.1
     PkgName: rust-coreutils
@@ -11518,7 +11602,7 @@
     - https://github.com/uutils/coreutils/releases/tag/0.6.0
     - https://www.cve.org/CVERecord?id=CVE-2026-35366
     PublishedDate: '2026-04-22T17:16:40.167Z'
-    LastModifiedDate: '2026-04-22T21:23:52.62Z'
+    LastModifiedDate: '2026-05-04T18:52:42.39Z'
   - VulnerabilityID: CVE-2026-35367
     PkgID: rust-coreutils@0.2.2-0ubuntu2.1
     PkgName: rust-coreutils
@@ -11609,7 +11693,7 @@
     - https://github.com/uutils/coreutils/releases/tag/0.6.0
     - https://www.cve.org/CVERecord?id=CVE-2026-35369
     PublishedDate: '2026-04-22T17:16:40.687Z'
-    LastModifiedDate: '2026-04-22T21:23:52.62Z'
+    LastModifiedDate: '2026-05-04T18:50:23.537Z'
   - VulnerabilityID: CVE-2026-35370
     PkgID: rust-coreutils@0.2.2-0ubuntu2.1
     PkgName: rust-coreutils
@@ -11639,7 +11723,7 @@
     - https://github.com/uutils/coreutils/issues/10006
     - https://www.cve.org/CVERecord?id=CVE-2026-35370
     PublishedDate: '2026-04-22T17:16:40.833Z'
-    LastModifiedDate: '2026-04-22T21:23:52.62Z'
+    LastModifiedDate: '2026-05-04T20:02:44.33Z'
   - VulnerabilityID: CVE-2026-35371
     PkgID: rust-coreutils@0.2.2-0ubuntu2.1
     PkgName: rust-coreutils
@@ -11669,7 +11753,7 @@
     - https://github.com/uutils/coreutils/issues/10006
     - https://www.cve.org/CVERecord?id=CVE-2026-35371
     PublishedDate: '2026-04-22T17:16:40.987Z'
-    LastModifiedDate: '2026-04-22T21:23:52.62Z'
+    LastModifiedDate: '2026-05-04T20:02:06.183Z'
   - VulnerabilityID: CVE-2026-35372
     PkgID: rust-coreutils@0.2.2-0ubuntu2.1
     PkgName: rust-coreutils
@@ -11700,7 +11784,7 @@
     - https://github.com/uutils/coreutils/releases/tag/0.8.0
     - https://www.cve.org/CVERecord?id=CVE-2026-35372
     PublishedDate: '2026-04-22T17:16:41.85Z'
-    LastModifiedDate: '2026-04-22T21:23:52.62Z'
+    LastModifiedDate: '2026-05-04T18:49:46.51Z'
   - VulnerabilityID: CVE-2026-35373
     PkgID: rust-coreutils@0.2.2-0ubuntu2.1
     PkgName: rust-coreutils
@@ -11725,12 +11809,17 @@
     CweIDs:
     - CWE-176
     VendorSeverity:
+      nvd: 2
       ubuntu: 2
+    CVSS:
+      nvd:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 5.5
     References:
     - https://github.com/uutils/coreutils/pull/11403
     - https://www.cve.org/CVERecord?id=CVE-2026-35373
     PublishedDate: '2026-04-22T17:16:41.997Z'
-    LastModifiedDate: '2026-04-22T21:23:52.62Z'
+    LastModifiedDate: '2026-05-04T20:01:25.93Z'
   - VulnerabilityID: CVE-2026-35374
     PkgID: rust-coreutils@0.2.2-0ubuntu2.1
     PkgName: rust-coreutils
@@ -11760,7 +11849,7 @@
     - https://github.com/uutils/coreutils/pull/11401
     - https://www.cve.org/CVERecord?id=CVE-2026-35374
     PublishedDate: '2026-04-22T17:16:42.127Z'
-    LastModifiedDate: '2026-04-22T21:23:52.62Z'
+    LastModifiedDate: '2026-05-04T19:22:14.457Z'
   - VulnerabilityID: CVE-2026-35375
     PkgID: rust-coreutils@0.2.2-0ubuntu2.1
     PkgName: rust-coreutils
@@ -11791,7 +11880,7 @@
     - https://github.com/uutils/coreutils/releases/tag/0.8.0
     - https://www.cve.org/CVERecord?id=CVE-2026-35375
     PublishedDate: '2026-04-22T17:16:42.293Z'
-    LastModifiedDate: '2026-04-22T21:23:52.62Z'
+    LastModifiedDate: '2026-05-04T19:13:37.293Z'
   - VulnerabilityID: CVE-2026-35376
     PkgID: rust-coreutils@0.2.2-0ubuntu2.1
     PkgName: rust-coreutils
@@ -11816,13 +11905,18 @@
     CweIDs:
     - CWE-367
     VendorSeverity:
+      nvd: 2
       ubuntu: 2
+    CVSS:
+      nvd:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:L/I:H/A:L
+        V3Score: 5.8
     References:
     - https://github.com/uutils/coreutils/pull/11402
     - https://github.com/uutils/coreutils/releases/tag/0.8.0
     - https://www.cve.org/CVERecord?id=CVE-2026-35376
     PublishedDate: '2026-04-22T17:16:42.43Z'
-    LastModifiedDate: '2026-04-22T21:23:52.62Z'
+    LastModifiedDate: '2026-05-04T19:06:31.93Z'
   - VulnerabilityID: CVE-2026-35377
     PkgID: rust-coreutils@0.2.2-0ubuntu2.1
     PkgName: rust-coreutils
@@ -11883,7 +11977,7 @@
     - https://github.com/uutils/coreutils/releases/tag/0.8.0
     - https://www.cve.org/CVERecord?id=CVE-2026-35378
     PublishedDate: '2026-04-22T17:16:42.73Z'
-    LastModifiedDate: '2026-04-22T21:23:52.62Z'
+    LastModifiedDate: '2026-05-04T18:48:36.02Z'
   - VulnerabilityID: CVE-2026-35379
     PkgID: rust-coreutils@0.2.2-0ubuntu2.1
     PkgName: rust-coreutils
@@ -11977,6 +12071,47 @@
     - https://www.cve.org/CVERecord?id=CVE-2026-35381
     PublishedDate: '2026-04-22T17:16:43.2Z'
     LastModifiedDate: '2026-04-24T19:19:34.493Z'
+  - VulnerabilityID: CVE-2026-5958
+    PkgID: sed@4.9-2build2
+    PkgName: sed
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/sed@4.9-2build2?arch=amd64&distro=ubuntu-25.10
+      UID: 5c933b8e9aa12e84
+    InstalledVersion: 4.9-2build2
+    FixedVersion: 4.9-2ubuntu0.25.10.1
+    Status: fixed
+    Layer:
+      Digest: sha256:01d5f6c4f6d779c13607eb44fb8a395a01901e6514baa24ff2151aa3dcb3c015
+      DiffID: sha256:ac87e296ad3f624ddcebd42c2e36ec66b01301dbbba94e542c38702591813379
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-5958
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:e2eaa8d0b685c2edf648314bc641fd2597de8452e6b147228b0ddac70f9f2c5e
+    Title: When sed is invoked with both -i (in-place edit) and --follow-symlinks ...
+    Description: "When sed is invoked with both -i (in-place edit) and --follow-symlinks, the function open_next_file() performs two separate, non-atomic filesystem operations on the same path: \n1. resolves symlink to its target and stores\_the resolved path for determining when output is written,\n2. opens the original symlink path\_(not the resolved one) to read the file. \nBetween these two calls there is a race window. If an attacker atomically replaces the symlink with a different target during that window, sed will: read content from the new (attacker-chosen) symlink target and write the processed result to the path recorded in step 1.\_This can lead to arbitrary file overwrite with attacker-controlled content in the context of the sed process.\n\n\nThis issue was fixed in version 4.10."
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-367
+    VendorSeverity:
+      julia: 1
+      ubuntu: 2
+    CVSS:
+      julia:
+        V40Vector: CVSS:4.0/AV:L/AC:L/AT:P/PR:N/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N
+        V40Score: 2.1
+    References:
+    - https://cert.pl/en/posts/2026/04/CVE-2026-5958
+    - https://github.com/advisories/GHSA-9r7w-j29g-xqx8
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-5958
+    - https://ubuntu.com/security/notices/USN-8229-1
+    - https://www.cve.org/CVERecord?id=CVE-2026-5958
+    - https://www.gnu.org/software/sed
+    - https://www.gnu.org/software/sed/
+    PublishedDate: '2026-04-20T12:16:08.433Z'
+    LastModifiedDate: '2026-04-20T19:05:30.75Z'
   - VulnerabilityID: CVE-2025-45582
     PkgID: tar@1.35+dfsg-3.1build1
     PkgName: tar
@@ -12018,7 +12153,7 @@
     - https://bugzilla.redhat.com/show_bug.cgi?id=2379592
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-45582
     - https://errata.almalinux.org/9/ALSA-2026-0067.html
-    - https://errata.rockylinux.org/RLSA-2026:0002
+    - https://errata.rockylinux.org/RLSA-2026:0067
     - https://github.com/i900008/vulndb/blob/main/Gnu_tar_vuln.md
     - https://linux.oracle.com/cve/CVE-2025-45582.html
     - https://linux.oracle.com/errata/ELSA-2026-0067.html
