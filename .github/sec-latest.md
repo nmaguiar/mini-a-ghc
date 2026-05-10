@@ -9655,11 +9655,28 @@
 │                       │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
 │                       │      ├ Fingerprint     : sha256:9750370a68922a61633ad9b7683c5c3f863139165016a4d889fcc
 │                       │      │                   1d1c8d0a882 
-│                       │      ├ Title           : [Privilege escalation if setuid root, via ptrace] 
-│                       │      ├ Description     : [Privilege escalation if setuid root, via ptrace] 
+│                       │      ├ Title           : bubblewrap is a low-level unprivileged sandboxing tool. From
+│                       │      │                    version 0 ... 
+│                       │      ├ Description     : bubblewrap is a low-level unprivileged sandboxing tool. From
+│                       │      │                    version 0.11.0 to before version 0.11.2, if bubblewrap is
+│                       │      │                   installed in setuid mode then the user can use ptrace to
+│                       │      │                   attach to bubblewrap and control the unprivileged part of
+│                       │      │                   the sandbox setup phase. This allows the attacker to
+│                       │      │                   arbitrarily use the privileged operations, and in particular
+│                       │      │                    the "overlay mount" operation, allowing the creation of
+│                       │      │                   overlay mounts which is otherwise not allowed in the setuid
+│                       │      │                   version of bubblewrap. This issue has been patched in
+│                       │      │                   version 0.11.2. 
 │                       │      ├ Severity        : MEDIUM 
+│                       │      ├ CweIDs           ─ [0]: CWE-269 
 │                       │      ├ VendorSeverity   ─ ubuntu: 2 
-│                       │      ╰ References       ─ [0]: https://www.cve.org/CVERecord?id=CVE-2026-41163 
+│                       │      ├ References       ╭ [0]: https://github.com/containers/bubblewrap/releases/tag/
+│                       │      │                  │      v0.11.2 
+│                       │      │                  ├ [1]: https://github.com/containers/bubblewrap/security/advi
+│                       │      │                  │      sories/GHSA-xq78-7hw4-5jvp 
+│                       │      │                  ╰ [2]: https://www.cve.org/CVERecord?id=CVE-2026-41163 
+│                       │      ├ PublishedDate   : 2026-05-09T04:16:21.167Z 
+│                       │      ╰ LastModifiedDate: 2026-05-09T04:16:21.167Z 
 │                       ├ [3]  ╭ VulnerabilityID : CVE-2026-5545 
 │                       │      ├ PkgID           : curl@8.14.1-2ubuntu1.2 
 │                       │      ├ PkgName         : curl 
@@ -9691,7 +9708,8 @@
 │                       │      │                   potentially leading to unauthorized access or information
 │                       │      │                   disclosure. 
 │                       │      ├ Severity        : MEDIUM 
-│                       │      ├ VendorSeverity   ╭ redhat: 2 
+│                       │      ├ VendorSeverity   ╭ photon: 3 
+│                       │      │                  ├ redhat: 2 
 │                       │      │                  ╰ ubuntu: 2 
 │                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H
 │                       │      │                           │           /A:N 
@@ -9732,7 +9750,8 @@
 │                       │      │                   or information by intercepting these disclosed
 │                       │      │                   credentials. 
 │                       │      ├ Severity        : MEDIUM 
-│                       │      ├ VendorSeverity   ╭ redhat: 2 
+│                       │      ├ VendorSeverity   ╭ photon: 3 
+│                       │      │                  ├ redhat: 2 
 │                       │      │                  ╰ ubuntu: 2 
 │                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:N
 │                       │      │                           │           /A:N 
@@ -9775,7 +9794,8 @@
 │                       │      │                   Unauthorized Actor (CWE-200), could allow an attacker to
 │                       │      │                   obtain user credentials. 
 │                       │      ├ Severity        : MEDIUM 
-│                       │      ├ VendorSeverity   ╭ redhat: 2 
+│                       │      ├ VendorSeverity   ╭ photon: 3 
+│                       │      │                  ├ redhat: 2 
 │                       │      │                  ╰ ubuntu: 2 
 │                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:N
 │                       │      │                           │           /A:N 
@@ -9842,7 +9862,8 @@
 │                       │      │                   categorized as Cleartext Transmission of Sensitive
 │                       │      │                   Information (CWE-319), results in information disclosure. 
 │                       │      ├ Severity        : LOW 
-│                       │      ├ VendorSeverity   ╭ redhat: 2 
+│                       │      ├ VendorSeverity   ╭ photon: 2 
+│                       │      │                  ├ redhat: 2 
 │                       │      │                  ╰ ubuntu: 1 
 │                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:N
 │                       │      │                           │           /A:N 
@@ -9883,7 +9904,8 @@
 │                       │      │                    the upload of a file to an unintended location when an
 │                       │      │                   application uses libcurl for SMB transfers. 
 │                       │      ├ Severity        : LOW 
-│                       │      ├ VendorSeverity   ╭ redhat: 2 
+│                       │      ├ VendorSeverity   ╭ photon: 2 
+│                       │      │                  ├ redhat: 2 
 │                       │      │                  ╰ ubuntu: 1 
 │                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L
 │                       │      │                           │           /A:N 
@@ -9925,7 +9947,8 @@
 │                       │      │                   Validation Error (CWE-346). Exploitation typically requires
 │                       │      │                   specific debugging configurations. 
 │                       │      ├ Severity        : LOW 
-│                       │      ├ VendorSeverity   ╭ redhat: 1 
+│                       │      ├ VendorSeverity   ╭ photon: 2 
+│                       │      │                  ├ redhat: 1 
 │                       │      │                  ╰ ubuntu: 1 
 │                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N
 │                       │      │                           │           /A:N 
@@ -9942,7 +9965,8 @@
 │                       │      │                  │       o=ubuntu-25.10 
 │                       │      │                  ╰ UID : 441b18c6d9fcf5d3 
 │                       │      ├ InstalledVersion: 1.22.21ubuntu3.1 
-│                       │      ├ Status          : affected 
+│                       │      ├ FixedVersion    : 1.22.21ubuntu3.2 
+│                       │      ├ Status          : fixed 
 │                       │      ├ Layer            ╭ Digest: sha256:01d5f6c4f6d779c13607eb44fb8a395a01901e6514ba
 │                       │      │                  │         a24ff2151aa3dcb3c015 
 │                       │      │                  ╰ DiffID: sha256:ac87e296ad3f624ddcebd42c2e36ec66b01301dbbba9
@@ -9967,7 +9991,8 @@
 │                       │      ├ References       ╭ [0]: https://bugs.debian.org/1129722 
 │                       │      │                  ├ [1]: https://git.dpkg.org/cgit/dpkg/dpkg.git/commit/?id=661
 │                       │      │                  │      0297a62c0780dd0e80b0e302ef64fdcc9d313 
-│                       │      │                  ╰ [2]: https://www.cve.org/CVERecord?id=CVE-2026-2219 
+│                       │      │                  ├ [2]: https://ubuntu.com/security/notices/USN-8249-1 
+│                       │      │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2026-2219 
 │                       │      ├ PublishedDate   : 2026-03-07T09:16:07.823Z 
 │                       │      ╰ LastModifiedDate: 2026-03-09T15:15:57.87Z 
 │                       ├ [11] ╭ VulnerabilityID : CVE-2026-27456 
@@ -10394,7 +10419,8 @@
 │                       │      │                   potentially leading to unauthorized access or information
 │                       │      │                   disclosure. 
 │                       │      ├ Severity        : MEDIUM 
-│                       │      ├ VendorSeverity   ╭ redhat: 2 
+│                       │      ├ VendorSeverity   ╭ photon: 3 
+│                       │      │                  ├ redhat: 2 
 │                       │      │                  ╰ ubuntu: 2 
 │                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H
 │                       │      │                           │           /A:N 
@@ -10435,7 +10461,8 @@
 │                       │      │                   or information by intercepting these disclosed
 │                       │      │                   credentials. 
 │                       │      ├ Severity        : MEDIUM 
-│                       │      ├ VendorSeverity   ╭ redhat: 2 
+│                       │      ├ VendorSeverity   ╭ photon: 3 
+│                       │      │                  ├ redhat: 2 
 │                       │      │                  ╰ ubuntu: 2 
 │                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:N
 │                       │      │                           │           /A:N 
@@ -10478,7 +10505,8 @@
 │                       │      │                   Unauthorized Actor (CWE-200), could allow an attacker to
 │                       │      │                   obtain user credentials. 
 │                       │      ├ Severity        : MEDIUM 
-│                       │      ├ VendorSeverity   ╭ redhat: 2 
+│                       │      ├ VendorSeverity   ╭ photon: 3 
+│                       │      │                  ├ redhat: 2 
 │                       │      │                  ╰ ubuntu: 2 
 │                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:N
 │                       │      │                           │           /A:N 
@@ -10545,7 +10573,8 @@
 │                       │      │                   categorized as Cleartext Transmission of Sensitive
 │                       │      │                   Information (CWE-319), results in information disclosure. 
 │                       │      ├ Severity        : LOW 
-│                       │      ├ VendorSeverity   ╭ redhat: 2 
+│                       │      ├ VendorSeverity   ╭ photon: 2 
+│                       │      │                  ├ redhat: 2 
 │                       │      │                  ╰ ubuntu: 1 
 │                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:N
 │                       │      │                           │           /A:N 
@@ -10586,7 +10615,8 @@
 │                       │      │                    the upload of a file to an unintended location when an
 │                       │      │                   application uses libcurl for SMB transfers. 
 │                       │      ├ Severity        : LOW 
-│                       │      ├ VendorSeverity   ╭ redhat: 2 
+│                       │      ├ VendorSeverity   ╭ photon: 2 
+│                       │      │                  ├ redhat: 2 
 │                       │      │                  ╰ ubuntu: 1 
 │                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L
 │                       │      │                           │           /A:N 
@@ -10628,7 +10658,8 @@
 │                       │      │                   Validation Error (CWE-346). Exploitation typically requires
 │                       │      │                   specific debugging configurations. 
 │                       │      ├ Severity        : LOW 
-│                       │      ├ VendorSeverity   ╭ redhat: 1 
+│                       │      ├ VendorSeverity   ╭ photon: 2 
+│                       │      │                  ├ redhat: 1 
 │                       │      │                  ╰ ubuntu: 1 
 │                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N
 │                       │      │                           │           /A:N 
@@ -10987,7 +11018,7 @@
 │                       │      │                  ├ [8] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
 │                       │      │                  │       26-27135 
 │                       │      │                  ├ [9] : https://errata.almalinux.org/9/ALSA-2026-7896.html 
-│                       │      │                  ├ [10]: https://errata.rockylinux.org/RLSA-2026:7666 
+│                       │      │                  ├ [10]: https://errata.rockylinux.org/RLSA-2026:7668 
 │                       │      │                  ├ [11]: https://github.com/nghttp2/nghttp2/commit/5c7df8fa815
 │                       │      │                  │       ac1004d9ecb9d1f7595c4d37f46e1 
 │                       │      │                  ├ [12]: https://github.com/nghttp2/nghttp2/security/advisorie
@@ -10996,7 +11027,8 @@
 │                       │      │                  ├ [14]: https://linux.oracle.com/errata/ELSA-2026-8339.html 
 │                       │      │                  ├ [15]: https://nvd.nist.gov/vuln/detail/CVE-2026-27135 
 │                       │      │                  ├ [16]: https://ubuntu.com/security/notices/USN-8233-1 
-│                       │      │                  ╰ [17]: https://www.cve.org/CVERecord?id=CVE-2026-27135 
+│                       │      │                  ├ [17]: https://ubuntu.com/security/notices/USN-8233-2 
+│                       │      │                  ╰ [18]: https://www.cve.org/CVERecord?id=CVE-2026-27135 
 │                       │      ├ PublishedDate   : 2026-03-18T18:16:26.723Z 
 │                       │      ╰ LastModifiedDate: 2026-03-23T17:51:17.017Z 
 │                       ├ [32] ╭ VulnerabilityID : CVE-2026-27456 
@@ -11394,7 +11426,7 @@
 │                       │      │                  ├ [4] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
 │                       │      │                  │       24-56433 
 │                       │      │                  ├ [5] : https://errata.almalinux.org/9/ALSA-2025-20559.html 
-│                       │      │                  ├ [6] : https://errata.rockylinux.org/RLSA-2025:20145 
+│                       │      │                  ├ [6] : https://errata.rockylinux.org/RLSA-2025:20559 
 │                       │      │                  ├ [7] : https://github.com/shadow-maint/shadow/blob/e2512d574
 │                       │      │                  │       1d4a44bdd81a8c2d0029b6222728cf0/etc/login.defs#L238-L
 │                       │      │                  │       241 
@@ -11571,7 +11603,7 @@
 │                       │      │                  ├ [4] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
 │                       │      │                  │       24-56433 
 │                       │      │                  ├ [5] : https://errata.almalinux.org/9/ALSA-2025-20559.html 
-│                       │      │                  ├ [6] : https://errata.rockylinux.org/RLSA-2025:20145 
+│                       │      │                  ├ [6] : https://errata.rockylinux.org/RLSA-2025:20559 
 │                       │      │                  ├ [7] : https://github.com/shadow-maint/shadow/blob/e2512d574
 │                       │      │                  │       1d4a44bdd81a8c2d0029b6222728cf0/etc/login.defs#L238-L
 │                       │      │                  │       241 
@@ -13689,7 +13721,7 @@
 │                       │      │                  ├ [5] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
 │                       │      │                  │       25-45582 
 │                       │      │                  ├ [6] : https://errata.almalinux.org/9/ALSA-2026-0067.html 
-│                       │      │                  ├ [7] : https://errata.rockylinux.org/RLSA-2026:0002 
+│                       │      │                  ├ [7] : https://errata.rockylinux.org/RLSA-2026:0067 
 │                       │      │                  ├ [8] : https://github.com/i900008/vulndb/blob/main/Gnu_tar_v
 │                       │      │                  │       uln.md 
 │                       │      │                  ├ [9] : https://linux.oracle.com/cve/CVE-2025-45582.html 
