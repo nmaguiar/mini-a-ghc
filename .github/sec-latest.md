@@ -364,6 +364,7 @@
 │                       │      ├ Severity        : MEDIUM 
 │                       │      ├ CweIDs           ─ [0]: CWE-294 
 │                       │      ├ VendorSeverity   ╭ nvd   : 2 
+│                       │      │                  ├ photon: 2 
 │                       │      │                  ╰ ubuntu: 2 
 │                       │      ├ CVSS             ─ nvd ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N 
 │                       │      │                        ╰ V3Score : 5.3 
@@ -1178,6 +1179,7 @@
 │                       │      ├ Severity        : MEDIUM 
 │                       │      ├ CweIDs           ─ [0]: CWE-294 
 │                       │      ├ VendorSeverity   ╭ nvd   : 2 
+│                       │      │                  ├ photon: 2 
 │                       │      │                  ╰ ubuntu: 2 
 │                       │      ├ CVSS             ─ nvd ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N 
 │                       │      │                        ╰ V3Score : 5.3 
@@ -4361,7 +4363,7 @@
 │                       │      │                  ├ [6]: https://www.gnu.org/software/sed 
 │                       │      │                  ╰ [7]: https://www.gnu.org/software/sed/ 
 │                       │      ├ PublishedDate   : 2026-04-20T12:16:08.433Z 
-│                       │      ╰ LastModifiedDate: 2026-05-13T06:16:14.78Z 
+│                       │      ╰ LastModifiedDate: 2026-05-19T15:17:37.183Z 
 │                       ├ [87] ╭ VulnerabilityID : CVE-2025-45582 
 │                       │      ├ PkgID           : tar@1.35+dfsg-3.1build1 
 │                       │      ├ PkgName         : tar 
