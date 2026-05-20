@@ -316,6 +316,7 @@
     - CWE-294
     VendorSeverity:
       nvd: 2
+      photon: 2
       ubuntu: 2
     CVSS:
       nvd:
@@ -1066,6 +1067,7 @@
     - CWE-294
     VendorSeverity:
       nvd: 2
+      photon: 2
       ubuntu: 2
     CVSS:
       nvd:
@@ -3742,7 +3744,7 @@
     - https://www.gnu.org/software/sed
     - https://www.gnu.org/software/sed/
     PublishedDate: '2026-04-20T12:16:08.433Z'
-    LastModifiedDate: '2026-05-13T06:16:14.78Z'
+    LastModifiedDate: '2026-05-19T15:17:37.183Z'
   - VulnerabilityID: CVE-2025-45582
     PkgID: tar@1.35+dfsg-3.1build1
     PkgName: tar
