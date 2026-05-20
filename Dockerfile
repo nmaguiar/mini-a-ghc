@@ -2,7 +2,7 @@ FROM openaf/mini-a:deb-t8 AS main
 
 USER root
 RUN apt-get update -y\
- && apt-get install -y curl bash gh\
+ && apt-get install -y curl bash gh jq\
  && curl -fsSL https://gh.io/copilot-install | bash\
  && apt-get clean\
  && rm -rf /var/lib/apt/lists/*\
