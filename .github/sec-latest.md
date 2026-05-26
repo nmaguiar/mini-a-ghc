@@ -717,29 +717,22 @@
 │                       │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
 │                       │      ├ Fingerprint     : sha256:85a8affded140b676157369af315d09601391df5b0af0eb99f5b6
 │                       │      │                   dc40ea6dab9 
-│                       │      ├ Title           : libexpat: libexpat: Denial of service via crafted file
-│                       │      │                   processing 
+│                       │      ├ Title           : In libexpat through 2.7.3, a crafted file with an
+│                       │      │                   approximate size of  ... 
 │                       │      ├ Description     : In libexpat through 2.7.3, a crafted file with an
 │                       │      │                   approximate size of 2 MiB can lead to dozens of seconds of
 │                       │      │                   processing time. 
 │                       │      ├ Severity        : MEDIUM 
 │                       │      ├ CweIDs           ─ [0]: CWE-407 
 │                       │      ├ VendorSeverity   ╭ nvd   : 2 
-│                       │      │                  ├ redhat: 1 
 │                       │      │                  ╰ ubuntu: 2 
-│                       │      ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N
-│                       │      │                  │        │           /A:H 
-│                       │      │                  │        ╰ V3Score : 5.5 
-│                       │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:U/C:N/I:N
-│                       │      │                           │           /A:L 
-│                       │      │                           ╰ V3Score : 2.9 
+│                       │      ├ CVSS             ─ nvd ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H 
+│                       │      │                        ╰ V3Score : 5.5 
 │                       │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/12/02/1 
-│                       │      │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2025-66382 
-│                       │      │                  ├ [2]: https://cert-portal.siemens.com/productcert/html/ssa-0
+│                       │      │                  ├ [1]: https://cert-portal.siemens.com/productcert/html/ssa-0
 │                       │      │                  │      82556.html 
-│                       │      │                  ├ [3]: https://github.com/libexpat/libexpat/issues/1076 
-│                       │      │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-66382 
-│                       │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2025-66382 
+│                       │      │                  ├ [2]: https://github.com/libexpat/libexpat/issues/1076 
+│                       │      │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2025-66382 
 │                       │      ├ PublishedDate   : 2025-11-28T07:15:57.9Z 
 │                       │      ╰ LastModifiedDate: 2026-05-12T13:17:23.933Z 
 │                       ├ [15] ╭ VulnerabilityID : CVE-2026-41990 
@@ -807,7 +800,8 @@
 │                       │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
 │                       │      ├ Fingerprint     : sha256:fe1f9d4456e53d5e3d86032b993a9437a0777b3fb3caea2dd2357
 │                       │      │                   cf1b8551335 
-│                       │      ├ Title           : libgcrypt: vulnerable to Marvin Attack 
+│                       │      ├ Title           : A timing-based side-channel flaw was found in libgcrypt's
+│                       │      │                   RSA implemen ... 
 │                       │      ├ Description     : A timing-based side-channel flaw was found in libgcrypt's
 │                       │      │                   RSA implementation. This issue may allow a remote attacker
 │                       │      │                   to initiate a Bleichenbacher-style attack, which can lead to
@@ -817,12 +811,8 @@
 │                       │      ├ VendorSeverity   ╭ alma       : 2 
 │                       │      │                  ├ amazon     : 2 
 │                       │      │                  ├ oracle-oval: 2 
-│                       │      │                  ├ redhat     : 2 
 │                       │      │                  ├ rocky      : 2 
 │                       │      │                  ╰ ubuntu     : 1 
-│                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N
-│                       │      │                           │           /A:N 
-│                       │      │                           ╰ V3Score : 5.9 
 │                       │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2024:9404 
 │                       │      │                  ├ [1] : https://access.redhat.com/errata/RHSA-2025:3530 
 │                       │      │                  ├ [2] : https://access.redhat.com/errata/RHSA-2025:3534 
@@ -843,8 +833,7 @@
 │                       │      │                  ├ [14]: https://linux.oracle.com/errata/ELSA-2024-9404.html 
 │                       │      │                  ├ [15]: https://lists.gnupg.org/pipermail/gcrypt-devel/2024-M
 │                       │      │                  │       arch/005607.html 
-│                       │      │                  ├ [16]: https://nvd.nist.gov/vuln/detail/CVE-2024-2236 
-│                       │      │                  ╰ [17]: https://www.cve.org/CVERecord?id=CVE-2024-2236 
+│                       │      │                  ╰ [16]: https://www.cve.org/CVERecord?id=CVE-2024-2236 
 │                       │      ├ PublishedDate   : 2024-03-06T22:15:57.977Z 
 │                       │      ╰ LastModifiedDate: 2026-04-15T00:35:42.02Z 
 │                       ├ [17] ╭ VulnerabilityID : CVE-2026-33845 
@@ -2071,8 +2060,8 @@
 │                       │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
 │                       │      ├ Fingerprint     : sha256:75577360c3d7686cdf1c11f53c4fa660a12663294238325c92900
 │                       │      │                   716b8178d55 
-│                       │      ├ Title           : shadow-utils: Default subordinate ID configuration in
-│                       │      │                   /etc/login.defs could lead to compromise 
+│                       │      ├ Title           : shadow-utils (aka shadow) 4.4 through 4.17.0 establishes a
+│                       │      │                   default /et ... 
 │                       │      ├ Description     : shadow-utils (aka shadow) 4.4 through 4.17.0 establishes a
 │                       │      │                   default /etc/subuid behavior (e.g., uid 100000 through
 │                       │      │                   165535 for the first user account) that can realistically
@@ -2089,29 +2078,24 @@
 │                       │      ├ VendorSeverity   ╭ alma       : 1 
 │                       │      │                  ├ azure      : 1 
 │                       │      │                  ├ oracle-oval: 1 
-│                       │      │                  ├ redhat     : 1 
 │                       │      │                  ├ rocky      : 1 
 │                       │      │                  ╰ ubuntu     : 1 
-│                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:L/I:L
-│                       │      │                           │           /A:N 
-│                       │      │                           ╰ V3Score : 3.6 
-│                       │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:20145 
-│                       │      │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2024-56433 
-│                       │      │                  ├ [2] : https://bugzilla.redhat.com/2334165 
-│                       │      │                  ├ [3] : https://bugzilla.redhat.com/show_bug.cgi?id=2334165 
-│                       │      │                  ├ [4] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+│                       │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:20559 
+│                       │      │                  ├ [1] : https://bugzilla.redhat.com/2334165 
+│                       │      │                  ├ [2] : https://bugzilla.redhat.com/show_bug.cgi?id=2334165 
+│                       │      │                  ├ [3] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
 │                       │      │                  │       24-56433 
-│                       │      │                  ├ [5] : https://errata.almalinux.org/10/ALSA-2025-20145.html 
-│                       │      │                  ├ [6] : https://errata.rockylinux.org/RLSA-2025:20559 
-│                       │      │                  ├ [7] : https://github.com/shadow-maint/shadow/blob/e2512d574
+│                       │      │                  ├ [4] : https://errata.almalinux.org/9/ALSA-2025-20559.html 
+│                       │      │                  ├ [5] : https://errata.rockylinux.org/RLSA-2025:20559 
+│                       │      │                  ├ [6] : https://github.com/shadow-maint/shadow/blob/e2512d574
 │                       │      │                  │       1d4a44bdd81a8c2d0029b6222728cf0/etc/login.defs#L238-L
 │                       │      │                  │       241 
-│                       │      │                  ├ [8] : https://github.com/shadow-maint/shadow/issues/1157 
-│                       │      │                  ├ [9] : https://github.com/shadow-maint/shadow/releases/tag/4.4 
-│                       │      │                  ├ [10]: https://linux.oracle.com/cve/CVE-2024-56433.html 
-│                       │      │                  ├ [11]: https://linux.oracle.com/errata/ELSA-2025-20559-0.html 
-│                       │      │                  ├ [12]: https://nvd.nist.gov/vuln/detail/CVE-2024-56433 
-│                       │      │                  ╰ [13]: https://www.cve.org/CVERecord?id=CVE-2024-56433 
+│                       │      │                  ├ [7] : https://github.com/shadow-maint/shadow/issues/1157 
+│                       │      │                  ├ [8] : https://github.com/shadow-maint/shadow/releases/tag/4.4 
+│                       │      │                  ├ [9] : https://linux.oracle.com/cve/CVE-2024-56433.html 
+│                       │      │                  ├ [10]: https://linux.oracle.com/errata/ELSA-2025-20559-0.html 
+│                       │      │                  ├ [11]: https://nvd.nist.gov/vuln/detail/CVE-2024-56433 
+│                       │      │                  ╰ [12]: https://www.cve.org/CVERecord?id=CVE-2024-56433 
 │                       │      ├ PublishedDate   : 2024-12-26T09:15:07.267Z 
 │                       │      ╰ LastModifiedDate: 2026-04-15T00:35:42.02Z 
 │                       ├ [41] ╭ VulnerabilityID : CVE-2026-27456 
@@ -2250,8 +2234,8 @@
 │                       │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
 │                       │      ├ Fingerprint     : sha256:b3506eabf8f1fabc849e1868b85511f0ba6800fcae7fbc850ce36
 │                       │      │                   fd55db5d488 
-│                       │      ├ Title           : shadow-utils: Default subordinate ID configuration in
-│                       │      │                   /etc/login.defs could lead to compromise 
+│                       │      ├ Title           : shadow-utils (aka shadow) 4.4 through 4.17.0 establishes a
+│                       │      │                   default /et ... 
 │                       │      ├ Description     : shadow-utils (aka shadow) 4.4 through 4.17.0 establishes a
 │                       │      │                   default /etc/subuid behavior (e.g., uid 100000 through
 │                       │      │                   165535 for the first user account) that can realistically
@@ -2268,29 +2252,24 @@
 │                       │      ├ VendorSeverity   ╭ alma       : 1 
 │                       │      │                  ├ azure      : 1 
 │                       │      │                  ├ oracle-oval: 1 
-│                       │      │                  ├ redhat     : 1 
 │                       │      │                  ├ rocky      : 1 
 │                       │      │                  ╰ ubuntu     : 1 
-│                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:L/I:L
-│                       │      │                           │           /A:N 
-│                       │      │                           ╰ V3Score : 3.6 
-│                       │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:20145 
-│                       │      │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2024-56433 
-│                       │      │                  ├ [2] : https://bugzilla.redhat.com/2334165 
-│                       │      │                  ├ [3] : https://bugzilla.redhat.com/show_bug.cgi?id=2334165 
-│                       │      │                  ├ [4] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+│                       │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2025:20559 
+│                       │      │                  ├ [1] : https://bugzilla.redhat.com/2334165 
+│                       │      │                  ├ [2] : https://bugzilla.redhat.com/show_bug.cgi?id=2334165 
+│                       │      │                  ├ [3] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
 │                       │      │                  │       24-56433 
-│                       │      │                  ├ [5] : https://errata.almalinux.org/10/ALSA-2025-20145.html 
-│                       │      │                  ├ [6] : https://errata.rockylinux.org/RLSA-2025:20559 
-│                       │      │                  ├ [7] : https://github.com/shadow-maint/shadow/blob/e2512d574
+│                       │      │                  ├ [4] : https://errata.almalinux.org/9/ALSA-2025-20559.html 
+│                       │      │                  ├ [5] : https://errata.rockylinux.org/RLSA-2025:20559 
+│                       │      │                  ├ [6] : https://github.com/shadow-maint/shadow/blob/e2512d574
 │                       │      │                  │       1d4a44bdd81a8c2d0029b6222728cf0/etc/login.defs#L238-L
 │                       │      │                  │       241 
-│                       │      │                  ├ [8] : https://github.com/shadow-maint/shadow/issues/1157 
-│                       │      │                  ├ [9] : https://github.com/shadow-maint/shadow/releases/tag/4.4 
-│                       │      │                  ├ [10]: https://linux.oracle.com/cve/CVE-2024-56433.html 
-│                       │      │                  ├ [11]: https://linux.oracle.com/errata/ELSA-2025-20559-0.html 
-│                       │      │                  ├ [12]: https://nvd.nist.gov/vuln/detail/CVE-2024-56433 
-│                       │      │                  ╰ [13]: https://www.cve.org/CVERecord?id=CVE-2024-56433 
+│                       │      │                  ├ [7] : https://github.com/shadow-maint/shadow/issues/1157 
+│                       │      │                  ├ [8] : https://github.com/shadow-maint/shadow/releases/tag/4.4 
+│                       │      │                  ├ [9] : https://linux.oracle.com/cve/CVE-2024-56433.html 
+│                       │      │                  ├ [10]: https://linux.oracle.com/errata/ELSA-2025-20559-0.html 
+│                       │      │                  ├ [11]: https://nvd.nist.gov/vuln/detail/CVE-2024-56433 
+│                       │      │                  ╰ [12]: https://www.cve.org/CVERecord?id=CVE-2024-56433 
 │                       │      ├ PublishedDate   : 2024-12-26T09:15:07.267Z 
 │                       │      ╰ LastModifiedDate: 2026-04-15T00:35:42.02Z 
 │                       ├ [44] ╭ VulnerabilityID : CVE-2026-2297 
@@ -3385,7 +3364,7 @@
 │                       │      │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
 │                       │      ├ Fingerprint     : sha256:498f0528bcc6203b08b1fab68908c37831d450746fa5adfeaa274
 │                       │      │                   06dcb9664d4 
-│                       │      ├ Title           : tar: Tar path traversal 
+│                       │      ├ Title           : ELSA-2026-0067:  tar security update (MODERATE) 
 │                       │      ├ Description     : GNU Tar through 1.35 allows file overwrite via directory
 │                       │      │                   traversal in crafted TAR archives, with a certain two-step
 │                       │      │                   process. First, the victim must extract an archive that
@@ -3415,35 +3394,27 @@
 │                       │      ├ CweIDs           ─ [0]: CWE-24 
 │                       │      ├ VendorSeverity   ╭ alma       : 2 
 │                       │      │                  ├ oracle-oval: 2 
-│                       │      │                  ├ redhat     : 2 
 │                       │      │                  ├ rocky      : 2 
 │                       │      │                  ╰ ubuntu     : 2 
-│                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L
-│                       │      │                           │           /A:L 
-│                       │      │                           ╰ V3Score : 5.6 
 │                       │      ├ References       ╭ [0] : http://www.openwall.com/lists/oss-security/2025/11/01/6 
-│                       │      │                  ├ [1] : https://access.redhat.com/errata/RHSA-2026:0002 
-│                       │      │                  ├ [2] : https://access.redhat.com/security/cve/CVE-2025-45582 
-│                       │      │                  ├ [3] : https://bugzilla.redhat.com/2379592 
-│                       │      │                  ├ [4] : https://bugzilla.redhat.com/show_bug.cgi?id=2379592 
-│                       │      │                  ├ [5] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+│                       │      │                  ├ [1] : https://access.redhat.com/errata/RHSA-2026:0067 
+│                       │      │                  ├ [2] : https://bugzilla.redhat.com/2379592 
+│                       │      │                  ├ [3] : https://bugzilla.redhat.com/show_bug.cgi?id=2379592 
+│                       │      │                  ├ [4] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
 │                       │      │                  │       25-45582 
-│                       │      │                  ├ [6] : https://errata.almalinux.org/10/ALSA-2026-0002.html 
-│                       │      │                  ├ [7] : https://errata.rockylinux.org/RLSA-2026:0067 
-│                       │      │                  ├ [8] : https://github.com/i900008/vulndb/blob/main/Gnu_tar_v
+│                       │      │                  ├ [5] : https://errata.almalinux.org/9/ALSA-2026-0067.html 
+│                       │      │                  ├ [6] : https://errata.rockylinux.org/RLSA-2026:0067 
+│                       │      │                  ├ [7] : https://github.com/i900008/vulndb/blob/main/Gnu_tar_v
 │                       │      │                  │       uln.md 
-│                       │      │                  ├ [9] : https://linux.oracle.com/cve/CVE-2025-45582.html 
-│                       │      │                  ├ [10]: https://linux.oracle.com/errata/ELSA-2026-0067.html 
-│                       │      │                  ├ [11]: https://lists.gnu.org/archive/html/bug-tar/2025-08/ms
+│                       │      │                  ├ [8] : https://linux.oracle.com/cve/CVE-2025-45582.html 
+│                       │      │                  ├ [9] : https://linux.oracle.com/errata/ELSA-2026-0067.html 
+│                       │      │                  ├ [10]: https://lists.gnu.org/archive/html/bug-tar/2025-08/ms
 │                       │      │                  │       g00012.html 
-│                       │      │                  ├ [12]: https://nvd.nist.gov/vuln/detail/CVE-2025-45582 
-│                       │      │                  ├ [13]: https://www.cve.org/CVERecord?id=CVE-2025-45582 
-│                       │      │                  ├ [14]: https://www.gnu.org/software/tar/ 
-│                       │      │                  ├ [15]: https://www.gnu.org/software/tar/manual/html_node/Int
+│                       │      │                  ├ [11]: https://www.cve.org/CVERecord?id=CVE-2025-45582 
+│                       │      │                  ├ [12]: https://www.gnu.org/software/tar/ 
+│                       │      │                  ├ [13]: https://www.gnu.org/software/tar/manual/html_node/Int
 │                       │      │                  │       egrity.html 
-│                       │      │                  ├ [16]: https://www.gnu.org/software/tar/manual/html_node/Int
-│                       │      │                  │       egrity.html#Integrity 
-│                       │      │                  ╰ [17]: https://www.gnu.org/software/tar/manual/html_node/Sec
+│                       │      │                  ╰ [14]: https://www.gnu.org/software/tar/manual/html_node/Sec
 │                       │      │                          urity-rules-of-thumb.html 
 │                       │      ├ PublishedDate   : 2025-07-11T17:15:37.183Z 
 │                       │      ╰ LastModifiedDate: 2025-11-02T01:15:32.307Z 
