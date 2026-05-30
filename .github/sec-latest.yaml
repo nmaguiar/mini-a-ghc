@@ -249,6 +249,7 @@
       oracle-oval: 2
       photon: 3
       redhat: 2
+      rocky: 2
       ubuntu: 2
     CVSS:
       redhat:
@@ -258,10 +259,13 @@
     - https://access.redhat.com/errata/RHSA-2026:20587
     - https://access.redhat.com/security/cve/CVE-2026-4046
     - https://bugzilla.redhat.com/2453117
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2453117
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4046
     - https://errata.almalinux.org/8/ALSA-2026-20587.html
+    - https://errata.rockylinux.org/RLSA-2026:20587
     - https://inbox.sourceware.org/libc-announce/76814edf-cf7f-47ec-979d-2dce0a2c76bf@gotplt.org/T/#u
     - https://linux.oracle.com/cve/CVE-2026-4046.html
-    - https://linux.oracle.com/errata/ELSA-2026-20587.html
+    - https://linux.oracle.com/errata/ELSA-2026-50291.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-4046
     - https://packages.fedoraproject.org/pkgs/glibc/glibc-gconv-extra/
     - https://sourceware.org/bugzilla/show_bug.cgi?id=33980
@@ -361,6 +365,89 @@
     - https://www.openwall.com/lists/oss-security/2026/03/23/2
     PublishedDate: '2026-03-20T20:16:49.623Z'
     LastModifiedDate: '2026-04-07T18:40:02.177Z'
+  - VulnerabilityID: CVE-2026-5435
+    PkgID: libc-bin@2.43-2ubuntu2
+    PkgName: libc-bin
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/libc-bin@2.43-2ubuntu2?arch=amd64&distro=ubuntu-26.04
+      UID: aa471766c29fe384
+    InstalledVersion: 2.43-2ubuntu2
+    Status: affected
+    Layer:
+      Digest: sha256:137f05a578f6a8cf8097842993944a541957316a5fe6eaa18fa67bf369e9e2c6
+      DiffID: sha256:877febc1af9f32b31cdfbca4e58c495e03920a1a941886834d47547f57e58669
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-5435
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:ee2e570cc3d9bbd73426407dbb2c09aa1cb4decab35f1602447f0813f65fa3bb
+    Title: 'glibc: glibc: Out-of-bounds write via TSIG record processing'
+    Description: The deprecated functions ns_printrrf, ns_printrr and fp_nquery in the GNU C Library version 2.2 and newer fail to enforce the caller-supplied buffer length, and can result in an out-of-bounds write when printing TSIG records.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-787
+    VendorSeverity:
+      redhat: 2
+      ubuntu: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:L/I:N/A:H
+        V3Score: 5.9
+    References:
+    - https://access.redhat.com/security/cve/CVE-2026-5435
+    - https://inbox.sourceware.org/libc-alpha/cover.1777546194.git.fweimer@redhat.com/
+    - https://inbox.sourceware.org/libc-announce/7a655d55-276f-41fe-b550-feb3ebb2ce91@redhat.com/T/#u
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-5435
+    - https://sourceware.org/bugzilla/show_bug.cgi?id=34033
+    - https://sourceware.org/git/?p=glibc.git;a=blob_plain;f=advisories/GLIBC-SA-2026-0011
+    - https://www.cve.org/CVERecord?id=CVE-2026-5435
+    PublishedDate: '2026-04-28T13:19:22.29Z'
+    LastModifiedDate: '2026-05-05T17:38:37.03Z'
+  - VulnerabilityID: CVE-2026-6238
+    PkgID: libc-bin@2.43-2ubuntu2
+    PkgName: libc-bin
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/libc-bin@2.43-2ubuntu2?arch=amd64&distro=ubuntu-26.04
+      UID: aa471766c29fe384
+    InstalledVersion: 2.43-2ubuntu2
+    Status: affected
+    Layer:
+      Digest: sha256:137f05a578f6a8cf8097842993944a541957316a5fe6eaa18fa67bf369e9e2c6
+      DiffID: sha256:877febc1af9f32b31cdfbca4e58c495e03920a1a941886834d47547f57e58669
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-6238
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:2ece6c7f15efa5eec1203830465156ea4a60f54acb5d4b100aedaa1cc6e08c2a
+    Title: 'glibc: glibc: Application crash or uninitialized memory read via crafted DNS response'
+    Description: |-
+      The deprecated functions ns_printrrf, ns_printrr and fp_nquery in the GNU C Library version 2.2 and newer fail to validate the RDATA content against the RDATA length in a DNS response when processing LOC, CERT, TKEY or TSIG records, which may allow an attacker to craft a DNS response, causing a target application to crash or read uninitialized memory.
+
+      These functions are for application debugging only and hence not in the path of code executed by the DNS resolver.  Further, they have been deprecated since version 2.34 and should not be used by any new applications.  Applications should consider porting away from these interfaces since they may be removed in future versions.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-126
+    VendorSeverity:
+      redhat: 2
+      ubuntu: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:H
+        V3Score: 6.5
+    References:
+    - https://access.redhat.com/security/cve/CVE-2026-6238
+    - https://inbox.sourceware.org/libc-alpha/cover.1777546194.git.fweimer@redhat.com/
+    - https://inbox.sourceware.org/libc-announce/7a655d55-276f-41fe-b550-feb3ebb2ce91@redhat.com/T/#u
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-6238
+    - https://sourceware.org/bugzilla/show_bug.cgi?id=34069
+    - https://sourceware.org/git/?p=glibc.git;a=blob_plain;f=advisories/GLIBC-SA-2026-0012
+    - https://www.cve.org/CVERecord?id=CVE-2026-6238
+    PublishedDate: '2026-04-28T19:37:47.523Z'
+    LastModifiedDate: '2026-05-04T17:57:24.007Z'
   - VulnerabilityID: CVE-2026-4046
     PkgID: libc-gconv-modules-extra@2.43-2ubuntu2
     PkgName: libc-gconv-modules-extra
@@ -396,6 +483,7 @@
       oracle-oval: 2
       photon: 3
       redhat: 2
+      rocky: 2
       ubuntu: 2
     CVSS:
       redhat:
@@ -405,10 +493,13 @@
     - https://access.redhat.com/errata/RHSA-2026:20587
     - https://access.redhat.com/security/cve/CVE-2026-4046
     - https://bugzilla.redhat.com/2453117
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2453117
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4046
     - https://errata.almalinux.org/8/ALSA-2026-20587.html
+    - https://errata.rockylinux.org/RLSA-2026:20587
     - https://inbox.sourceware.org/libc-announce/76814edf-cf7f-47ec-979d-2dce0a2c76bf@gotplt.org/T/#u
     - https://linux.oracle.com/cve/CVE-2026-4046.html
-    - https://linux.oracle.com/errata/ELSA-2026-20587.html
+    - https://linux.oracle.com/errata/ELSA-2026-50291.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-4046
     - https://packages.fedoraproject.org/pkgs/glibc/glibc-gconv-extra/
     - https://sourceware.org/bugzilla/show_bug.cgi?id=33980
@@ -508,6 +599,89 @@
     - https://www.openwall.com/lists/oss-security/2026/03/23/2
     PublishedDate: '2026-03-20T20:16:49.623Z'
     LastModifiedDate: '2026-04-07T18:40:02.177Z'
+  - VulnerabilityID: CVE-2026-5435
+    PkgID: libc-gconv-modules-extra@2.43-2ubuntu2
+    PkgName: libc-gconv-modules-extra
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/libc-gconv-modules-extra@2.43-2ubuntu2?arch=amd64&distro=ubuntu-26.04
+      UID: 229c678f3865c408
+    InstalledVersion: 2.43-2ubuntu2
+    Status: affected
+    Layer:
+      Digest: sha256:137f05a578f6a8cf8097842993944a541957316a5fe6eaa18fa67bf369e9e2c6
+      DiffID: sha256:877febc1af9f32b31cdfbca4e58c495e03920a1a941886834d47547f57e58669
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-5435
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:00685ca9c01526e46598cabaf96244652dd8b9edf43c9e50e0259e9da3f9022c
+    Title: 'glibc: glibc: Out-of-bounds write via TSIG record processing'
+    Description: The deprecated functions ns_printrrf, ns_printrr and fp_nquery in the GNU C Library version 2.2 and newer fail to enforce the caller-supplied buffer length, and can result in an out-of-bounds write when printing TSIG records.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-787
+    VendorSeverity:
+      redhat: 2
+      ubuntu: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:L/I:N/A:H
+        V3Score: 5.9
+    References:
+    - https://access.redhat.com/security/cve/CVE-2026-5435
+    - https://inbox.sourceware.org/libc-alpha/cover.1777546194.git.fweimer@redhat.com/
+    - https://inbox.sourceware.org/libc-announce/7a655d55-276f-41fe-b550-feb3ebb2ce91@redhat.com/T/#u
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-5435
+    - https://sourceware.org/bugzilla/show_bug.cgi?id=34033
+    - https://sourceware.org/git/?p=glibc.git;a=blob_plain;f=advisories/GLIBC-SA-2026-0011
+    - https://www.cve.org/CVERecord?id=CVE-2026-5435
+    PublishedDate: '2026-04-28T13:19:22.29Z'
+    LastModifiedDate: '2026-05-05T17:38:37.03Z'
+  - VulnerabilityID: CVE-2026-6238
+    PkgID: libc-gconv-modules-extra@2.43-2ubuntu2
+    PkgName: libc-gconv-modules-extra
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/libc-gconv-modules-extra@2.43-2ubuntu2?arch=amd64&distro=ubuntu-26.04
+      UID: 229c678f3865c408
+    InstalledVersion: 2.43-2ubuntu2
+    Status: affected
+    Layer:
+      Digest: sha256:137f05a578f6a8cf8097842993944a541957316a5fe6eaa18fa67bf369e9e2c6
+      DiffID: sha256:877febc1af9f32b31cdfbca4e58c495e03920a1a941886834d47547f57e58669
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-6238
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:dd571f42b59c439e5d3816676184d5528fa4d7c0bf564cfc19b9cf6faaf2082a
+    Title: 'glibc: glibc: Application crash or uninitialized memory read via crafted DNS response'
+    Description: |-
+      The deprecated functions ns_printrrf, ns_printrr and fp_nquery in the GNU C Library version 2.2 and newer fail to validate the RDATA content against the RDATA length in a DNS response when processing LOC, CERT, TKEY or TSIG records, which may allow an attacker to craft a DNS response, causing a target application to crash or read uninitialized memory.
+
+      These functions are for application debugging only and hence not in the path of code executed by the DNS resolver.  Further, they have been deprecated since version 2.34 and should not be used by any new applications.  Applications should consider porting away from these interfaces since they may be removed in future versions.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-126
+    VendorSeverity:
+      redhat: 2
+      ubuntu: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:H
+        V3Score: 6.5
+    References:
+    - https://access.redhat.com/security/cve/CVE-2026-6238
+    - https://inbox.sourceware.org/libc-alpha/cover.1777546194.git.fweimer@redhat.com/
+    - https://inbox.sourceware.org/libc-announce/7a655d55-276f-41fe-b550-feb3ebb2ce91@redhat.com/T/#u
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-6238
+    - https://sourceware.org/bugzilla/show_bug.cgi?id=34069
+    - https://sourceware.org/git/?p=glibc.git;a=blob_plain;f=advisories/GLIBC-SA-2026-0012
+    - https://www.cve.org/CVERecord?id=CVE-2026-6238
+    PublishedDate: '2026-04-28T19:37:47.523Z'
+    LastModifiedDate: '2026-05-04T17:57:24.007Z'
   - VulnerabilityID: CVE-2026-4046
     PkgID: libc6@2.43-2ubuntu2
     PkgName: libc6
@@ -543,6 +717,7 @@
       oracle-oval: 2
       photon: 3
       redhat: 2
+      rocky: 2
       ubuntu: 2
     CVSS:
       redhat:
@@ -552,10 +727,13 @@
     - https://access.redhat.com/errata/RHSA-2026:20587
     - https://access.redhat.com/security/cve/CVE-2026-4046
     - https://bugzilla.redhat.com/2453117
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2453117
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4046
     - https://errata.almalinux.org/8/ALSA-2026-20587.html
+    - https://errata.rockylinux.org/RLSA-2026:20587
     - https://inbox.sourceware.org/libc-announce/76814edf-cf7f-47ec-979d-2dce0a2c76bf@gotplt.org/T/#u
     - https://linux.oracle.com/cve/CVE-2026-4046.html
-    - https://linux.oracle.com/errata/ELSA-2026-20587.html
+    - https://linux.oracle.com/errata/ELSA-2026-50291.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-4046
     - https://packages.fedoraproject.org/pkgs/glibc/glibc-gconv-extra/
     - https://sourceware.org/bugzilla/show_bug.cgi?id=33980
@@ -655,6 +833,89 @@
     - https://www.openwall.com/lists/oss-security/2026/03/23/2
     PublishedDate: '2026-03-20T20:16:49.623Z'
     LastModifiedDate: '2026-04-07T18:40:02.177Z'
+  - VulnerabilityID: CVE-2026-5435
+    PkgID: libc6@2.43-2ubuntu2
+    PkgName: libc6
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/libc6@2.43-2ubuntu2?arch=amd64&distro=ubuntu-26.04
+      UID: a6167efe03e34488
+    InstalledVersion: 2.43-2ubuntu2
+    Status: affected
+    Layer:
+      Digest: sha256:137f05a578f6a8cf8097842993944a541957316a5fe6eaa18fa67bf369e9e2c6
+      DiffID: sha256:877febc1af9f32b31cdfbca4e58c495e03920a1a941886834d47547f57e58669
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-5435
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:0536c6fc1e955d7d9f27401d22f2f1ebb69f0cf0ce2d131ed7398649c2dfff7b
+    Title: 'glibc: glibc: Out-of-bounds write via TSIG record processing'
+    Description: The deprecated functions ns_printrrf, ns_printrr and fp_nquery in the GNU C Library version 2.2 and newer fail to enforce the caller-supplied buffer length, and can result in an out-of-bounds write when printing TSIG records.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-787
+    VendorSeverity:
+      redhat: 2
+      ubuntu: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:L/I:N/A:H
+        V3Score: 5.9
+    References:
+    - https://access.redhat.com/security/cve/CVE-2026-5435
+    - https://inbox.sourceware.org/libc-alpha/cover.1777546194.git.fweimer@redhat.com/
+    - https://inbox.sourceware.org/libc-announce/7a655d55-276f-41fe-b550-feb3ebb2ce91@redhat.com/T/#u
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-5435
+    - https://sourceware.org/bugzilla/show_bug.cgi?id=34033
+    - https://sourceware.org/git/?p=glibc.git;a=blob_plain;f=advisories/GLIBC-SA-2026-0011
+    - https://www.cve.org/CVERecord?id=CVE-2026-5435
+    PublishedDate: '2026-04-28T13:19:22.29Z'
+    LastModifiedDate: '2026-05-05T17:38:37.03Z'
+  - VulnerabilityID: CVE-2026-6238
+    PkgID: libc6@2.43-2ubuntu2
+    PkgName: libc6
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/libc6@2.43-2ubuntu2?arch=amd64&distro=ubuntu-26.04
+      UID: a6167efe03e34488
+    InstalledVersion: 2.43-2ubuntu2
+    Status: affected
+    Layer:
+      Digest: sha256:137f05a578f6a8cf8097842993944a541957316a5fe6eaa18fa67bf369e9e2c6
+      DiffID: sha256:877febc1af9f32b31cdfbca4e58c495e03920a1a941886834d47547f57e58669
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-6238
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:ad0c784d2020a190db0633f56fe29db738e6e83a03a047466c4a540a4562fe9b
+    Title: 'glibc: glibc: Application crash or uninitialized memory read via crafted DNS response'
+    Description: |-
+      The deprecated functions ns_printrrf, ns_printrr and fp_nquery in the GNU C Library version 2.2 and newer fail to validate the RDATA content against the RDATA length in a DNS response when processing LOC, CERT, TKEY or TSIG records, which may allow an attacker to craft a DNS response, causing a target application to crash or read uninitialized memory.
+
+      These functions are for application debugging only and hence not in the path of code executed by the DNS resolver.  Further, they have been deprecated since version 2.34 and should not be used by any new applications.  Applications should consider porting away from these interfaces since they may be removed in future versions.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-126
+    VendorSeverity:
+      redhat: 2
+      ubuntu: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:H
+        V3Score: 6.5
+    References:
+    - https://access.redhat.com/security/cve/CVE-2026-6238
+    - https://inbox.sourceware.org/libc-alpha/cover.1777546194.git.fweimer@redhat.com/
+    - https://inbox.sourceware.org/libc-announce/7a655d55-276f-41fe-b550-feb3ebb2ce91@redhat.com/T/#u
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-6238
+    - https://sourceware.org/bugzilla/show_bug.cgi?id=34069
+    - https://sourceware.org/git/?p=glibc.git;a=blob_plain;f=advisories/GLIBC-SA-2026-0012
+    - https://www.cve.org/CVERecord?id=CVE-2026-6238
+    PublishedDate: '2026-04-28T19:37:47.523Z'
+    LastModifiedDate: '2026-05-04T17:57:24.007Z'
   - VulnerabilityID: CVE-2025-66382
     PkgID: libexpat1@2.7.4-1
     PkgName: libexpat1
@@ -673,22 +934,28 @@
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
     Fingerprint: sha256:85a8affded140b676157369af315d09601391df5b0af0eb99f5b6dc40ea6dab9
-    Title: In libexpat through 2.7.3, a crafted file with an approximate size of  ...
+    Title: 'libexpat: libexpat: Denial of service via crafted file processing'
     Description: In libexpat through 2.7.3, a crafted file with an approximate size of 2 MiB can lead to dozens of seconds of processing time.
     Severity: MEDIUM
     CweIDs:
     - CWE-407
     VendorSeverity:
       nvd: 2
+      redhat: 1
       ubuntu: 2
     CVSS:
       nvd:
         V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H
         V3Score: 5.5
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L
+        V3Score: 2.9
     References:
     - http://www.openwall.com/lists/oss-security/2025/12/02/1
+    - https://access.redhat.com/security/cve/CVE-2025-66382
     - https://cert-portal.siemens.com/productcert/html/ssa-082556.html
     - https://github.com/libexpat/libexpat/issues/1076
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-66382
     - https://www.cve.org/CVERecord?id=CVE-2025-66382
     PublishedDate: '2025-11-28T07:15:57.9Z'
     LastModifiedDate: '2026-05-12T13:17:23.933Z'
@@ -804,7 +1071,7 @@
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
     Fingerprint: sha256:fe1f9d4456e53d5e3d86032b993a9437a0777b3fb3caea2dd2357cf1b8551335
-    Title: A timing-based side-channel flaw was found in libgcrypt's RSA implemen ...
+    Title: 'libgcrypt: vulnerable to Marvin Attack'
     Description: A timing-based side-channel flaw was found in libgcrypt's RSA implementation. This issue may allow a remote attacker to initiate a Bleichenbacher-style attack, which can lead to the decryption of RSA ciphertexts.
     Severity: LOW
     CweIDs:
@@ -813,8 +1080,13 @@
       alma: 2
       amazon: 2
       oracle-oval: 2
+      redhat: 2
       rocky: 2
       ubuntu: 1
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N
+        V3Score: 5.9
     References:
     - https://access.redhat.com/errata/RHSA-2024:9404
     - https://access.redhat.com/errata/RHSA-2025:3530
@@ -832,6 +1104,7 @@
     - https://linux.oracle.com/cve/CVE-2024-2236.html
     - https://linux.oracle.com/errata/ELSA-2024-9404.html
     - https://lists.gnupg.org/pipermail/gcrypt-devel/2024-March/005607.html
+    - https://nvd.nist.gov/vuln/detail/CVE-2024-2236
     - https://www.cve.org/CVERecord?id=CVE-2024-2236
     PublishedDate: '2024-03-06T22:15:57.977Z'
     LastModifiedDate: '2026-04-15T00:35:42.02Z'
@@ -865,6 +1138,7 @@
       nvd: 4
       photon: 4
       redhat: 3
+      rocky: 3
       ubuntu: 2
     CVSS:
       nvd:
@@ -883,8 +1157,30 @@
     - https://bugzilla.redhat.com/2467279
     - https://bugzilla.redhat.com/2467289
     - https://bugzilla.redhat.com/2467437
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2445763
     - https://bugzilla.redhat.com/show_bug.cgi?id=2450624
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2450625
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2467279
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2467289
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2467437
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2467441
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2467448
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2467450
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2467451
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2467678
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-33845
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-33846
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-3833
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42009
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42010
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42011
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42012
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42013
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42014
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42015
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-5260
     - https://errata.almalinux.org/8/ALSA-2026-20611.html
+    - https://errata.rockylinux.org/RLSA-2026:20611
     - https://nvd.nist.gov/vuln/detail/CVE-2026-33845
     - https://ubuntu.com/security/notices/USN-8284-1
     - https://www.cve.org/CVERecord?id=CVE-2026-33845
@@ -920,6 +1216,7 @@
       amazon: 3
       photon: 3
       redhat: 3
+      rocky: 3
       ubuntu: 2
     CVSS:
       redhat:
@@ -935,8 +1232,30 @@
     - https://bugzilla.redhat.com/2467279
     - https://bugzilla.redhat.com/2467289
     - https://bugzilla.redhat.com/2467437
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2445763
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2450624
     - https://bugzilla.redhat.com/show_bug.cgi?id=2450625
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2467279
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2467289
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2467437
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2467441
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2467448
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2467450
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2467451
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2467678
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-33845
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-33846
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-3833
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42009
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42010
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42011
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42012
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42013
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42014
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42015
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-5260
     - https://errata.almalinux.org/8/ALSA-2026-20611.html
+    - https://errata.rockylinux.org/RLSA-2026:20611
     - https://nvd.nist.gov/vuln/detail/CVE-2026-33846
     - https://ubuntu.com/security/notices/USN-8284-1
     - https://www.cve.org/CVERecord?id=CVE-2026-33846
@@ -1015,6 +1334,7 @@
       nvd: 3
       photon: 3
       redhat: 2
+      rocky: 3
       ubuntu: 2
     CVSS:
       nvd:
@@ -1034,7 +1354,29 @@
     - https://bugzilla.redhat.com/2467289
     - https://bugzilla.redhat.com/2467437
     - https://bugzilla.redhat.com/show_bug.cgi?id=2445763
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2450624
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2450625
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2467279
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2467289
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2467437
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2467441
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2467448
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2467450
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2467451
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2467678
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-33845
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-33846
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-3833
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42009
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42010
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42011
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42012
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42013
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42014
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42015
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-5260
     - https://errata.almalinux.org/8/ALSA-2026-20611.html
+    - https://errata.rockylinux.org/RLSA-2026:20611
     - https://gitlab.com/gnutls/gnutls/-/issues/1803
     - https://nvd.nist.gov/vuln/detail/CVE-2026-3833
     - https://ubuntu.com/security/notices/USN-8284-1
@@ -1070,6 +1412,7 @@
       alma: 3
       amazon: 3
       redhat: 3
+      rocky: 3
       ubuntu: 2
     CVSS:
       redhat:
@@ -1085,8 +1428,30 @@
     - https://bugzilla.redhat.com/2467279
     - https://bugzilla.redhat.com/2467289
     - https://bugzilla.redhat.com/2467437
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2445763
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2450624
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2450625
     - https://bugzilla.redhat.com/show_bug.cgi?id=2467279
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2467289
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2467437
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2467441
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2467448
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2467450
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2467451
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2467678
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-33845
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-33846
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-3833
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42009
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42010
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42011
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42012
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42013
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42014
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42015
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-5260
     - https://errata.almalinux.org/8/ALSA-2026-20611.html
+    - https://errata.rockylinux.org/RLSA-2026:20611
     - https://nvd.nist.gov/vuln/detail/CVE-2026-42009
     - https://ubuntu.com/security/notices/USN-8284-1
     - https://www.cve.org/CVERecord?id=CVE-2026-42009
@@ -1123,6 +1488,7 @@
       nvd: 4
       photon: 4
       redhat: 3
+      rocky: 3
       ubuntu: 2
     CVSS:
       nvd:
@@ -1141,8 +1507,30 @@
     - https://bugzilla.redhat.com/2467279
     - https://bugzilla.redhat.com/2467289
     - https://bugzilla.redhat.com/2467437
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2445763
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2450624
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2450625
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2467279
     - https://bugzilla.redhat.com/show_bug.cgi?id=2467289
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2467437
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2467441
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2467448
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2467450
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2467451
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2467678
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-33845
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-33846
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-3833
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42009
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42010
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42011
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42012
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42013
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42014
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42015
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-5260
     - https://errata.almalinux.org/8/ALSA-2026-20611.html
+    - https://errata.rockylinux.org/RLSA-2026:20611
     - https://nvd.nist.gov/vuln/detail/CVE-2026-42010
     - https://ubuntu.com/security/notices/USN-8284-1
     - https://www.cve.org/CVERecord?id=CVE-2026-42010
@@ -1177,6 +1565,7 @@
       alma: 3
       photon: 3
       redhat: 2
+      rocky: 3
       ubuntu: 2
     CVSS:
       redhat:
@@ -1192,8 +1581,30 @@
     - https://bugzilla.redhat.com/2467279
     - https://bugzilla.redhat.com/2467289
     - https://bugzilla.redhat.com/2467437
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2445763
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2450624
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2450625
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2467279
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2467289
     - https://bugzilla.redhat.com/show_bug.cgi?id=2467437
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2467441
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2467448
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2467450
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2467451
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2467678
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-33845
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-33846
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-3833
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42009
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42010
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42011
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42012
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42013
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42014
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42015
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-5260
     - https://errata.almalinux.org/8/ALSA-2026-20611.html
+    - https://errata.rockylinux.org/RLSA-2026:20611
     - https://nvd.nist.gov/vuln/detail/CVE-2026-42011
     - https://ubuntu.com/security/notices/USN-8284-1
     - https://www.cve.org/CVERecord?id=CVE-2026-42011
@@ -1227,6 +1638,7 @@
     VendorSeverity:
       alma: 3
       redhat: 2
+      rocky: 3
       ubuntu: 2
     CVSS:
       redhat:
@@ -1241,8 +1653,30 @@
     - https://bugzilla.redhat.com/2467279
     - https://bugzilla.redhat.com/2467289
     - https://bugzilla.redhat.com/2467437
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2445763
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2450624
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2450625
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2467279
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2467289
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2467437
     - https://bugzilla.redhat.com/show_bug.cgi?id=2467441
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2467448
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2467450
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2467451
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2467678
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-33845
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-33846
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-3833
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42009
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42010
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42011
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42012
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42013
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42014
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42015
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-5260
     - https://errata.almalinux.org/8/ALSA-2026-20611.html
+    - https://errata.rockylinux.org/RLSA-2026:20611
     - https://nvd.nist.gov/vuln/detail/CVE-2026-42012
     - https://ubuntu.com/security/notices/USN-8284-1
     - https://www.cve.org/CVERecord?id=CVE-2026-42012
@@ -1276,6 +1710,7 @@
     VendorSeverity:
       alma: 3
       redhat: 2
+      rocky: 3
       ubuntu: 2
     CVSS:
       redhat:
@@ -1290,8 +1725,30 @@
     - https://bugzilla.redhat.com/2467279
     - https://bugzilla.redhat.com/2467289
     - https://bugzilla.redhat.com/2467437
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2445763
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2450624
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2450625
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2467279
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2467289
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2467437
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2467441
     - https://bugzilla.redhat.com/show_bug.cgi?id=2467448
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2467450
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2467451
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2467678
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-33845
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-33846
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-3833
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42009
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42010
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42011
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42012
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42013
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42014
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42015
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-5260
     - https://errata.almalinux.org/8/ALSA-2026-20611.html
+    - https://errata.rockylinux.org/RLSA-2026:20611
     - https://nvd.nist.gov/vuln/detail/CVE-2026-42013
     - https://ubuntu.com/security/notices/USN-8284-1
     - https://www.cve.org/CVERecord?id=CVE-2026-42013
@@ -1324,6 +1781,7 @@
       alma: 3
       amazon: 3
       redhat: 2
+      rocky: 3
       ubuntu: 2
     References:
     - https://access.redhat.com/errata/RHSA-2026:20611
@@ -1334,7 +1792,30 @@
     - https://bugzilla.redhat.com/2467279
     - https://bugzilla.redhat.com/2467289
     - https://bugzilla.redhat.com/2467437
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2445763
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2450624
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2450625
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2467279
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2467289
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2467437
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2467441
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2467448
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2467450
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2467451
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2467678
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-33845
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-33846
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-3833
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42009
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42010
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42011
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42012
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42013
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42014
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42015
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-5260
     - https://errata.almalinux.org/8/ALSA-2026-20611.html
+    - https://errata.rockylinux.org/RLSA-2026:20611
     - https://nvd.nist.gov/vuln/detail/CVE-2026-42014
     - https://ubuntu.com/security/notices/USN-8284-1
     - https://www.cve.org/CVERecord?id=CVE-2026-42014
@@ -1367,6 +1848,7 @@
       alma: 3
       amazon: 3
       redhat: 2
+      rocky: 3
       ubuntu: 2
     CVSS:
       redhat:
@@ -1381,8 +1863,30 @@
     - https://bugzilla.redhat.com/2467279
     - https://bugzilla.redhat.com/2467289
     - https://bugzilla.redhat.com/2467437
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2445763
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2450624
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2450625
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2467279
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2467289
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2467437
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2467441
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2467448
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2467450
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2467451
     - https://bugzilla.redhat.com/show_bug.cgi?id=2467678
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-33845
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-33846
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-3833
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42009
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42010
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42011
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42012
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42013
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42014
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42015
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-5260
     - https://errata.almalinux.org/8/ALSA-2026-20611.html
+    - https://errata.rockylinux.org/RLSA-2026:20611
     - https://nvd.nist.gov/vuln/detail/CVE-2026-42015
     - https://ubuntu.com/security/notices/USN-8284-1
     - https://www.cve.org/CVERecord?id=CVE-2026-42015
@@ -1417,6 +1921,7 @@
       alma: 3
       amazon: 3
       redhat: 2
+      rocky: 3
       ubuntu: 2
     CVSS:
       redhat:
@@ -1431,8 +1936,30 @@
     - https://bugzilla.redhat.com/2467279
     - https://bugzilla.redhat.com/2467289
     - https://bugzilla.redhat.com/2467437
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2445763
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2450624
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2450625
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2467279
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2467289
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2467437
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2467441
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2467448
     - https://bugzilla.redhat.com/show_bug.cgi?id=2467450
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2467451
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2467678
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-33845
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-33846
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-3833
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42009
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42010
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42011
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42012
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42013
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42014
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42015
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-5260
     - https://errata.almalinux.org/8/ALSA-2026-20611.html
+    - https://errata.rockylinux.org/RLSA-2026:20611
     - https://nvd.nist.gov/vuln/detail/CVE-2026-5260
     - https://ubuntu.com/security/notices/USN-8284-1
     - https://www.cve.org/CVERecord?id=CVE-2026-5260
@@ -2060,7 +2587,7 @@
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
     Fingerprint: sha256:75577360c3d7686cdf1c11f53c4fa660a12663294238325c92900716b8178d55
-    Title: shadow-utils (aka shadow) 4.4 through 4.17.0 establishes a default /et ...
+    Title: 'shadow-utils: Default subordinate ID configuration in /etc/login.defs could lead to compromise'
     Description: 'shadow-utils (aka shadow) 4.4 through 4.17.0 establishes a default /etc/subuid behavior (e.g., uid 100000 through 165535 for the first user account) that can realistically conflict with the uids of users defined on locally administered networks, potentially leading to account takeover, e.g., by leveraging newuidmap for access to an NFS home directory (or same-host resources in the case of remote logins by these local network users). NOTE: it may also be argued that system administrators should not have assigned uids, within local networks, that are within the range that can occur in /etc/subuid.'
     Severity: LOW
     CweIDs:
@@ -2069,10 +2596,16 @@
       alma: 1
       azure: 1
       oracle-oval: 1
+      redhat: 1
       rocky: 1
       ubuntu: 1
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:L/I:L/A:N
+        V3Score: 3.6
     References:
     - https://access.redhat.com/errata/RHSA-2025:20559
+    - https://access.redhat.com/security/cve/CVE-2024-56433
     - https://bugzilla.redhat.com/2334165
     - https://bugzilla.redhat.com/show_bug.cgi?id=2334165
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-56433
@@ -2194,7 +2727,7 @@
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
     Fingerprint: sha256:b3506eabf8f1fabc849e1868b85511f0ba6800fcae7fbc850ce36fd55db5d488
-    Title: shadow-utils (aka shadow) 4.4 through 4.17.0 establishes a default /et ...
+    Title: 'shadow-utils: Default subordinate ID configuration in /etc/login.defs could lead to compromise'
     Description: 'shadow-utils (aka shadow) 4.4 through 4.17.0 establishes a default /etc/subuid behavior (e.g., uid 100000 through 165535 for the first user account) that can realistically conflict with the uids of users defined on locally administered networks, potentially leading to account takeover, e.g., by leveraging newuidmap for access to an NFS home directory (or same-host resources in the case of remote logins by these local network users). NOTE: it may also be argued that system administrators should not have assigned uids, within local networks, that are within the range that can occur in /etc/subuid.'
     Severity: LOW
     CweIDs:
@@ -2203,10 +2736,16 @@
       alma: 1
       azure: 1
       oracle-oval: 1
+      redhat: 1
       rocky: 1
       ubuntu: 1
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:L/I:L/A:N
+        V3Score: 3.6
     References:
     - https://access.redhat.com/errata/RHSA-2025:20559
+    - https://access.redhat.com/security/cve/CVE-2024-56433
     - https://bugzilla.redhat.com/2334165
     - https://bugzilla.redhat.com/show_bug.cgi?id=2334165
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-56433
@@ -3163,7 +3702,7 @@
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
     Fingerprint: sha256:498f0528bcc6203b08b1fab68908c37831d450746fa5adfeaa27406dcb9664d4
-    Title: 'ELSA-2026-0067:  tar security update (MODERATE)'
+    Title: 'tar: Tar path traversal'
     Description: 'GNU Tar through 1.35 allows file overwrite via directory traversal in crafted TAR archives, with a certain two-step process. First, the victim must extract an archive that contains a ../ symlink to a critical directory. Second, the victim must extract an archive that contains a critical file, specified via a relative pathname that begins with the symlink name and ends with that critical file''s name. Here, the extraction follows the symlink and overwrites the critical file. This bypasses the protection mechanism of "Member name contains ''..''" that would occur for a single TAR archive that attempted to specify the critical file via a ../ approach. For example, the first archive can contain "x -> ../../../../../home/victim/.ssh" and the second archive can contain x/authorized_keys. This can affect server applications that automatically extract any number of user-supplied TAR archives, and were relying on the blocking of traversal. This can also affect software installation processes in which "tar xf" is run more than once (e.g., when installing a package can automatically install two dependencies that are set up as untrusted tarballs instead of official packages). NOTE: the official GNU Tar manual has an otherwise-empty directory for each "tar xf" in its Security Rules of Thumb; however, third-party advice leads users to run "tar xf" more than once into the same directory.'
     Severity: MEDIUM
     CweIDs:
@@ -3171,11 +3710,17 @@
     VendorSeverity:
       alma: 2
       oracle-oval: 2
+      redhat: 2
       rocky: 2
       ubuntu: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L
+        V3Score: 5.6
     References:
     - http://www.openwall.com/lists/oss-security/2025/11/01/6
     - https://access.redhat.com/errata/RHSA-2026:0067
+    - https://access.redhat.com/security/cve/CVE-2025-45582
     - https://bugzilla.redhat.com/2379592
     - https://bugzilla.redhat.com/show_bug.cgi?id=2379592
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-45582
@@ -3185,9 +3730,11 @@
     - https://linux.oracle.com/cve/CVE-2025-45582.html
     - https://linux.oracle.com/errata/ELSA-2026-0067.html
     - https://lists.gnu.org/archive/html/bug-tar/2025-08/msg00012.html
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-45582
     - https://www.cve.org/CVERecord?id=CVE-2025-45582
     - https://www.gnu.org/software/tar/
     - https://www.gnu.org/software/tar/manual/html_node/Integrity.html
+    - https://www.gnu.org/software/tar/manual/html_node/Integrity.html#Integrity
     - https://www.gnu.org/software/tar/manual/html_node/Security-rules-of-thumb.html
     PublishedDate: '2025-07-11T17:15:37.183Z'
     LastModifiedDate: '2025-11-02T01:15:32.307Z'
@@ -3354,7 +3901,7 @@
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
     Fingerprint: sha256:1900f450c3e53fdbafb94ecd7bf08eaa5684d88328aaa9d8bfbf3d1f9208e0fb
-    Title: When using LookupCNAME with the cgo DNS resolver, a very long CNAME re ...
+    Title: 'net: golang: Go net package: Denial of Service via long CNAME response in LookupCNAME'
     Description: When using LookupCNAME with the cgo DNS resolver, a very long CNAME response can trigger a double-free of C memory and a crash.
     Severity: HIGH
     CweIDs:
@@ -3363,6 +3910,7 @@
       amazon: 3
       bitnami: 3
       nvd: 3
+      redhat: 3
     CVSS:
       bitnami:
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
@@ -3370,12 +3918,17 @@
       nvd:
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
         V3Score: 7.5
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 7.5
     References:
+    - https://access.redhat.com/security/cve/CVE-2026-33811
     - https://go.dev/cl/767860
     - https://go.dev/issue/78803
     - https://groups.google.com/g/golang-announce/c/qcCIEXso47M
     - https://nvd.nist.gov/vuln/detail/CVE-2026-33811
     - https://pkg.go.dev/vuln/GO-2026-4981
+    - https://www.cve.org/CVERecord?id=CVE-2026-33811
     PublishedDate: '2026-05-07T20:16:42.77Z'
     LastModifiedDate: '2026-05-12T20:23:02.333Z'
   - VulnerabilityID: CVE-2026-33814
@@ -3409,6 +3962,7 @@
       azure: 3
       bitnami: 3
       nvd: 3
+      ubuntu: 2
     CVSS:
       bitnami:
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
@@ -3417,12 +3971,16 @@
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
         V3Score: 7.5
     References:
+    - https://github.com/golang/go/issues/78476
+    - https://go-review.googlesource.com/c/go/+/761581
+    - https://go-review.googlesource.com/c/net/+/761640
     - https://go.dev/cl/761581
     - https://go.dev/cl/761640
     - https://go.dev/issue/78476
     - https://groups.google.com/g/golang-announce/c/qcCIEXso47M
     - https://nvd.nist.gov/vuln/detail/CVE-2026-33814
     - https://pkg.go.dev/vuln/GO-2026-4918
+    - https://www.cve.org/CVERecord?id=CVE-2026-33814
     PublishedDate: '2026-05-07T20:16:42.88Z'
     LastModifiedDate: '2026-05-13T14:41:59.52Z'
   - VulnerabilityID: CVE-2026-39820
