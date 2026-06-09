@@ -1202,6 +1202,7 @@
     - CWE-191
     VendorSeverity:
       alma: 3
+      amazon: 3
       azure: 3
       nvd: 4
       oracle-oval: 3
@@ -1593,7 +1594,7 @@
     - https://www.cve.org/CVERecord?id=CVE-2026-42009
     - https://www.gnutls.org/security-new.html#GNUTLS-SA-2026-04-29-2
     PublishedDate: '2026-05-18T13:16:32.707Z'
-    LastModifiedDate: '2026-06-02T16:16:39.523Z'
+    LastModifiedDate: '2026-06-08T17:16:36.727Z'
   - VulnerabilityID: CVE-2026-42010
     PkgID: libgnutls30t64@3.8.12-2ubuntu1
     PkgName: libgnutls30t64
@@ -1709,6 +1710,7 @@
     - CWE-295
     VendorSeverity:
       alma: 3
+      amazon: 2
       oracle-oval: 3
       photon: 3
       redhat: 2
@@ -1792,6 +1794,7 @@
     - CWE-295
     VendorSeverity:
       alma: 3
+      amazon: 2
       oracle-oval: 3
       redhat: 2
       rocky: 3
@@ -1873,6 +1876,7 @@
     - CWE-1284
     VendorSeverity:
       alma: 3
+      amazon: 2
       oracle-oval: 3
       redhat: 2
       rocky: 3
@@ -2189,6 +2193,7 @@
     CweIDs:
     - CWE-208
     VendorSeverity:
+      amazon: 2
       redhat: 1
       rocky: 3
       ubuntu: 2
@@ -2347,7 +2352,7 @@
     - CWE-668
     VendorSeverity:
       alma: 3
-      amazon: 1
+      amazon: 2
       oracle-oval: 3
       redhat: 1
       rocky: 3
@@ -2436,7 +2441,7 @@
     - CWE-668
     VendorSeverity:
       alma: 3
-      amazon: 1
+      amazon: 2
       oracle-oval: 3
       redhat: 1
       rocky: 3
@@ -2615,6 +2620,7 @@
     - CWE-189
     - CWE-190
     VendorSeverity:
+      amazon: 2
       azure: 3
       redhat: 3
       ubuntu: 2
@@ -3113,7 +3119,7 @@
     - CWE-668
     VendorSeverity:
       alma: 3
-      amazon: 1
+      amazon: 2
       oracle-oval: 3
       redhat: 1
       rocky: 3
@@ -3202,7 +3208,7 @@
     - CWE-668
     VendorSeverity:
       alma: 3
-      amazon: 1
+      amazon: 2
       oracle-oval: 3
       redhat: 1
       rocky: 3
@@ -4453,49 +4459,6 @@
     - https://pkg.go.dev/vuln/GO-2026-4976
     PublishedDate: '2026-05-07T20:16:43.39Z'
     LastModifiedDate: '2026-05-13T16:58:56.39Z'
-  - VulnerabilityID: CVE-2026-39826
-    VendorIDs:
-    - GO-2026-4980
-    PkgID: stdlib@v1.26.2
-    PkgName: stdlib
-    PkgIdentifier:
-      PURL: pkg:golang/stdlib@v1.26.2
-      UID: e5871284774cde90
-    InstalledVersion: v1.26.2
-    FixedVersion: 1.25.10, 1.26.3
-    Status: fixed
-    Layer:
-      Digest: sha256:137f05a578f6a8cf8097842993944a541957316a5fe6eaa18fa67bf369e9e2c6
-      DiffID: sha256:877febc1af9f32b31cdfbca4e58c495e03920a1a941886834d47547f57e58669
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-39826
-    DataSource:
-      ID: govulndb
-      Name: The Go Vulnerability Database
-      URL: https://pkg.go.dev/vuln/
-    Fingerprint: sha256:4bbcc27c47127df1317825104a35ac729ba948e606d8f464288377df137d046b
-    Title: If a trusted template author were to write a <script> tag containing a ...
-    Description: If a trusted template author were to write a <script> tag containing an empty 'type' attribute or a 'type' attribute with an ASCII whitespace, the execution of the template would incorrectly escape any data passed into the <script> block.
-    Severity: HIGH
-    CweIDs:
-    - CWE-116
-    VendorSeverity:
-      amazon: 3
-      bitnami: 2
-      oracle-oval: 3
-    CVSS:
-      bitnami:
-        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N
-        V3Score: 6.1
-    References:
-    - https://go.dev/cl/771180
-    - https://go.dev/issue/78981
-    - https://groups.google.com/g/golang-announce/c/qcCIEXso47M
-    - https://linux.oracle.com/cve/CVE-2026-39826.html
-    - https://linux.oracle.com/errata/ELSA-2026-22112.html
-    - https://nvd.nist.gov/vuln/detail/CVE-2026-39826
-    - https://pkg.go.dev/vuln/GO-2026-4980
-    PublishedDate: '2026-05-07T20:16:43.49Z'
-    LastModifiedDate: '2026-05-13T16:59:07.48Z'
   - VulnerabilityID: CVE-2026-39836
     VendorIDs:
     - GO-2026-4971
@@ -4660,6 +4623,55 @@
     - https://pkg.go.dev/vuln/GO-2026-5037
     PublishedDate: '2026-06-02T23:16:35.57Z'
     LastModifiedDate: '2026-06-04T16:15:50.143Z'
+  - VulnerabilityID: CVE-2026-39826
+    VendorIDs:
+    - GO-2026-4980
+    PkgID: stdlib@v1.26.2
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.26.2
+      UID: e5871284774cde90
+    InstalledVersion: v1.26.2
+    FixedVersion: 1.25.10, 1.26.3
+    Status: fixed
+    Layer:
+      Digest: sha256:137f05a578f6a8cf8097842993944a541957316a5fe6eaa18fa67bf369e9e2c6
+      DiffID: sha256:877febc1af9f32b31cdfbca4e58c495e03920a1a941886834d47547f57e58669
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-39826
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:4bbcc27c47127df1317825104a35ac729ba948e606d8f464288377df137d046b
+    Title: 'html/template: golang: html/template: Cross-site scripting due to incorrect script tag escaping'
+    Description: If a trusted template author were to write a <script> tag containing an empty 'type' attribute or a 'type' attribute with an ASCII whitespace, the execution of the template would incorrectly escape any data passed into the <script> block.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-116
+    VendorSeverity:
+      amazon: 3
+      bitnami: 2
+      oracle-oval: 3
+      redhat: 2
+    CVSS:
+      bitnami:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N
+        V3Score: 6.1
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:N
+        V3Score: 5.4
+    References:
+    - https://access.redhat.com/security/cve/CVE-2026-39826
+    - https://go.dev/cl/771180
+    - https://go.dev/issue/78981
+    - https://groups.google.com/g/golang-announce/c/qcCIEXso47M
+    - https://linux.oracle.com/cve/CVE-2026-39826.html
+    - https://linux.oracle.com/errata/ELSA-2026-22112.html
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-39826
+    - https://pkg.go.dev/vuln/GO-2026-4980
+    - https://www.cve.org/CVERecord?id=CVE-2026-39826
+    PublishedDate: '2026-05-07T20:16:43.49Z'
+    LastModifiedDate: '2026-05-13T16:59:07.48Z'
   - VulnerabilityID: CVE-2026-42507
     VendorIDs:
     - GO-2026-5039
