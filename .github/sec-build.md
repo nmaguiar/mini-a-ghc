@@ -1354,7 +1354,7 @@
 │                       │      ├ Severity        : MEDIUM 
 │                       │      ├ CweIDs           ─ [0]: CWE-668 
 │                       │      ├ VendorSeverity   ╭ alma       : 3 
-│                       │      │                  ├ amazon     : 1 
+│                       │      │                  ├ amazon     : 2 
 │                       │      │                  ├ oracle-oval: 3 
 │                       │      │                  ├ redhat     : 1 
 │                       │      │                  ├ rocky      : 3 
@@ -1461,7 +1461,7 @@
 │                       │      ├ Severity        : MEDIUM 
 │                       │      ├ CweIDs           ─ [0]: CWE-668 
 │                       │      ├ VendorSeverity   ╭ alma       : 3 
-│                       │      │                  ├ amazon     : 1 
+│                       │      │                  ├ amazon     : 2 
 │                       │      │                  ├ oracle-oval: 3 
 │                       │      │                  ├ redhat     : 1 
 │                       │      │                  ├ rocky      : 3 
@@ -2246,7 +2246,7 @@
 │                       │      ├ Severity        : MEDIUM 
 │                       │      ├ CweIDs           ─ [0]: CWE-668 
 │                       │      ├ VendorSeverity   ╭ alma       : 3 
-│                       │      │                  ├ amazon     : 1 
+│                       │      │                  ├ amazon     : 2 
 │                       │      │                  ├ oracle-oval: 3 
 │                       │      │                  ├ redhat     : 1 
 │                       │      │                  ├ rocky      : 3 
@@ -2353,7 +2353,7 @@
 │                       │      ├ Severity        : MEDIUM 
 │                       │      ├ CweIDs           ─ [0]: CWE-668 
 │                       │      ├ VendorSeverity   ╭ alma       : 3 
-│                       │      │                  ├ amazon     : 1 
+│                       │      │                  ├ amazon     : 2 
 │                       │      │                  ├ oracle-oval: 3 
 │                       │      │                  ├ redhat     : 1 
 │                       │      │                  ├ rocky      : 3 
@@ -3801,51 +3801,7 @@
                         │      │                  ╰ [6]: https://pkg.go.dev/vuln/GO-2026-4976 
                         │      ├ PublishedDate   : 2026-05-07T20:16:43.39Z 
                         │      ╰ LastModifiedDate: 2026-05-13T16:58:56.39Z 
-                        ├ [5]  ╭ VulnerabilityID : CVE-2026-39826 
-                        │      ├ VendorIDs        ─ [0]: GO-2026-4980 
-                        │      ├ PkgID           : stdlib@v1.26.2 
-                        │      ├ PkgName         : stdlib 
-                        │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.26.2 
-                        │      │                  ╰ UID : e5871284774cde90 
-                        │      ├ InstalledVersion: v1.26.2 
-                        │      ├ FixedVersion    : 1.25.10, 1.26.3 
-                        │      ├ Status          : fixed 
-                        │      ├ Layer            ╭ Digest: sha256:3bc7e9d29d6b36ceb468120da34eae8c1d7f8d8cedbb
-                        │      │                  │         95106dedaea515fcfc7c 
-                        │      │                  ╰ DiffID: sha256:b17b8603c8bb31d49e8cac1caeefde590746918627ca
-                        │      │                            20fa99f45128ade1f3d6 
-                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-39826 
-                        │      ├ DataSource       ╭ ID  : govulndb 
-                        │      │                  ├ Name: The Go Vulnerability Database 
-                        │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
-                        │      ├ Fingerprint     : sha256:27b15a3caddae38fe25ca7efecb4bbf101fbbe822c52e9b719152
-                        │      │                   6b75722ac5c 
-                        │      ├ Title           : If a trusted template author were to write a <script> tag
-                        │      │                   containing a ... 
-                        │      ├ Description     : If a trusted template author were to write a <script> tag
-                        │      │                   containing an empty 'type' attribute or a 'type' attribute
-                        │      │                   with an ASCII whitespace, the execution of the template
-                        │      │                   would incorrectly escape any data passed into the <script>
-                        │      │                   block. 
-                        │      ├ Severity        : HIGH 
-                        │      ├ CweIDs           ─ [0]: CWE-116 
-                        │      ├ VendorSeverity   ╭ amazon     : 3 
-                        │      │                  ├ bitnami    : 2 
-                        │      │                  ╰ oracle-oval: 3 
-                        │      ├ CVSS             ─ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:
-                        │      │                            │           L/A:N 
-                        │      │                            ╰ V3Score : 6.1 
-                        │      ├ References       ╭ [0]: https://go.dev/cl/771180 
-                        │      │                  ├ [1]: https://go.dev/issue/78981 
-                        │      │                  ├ [2]: https://groups.google.com/g/golang-announce/c/qcCIEXso
-                        │      │                  │      47M 
-                        │      │                  ├ [3]: https://linux.oracle.com/cve/CVE-2026-39826.html 
-                        │      │                  ├ [4]: https://linux.oracle.com/errata/ELSA-2026-22112.html 
-                        │      │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2026-39826 
-                        │      │                  ╰ [6]: https://pkg.go.dev/vuln/GO-2026-4980 
-                        │      ├ PublishedDate   : 2026-05-07T20:16:43.49Z 
-                        │      ╰ LastModifiedDate: 2026-05-13T16:59:07.48Z 
-                        ├ [6]  ╭ VulnerabilityID : CVE-2026-39836 
+                        ├ [5]  ╭ VulnerabilityID : CVE-2026-39836 
                         │      ├ VendorIDs        ─ [0]: GO-2026-4971 
                         │      ├ PkgID           : stdlib@v1.26.2 
                         │      ├ PkgName         : stdlib 
@@ -3889,7 +3845,7 @@
                         │      │                  ╰ [6]: https://pkg.go.dev/vuln/GO-2026-4971 
                         │      ├ PublishedDate   : 2026-05-07T20:16:43.593Z 
                         │      ╰ LastModifiedDate: 2026-05-13T15:11:10.31Z 
-                        ├ [7]  ╭ VulnerabilityID : CVE-2026-42499 
+                        ├ [6]  ╭ VulnerabilityID : CVE-2026-42499 
                         │      ├ VendorIDs        ─ [0]: GO-2026-4977 
                         │      ├ PkgID           : stdlib@v1.26.2 
                         │      ├ PkgName         : stdlib 
@@ -3929,7 +3885,7 @@
                         │      │                  ╰ [6]: https://pkg.go.dev/vuln/GO-2026-4977 
                         │      ├ PublishedDate   : 2026-05-07T20:16:44.54Z 
                         │      ╰ LastModifiedDate: 2026-05-13T16:59:17.563Z 
-                        ├ [8]  ╭ VulnerabilityID : CVE-2026-42504 
+                        ├ [7]  ╭ VulnerabilityID : CVE-2026-42504 
                         │      ├ VendorIDs        ─ [0]: GO-2026-5038 
                         │      ├ PkgID           : stdlib@v1.26.2 
                         │      ├ PkgName         : stdlib 
@@ -3966,7 +3922,7 @@
                         │      │                  ╰ [4]: https://pkg.go.dev/vuln/GO-2026-5038 
                         │      ├ PublishedDate   : 2026-06-02T23:16:37.927Z 
                         │      ╰ LastModifiedDate: 2026-06-04T16:15:50.143Z 
-                        ├ [9]  ╭ VulnerabilityID : CVE-2026-27145 
+                        ├ [8]  ╭ VulnerabilityID : CVE-2026-27145 
                         │      ├ VendorIDs        ─ [0]: GO-2026-5037 
                         │      ├ PkgID           : stdlib@v1.26.2 
                         │      ├ PkgName         : stdlib 
@@ -4009,6 +3965,56 @@
                         │      │                  ╰ [4]: https://pkg.go.dev/vuln/GO-2026-5037 
                         │      ├ PublishedDate   : 2026-06-02T23:16:35.57Z 
                         │      ╰ LastModifiedDate: 2026-06-04T16:15:50.143Z 
+                        ├ [9]  ╭ VulnerabilityID : CVE-2026-39826 
+                        │      ├ VendorIDs        ─ [0]: GO-2026-4980 
+                        │      ├ PkgID           : stdlib@v1.26.2 
+                        │      ├ PkgName         : stdlib 
+                        │      ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.26.2 
+                        │      │                  ╰ UID : e5871284774cde90 
+                        │      ├ InstalledVersion: v1.26.2 
+                        │      ├ FixedVersion    : 1.25.10, 1.26.3 
+                        │      ├ Status          : fixed 
+                        │      ├ Layer            ╭ Digest: sha256:3bc7e9d29d6b36ceb468120da34eae8c1d7f8d8cedbb
+                        │      │                  │         95106dedaea515fcfc7c 
+                        │      │                  ╰ DiffID: sha256:b17b8603c8bb31d49e8cac1caeefde590746918627ca
+                        │      │                            20fa99f45128ade1f3d6 
+                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-39826 
+                        │      ├ DataSource       ╭ ID  : govulndb 
+                        │      │                  ├ Name: The Go Vulnerability Database 
+                        │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
+                        │      ├ Fingerprint     : sha256:27b15a3caddae38fe25ca7efecb4bbf101fbbe822c52e9b719152
+                        │      │                   6b75722ac5c 
+                        │      ├ Title           : html/template: golang: html/template: Cross-site scripting
+                        │      │                   due to incorrect script tag escaping 
+                        │      ├ Description     : If a trusted template author were to write a <script> tag
+                        │      │                   containing an empty 'type' attribute or a 'type' attribute
+                        │      │                   with an ASCII whitespace, the execution of the template
+                        │      │                   would incorrectly escape any data passed into the <script>
+                        │      │                   block. 
+                        │      ├ Severity        : MEDIUM 
+                        │      ├ CweIDs           ─ [0]: CWE-116 
+                        │      ├ VendorSeverity   ╭ amazon     : 3 
+                        │      │                  ├ bitnami    : 2 
+                        │      │                  ├ oracle-oval: 3 
+                        │      │                  ╰ redhat     : 2 
+                        │      ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:
+                        │      │                  │         │           L/A:N 
+                        │      │                  │         ╰ V3Score : 6.1 
+                        │      │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:
+                        │      │                            │           L/A:N 
+                        │      │                            ╰ V3Score : 5.4 
+                        │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2026-39826 
+                        │      │                  ├ [1]: https://go.dev/cl/771180 
+                        │      │                  ├ [2]: https://go.dev/issue/78981 
+                        │      │                  ├ [3]: https://groups.google.com/g/golang-announce/c/qcCIEXso
+                        │      │                  │      47M 
+                        │      │                  ├ [4]: https://linux.oracle.com/cve/CVE-2026-39826.html 
+                        │      │                  ├ [5]: https://linux.oracle.com/errata/ELSA-2026-22112.html 
+                        │      │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2026-39826 
+                        │      │                  ├ [7]: https://pkg.go.dev/vuln/GO-2026-4980 
+                        │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2026-39826 
+                        │      ├ PublishedDate   : 2026-05-07T20:16:43.49Z 
+                        │      ╰ LastModifiedDate: 2026-05-13T16:59:07.48Z 
                         ╰ [10] ╭ VulnerabilityID : CVE-2026-42507 
                                ├ VendorIDs        ─ [0]: GO-2026-5039 
                                ├ PkgID           : stdlib@v1.26.2 
