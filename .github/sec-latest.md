@@ -3235,7 +3235,7 @@
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:
 │                       │       │                           │           H/A:H 
 │                       │       │                           ╰ V3Score : 8.1 
-│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:25237 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:25239 
 │                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2026-45447 
 │                       │       │                  ├ [2] : https://bugzilla.redhat.com/2481879 
 │                       │       │                  ├ [3] : https://bugzilla.redhat.com/2481880 
@@ -3252,7 +3252,7 @@
 │                       │       │                  ├ [14]: https://bugzilla.redhat.com/2481896 
 │                       │       │                  ├ [15]: https://bugzilla.redhat.com/2481897 
 │                       │       │                  ├ [16]: https://bugzilla.redhat.com/2481898 
-│                       │       │                  ├ [17]: https://errata.almalinux.org/10/ALSA-2026-25237.html 
+│                       │       │                  ├ [17]: https://errata.almalinux.org/9/ALSA-2026-25239.html 
 │                       │       │                  ├ [18]: https://github.com/openssl/openssl/commit/3aad5eb7af
 │                       │       │                  │       4de4ee0633c30a8541a54d9bbde63c 
 │                       │       │                  ├ [19]: https://github.com/openssl/openssl/commit/7d4a980c62
@@ -3349,7 +3349,7 @@
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:
 │                       │       │                           │           H/A:N 
 │                       │       │                           ╰ V3Score : 7.4 
-│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:25237 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:25239 
 │                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2026-34182 
 │                       │       │                  ├ [2] : https://bugzilla.redhat.com/2481879 
 │                       │       │                  ├ [3] : https://bugzilla.redhat.com/2481880 
@@ -3366,7 +3366,7 @@
 │                       │       │                  ├ [14]: https://bugzilla.redhat.com/2481896 
 │                       │       │                  ├ [15]: https://bugzilla.redhat.com/2481897 
 │                       │       │                  ├ [16]: https://bugzilla.redhat.com/2481898 
-│                       │       │                  ├ [17]: https://errata.almalinux.org/10/ALSA-2026-25237.html 
+│                       │       │                  ├ [17]: https://errata.almalinux.org/9/ALSA-2026-25239.html 
 │                       │       │                  ├ [18]: https://github.com/openssl/openssl/commit/03c1f4d45f
 │                       │       │                  │       b963aee7d5833390c507cd290182bc 
 │                       │       │                  ├ [19]: https://github.com/openssl/openssl/commit/439ed7d2c0
@@ -3442,7 +3442,7 @@
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
 │                       │       │                           │           N/A:H 
 │                       │       │                           ╰ V3Score : 7.5 
-│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:25237 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:25239 
 │                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2026-34183 
 │                       │       │                  ├ [2] : https://bugzilla.redhat.com/2481879 
 │                       │       │                  ├ [3] : https://bugzilla.redhat.com/2481880 
@@ -3459,7 +3459,7 @@
 │                       │       │                  ├ [14]: https://bugzilla.redhat.com/2481896 
 │                       │       │                  ├ [15]: https://bugzilla.redhat.com/2481897 
 │                       │       │                  ├ [16]: https://bugzilla.redhat.com/2481898 
-│                       │       │                  ├ [17]: https://errata.almalinux.org/10/ALSA-2026-25237.html 
+│                       │       │                  ├ [17]: https://errata.almalinux.org/9/ALSA-2026-25239.html 
 │                       │       │                  ├ [18]: https://github.com/openssl/openssl/commit/5b306efb0b
 │                       │       │                  │       3779dfdd0803b4afc9d08c91f11517 
 │                       │       │                  ├ [19]: https://github.com/openssl/openssl/commit/7d06955ebe
@@ -3532,7 +3532,7 @@
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:
 │                       │       │                           │           N/A:H 
 │                       │       │                           ╰ V3Score : 5.9 
-│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:25237 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:25239 
 │                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2026-42764 
 │                       │       │                  ├ [2] : https://bugzilla.redhat.com/2481879 
 │                       │       │                  ├ [3] : https://bugzilla.redhat.com/2481880 
@@ -3549,7 +3549,7 @@
 │                       │       │                  ├ [14]: https://bugzilla.redhat.com/2481896 
 │                       │       │                  ├ [15]: https://bugzilla.redhat.com/2481897 
 │                       │       │                  ├ [16]: https://bugzilla.redhat.com/2481898 
-│                       │       │                  ├ [17]: https://errata.almalinux.org/10/ALSA-2026-25237.html 
+│                       │       │                  ├ [17]: https://errata.almalinux.org/9/ALSA-2026-25239.html 
 │                       │       │                  ├ [18]: https://github.com/openssl/openssl/commit/5e3ed291b8
 │                       │       │                  │       af0b03d5d3b9e56a1da69a187e9729 
 │                       │       │                  ├ [19]: https://github.com/openssl/openssl/commit/a45a0aba80
@@ -3654,7 +3654,7 @@
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:
 │                       │       │                           │           H/A:N 
 │                       │       │                           ╰ V3Score : 9.1 
-│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:25237 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:25239 
 │                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2026-45445 
 │                       │       │                  ├ [2] : https://bugzilla.redhat.com/2481879 
 │                       │       │                  ├ [3] : https://bugzilla.redhat.com/2481880 
@@ -3671,7 +3671,7 @@
 │                       │       │                  ├ [14]: https://bugzilla.redhat.com/2481896 
 │                       │       │                  ├ [15]: https://bugzilla.redhat.com/2481897 
 │                       │       │                  ├ [16]: https://bugzilla.redhat.com/2481898 
-│                       │       │                  ├ [17]: https://errata.almalinux.org/10/ALSA-2026-25237.html 
+│                       │       │                  ├ [17]: https://errata.almalinux.org/9/ALSA-2026-25239.html 
 │                       │       │                  ├ [18]: https://github.com/openssl/openssl/commit/323f0b6e7d
 │                       │       │                  │       530a4cb4336d50c88cb70f3ac2a451 
 │                       │       │                  ├ [19]: https://github.com/openssl/openssl/commit/787a6dfba8
@@ -3754,7 +3754,7 @@
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:L/I:
 │                       │       │                           │           N/A:H 
 │                       │       │                           ╰ V3Score : 5 
-│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:25237 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:25239 
 │                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2026-34180 
 │                       │       │                  ├ [2] : https://bugzilla.redhat.com/2481879 
 │                       │       │                  ├ [3] : https://bugzilla.redhat.com/2481880 
@@ -3771,7 +3771,7 @@
 │                       │       │                  ├ [14]: https://bugzilla.redhat.com/2481896 
 │                       │       │                  ├ [15]: https://bugzilla.redhat.com/2481897 
 │                       │       │                  ├ [16]: https://bugzilla.redhat.com/2481898 
-│                       │       │                  ├ [17]: https://errata.almalinux.org/10/ALSA-2026-25237.html 
+│                       │       │                  ├ [17]: https://errata.almalinux.org/9/ALSA-2026-25239.html 
 │                       │       │                  ├ [18]: https://github.com/openssl/openssl/commit/1c6908e4fa
 │                       │       │                  │       5fa568752221d8eaf561a809751e5d 
 │                       │       │                  ├ [19]: https://github.com/openssl/openssl/commit/cbe418ae97
@@ -3844,7 +3844,7 @@
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:
 │                       │       │                           │           H/A:N 
 │                       │       │                           ╰ V3Score : 6.3 
-│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:25237 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:25239 
 │                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2026-34181 
 │                       │       │                  ├ [2] : https://bugzilla.redhat.com/2481879 
 │                       │       │                  ├ [3] : https://bugzilla.redhat.com/2481880 
@@ -3861,7 +3861,7 @@
 │                       │       │                  ├ [14]: https://bugzilla.redhat.com/2481896 
 │                       │       │                  ├ [15]: https://bugzilla.redhat.com/2481897 
 │                       │       │                  ├ [16]: https://bugzilla.redhat.com/2481898 
-│                       │       │                  ├ [17]: https://errata.almalinux.org/10/ALSA-2026-25237.html 
+│                       │       │                  ├ [17]: https://errata.almalinux.org/9/ALSA-2026-25239.html 
 │                       │       │                  ├ [18]: https://github.com/openssl/openssl/commit/0300eb9ddc
 │                       │       │                  │       e7a0895bf301a4b0c03a9da2313a0f 
 │                       │       │                  ├ [19]: https://github.com/openssl/openssl/commit/79eb76a937
@@ -3934,7 +3934,7 @@
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:
 │                       │       │                           │           N/A:H 
 │                       │       │                           ╰ V3Score : 5.3 
-│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:25237 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:25239 
 │                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2026-42766 
 │                       │       │                  ├ [2] : https://bugzilla.redhat.com/2481879 
 │                       │       │                  ├ [3] : https://bugzilla.redhat.com/2481880 
@@ -3951,7 +3951,7 @@
 │                       │       │                  ├ [14]: https://bugzilla.redhat.com/2481896 
 │                       │       │                  ├ [15]: https://bugzilla.redhat.com/2481897 
 │                       │       │                  ├ [16]: https://bugzilla.redhat.com/2481898 
-│                       │       │                  ├ [17]: https://errata.almalinux.org/10/ALSA-2026-25237.html 
+│                       │       │                  ├ [17]: https://errata.almalinux.org/9/ALSA-2026-25239.html 
 │                       │       │                  ├ [18]: https://github.com/openssl/openssl/commit/056d06c191
 │                       │       │                  │       8fafbb98c1c85a02e4c47cc4e199ce 
 │                       │       │                  ├ [19]: https://github.com/openssl/openssl/commit/12bc26ffb3
@@ -4024,7 +4024,7 @@
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:
 │                       │       │                           │           N/A:H 
 │                       │       │                           ╰ V3Score : 5.3 
-│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:25237 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:25239 
 │                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2026-42767 
 │                       │       │                  ├ [2] : https://bugzilla.redhat.com/2481879 
 │                       │       │                  ├ [3] : https://bugzilla.redhat.com/2481880 
@@ -4041,7 +4041,7 @@
 │                       │       │                  ├ [14]: https://bugzilla.redhat.com/2481896 
 │                       │       │                  ├ [15]: https://bugzilla.redhat.com/2481897 
 │                       │       │                  ├ [16]: https://bugzilla.redhat.com/2481898 
-│                       │       │                  ├ [17]: https://errata.almalinux.org/10/ALSA-2026-25237.html 
+│                       │       │                  ├ [17]: https://errata.almalinux.org/9/ALSA-2026-25239.html 
 │                       │       │                  ├ [18]: https://github.com/openssl/openssl/commit/61a86a8cd7
 │                       │       │                  │       3546c9fea916f3d304c1293e05c046 
 │                       │       │                  ├ [19]: https://github.com/openssl/openssl/commit/665d525408
@@ -4167,7 +4167,7 @@
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:
 │                       │       │                           │           H/A:N 
 │                       │       │                           ╰ V3Score : 6.3 
-│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:25237 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:25239 
 │                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2026-42768 
 │                       │       │                  ├ [2] : https://bugzilla.redhat.com/2481879 
 │                       │       │                  ├ [3] : https://bugzilla.redhat.com/2481880 
@@ -4184,7 +4184,7 @@
 │                       │       │                  ├ [14]: https://bugzilla.redhat.com/2481896 
 │                       │       │                  ├ [15]: https://bugzilla.redhat.com/2481897 
 │                       │       │                  ├ [16]: https://bugzilla.redhat.com/2481898 
-│                       │       │                  ├ [17]: https://errata.almalinux.org/10/ALSA-2026-25237.html 
+│                       │       │                  ├ [17]: https://errata.almalinux.org/9/ALSA-2026-25239.html 
 │                       │       │                  ├ [18]: https://github.com/openssl/openssl/commit/a2ca7b2d73
 │                       │       │                  │       e0ffc1eae183fe6e1741dac767cb4f 
 │                       │       │                  ├ [19]: https://github.com/openssl/openssl/commit/bbb151a830
@@ -4282,7 +4282,7 @@
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:
 │                       │       │                           │           H/A:N 
 │                       │       │                           ╰ V3Score : 5.9 
-│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:25237 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:25239 
 │                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2026-42769 
 │                       │       │                  ├ [2] : https://bugzilla.redhat.com/2481879 
 │                       │       │                  ├ [3] : https://bugzilla.redhat.com/2481880 
@@ -4299,7 +4299,7 @@
 │                       │       │                  ├ [14]: https://bugzilla.redhat.com/2481896 
 │                       │       │                  ├ [15]: https://bugzilla.redhat.com/2481897 
 │                       │       │                  ├ [16]: https://bugzilla.redhat.com/2481898 
-│                       │       │                  ├ [17]: https://errata.almalinux.org/10/ALSA-2026-25237.html 
+│                       │       │                  ├ [17]: https://errata.almalinux.org/9/ALSA-2026-25239.html 
 │                       │       │                  ├ [18]: https://github.com/openssl/openssl/commit/54d0989997
 │                       │       │                  │       e5fc26057009a9782c3441ce3842fb 
 │                       │       │                  ├ [19]: https://github.com/openssl/openssl/commit/777b363b16
@@ -4386,7 +4386,7 @@
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:
 │                       │       │                           │           N/A:N 
 │                       │       │                           ╰ V3Score : 5.9 
-│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:25237 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:25239 
 │                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2026-42770 
 │                       │       │                  ├ [2] : https://bugzilla.redhat.com/2481879 
 │                       │       │                  ├ [3] : https://bugzilla.redhat.com/2481880 
@@ -4403,7 +4403,7 @@
 │                       │       │                  ├ [14]: https://bugzilla.redhat.com/2481896 
 │                       │       │                  ├ [15]: https://bugzilla.redhat.com/2481897 
 │                       │       │                  ├ [16]: https://bugzilla.redhat.com/2481898 
-│                       │       │                  ├ [17]: https://errata.almalinux.org/10/ALSA-2026-25237.html 
+│                       │       │                  ├ [17]: https://errata.almalinux.org/9/ALSA-2026-25239.html 
 │                       │       │                  ├ [18]: https://github.com/openssl/openssl/commit/3da5a516cd
 │                       │       │                  │       2635a320ff748503db2cef7c4b0f02 
 │                       │       │                  ├ [19]: https://github.com/openssl/openssl/commit/3ddbb7ab50
@@ -4505,7 +4505,7 @@
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:
 │                       │       │                           │           L/A:N 
 │                       │       │                           ╰ V3Score : 3.7 
-│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:25237 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:25239 
 │                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2026-45446 
 │                       │       │                  ├ [2] : https://bugzilla.redhat.com/2481879 
 │                       │       │                  ├ [3] : https://bugzilla.redhat.com/2481880 
@@ -4522,7 +4522,7 @@
 │                       │       │                  ├ [14]: https://bugzilla.redhat.com/2481896 
 │                       │       │                  ├ [15]: https://bugzilla.redhat.com/2481897 
 │                       │       │                  ├ [16]: https://bugzilla.redhat.com/2481898 
-│                       │       │                  ├ [17]: https://errata.almalinux.org/10/ALSA-2026-25237.html 
+│                       │       │                  ├ [17]: https://errata.almalinux.org/9/ALSA-2026-25239.html 
 │                       │       │                  ├ [18]: https://github.com/openssl/openssl/commit/25b32cd9d4
 │                       │       │                  │       1d2bc01b6abc425bb4baf2c2236fdc 
 │                       │       │                  ├ [19]: https://github.com/openssl/openssl/commit/71e2a5d263
@@ -4613,7 +4613,7 @@
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:L/I:
 │                       │       │                           │           L/A:H 
 │                       │       │                           ╰ V3Score : 5.5 
-│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:25237 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:25239 
 │                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2026-7383 
 │                       │       │                  ├ [2] : https://bugzilla.redhat.com/2481879 
 │                       │       │                  ├ [3] : https://bugzilla.redhat.com/2481880 
@@ -4630,7 +4630,7 @@
 │                       │       │                  ├ [14]: https://bugzilla.redhat.com/2481896 
 │                       │       │                  ├ [15]: https://bugzilla.redhat.com/2481897 
 │                       │       │                  ├ [16]: https://bugzilla.redhat.com/2481898 
-│                       │       │                  ├ [17]: https://errata.almalinux.org/10/ALSA-2026-25237.html 
+│                       │       │                  ├ [17]: https://errata.almalinux.org/9/ALSA-2026-25239.html 
 │                       │       │                  ├ [18]: https://github.com/openssl/openssl/commit/4f8d2bddaa
 │                       │       │                  │       2c8e06f9c33390ee1717059a6e4be6 
 │                       │       │                  ├ [19]: https://github.com/openssl/openssl/commit/80c15faaf7
@@ -4727,7 +4727,7 @@
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:
 │                       │       │                           │           N/A:H 
 │                       │       │                           ╰ V3Score : 5.9 
-│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:25237 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:25239 
 │                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2026-9076 
 │                       │       │                  ├ [2] : https://bugzilla.redhat.com/2481879 
 │                       │       │                  ├ [3] : https://bugzilla.redhat.com/2481880 
@@ -4744,7 +4744,7 @@
 │                       │       │                  ├ [14]: https://bugzilla.redhat.com/2481896 
 │                       │       │                  ├ [15]: https://bugzilla.redhat.com/2481897 
 │                       │       │                  ├ [16]: https://bugzilla.redhat.com/2481898 
-│                       │       │                  ├ [17]: https://errata.almalinux.org/10/ALSA-2026-25237.html 
+│                       │       │                  ├ [17]: https://errata.almalinux.org/9/ALSA-2026-25239.html 
 │                       │       │                  ├ [18]: https://github.com/openssl/openssl/commit/05b0663668
 │                       │       │                  │       42f930fadd9a6e94df98030af431bb 
 │                       │       │                  ├ [19]: https://github.com/openssl/openssl/commit/3d8d5bc105
@@ -5329,7 +5329,7 @@
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:
 │                       │       │                           │           H/A:H 
 │                       │       │                           ╰ V3Score : 8.1 
-│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:25237 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:25239 
 │                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2026-45447 
 │                       │       │                  ├ [2] : https://bugzilla.redhat.com/2481879 
 │                       │       │                  ├ [3] : https://bugzilla.redhat.com/2481880 
@@ -5346,7 +5346,7 @@
 │                       │       │                  ├ [14]: https://bugzilla.redhat.com/2481896 
 │                       │       │                  ├ [15]: https://bugzilla.redhat.com/2481897 
 │                       │       │                  ├ [16]: https://bugzilla.redhat.com/2481898 
-│                       │       │                  ├ [17]: https://errata.almalinux.org/10/ALSA-2026-25237.html 
+│                       │       │                  ├ [17]: https://errata.almalinux.org/9/ALSA-2026-25239.html 
 │                       │       │                  ├ [18]: https://github.com/openssl/openssl/commit/3aad5eb7af
 │                       │       │                  │       4de4ee0633c30a8541a54d9bbde63c 
 │                       │       │                  ├ [19]: https://github.com/openssl/openssl/commit/7d4a980c62
@@ -5443,7 +5443,7 @@
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:
 │                       │       │                           │           H/A:N 
 │                       │       │                           ╰ V3Score : 7.4 
-│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:25237 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:25239 
 │                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2026-34182 
 │                       │       │                  ├ [2] : https://bugzilla.redhat.com/2481879 
 │                       │       │                  ├ [3] : https://bugzilla.redhat.com/2481880 
@@ -5460,7 +5460,7 @@
 │                       │       │                  ├ [14]: https://bugzilla.redhat.com/2481896 
 │                       │       │                  ├ [15]: https://bugzilla.redhat.com/2481897 
 │                       │       │                  ├ [16]: https://bugzilla.redhat.com/2481898 
-│                       │       │                  ├ [17]: https://errata.almalinux.org/10/ALSA-2026-25237.html 
+│                       │       │                  ├ [17]: https://errata.almalinux.org/9/ALSA-2026-25239.html 
 │                       │       │                  ├ [18]: https://github.com/openssl/openssl/commit/03c1f4d45f
 │                       │       │                  │       b963aee7d5833390c507cd290182bc 
 │                       │       │                  ├ [19]: https://github.com/openssl/openssl/commit/439ed7d2c0
@@ -5536,7 +5536,7 @@
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
 │                       │       │                           │           N/A:H 
 │                       │       │                           ╰ V3Score : 7.5 
-│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:25237 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:25239 
 │                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2026-34183 
 │                       │       │                  ├ [2] : https://bugzilla.redhat.com/2481879 
 │                       │       │                  ├ [3] : https://bugzilla.redhat.com/2481880 
@@ -5553,7 +5553,7 @@
 │                       │       │                  ├ [14]: https://bugzilla.redhat.com/2481896 
 │                       │       │                  ├ [15]: https://bugzilla.redhat.com/2481897 
 │                       │       │                  ├ [16]: https://bugzilla.redhat.com/2481898 
-│                       │       │                  ├ [17]: https://errata.almalinux.org/10/ALSA-2026-25237.html 
+│                       │       │                  ├ [17]: https://errata.almalinux.org/9/ALSA-2026-25239.html 
 │                       │       │                  ├ [18]: https://github.com/openssl/openssl/commit/5b306efb0b
 │                       │       │                  │       3779dfdd0803b4afc9d08c91f11517 
 │                       │       │                  ├ [19]: https://github.com/openssl/openssl/commit/7d06955ebe
@@ -5626,7 +5626,7 @@
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:
 │                       │       │                           │           N/A:H 
 │                       │       │                           ╰ V3Score : 5.9 
-│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:25237 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:25239 
 │                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2026-42764 
 │                       │       │                  ├ [2] : https://bugzilla.redhat.com/2481879 
 │                       │       │                  ├ [3] : https://bugzilla.redhat.com/2481880 
@@ -5643,7 +5643,7 @@
 │                       │       │                  ├ [14]: https://bugzilla.redhat.com/2481896 
 │                       │       │                  ├ [15]: https://bugzilla.redhat.com/2481897 
 │                       │       │                  ├ [16]: https://bugzilla.redhat.com/2481898 
-│                       │       │                  ├ [17]: https://errata.almalinux.org/10/ALSA-2026-25237.html 
+│                       │       │                  ├ [17]: https://errata.almalinux.org/9/ALSA-2026-25239.html 
 │                       │       │                  ├ [18]: https://github.com/openssl/openssl/commit/5e3ed291b8
 │                       │       │                  │       af0b03d5d3b9e56a1da69a187e9729 
 │                       │       │                  ├ [19]: https://github.com/openssl/openssl/commit/a45a0aba80
@@ -5748,7 +5748,7 @@
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:
 │                       │       │                           │           H/A:N 
 │                       │       │                           ╰ V3Score : 9.1 
-│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:25237 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:25239 
 │                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2026-45445 
 │                       │       │                  ├ [2] : https://bugzilla.redhat.com/2481879 
 │                       │       │                  ├ [3] : https://bugzilla.redhat.com/2481880 
@@ -5765,7 +5765,7 @@
 │                       │       │                  ├ [14]: https://bugzilla.redhat.com/2481896 
 │                       │       │                  ├ [15]: https://bugzilla.redhat.com/2481897 
 │                       │       │                  ├ [16]: https://bugzilla.redhat.com/2481898 
-│                       │       │                  ├ [17]: https://errata.almalinux.org/10/ALSA-2026-25237.html 
+│                       │       │                  ├ [17]: https://errata.almalinux.org/9/ALSA-2026-25239.html 
 │                       │       │                  ├ [18]: https://github.com/openssl/openssl/commit/323f0b6e7d
 │                       │       │                  │       530a4cb4336d50c88cb70f3ac2a451 
 │                       │       │                  ├ [19]: https://github.com/openssl/openssl/commit/787a6dfba8
@@ -5848,7 +5848,7 @@
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:L/I:
 │                       │       │                           │           N/A:H 
 │                       │       │                           ╰ V3Score : 5 
-│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:25237 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:25239 
 │                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2026-34180 
 │                       │       │                  ├ [2] : https://bugzilla.redhat.com/2481879 
 │                       │       │                  ├ [3] : https://bugzilla.redhat.com/2481880 
@@ -5865,7 +5865,7 @@
 │                       │       │                  ├ [14]: https://bugzilla.redhat.com/2481896 
 │                       │       │                  ├ [15]: https://bugzilla.redhat.com/2481897 
 │                       │       │                  ├ [16]: https://bugzilla.redhat.com/2481898 
-│                       │       │                  ├ [17]: https://errata.almalinux.org/10/ALSA-2026-25237.html 
+│                       │       │                  ├ [17]: https://errata.almalinux.org/9/ALSA-2026-25239.html 
 │                       │       │                  ├ [18]: https://github.com/openssl/openssl/commit/1c6908e4fa
 │                       │       │                  │       5fa568752221d8eaf561a809751e5d 
 │                       │       │                  ├ [19]: https://github.com/openssl/openssl/commit/cbe418ae97
@@ -5938,7 +5938,7 @@
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:
 │                       │       │                           │           H/A:N 
 │                       │       │                           ╰ V3Score : 6.3 
-│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:25237 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:25239 
 │                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2026-34181 
 │                       │       │                  ├ [2] : https://bugzilla.redhat.com/2481879 
 │                       │       │                  ├ [3] : https://bugzilla.redhat.com/2481880 
@@ -5955,7 +5955,7 @@
 │                       │       │                  ├ [14]: https://bugzilla.redhat.com/2481896 
 │                       │       │                  ├ [15]: https://bugzilla.redhat.com/2481897 
 │                       │       │                  ├ [16]: https://bugzilla.redhat.com/2481898 
-│                       │       │                  ├ [17]: https://errata.almalinux.org/10/ALSA-2026-25237.html 
+│                       │       │                  ├ [17]: https://errata.almalinux.org/9/ALSA-2026-25239.html 
 │                       │       │                  ├ [18]: https://github.com/openssl/openssl/commit/0300eb9ddc
 │                       │       │                  │       e7a0895bf301a4b0c03a9da2313a0f 
 │                       │       │                  ├ [19]: https://github.com/openssl/openssl/commit/79eb76a937
@@ -6028,7 +6028,7 @@
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:
 │                       │       │                           │           N/A:H 
 │                       │       │                           ╰ V3Score : 5.3 
-│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:25237 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:25239 
 │                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2026-42766 
 │                       │       │                  ├ [2] : https://bugzilla.redhat.com/2481879 
 │                       │       │                  ├ [3] : https://bugzilla.redhat.com/2481880 
@@ -6045,7 +6045,7 @@
 │                       │       │                  ├ [14]: https://bugzilla.redhat.com/2481896 
 │                       │       │                  ├ [15]: https://bugzilla.redhat.com/2481897 
 │                       │       │                  ├ [16]: https://bugzilla.redhat.com/2481898 
-│                       │       │                  ├ [17]: https://errata.almalinux.org/10/ALSA-2026-25237.html 
+│                       │       │                  ├ [17]: https://errata.almalinux.org/9/ALSA-2026-25239.html 
 │                       │       │                  ├ [18]: https://github.com/openssl/openssl/commit/056d06c191
 │                       │       │                  │       8fafbb98c1c85a02e4c47cc4e199ce 
 │                       │       │                  ├ [19]: https://github.com/openssl/openssl/commit/12bc26ffb3
@@ -6118,7 +6118,7 @@
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:
 │                       │       │                           │           N/A:H 
 │                       │       │                           ╰ V3Score : 5.3 
-│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:25237 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:25239 
 │                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2026-42767 
 │                       │       │                  ├ [2] : https://bugzilla.redhat.com/2481879 
 │                       │       │                  ├ [3] : https://bugzilla.redhat.com/2481880 
@@ -6135,7 +6135,7 @@
 │                       │       │                  ├ [14]: https://bugzilla.redhat.com/2481896 
 │                       │       │                  ├ [15]: https://bugzilla.redhat.com/2481897 
 │                       │       │                  ├ [16]: https://bugzilla.redhat.com/2481898 
-│                       │       │                  ├ [17]: https://errata.almalinux.org/10/ALSA-2026-25237.html 
+│                       │       │                  ├ [17]: https://errata.almalinux.org/9/ALSA-2026-25239.html 
 │                       │       │                  ├ [18]: https://github.com/openssl/openssl/commit/61a86a8cd7
 │                       │       │                  │       3546c9fea916f3d304c1293e05c046 
 │                       │       │                  ├ [19]: https://github.com/openssl/openssl/commit/665d525408
@@ -6261,7 +6261,7 @@
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:
 │                       │       │                           │           H/A:N 
 │                       │       │                           ╰ V3Score : 6.3 
-│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:25237 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:25239 
 │                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2026-42768 
 │                       │       │                  ├ [2] : https://bugzilla.redhat.com/2481879 
 │                       │       │                  ├ [3] : https://bugzilla.redhat.com/2481880 
@@ -6278,7 +6278,7 @@
 │                       │       │                  ├ [14]: https://bugzilla.redhat.com/2481896 
 │                       │       │                  ├ [15]: https://bugzilla.redhat.com/2481897 
 │                       │       │                  ├ [16]: https://bugzilla.redhat.com/2481898 
-│                       │       │                  ├ [17]: https://errata.almalinux.org/10/ALSA-2026-25237.html 
+│                       │       │                  ├ [17]: https://errata.almalinux.org/9/ALSA-2026-25239.html 
 │                       │       │                  ├ [18]: https://github.com/openssl/openssl/commit/a2ca7b2d73
 │                       │       │                  │       e0ffc1eae183fe6e1741dac767cb4f 
 │                       │       │                  ├ [19]: https://github.com/openssl/openssl/commit/bbb151a830
@@ -6376,7 +6376,7 @@
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:
 │                       │       │                           │           H/A:N 
 │                       │       │                           ╰ V3Score : 5.9 
-│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:25237 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:25239 
 │                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2026-42769 
 │                       │       │                  ├ [2] : https://bugzilla.redhat.com/2481879 
 │                       │       │                  ├ [3] : https://bugzilla.redhat.com/2481880 
@@ -6393,7 +6393,7 @@
 │                       │       │                  ├ [14]: https://bugzilla.redhat.com/2481896 
 │                       │       │                  ├ [15]: https://bugzilla.redhat.com/2481897 
 │                       │       │                  ├ [16]: https://bugzilla.redhat.com/2481898 
-│                       │       │                  ├ [17]: https://errata.almalinux.org/10/ALSA-2026-25237.html 
+│                       │       │                  ├ [17]: https://errata.almalinux.org/9/ALSA-2026-25239.html 
 │                       │       │                  ├ [18]: https://github.com/openssl/openssl/commit/54d0989997
 │                       │       │                  │       e5fc26057009a9782c3441ce3842fb 
 │                       │       │                  ├ [19]: https://github.com/openssl/openssl/commit/777b363b16
@@ -6480,7 +6480,7 @@
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:
 │                       │       │                           │           N/A:N 
 │                       │       │                           ╰ V3Score : 5.9 
-│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:25237 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:25239 
 │                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2026-42770 
 │                       │       │                  ├ [2] : https://bugzilla.redhat.com/2481879 
 │                       │       │                  ├ [3] : https://bugzilla.redhat.com/2481880 
@@ -6497,7 +6497,7 @@
 │                       │       │                  ├ [14]: https://bugzilla.redhat.com/2481896 
 │                       │       │                  ├ [15]: https://bugzilla.redhat.com/2481897 
 │                       │       │                  ├ [16]: https://bugzilla.redhat.com/2481898 
-│                       │       │                  ├ [17]: https://errata.almalinux.org/10/ALSA-2026-25237.html 
+│                       │       │                  ├ [17]: https://errata.almalinux.org/9/ALSA-2026-25239.html 
 │                       │       │                  ├ [18]: https://github.com/openssl/openssl/commit/3da5a516cd
 │                       │       │                  │       2635a320ff748503db2cef7c4b0f02 
 │                       │       │                  ├ [19]: https://github.com/openssl/openssl/commit/3ddbb7ab50
@@ -6599,7 +6599,7 @@
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:
 │                       │       │                           │           L/A:N 
 │                       │       │                           ╰ V3Score : 3.7 
-│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:25237 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:25239 
 │                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2026-45446 
 │                       │       │                  ├ [2] : https://bugzilla.redhat.com/2481879 
 │                       │       │                  ├ [3] : https://bugzilla.redhat.com/2481880 
@@ -6616,7 +6616,7 @@
 │                       │       │                  ├ [14]: https://bugzilla.redhat.com/2481896 
 │                       │       │                  ├ [15]: https://bugzilla.redhat.com/2481897 
 │                       │       │                  ├ [16]: https://bugzilla.redhat.com/2481898 
-│                       │       │                  ├ [17]: https://errata.almalinux.org/10/ALSA-2026-25237.html 
+│                       │       │                  ├ [17]: https://errata.almalinux.org/9/ALSA-2026-25239.html 
 │                       │       │                  ├ [18]: https://github.com/openssl/openssl/commit/25b32cd9d4
 │                       │       │                  │       1d2bc01b6abc425bb4baf2c2236fdc 
 │                       │       │                  ├ [19]: https://github.com/openssl/openssl/commit/71e2a5d263
@@ -6707,7 +6707,7 @@
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:L/I:
 │                       │       │                           │           L/A:H 
 │                       │       │                           ╰ V3Score : 5.5 
-│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:25237 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:25239 
 │                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2026-7383 
 │                       │       │                  ├ [2] : https://bugzilla.redhat.com/2481879 
 │                       │       │                  ├ [3] : https://bugzilla.redhat.com/2481880 
@@ -6724,7 +6724,7 @@
 │                       │       │                  ├ [14]: https://bugzilla.redhat.com/2481896 
 │                       │       │                  ├ [15]: https://bugzilla.redhat.com/2481897 
 │                       │       │                  ├ [16]: https://bugzilla.redhat.com/2481898 
-│                       │       │                  ├ [17]: https://errata.almalinux.org/10/ALSA-2026-25237.html 
+│                       │       │                  ├ [17]: https://errata.almalinux.org/9/ALSA-2026-25239.html 
 │                       │       │                  ├ [18]: https://github.com/openssl/openssl/commit/4f8d2bddaa
 │                       │       │                  │       2c8e06f9c33390ee1717059a6e4be6 
 │                       │       │                  ├ [19]: https://github.com/openssl/openssl/commit/80c15faaf7
@@ -6821,7 +6821,7 @@
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:
 │                       │       │                           │           N/A:H 
 │                       │       │                           ╰ V3Score : 5.9 
-│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:25237 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:25239 
 │                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2026-9076 
 │                       │       │                  ├ [2] : https://bugzilla.redhat.com/2481879 
 │                       │       │                  ├ [3] : https://bugzilla.redhat.com/2481880 
@@ -6838,7 +6838,7 @@
 │                       │       │                  ├ [14]: https://bugzilla.redhat.com/2481896 
 │                       │       │                  ├ [15]: https://bugzilla.redhat.com/2481897 
 │                       │       │                  ├ [16]: https://bugzilla.redhat.com/2481898 
-│                       │       │                  ├ [17]: https://errata.almalinux.org/10/ALSA-2026-25237.html 
+│                       │       │                  ├ [17]: https://errata.almalinux.org/9/ALSA-2026-25239.html 
 │                       │       │                  ├ [18]: https://github.com/openssl/openssl/commit/05b0663668
 │                       │       │                  │       42f930fadd9a6e94df98030af431bb 
 │                       │       │                  ├ [19]: https://github.com/openssl/openssl/commit/3d8d5bc105
@@ -6921,7 +6921,7 @@
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:
 │                       │       │                           │           H/A:H 
 │                       │       │                           ╰ V3Score : 8.1 
-│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:25237 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:25239 
 │                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2026-45447 
 │                       │       │                  ├ [2] : https://bugzilla.redhat.com/2481879 
 │                       │       │                  ├ [3] : https://bugzilla.redhat.com/2481880 
@@ -6938,7 +6938,7 @@
 │                       │       │                  ├ [14]: https://bugzilla.redhat.com/2481896 
 │                       │       │                  ├ [15]: https://bugzilla.redhat.com/2481897 
 │                       │       │                  ├ [16]: https://bugzilla.redhat.com/2481898 
-│                       │       │                  ├ [17]: https://errata.almalinux.org/10/ALSA-2026-25237.html 
+│                       │       │                  ├ [17]: https://errata.almalinux.org/9/ALSA-2026-25239.html 
 │                       │       │                  ├ [18]: https://github.com/openssl/openssl/commit/3aad5eb7af
 │                       │       │                  │       4de4ee0633c30a8541a54d9bbde63c 
 │                       │       │                  ├ [19]: https://github.com/openssl/openssl/commit/7d4a980c62
@@ -7035,7 +7035,7 @@
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:
 │                       │       │                           │           H/A:N 
 │                       │       │                           ╰ V3Score : 7.4 
-│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:25237 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:25239 
 │                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2026-34182 
 │                       │       │                  ├ [2] : https://bugzilla.redhat.com/2481879 
 │                       │       │                  ├ [3] : https://bugzilla.redhat.com/2481880 
@@ -7052,7 +7052,7 @@
 │                       │       │                  ├ [14]: https://bugzilla.redhat.com/2481896 
 │                       │       │                  ├ [15]: https://bugzilla.redhat.com/2481897 
 │                       │       │                  ├ [16]: https://bugzilla.redhat.com/2481898 
-│                       │       │                  ├ [17]: https://errata.almalinux.org/10/ALSA-2026-25237.html 
+│                       │       │                  ├ [17]: https://errata.almalinux.org/9/ALSA-2026-25239.html 
 │                       │       │                  ├ [18]: https://github.com/openssl/openssl/commit/03c1f4d45f
 │                       │       │                  │       b963aee7d5833390c507cd290182bc 
 │                       │       │                  ├ [19]: https://github.com/openssl/openssl/commit/439ed7d2c0
@@ -7128,7 +7128,7 @@
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
 │                       │       │                           │           N/A:H 
 │                       │       │                           ╰ V3Score : 7.5 
-│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:25237 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:25239 
 │                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2026-34183 
 │                       │       │                  ├ [2] : https://bugzilla.redhat.com/2481879 
 │                       │       │                  ├ [3] : https://bugzilla.redhat.com/2481880 
@@ -7145,7 +7145,7 @@
 │                       │       │                  ├ [14]: https://bugzilla.redhat.com/2481896 
 │                       │       │                  ├ [15]: https://bugzilla.redhat.com/2481897 
 │                       │       │                  ├ [16]: https://bugzilla.redhat.com/2481898 
-│                       │       │                  ├ [17]: https://errata.almalinux.org/10/ALSA-2026-25237.html 
+│                       │       │                  ├ [17]: https://errata.almalinux.org/9/ALSA-2026-25239.html 
 │                       │       │                  ├ [18]: https://github.com/openssl/openssl/commit/5b306efb0b
 │                       │       │                  │       3779dfdd0803b4afc9d08c91f11517 
 │                       │       │                  ├ [19]: https://github.com/openssl/openssl/commit/7d06955ebe
@@ -7218,7 +7218,7 @@
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:
 │                       │       │                           │           N/A:H 
 │                       │       │                           ╰ V3Score : 5.9 
-│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:25237 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:25239 
 │                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2026-42764 
 │                       │       │                  ├ [2] : https://bugzilla.redhat.com/2481879 
 │                       │       │                  ├ [3] : https://bugzilla.redhat.com/2481880 
@@ -7235,7 +7235,7 @@
 │                       │       │                  ├ [14]: https://bugzilla.redhat.com/2481896 
 │                       │       │                  ├ [15]: https://bugzilla.redhat.com/2481897 
 │                       │       │                  ├ [16]: https://bugzilla.redhat.com/2481898 
-│                       │       │                  ├ [17]: https://errata.almalinux.org/10/ALSA-2026-25237.html 
+│                       │       │                  ├ [17]: https://errata.almalinux.org/9/ALSA-2026-25239.html 
 │                       │       │                  ├ [18]: https://github.com/openssl/openssl/commit/5e3ed291b8
 │                       │       │                  │       af0b03d5d3b9e56a1da69a187e9729 
 │                       │       │                  ├ [19]: https://github.com/openssl/openssl/commit/a45a0aba80
@@ -7340,7 +7340,7 @@
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:
 │                       │       │                           │           H/A:N 
 │                       │       │                           ╰ V3Score : 9.1 
-│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:25237 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:25239 
 │                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2026-45445 
 │                       │       │                  ├ [2] : https://bugzilla.redhat.com/2481879 
 │                       │       │                  ├ [3] : https://bugzilla.redhat.com/2481880 
@@ -7357,7 +7357,7 @@
 │                       │       │                  ├ [14]: https://bugzilla.redhat.com/2481896 
 │                       │       │                  ├ [15]: https://bugzilla.redhat.com/2481897 
 │                       │       │                  ├ [16]: https://bugzilla.redhat.com/2481898 
-│                       │       │                  ├ [17]: https://errata.almalinux.org/10/ALSA-2026-25237.html 
+│                       │       │                  ├ [17]: https://errata.almalinux.org/9/ALSA-2026-25239.html 
 │                       │       │                  ├ [18]: https://github.com/openssl/openssl/commit/323f0b6e7d
 │                       │       │                  │       530a4cb4336d50c88cb70f3ac2a451 
 │                       │       │                  ├ [19]: https://github.com/openssl/openssl/commit/787a6dfba8
@@ -7440,7 +7440,7 @@
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:L/I:
 │                       │       │                           │           N/A:H 
 │                       │       │                           ╰ V3Score : 5 
-│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:25237 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:25239 
 │                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2026-34180 
 │                       │       │                  ├ [2] : https://bugzilla.redhat.com/2481879 
 │                       │       │                  ├ [3] : https://bugzilla.redhat.com/2481880 
@@ -7457,7 +7457,7 @@
 │                       │       │                  ├ [14]: https://bugzilla.redhat.com/2481896 
 │                       │       │                  ├ [15]: https://bugzilla.redhat.com/2481897 
 │                       │       │                  ├ [16]: https://bugzilla.redhat.com/2481898 
-│                       │       │                  ├ [17]: https://errata.almalinux.org/10/ALSA-2026-25237.html 
+│                       │       │                  ├ [17]: https://errata.almalinux.org/9/ALSA-2026-25239.html 
 │                       │       │                  ├ [18]: https://github.com/openssl/openssl/commit/1c6908e4fa
 │                       │       │                  │       5fa568752221d8eaf561a809751e5d 
 │                       │       │                  ├ [19]: https://github.com/openssl/openssl/commit/cbe418ae97
@@ -7530,7 +7530,7 @@
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:
 │                       │       │                           │           H/A:N 
 │                       │       │                           ╰ V3Score : 6.3 
-│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:25237 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:25239 
 │                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2026-34181 
 │                       │       │                  ├ [2] : https://bugzilla.redhat.com/2481879 
 │                       │       │                  ├ [3] : https://bugzilla.redhat.com/2481880 
@@ -7547,7 +7547,7 @@
 │                       │       │                  ├ [14]: https://bugzilla.redhat.com/2481896 
 │                       │       │                  ├ [15]: https://bugzilla.redhat.com/2481897 
 │                       │       │                  ├ [16]: https://bugzilla.redhat.com/2481898 
-│                       │       │                  ├ [17]: https://errata.almalinux.org/10/ALSA-2026-25237.html 
+│                       │       │                  ├ [17]: https://errata.almalinux.org/9/ALSA-2026-25239.html 
 │                       │       │                  ├ [18]: https://github.com/openssl/openssl/commit/0300eb9ddc
 │                       │       │                  │       e7a0895bf301a4b0c03a9da2313a0f 
 │                       │       │                  ├ [19]: https://github.com/openssl/openssl/commit/79eb76a937
@@ -7620,7 +7620,7 @@
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:
 │                       │       │                           │           N/A:H 
 │                       │       │                           ╰ V3Score : 5.3 
-│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:25237 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:25239 
 │                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2026-42766 
 │                       │       │                  ├ [2] : https://bugzilla.redhat.com/2481879 
 │                       │       │                  ├ [3] : https://bugzilla.redhat.com/2481880 
@@ -7637,7 +7637,7 @@
 │                       │       │                  ├ [14]: https://bugzilla.redhat.com/2481896 
 │                       │       │                  ├ [15]: https://bugzilla.redhat.com/2481897 
 │                       │       │                  ├ [16]: https://bugzilla.redhat.com/2481898 
-│                       │       │                  ├ [17]: https://errata.almalinux.org/10/ALSA-2026-25237.html 
+│                       │       │                  ├ [17]: https://errata.almalinux.org/9/ALSA-2026-25239.html 
 │                       │       │                  ├ [18]: https://github.com/openssl/openssl/commit/056d06c191
 │                       │       │                  │       8fafbb98c1c85a02e4c47cc4e199ce 
 │                       │       │                  ├ [19]: https://github.com/openssl/openssl/commit/12bc26ffb3
@@ -7710,7 +7710,7 @@
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:
 │                       │       │                           │           N/A:H 
 │                       │       │                           ╰ V3Score : 5.3 
-│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:25237 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:25239 
 │                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2026-42767 
 │                       │       │                  ├ [2] : https://bugzilla.redhat.com/2481879 
 │                       │       │                  ├ [3] : https://bugzilla.redhat.com/2481880 
@@ -7727,7 +7727,7 @@
 │                       │       │                  ├ [14]: https://bugzilla.redhat.com/2481896 
 │                       │       │                  ├ [15]: https://bugzilla.redhat.com/2481897 
 │                       │       │                  ├ [16]: https://bugzilla.redhat.com/2481898 
-│                       │       │                  ├ [17]: https://errata.almalinux.org/10/ALSA-2026-25237.html 
+│                       │       │                  ├ [17]: https://errata.almalinux.org/9/ALSA-2026-25239.html 
 │                       │       │                  ├ [18]: https://github.com/openssl/openssl/commit/61a86a8cd7
 │                       │       │                  │       3546c9fea916f3d304c1293e05c046 
 │                       │       │                  ├ [19]: https://github.com/openssl/openssl/commit/665d525408
@@ -7853,7 +7853,7 @@
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:
 │                       │       │                           │           H/A:N 
 │                       │       │                           ╰ V3Score : 6.3 
-│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:25237 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:25239 
 │                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2026-42768 
 │                       │       │                  ├ [2] : https://bugzilla.redhat.com/2481879 
 │                       │       │                  ├ [3] : https://bugzilla.redhat.com/2481880 
@@ -7870,7 +7870,7 @@
 │                       │       │                  ├ [14]: https://bugzilla.redhat.com/2481896 
 │                       │       │                  ├ [15]: https://bugzilla.redhat.com/2481897 
 │                       │       │                  ├ [16]: https://bugzilla.redhat.com/2481898 
-│                       │       │                  ├ [17]: https://errata.almalinux.org/10/ALSA-2026-25237.html 
+│                       │       │                  ├ [17]: https://errata.almalinux.org/9/ALSA-2026-25239.html 
 │                       │       │                  ├ [18]: https://github.com/openssl/openssl/commit/a2ca7b2d73
 │                       │       │                  │       e0ffc1eae183fe6e1741dac767cb4f 
 │                       │       │                  ├ [19]: https://github.com/openssl/openssl/commit/bbb151a830
@@ -7968,7 +7968,7 @@
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:
 │                       │       │                           │           H/A:N 
 │                       │       │                           ╰ V3Score : 5.9 
-│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:25237 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:25239 
 │                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2026-42769 
 │                       │       │                  ├ [2] : https://bugzilla.redhat.com/2481879 
 │                       │       │                  ├ [3] : https://bugzilla.redhat.com/2481880 
@@ -7985,7 +7985,7 @@
 │                       │       │                  ├ [14]: https://bugzilla.redhat.com/2481896 
 │                       │       │                  ├ [15]: https://bugzilla.redhat.com/2481897 
 │                       │       │                  ├ [16]: https://bugzilla.redhat.com/2481898 
-│                       │       │                  ├ [17]: https://errata.almalinux.org/10/ALSA-2026-25237.html 
+│                       │       │                  ├ [17]: https://errata.almalinux.org/9/ALSA-2026-25239.html 
 │                       │       │                  ├ [18]: https://github.com/openssl/openssl/commit/54d0989997
 │                       │       │                  │       e5fc26057009a9782c3441ce3842fb 
 │                       │       │                  ├ [19]: https://github.com/openssl/openssl/commit/777b363b16
@@ -8072,7 +8072,7 @@
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:
 │                       │       │                           │           N/A:N 
 │                       │       │                           ╰ V3Score : 5.9 
-│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:25237 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:25239 
 │                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2026-42770 
 │                       │       │                  ├ [2] : https://bugzilla.redhat.com/2481879 
 │                       │       │                  ├ [3] : https://bugzilla.redhat.com/2481880 
@@ -8089,7 +8089,7 @@
 │                       │       │                  ├ [14]: https://bugzilla.redhat.com/2481896 
 │                       │       │                  ├ [15]: https://bugzilla.redhat.com/2481897 
 │                       │       │                  ├ [16]: https://bugzilla.redhat.com/2481898 
-│                       │       │                  ├ [17]: https://errata.almalinux.org/10/ALSA-2026-25237.html 
+│                       │       │                  ├ [17]: https://errata.almalinux.org/9/ALSA-2026-25239.html 
 │                       │       │                  ├ [18]: https://github.com/openssl/openssl/commit/3da5a516cd
 │                       │       │                  │       2635a320ff748503db2cef7c4b0f02 
 │                       │       │                  ├ [19]: https://github.com/openssl/openssl/commit/3ddbb7ab50
@@ -8191,7 +8191,7 @@
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:
 │                       │       │                           │           L/A:N 
 │                       │       │                           ╰ V3Score : 3.7 
-│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:25237 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:25239 
 │                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2026-45446 
 │                       │       │                  ├ [2] : https://bugzilla.redhat.com/2481879 
 │                       │       │                  ├ [3] : https://bugzilla.redhat.com/2481880 
@@ -8208,7 +8208,7 @@
 │                       │       │                  ├ [14]: https://bugzilla.redhat.com/2481896 
 │                       │       │                  ├ [15]: https://bugzilla.redhat.com/2481897 
 │                       │       │                  ├ [16]: https://bugzilla.redhat.com/2481898 
-│                       │       │                  ├ [17]: https://errata.almalinux.org/10/ALSA-2026-25237.html 
+│                       │       │                  ├ [17]: https://errata.almalinux.org/9/ALSA-2026-25239.html 
 │                       │       │                  ├ [18]: https://github.com/openssl/openssl/commit/25b32cd9d4
 │                       │       │                  │       1d2bc01b6abc425bb4baf2c2236fdc 
 │                       │       │                  ├ [19]: https://github.com/openssl/openssl/commit/71e2a5d263
@@ -8299,7 +8299,7 @@
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:L/I:
 │                       │       │                           │           L/A:H 
 │                       │       │                           ╰ V3Score : 5.5 
-│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:25237 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:25239 
 │                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2026-7383 
 │                       │       │                  ├ [2] : https://bugzilla.redhat.com/2481879 
 │                       │       │                  ├ [3] : https://bugzilla.redhat.com/2481880 
@@ -8316,7 +8316,7 @@
 │                       │       │                  ├ [14]: https://bugzilla.redhat.com/2481896 
 │                       │       │                  ├ [15]: https://bugzilla.redhat.com/2481897 
 │                       │       │                  ├ [16]: https://bugzilla.redhat.com/2481898 
-│                       │       │                  ├ [17]: https://errata.almalinux.org/10/ALSA-2026-25237.html 
+│                       │       │                  ├ [17]: https://errata.almalinux.org/9/ALSA-2026-25239.html 
 │                       │       │                  ├ [18]: https://github.com/openssl/openssl/commit/4f8d2bddaa
 │                       │       │                  │       2c8e06f9c33390ee1717059a6e4be6 
 │                       │       │                  ├ [19]: https://github.com/openssl/openssl/commit/80c15faaf7
@@ -8413,7 +8413,7 @@
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:
 │                       │       │                           │           N/A:H 
 │                       │       │                           ╰ V3Score : 5.9 
-│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:25237 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:25239 
 │                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2026-9076 
 │                       │       │                  ├ [2] : https://bugzilla.redhat.com/2481879 
 │                       │       │                  ├ [3] : https://bugzilla.redhat.com/2481880 
@@ -8430,7 +8430,7 @@
 │                       │       │                  ├ [14]: https://bugzilla.redhat.com/2481896 
 │                       │       │                  ├ [15]: https://bugzilla.redhat.com/2481897 
 │                       │       │                  ├ [16]: https://bugzilla.redhat.com/2481898 
-│                       │       │                  ├ [17]: https://errata.almalinux.org/10/ALSA-2026-25237.html 
+│                       │       │                  ├ [17]: https://errata.almalinux.org/9/ALSA-2026-25239.html 
 │                       │       │                  ├ [18]: https://github.com/openssl/openssl/commit/05b0663668
 │                       │       │                  │       42f930fadd9a6e94df98030af431bb 
 │                       │       │                  ├ [19]: https://github.com/openssl/openssl/commit/3d8d5bc105
@@ -9905,6 +9905,7 @@
                         │      │                  ├ bitnami    : 3 
                         │      │                  ├ nvd        : 3 
                         │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ photon     : 3 
                         │      │                  ╰ redhat     : 3 
                         │      ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
                         │      │                  │         │           N/A:H 
@@ -9959,6 +9960,7 @@
                         │      │                  ├ bitnami    : 3 
                         │      │                  ├ nvd        : 3 
                         │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ photon     : 3 
                         │      │                  ╰ ubuntu     : 2 
                         │      ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
                         │      │                  │         │           N/A:H 
@@ -10011,7 +10013,8 @@
                         │      ├ VendorSeverity   ╭ amazon     : 3 
                         │      │                  ├ bitnami    : 3 
                         │      │                  ├ nvd        : 3 
-                        │      │                  ╰ oracle-oval: 3 
+                        │      │                  ├ oracle-oval: 3 
+                        │      │                  ╰ photon     : 3 
                         │      ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
                         │      │                  │         │           N/A:H 
                         │      │                  │         ╰ V3Score : 7.5 
@@ -10059,7 +10062,8 @@
                         │      ├ CweIDs           ─ [0]: CWE-79 
                         │      ├ VendorSeverity   ╭ amazon     : 3 
                         │      │                  ├ bitnami    : 2 
-                        │      │                  ╰ oracle-oval: 3 
+                        │      │                  ├ oracle-oval: 3 
+                        │      │                  ╰ photon     : 2 
                         │      ├ CVSS             ─ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:
                         │      │                            │           L/A:N 
                         │      │                            ╰ V3Score : 6.1 
@@ -10110,7 +10114,8 @@
                         │      ├ Severity        : HIGH 
                         │      ├ VendorSeverity   ╭ amazon     : 3 
                         │      │                  ├ bitnami    : 2 
-                        │      │                  ╰ oracle-oval: 3 
+                        │      │                  ├ oracle-oval: 3 
+                        │      │                  ╰ photon     : 2 
                         │      ├ CVSS             ─ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:
                         │      │                            │           N/A:N 
                         │      │                            ╰ V3Score : 5.3 
@@ -10151,7 +10156,8 @@
                         │      ├ CweIDs           ─ [0]: CWE-476 
                         │      ├ VendorSeverity   ╭ bitnami    : 3 
                         │      │                  ├ nvd        : 3 
-                        │      │                  ╰ oracle-oval: 3 
+                        │      │                  ├ oracle-oval: 3 
+                        │      │                  ╰ photon     : 3 
                         │      ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
                         │      │                  │         │           N/A:H 
                         │      │                  │         ╰ V3Score : 7.5 
@@ -10194,7 +10200,8 @@
                         │      ├ Severity        : HIGH 
                         │      ├ VendorSeverity   ╭ amazon     : 3 
                         │      │                  ├ bitnami    : 3 
-                        │      │                  ╰ oracle-oval: 3 
+                        │      │                  ├ oracle-oval: 3 
+                        │      │                  ╰ photon     : 3 
                         │      ├ CVSS             ─ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
                         │      │                            │           N/A:H 
                         │      │                            ╰ V3Score : 7.5 
@@ -10319,6 +10326,7 @@
                         │      ├ VendorSeverity   ╭ amazon     : 3 
                         │      │                  ├ bitnami    : 2 
                         │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ photon     : 2 
                         │      │                  ╰ redhat     : 2 
                         │      ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:
                         │      │                  │         │           L/A:N 
