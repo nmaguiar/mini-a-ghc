@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# Stub for /openaf/oafp: records invocations and fakes a token outfile.
+set -euo pipefail
+
+echo "oafp $*" >> "$STUB_LOG_DIR/oafp.log"
+
+for arg in "$@"; do
+  case "$arg" in
+    outfile=*)
+      echo "fake-token" > "${arg#outfile=}"
+      ;;
+  esac
+done
+
+echo "(model: fake-model)"

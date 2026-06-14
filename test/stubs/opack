@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Stub for /openaf/opack: records invocations.
+set -euo pipefail
+
+echo "opack $*" >> "$STUB_LOG_DIR/opack.log"

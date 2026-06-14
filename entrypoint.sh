@@ -2,7 +2,13 @@
 
 set -euo pipefail
 
-token_file="/tmp/token.txt"
+OAFP_BIN="${OAFP_BIN:-/openaf/oafp}"
+GH_BIN="${GH_BIN:-/usr/bin/gh}"
+OPACK_BIN="${OPACK_BIN:-/openaf/opack}"
+TOKEN_FILE="${TOKEN_FILE:-/tmp/token.txt}"
+WORKDIR="${WORKDIR:-/home/openaf}"
+
+token_file="$TOKEN_FILE"
 
 cleanup() {
   rm -f "$token_file"
@@ -24,19 +30,20 @@ run_init_script() {
 trap cleanup EXIT
 
 if [[ "${OAF_MODEL:-}" == *ghcopilot* ]]; then
-  /openaf/oafp data="$OAF_MODEL" path=options.token outfile="$token_file"
-  /usr/bin/gh auth login --with-token < "$token_file"
+  "$OAFP_BIN" data="$OAF_MODEL" path=options.token outfile="$token_file"
+  "$GH_BIN" auth login --with-token < "$token_file"
 
   cleanup
   trap - EXIT
 fi
 
-cd /home/openaf
+cd "$WORKDIR"
 if [ "$#" -eq 0 ]; then
   run_init_script
-  /openaf/opack exec mini-a
+  "$OPACK_BIN" exec mini-a
+  exit 0
 elif [ "$1" = "list" ]; then
-  /openaf/oafp libs="@AWS/aws.js,@ghcopilot/ghcopilot.js" in=llmmodels data="()" 
+  "$OAFP_BIN" libs="@AWS/aws.js,@ghcopilot/ghcopilot.js" in=llmmodels data="()"
   exit 0
 fi
 
@@ -45,4 +52,4 @@ if command -v "$1" >/dev/null 2>&1 || [ -x "$1" ]; then
 fi
 
 run_init_script
-/openaf/opack exec mini-a "$@"
+"$OPACK_BIN" exec mini-a "$@"

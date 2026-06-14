@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Stub for /usr/bin/gh: records invocations and consumes stdin on "auth login".
+set -euo pipefail
+
+echo "gh $*" >> "$STUB_LOG_DIR/gh.log"
+
+if [ "${1:-}" = "auth" ] && [ "${2:-}" = "login" ]; then
+  cat > "$STUB_LOG_DIR/gh-stdin.txt"
+fi
