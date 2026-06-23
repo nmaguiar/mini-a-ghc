@@ -48,7 +48,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2026-27456
     - https://www.cve.org/CVERecord?id=CVE-2026-27456
     PublishedDate: '2026-04-03T22:16:25.4Z'
-    LastModifiedDate: '2026-04-22T16:08:55.1Z'
+    LastModifiedDate: '2026-06-17T10:27:11.017Z'
   - VulnerabilityID: CVE-2026-3184
     PkgID: bsdutils@1:2.41.3-3ubuntu2
     PkgName: bsdutils
@@ -92,7 +92,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2026-3184
     - https://www.cve.org/CVERecord?id=CVE-2026-3184
     PublishedDate: '2026-04-03T19:17:23.377Z'
-    LastModifiedDate: '2026-05-01T19:29:51.02Z'
+    LastModifiedDate: '2026-06-17T10:43:10.203Z'
   - VulnerabilityID: CVE-2026-27456
     PkgID: libblkid1@2.41.3-3ubuntu2
     PkgName: libblkid1
@@ -138,7 +138,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2026-27456
     - https://www.cve.org/CVERecord?id=CVE-2026-27456
     PublishedDate: '2026-04-03T22:16:25.4Z'
-    LastModifiedDate: '2026-04-22T16:08:55.1Z'
+    LastModifiedDate: '2026-06-17T10:27:11.017Z'
   - VulnerabilityID: CVE-2026-3184
     PkgID: libblkid1@2.41.3-3ubuntu2
     PkgName: libblkid1
@@ -182,7 +182,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2026-3184
     - https://www.cve.org/CVERecord?id=CVE-2026-3184
     PublishedDate: '2026-04-03T19:17:23.377Z'
-    LastModifiedDate: '2026-05-01T19:29:51.02Z'
+    LastModifiedDate: '2026-06-17T10:43:10.203Z'
   - VulnerabilityID: CVE-2026-4046
     PkgID: libc-bin@2.43-2ubuntu2
     PkgName: libc-bin
@@ -246,7 +246,7 @@
     - https://sourceware.org/git/?p=glibc.git;a=blob_plain;f=advisories/GLIBC-SA-2026-0007;hb=HEAD
     - https://www.cve.org/CVERecord?id=CVE-2026-4046
     PublishedDate: '2026-03-30T18:16:19.573Z'
-    LastModifiedDate: '2026-04-20T22:16:23.623Z'
+    LastModifiedDate: '2026-06-17T10:55:54.12Z'
   - VulnerabilityID: CVE-2026-4437
     PkgID: libc-bin@2.43-2ubuntu2
     PkgName: libc-bin
@@ -299,7 +299,7 @@
     - https://www.cve.org/CVERecord?id=CVE-2026-4437
     - https://www.openwall.com/lists/oss-security/2026/03/23/2
     PublishedDate: '2026-03-20T20:16:49.477Z'
-    LastModifiedDate: '2026-04-07T18:41:36.647Z'
+    LastModifiedDate: '2026-06-17T10:56:34.227Z'
   - VulnerabilityID: CVE-2026-4438
     PkgID: libc-bin@2.43-2ubuntu2
     PkgName: libc-bin
@@ -353,7 +353,7 @@
     - https://www.cve.org/CVERecord?id=CVE-2026-4438
     - https://www.openwall.com/lists/oss-security/2026/03/23/2
     PublishedDate: '2026-03-20T20:16:49.623Z'
-    LastModifiedDate: '2026-04-07T18:40:02.177Z'
+    LastModifiedDate: '2026-06-17T10:56:34.367Z'
   - VulnerabilityID: CVE-2026-5435
     PkgID: libc-bin@2.43-2ubuntu2
     PkgName: libc-bin
@@ -393,7 +393,7 @@
     - https://sourceware.org/git/?p=glibc.git;a=blob_plain;f=advisories/GLIBC-SA-2026-0011
     - https://www.cve.org/CVERecord?id=CVE-2026-5435
     PublishedDate: '2026-04-28T13:19:22.29Z'
-    LastModifiedDate: '2026-05-05T17:38:37.03Z'
+    LastModifiedDate: '2026-06-17T10:59:01.13Z'
   - VulnerabilityID: CVE-2026-6238
     PkgID: libc-bin@2.43-2ubuntu2
     PkgName: libc-bin
@@ -414,7 +414,7 @@
     Fingerprint: sha256:198c66ecf9aae6ab6b1434429917bde6317717c953631b0c4ecb29dec70c4a62
     Title: 'glibc: glibc: Application crash or uninitialized memory read via crafted DNS response'
     Description: |-
-      The deprecated functions ns_printrrf, ns_printrr and fp_nquery in the GNU C Library version 2.2 and newer fail to validate the RDATA content against the RDATA length in a DNS response when processing LOC, CERT, TKEY or TSIG records, which may allow an attacker to craft a DNS response, causing a target application to crash or read uninitialized memory.
+      The deprecated functions ns_printrrf, ns_printrr and fp_nquery in the GNU C Library version 2.0.1 to version 2.43 fail to validate the RDATA content against the RDATA length in a DNS response when processing A6, CERT, LOC, TKEY or TSIG records, which may allow an attacker to craft a DNS response, causing a target application to crash or read uninitialized memory.
 
       These functions are for application debugging only and hence not in the path of code executed by the DNS resolver.  Further, they have been deprecated since version 2.34 and should not be used by any new applications.  Applications should consider porting away from these interfaces since they may be removed in future versions.
     Severity: MEDIUM
@@ -436,7 +436,7 @@
     - https://sourceware.org/git/?p=glibc.git;a=blob_plain;f=advisories/GLIBC-SA-2026-0012
     - https://www.cve.org/CVERecord?id=CVE-2026-6238
     PublishedDate: '2026-04-28T19:37:47.523Z'
-    LastModifiedDate: '2026-05-04T17:57:24.007Z'
+    LastModifiedDate: '2026-06-19T21:17:02.62Z'
   - VulnerabilityID: CVE-2026-4046
     PkgID: libc-gconv-modules-extra@2.43-2ubuntu2
     PkgName: libc-gconv-modules-extra
@@ -500,7 +500,7 @@
     - https://sourceware.org/git/?p=glibc.git;a=blob_plain;f=advisories/GLIBC-SA-2026-0007;hb=HEAD
     - https://www.cve.org/CVERecord?id=CVE-2026-4046
     PublishedDate: '2026-03-30T18:16:19.573Z'
-    LastModifiedDate: '2026-04-20T22:16:23.623Z'
+    LastModifiedDate: '2026-06-17T10:55:54.12Z'
   - VulnerabilityID: CVE-2026-4437
     PkgID: libc-gconv-modules-extra@2.43-2ubuntu2
     PkgName: libc-gconv-modules-extra
@@ -553,7 +553,7 @@
     - https://www.cve.org/CVERecord?id=CVE-2026-4437
     - https://www.openwall.com/lists/oss-security/2026/03/23/2
     PublishedDate: '2026-03-20T20:16:49.477Z'
-    LastModifiedDate: '2026-04-07T18:41:36.647Z'
+    LastModifiedDate: '2026-06-17T10:56:34.227Z'
   - VulnerabilityID: CVE-2026-4438
     PkgID: libc-gconv-modules-extra@2.43-2ubuntu2
     PkgName: libc-gconv-modules-extra
@@ -607,7 +607,7 @@
     - https://www.cve.org/CVERecord?id=CVE-2026-4438
     - https://www.openwall.com/lists/oss-security/2026/03/23/2
     PublishedDate: '2026-03-20T20:16:49.623Z'
-    LastModifiedDate: '2026-04-07T18:40:02.177Z'
+    LastModifiedDate: '2026-06-17T10:56:34.367Z'
   - VulnerabilityID: CVE-2026-5435
     PkgID: libc-gconv-modules-extra@2.43-2ubuntu2
     PkgName: libc-gconv-modules-extra
@@ -647,7 +647,7 @@
     - https://sourceware.org/git/?p=glibc.git;a=blob_plain;f=advisories/GLIBC-SA-2026-0011
     - https://www.cve.org/CVERecord?id=CVE-2026-5435
     PublishedDate: '2026-04-28T13:19:22.29Z'
-    LastModifiedDate: '2026-05-05T17:38:37.03Z'
+    LastModifiedDate: '2026-06-17T10:59:01.13Z'
   - VulnerabilityID: CVE-2026-6238
     PkgID: libc-gconv-modules-extra@2.43-2ubuntu2
     PkgName: libc-gconv-modules-extra
@@ -668,7 +668,7 @@
     Fingerprint: sha256:30c8868e0fc37b186754bbb3a516161c8387ed7744d782c708b5f22572b6d4b7
     Title: 'glibc: glibc: Application crash or uninitialized memory read via crafted DNS response'
     Description: |-
-      The deprecated functions ns_printrrf, ns_printrr and fp_nquery in the GNU C Library version 2.2 and newer fail to validate the RDATA content against the RDATA length in a DNS response when processing LOC, CERT, TKEY or TSIG records, which may allow an attacker to craft a DNS response, causing a target application to crash or read uninitialized memory.
+      The deprecated functions ns_printrrf, ns_printrr and fp_nquery in the GNU C Library version 2.0.1 to version 2.43 fail to validate the RDATA content against the RDATA length in a DNS response when processing A6, CERT, LOC, TKEY or TSIG records, which may allow an attacker to craft a DNS response, causing a target application to crash or read uninitialized memory.
 
       These functions are for application debugging only and hence not in the path of code executed by the DNS resolver.  Further, they have been deprecated since version 2.34 and should not be used by any new applications.  Applications should consider porting away from these interfaces since they may be removed in future versions.
     Severity: MEDIUM
@@ -690,7 +690,7 @@
     - https://sourceware.org/git/?p=glibc.git;a=blob_plain;f=advisories/GLIBC-SA-2026-0012
     - https://www.cve.org/CVERecord?id=CVE-2026-6238
     PublishedDate: '2026-04-28T19:37:47.523Z'
-    LastModifiedDate: '2026-05-04T17:57:24.007Z'
+    LastModifiedDate: '2026-06-19T21:17:02.62Z'
   - VulnerabilityID: CVE-2026-4046
     PkgID: libc6@2.43-2ubuntu2
     PkgName: libc6
@@ -754,7 +754,7 @@
     - https://sourceware.org/git/?p=glibc.git;a=blob_plain;f=advisories/GLIBC-SA-2026-0007;hb=HEAD
     - https://www.cve.org/CVERecord?id=CVE-2026-4046
     PublishedDate: '2026-03-30T18:16:19.573Z'
-    LastModifiedDate: '2026-04-20T22:16:23.623Z'
+    LastModifiedDate: '2026-06-17T10:55:54.12Z'
   - VulnerabilityID: CVE-2026-4437
     PkgID: libc6@2.43-2ubuntu2
     PkgName: libc6
@@ -807,7 +807,7 @@
     - https://www.cve.org/CVERecord?id=CVE-2026-4437
     - https://www.openwall.com/lists/oss-security/2026/03/23/2
     PublishedDate: '2026-03-20T20:16:49.477Z'
-    LastModifiedDate: '2026-04-07T18:41:36.647Z'
+    LastModifiedDate: '2026-06-17T10:56:34.227Z'
   - VulnerabilityID: CVE-2026-4438
     PkgID: libc6@2.43-2ubuntu2
     PkgName: libc6
@@ -861,7 +861,7 @@
     - https://www.cve.org/CVERecord?id=CVE-2026-4438
     - https://www.openwall.com/lists/oss-security/2026/03/23/2
     PublishedDate: '2026-03-20T20:16:49.623Z'
-    LastModifiedDate: '2026-04-07T18:40:02.177Z'
+    LastModifiedDate: '2026-06-17T10:56:34.367Z'
   - VulnerabilityID: CVE-2026-5435
     PkgID: libc6@2.43-2ubuntu2
     PkgName: libc6
@@ -901,7 +901,7 @@
     - https://sourceware.org/git/?p=glibc.git;a=blob_plain;f=advisories/GLIBC-SA-2026-0011
     - https://www.cve.org/CVERecord?id=CVE-2026-5435
     PublishedDate: '2026-04-28T13:19:22.29Z'
-    LastModifiedDate: '2026-05-05T17:38:37.03Z'
+    LastModifiedDate: '2026-06-17T10:59:01.13Z'
   - VulnerabilityID: CVE-2026-6238
     PkgID: libc6@2.43-2ubuntu2
     PkgName: libc6
@@ -922,7 +922,7 @@
     Fingerprint: sha256:5482e18d35ead8d039280db5764c7d9ee803a993361166292fd75f577338bb5b
     Title: 'glibc: glibc: Application crash or uninitialized memory read via crafted DNS response'
     Description: |-
-      The deprecated functions ns_printrrf, ns_printrr and fp_nquery in the GNU C Library version 2.2 and newer fail to validate the RDATA content against the RDATA length in a DNS response when processing LOC, CERT, TKEY or TSIG records, which may allow an attacker to craft a DNS response, causing a target application to crash or read uninitialized memory.
+      The deprecated functions ns_printrrf, ns_printrr and fp_nquery in the GNU C Library version 2.0.1 to version 2.43 fail to validate the RDATA content against the RDATA length in a DNS response when processing A6, CERT, LOC, TKEY or TSIG records, which may allow an attacker to craft a DNS response, causing a target application to crash or read uninitialized memory.
 
       These functions are for application debugging only and hence not in the path of code executed by the DNS resolver.  Further, they have been deprecated since version 2.34 and should not be used by any new applications.  Applications should consider porting away from these interfaces since they may be removed in future versions.
     Severity: MEDIUM
@@ -944,7 +944,7 @@
     - https://sourceware.org/git/?p=glibc.git;a=blob_plain;f=advisories/GLIBC-SA-2026-0012
     - https://www.cve.org/CVERecord?id=CVE-2026-6238
     PublishedDate: '2026-04-28T19:37:47.523Z'
-    LastModifiedDate: '2026-05-04T17:57:24.007Z'
+    LastModifiedDate: '2026-06-19T21:17:02.62Z'
   - VulnerabilityID: CVE-2025-66382
     PkgID: libexpat1@2.7.4-1
     PkgName: libexpat1
@@ -988,7 +988,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2025-66382
     - https://www.cve.org/CVERecord?id=CVE-2025-66382
     PublishedDate: '2025-11-28T07:15:57.9Z'
-    LastModifiedDate: '2026-06-02T14:16:37.12Z'
+    LastModifiedDate: '2026-06-17T09:56:45.24Z'
   - VulnerabilityID: CVE-2024-2236
     PkgID: libgcrypt20@1.12.0-2ubuntu0.1
     PkgName: libgcrypt20
@@ -1043,7 +1043,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2024-2236
     - https://www.cve.org/CVERecord?id=CVE-2024-2236
     PublishedDate: '2024-03-06T22:15:57.977Z'
-    LastModifiedDate: '2026-04-15T00:35:42.02Z'
+    LastModifiedDate: '2026-06-17T07:24:06.083Z'
   - VulnerabilityID: CVE-2026-27456
     PkgID: libmount1@2.41.3-3ubuntu2
     PkgName: libmount1
@@ -1089,7 +1089,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2026-27456
     - https://www.cve.org/CVERecord?id=CVE-2026-27456
     PublishedDate: '2026-04-03T22:16:25.4Z'
-    LastModifiedDate: '2026-04-22T16:08:55.1Z'
+    LastModifiedDate: '2026-06-17T10:27:11.017Z'
   - VulnerabilityID: CVE-2026-3184
     PkgID: libmount1@2.41.3-3ubuntu2
     PkgName: libmount1
@@ -1133,7 +1133,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2026-3184
     - https://www.cve.org/CVERecord?id=CVE-2026-3184
     PublishedDate: '2026-04-03T19:17:23.377Z'
-    LastModifiedDate: '2026-05-01T19:29:51.02Z'
+    LastModifiedDate: '2026-06-17T10:43:10.203Z'
   - VulnerabilityID: CVE-2026-27456
     PkgID: libsmartcols1@2.41.3-3ubuntu2
     PkgName: libsmartcols1
@@ -1179,7 +1179,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2026-27456
     - https://www.cve.org/CVERecord?id=CVE-2026-27456
     PublishedDate: '2026-04-03T22:16:25.4Z'
-    LastModifiedDate: '2026-04-22T16:08:55.1Z'
+    LastModifiedDate: '2026-06-17T10:27:11.017Z'
   - VulnerabilityID: CVE-2026-3184
     PkgID: libsmartcols1@2.41.3-3ubuntu2
     PkgName: libsmartcols1
@@ -1223,7 +1223,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2026-3184
     - https://www.cve.org/CVERecord?id=CVE-2026-3184
     PublishedDate: '2026-04-03T19:17:23.377Z'
-    LastModifiedDate: '2026-05-01T19:29:51.02Z'
+    LastModifiedDate: '2026-06-17T10:43:10.203Z'
   - VulnerabilityID: CVE-2026-40228
     PkgID: libsystemd0@259.5-0ubuntu3
     PkgName: libsystemd0
@@ -1265,7 +1265,7 @@
     - https://www.cve.org/CVERecord?id=CVE-2026-40228
     - https://www.openwall.com/lists/oss-security/2026/04/08/1
     PublishedDate: '2026-04-10T16:16:33.753Z'
-    LastModifiedDate: '2026-05-05T02:16:04.82Z'
+    LastModifiedDate: '2026-06-17T10:44:53.31Z'
   - VulnerabilityID: CVE-2026-40228
     PkgID: libudev1@259.5-0ubuntu3
     PkgName: libudev1
@@ -1307,7 +1307,7 @@
     - https://www.cve.org/CVERecord?id=CVE-2026-40228
     - https://www.openwall.com/lists/oss-security/2026/04/08/1
     PublishedDate: '2026-04-10T16:16:33.753Z'
-    LastModifiedDate: '2026-05-05T02:16:04.82Z'
+    LastModifiedDate: '2026-06-17T10:44:53.31Z'
   - VulnerabilityID: CVE-2026-27456
     PkgID: libuuid1@2.41.3-3ubuntu2
     PkgName: libuuid1
@@ -1353,7 +1353,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2026-27456
     - https://www.cve.org/CVERecord?id=CVE-2026-27456
     PublishedDate: '2026-04-03T22:16:25.4Z'
-    LastModifiedDate: '2026-04-22T16:08:55.1Z'
+    LastModifiedDate: '2026-06-17T10:27:11.017Z'
   - VulnerabilityID: CVE-2026-3184
     PkgID: libuuid1@2.41.3-3ubuntu2
     PkgName: libuuid1
@@ -1397,7 +1397,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2026-3184
     - https://www.cve.org/CVERecord?id=CVE-2026-3184
     PublishedDate: '2026-04-03T19:17:23.377Z'
-    LastModifiedDate: '2026-05-01T19:29:51.02Z'
+    LastModifiedDate: '2026-06-17T10:43:10.203Z'
   - VulnerabilityID: CVE-2026-27456
     PkgID: login@1:4.16.0-2+really2.41.3-3ubuntu2
     PkgName: login
@@ -1443,7 +1443,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2026-27456
     - https://www.cve.org/CVERecord?id=CVE-2026-27456
     PublishedDate: '2026-04-03T22:16:25.4Z'
-    LastModifiedDate: '2026-04-22T16:08:55.1Z'
+    LastModifiedDate: '2026-06-17T10:27:11.017Z'
   - VulnerabilityID: CVE-2026-3184
     PkgID: login@1:4.16.0-2+really2.41.3-3ubuntu2
     PkgName: login
@@ -1487,7 +1487,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2026-3184
     - https://www.cve.org/CVERecord?id=CVE-2026-3184
     PublishedDate: '2026-04-03T19:17:23.377Z'
-    LastModifiedDate: '2026-05-01T19:29:51.02Z'
+    LastModifiedDate: '2026-06-17T10:43:10.203Z'
   - VulnerabilityID: CVE-2024-56433
     PkgID: login.defs@1:4.17.4-2ubuntu3
     PkgName: login.defs
@@ -1538,7 +1538,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2024-56433
     - https://www.cve.org/CVERecord?id=CVE-2024-56433
     PublishedDate: '2024-12-26T09:15:07.267Z'
-    LastModifiedDate: '2026-04-15T00:35:42.02Z'
+    LastModifiedDate: '2026-06-17T08:12:10.903Z'
   - VulnerabilityID: CVE-2026-27456
     PkgID: mount@2.41.3-3ubuntu2
     PkgName: mount
@@ -1584,7 +1584,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2026-27456
     - https://www.cve.org/CVERecord?id=CVE-2026-27456
     PublishedDate: '2026-04-03T22:16:25.4Z'
-    LastModifiedDate: '2026-04-22T16:08:55.1Z'
+    LastModifiedDate: '2026-06-17T10:27:11.017Z'
   - VulnerabilityID: CVE-2026-3184
     PkgID: mount@2.41.3-3ubuntu2
     PkgName: mount
@@ -1628,7 +1628,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2026-3184
     - https://www.cve.org/CVERecord?id=CVE-2026-3184
     PublishedDate: '2026-04-03T19:17:23.377Z'
-    LastModifiedDate: '2026-05-01T19:29:51.02Z'
+    LastModifiedDate: '2026-06-17T10:43:10.203Z'
   - VulnerabilityID: CVE-2024-56433
     PkgID: passwd@1:4.17.4-2ubuntu3
     PkgName: passwd
@@ -1679,7 +1679,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2024-56433
     - https://www.cve.org/CVERecord?id=CVE-2024-56433
     PublishedDate: '2024-12-26T09:15:07.267Z'
-    LastModifiedDate: '2026-04-15T00:35:42.02Z'
+    LastModifiedDate: '2026-06-17T08:12:10.903Z'
   - VulnerabilityID: CVE-2026-35341
     PkgID: rust-coreutils@0.8.0-0ubuntu3
     PkgName: rust-coreutils
@@ -1716,7 +1716,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2026-35341
     - https://www.cve.org/CVERecord?id=CVE-2026-35341
     PublishedDate: '2026-04-22T17:16:36.06Z'
-    LastModifiedDate: '2026-04-24T19:05:55.067Z'
+    LastModifiedDate: '2026-06-17T10:40:25.5Z'
   - VulnerabilityID: CVE-2026-35344
     PkgID: rust-coreutils@0.8.0-0ubuntu3
     PkgName: rust-coreutils
@@ -1753,7 +1753,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2026-35344
     - https://www.cve.org/CVERecord?id=CVE-2026-35344
     PublishedDate: '2026-04-22T17:16:36.49Z'
-    LastModifiedDate: '2026-05-04T20:09:48.593Z'
+    LastModifiedDate: '2026-06-17T10:40:25.833Z'
   - VulnerabilityID: CVE-2026-35345
     PkgID: rust-coreutils@0.8.0-0ubuntu3
     PkgName: rust-coreutils
@@ -1791,7 +1791,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2026-35345
     - https://www.cve.org/CVERecord?id=CVE-2026-35345
     PublishedDate: '2026-04-22T17:16:36.627Z'
-    LastModifiedDate: '2026-05-04T20:04:25.093Z'
+    LastModifiedDate: '2026-06-17T10:40:25.943Z'
   - VulnerabilityID: CVE-2026-35348
     PkgID: rust-coreutils@0.8.0-0ubuntu3
     PkgName: rust-coreutils
@@ -1828,7 +1828,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2026-35348
     - https://www.cve.org/CVERecord?id=CVE-2026-35348
     PublishedDate: '2026-04-22T17:16:37.04Z'
-    LastModifiedDate: '2026-04-24T18:57:20.927Z'
+    LastModifiedDate: '2026-06-17T10:40:26.27Z'
   - VulnerabilityID: CVE-2026-35350
     PkgID: rust-coreutils@0.8.0-0ubuntu3
     PkgName: rust-coreutils
@@ -1865,7 +1865,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2026-35350
     - https://www.cve.org/CVERecord?id=CVE-2026-35350
     PublishedDate: '2026-04-22T17:16:37.327Z'
-    LastModifiedDate: '2026-04-24T19:04:01.207Z'
+    LastModifiedDate: '2026-06-17T10:40:26.48Z'
   - VulnerabilityID: CVE-2026-35351
     PkgID: rust-coreutils@0.8.0-0ubuntu3
     PkgName: rust-coreutils
@@ -1903,7 +1903,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2026-35351
     - https://www.cve.org/CVERecord?id=CVE-2026-35351
     PublishedDate: '2026-04-22T17:16:37.457Z'
-    LastModifiedDate: '2026-04-27T12:28:10.22Z'
+    LastModifiedDate: '2026-06-17T10:40:26.587Z'
   - VulnerabilityID: CVE-2026-35352
     PkgID: rust-coreutils@0.8.0-0ubuntu3
     PkgName: rust-coreutils
@@ -1943,7 +1943,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2026-35352
     - https://www.cve.org/CVERecord?id=CVE-2026-35352
     PublishedDate: '2026-04-22T17:16:37.597Z'
-    LastModifiedDate: '2026-05-04T18:16:28.37Z'
+    LastModifiedDate: '2026-06-17T10:40:26.69Z'
   - VulnerabilityID: CVE-2026-35354
     PkgID: rust-coreutils@0.8.0-0ubuntu3
     PkgName: rust-coreutils
@@ -1980,7 +1980,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2026-35354
     - https://www.cve.org/CVERecord?id=CVE-2026-35354
     PublishedDate: '2026-04-22T17:16:37.867Z'
-    LastModifiedDate: '2026-04-24T19:04:08.917Z'
+    LastModifiedDate: '2026-06-17T10:40:26.907Z'
   - VulnerabilityID: CVE-2026-35357
     PkgID: rust-coreutils@0.8.0-0ubuntu3
     PkgName: rust-coreutils
@@ -2017,7 +2017,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2026-35357
     - https://www.cve.org/CVERecord?id=CVE-2026-35357
     PublishedDate: '2026-04-22T17:16:38.267Z'
-    LastModifiedDate: '2026-04-24T19:02:53.557Z'
+    LastModifiedDate: '2026-06-17T10:40:27.223Z'
   - VulnerabilityID: CVE-2026-35359
     PkgID: rust-coreutils@0.8.0-0ubuntu3
     PkgName: rust-coreutils
@@ -2055,7 +2055,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2026-35359
     - https://www.cve.org/CVERecord?id=CVE-2026-35359
     PublishedDate: '2026-04-22T17:16:38.537Z'
-    LastModifiedDate: '2026-04-24T19:02:25.72Z'
+    LastModifiedDate: '2026-06-17T10:40:27.437Z'
   - VulnerabilityID: CVE-2026-35360
     PkgID: rust-coreutils@0.8.0-0ubuntu3
     PkgName: rust-coreutils
@@ -2092,7 +2092,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2026-35360
     - https://www.cve.org/CVERecord?id=CVE-2026-35360
     PublishedDate: '2026-04-22T17:16:38.673Z'
-    LastModifiedDate: '2026-04-24T19:02:11.56Z'
+    LastModifiedDate: '2026-06-17T10:40:27.543Z'
   - VulnerabilityID: CVE-2026-35363
     PkgID: rust-coreutils@0.8.0-0ubuntu3
     PkgName: rust-coreutils
@@ -2129,7 +2129,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2026-35363
     - https://www.cve.org/CVERecord?id=CVE-2026-35363
     PublishedDate: '2026-04-22T17:16:39.12Z'
-    LastModifiedDate: '2026-04-24T19:02:00.463Z'
+    LastModifiedDate: '2026-06-17T10:40:27.867Z'
   - VulnerabilityID: CVE-2026-35364
     PkgID: rust-coreutils@0.8.0-0ubuntu3
     PkgName: rust-coreutils
@@ -2166,7 +2166,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2026-35364
     - https://www.cve.org/CVERecord?id=CVE-2026-35364
     PublishedDate: '2026-04-22T17:16:39.737Z'
-    LastModifiedDate: '2026-04-24T19:19:11.777Z'
+    LastModifiedDate: '2026-06-17T10:40:27.97Z'
   - VulnerabilityID: CVE-2026-35367
     PkgID: rust-coreutils@0.8.0-0ubuntu3
     PkgName: rust-coreutils
@@ -2203,7 +2203,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2026-35367
     - https://www.cve.org/CVERecord?id=CVE-2026-35367
     PublishedDate: '2026-04-22T17:16:40.423Z'
-    LastModifiedDate: '2026-04-24T19:19:05.067Z'
+    LastModifiedDate: '2026-06-17T10:40:28.297Z'
   - VulnerabilityID: CVE-2026-35368
     PkgID: rust-coreutils@0.8.0-0ubuntu3
     PkgName: rust-coreutils
@@ -2240,7 +2240,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2026-35368
     - https://www.cve.org/CVERecord?id=CVE-2026-35368
     PublishedDate: '2026-04-22T17:16:40.56Z'
-    LastModifiedDate: '2026-04-24T19:18:55.67Z'
+    LastModifiedDate: '2026-06-17T10:40:28.4Z'
   - VulnerabilityID: CVE-2026-35370
     PkgID: rust-coreutils@0.8.0-0ubuntu3
     PkgName: rust-coreutils
@@ -2277,7 +2277,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2026-35370
     - https://www.cve.org/CVERecord?id=CVE-2026-35370
     PublishedDate: '2026-04-22T17:16:40.833Z'
-    LastModifiedDate: '2026-05-04T20:02:44.33Z'
+    LastModifiedDate: '2026-06-17T10:40:28.613Z'
   - VulnerabilityID: CVE-2026-35371
     PkgID: rust-coreutils@0.8.0-0ubuntu3
     PkgName: rust-coreutils
@@ -2314,7 +2314,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2026-35371
     - https://www.cve.org/CVERecord?id=CVE-2026-35371
     PublishedDate: '2026-04-22T17:16:40.987Z'
-    LastModifiedDate: '2026-05-04T20:02:06.183Z'
+    LastModifiedDate: '2026-06-17T10:40:28.723Z'
   - VulnerabilityID: CVE-2026-35373
     PkgID: rust-coreutils@0.8.0-0ubuntu3
     PkgName: rust-coreutils
@@ -2355,7 +2355,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2026-35373
     - https://www.cve.org/CVERecord?id=CVE-2026-35373
     PublishedDate: '2026-04-22T17:16:41.997Z'
-    LastModifiedDate: '2026-05-04T20:01:25.93Z'
+    LastModifiedDate: '2026-06-17T10:40:28.933Z'
   - VulnerabilityID: CVE-2026-35374
     PkgID: rust-coreutils@0.8.0-0ubuntu3
     PkgName: rust-coreutils
@@ -2392,7 +2392,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2026-35374
     - https://www.cve.org/CVERecord?id=CVE-2026-35374
     PublishedDate: '2026-04-22T17:16:42.127Z'
-    LastModifiedDate: '2026-05-04T19:22:14.457Z'
+    LastModifiedDate: '2026-06-17T10:40:29.04Z'
   - VulnerabilityID: CVE-2026-35377
     PkgID: rust-coreutils@0.8.0-0ubuntu3
     PkgName: rust-coreutils
@@ -2429,7 +2429,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2026-35377
     - https://www.cve.org/CVERecord?id=CVE-2026-35377
     PublishedDate: '2026-04-22T17:16:42.577Z'
-    LastModifiedDate: '2026-04-24T19:06:46.293Z'
+    LastModifiedDate: '2026-06-17T10:40:29.357Z'
   - VulnerabilityID: CVE-2025-45582
     PkgID: tar@1.35+dfsg-4
     PkgName: tar
@@ -2483,7 +2483,7 @@
     - https://www.gnu.org/software/tar/manual/html_node/Integrity.html#Integrity
     - https://www.gnu.org/software/tar/manual/html_node/Security-rules-of-thumb.html
     PublishedDate: '2025-07-11T17:15:37.183Z'
-    LastModifiedDate: '2025-11-02T01:15:32.307Z'
+    LastModifiedDate: '2026-06-17T09:25:34.87Z'
   - VulnerabilityID: CVE-2026-27456
     PkgID: util-linux@2.41.3-3ubuntu2
     PkgName: util-linux
@@ -2529,7 +2529,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2026-27456
     - https://www.cve.org/CVERecord?id=CVE-2026-27456
     PublishedDate: '2026-04-03T22:16:25.4Z'
-    LastModifiedDate: '2026-04-22T16:08:55.1Z'
+    LastModifiedDate: '2026-06-17T10:27:11.017Z'
   - VulnerabilityID: CVE-2026-3184
     PkgID: util-linux@2.41.3-3ubuntu2
     PkgName: util-linux
@@ -2573,7 +2573,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2026-3184
     - https://www.cve.org/CVERecord?id=CVE-2026-3184
     PublishedDate: '2026-04-03T19:17:23.377Z'
-    LastModifiedDate: '2026-05-01T19:29:51.02Z'
+    LastModifiedDate: '2026-06-17T10:43:10.203Z'
 - Target: Java
   Class: lang-pkgs
   Type: jar
@@ -2583,6 +2583,465 @@
   Type: gobinary
   Packages: []
   Vulnerabilities:
+  - VulnerabilityID: CVE-2026-25680
+    VendorIDs:
+    - GO-2026-5028
+    PkgID: golang.org/x/net@v0.40.0
+    PkgName: golang.org/x/net
+    PkgIdentifier:
+      PURL: pkg:golang/golang.org/x/net@v0.40.0
+      UID: b8870a94f706b324
+    InstalledVersion: v0.40.0
+    FixedVersion: 0.55.0
+    Status: fixed
+    Layer:
+      Digest: sha256:8a24bf860a29d014da3b262b615bb4da0eeffe73f2756b113dd3138b1c5d9c73
+      DiffID: sha256:e4cd1176a37a9c6de9b327e1b4f63409f6dd8d1a9c4584820f9ac093f3a1f6b3
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-25680
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:7be78dc485f52abbda7e6f6ffe61f316183202db70cce1b2fc04c78d569864e2
+    Title: Parsing arbitrary HTML can consume excessive CPU time, possibly leadin ...
+    Description: Parsing arbitrary HTML can consume excessive CPU time, possibly leading to denial of service.
+    Severity: HIGH
+    CweIDs:
+    - CWE-400
+    VendorSeverity:
+      amazon: 3
+      azure: 2
+    References:
+    - https://go.dev/cl/781702
+    - https://go.dev/issue/79573
+    - https://groups.google.com/g/golang-announce/c/iI-mYSI0lu8
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-25680
+    - https://pkg.go.dev/vuln/GO-2026-5028
+    PublishedDate: '2026-05-22T16:16:19.753Z'
+    LastModifiedDate: '2026-06-17T10:25:03.14Z'
+  - VulnerabilityID: CVE-2026-25681
+    VendorIDs:
+    - GO-2026-5029
+    PkgID: golang.org/x/net@v0.40.0
+    PkgName: golang.org/x/net
+    PkgIdentifier:
+      PURL: pkg:golang/golang.org/x/net@v0.40.0
+      UID: b8870a94f706b324
+    InstalledVersion: v0.40.0
+    FixedVersion: 0.55.0
+    Status: fixed
+    Layer:
+      Digest: sha256:8a24bf860a29d014da3b262b615bb4da0eeffe73f2756b113dd3138b1c5d9c73
+      DiffID: sha256:e4cd1176a37a9c6de9b327e1b4f63409f6dd8d1a9c4584820f9ac093f3a1f6b3
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-25681
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:ba92aa90a02f69cfe471669832b4b655b661db6b22c12c013b68110613e217fd
+    Title: Parsing arbitrary HTML which is then rendered using Render can result  ...
+    Description: Parsing arbitrary HTML which is then rendered using Render can result in an unexpected HTML tree. This can be leveraged to execute XSS attacks in applications that attempt to sanitize input HTML before rendering.
+    Severity: HIGH
+    CweIDs:
+    - CWE-1021
+    VendorSeverity:
+      amazon: 3
+      azure: 2
+    References:
+    - https://go.dev/cl/781703
+    - https://go.dev/issue/79574
+    - https://groups.google.com/g/golang-announce/c/iI-mYSI0lu8
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-25681
+    - https://pkg.go.dev/vuln/GO-2026-5029
+    PublishedDate: '2026-05-22T16:16:19.863Z'
+    LastModifiedDate: '2026-06-17T10:25:03.343Z'
+  - VulnerabilityID: CVE-2026-27136
+    VendorIDs:
+    - GO-2026-5030
+    PkgID: golang.org/x/net@v0.40.0
+    PkgName: golang.org/x/net
+    PkgIdentifier:
+      PURL: pkg:golang/golang.org/x/net@v0.40.0
+      UID: b8870a94f706b324
+    InstalledVersion: v0.40.0
+    FixedVersion: 0.55.0
+    Status: fixed
+    Layer:
+      Digest: sha256:8a24bf860a29d014da3b262b615bb4da0eeffe73f2756b113dd3138b1c5d9c73
+      DiffID: sha256:e4cd1176a37a9c6de9b327e1b4f63409f6dd8d1a9c4584820f9ac093f3a1f6b3
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-27136
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:48630133e02b1b91fb109838fef6d486e64ba08230359bb1656166dcafdb6091
+    Title: Parsing arbitrary HTML which is then rendered using Render can result  ...
+    Description: Parsing arbitrary HTML which is then rendered using Render can result in an unexpected HTML tree. This can be leveraged to execute XSS attacks in applications that attempt to sanitize input HTML before rendering.
+    Severity: HIGH
+    CweIDs:
+    - CWE-1021
+    VendorSeverity:
+      amazon: 3
+      azure: 2
+    References:
+    - https://go.dev/cl/781685
+    - https://go.dev/issue/79575
+    - https://groups.google.com/g/golang-announce/c/iI-mYSI0lu8
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-27136
+    - https://pkg.go.dev/vuln/GO-2026-5030
+    PublishedDate: '2026-05-22T16:16:20.087Z'
+    LastModifiedDate: '2026-06-17T10:26:43.803Z'
+  - VulnerabilityID: CVE-2026-33814
+    VendorIDs:
+    - GO-2026-4918
+    PkgID: golang.org/x/net@v0.40.0
+    PkgName: golang.org/x/net
+    PkgIdentifier:
+      PURL: pkg:golang/golang.org/x/net@v0.40.0
+      UID: b8870a94f706b324
+    InstalledVersion: v0.40.0
+    FixedVersion: 0.53.0
+    Status: fixed
+    Layer:
+      Digest: sha256:8a24bf860a29d014da3b262b615bb4da0eeffe73f2756b113dd3138b1c5d9c73
+      DiffID: sha256:e4cd1176a37a9c6de9b327e1b4f63409f6dd8d1a9c4584820f9ac093f3a1f6b3
+    SeveritySource: nvd
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-33814
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:a2037b22d864da92cf3feca7e397bbd40a3693541c5c526566638cb4c81653f7
+    Title: When processing HTTP/2 SETTINGS frames, transport will enter an infini ...
+    Description: When processing HTTP/2 SETTINGS frames, transport will enter an infinite loop of writing CONTINUATION frames if it receives a SETTINGS_MAX_FRAME_SIZE with a value of 0.
+    Severity: HIGH
+    CweIDs:
+    - CWE-835
+    VendorSeverity:
+      amazon: 3
+      azure: 2
+      bitnami: 3
+      nvd: 3
+      oracle-oval: 3
+      photon: 3
+      ubuntu: 2
+    CVSS:
+      bitnami:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 7.5
+      nvd:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 7.5
+    References:
+    - https://github.com/golang/go/issues/78476
+    - https://go-review.googlesource.com/c/go/+/761581
+    - https://go-review.googlesource.com/c/net/+/761640
+    - https://go.dev/cl/761581
+    - https://go.dev/cl/761640
+    - https://go.dev/issue/78476
+    - https://groups.google.com/g/golang-announce/c/qcCIEXso47M
+    - https://linux.oracle.com/cve/CVE-2026-33814.html
+    - https://linux.oracle.com/errata/ELSA-2026-22112.html
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-33814
+    - https://pkg.go.dev/vuln/GO-2026-4918
+    - https://ubuntu.com/security/notices/USN-8430-1
+    - https://www.cve.org/CVERecord?id=CVE-2026-33814
+    PublishedDate: '2026-05-07T20:16:42.88Z'
+    LastModifiedDate: '2026-06-17T10:38:08.657Z'
+  - VulnerabilityID: CVE-2026-39821
+    VendorIDs:
+    - GO-2026-5026
+    PkgID: golang.org/x/net@v0.40.0
+    PkgName: golang.org/x/net
+    PkgIdentifier:
+      PURL: pkg:golang/golang.org/x/net@v0.40.0
+      UID: b8870a94f706b324
+    InstalledVersion: v0.40.0
+    FixedVersion: 0.55.0
+    Status: fixed
+    Layer:
+      Digest: sha256:8a24bf860a29d014da3b262b615bb4da0eeffe73f2756b113dd3138b1c5d9c73
+      DiffID: sha256:e4cd1176a37a9c6de9b327e1b4f63409f6dd8d1a9c4584820f9ac093f3a1f6b3
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-39821
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:62af76049508d43eb902b889cc5619545a0d7e3cb8668c879a2d8e4ad5df5e77
+    Title: 'golang.org/x/net/idna: golang: golang.org/x/net/idna: Privilege escalation via incorrect Punycode label processing'
+    Description: The ToASCII and ToUnicode functions incorrectly accept Punycode-encoded labels that decode to an ASCII-only label. For example, ToUnicode("xn--example-.com") incorrectly returns the name "example.com" rather than an error. This behavior can lead to privilege escalation in programs using the idna package. For example, a program which performs privilege checks on the ASCII hostname may reject "example.com" but permit "xn--example-.com". If that program subsequently converts the ASCII hostname to Unicode, it will inadvertently permits access to the Unicode name "example.com".
+    Severity: HIGH
+    CweIDs:
+    - CWE-1289
+    VendorSeverity:
+      amazon: 3
+      azure: 4
+      redhat: 3
+      ubuntu: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:N
+        V3Score: 8.2
+    References:
+    - https://access.redhat.com/security/cve/CVE-2026-39821
+    - https://github.com/golang/go/issues/78760
+    - https://go.dev/cl/767220
+    - https://go.dev/issue/78760
+    - https://groups.google.com/g/golang-announce/c/iI-mYSI0lu8
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-39821
+    - https://pkg.go.dev/vuln/GO-2026-5026
+    - https://ubuntu.com/security/notices/USN-8416-1
+    - https://www.cve.org/CVERecord?id=CVE-2026-39821
+    PublishedDate: '2026-05-22T16:16:20.41Z'
+    LastModifiedDate: '2026-06-17T10:42:38.333Z'
+  - VulnerabilityID: CVE-2026-42502
+    VendorIDs:
+    - GO-2026-5027
+    PkgID: golang.org/x/net@v0.40.0
+    PkgName: golang.org/x/net
+    PkgIdentifier:
+      PURL: pkg:golang/golang.org/x/net@v0.40.0
+      UID: b8870a94f706b324
+    InstalledVersion: v0.40.0
+    FixedVersion: 0.55.0
+    Status: fixed
+    Layer:
+      Digest: sha256:8a24bf860a29d014da3b262b615bb4da0eeffe73f2756b113dd3138b1c5d9c73
+      DiffID: sha256:e4cd1176a37a9c6de9b327e1b4f63409f6dd8d1a9c4584820f9ac093f3a1f6b3
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-42502
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:3de604e04291735fbe203bd6284bad4ec4c9b0b52b7b110a7347e12a5690c6f4
+    Title: Parsing arbitrary HTML which is then rendered using Render can result  ...
+    Description: Parsing arbitrary HTML which is then rendered using Render can result in an unexpected HTML tree. This can be leveraged to execute XSS attacks in applications that attempt to sanitize input HTML before rendering.
+    Severity: HIGH
+    CweIDs:
+    - CWE-1021
+    VendorSeverity:
+      amazon: 3
+      azure: 2
+    References:
+    - https://go.dev/cl/781701
+    - https://go.dev/issue/79572
+    - https://groups.google.com/g/golang-announce/c/iI-mYSI0lu8
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-42502
+    - https://pkg.go.dev/vuln/GO-2026-5027
+    PublishedDate: '2026-05-22T16:16:20.587Z'
+    LastModifiedDate: '2026-06-17T10:47:56.593Z'
+  - VulnerabilityID: CVE-2026-42506
+    VendorIDs:
+    - GO-2026-5025
+    PkgID: golang.org/x/net@v0.40.0
+    PkgName: golang.org/x/net
+    PkgIdentifier:
+      PURL: pkg:golang/golang.org/x/net@v0.40.0
+      UID: b8870a94f706b324
+    InstalledVersion: v0.40.0
+    FixedVersion: 0.55.0
+    Status: fixed
+    Layer:
+      Digest: sha256:8a24bf860a29d014da3b262b615bb4da0eeffe73f2756b113dd3138b1c5d9c73
+      DiffID: sha256:e4cd1176a37a9c6de9b327e1b4f63409f6dd8d1a9c4584820f9ac093f3a1f6b3
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-42506
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:8ee20c2637c3901b9710061d6a70003520fae0372b7ac4964f1c5d22ca807748
+    Title: Parsing arbitrary HTML which is then rendered using Render can result  ...
+    Description: Parsing arbitrary HTML which is then rendered using Render can result in an unexpected HTML tree. This can be leveraged to execute XSS attacks in applications that attempt to sanitize input HTML before rendering.
+    Severity: HIGH
+    CweIDs:
+    - CWE-79
+    VendorSeverity:
+      amazon: 3
+      azure: 2
+    References:
+    - https://go.dev/cl/781700
+    - https://go.dev/issue/79571
+    - https://groups.google.com/g/golang-announce/c/iI-mYSI0lu8
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-42506
+    - https://pkg.go.dev/vuln/GO-2026-5025
+    PublishedDate: '2026-05-22T16:16:20.803Z'
+    LastModifiedDate: '2026-06-17T10:47:56.993Z'
+  - VulnerabilityID: CVE-2025-47911
+    VendorIDs:
+    - GO-2026-4440
+    PkgID: golang.org/x/net@v0.40.0
+    PkgName: golang.org/x/net
+    PkgIdentifier:
+      PURL: pkg:golang/golang.org/x/net@v0.40.0
+      UID: b8870a94f706b324
+    InstalledVersion: v0.40.0
+    FixedVersion: 0.45.0
+    Status: fixed
+    Layer:
+      Digest: sha256:8a24bf860a29d014da3b262b615bb4da0eeffe73f2756b113dd3138b1c5d9c73
+      DiffID: sha256:e4cd1176a37a9c6de9b327e1b4f63409f6dd8d1a9c4584820f9ac093f3a1f6b3
+    SeveritySource: nvd
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-47911
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:18a5a8a83f0efed3ac60bb9585a887ce42def37a9f579090140ae9f73ab36c70
+    Title: 'golang.org/x/net/html: Quadratic parsing complexity in golang.org/x/net/html'
+    Description: The html.Parse function in golang.org/x/net/html has quadratic parsing complexity when processing certain inputs, which can lead to denial of service (DoS) if an attacker provides specially crafted HTML content.
+    Severity: MEDIUM
+    VendorSeverity:
+      amazon: 2
+      azure: 2
+      cbl-mariner: 2
+      nvd: 2
+      redhat: 2
+      ubuntu: 2
+    CVSS:
+      nvd:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L
+        V3Score: 5.3
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L
+        V3Score: 5.3
+    References:
+    - https://access.redhat.com/security/cve/CVE-2025-47911
+    - https://github.com/golang/go/issues/75682
+    - https://github.com/golang/vulndb/issues/4440
+    - https://go.dev/cl/709876
+    - https://groups.google.com/g/golang-announce/c/jnQcOYpiR2c
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-47911
+    - https://pkg.go.dev/vuln/GO-2026-4440
+    - https://ubuntu.com/security/notices/USN-8089-1
+    - https://ubuntu.com/security/notices/USN-8089-2
+    - https://ubuntu.com/security/notices/USN-8089-3
+    - https://www.cve.org/CVERecord?id=CVE-2025-47911
+    PublishedDate: '2026-02-05T18:16:09.893Z'
+    LastModifiedDate: '2026-06-17T09:28:50.07Z'
+  - VulnerabilityID: CVE-2025-58190
+    VendorIDs:
+    - GO-2026-4441
+    PkgID: golang.org/x/net@v0.40.0
+    PkgName: golang.org/x/net
+    PkgIdentifier:
+      PURL: pkg:golang/golang.org/x/net@v0.40.0
+      UID: b8870a94f706b324
+    InstalledVersion: v0.40.0
+    FixedVersion: 0.45.0
+    Status: fixed
+    Layer:
+      Digest: sha256:8a24bf860a29d014da3b262b615bb4da0eeffe73f2756b113dd3138b1c5d9c73
+      DiffID: sha256:e4cd1176a37a9c6de9b327e1b4f63409f6dd8d1a9c4584820f9ac093f3a1f6b3
+    SeveritySource: nvd
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-58190
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:df1277132cd02a87b7adb781278c8c3f2538014657a94335e96633af538da4dd
+    Title: 'golang.org/x/net/html: Infinite parsing loop in golang.org/x/net'
+    Description: The html.Parse function in golang.org/x/net/html has an infinite parsing loop when processing certain inputs, which can lead to denial of service (DoS) if an attacker provides specially crafted HTML content.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-835
+    VendorSeverity:
+      amazon: 2
+      azure: 2
+      cbl-mariner: 2
+      nvd: 2
+      redhat: 2
+      ubuntu: 2
+    CVSS:
+      nvd:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L
+        V3Score: 5.3
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:L
+        V3Score: 4.3
+    References:
+    - https://access.redhat.com/security/cve/CVE-2025-58190
+    - https://github.com/golang/go/issues/70179
+    - https://github.com/golang/vulndb/issues/4441
+    - https://go.dev/cl/709875
+    - https://groups.google.com/g/golang-announce/c/jnQcOYpiR2c
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-58190
+    - https://pkg.go.dev/vuln/GO-2026-4441
+    - https://ubuntu.com/security/notices/USN-8089-1
+    - https://ubuntu.com/security/notices/USN-8089-2
+    - https://ubuntu.com/security/notices/USN-8089-3
+    - https://www.cve.org/CVERecord?id=CVE-2025-58190
+    PublishedDate: '2026-02-05T18:16:10.027Z'
+    LastModifiedDate: '2026-06-17T09:44:02.557Z'
+  - VulnerabilityID: CVE-2026-39824
+    VendorIDs:
+    - GO-2026-5024
+    PkgID: golang.org/x/sys@v0.33.0
+    PkgName: golang.org/x/sys
+    PkgIdentifier:
+      PURL: pkg:golang/golang.org/x/sys@v0.33.0
+      UID: a350d4cc028089d4
+    InstalledVersion: v0.33.0
+    FixedVersion: 0.44.0
+    Status: fixed
+    Layer:
+      Digest: sha256:8a24bf860a29d014da3b262b615bb4da0eeffe73f2756b113dd3138b1c5d9c73
+      DiffID: sha256:e4cd1176a37a9c6de9b327e1b4f63409f6dd8d1a9c4584820f9ac093f3a1f6b3
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-39824
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:034b7803cf17392b09b29c5a7976cc4eb947b0992cc32eeb7f0d508ebbafaf3a
+    Title: Invoking integer overflow in NewNTUnicodeString in golang.org/x/sys/windows
+    Description: NewNTUnicodeString does not check for string length overflow. When provided with a string that overflows the maximum size of a NTUnicodeString (a 16-bit number of bytes), it returns a truncated string rather than an error.
+    Severity: UNKNOWN
+    CweIDs:
+    - CWE-190
+    References:
+    - https://go.dev/cl/770080
+    - https://go.dev/issue/78916
+    - https://groups.google.com/g/golang-announce/c/6MMI8Lj-Atg
+    - https://pkg.go.dev/vuln/GO-2026-5024
+    PublishedDate: '2026-05-22T20:16:33.057Z'
+    LastModifiedDate: '2026-06-17T10:42:38.62Z'
+  - VulnerabilityID: CVE-2026-27145
+    VendorIDs:
+    - GO-2026-5037
+    PkgID: stdlib@v1.26.3
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.26.3
+      UID: 88b4097712908b9b
+    InstalledVersion: v1.26.3
+    FixedVersion: 1.25.11, 1.26.4
+    Status: fixed
+    Layer:
+      Digest: sha256:8a24bf860a29d014da3b262b615bb4da0eeffe73f2756b113dd3138b1c5d9c73
+      DiffID: sha256:e4cd1176a37a9c6de9b327e1b4f63409f6dd8d1a9c4584820f9ac093f3a1f6b3
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-27145
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:9f60d92c717f39186943e58f5feb32e26c31d9952e32d468aaf22243be916fe6
+    Title: '*x509.Certificate).VerifyHostname previously called matchHostnames in ...'
+    Description: (*x509.Certificate).VerifyHostname previously called matchHostnames in a loop over all DNS Subject Alternative Name (SAN) entries. This caused strings.Split(host, ".") to execute repeatedly on the same input hostname. With a large DNS SAN list, verification costs scaled quadratically based on the number of SAN entries multiplied by the hostname's label count. Because x509.Verify validates hostnames before building the certificate chain, this overhead occurred even for untrusted certificates.
+    Severity: HIGH
+    VendorSeverity:
+      amazon: 3
+      bitnami: 2
+    CVSS:
+      bitnami:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:H
+        V3Score: 6.5
+    References:
+    - https://go.dev/cl/783621
+    - https://go.dev/issue/79694
+    - https://groups.google.com/g/golang-announce/c/tKs3rmcBcKw
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-27145
+    - https://pkg.go.dev/vuln/GO-2026-5037
+    PublishedDate: '2026-06-02T23:16:35.57Z'
+    LastModifiedDate: '2026-06-17T10:26:45.23Z'
   - VulnerabilityID: CVE-2026-42504
     VendorIDs:
     - GO-2026-5038
@@ -2609,6 +3068,7 @@
     CweIDs:
     - CWE-407
     VendorSeverity:
+      amazon: 3
       bitnami: 3
     CVSS:
       bitnami:
@@ -2621,44 +3081,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2026-42504
     - https://pkg.go.dev/vuln/GO-2026-5038
     PublishedDate: '2026-06-02T23:16:37.927Z'
-    LastModifiedDate: '2026-06-04T16:15:50.143Z'
-  - VulnerabilityID: CVE-2026-27145
-    VendorIDs:
-    - GO-2026-5037
-    PkgID: stdlib@v1.26.3
-    PkgName: stdlib
-    PkgIdentifier:
-      PURL: pkg:golang/stdlib@v1.26.3
-      UID: 88b4097712908b9b
-    InstalledVersion: v1.26.3
-    FixedVersion: 1.25.11, 1.26.4
-    Status: fixed
-    Layer:
-      Digest: sha256:8a24bf860a29d014da3b262b615bb4da0eeffe73f2756b113dd3138b1c5d9c73
-      DiffID: sha256:e4cd1176a37a9c6de9b327e1b4f63409f6dd8d1a9c4584820f9ac093f3a1f6b3
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-27145
-    DataSource:
-      ID: govulndb
-      Name: The Go Vulnerability Database
-      URL: https://pkg.go.dev/vuln/
-    Fingerprint: sha256:9f60d92c717f39186943e58f5feb32e26c31d9952e32d468aaf22243be916fe6
-    Title: '*x509.Certificate).VerifyHostname previously called matchHostnames in ...'
-    Description: (*x509.Certificate).VerifyHostname previously called matchHostnames in a loop over all DNS Subject Alternative Name (SAN) entries. This caused strings.Split(host, ".") to execute repeatedly on the same input hostname. With a large DNS SAN list, verification costs scaled quadratically based on the number of SAN entries multiplied by the hostname's label count. Because x509.Verify validates hostnames before building the certificate chain, this overhead occurred even for untrusted certificates.
-    Severity: MEDIUM
-    VendorSeverity:
-      bitnami: 2
-    CVSS:
-      bitnami:
-        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:H
-        V3Score: 6.5
-    References:
-    - https://go.dev/cl/783621
-    - https://go.dev/issue/79694
-    - https://groups.google.com/g/golang-announce/c/tKs3rmcBcKw
-    - https://nvd.nist.gov/vuln/detail/CVE-2026-27145
-    - https://pkg.go.dev/vuln/GO-2026-5037
-    PublishedDate: '2026-06-02T23:16:35.57Z'
-    LastModifiedDate: '2026-06-04T16:15:50.143Z'
+    LastModifiedDate: '2026-06-17T10:47:56.86Z'
   - VulnerabilityID: CVE-2026-42507
     VendorIDs:
     - GO-2026-5039
@@ -2683,6 +3106,7 @@
     Description: When returning errors, functions in the net/textproto package would include its input as part of the error. This might allow an attacker to inject misleading content to errors that are printed or logged.
     Severity: MEDIUM
     VendorSeverity:
+      amazon: 3
       bitnami: 2
       redhat: 2
     CVSS:
@@ -2701,4 +3125,4 @@
     - https://pkg.go.dev/vuln/GO-2026-5039
     - https://www.cve.org/CVERecord?id=CVE-2026-42507
     PublishedDate: '2026-06-02T23:16:38.027Z'
-    LastModifiedDate: '2026-06-04T16:15:50.143Z'
+    LastModifiedDate: '2026-06-17T10:47:57.137Z'
