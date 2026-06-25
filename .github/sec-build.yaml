@@ -93,6 +93,223 @@
     - https://www.cve.org/CVERecord?id=CVE-2026-3184
     PublishedDate: '2026-04-03T19:17:23.377Z'
     LastModifiedDate: '2026-06-17T10:43:10.203Z'
+  - VulnerabilityID: CVE-2026-41256
+    PkgID: jq@1.8.1-4ubuntu2
+    PkgName: jq
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/jq@1.8.1-4ubuntu2?arch=amd64&distro=ubuntu-26.04
+      UID: ca2ce26b48ea1aa7
+    InstalledVersion: 1.8.1-4ubuntu2
+    Status: affected
+    Layer:
+      Digest: sha256:3b1af79c224535e8932ed23074188308a79f22b042ef182cba188d55773b474c
+      DiffID: sha256:3f8d66faccfbaf6ff1946a0a35a3da0cb64e9696a7c64d317423b0848ef36d27
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-41256
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:33054333fdeaf9329d6d78a2759be383d7a2d91de41566e131643c652b2689a8
+    Title: 'jq: embedded NUL truncates top-level jq programs loaded with -f'
+    Description: jq is a command-line JSON processor. In 1.8.1 and earlier, Top-level jq programs loaded from a file with -f are truncated at the first embedded NUL byte on current upstream HEAD. A crafted filter file such as . followed by \x00 and arbitrary suffix compiles and executes as only the prefix before the NUL. This leaves jq with a post-CVE-2026-33948 prefix/full-buffer mismatch on the compilation path even though the JSON parser path has already been fixed.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-158
+    VendorSeverity:
+      azure: 2
+      photon: 2
+      redhat: 2
+      ubuntu: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:N
+        V3Score: 5.5
+    References:
+    - https://access.redhat.com/security/cve/CVE-2026-41256
+    - https://github.com/jqlang/jq/commit/5a015deae35d19e3ebbc65db6c157a80e76df738
+    - https://github.com/jqlang/jq/security/advisories/GHSA-vf2h-chrj-q3fg
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-41256
+    - https://www.cve.org/CVERecord?id=CVE-2026-41256
+    PublishedDate: '2026-05-11T18:16:33.983Z'
+    LastModifiedDate: '2026-06-17T10:46:23.713Z'
+  - VulnerabilityID: CVE-2026-41257
+    PkgID: jq@1.8.1-4ubuntu2
+    PkgName: jq
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/jq@1.8.1-4ubuntu2?arch=amd64&distro=ubuntu-26.04
+      UID: ca2ce26b48ea1aa7
+    InstalledVersion: 1.8.1-4ubuntu2
+    Status: affected
+    Layer:
+      Digest: sha256:3b1af79c224535e8932ed23074188308a79f22b042ef182cba188d55773b474c
+      DiffID: sha256:3f8d66faccfbaf6ff1946a0a35a3da0cb64e9696a7c64d317423b0848ef36d27
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-41257
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:b248802eeb769a26ad2cdb911bfae8a7a21ae37c9ac744ec6b5f3df9773fde85
+    Title: 'jq: signed-int overflow in stack_reallocate'
+    Description: jq is a command-line JSON processor. In 1.8.1 and earlier, the jq bytecode VM's data stack tracks its allocation size in a signed int. When the stack grows beyond ≈1 GiB (via deeply nested generator forks), the doubling arithmetic overflows. The wrapped value is passed to realloc and then used for a memmove with attacker-influenced offsets.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-190
+    - CWE-787
+    VendorSeverity:
+      azure: 2
+      nvd: 2
+      photon: 2
+      redhat: 2
+      ubuntu: 2
+    CVSS:
+      nvd:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H
+        V3Score: 5.5
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H
+        V3Score: 5.5
+    References:
+    - https://access.redhat.com/security/cve/CVE-2026-41257
+    - https://github.com/jqlang/jq/commit/01b3cded76daacbfddb7f8763700b0803bcb5c6f
+    - https://github.com/jqlang/jq/security/advisories/GHSA-4jm8-m363-4539
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-41257
+    - https://www.cve.org/CVERecord?id=CVE-2026-41257
+    PublishedDate: '2026-05-11T18:16:34.127Z'
+    LastModifiedDate: '2026-06-17T10:46:23.82Z'
+  - VulnerabilityID: CVE-2026-43895
+    PkgID: jq@1.8.1-4ubuntu2
+    PkgName: jq
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/jq@1.8.1-4ubuntu2?arch=amd64&distro=ubuntu-26.04
+      UID: ca2ce26b48ea1aa7
+    InstalledVersion: 1.8.1-4ubuntu2
+    Status: affected
+    Layer:
+      Digest: sha256:3b1af79c224535e8932ed23074188308a79f22b042ef182cba188d55773b474c
+      DiffID: sha256:3f8d66faccfbaf6ff1946a0a35a3da0cb64e9696a7c64d317423b0848ef36d27
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-43895
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:dbcf501c68a13203322a91c64b3bcd5d52a276a486fff25261a6797f89012ab5
+    Title: 'jq: embedded NUL in jq import paths causes local redaction-policy bypass and preserves sensitive fields in published artifacts'
+    Description: jq is a command-line JSON processor. In 1.8.1 and earlier, jq accepts embedded NUL bytes in import paths at the jq-language level, but later resolves those paths through C string operations during module and data-file lookup. This creates a mismatch between the logical import string that policy or audit code may validate and the on-disk path that jq actually opens.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-20
+    - CWE-158
+    VendorSeverity:
+      azure: 2
+      photon: 2
+      redhat: 2
+      ubuntu: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:N
+        V3Score: 4.4
+    References:
+    - https://access.redhat.com/security/cve/CVE-2026-43895
+    - https://github.com/jqlang/jq/commit/9d223f153c3632a207fa071caaa6292da33ae361
+    - https://github.com/jqlang/jq/security/advisories/GHSA-7q7g-mrq3-phxr
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-43895
+    - https://www.cve.org/CVERecord?id=CVE-2026-43895
+    PublishedDate: '2026-05-11T18:16:37.387Z'
+    LastModifiedDate: '2026-06-17T10:50:02.68Z'
+  - VulnerabilityID: CVE-2026-43896
+    PkgID: jq@1.8.1-4ubuntu2
+    PkgName: jq
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/jq@1.8.1-4ubuntu2?arch=amd64&distro=ubuntu-26.04
+      UID: ca2ce26b48ea1aa7
+    InstalledVersion: 1.8.1-4ubuntu2
+    Status: affected
+    Layer:
+      Digest: sha256:3b1af79c224535e8932ed23074188308a79f22b042ef182cba188d55773b474c
+      DiffID: sha256:3f8d66faccfbaf6ff1946a0a35a3da0cb64e9696a7c64d317423b0848ef36d27
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-43896
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:00c262ba65a6ffbdffbcf8534915b0533ecfa9399d011084f182b732d23e875e
+    Title: 'jq: stack overflow in recursive object merge'
+    Description: jq is a command-line JSON processor. In 1.8.1 and earlier, unbounded recursion in jv_object_merge_recursive() allows a crafted jq program to crash the process with a segfault. The function is reachable through the * operator when both operands are objects.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-674
+    VendorSeverity:
+      amazon: 2
+      azure: 2
+      nvd: 2
+      photon: 2
+      redhat: 2
+      ubuntu: 2
+    CVSS:
+      nvd:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 5.5
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H
+        V3Score: 5.5
+    References:
+    - https://access.redhat.com/security/cve/CVE-2026-43896
+    - https://github.com/jqlang/jq/commit/532ccea6080ed6758f39fe9f6208a44b665023d2
+    - https://github.com/jqlang/jq/security/advisories/GHSA-mg96-6h3q-g846
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-43896
+    - https://www.cve.org/CVERecord?id=CVE-2026-43896
+    PublishedDate: '2026-05-11T18:16:37.53Z'
+    LastModifiedDate: '2026-06-17T10:50:02.79Z'
+  - VulnerabilityID: CVE-2026-44777
+    PkgID: jq@1.8.1-4ubuntu2
+    PkgName: jq
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/jq@1.8.1-4ubuntu2?arch=amd64&distro=ubuntu-26.04
+      UID: ca2ce26b48ea1aa7
+    InstalledVersion: 1.8.1-4ubuntu2
+    Status: affected
+    Layer:
+      Digest: sha256:3b1af79c224535e8932ed23074188308a79f22b042ef182cba188d55773b474c
+      DiffID: sha256:3f8d66faccfbaf6ff1946a0a35a3da0cb64e9696a7c64d317423b0848ef36d27
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-44777
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:4c5a1e62f1a093710ead93a028d617431274dc682e8b7a013a6200d4ca2918f5
+    Title: 'jq: stack overflow in module loading on mutual include'
+    Description: |-
+      jq is a command-line JSON processor. In 1.8.2rc1 and earlier, the ordinary module loader recurses without cycle detection when two
+      otherwise valid modules include each other.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-674
+    VendorSeverity:
+      azure: 2
+      nvd: 2
+      photon: 2
+      redhat: 2
+      ubuntu: 2
+    CVSS:
+      nvd:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H
+        V3Score: 5.5
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H
+        V3Score: 5.5
+    References:
+    - https://access.redhat.com/security/cve/CVE-2026-44777
+    - https://github.com/jqlang/jq/commit/f58787c41835d9b17795730cb04925fdba25c71c
+    - https://github.com/jqlang/jq/security/advisories/GHSA-rmpv-jgvr-wpr9
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-44777
+    - https://www.cve.org/CVERecord?id=CVE-2026-44777
+    PublishedDate: '2026-05-11T18:16:38.517Z'
+    LastModifiedDate: '2026-06-17T10:51:19.04Z'
   - VulnerabilityID: CVE-2026-27456
     PkgID: libblkid1@2.41.3-3ubuntu2
     PkgName: libblkid1
@@ -228,14 +445,10 @@
     - https://access.redhat.com/errata/RHSA-2026:20587
     - https://access.redhat.com/security/cve/CVE-2026-4046
     - https://bugzilla.redhat.com/2453117
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2449777
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2449783
     - https://bugzilla.redhat.com/show_bug.cgi?id=2453117
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4046
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4437
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4438
     - https://errata.almalinux.org/8/ALSA-2026-20587.html
-    - https://errata.rockylinux.org/RLSA-2026:20597
+    - https://errata.rockylinux.org/RLSA-2026:20594
     - https://inbox.sourceware.org/libc-announce/76814edf-cf7f-47ec-979d-2dce0a2c76bf@gotplt.org/T/#u
     - https://linux.oracle.com/cve/CVE-2026-4046.html
     - https://linux.oracle.com/errata/ELSA-2026-50291.html
@@ -288,12 +501,10 @@
     - https://bugzilla.redhat.com/2449783
     - https://bugzilla.redhat.com/show_bug.cgi?id=2449777
     - https://bugzilla.redhat.com/show_bug.cgi?id=2449783
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2453117
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4046
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4437
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4438
     - https://errata.almalinux.org/10/ALSA-2026-19061.html
-    - https://errata.rockylinux.org/RLSA-2026:20597
+    - https://errata.rockylinux.org/RLSA-2026:19061
     - https://nvd.nist.gov/vuln/detail/CVE-2026-4437
     - https://sourceware.org/bugzilla/show_bug.cgi?id=34014
     - https://www.cve.org/CVERecord?id=CVE-2026-4437
@@ -342,12 +553,10 @@
     - https://bugzilla.redhat.com/2449783
     - https://bugzilla.redhat.com/show_bug.cgi?id=2449777
     - https://bugzilla.redhat.com/show_bug.cgi?id=2449783
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2453117
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4046
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4437
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4438
     - https://errata.almalinux.org/10/ALSA-2026-19061.html
-    - https://errata.rockylinux.org/RLSA-2026:20597
+    - https://errata.rockylinux.org/RLSA-2026:19061
     - https://nvd.nist.gov/vuln/detail/CVE-2026-4438
     - https://sourceware.org/bugzilla/show_bug.cgi?id=34015
     - https://www.cve.org/CVERecord?id=CVE-2026-4438
@@ -482,14 +691,10 @@
     - https://access.redhat.com/errata/RHSA-2026:20587
     - https://access.redhat.com/security/cve/CVE-2026-4046
     - https://bugzilla.redhat.com/2453117
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2449777
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2449783
     - https://bugzilla.redhat.com/show_bug.cgi?id=2453117
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4046
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4437
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4438
     - https://errata.almalinux.org/8/ALSA-2026-20587.html
-    - https://errata.rockylinux.org/RLSA-2026:20597
+    - https://errata.rockylinux.org/RLSA-2026:20594
     - https://inbox.sourceware.org/libc-announce/76814edf-cf7f-47ec-979d-2dce0a2c76bf@gotplt.org/T/#u
     - https://linux.oracle.com/cve/CVE-2026-4046.html
     - https://linux.oracle.com/errata/ELSA-2026-50291.html
@@ -542,12 +747,10 @@
     - https://bugzilla.redhat.com/2449783
     - https://bugzilla.redhat.com/show_bug.cgi?id=2449777
     - https://bugzilla.redhat.com/show_bug.cgi?id=2449783
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2453117
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4046
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4437
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4438
     - https://errata.almalinux.org/10/ALSA-2026-19061.html
-    - https://errata.rockylinux.org/RLSA-2026:20597
+    - https://errata.rockylinux.org/RLSA-2026:19061
     - https://nvd.nist.gov/vuln/detail/CVE-2026-4437
     - https://sourceware.org/bugzilla/show_bug.cgi?id=34014
     - https://www.cve.org/CVERecord?id=CVE-2026-4437
@@ -596,12 +799,10 @@
     - https://bugzilla.redhat.com/2449783
     - https://bugzilla.redhat.com/show_bug.cgi?id=2449777
     - https://bugzilla.redhat.com/show_bug.cgi?id=2449783
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2453117
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4046
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4437
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4438
     - https://errata.almalinux.org/10/ALSA-2026-19061.html
-    - https://errata.rockylinux.org/RLSA-2026:20597
+    - https://errata.rockylinux.org/RLSA-2026:19061
     - https://nvd.nist.gov/vuln/detail/CVE-2026-4438
     - https://sourceware.org/bugzilla/show_bug.cgi?id=34015
     - https://www.cve.org/CVERecord?id=CVE-2026-4438
@@ -736,14 +937,10 @@
     - https://access.redhat.com/errata/RHSA-2026:20587
     - https://access.redhat.com/security/cve/CVE-2026-4046
     - https://bugzilla.redhat.com/2453117
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2449777
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2449783
     - https://bugzilla.redhat.com/show_bug.cgi?id=2453117
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4046
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4437
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4438
     - https://errata.almalinux.org/8/ALSA-2026-20587.html
-    - https://errata.rockylinux.org/RLSA-2026:20597
+    - https://errata.rockylinux.org/RLSA-2026:20594
     - https://inbox.sourceware.org/libc-announce/76814edf-cf7f-47ec-979d-2dce0a2c76bf@gotplt.org/T/#u
     - https://linux.oracle.com/cve/CVE-2026-4046.html
     - https://linux.oracle.com/errata/ELSA-2026-50291.html
@@ -796,12 +993,10 @@
     - https://bugzilla.redhat.com/2449783
     - https://bugzilla.redhat.com/show_bug.cgi?id=2449777
     - https://bugzilla.redhat.com/show_bug.cgi?id=2449783
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2453117
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4046
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4437
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4438
     - https://errata.almalinux.org/10/ALSA-2026-19061.html
-    - https://errata.rockylinux.org/RLSA-2026:20597
+    - https://errata.rockylinux.org/RLSA-2026:19061
     - https://nvd.nist.gov/vuln/detail/CVE-2026-4437
     - https://sourceware.org/bugzilla/show_bug.cgi?id=34014
     - https://www.cve.org/CVERecord?id=CVE-2026-4437
@@ -850,12 +1045,10 @@
     - https://bugzilla.redhat.com/2449783
     - https://bugzilla.redhat.com/show_bug.cgi?id=2449777
     - https://bugzilla.redhat.com/show_bug.cgi?id=2449783
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2453117
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4046
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4437
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4438
     - https://errata.almalinux.org/10/ALSA-2026-19061.html
-    - https://errata.rockylinux.org/RLSA-2026:20597
+    - https://errata.rockylinux.org/RLSA-2026:19061
     - https://nvd.nist.gov/vuln/detail/CVE-2026-4438
     - https://sourceware.org/bugzilla/show_bug.cgi?id=34015
     - https://www.cve.org/CVERecord?id=CVE-2026-4438
@@ -1044,6 +1237,223 @@
     - https://www.cve.org/CVERecord?id=CVE-2024-2236
     PublishedDate: '2024-03-06T22:15:57.977Z'
     LastModifiedDate: '2026-06-17T07:24:06.083Z'
+  - VulnerabilityID: CVE-2026-41256
+    PkgID: libjq1@1.8.1-4ubuntu2
+    PkgName: libjq1
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/libjq1@1.8.1-4ubuntu2?arch=amd64&distro=ubuntu-26.04
+      UID: c49d39658a19eb59
+    InstalledVersion: 1.8.1-4ubuntu2
+    Status: affected
+    Layer:
+      Digest: sha256:3b1af79c224535e8932ed23074188308a79f22b042ef182cba188d55773b474c
+      DiffID: sha256:3f8d66faccfbaf6ff1946a0a35a3da0cb64e9696a7c64d317423b0848ef36d27
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-41256
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:1c0cc441b475dfc20a014f79f34146ad15567acc6c748758fb2f7a359bc4c818
+    Title: 'jq: embedded NUL truncates top-level jq programs loaded with -f'
+    Description: jq is a command-line JSON processor. In 1.8.1 and earlier, Top-level jq programs loaded from a file with -f are truncated at the first embedded NUL byte on current upstream HEAD. A crafted filter file such as . followed by \x00 and arbitrary suffix compiles and executes as only the prefix before the NUL. This leaves jq with a post-CVE-2026-33948 prefix/full-buffer mismatch on the compilation path even though the JSON parser path has already been fixed.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-158
+    VendorSeverity:
+      azure: 2
+      photon: 2
+      redhat: 2
+      ubuntu: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:N
+        V3Score: 5.5
+    References:
+    - https://access.redhat.com/security/cve/CVE-2026-41256
+    - https://github.com/jqlang/jq/commit/5a015deae35d19e3ebbc65db6c157a80e76df738
+    - https://github.com/jqlang/jq/security/advisories/GHSA-vf2h-chrj-q3fg
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-41256
+    - https://www.cve.org/CVERecord?id=CVE-2026-41256
+    PublishedDate: '2026-05-11T18:16:33.983Z'
+    LastModifiedDate: '2026-06-17T10:46:23.713Z'
+  - VulnerabilityID: CVE-2026-41257
+    PkgID: libjq1@1.8.1-4ubuntu2
+    PkgName: libjq1
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/libjq1@1.8.1-4ubuntu2?arch=amd64&distro=ubuntu-26.04
+      UID: c49d39658a19eb59
+    InstalledVersion: 1.8.1-4ubuntu2
+    Status: affected
+    Layer:
+      Digest: sha256:3b1af79c224535e8932ed23074188308a79f22b042ef182cba188d55773b474c
+      DiffID: sha256:3f8d66faccfbaf6ff1946a0a35a3da0cb64e9696a7c64d317423b0848ef36d27
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-41257
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:c6f3396c395bbbe4a14f12e39f3b23675fe785a6b0c610cd8ddf1af729eb5f5e
+    Title: 'jq: signed-int overflow in stack_reallocate'
+    Description: jq is a command-line JSON processor. In 1.8.1 and earlier, the jq bytecode VM's data stack tracks its allocation size in a signed int. When the stack grows beyond ≈1 GiB (via deeply nested generator forks), the doubling arithmetic overflows. The wrapped value is passed to realloc and then used for a memmove with attacker-influenced offsets.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-190
+    - CWE-787
+    VendorSeverity:
+      azure: 2
+      nvd: 2
+      photon: 2
+      redhat: 2
+      ubuntu: 2
+    CVSS:
+      nvd:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H
+        V3Score: 5.5
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H
+        V3Score: 5.5
+    References:
+    - https://access.redhat.com/security/cve/CVE-2026-41257
+    - https://github.com/jqlang/jq/commit/01b3cded76daacbfddb7f8763700b0803bcb5c6f
+    - https://github.com/jqlang/jq/security/advisories/GHSA-4jm8-m363-4539
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-41257
+    - https://www.cve.org/CVERecord?id=CVE-2026-41257
+    PublishedDate: '2026-05-11T18:16:34.127Z'
+    LastModifiedDate: '2026-06-17T10:46:23.82Z'
+  - VulnerabilityID: CVE-2026-43895
+    PkgID: libjq1@1.8.1-4ubuntu2
+    PkgName: libjq1
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/libjq1@1.8.1-4ubuntu2?arch=amd64&distro=ubuntu-26.04
+      UID: c49d39658a19eb59
+    InstalledVersion: 1.8.1-4ubuntu2
+    Status: affected
+    Layer:
+      Digest: sha256:3b1af79c224535e8932ed23074188308a79f22b042ef182cba188d55773b474c
+      DiffID: sha256:3f8d66faccfbaf6ff1946a0a35a3da0cb64e9696a7c64d317423b0848ef36d27
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-43895
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:b7f779ff6273ad9024f6e239f6ab573ea12fcbe61357f4bfb2d3716527cb0a6c
+    Title: 'jq: embedded NUL in jq import paths causes local redaction-policy bypass and preserves sensitive fields in published artifacts'
+    Description: jq is a command-line JSON processor. In 1.8.1 and earlier, jq accepts embedded NUL bytes in import paths at the jq-language level, but later resolves those paths through C string operations during module and data-file lookup. This creates a mismatch between the logical import string that policy or audit code may validate and the on-disk path that jq actually opens.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-20
+    - CWE-158
+    VendorSeverity:
+      azure: 2
+      photon: 2
+      redhat: 2
+      ubuntu: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:N
+        V3Score: 4.4
+    References:
+    - https://access.redhat.com/security/cve/CVE-2026-43895
+    - https://github.com/jqlang/jq/commit/9d223f153c3632a207fa071caaa6292da33ae361
+    - https://github.com/jqlang/jq/security/advisories/GHSA-7q7g-mrq3-phxr
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-43895
+    - https://www.cve.org/CVERecord?id=CVE-2026-43895
+    PublishedDate: '2026-05-11T18:16:37.387Z'
+    LastModifiedDate: '2026-06-17T10:50:02.68Z'
+  - VulnerabilityID: CVE-2026-43896
+    PkgID: libjq1@1.8.1-4ubuntu2
+    PkgName: libjq1
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/libjq1@1.8.1-4ubuntu2?arch=amd64&distro=ubuntu-26.04
+      UID: c49d39658a19eb59
+    InstalledVersion: 1.8.1-4ubuntu2
+    Status: affected
+    Layer:
+      Digest: sha256:3b1af79c224535e8932ed23074188308a79f22b042ef182cba188d55773b474c
+      DiffID: sha256:3f8d66faccfbaf6ff1946a0a35a3da0cb64e9696a7c64d317423b0848ef36d27
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-43896
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:dc2c8b3ea971124eb7c92b31ac633be4a9e94426f6165d93eacd718f154914d9
+    Title: 'jq: stack overflow in recursive object merge'
+    Description: jq is a command-line JSON processor. In 1.8.1 and earlier, unbounded recursion in jv_object_merge_recursive() allows a crafted jq program to crash the process with a segfault. The function is reachable through the * operator when both operands are objects.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-674
+    VendorSeverity:
+      amazon: 2
+      azure: 2
+      nvd: 2
+      photon: 2
+      redhat: 2
+      ubuntu: 2
+    CVSS:
+      nvd:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 5.5
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H
+        V3Score: 5.5
+    References:
+    - https://access.redhat.com/security/cve/CVE-2026-43896
+    - https://github.com/jqlang/jq/commit/532ccea6080ed6758f39fe9f6208a44b665023d2
+    - https://github.com/jqlang/jq/security/advisories/GHSA-mg96-6h3q-g846
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-43896
+    - https://www.cve.org/CVERecord?id=CVE-2026-43896
+    PublishedDate: '2026-05-11T18:16:37.53Z'
+    LastModifiedDate: '2026-06-17T10:50:02.79Z'
+  - VulnerabilityID: CVE-2026-44777
+    PkgID: libjq1@1.8.1-4ubuntu2
+    PkgName: libjq1
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/libjq1@1.8.1-4ubuntu2?arch=amd64&distro=ubuntu-26.04
+      UID: c49d39658a19eb59
+    InstalledVersion: 1.8.1-4ubuntu2
+    Status: affected
+    Layer:
+      Digest: sha256:3b1af79c224535e8932ed23074188308a79f22b042ef182cba188d55773b474c
+      DiffID: sha256:3f8d66faccfbaf6ff1946a0a35a3da0cb64e9696a7c64d317423b0848ef36d27
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-44777
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:dd17b0078f768b0ead81420c347cdc0f14525364bf1ecd101958e6453caca818
+    Title: 'jq: stack overflow in module loading on mutual include'
+    Description: |-
+      jq is a command-line JSON processor. In 1.8.2rc1 and earlier, the ordinary module loader recurses without cycle detection when two
+      otherwise valid modules include each other.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-674
+    VendorSeverity:
+      azure: 2
+      nvd: 2
+      photon: 2
+      redhat: 2
+      ubuntu: 2
+    CVSS:
+      nvd:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H
+        V3Score: 5.5
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H
+        V3Score: 5.5
+    References:
+    - https://access.redhat.com/security/cve/CVE-2026-44777
+    - https://github.com/jqlang/jq/commit/f58787c41835d9b17795730cb04925fdba25c71c
+    - https://github.com/jqlang/jq/security/advisories/GHSA-rmpv-jgvr-wpr9
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-44777
+    - https://www.cve.org/CVERecord?id=CVE-2026-44777
+    PublishedDate: '2026-05-11T18:16:38.517Z'
+    LastModifiedDate: '2026-06-17T10:51:19.04Z'
   - VulnerabilityID: CVE-2026-27456
     PkgID: libmount1@2.41.3-3ubuntu2
     PkgName: libmount1
@@ -1529,7 +1939,7 @@
     - https://bugzilla.redhat.com/show_bug.cgi?id=2334165
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-56433
     - https://errata.almalinux.org/9/ALSA-2025-20559.html
-    - https://errata.rockylinux.org/RLSA-2025:20559
+    - https://errata.rockylinux.org/RLSA-2025:20145
     - https://github.com/shadow-maint/shadow/blob/e2512d5741d4a44bdd81a8c2d0029b6222728cf0/etc/login.defs#L238-L241
     - https://github.com/shadow-maint/shadow/issues/1157
     - https://github.com/shadow-maint/shadow/releases/tag/4.4
@@ -1670,7 +2080,7 @@
     - https://bugzilla.redhat.com/show_bug.cgi?id=2334165
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-56433
     - https://errata.almalinux.org/9/ALSA-2025-20559.html
-    - https://errata.rockylinux.org/RLSA-2025:20559
+    - https://errata.rockylinux.org/RLSA-2025:20145
     - https://github.com/shadow-maint/shadow/blob/e2512d5741d4a44bdd81a8c2d0029b6222728cf0/etc/login.defs#L238-L241
     - https://github.com/shadow-maint/shadow/issues/1157
     - https://github.com/shadow-maint/shadow/releases/tag/4.4
@@ -1680,6 +2090,104 @@
     - https://www.cve.org/CVERecord?id=CVE-2024-56433
     PublishedDate: '2024-12-26T09:15:07.267Z'
     LastModifiedDate: '2026-06-17T08:12:10.903Z'
+  - VulnerabilityID: CVE-2026-42496
+    PkgID: perl-base@5.40.1-7build1
+    PkgName: perl-base
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/perl-base@5.40.1-7build1?arch=amd64&distro=ubuntu-26.04
+      UID: a27563409d231488
+    InstalledVersion: 5.40.1-7build1
+    FixedVersion: 5.40.1-7ubuntu0.1
+    Status: fixed
+    Layer:
+      Digest: sha256:3b1af79c224535e8932ed23074188308a79f22b042ef182cba188d55773b474c
+      DiffID: sha256:3f8d66faccfbaf6ff1946a0a35a3da0cb64e9696a7c64d317423b0848ef36d27
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-42496
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:b17b3d0d4a3d2c0099652dc69272bc6c50edc710bdc31f55449a676d7c29874b
+    Title: 'perl-archive-tar: perl-archive-tar: Path traversal via crafted symlinks allows arbitrary file access'
+    Description: |-
+      Archive::Tar versions before 3.08 for Perl extract symlinks with attacker controlled targets outside the extraction directory.
+
+      _make_special_file() passes the tar header's linkname to symlink() without validating it against absolute paths or .. segments. The secure-extract mode check that guards regular file extraction does not cover the symlink target.
+
+      A subsequent open through the extracted name reads or writes the attacker chosen path.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-59
+    VendorSeverity:
+      amazon: 3
+      azure: 3
+      nvd: 4
+      redhat: 3
+      ubuntu: 2
+    CVSS:
+      nvd:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N
+        V3Score: 9.1
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:H
+        V3Score: 8.2
+    References:
+    - https://access.redhat.com/security/cve/CVE-2026-42496
+    - https://github.com/jib/archive-tar-new/commit/17c873492a05eddc0de18c1485e0b2cccd5a9158.patch
+    - https://lists.security.metacpan.org/cve-announce/msg/40396459/
+    - https://metacpan.org/release/BINGOS/Archive-Tar-3.08/changes
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-42496
+    - https://ubuntu.com/security/notices/USN-8467-1
+    - https://www.cve.org/CVERecord?id=CVE-2026-42496
+    - https://www.cve.org/CVERecord?id=CVE-2026-42497
+    PublishedDate: '2026-05-26T02:16:40.13Z'
+    LastModifiedDate: '2026-06-17T10:47:55.753Z'
+  - VulnerabilityID: CVE-2026-8376
+    PkgID: perl-base@5.40.1-7build1
+    PkgName: perl-base
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/perl-base@5.40.1-7build1?arch=amd64&distro=ubuntu-26.04
+      UID: a27563409d231488
+    InstalledVersion: 5.40.1-7build1
+    FixedVersion: 5.40.1-7ubuntu0.1
+    Status: fixed
+    Layer:
+      Digest: sha256:3b1af79c224535e8932ed23074188308a79f22b042ef182cba188d55773b474c
+      DiffID: sha256:3f8d66faccfbaf6ff1946a0a35a3da0cb64e9696a7c64d317423b0848ef36d27
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-8376
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:06573d917db603512c85d46417fb00b46bb3bd1a56ed313a6322e6b56f125cfa
+    Title: Perl versions through 5.43.10 have a heap buffer overflow when compili ...
+    Description: |-
+      Perl versions through 5.43.10 have a heap buffer overflow when compiling regular expressions with a repeated fixed string on 32-bit builds.
+
+      Perl_study_chunk in regcomp_study.c checked the size of the joined substring buffer in characters rather than bytes. For a quantified fixed substring with a large minimum count, the byte length mincount * l could overflow SSize_t, producing an undersized SvGROW allocation; the subsequent copy writes past the end of the buffer.
+
+      A caller that compiles an attacker-controlled regular expression on a 32-bit perl build triggers a heap buffer overflow at compile time.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-680
+    VendorSeverity:
+      amazon: 2
+      nvd: 4
+      ubuntu: 2
+    CVSS:
+      nvd:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
+        V3Score: 9.8
+    References:
+    - http://www.openwall.com/lists/oss-security/2026/05/26/1
+    - https://github.com/Perl/perl5/commit/5e7f119eb2bb1181be908701f22bf7068e722f1c.patch
+    - https://github.com/Perl/perl5/pull/24433
+    - https://ubuntu.com/security/notices/USN-8467-1
+    - https://www.cve.org/CVERecord?id=CVE-2026-8376
+    PublishedDate: '2026-05-26T00:16:57.15Z'
+    LastModifiedDate: '2026-06-17T11:03:51.843Z'
   - VulnerabilityID: CVE-2026-35341
     PkgID: rust-coreutils@0.8.0-0ubuntu3
     PkgName: rust-coreutils
@@ -2471,7 +2979,7 @@
     - https://bugzilla.redhat.com/show_bug.cgi?id=2379592
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-45582
     - https://errata.almalinux.org/9/ALSA-2026-0067.html
-    - https://errata.rockylinux.org/RLSA-2026:0067
+    - https://errata.rockylinux.org/RLSA-2026:0002
     - https://github.com/i900008/vulndb/blob/main/Gnu_tar_vuln.md
     - https://linux.oracle.com/cve/CVE-2025-45582.html
     - https://linux.oracle.com/errata/ELSA-2026-0067.html
@@ -2600,7 +3108,7 @@
       Name: GitHub Security Advisory Maven
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven
     Fingerprint: sha256:7e259216fa5ac7fe989e94d56a663339b53b64ac3086ba52caf2c5a6e3906e37
-    Title: jackson-databind has a PolymorphicTypeValidator bypass via generic type parameters that allows arbitrary class instantiation
+    Title: jackson-databind contains the general-purpose data-binding functionali ...
     Description: jackson-databind contains the general-purpose data-binding functionality and tree-model for Jackson Data Processor. From 2.10.0 until 2.18.8, 2.21.4, and 3.1.4, jackson-databind's PolymorphicTypeValidator (PTV) is the primary safety mechanism guarding polymorphic deserialization. When polymorphic typing is enabled and a type identifier contains generic parameters (i.e. the type ID string contains <), DatabindContext._resolveAndValidateGeneric() validates only the raw container class name (the substring before <) against the configured PTV. If the container type is approved, the method parses the full canonical type string via TypeFactory.constructFromCanonical() and returns the fully parameterized type without ever validating the nested type arguments against the PTV. The nested type arguments are then resolved, instantiated, and populated as beans during deserialization. An attacker who controls the type ID can therefore place a denied class as a generic type parameter of an allowed container — for example java.util.ArrayList<com.evil.Gadget> when only java.util.ArrayList is allow-listed. The container passes the PTV check; com.evil.Gadget is loaded via Class.forName(name, true, loader), instantiated, and its properties are set from attacker-controlled JSON. This completely bypasses an explicitly configured PTV allow-list. This vulnerability is fixed in 2.18.8, 2.21.4, and 3.1.4.
     Severity: HIGH
     CweIDs:
@@ -2618,7 +3126,7 @@
     - https://github.com/FasterXML/jackson-databind/issues/5988
     - https://github.com/FasterXML/jackson-databind/security/advisories/GHSA-j3rv-43j4-c7qm
     PublishedDate: '2026-06-23T21:17:02.203Z'
-    LastModifiedDate: '2026-06-23T21:17:02.203Z'
+    LastModifiedDate: '2026-06-24T16:16:32.5Z'
   - VulnerabilityID: CVE-2026-54513
     VendorIDs:
     - GHSA-rmj7-2vxq-3g9f
@@ -2640,7 +3148,7 @@
       Name: GitHub Security Advisory Maven
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven
     Fingerprint: sha256:89cb48cdab9c8024a0a9bd66cfaeaf28190d937a55cc2fb997e678e502d48b05
-    Title: jackson-databind has an array subtype allowlist bypass in BasicPolymorphicTypeValidator (allowIfSubTypeIsArray)
+    Title: jackson-databind contains the general-purpose data-binding functionali ...
     Description: jackson-databind contains the general-purpose data-binding functionality and tree-model for Jackson Data Processor. From 2.10.0 until 2.18.8, 2.21.4, and 3.1.4, BasicPolymorphicTypeValidator.Builder.allowIfSubTypeIsArray() allowlists any array type based only on clazz.isArray(), without validating the array's component (element) type against the configured allowlist. A PTV built with allowIfSubTypeIsArray() plus an explicit concrete-type allowlist therefore still permits EvilType[] even though EvilType is not allowlisted. When Jackson deserializes the elements and no per-element type IDs are present, it instantiates the component type directly with no further PTV check, bypassing the allowlist. This vulnerability is fixed in 2.18.8, 2.21.4, and 3.1.4.
     Severity: HIGH
     CweIDs:
@@ -2660,7 +3168,7 @@
     - https://github.com/FasterXML/jackson-databind/pull/5984
     - https://github.com/FasterXML/jackson-databind/security/advisories/GHSA-rmj7-2vxq-3g9f
     PublishedDate: '2026-06-23T21:17:02.333Z'
-    LastModifiedDate: '2026-06-23T21:17:02.333Z'
+    LastModifiedDate: '2026-06-24T16:16:32.6Z'
   - VulnerabilityID: CVE-2026-54514
     VendorIDs:
     - GHSA-hgj6-7826-r7m5
@@ -2682,7 +3190,7 @@
       Name: GitHub Security Advisory Maven
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven
     Fingerprint: sha256:067f53648435eaa181bce6734e657e04ac078ea63d0537890a28a83f0b6b6192
-    Title: 'jackson-databind: InetSocketAddress deserialization triggers eager DNS resolution (SSRF)'
+    Title: jackson-databind contains the general-purpose data-binding functionali ...
     Description: jackson-databind contains the general-purpose data-binding functionality and tree-model for Jackson Data Processor. From 2.0.0 until 2.18.8, 2.21.4, and 3.1.4, JDKFromStringDeserializer constructed InetSocketAddress with new InetSocketAddress(host, port), which performs eager DNS name resolution for hostname inputs at deserialization time. An application that binds untrusted JSON into a type containing an InetSocketAddress field issues an attacker-chosen DNS query during readValue, before any application-level validation or connect logic. The fix uses InetSocketAddress.createUnresolved(host, port), deferring DNS to an explicit connect. This vulnerability is fixed in 2.18.8, 2.21.4, and 3.1.4.
     Severity: MEDIUM
     CweIDs:
@@ -2721,7 +3229,7 @@
       Name: GitHub Security Advisory Maven
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven
     Fingerprint: sha256:3b74bfe8d92e840862db5dba4158107755d4628e14ed0cf2c7a903149dcf28dc
-    Title: jackson-databind has case-insensitive deserialization bypasses per-property @JsonIgnoreProperties
+    Title: jackson-databind contains the general-purpose data-binding functionali ...
     Description: jackson-databind contains the general-purpose data-binding functionality and tree-model for Jackson Data Processor. From 2.8.0 until 2.18.9, 2.21.5, and 3.1.4, in BeanDeserializerBase.createContextual(), per-property @JsonIgnoreProperties exclusions are applied by _handleByNameInclusion(), producing a contextual deserializer whose BeanPropertyMap has the ignored properties removed. The subsequent per-property case-insensitivity block (triggered by @JsonFormat(ACCEPT_CASE_INSENSITIVE_PROPERTIES)) rebuilds from this._beanProperties (the original, unfiltered map) instead of contextual._beanProperties, then overwrites the filtered map — restoring every property _handleByNameInclusion had just removed. The ignored property becomes writable again. This vulnerability is fixed in 2.18.9, 2.21.5, and 3.1.4.
     Severity: MEDIUM
     CweIDs:
@@ -2739,7 +3247,7 @@
     - https://github.com/FasterXML/jackson-databind/issues/5964
     - https://github.com/FasterXML/jackson-databind/security/advisories/GHSA-5jmj-h7xm-6q6v
     PublishedDate: '2026-06-23T21:17:02.597Z'
-    LastModifiedDate: '2026-06-23T21:17:02.597Z'
+    LastModifiedDate: '2026-06-24T13:16:32.653Z'
   - VulnerabilityID: CVE-2026-54516
     VendorIDs:
     - GHSA-9fxm-vc8v-hj55
@@ -2761,7 +3269,7 @@
       Name: GitHub Security Advisory Maven
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven
     Fingerprint: sha256:018796fe2505827795bb60ffd41207d1ca8415b2bced6607f44be085a652c7e6
-    Title: jackson-databind's renamed @JsonIgnore'd setters can deserialize via private fields
+    Title: jackson-databind contains the general-purpose data-binding functionali ...
     Description: jackson-databind contains the general-purpose data-binding functionality and tree-model for Jackson Data Processor. From 2.21.0 until 2.21.4 and 3.1.4, POJOPropertiesCollector._renameProperties() allows a property with @JsonProperty("renamed") on the getter and @JsonIgnore on the setter to be renamed rather than dropped. With MapperFeature.INFER_PROPERTY_MUTATORS enabled (default), the private backing field is retained; during deserialization BeanDeserializerFactory.addBeanProps() sees hasField()==true, builds a FieldProperty, and makes the backing field writable. An attacker supplying the renamed JSON key writes the backing field directly, bypassing the @JsonIgnore on the setter. This vulnerability is fixed in 3.1.4.
     Severity: MEDIUM
     CweIDs:
@@ -2780,7 +3288,7 @@
     - https://github.com/FasterXML/jackson-databind/pull/5968
     - https://github.com/FasterXML/jackson-databind/security/advisories/GHSA-9fxm-vc8v-hj55
     PublishedDate: '2026-06-23T21:17:02.723Z'
-    LastModifiedDate: '2026-06-23T21:17:02.723Z'
+    LastModifiedDate: '2026-06-24T14:17:33.547Z'
   - VulnerabilityID: CVE-2026-54517
     VendorIDs:
     - GHSA-5hh8-q8hv-fr38
@@ -2802,7 +3310,7 @@
       Name: GitHub Security Advisory Maven
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven
     Fingerprint: sha256:a08716a57f97ed350588d473514ac97edf6447d019f088b210153467167d76df
-    Title: jackson-databind has @JsonView bypass for setterless creator properties
+    Title: jackson-databind contains the general-purpose data-binding functionali ...
     Description: jackson-databind contains the general-purpose data-binding functionality and tree-model for Jackson Data Processor. From 2.21.0 until 2.21.4 and 3.1.4, in BeanDeserializer._deserializeUsingPropertyBased, the active-view (@JsonView) filter was applied only to creator properties; the regular property-buffering branch performed no prop.visibleInView(activeView) check. A change making SetterlessProperty.isMerging() return true routed setterless Collection/Map properties through this unguarded path, so a setterless collection annotated with a restricted @JsonView is populated from attacker JSON even when the active view excludes it. This vulnerability is fixed in 2.21.4 and 3.1.4.
     Severity: MEDIUM
     CweIDs:
@@ -2821,7 +3329,7 @@
     - https://github.com/FasterXML/jackson-databind/pull/5970
     - https://github.com/FasterXML/jackson-databind/security/advisories/GHSA-5hh8-q8hv-fr38
     PublishedDate: '2026-06-23T21:17:02.853Z'
-    LastModifiedDate: '2026-06-23T21:17:02.853Z'
+    LastModifiedDate: '2026-06-24T20:16:33Z'
   - VulnerabilityID: CVE-2026-54518
     VendorIDs:
     - GHSA-rcqc-6cw3-h962
@@ -2843,7 +3351,7 @@
       Name: GitHub Security Advisory Maven
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven
     Fingerprint: sha256:5fc9fbb2ba7eab4c64b5888216f27d679e83e84aa253ab4ee537c50a0c2208e9
-    Title: jackson-databind has a @JsonView bypass for unwrapped creator parameters
+    Title: jackson-databind contains the general-purpose data-binding functionali ...
     Description: jackson-databind contains the general-purpose data-binding functionality and tree-model for Jackson Data Processor. From 2.21.0 until 2.21.4 and 3.1.4, UnwrappedPropertyHandler.processUnwrappedCreatorProperties() replays buffered JSON into creator parameters but never consults prop.visibleInView(activeView). The normal property-based creator path gates creator properties on the active view, but this unwrapped-creator replay path bypasses that check, so a constructor parameter annotated with both @JsonView(AdminView.class) and @JsonUnwrapped is populated from attacker JSON even when a more restrictive view is active. This vulnerability is fixed in 2.21.4 and 3.1.4.
     Severity: MEDIUM
     CweIDs:
@@ -2862,7 +3370,7 @@
     - https://github.com/FasterXML/jackson-databind/pull/5973
     - https://github.com/FasterXML/jackson-databind/security/advisories/GHSA-rcqc-6cw3-h962
     PublishedDate: '2026-06-23T22:16:32.073Z'
-    LastModifiedDate: '2026-06-23T22:16:32.073Z'
+    LastModifiedDate: '2026-06-24T17:17:29.163Z'
 - Target: usr/bin/pebble
   Class: lang-pkgs
   Type: gobinary
@@ -2997,7 +3505,7 @@
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
     Fingerprint: sha256:db4e84bffd6146172b7694228be1866f3a5b883d341278347c2c2941cf899009
-    Title: When processing HTTP/2 SETTINGS frames, transport will enter an infini ...
+    Title: 'net/http/internal/http2: golang: golang.org/x/net: Go HTTP/2: Denial of Service via malformed SETTINGS_MAX_FRAME_SIZE frame'
     Description: When processing HTTP/2 SETTINGS frames, transport will enter an infinite loop of writing CONTINUATION frames if it receives a SETTINGS_MAX_FRAME_SIZE with a value of 0.
     Severity: HIGH
     CweIDs:
@@ -3009,6 +3517,7 @@
       nvd: 3
       oracle-oval: 3
       photon: 3
+      redhat: 3
       ubuntu: 2
     CVSS:
       bitnami:
@@ -3017,7 +3526,11 @@
       nvd:
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
         V3Score: 7.5
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 7.5
     References:
+    - https://access.redhat.com/security/cve/CVE-2026-33814
     - https://github.com/golang/go/issues/78476
     - https://go-review.googlesource.com/c/go/+/761581
     - https://go-review.googlesource.com/c/net/+/761640
