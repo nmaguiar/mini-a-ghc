@@ -848,13 +848,19 @@
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L
         V3Score: 5.3
     References:
-    - https://access.redhat.com/errata/RHSA-2026:20587
+    - https://access.redhat.com/errata/RHSA-2026:20597
     - https://access.redhat.com/security/cve/CVE-2026-4046
+    - https://bugzilla.redhat.com/2449777
+    - https://bugzilla.redhat.com/2449783
     - https://bugzilla.redhat.com/2453117
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2449777
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2449783
     - https://bugzilla.redhat.com/show_bug.cgi?id=2453117
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4046
-    - https://errata.almalinux.org/8/ALSA-2026-20587.html
-    - https://errata.rockylinux.org/RLSA-2026:20587
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4437
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4438
+    - https://errata.almalinux.org/9/ALSA-2026-20597.html
+    - https://errata.rockylinux.org/RLSA-2026:20597
     - https://inbox.sourceware.org/libc-announce/76814edf-cf7f-47ec-979d-2dce0a2c76bf@gotplt.org/T/#u
     - https://linux.oracle.com/cve/CVE-2026-4046.html
     - https://linux.oracle.com/errata/ELSA-2026-50291.html
@@ -902,16 +908,19 @@
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:L
         V3Score: 6.5
     References:
-    - https://access.redhat.com/errata/RHSA-2026:19061
+    - https://access.redhat.com/errata/RHSA-2026:20597
     - https://access.redhat.com/security/cve/CVE-2026-4437
     - https://bugzilla.redhat.com/2449777
     - https://bugzilla.redhat.com/2449783
+    - https://bugzilla.redhat.com/2453117
     - https://bugzilla.redhat.com/show_bug.cgi?id=2449777
     - https://bugzilla.redhat.com/show_bug.cgi?id=2449783
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2453117
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4046
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4437
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4438
-    - https://errata.almalinux.org/10/ALSA-2026-19061.html
-    - https://errata.rockylinux.org/RLSA-2026:19061
+    - https://errata.almalinux.org/9/ALSA-2026-20597.html
+    - https://errata.rockylinux.org/RLSA-2026:20597
     - https://linux.oracle.com/cve/CVE-2026-4437.html
     - https://linux.oracle.com/errata/ELSA-2026-20597.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-4437
@@ -957,16 +966,19 @@
         V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N
         V3Score: 4
     References:
-    - https://access.redhat.com/errata/RHSA-2026:19061
+    - https://access.redhat.com/errata/RHSA-2026:20597
     - https://access.redhat.com/security/cve/CVE-2026-4438
     - https://bugzilla.redhat.com/2449777
     - https://bugzilla.redhat.com/2449783
+    - https://bugzilla.redhat.com/2453117
     - https://bugzilla.redhat.com/show_bug.cgi?id=2449777
     - https://bugzilla.redhat.com/show_bug.cgi?id=2449783
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2453117
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4046
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4437
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4438
-    - https://errata.almalinux.org/10/ALSA-2026-19061.html
-    - https://errata.rockylinux.org/RLSA-2026:19061
+    - https://errata.almalinux.org/9/ALSA-2026-20597.html
+    - https://errata.rockylinux.org/RLSA-2026:20597
     - https://linux.oracle.com/cve/CVE-2026-4438.html
     - https://linux.oracle.com/errata/ELSA-2026-20597.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-4438
@@ -1100,13 +1112,19 @@
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L
         V3Score: 5.3
     References:
-    - https://access.redhat.com/errata/RHSA-2026:20587
+    - https://access.redhat.com/errata/RHSA-2026:20597
     - https://access.redhat.com/security/cve/CVE-2026-4046
+    - https://bugzilla.redhat.com/2449777
+    - https://bugzilla.redhat.com/2449783
     - https://bugzilla.redhat.com/2453117
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2449777
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2449783
     - https://bugzilla.redhat.com/show_bug.cgi?id=2453117
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4046
-    - https://errata.almalinux.org/8/ALSA-2026-20587.html
-    - https://errata.rockylinux.org/RLSA-2026:20587
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4437
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4438
+    - https://errata.almalinux.org/9/ALSA-2026-20597.html
+    - https://errata.rockylinux.org/RLSA-2026:20597
     - https://inbox.sourceware.org/libc-announce/76814edf-cf7f-47ec-979d-2dce0a2c76bf@gotplt.org/T/#u
     - https://linux.oracle.com/cve/CVE-2026-4046.html
     - https://linux.oracle.com/errata/ELSA-2026-50291.html
@@ -1154,16 +1172,19 @@
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:L
         V3Score: 6.5
     References:
-    - https://access.redhat.com/errata/RHSA-2026:19061
+    - https://access.redhat.com/errata/RHSA-2026:20597
     - https://access.redhat.com/security/cve/CVE-2026-4437
     - https://bugzilla.redhat.com/2449777
     - https://bugzilla.redhat.com/2449783
+    - https://bugzilla.redhat.com/2453117
     - https://bugzilla.redhat.com/show_bug.cgi?id=2449777
     - https://bugzilla.redhat.com/show_bug.cgi?id=2449783
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2453117
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4046
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4437
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4438
-    - https://errata.almalinux.org/10/ALSA-2026-19061.html
-    - https://errata.rockylinux.org/RLSA-2026:19061
+    - https://errata.almalinux.org/9/ALSA-2026-20597.html
+    - https://errata.rockylinux.org/RLSA-2026:20597
     - https://linux.oracle.com/cve/CVE-2026-4437.html
     - https://linux.oracle.com/errata/ELSA-2026-20597.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-4437
@@ -1209,16 +1230,19 @@
         V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N
         V3Score: 4
     References:
-    - https://access.redhat.com/errata/RHSA-2026:19061
+    - https://access.redhat.com/errata/RHSA-2026:20597
     - https://access.redhat.com/security/cve/CVE-2026-4438
     - https://bugzilla.redhat.com/2449777
     - https://bugzilla.redhat.com/2449783
+    - https://bugzilla.redhat.com/2453117
     - https://bugzilla.redhat.com/show_bug.cgi?id=2449777
     - https://bugzilla.redhat.com/show_bug.cgi?id=2449783
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2453117
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4046
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4437
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4438
-    - https://errata.almalinux.org/10/ALSA-2026-19061.html
-    - https://errata.rockylinux.org/RLSA-2026:19061
+    - https://errata.almalinux.org/9/ALSA-2026-20597.html
+    - https://errata.rockylinux.org/RLSA-2026:20597
     - https://linux.oracle.com/cve/CVE-2026-4438.html
     - https://linux.oracle.com/errata/ELSA-2026-20597.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-4438
@@ -1352,13 +1376,19 @@
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L
         V3Score: 5.3
     References:
-    - https://access.redhat.com/errata/RHSA-2026:20587
+    - https://access.redhat.com/errata/RHSA-2026:20597
     - https://access.redhat.com/security/cve/CVE-2026-4046
+    - https://bugzilla.redhat.com/2449777
+    - https://bugzilla.redhat.com/2449783
     - https://bugzilla.redhat.com/2453117
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2449777
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2449783
     - https://bugzilla.redhat.com/show_bug.cgi?id=2453117
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4046
-    - https://errata.almalinux.org/8/ALSA-2026-20587.html
-    - https://errata.rockylinux.org/RLSA-2026:20587
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4437
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4438
+    - https://errata.almalinux.org/9/ALSA-2026-20597.html
+    - https://errata.rockylinux.org/RLSA-2026:20597
     - https://inbox.sourceware.org/libc-announce/76814edf-cf7f-47ec-979d-2dce0a2c76bf@gotplt.org/T/#u
     - https://linux.oracle.com/cve/CVE-2026-4046.html
     - https://linux.oracle.com/errata/ELSA-2026-50291.html
@@ -1406,16 +1436,19 @@
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:L
         V3Score: 6.5
     References:
-    - https://access.redhat.com/errata/RHSA-2026:19061
+    - https://access.redhat.com/errata/RHSA-2026:20597
     - https://access.redhat.com/security/cve/CVE-2026-4437
     - https://bugzilla.redhat.com/2449777
     - https://bugzilla.redhat.com/2449783
+    - https://bugzilla.redhat.com/2453117
     - https://bugzilla.redhat.com/show_bug.cgi?id=2449777
     - https://bugzilla.redhat.com/show_bug.cgi?id=2449783
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2453117
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4046
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4437
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4438
-    - https://errata.almalinux.org/10/ALSA-2026-19061.html
-    - https://errata.rockylinux.org/RLSA-2026:19061
+    - https://errata.almalinux.org/9/ALSA-2026-20597.html
+    - https://errata.rockylinux.org/RLSA-2026:20597
     - https://linux.oracle.com/cve/CVE-2026-4437.html
     - https://linux.oracle.com/errata/ELSA-2026-20597.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-4437
@@ -1461,16 +1494,19 @@
         V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N
         V3Score: 4
     References:
-    - https://access.redhat.com/errata/RHSA-2026:19061
+    - https://access.redhat.com/errata/RHSA-2026:20597
     - https://access.redhat.com/security/cve/CVE-2026-4438
     - https://bugzilla.redhat.com/2449777
     - https://bugzilla.redhat.com/2449783
+    - https://bugzilla.redhat.com/2453117
     - https://bugzilla.redhat.com/show_bug.cgi?id=2449777
     - https://bugzilla.redhat.com/show_bug.cgi?id=2449783
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2453117
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4046
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4437
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4438
-    - https://errata.almalinux.org/10/ALSA-2026-19061.html
-    - https://errata.rockylinux.org/RLSA-2026:19061
+    - https://errata.almalinux.org/9/ALSA-2026-20597.html
+    - https://errata.rockylinux.org/RLSA-2026:20597
     - https://linux.oracle.com/cve/CVE-2026-4438.html
     - https://linux.oracle.com/errata/ELSA-2026-20597.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-4438
@@ -2371,6 +2407,43 @@
     - https://www.cve.org/CVERecord?id=CVE-2026-3184
     PublishedDate: '2026-04-03T19:17:23.377Z'
     LastModifiedDate: '2026-06-17T10:43:10.203Z'
+  - VulnerabilityID: CVE-2026-13757
+    PkgID: libp11-kit0@0.26.2-2
+    PkgName: libp11-kit0
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/libp11-kit0@0.26.2-2?arch=amd64&distro=ubuntu-26.04
+      UID: f30da36e7f9e8d5a
+    InstalledVersion: 0.26.2-2
+    Status: affected
+    Layer:
+      Digest: sha256:127b81b140313953e95dd302a1c6ff0b73a85bbe42ebd94671367fcace5430a9
+      DiffID: sha256:b5b888a37c89942309c2869f33ed5c81da41fffcc5145cf6f22825bf3c091299
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-13757
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:557013764edded75c52988c63d98b72f24e6b10b0a2e0f1792c510e669598523
+    Title: 'p11-kit: Stack exhaustion via unbounded recursion in RPC attribute parsing'
+    Description: A flaw was found in p11-kit. The RPC message attribute parsing functions p11_rpc_message_get_attribute() and p11_rpc_message_get_attribute_array_value() form a mutually-recursive call chain with no recursion depth limit when processing nested CKA_WRAP_TEMPLATE, CKA_UNWRAP_TEMPLATE, and CKA_DERIVE_TEMPLATE attributes. An unauthenticated attacker with local access to the p11-kit RPC Unix domain socket can send a specially crafted request with deeply nested template attributes, causing stack exhaustion and crashing the p11-kit server process and its dependent services.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-674
+    VendorSeverity:
+      redhat: 2
+      ubuntu: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 6.2
+    References:
+    - https://access.redhat.com/security/cve/CVE-2026-13757
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2494556
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-13757
+    - https://www.cve.org/CVERecord?id=CVE-2026-13757
+    PublishedDate: '2026-06-29T19:16:40.907Z'
+    LastModifiedDate: '2026-06-29T20:17:33.013Z'
   - VulnerabilityID: CVE-2026-27456
     PkgID: libsmartcols1@2.41.3-3ubuntu2
     PkgName: libsmartcols1
@@ -2550,6 +2623,145 @@
     - https://www.vulncheck.com/advisories/sqlite-before-heap-buffer-overflow-via-fts5-fts5chunkiterate
     PublishedDate: '2026-06-09T20:16:32.3Z'
     LastModifiedDate: '2026-06-17T10:14:29.253Z'
+  - VulnerabilityID: CVE-2025-15661
+    PkgID: libssh2-1t64@1.11.1-1ubuntu0.26.04.1
+    PkgName: libssh2-1t64
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/libssh2-1t64@1.11.1-1ubuntu0.26.04.1?arch=amd64&distro=ubuntu-26.04
+      UID: a13a34a338c860e6
+    InstalledVersion: 1.11.1-1ubuntu0.26.04.1
+    FixedVersion: 1.11.1-1ubuntu0.26.04.2
+    Status: fixed
+    Layer:
+      Digest: sha256:127b81b140313953e95dd302a1c6ff0b73a85bbe42ebd94671367fcace5430a9
+      DiffID: sha256:b5b888a37c89942309c2869f33ed5c81da41fffcc5145cf6f22825bf3c091299
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-15661
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:48a9af8c3dec2d6265738ffdce13bfa0ca28554e474c8b3414aac7bf1d00cc94
+    Title: 'libssh2: libssh2: Information disclosure and denial of service via crafted SFTP response'
+    Description: libssh2 through 1.11.1, fixed in commit 2dae302, contains an out-of-bounds heap read vulnerability in the sftp_symlink() function in src/sftp.c that allows a malicious SSH server or man-in-the-middle attacker to disclose heap memory contents or cause a crash by sending a crafted SSH_FXP_NAME response. Attackers can supply a link_len value larger than the actual packet data in SSH_FXP_NAME responses for SFTP READLINK and REALPATH operations, triggering a heap buffer over-read of up to target_len minus one bytes due to the missing validation of available packet buffer size before the memcpy operation.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-125
+    VendorSeverity:
+      nvd: 2
+      redhat: 2
+      ubuntu: 2
+    CVSS:
+      nvd:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:H
+        V3Score: 6.5
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:H
+        V3Score: 6.5
+    References:
+    - https://access.redhat.com/security/cve/CVE-2025-15661
+    - https://github.com/libssh2/libssh2/commit/2dae3024897e1898d389835151f4e9606227721d
+    - https://github.com/libssh2/libssh2/pull/1705
+    - https://github.com/libssh2/libssh2/pull/1717
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-15661
+    - https://ubuntu.com/security/notices/USN-8486-1
+    - https://www.cve.org/CVERecord?id=CVE-2025-15661
+    - https://www.vulncheck.com/advisories/libssh2-heap-buffer-over-read-via-sftp-symlink-in-sftp-c
+    PublishedDate: '2026-06-18T21:16:27.143Z'
+    LastModifiedDate: '2026-06-26T02:35:13.663Z'
+  - VulnerabilityID: CVE-2026-55199
+    PkgID: libssh2-1t64@1.11.1-1ubuntu0.26.04.1
+    PkgName: libssh2-1t64
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/libssh2-1t64@1.11.1-1ubuntu0.26.04.1?arch=amd64&distro=ubuntu-26.04
+      UID: a13a34a338c860e6
+    InstalledVersion: 1.11.1-1ubuntu0.26.04.1
+    FixedVersion: 1.11.1-1ubuntu0.26.04.2
+    Status: fixed
+    Layer:
+      Digest: sha256:127b81b140313953e95dd302a1c6ff0b73a85bbe42ebd94671367fcace5430a9
+      DiffID: sha256:b5b888a37c89942309c2869f33ed5c81da41fffcc5145cf6f22825bf3c091299
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-55199
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:889b7fd6b52bcf02b5fca0408481754d691fc340ff6c2918f71d5ad4963f44a4
+    Title: 'libssh2: libssh2: Denial of Service via crafted SSH_MSG_EXT_INFO message'
+    Description: libssh2 through 1.11.1, fixed in commit 1762685, contains a pre-authentication denial of service vulnerability in the SSH_MSG_EXT_INFO handler in src/packet.c that allows a malicious SSH server to cause a client CPU exhaustion loop by sending a crafted extension count value. A malicious server can set nr_extensions to 0xFFFFFFFF during key exchange, causing the client to spin in a tight CPU loop for over 60 seconds because return values from _libssh2_get_string() are unchecked and the session timeout does not apply to CPU-bound loops.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-835
+    VendorSeverity:
+      nvd: 3
+      redhat: 2
+      ubuntu: 2
+    CVSS:
+      nvd:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 7.5
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 5.9
+    References:
+    - https://access.redhat.com/security/cve/CVE-2026-55199
+    - https://github.com/libssh2/libssh2/commit/17626857d20b3c9a1addfa45979dadcee1cd84a4
+    - https://github.com/libssh2/libssh2/pull/1864
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-55199
+    - https://ubuntu.com/security/notices/USN-8486-1
+    - https://www.cve.org/CVERecord?id=CVE-2026-55199
+    - https://www.vulncheck.com/advisories/libssh2-pre-authentication-dos-via-ssh-msg-ext-info-handler
+    PublishedDate: '2026-06-17T20:17:28.52Z'
+    LastModifiedDate: '2026-06-26T19:16:37.353Z'
+  - VulnerabilityID: CVE-2026-55200
+    PkgID: libssh2-1t64@1.11.1-1ubuntu0.26.04.1
+    PkgName: libssh2-1t64
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/libssh2-1t64@1.11.1-1ubuntu0.26.04.1?arch=amd64&distro=ubuntu-26.04
+      UID: a13a34a338c860e6
+    InstalledVersion: 1.11.1-1ubuntu0.26.04.1
+    FixedVersion: 1.11.1-1ubuntu0.26.04.2
+    Status: fixed
+    Layer:
+      Digest: sha256:127b81b140313953e95dd302a1c6ff0b73a85bbe42ebd94671367fcace5430a9
+      DiffID: sha256:b5b888a37c89942309c2869f33ed5c81da41fffcc5145cf6f22825bf3c091299
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-55200
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:34a9b7a5bfe2af843b1bcb522b5490cc80d4f97e81ee307a2c4792a2592461be
+    Title: 'libssh2: libssh2 - Out-of-Bounds Write via Unchecked packet_length in transport.c'
+    Description: libssh2 through 1.11.1, fixed in commit 7acf3df contains an out-of-bounds write vulnerability in ssh2_transport_read() that fails to enforce upper bounds on packet_length field. Remote attackers can send crafted SSH packets with excessively large packet_length values to corrupt heap memory and achieve remote code execution.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-680
+    VendorSeverity:
+      azure: 3
+      nvd: 3
+      photon: 4
+      redhat: 2
+      ubuntu: 2
+    CVSS:
+      nvd:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:L
+        V3Score: 8.3
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:L
+        V3Score: 7.1
+    References:
+    - https://access.redhat.com/security/cve/CVE-2026-55200
+    - https://github.com/libssh2/libssh2/commit/97acf3dfda80c91c3a8c9f2372546301d4a1a7a8
+    - https://github.com/libssh2/libssh2/pull/2052
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-55200
+    - https://ubuntu.com/security/notices/USN-8486-1
+    - https://web.archive.org/web/20260623211210/https://github.com/bikini/exploitarium/tree/main/libssh2-cve-2026-55200-poc
+    - https://www.cve.org/CVERecord?id=CVE-2026-55200
+    - https://www.vulncheck.com/advisories/libssh2-out-of-bounds-write-via-unchecked-packet-length-in-transport-c
+    PublishedDate: '2026-06-17T20:17:28.667Z'
+    LastModifiedDate: '2026-06-30T19:06:56.903Z'
   - VulnerabilityID: CVE-2026-40228
     PkgID: libsystemd0@259.5-0ubuntu3
     PkgName: libsystemd0
@@ -2861,7 +3073,7 @@
     - https://bugzilla.redhat.com/show_bug.cgi?id=2334165
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-56433
     - https://errata.almalinux.org/9/ALSA-2025-20559.html
-    - https://errata.rockylinux.org/RLSA-2025:20145
+    - https://errata.rockylinux.org/RLSA-2025:20559
     - https://github.com/shadow-maint/shadow/blob/e2512d5741d4a44bdd81a8c2d0029b6222728cf0/etc/login.defs#L238-L241
     - https://github.com/shadow-maint/shadow/issues/1157
     - https://github.com/shadow-maint/shadow/releases/tag/4.4
@@ -3005,7 +3217,7 @@
     - https://bugzilla.redhat.com/show_bug.cgi?id=2334165
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-56433
     - https://errata.almalinux.org/9/ALSA-2025-20559.html
-    - https://errata.rockylinux.org/RLSA-2025:20145
+    - https://errata.rockylinux.org/RLSA-2025:20559
     - https://github.com/shadow-maint/shadow/blob/e2512d5741d4a44bdd81a8c2d0029b6222728cf0/etc/login.defs#L238-L241
     - https://github.com/shadow-maint/shadow/issues/1157
     - https://github.com/shadow-maint/shadow/releases/tag/4.4
@@ -3806,7 +4018,7 @@
     - https://bugzilla.redhat.com/show_bug.cgi?id=2379592
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-45582
     - https://errata.almalinux.org/9/ALSA-2026-0067.html
-    - https://errata.rockylinux.org/RLSA-2026:0002
+    - https://errata.rockylinux.org/RLSA-2026:0067
     - https://github.com/i900008/vulndb/blob/main/Gnu_tar_vuln.md
     - https://linux.oracle.com/cve/CVE-2025-45582.html
     - https://linux.oracle.com/errata/ELSA-2026-0067.html
@@ -3980,7 +4192,7 @@
     PkgPath: openaf/openaf.jar
     PkgIdentifier:
       PURL: pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.21.3
-      UID: af9e86e80fd64186
+      UID: bdedb7f4f2b3e6f5
     InstalledVersion: 2.21.3
     FixedVersion: 2.18.8, 3.1.4, 2.21.4
     Status: fixed
@@ -4020,7 +4232,7 @@
     PkgPath: openaf/openaf.jar
     PkgIdentifier:
       PURL: pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.21.3
-      UID: af9e86e80fd64186
+      UID: bdedb7f4f2b3e6f5
     InstalledVersion: 2.21.3
     FixedVersion: 2.18.8, 2.21.4, 3.1.4
     Status: fixed
@@ -4071,7 +4283,7 @@
     PkgPath: openaf/openaf.jar
     PkgIdentifier:
       PURL: pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.21.3
-      UID: af9e86e80fd64186
+      UID: bdedb7f4f2b3e6f5
     InstalledVersion: 2.21.3
     FixedVersion: 2.18.8, 2.21.4, 3.1.4
     Status: fixed
@@ -4110,9 +4322,9 @@
     PkgPath: openaf/openaf.jar
     PkgIdentifier:
       PURL: pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.21.3
-      UID: af9e86e80fd64186
+      UID: bdedb7f4f2b3e6f5
     InstalledVersion: 2.21.3
-    FixedVersion: 3.1.4, 2.18.9, 2.21.5
+    FixedVersion: 3.1.4, 2.18.9, 2.21.5, 2.22.1
     Status: fixed
     Layer:
       Digest: sha256:127b81b140313953e95dd302a1c6ff0b73a85bbe42ebd94671367fcace5430a9
@@ -4141,6 +4353,7 @@
     - https://github.com/FasterXML/jackson-databind/issues/5962
     - https://github.com/FasterXML/jackson-databind/issues/5964
     - https://github.com/FasterXML/jackson-databind/security/advisories/GHSA-5jmj-h7xm-6q6v
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-54515
     PublishedDate: '2026-06-23T21:17:02.597Z'
     LastModifiedDate: '2026-06-29T13:38:59.057Z'
   - VulnerabilityID: CVE-2026-54516
@@ -4150,7 +4363,7 @@
     PkgPath: openaf/openaf.jar
     PkgIdentifier:
       PURL: pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.21.3
-      UID: af9e86e80fd64186
+      UID: bdedb7f4f2b3e6f5
     InstalledVersion: 2.21.3
     FixedVersion: 2.21.4, 3.1.4
     Status: fixed
@@ -4191,7 +4404,7 @@
     PkgPath: openaf/openaf.jar
     PkgIdentifier:
       PURL: pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.21.3
-      UID: af9e86e80fd64186
+      UID: bdedb7f4f2b3e6f5
     InstalledVersion: 2.21.3
     FixedVersion: 2.21.4, 3.1.4
     Status: fixed
@@ -4232,7 +4445,7 @@
     PkgPath: openaf/openaf.jar
     PkgIdentifier:
       PURL: pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.21.3
-      UID: af9e86e80fd64186
+      UID: bdedb7f4f2b3e6f5
     InstalledVersion: 2.21.3
     FixedVersion: 2.21.4
     Status: fixed
@@ -4507,13 +4720,13 @@
     - https://access.redhat.com/security/cve/CVE-2026-39821
     - https://bugzilla.redhat.com/2480756
     - https://bugzilla.redhat.com/show_bug.cgi?id=2480756
-    - https://errata.almalinux.org/8/ALSA-2026-30853.html
+    - https://errata.almalinux.org/9/ALSA-2026-30854.html
     - https://github.com/golang/go/issues/78760
     - https://go.dev/cl/767220
     - https://go.dev/issue/78760
     - https://groups.google.com/g/golang-announce/c/iI-mYSI0lu8
     - https://linux.oracle.com/cve/CVE-2026-39821.html
-    - https://linux.oracle.com/errata/ELSA-2026-30853.html
+    - https://linux.oracle.com/errata/ELSA-2026-30854.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-39821
     - https://pkg.go.dev/vuln/GO-2026-5026
     - https://security.access.redhat.com/data/csaf/v2/vex/2026/cve-2026-39821.json
@@ -4864,12 +5077,12 @@
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N
         V3Score: 5.3
     References:
-    - https://access.redhat.com/errata/RHSA-2026:29980
+    - https://access.redhat.com/errata/RHSA-2026:29981
     - https://access.redhat.com/security/cve/CVE-2026-42507
     - https://bugzilla.redhat.com/2484205
     - https://bugzilla.redhat.com/show_bug.cgi?id=2484205
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42507
-    - https://errata.almalinux.org/10/ALSA-2026-29980.html
+    - https://errata.almalinux.org/9/ALSA-2026-29981.html
     - https://errata.rockylinux.org/RLSA-2026:29981
     - https://go.dev/cl/777060
     - https://go.dev/issue/79346
