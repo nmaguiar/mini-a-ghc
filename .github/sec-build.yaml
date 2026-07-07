@@ -131,7 +131,7 @@
     - https://hackerone.com/reports/3793260
     - https://www.cve.org/CVERecord?id=CVE-2026-11856
     PublishedDate: '2026-07-03T07:16:23.973Z'
-    LastModifiedDate: '2026-07-03T07:16:23.973Z'
+    LastModifiedDate: '2026-07-06T19:16:54.983Z'
   - VulnerabilityID: CVE-2026-10536
     PkgID: curl@8.18.0-1ubuntu2.2
     PkgName: curl
@@ -168,7 +168,7 @@
     - https://hackerone.com/reports/3751697
     - https://www.cve.org/CVERecord?id=CVE-2026-10536
     PublishedDate: '2026-07-03T07:16:23.563Z'
-    LastModifiedDate: '2026-07-03T07:16:23.563Z'
+    LastModifiedDate: '2026-07-06T19:16:54.473Z'
   - VulnerabilityID: CVE-2026-11352
     PkgID: curl@8.18.0-1ubuntu2.2
     PkgName: curl
@@ -204,7 +204,7 @@
     - https://hackerone.com/reports/3783438
     - https://www.cve.org/CVERecord?id=CVE-2026-11352
     PublishedDate: '2026-07-03T07:16:23.693Z'
-    LastModifiedDate: '2026-07-03T07:16:23.693Z'
+    LastModifiedDate: '2026-07-06T19:16:54.843Z'
   - VulnerabilityID: CVE-2026-11564
     PkgID: curl@8.18.0-1ubuntu2.2
     PkgName: curl
@@ -241,7 +241,7 @@
     - https://hackerone.com/reports/3788984
     - https://www.cve.org/CVERecord?id=CVE-2026-11564
     PublishedDate: '2026-07-03T07:16:23.79Z'
-    LastModifiedDate: '2026-07-03T07:16:23.79Z'
+    LastModifiedDate: '2026-07-06T18:20:47.007Z'
   - VulnerabilityID: CVE-2026-11586
     PkgID: curl@8.18.0-1ubuntu2.2
     PkgName: curl
@@ -276,7 +276,7 @@
     - https://hackerone.com/reports/3788931
     - https://www.cve.org/CVERecord?id=CVE-2026-11586
     PublishedDate: '2026-07-03T07:16:23.883Z'
-    LastModifiedDate: '2026-07-03T07:16:23.883Z'
+    LastModifiedDate: '2026-07-06T18:20:47.007Z'
   - VulnerabilityID: CVE-2026-12064
     PkgID: curl@8.18.0-1ubuntu2.2
     PkgName: curl
@@ -317,7 +317,99 @@
     - https://hackerone.com/reports/3797526
     - https://www.cve.org/CVERecord?id=CVE-2026-12064
     PublishedDate: '2026-07-03T07:16:24.217Z'
-    LastModifiedDate: '2026-07-03T07:16:24.217Z'
+    LastModifiedDate: '2026-07-06T19:16:55.27Z'
+  - VulnerabilityID: CVE-2026-41991
+    PkgID: gzip@1.14-1~exp2ubuntu1
+    PkgName: gzip
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/gzip@1.14-1~exp2ubuntu1?arch=amd64&distro=ubuntu-26.04
+      UID: a87afd116e85de52
+    InstalledVersion: 1.14-1~exp2ubuntu1
+    FixedVersion: 1.14-1~exp2ubuntu1.1
+    Status: fixed
+    Layer:
+      Digest: sha256:b0113d728796bced1de5d9be3ee71a41fa9ce58cb8e8afb7b978173c12b34a64
+      DiffID: sha256:cea9f9db5d3f4c32d71be9540d330b45d2665b910909e717da85e7ebdd721598
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-41991
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:78e20b544237dcd4f219bab7b3c49bf00ba33cc8b8cdd593c39e4418fa39f3d1
+    Title: 'gzip: gzip: Arbitrary file overwrite via insecure temporary file handling in gzexe utility'
+    Description: |-
+      GNU gzip contains a vulnerability in the gzexe utility related to insecure temporary file handling. When the mktemp utility is not available in the user’s PATH, gzexe falls back to constructing a temporary file path based solely on the process ID (PID). This predictable filename is created without exclusive access or existence checks.
+      A local attacker can pre‑create the predicted temporary file path as a symbolic link pointing to an arbitrary file writable by the victim. When gzexe runs, it follows the symlink and overwrites the target file, resulting in a time‑of‑check to time‑of‑use (TOCTOU) condition that allows arbitrary file overwrite.
+
+      This issue has been fixed in the commit 4e6f8b24ab823146ab8776f0b7fe486ab34d4269
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-377
+    VendorSeverity:
+      nvd: 2
+      redhat: 2
+      ubuntu: 2
+    CVSS:
+      nvd:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:N/I:H/A:N
+        V3Score: 4.7
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:N/I:H/A:H
+        V3Score: 6
+    References:
+    - https://access.redhat.com/security/cve/CVE-2026-41991
+    - https://cert.pl/en/posts/2026/04/CVE-2026-41991/
+    - https://cgit.git.savannah.gnu.org/cgit/gzip.git/commit/?id=4e6f8b24ab823146ab8776f0b7fe486ab34d4269
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-41991
+    - https://ubuntu.com/security/notices/USN-8512-1
+    - https://www.cve.org/CVERecord?id=CVE-2026-41991
+    - https://www.gnu.org/software/gzip/
+    PublishedDate: '2026-06-29T12:16:29.77Z'
+    LastModifiedDate: '2026-07-01T14:02:24.45Z'
+  - VulnerabilityID: CVE-2026-41992
+    PkgID: gzip@1.14-1~exp2ubuntu1
+    PkgName: gzip
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/gzip@1.14-1~exp2ubuntu1?arch=amd64&distro=ubuntu-26.04
+      UID: a87afd116e85de52
+    InstalledVersion: 1.14-1~exp2ubuntu1
+    FixedVersion: 1.14-1~exp2ubuntu1.1
+    Status: fixed
+    Layer:
+      Digest: sha256:b0113d728796bced1de5d9be3ee71a41fa9ce58cb8e8afb7b978173c12b34a64
+      DiffID: sha256:cea9f9db5d3f4c32d71be9540d330b45d2665b910909e717da85e7ebdd721598
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-41992
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:23a9719e371e01cdd7b9ad8344d10c19dc483387866ea66dd79f304d8ead31d5
+    Title: GNU gzip contains a global buffer overflow vulnerability in the LZH de ...
+    Description: |-
+      GNU gzip contains a global buffer overflow vulnerability in the LZH decompression logic caused by improper reuse of shared global state between different decompression formats within a single execution. GNU gzip maintains a global array that is shared across the LZ77, LZW, and LZH decompression routines and is not reinitialized between files processed in the same invocation.
+      By decompressing a specially crafted LZW file followed by a specially crafted LZH file in a single gzip -d command, an attacker can poison the shared global state and subsequently trigger an out‑of‑bounds read in the LZH decoder. The LZH decompression logic follows stale values left in the shared array, causing reads past the end of the allocated global buffer.
+
+      This issue has been fixed in the commit 63dbf6b3b9e6e781df1a6a64e609b10e23969681
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-126
+    VendorSeverity:
+      nvd: 3
+      ubuntu: 2
+    CVSS:
+      nvd:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N
+        V3Score: 7.5
+    References:
+    - https://cert.pl/en/posts/2026/04/CVE-2026-41991/
+    - https://cgit.git.savannah.gnu.org/cgit/gzip.git/commit/?id=63dbf6b3b9e6e781df1a6a64e609b10e23969681
+    - https://ubuntu.com/security/notices/USN-8512-1
+    - https://www.cve.org/CVERecord?id=CVE-2026-41992
+    - https://www.gnu.org/software/gzip/
+    PublishedDate: '2026-06-29T12:16:29.94Z'
+    LastModifiedDate: '2026-07-01T14:02:20.173Z'
   - VulnerabilityID: CVE-2026-41256
     PkgID: jq@1.8.1-4ubuntu2
     PkgName: jq
@@ -670,10 +762,8 @@
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L
         V3Score: 5.3
     References:
-    - https://access.redhat.com/errata/RHSA-2026:20597
+    - https://access.redhat.com/errata/RHSA-2026:20594
     - https://access.redhat.com/security/cve/CVE-2026-4046
-    - https://bugzilla.redhat.com/2449777
-    - https://bugzilla.redhat.com/2449783
     - https://bugzilla.redhat.com/2453117
     - https://bugzilla.redhat.com/show_bug.cgi?id=2449777
     - https://bugzilla.redhat.com/show_bug.cgi?id=2449783
@@ -681,7 +771,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4046
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4437
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4438
-    - https://errata.almalinux.org/9/ALSA-2026-20597.html
+    - https://errata.almalinux.org/10/ALSA-2026-20594.html
     - https://errata.rockylinux.org/RLSA-2026:20597
     - https://inbox.sourceware.org/libc-announce/76814edf-cf7f-47ec-979d-2dce0a2c76bf@gotplt.org/T/#u
     - https://linux.oracle.com/cve/CVE-2026-4046.html
@@ -730,18 +820,17 @@
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:L
         V3Score: 6.5
     References:
-    - https://access.redhat.com/errata/RHSA-2026:20597
+    - https://access.redhat.com/errata/RHSA-2026:19061
     - https://access.redhat.com/security/cve/CVE-2026-4437
     - https://bugzilla.redhat.com/2449777
     - https://bugzilla.redhat.com/2449783
-    - https://bugzilla.redhat.com/2453117
     - https://bugzilla.redhat.com/show_bug.cgi?id=2449777
     - https://bugzilla.redhat.com/show_bug.cgi?id=2449783
     - https://bugzilla.redhat.com/show_bug.cgi?id=2453117
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4046
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4437
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4438
-    - https://errata.almalinux.org/9/ALSA-2026-20597.html
+    - https://errata.almalinux.org/10/ALSA-2026-19061.html
     - https://errata.rockylinux.org/RLSA-2026:20597
     - https://linux.oracle.com/cve/CVE-2026-4437.html
     - https://linux.oracle.com/errata/ELSA-2026-20597.html
@@ -788,18 +877,17 @@
         V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N
         V3Score: 4
     References:
-    - https://access.redhat.com/errata/RHSA-2026:20597
+    - https://access.redhat.com/errata/RHSA-2026:19061
     - https://access.redhat.com/security/cve/CVE-2026-4438
     - https://bugzilla.redhat.com/2449777
     - https://bugzilla.redhat.com/2449783
-    - https://bugzilla.redhat.com/2453117
     - https://bugzilla.redhat.com/show_bug.cgi?id=2449777
     - https://bugzilla.redhat.com/show_bug.cgi?id=2449783
     - https://bugzilla.redhat.com/show_bug.cgi?id=2453117
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4046
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4437
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4438
-    - https://errata.almalinux.org/9/ALSA-2026-20597.html
+    - https://errata.almalinux.org/10/ALSA-2026-19061.html
     - https://errata.rockylinux.org/RLSA-2026:20597
     - https://linux.oracle.com/cve/CVE-2026-4438.html
     - https://linux.oracle.com/errata/ELSA-2026-20597.html
@@ -934,10 +1022,8 @@
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L
         V3Score: 5.3
     References:
-    - https://access.redhat.com/errata/RHSA-2026:20597
+    - https://access.redhat.com/errata/RHSA-2026:20594
     - https://access.redhat.com/security/cve/CVE-2026-4046
-    - https://bugzilla.redhat.com/2449777
-    - https://bugzilla.redhat.com/2449783
     - https://bugzilla.redhat.com/2453117
     - https://bugzilla.redhat.com/show_bug.cgi?id=2449777
     - https://bugzilla.redhat.com/show_bug.cgi?id=2449783
@@ -945,7 +1031,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4046
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4437
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4438
-    - https://errata.almalinux.org/9/ALSA-2026-20597.html
+    - https://errata.almalinux.org/10/ALSA-2026-20594.html
     - https://errata.rockylinux.org/RLSA-2026:20597
     - https://inbox.sourceware.org/libc-announce/76814edf-cf7f-47ec-979d-2dce0a2c76bf@gotplt.org/T/#u
     - https://linux.oracle.com/cve/CVE-2026-4046.html
@@ -994,18 +1080,17 @@
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:L
         V3Score: 6.5
     References:
-    - https://access.redhat.com/errata/RHSA-2026:20597
+    - https://access.redhat.com/errata/RHSA-2026:19061
     - https://access.redhat.com/security/cve/CVE-2026-4437
     - https://bugzilla.redhat.com/2449777
     - https://bugzilla.redhat.com/2449783
-    - https://bugzilla.redhat.com/2453117
     - https://bugzilla.redhat.com/show_bug.cgi?id=2449777
     - https://bugzilla.redhat.com/show_bug.cgi?id=2449783
     - https://bugzilla.redhat.com/show_bug.cgi?id=2453117
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4046
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4437
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4438
-    - https://errata.almalinux.org/9/ALSA-2026-20597.html
+    - https://errata.almalinux.org/10/ALSA-2026-19061.html
     - https://errata.rockylinux.org/RLSA-2026:20597
     - https://linux.oracle.com/cve/CVE-2026-4437.html
     - https://linux.oracle.com/errata/ELSA-2026-20597.html
@@ -1052,18 +1137,17 @@
         V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N
         V3Score: 4
     References:
-    - https://access.redhat.com/errata/RHSA-2026:20597
+    - https://access.redhat.com/errata/RHSA-2026:19061
     - https://access.redhat.com/security/cve/CVE-2026-4438
     - https://bugzilla.redhat.com/2449777
     - https://bugzilla.redhat.com/2449783
-    - https://bugzilla.redhat.com/2453117
     - https://bugzilla.redhat.com/show_bug.cgi?id=2449777
     - https://bugzilla.redhat.com/show_bug.cgi?id=2449783
     - https://bugzilla.redhat.com/show_bug.cgi?id=2453117
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4046
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4437
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4438
-    - https://errata.almalinux.org/9/ALSA-2026-20597.html
+    - https://errata.almalinux.org/10/ALSA-2026-19061.html
     - https://errata.rockylinux.org/RLSA-2026:20597
     - https://linux.oracle.com/cve/CVE-2026-4438.html
     - https://linux.oracle.com/errata/ELSA-2026-20597.html
@@ -1198,10 +1282,8 @@
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L
         V3Score: 5.3
     References:
-    - https://access.redhat.com/errata/RHSA-2026:20597
+    - https://access.redhat.com/errata/RHSA-2026:20594
     - https://access.redhat.com/security/cve/CVE-2026-4046
-    - https://bugzilla.redhat.com/2449777
-    - https://bugzilla.redhat.com/2449783
     - https://bugzilla.redhat.com/2453117
     - https://bugzilla.redhat.com/show_bug.cgi?id=2449777
     - https://bugzilla.redhat.com/show_bug.cgi?id=2449783
@@ -1209,7 +1291,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4046
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4437
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4438
-    - https://errata.almalinux.org/9/ALSA-2026-20597.html
+    - https://errata.almalinux.org/10/ALSA-2026-20594.html
     - https://errata.rockylinux.org/RLSA-2026:20597
     - https://inbox.sourceware.org/libc-announce/76814edf-cf7f-47ec-979d-2dce0a2c76bf@gotplt.org/T/#u
     - https://linux.oracle.com/cve/CVE-2026-4046.html
@@ -1258,18 +1340,17 @@
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:L
         V3Score: 6.5
     References:
-    - https://access.redhat.com/errata/RHSA-2026:20597
+    - https://access.redhat.com/errata/RHSA-2026:19061
     - https://access.redhat.com/security/cve/CVE-2026-4437
     - https://bugzilla.redhat.com/2449777
     - https://bugzilla.redhat.com/2449783
-    - https://bugzilla.redhat.com/2453117
     - https://bugzilla.redhat.com/show_bug.cgi?id=2449777
     - https://bugzilla.redhat.com/show_bug.cgi?id=2449783
     - https://bugzilla.redhat.com/show_bug.cgi?id=2453117
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4046
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4437
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4438
-    - https://errata.almalinux.org/9/ALSA-2026-20597.html
+    - https://errata.almalinux.org/10/ALSA-2026-19061.html
     - https://errata.rockylinux.org/RLSA-2026:20597
     - https://linux.oracle.com/cve/CVE-2026-4437.html
     - https://linux.oracle.com/errata/ELSA-2026-20597.html
@@ -1316,18 +1397,17 @@
         V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N
         V3Score: 4
     References:
-    - https://access.redhat.com/errata/RHSA-2026:20597
+    - https://access.redhat.com/errata/RHSA-2026:19061
     - https://access.redhat.com/security/cve/CVE-2026-4438
     - https://bugzilla.redhat.com/2449777
     - https://bugzilla.redhat.com/2449783
-    - https://bugzilla.redhat.com/2453117
     - https://bugzilla.redhat.com/show_bug.cgi?id=2449777
     - https://bugzilla.redhat.com/show_bug.cgi?id=2449783
     - https://bugzilla.redhat.com/show_bug.cgi?id=2453117
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4046
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4437
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4438
-    - https://errata.almalinux.org/9/ALSA-2026-20597.html
+    - https://errata.almalinux.org/10/ALSA-2026-19061.html
     - https://errata.rockylinux.org/RLSA-2026:20597
     - https://linux.oracle.com/cve/CVE-2026-4438.html
     - https://linux.oracle.com/errata/ELSA-2026-20597.html
@@ -1455,7 +1535,7 @@
     - https://hackerone.com/reports/3793260
     - https://www.cve.org/CVERecord?id=CVE-2026-11856
     PublishedDate: '2026-07-03T07:16:23.973Z'
-    LastModifiedDate: '2026-07-03T07:16:23.973Z'
+    LastModifiedDate: '2026-07-06T19:16:54.983Z'
   - VulnerabilityID: CVE-2026-10536
     PkgID: libcurl4t64@8.18.0-1ubuntu2.2
     PkgName: libcurl4t64
@@ -1492,7 +1572,7 @@
     - https://hackerone.com/reports/3751697
     - https://www.cve.org/CVERecord?id=CVE-2026-10536
     PublishedDate: '2026-07-03T07:16:23.563Z'
-    LastModifiedDate: '2026-07-03T07:16:23.563Z'
+    LastModifiedDate: '2026-07-06T19:16:54.473Z'
   - VulnerabilityID: CVE-2026-11352
     PkgID: libcurl4t64@8.18.0-1ubuntu2.2
     PkgName: libcurl4t64
@@ -1528,7 +1608,7 @@
     - https://hackerone.com/reports/3783438
     - https://www.cve.org/CVERecord?id=CVE-2026-11352
     PublishedDate: '2026-07-03T07:16:23.693Z'
-    LastModifiedDate: '2026-07-03T07:16:23.693Z'
+    LastModifiedDate: '2026-07-06T19:16:54.843Z'
   - VulnerabilityID: CVE-2026-11564
     PkgID: libcurl4t64@8.18.0-1ubuntu2.2
     PkgName: libcurl4t64
@@ -1565,7 +1645,7 @@
     - https://hackerone.com/reports/3788984
     - https://www.cve.org/CVERecord?id=CVE-2026-11564
     PublishedDate: '2026-07-03T07:16:23.79Z'
-    LastModifiedDate: '2026-07-03T07:16:23.79Z'
+    LastModifiedDate: '2026-07-06T18:20:47.007Z'
   - VulnerabilityID: CVE-2026-11586
     PkgID: libcurl4t64@8.18.0-1ubuntu2.2
     PkgName: libcurl4t64
@@ -1600,7 +1680,7 @@
     - https://hackerone.com/reports/3788931
     - https://www.cve.org/CVERecord?id=CVE-2026-11586
     PublishedDate: '2026-07-03T07:16:23.883Z'
-    LastModifiedDate: '2026-07-03T07:16:23.883Z'
+    LastModifiedDate: '2026-07-06T18:20:47.007Z'
   - VulnerabilityID: CVE-2026-12064
     PkgID: libcurl4t64@8.18.0-1ubuntu2.2
     PkgName: libcurl4t64
@@ -1641,7 +1721,7 @@
     - https://hackerone.com/reports/3797526
     - https://www.cve.org/CVERecord?id=CVE-2026-12064
     PublishedDate: '2026-07-03T07:16:24.217Z'
-    LastModifiedDate: '2026-07-03T07:16:24.217Z'
+    LastModifiedDate: '2026-07-06T19:16:55.27Z'
   - VulnerabilityID: CVE-2025-66382
     PkgID: libexpat1@2.7.4-1
     PkgName: libexpat1
@@ -2088,6 +2168,1400 @@
     - https://www.cve.org/CVERecord?id=CVE-2026-13757
     PublishedDate: '2026-06-29T19:16:40.907Z'
     LastModifiedDate: '2026-07-01T15:16:30.19Z'
+  - VulnerabilityID: CVE-2026-1502
+    PkgID: libpython3.14-minimal@3.14.4-1
+    PkgName: libpython3.14-minimal
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/libpython3.14-minimal@3.14.4-1?arch=amd64&distro=ubuntu-26.04
+      UID: c0091a523a4a100d
+    InstalledVersion: 3.14.4-1
+    FixedVersion: 3.14.4-1ubuntu0.1
+    Status: fixed
+    Layer:
+      Digest: sha256:b0113d728796bced1de5d9be3ee71a41fa9ce58cb8e8afb7b978173c12b34a64
+      DiffID: sha256:cea9f9db5d3f4c32d71be9540d330b45d2665b910909e717da85e7ebdd721598
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-1502
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:d031d61e0935461c74247a0ebd9795d10f4967534cd6f2114ca511cd0a0d4dcf
+    Title: 'python: Python: HTTP header injection via CR/LF in proxy tunnel headers'
+    Description: CR/LF bytes were not rejected by HTTP client proxy tunnel headers or host.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-93
+    VendorSeverity:
+      alma: 3
+      amazon: 2
+      azure: 2
+      bitnami: 2
+      oracle-oval: 3
+      redhat: 2
+      rocky: 3
+      ubuntu: 2
+    CVSS:
+      bitnami:
+        V40Vector: CVSS:4.0/AV:N/AC:L/AT:P/PR:H/UI:P/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N
+        V40Score: 5.7
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:U/C:N/I:H/A:N
+        V3Score: 4.5
+    References:
+    - http://www.openwall.com/lists/oss-security/2026/04/11/4
+    - https://access.redhat.com/errata/RHSA-2026:19064
+    - https://access.redhat.com/security/cve/CVE-2026-1502
+    - https://bugzilla.redhat.com/2395108
+    - https://bugzilla.redhat.com/2408891
+    - https://bugzilla.redhat.com/2418084
+    - https://bugzilla.redhat.com/2431366
+    - https://bugzilla.redhat.com/2431374
+    - https://bugzilla.redhat.com/2444691
+    - https://bugzilla.redhat.com/2448168
+    - https://bugzilla.redhat.com/2448181
+    - https://bugzilla.redhat.com/2449649
+    - https://bugzilla.redhat.com/2457409
+    - https://bugzilla.redhat.com/2457932
+    - https://bugzilla.redhat.com/2458049
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2395108
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2408891
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2418084
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2431366
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2431374
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2444691
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2448168
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2448181
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2449649
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2457409
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2457932
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2458049
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-13837
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-15282
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-59375
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-6075
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-0672
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-1502
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-2297
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-3644
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4224
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4519
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4786
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-6100
+    - https://errata.almalinux.org/10/ALSA-2026-19064.html
+    - https://errata.rockylinux.org/RLSA-2026:19177
+    - https://github.com/python/cpython/commit/05ed7ce7ae9e17c23a04085b2539fe6d6d3cef69
+    - https://github.com/python/cpython/commit/56b7100b04e44ea27989242b176beb8f016b2c53
+    - https://github.com/python/cpython/commit/58703ec1bdd1eb075e8b01a0c427683ce594dd3e
+    - https://github.com/python/cpython/commit/9e071c9b28c17f347f81b388a003d4eeb3c7a8dd
+    - https://github.com/python/cpython/commit/b1cf9016335cb637c5a425032e8274a224f4b2ed
+    - https://github.com/python/cpython/commit/c00c386faa579ad71196d33408644478488e43ec
+    - https://github.com/python/cpython/issues/146211
+    - https://github.com/python/cpython/pull/146212
+    - https://linux.oracle.com/cve/CVE-2026-1502.html
+    - https://linux.oracle.com/errata/ELSA-2026-19177.html
+    - https://mail.python.org/archives/list/security-announce@python.org/thread/2IVPAEQWUJBCTQZEJEVTYCIKSMQPGRZ3/
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-1502
+    - https://ubuntu.com/security/notices/USN-8509-1
+    - https://www.cve.org/CVERecord?id=CVE-2026-1502
+    PublishedDate: '2026-04-10T18:16:40.97Z'
+    LastModifiedDate: '2026-06-30T16:16:48.007Z'
+  - VulnerabilityID: CVE-2026-3276
+    PkgID: libpython3.14-minimal@3.14.4-1
+    PkgName: libpython3.14-minimal
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/libpython3.14-minimal@3.14.4-1?arch=amd64&distro=ubuntu-26.04
+      UID: c0091a523a4a100d
+    InstalledVersion: 3.14.4-1
+    FixedVersion: 3.14.4-1ubuntu0.1
+    Status: fixed
+    Layer:
+      Digest: sha256:b0113d728796bced1de5d9be3ee71a41fa9ce58cb8e8afb7b978173c12b34a64
+      DiffID: sha256:cea9f9db5d3f4c32d71be9540d330b45d2665b910909e717da85e7ebdd721598
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-3276
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:2dfe509535fa7c79c3adfd38368d08b12343ffef400d48278d785d317141eec7
+    Title: 'python: Python unicodedata: Denial of Service due to excessive CPU consumption'
+    Description: |-
+      unicodedata.normalize() can take excessive CPU time when processing
+      specially crafted Unicode input containing long runs of combining characters
+      with alternating Canonical Combining Class values.
+      This affects all normalization forms.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-407
+    VendorSeverity:
+      bitnami: 2
+      redhat: 2
+      ubuntu: 2
+    CVSS:
+      bitnami:
+        V40Vector: CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N
+        V40Score: 6.3
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L
+        V3Score: 5.3
+    References:
+    - http://www.openwall.com/lists/oss-security/2026/06/03/15
+    - https://access.redhat.com/security/cve/CVE-2026-3276
+    - https://github.com/python/cpython/commit/6b505d1f41f8f3ea0fe5a4786d3a8fff1875cfc0
+    - https://github.com/python/cpython/commit/90748760d38ca3ac5fc6788a69becab905c95598
+    - https://github.com/python/cpython/commit/991224b1e8311c85f198f6dd8208bf8cff7fc26f
+    - https://github.com/python/cpython/commit/ba785b88add96acbf403d65cb157fb2743a33a32
+    - https://github.com/python/cpython/commit/c5512bd7c1dc28055660565275012766941d3066
+    - https://github.com/python/cpython/issues/149079
+    - https://github.com/python/cpython/pull/149080
+    - https://mail.python.org/archives/list/security-announce@python.org/thread/PP5HB4K7727OBBM76KA2ILID76K3OZGZ/
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-3276
+    - https://ubuntu.com/security/notices/USN-8509-1
+    - https://www.cve.org/CVERecord?id=CVE-2026-3276
+    - https://www.openwall.com/lists/oss-security/2026/06/03/15
+    PublishedDate: '2026-06-03T16:16:29.253Z'
+    LastModifiedDate: '2026-06-17T10:43:19.58Z'
+  - VulnerabilityID: CVE-2026-4786
+    PkgID: libpython3.14-minimal@3.14.4-1
+    PkgName: libpython3.14-minimal
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/libpython3.14-minimal@3.14.4-1?arch=amd64&distro=ubuntu-26.04
+      UID: c0091a523a4a100d
+    InstalledVersion: 3.14.4-1
+    FixedVersion: 3.14.4-1ubuntu0.1
+    Status: fixed
+    Layer:
+      Digest: sha256:b0113d728796bced1de5d9be3ee71a41fa9ce58cb8e8afb7b978173c12b34a64
+      DiffID: sha256:cea9f9db5d3f4c32d71be9540d330b45d2665b910909e717da85e7ebdd721598
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-4786
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:3280538553ea384161921245e92bf6b4e6ecfdc7079e145383bf2967c64b86db
+    Title: 'python: cpython: Python: Arbitrary code execution via command injection in webbrowser.open() API'
+    Description: "Mitgation of\_CVE-2026-4519 was incomplete. If the URL contained \"%action\" the mitigation could be bypassed for certain browser types the \"webbrowser.open()\" API could have commands injected into the underlying shell. See\_CVE-2026-4519 for details."
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-77
+    - CWE-88
+    VendorSeverity:
+      alma: 3
+      amazon: 3
+      bitnami: 3
+      oracle-oval: 3
+      photon: 3
+      redhat: 3
+      rocky: 3
+      ubuntu: 2
+    CVSS:
+      bitnami:
+        V40Vector: CVSS:4.0/AV:L/AC:L/AT:P/PR:N/UI:A/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N
+        V40Score: 7
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:L
+        V3Score: 7.1
+    References:
+    - https://access.redhat.com/errata/RHSA-2026:10117
+    - https://access.redhat.com/errata/RHSA-2026:10140
+    - https://access.redhat.com/errata/RHSA-2026:10141
+    - https://access.redhat.com/errata/RHSA-2026:10711
+    - https://access.redhat.com/errata/RHSA-2026:10745
+    - https://access.redhat.com/errata/RHSA-2026:10774
+    - https://access.redhat.com/errata/RHSA-2026:10949
+    - https://access.redhat.com/errata/RHSA-2026:10950
+    - https://access.redhat.com/errata/RHSA-2026:11062
+    - https://access.redhat.com/errata/RHSA-2026:11077
+    - https://access.redhat.com/errata/RHSA-2026:11768
+    - https://access.redhat.com/errata/RHSA-2026:13692
+    - https://access.redhat.com/errata/RHSA-2026:13812
+    - https://access.redhat.com/errata/RHSA-2026:14652
+    - https://access.redhat.com/errata/RHSA-2026:14653
+    - https://access.redhat.com/errata/RHSA-2026:14656
+    - https://access.redhat.com/errata/RHSA-2026:16699
+    - https://access.redhat.com/errata/RHSA-2026:17525
+    - https://access.redhat.com/errata/RHSA-2026:17619
+    - https://access.redhat.com/errata/RHSA-2026:19019
+    - https://access.redhat.com/errata/RHSA-2026:19064
+    - https://access.redhat.com/errata/RHSA-2026:19175
+    - https://access.redhat.com/errata/RHSA-2026:19176
+    - https://access.redhat.com/errata/RHSA-2026:19177
+    - https://access.redhat.com/errata/RHSA-2026:19216
+    - https://access.redhat.com/errata/RHSA-2026:19549
+    - https://access.redhat.com/errata/RHSA-2026:19570
+    - https://access.redhat.com/errata/RHSA-2026:19571
+    - https://access.redhat.com/errata/RHSA-2026:19576
+    - https://access.redhat.com/errata/RHSA-2026:19589
+    - https://access.redhat.com/errata/RHSA-2026:19590
+    - https://access.redhat.com/errata/RHSA-2026:21275
+    - https://access.redhat.com/errata/RHSA-2026:21682
+    - https://access.redhat.com/errata/RHSA-2026:22144
+    - https://access.redhat.com/errata/RHSA-2026:25096
+    - https://access.redhat.com/errata/RHSA-2026:26187
+    - https://access.redhat.com/errata/RHSA-2026:28247
+    - https://access.redhat.com/errata/RHSA-2026:28581
+    - https://access.redhat.com/errata/RHSA-2026:30078
+    - https://access.redhat.com/errata/RHSA-2026:30087
+    - https://access.redhat.com/errata/RHSA-2026:30088
+    - https://access.redhat.com/errata/RHSA-2026:30089
+    - https://access.redhat.com/errata/RHSA-2026:35838
+    - https://access.redhat.com/errata/RHSA-2026:8822
+    - https://access.redhat.com/errata/RHSA-2026:8824
+    - https://access.redhat.com/errata/RHSA-2026:9228
+    - https://access.redhat.com/security/cve/CVE-2026-4786
+    - https://bugzilla.redhat.com/2458049
+    - https://bugzilla.redhat.com/2460869
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2449649
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2457932
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2458049
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4519
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4786
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-6100
+    - https://errata.almalinux.org/10/ALSA-2026-28581.html
+    - https://errata.rockylinux.org/RLSA-2026:19216
+    - https://github.com/python/cpython/commit/28b4ad38067bbdad34edfcd03ad2de5f06387e53
+    - https://github.com/python/cpython/commit/c5767a72838a8dda9d6dc5d3558075b055c56bca
+    - https://github.com/python/cpython/commit/d22922c8a7958353689dc4763dd72da2dea03fff
+    - https://github.com/python/cpython/commit/d6d68494be70bdbda20f89f83801ba52ec37daa4
+    - https://github.com/python/cpython/commit/f4654824ae0850ac87227fb270f9057477946769
+    - https://github.com/python/cpython/issues/148169
+    - https://github.com/python/cpython/pull/148170
+    - https://linux.oracle.com/cve/CVE-2026-4786.html
+    - https://linux.oracle.com/errata/ELSA-2026-28247.html
+    - https://mail.python.org/archives/list/security-announce@python.org/thread/JQDUNJVB4AQNTJECSUKOBDU3XCJIPSE5/
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-4786
+    - https://security.access.redhat.com/data/csaf/v2/vex/2026/cve-2026-4786.json
+    - https://ubuntu.com/security/notices/USN-8509-1
+    - https://www.cve.org/CVERecord?id=CVE-2026-4786
+    PublishedDate: '2026-04-13T22:16:30.413Z'
+    LastModifiedDate: '2026-07-06T13:17:02.897Z'
+  - VulnerabilityID: CVE-2026-5713
+    PkgID: libpython3.14-minimal@3.14.4-1
+    PkgName: libpython3.14-minimal
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/libpython3.14-minimal@3.14.4-1?arch=amd64&distro=ubuntu-26.04
+      UID: c0091a523a4a100d
+    InstalledVersion: 3.14.4-1
+    FixedVersion: 3.14.4-1ubuntu0.1
+    Status: fixed
+    Layer:
+      Digest: sha256:b0113d728796bced1de5d9be3ee71a41fa9ce58cb8e8afb7b978173c12b34a64
+      DiffID: sha256:cea9f9db5d3f4c32d71be9540d330b45d2665b910909e717da85e7ebdd721598
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-5713
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:7be00442039d2a39008e9ccb8314c7216648555245469ab4e5701717c3c29d9d
+    Title: 'python: Python: Information disclosure and arbitrary code execution via remote debugging with a malicious process.'
+    Description: The "profiling.sampling" module (Python 3.15+) and "asyncio introspection capabilities" (3.14+, "python -m asyncio ps" and "python -m asyncio pstree") features could be used to read and write addresses in a privileged process if that process connected to a malicious or "infected" Python process via the remote debugging feature. This vulnerability requires persistently and repeatedly connecting to the process to be exploited, even after the connecting process crashes with high likelihood due to ASLR.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-121
+    - CWE-125
+    VendorSeverity:
+      alma: 3
+      amazon: 2
+      bitnami: 2
+      oracle-oval: 3
+      redhat: 2
+      rocky: 3
+      ubuntu: 2
+    CVSS:
+      bitnami:
+        V40Vector: CVSS:4.0/AV:L/AC:H/AT:P/PR:H/UI:A/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N
+        V40Score: 5.3
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:H/I:H/A:N
+        V3Score: 6
+    References:
+    - http://www.openwall.com/lists/oss-security/2026/04/15/6
+    - https://access.redhat.com/errata/RHSA-2026:19019
+    - https://access.redhat.com/security/cve/CVE-2026-5713
+    - https://bugzilla.redhat.com/2431367
+    - https://bugzilla.redhat.com/2444691
+    - https://bugzilla.redhat.com/2448168
+    - https://bugzilla.redhat.com/2448181
+    - https://bugzilla.redhat.com/2449649
+    - https://bugzilla.redhat.com/2457409
+    - https://bugzilla.redhat.com/2457932
+    - https://bugzilla.redhat.com/2458049
+    - https://bugzilla.redhat.com/2458239
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2431367
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2444691
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2448168
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2448181
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2449649
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2457409
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2457932
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2458049
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2458239
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-0865
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-1502
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-2297
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-3644
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4224
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4519
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4786
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-5713
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-6100
+    - https://errata.almalinux.org/10/ALSA-2026-19019.html
+    - https://errata.rockylinux.org/RLSA-2026:19176
+    - https://github.com/python/cpython/commit/289fd2c97a7e5aecb8b69f94f5e838ccfeee7e67
+    - https://github.com/python/cpython/commit/316f6265b7f9ca4ffed5346b747475ef1943f35d
+    - https://github.com/python/cpython/issues/148178
+    - https://github.com/python/cpython/pull/148187
+    - https://linux.oracle.com/cve/CVE-2026-5713.html
+    - https://linux.oracle.com/errata/ELSA-2026-19176.html
+    - https://mail.python.org/archives/list/security-announce@python.org/thread/OG4RHARYSNIE22GGOMVMCRH76L5HKPLM/
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-5713
+    - https://ubuntu.com/security/notices/USN-8509-1
+    - https://www.cve.org/CVERecord?id=CVE-2026-5713
+    PublishedDate: '2026-04-14T16:16:48.717Z'
+    LastModifiedDate: '2026-06-17T10:59:32.743Z'
+  - VulnerabilityID: CVE-2026-6019
+    PkgID: libpython3.14-minimal@3.14.4-1
+    PkgName: libpython3.14-minimal
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/libpython3.14-minimal@3.14.4-1?arch=amd64&distro=ubuntu-26.04
+      UID: c0091a523a4a100d
+    InstalledVersion: 3.14.4-1
+    FixedVersion: 3.14.4-1ubuntu0.1
+    Status: fixed
+    Layer:
+      Digest: sha256:b0113d728796bced1de5d9be3ee71a41fa9ce58cb8e8afb7b978173c12b34a64
+      DiffID: sha256:cea9f9db5d3f4c32d71be9540d330b45d2665b910909e717da85e7ebdd721598
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-6019
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:35dc1a61f053c50bbf1cbdff95636538b7887bdb31c83f85955523907ecf6b27
+    Title: 'python: Python: Cross-Site Scripting (XSS) vulnerability in http.cookies module'
+    Description: http.cookies.Morsel.js_output() returns an inline <script> snippet and only escapes " for JavaScript string context. It does not neutralize the HTML parser-sensitive sequence </script> inside the generated script element. Mitigation base64-encodes the cookie value to disallow escaping using cookie value.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-150
+    - CWE-116
+    VendorSeverity:
+      alma: 3
+      amazon: 2
+      bitnami: 1
+      nvd: 2
+      oracle-oval: 3
+      photon: 2
+      redhat: 2
+      rocky: 3
+      ubuntu: 2
+    CVSS:
+      bitnami:
+        V40Vector: CVSS:4.0/AV:N/AC:L/AT:P/PR:H/UI:N/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N
+        V40Score: 2.1
+      nvd:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N
+        V3Score: 6.1
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:N
+        V3Score: 6.8
+    References:
+    - https://access.redhat.com/errata/RHSA-2026:28581
+    - https://access.redhat.com/security/cve/CVE-2026-6019
+    - https://bugzilla.redhat.com/2458049
+    - https://bugzilla.redhat.com/2460869
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2458049
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2460869
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4786
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-6019
+    - https://errata.almalinux.org/10/ALSA-2026-28581.html
+    - https://errata.rockylinux.org/RLSA-2026:28247
+    - https://github.com/python/cpython/commit/3c59b8b53fc75c7f9578d16fb8201ceb43e8f76c
+    - https://github.com/python/cpython/commit/76b3923d688c0efc580658476c5f525ec8735104
+    - https://github.com/python/cpython/commit/f795e042043dfe26c42e1971d4502c1cdc4c65b8
+    - https://github.com/python/cpython/issues/90309
+    - https://github.com/python/cpython/pull/148848
+    - https://linux.oracle.com/cve/CVE-2026-6019.html
+    - https://linux.oracle.com/errata/ELSA-2026-28247.html
+    - https://mail.python.org/archives/list/security-announce@python.org/thread/IVNWGV2BBNC3RHQAFS22UP4DY56SAXX3/
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-6019
+    - https://ubuntu.com/security/notices/USN-8509-1
+    - https://www.cve.org/CVERecord?id=CVE-2026-6019
+    PublishedDate: '2026-04-22T20:16:42.617Z'
+    LastModifiedDate: '2026-06-17T11:00:10.56Z'
+  - VulnerabilityID: CVE-2026-6100
+    PkgID: libpython3.14-minimal@3.14.4-1
+    PkgName: libpython3.14-minimal
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/libpython3.14-minimal@3.14.4-1?arch=amd64&distro=ubuntu-26.04
+      UID: c0091a523a4a100d
+    InstalledVersion: 3.14.4-1
+    FixedVersion: 3.14.4-1ubuntu0.1
+    Status: fixed
+    Layer:
+      Digest: sha256:b0113d728796bced1de5d9be3ee71a41fa9ce58cb8e8afb7b978173c12b34a64
+      DiffID: sha256:cea9f9db5d3f4c32d71be9540d330b45d2665b910909e717da85e7ebdd721598
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-6100
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:472ef8cc228b8ffdebdfe23c481dd356d5e66e14c4d5be30c564a57dc423f69d
+    Title: 'python: Python: Arbitrary code execution or information disclosure via use-after-free in decompression modules'
+    Description: |-
+      Use-after-free (UAF) was possible in the `lzma.LZMADecompressor`, `bz2.BZ2Decompressor`, and `gzip.GzipFile` when a memory allocation fails with a `MemoryError` and the decompression instance is re-used. This scenario can be triggered if the process is under memory pressure. The fix cleans up the dangling pointer in this specific error condition.
+
+      The vulnerability is only present if the program re-uses decompressor instances across multiple decompression calls even after a `MemoryError` is raised during decompression. Using the helper functions to one-shot decompress data such as `lzma.decompress()`, `bz2.decompress()`, `gzip.decompress()`, and `zlib.decompress()` are not affected as a new decompressor instance is used per call. If the decompressor instance is not re-used after an error condition, this usage is similarly not vulnerable.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-416
+    - CWE-787
+    - CWE-825
+    VendorSeverity:
+      alma: 3
+      amazon: 3
+      bitnami: 4
+      oracle-oval: 3
+      photon: 3
+      redhat: 3
+      rocky: 3
+      ubuntu: 2
+    CVSS:
+      bitnami:
+        V40Vector: CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N
+        V40Score: 9.1
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H
+        V3Score: 8.1
+    References:
+    - http://www.openwall.com/lists/oss-security/2026/04/13/10
+    - https://access.redhat.com/errata/RHSA-2026:10117
+    - https://access.redhat.com/errata/RHSA-2026:10140
+    - https://access.redhat.com/errata/RHSA-2026:10141
+    - https://access.redhat.com/errata/RHSA-2026:10711
+    - https://access.redhat.com/errata/RHSA-2026:10745
+    - https://access.redhat.com/errata/RHSA-2026:10774
+    - https://access.redhat.com/errata/RHSA-2026:10949
+    - https://access.redhat.com/errata/RHSA-2026:10950
+    - https://access.redhat.com/errata/RHSA-2026:11062
+    - https://access.redhat.com/errata/RHSA-2026:11077
+    - https://access.redhat.com/errata/RHSA-2026:11768
+    - https://access.redhat.com/errata/RHSA-2026:13692
+    - https://access.redhat.com/errata/RHSA-2026:13812
+    - https://access.redhat.com/errata/RHSA-2026:14652
+    - https://access.redhat.com/errata/RHSA-2026:14653
+    - https://access.redhat.com/errata/RHSA-2026:14656
+    - https://access.redhat.com/errata/RHSA-2026:16699
+    - https://access.redhat.com/errata/RHSA-2026:17525
+    - https://access.redhat.com/errata/RHSA-2026:17619
+    - https://access.redhat.com/errata/RHSA-2026:19019
+    - https://access.redhat.com/errata/RHSA-2026:19064
+    - https://access.redhat.com/errata/RHSA-2026:19175
+    - https://access.redhat.com/errata/RHSA-2026:19176
+    - https://access.redhat.com/errata/RHSA-2026:19177
+    - https://access.redhat.com/errata/RHSA-2026:19216
+    - https://access.redhat.com/errata/RHSA-2026:19549
+    - https://access.redhat.com/errata/RHSA-2026:19570
+    - https://access.redhat.com/errata/RHSA-2026:19571
+    - https://access.redhat.com/errata/RHSA-2026:19576
+    - https://access.redhat.com/errata/RHSA-2026:19590
+    - https://access.redhat.com/errata/RHSA-2026:21275
+    - https://access.redhat.com/errata/RHSA-2026:21682
+    - https://access.redhat.com/errata/RHSA-2026:25096
+    - https://access.redhat.com/errata/RHSA-2026:26187
+    - https://access.redhat.com/errata/RHSA-2026:30078
+    - https://access.redhat.com/errata/RHSA-2026:30087
+    - https://access.redhat.com/errata/RHSA-2026:30088
+    - https://access.redhat.com/errata/RHSA-2026:30089
+    - https://access.redhat.com/errata/RHSA-2026:8822
+    - https://access.redhat.com/errata/RHSA-2026:8824
+    - https://access.redhat.com/errata/RHSA-2026:9228
+    - https://access.redhat.com/security/cve/CVE-2026-6100
+    - https://bugzilla.redhat.com/2395108
+    - https://bugzilla.redhat.com/2408891
+    - https://bugzilla.redhat.com/2418084
+    - https://bugzilla.redhat.com/2431366
+    - https://bugzilla.redhat.com/2431374
+    - https://bugzilla.redhat.com/2444691
+    - https://bugzilla.redhat.com/2448168
+    - https://bugzilla.redhat.com/2448181
+    - https://bugzilla.redhat.com/2449649
+    - https://bugzilla.redhat.com/2457409
+    - https://bugzilla.redhat.com/2457932
+    - https://bugzilla.redhat.com/2458049
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2449649
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2457932
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2458049
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4519
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4786
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-6100
+    - https://errata.almalinux.org/10/ALSA-2026-19064.html
+    - https://errata.rockylinux.org/RLSA-2026:19216
+    - https://github.com/python/cpython/commit/47128e64f98c3a20271138a98c2922bea2a3ee0e
+    - https://github.com/python/cpython/commit/6a5f79c8d7bbf22b083b240910c7a8781a59437d
+    - https://github.com/python/cpython/commit/8fc66aef6d7b3ae58f43f5c66f9366cc8cbbfcd2
+    - https://github.com/python/cpython/commit/c3cf71c3366fe49acb776a639405c0eea6169c20
+    - https://github.com/python/cpython/commit/e20c6c9667c99ecaab96e1a2b3767082841ffc8b
+    - https://github.com/python/cpython/issues/148395
+    - https://github.com/python/cpython/pull/148396
+    - https://linux.oracle.com/cve/CVE-2026-6100.html
+    - https://linux.oracle.com/errata/ELSA-2026-19216.html
+    - https://mail.python.org/archives/list/security-announce@python.org/thread/HTWB2Z6KT5QQX4RYEZAFININDHNOSIF3/
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-6100
+    - https://security.access.redhat.com/data/csaf/v2/vex/2026/cve-2026-6100.json
+    - https://ubuntu.com/security/notices/USN-8509-1
+    - https://www.cve.org/CVERecord?id=CVE-2026-6100
+    PublishedDate: '2026-04-13T18:16:31.297Z'
+    LastModifiedDate: '2026-06-30T03:21:11.023Z'
+  - VulnerabilityID: CVE-2026-7774
+    PkgID: libpython3.14-minimal@3.14.4-1
+    PkgName: libpython3.14-minimal
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/libpython3.14-minimal@3.14.4-1?arch=amd64&distro=ubuntu-26.04
+      UID: c0091a523a4a100d
+    InstalledVersion: 3.14.4-1
+    FixedVersion: 3.14.4-1ubuntu0.1
+    Status: fixed
+    Layer:
+      Digest: sha256:b0113d728796bced1de5d9be3ee71a41fa9ce58cb8e8afb7b978173c12b34a64
+      DiffID: sha256:cea9f9db5d3f4c32d71be9540d330b45d2665b910909e717da85e7ebdd721598
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-7774
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:2e031436f6501fdaabd796e28b2c9eccc17c2b798e37ff3479214061ccb2debc
+    Title: 'python: CPython: Python tarfile: Arbitrary file write via crafted link entries'
+    Description: tarfile.data_filter could be bypassed using crafted link entries, including symlinks with empty or directory-like names, to redirect later archive members outside the intended extraction directory. This allowed a malicious tar archive to cause tarfile.extractall() to write files outside the destination directory, subject to the permissions of the extracting process.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-22
+    VendorSeverity:
+      bitnami: 2
+      redhat: 2
+      ubuntu: 2
+    CVSS:
+      bitnami:
+        V40Vector: CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:A/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N
+        V40Score: 6.9
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:N
+        V3Score: 6.5
+    References:
+    - http://www.openwall.com/lists/oss-security/2026/06/04/9
+    - https://access.redhat.com/security/cve/CVE-2026-7774
+    - https://github.com/python/cpython/commit/0478bd83d82b255e0f29f613367a59d261e7eaa2
+    - https://github.com/python/cpython/commit/0d28f5e46e151718972dfabd91205444d0037b6d
+    - https://github.com/python/cpython/commit/578411982c16f753f4893532510099ef665117da
+    - https://github.com/python/cpython/commit/5cf47a248c35c375d610b87b2f72fd1ed454b558
+    - https://github.com/python/cpython/commit/74cca9a92fb7d653e404843a56b8bdc7b0afdbbf
+    - https://github.com/python/cpython/issues/149486
+    - https://github.com/python/cpython/pull/149487
+    - https://mail.python.org/archives/list/security-announce@python.org/thread/4FU62L2M6RMMHT2QPGQNPEHHUND7CEX5/
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-7774
+    - https://ubuntu.com/security/notices/USN-8509-1
+    - https://www.cve.org/CVERecord?id=CVE-2026-7774
+    - https://www.openwall.com/lists/oss-security/2026/06/04/9
+    PublishedDate: '2026-06-04T16:16:42.103Z'
+    LastModifiedDate: '2026-06-17T11:02:56.613Z'
+  - VulnerabilityID: CVE-2026-8328
+    PkgID: libpython3.14-minimal@3.14.4-1
+    PkgName: libpython3.14-minimal
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/libpython3.14-minimal@3.14.4-1?arch=amd64&distro=ubuntu-26.04
+      UID: c0091a523a4a100d
+    InstalledVersion: 3.14.4-1
+    FixedVersion: 3.14.4-1ubuntu0.1
+    Status: fixed
+    Layer:
+      Digest: sha256:b0113d728796bced1de5d9be3ee71a41fa9ce58cb8e8afb7b978173c12b34a64
+      DiffID: sha256:cea9f9db5d3f4c32d71be9540d330b45d2665b910909e717da85e7ebdd721598
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-8328
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:ea6f6712331cfb4421d224d41c9c268194f92e542dafb668c993993f49b5784a
+    Title: The ftpcp() function in Lib/ftplib.py was not updated when  CVE-2021-4 ...
+    Description: "The ftpcp() function in Lib/ftplib.py was not updated when \nCVE-2021-4189 was fixed. While makepasv() was patched to replace \nserver-supplied PASV host addresses with the actual peer address \n(getpeername()[0]), ftpcp() still calls parse227() directly and passes \nthe raw attacker-controllable IP address and port to target.sendport(). This patch is related to\_CVE-2021-4189."
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-918
+    VendorSeverity:
+      bitnami: 2
+      ubuntu: 2
+    CVSS:
+      bitnami:
+        V40Vector: CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:A/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N
+        V40Score: 5.9
+    References:
+    - https://github.com/python/cpython/commit/2bbcf3fb7a420a05605576c0f9468d4675381b5f
+    - https://github.com/python/cpython/commit/5dadc64673ce875ebfb24163907777dae0f6ca06
+    - https://github.com/python/cpython/commit/7d95a1dc7382b55cba7fdd6a110336077584a4f0
+    - https://github.com/python/cpython/commit/bb3446dda6c49b32e67c11dbbbf221b40be00763
+    - https://github.com/python/cpython/commit/c88704431ea3248ca769384c13856330976fac1d
+    - https://github.com/python/cpython/commit/eac4fe3b2c77693790a5ef7dfab127c1fee81bf9
+    - https://github.com/python/cpython/commit/ef12d0dc824baccf737bba1458e5eed3d1e0fceb
+    - https://github.com/python/cpython/issues/87451
+    - https://github.com/python/cpython/pull/149648
+    - https://mail.python.org/archives/list/security-announce@python.org/thread/ITF2BAPBQEPYK3LDMPRSY435JGNHYNDP/
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-8328
+    - https://ubuntu.com/security/notices/USN-8509-1
+    - https://www.cve.org/CVERecord?id=CVE-2026-8328
+    PublishedDate: '2026-05-13T21:16:50.167Z'
+    LastModifiedDate: '2026-06-30T16:16:56.797Z'
+  - VulnerabilityID: CVE-2026-9669
+    PkgID: libpython3.14-minimal@3.14.4-1
+    PkgName: libpython3.14-minimal
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/libpython3.14-minimal@3.14.4-1?arch=amd64&distro=ubuntu-26.04
+      UID: c0091a523a4a100d
+    InstalledVersion: 3.14.4-1
+    FixedVersion: 3.14.4-1ubuntu0.1
+    Status: fixed
+    Layer:
+      Digest: sha256:b0113d728796bced1de5d9be3ee71a41fa9ce58cb8e8afb7b978173c12b34a64
+      DiffID: sha256:cea9f9db5d3f4c32d71be9540d330b45d2665b910909e717da85e7ebdd721598
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-9669
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:01b2f2fbaefe7c997ab8db595d16b178aaa314f0f97fa2eb8c1f836c9b641173
+    Title: 'python: Python: Denial of Service via out-of-bounds write in BZ2 decompression'
+    Description: bz2.BZ2Decompressor objects could be reused after a decompression error. If an application caught the resulting OSError and retried with the same decompressor, crafted input could cause the decompressor to resume from an invalid internal state and perform out-of-bounds writes to a stack buffer. This could crash the process when processing untrusted data.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-121
+    VendorSeverity:
+      bitnami: 3
+      redhat: 2
+      ubuntu: 2
+    CVSS:
+      bitnami:
+        V40Vector: CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N
+        V40Score: 8.2
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 5.9
+    References:
+    - http://www.openwall.com/lists/oss-security/2026/06/08/17
+    - https://access.redhat.com/security/cve/CVE-2026-9669
+    - https://github.com/python/cpython/commit/157a5df8cb5d82b33f918a7489e72ce95ceb12b6
+    - https://github.com/python/cpython/commit/5755d0f083949ff3c5bf3a37e673e24e306b036e
+    - https://github.com/python/cpython/commit/619a12b2e545391dc436b3af79dda22337382a6f
+    - https://github.com/python/cpython/commit/d3ca26983dfbccdf609f24ff5877dc3118e4702d
+    - https://github.com/python/cpython/issues/150599
+    - https://github.com/python/cpython/pull/150600
+    - https://mail.python.org/archives/list/security-announce@python.org/thread/DBJZETMGUIFK7DVUWMOXHD3Z6IX2QPSX/
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-9669
+    - https://ubuntu.com/security/notices/USN-8509-1
+    - https://www.cve.org/CVERecord?id=CVE-2026-9669
+    PublishedDate: '2026-06-08T23:17:25.17Z'
+    LastModifiedDate: '2026-06-23T18:18:11.127Z'
+  - VulnerabilityID: CVE-2026-1502
+    PkgID: libpython3.14-stdlib@3.14.4-1
+    PkgName: libpython3.14-stdlib
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/libpython3.14-stdlib@3.14.4-1?arch=amd64&distro=ubuntu-26.04
+      UID: 8841f0bbc38a028c
+    InstalledVersion: 3.14.4-1
+    FixedVersion: 3.14.4-1ubuntu0.1
+    Status: fixed
+    Layer:
+      Digest: sha256:b0113d728796bced1de5d9be3ee71a41fa9ce58cb8e8afb7b978173c12b34a64
+      DiffID: sha256:cea9f9db5d3f4c32d71be9540d330b45d2665b910909e717da85e7ebdd721598
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-1502
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:2e3564f4bdad78dea4da80c5bba5ef523636147aaad0e5940f9f12c0041ccb9a
+    Title: 'python: Python: HTTP header injection via CR/LF in proxy tunnel headers'
+    Description: CR/LF bytes were not rejected by HTTP client proxy tunnel headers or host.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-93
+    VendorSeverity:
+      alma: 3
+      amazon: 2
+      azure: 2
+      bitnami: 2
+      oracle-oval: 3
+      redhat: 2
+      rocky: 3
+      ubuntu: 2
+    CVSS:
+      bitnami:
+        V40Vector: CVSS:4.0/AV:N/AC:L/AT:P/PR:H/UI:P/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N
+        V40Score: 5.7
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:U/C:N/I:H/A:N
+        V3Score: 4.5
+    References:
+    - http://www.openwall.com/lists/oss-security/2026/04/11/4
+    - https://access.redhat.com/errata/RHSA-2026:19064
+    - https://access.redhat.com/security/cve/CVE-2026-1502
+    - https://bugzilla.redhat.com/2395108
+    - https://bugzilla.redhat.com/2408891
+    - https://bugzilla.redhat.com/2418084
+    - https://bugzilla.redhat.com/2431366
+    - https://bugzilla.redhat.com/2431374
+    - https://bugzilla.redhat.com/2444691
+    - https://bugzilla.redhat.com/2448168
+    - https://bugzilla.redhat.com/2448181
+    - https://bugzilla.redhat.com/2449649
+    - https://bugzilla.redhat.com/2457409
+    - https://bugzilla.redhat.com/2457932
+    - https://bugzilla.redhat.com/2458049
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2395108
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2408891
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2418084
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2431366
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2431374
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2444691
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2448168
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2448181
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2449649
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2457409
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2457932
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2458049
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-13837
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-15282
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-59375
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-6075
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-0672
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-1502
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-2297
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-3644
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4224
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4519
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4786
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-6100
+    - https://errata.almalinux.org/10/ALSA-2026-19064.html
+    - https://errata.rockylinux.org/RLSA-2026:19177
+    - https://github.com/python/cpython/commit/05ed7ce7ae9e17c23a04085b2539fe6d6d3cef69
+    - https://github.com/python/cpython/commit/56b7100b04e44ea27989242b176beb8f016b2c53
+    - https://github.com/python/cpython/commit/58703ec1bdd1eb075e8b01a0c427683ce594dd3e
+    - https://github.com/python/cpython/commit/9e071c9b28c17f347f81b388a003d4eeb3c7a8dd
+    - https://github.com/python/cpython/commit/b1cf9016335cb637c5a425032e8274a224f4b2ed
+    - https://github.com/python/cpython/commit/c00c386faa579ad71196d33408644478488e43ec
+    - https://github.com/python/cpython/issues/146211
+    - https://github.com/python/cpython/pull/146212
+    - https://linux.oracle.com/cve/CVE-2026-1502.html
+    - https://linux.oracle.com/errata/ELSA-2026-19177.html
+    - https://mail.python.org/archives/list/security-announce@python.org/thread/2IVPAEQWUJBCTQZEJEVTYCIKSMQPGRZ3/
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-1502
+    - https://ubuntu.com/security/notices/USN-8509-1
+    - https://www.cve.org/CVERecord?id=CVE-2026-1502
+    PublishedDate: '2026-04-10T18:16:40.97Z'
+    LastModifiedDate: '2026-06-30T16:16:48.007Z'
+  - VulnerabilityID: CVE-2026-3276
+    PkgID: libpython3.14-stdlib@3.14.4-1
+    PkgName: libpython3.14-stdlib
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/libpython3.14-stdlib@3.14.4-1?arch=amd64&distro=ubuntu-26.04
+      UID: 8841f0bbc38a028c
+    InstalledVersion: 3.14.4-1
+    FixedVersion: 3.14.4-1ubuntu0.1
+    Status: fixed
+    Layer:
+      Digest: sha256:b0113d728796bced1de5d9be3ee71a41fa9ce58cb8e8afb7b978173c12b34a64
+      DiffID: sha256:cea9f9db5d3f4c32d71be9540d330b45d2665b910909e717da85e7ebdd721598
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-3276
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:4af95b33ff593c6872c67f67c330c9ee455a90b829753d60fc93688bc8b01fd9
+    Title: 'python: Python unicodedata: Denial of Service due to excessive CPU consumption'
+    Description: |-
+      unicodedata.normalize() can take excessive CPU time when processing
+      specially crafted Unicode input containing long runs of combining characters
+      with alternating Canonical Combining Class values.
+      This affects all normalization forms.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-407
+    VendorSeverity:
+      bitnami: 2
+      redhat: 2
+      ubuntu: 2
+    CVSS:
+      bitnami:
+        V40Vector: CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N
+        V40Score: 6.3
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L
+        V3Score: 5.3
+    References:
+    - http://www.openwall.com/lists/oss-security/2026/06/03/15
+    - https://access.redhat.com/security/cve/CVE-2026-3276
+    - https://github.com/python/cpython/commit/6b505d1f41f8f3ea0fe5a4786d3a8fff1875cfc0
+    - https://github.com/python/cpython/commit/90748760d38ca3ac5fc6788a69becab905c95598
+    - https://github.com/python/cpython/commit/991224b1e8311c85f198f6dd8208bf8cff7fc26f
+    - https://github.com/python/cpython/commit/ba785b88add96acbf403d65cb157fb2743a33a32
+    - https://github.com/python/cpython/commit/c5512bd7c1dc28055660565275012766941d3066
+    - https://github.com/python/cpython/issues/149079
+    - https://github.com/python/cpython/pull/149080
+    - https://mail.python.org/archives/list/security-announce@python.org/thread/PP5HB4K7727OBBM76KA2ILID76K3OZGZ/
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-3276
+    - https://ubuntu.com/security/notices/USN-8509-1
+    - https://www.cve.org/CVERecord?id=CVE-2026-3276
+    - https://www.openwall.com/lists/oss-security/2026/06/03/15
+    PublishedDate: '2026-06-03T16:16:29.253Z'
+    LastModifiedDate: '2026-06-17T10:43:19.58Z'
+  - VulnerabilityID: CVE-2026-4786
+    PkgID: libpython3.14-stdlib@3.14.4-1
+    PkgName: libpython3.14-stdlib
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/libpython3.14-stdlib@3.14.4-1?arch=amd64&distro=ubuntu-26.04
+      UID: 8841f0bbc38a028c
+    InstalledVersion: 3.14.4-1
+    FixedVersion: 3.14.4-1ubuntu0.1
+    Status: fixed
+    Layer:
+      Digest: sha256:b0113d728796bced1de5d9be3ee71a41fa9ce58cb8e8afb7b978173c12b34a64
+      DiffID: sha256:cea9f9db5d3f4c32d71be9540d330b45d2665b910909e717da85e7ebdd721598
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-4786
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:34d6a12dde5f6fa0f3f5a34a7319d36ca0c43fcbd443b0ba6e20f5c6f09e834d
+    Title: 'python: cpython: Python: Arbitrary code execution via command injection in webbrowser.open() API'
+    Description: "Mitgation of\_CVE-2026-4519 was incomplete. If the URL contained \"%action\" the mitigation could be bypassed for certain browser types the \"webbrowser.open()\" API could have commands injected into the underlying shell. See\_CVE-2026-4519 for details."
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-77
+    - CWE-88
+    VendorSeverity:
+      alma: 3
+      amazon: 3
+      bitnami: 3
+      oracle-oval: 3
+      photon: 3
+      redhat: 3
+      rocky: 3
+      ubuntu: 2
+    CVSS:
+      bitnami:
+        V40Vector: CVSS:4.0/AV:L/AC:L/AT:P/PR:N/UI:A/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N
+        V40Score: 7
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:L
+        V3Score: 7.1
+    References:
+    - https://access.redhat.com/errata/RHSA-2026:10117
+    - https://access.redhat.com/errata/RHSA-2026:10140
+    - https://access.redhat.com/errata/RHSA-2026:10141
+    - https://access.redhat.com/errata/RHSA-2026:10711
+    - https://access.redhat.com/errata/RHSA-2026:10745
+    - https://access.redhat.com/errata/RHSA-2026:10774
+    - https://access.redhat.com/errata/RHSA-2026:10949
+    - https://access.redhat.com/errata/RHSA-2026:10950
+    - https://access.redhat.com/errata/RHSA-2026:11062
+    - https://access.redhat.com/errata/RHSA-2026:11077
+    - https://access.redhat.com/errata/RHSA-2026:11768
+    - https://access.redhat.com/errata/RHSA-2026:13692
+    - https://access.redhat.com/errata/RHSA-2026:13812
+    - https://access.redhat.com/errata/RHSA-2026:14652
+    - https://access.redhat.com/errata/RHSA-2026:14653
+    - https://access.redhat.com/errata/RHSA-2026:14656
+    - https://access.redhat.com/errata/RHSA-2026:16699
+    - https://access.redhat.com/errata/RHSA-2026:17525
+    - https://access.redhat.com/errata/RHSA-2026:17619
+    - https://access.redhat.com/errata/RHSA-2026:19019
+    - https://access.redhat.com/errata/RHSA-2026:19064
+    - https://access.redhat.com/errata/RHSA-2026:19175
+    - https://access.redhat.com/errata/RHSA-2026:19176
+    - https://access.redhat.com/errata/RHSA-2026:19177
+    - https://access.redhat.com/errata/RHSA-2026:19216
+    - https://access.redhat.com/errata/RHSA-2026:19549
+    - https://access.redhat.com/errata/RHSA-2026:19570
+    - https://access.redhat.com/errata/RHSA-2026:19571
+    - https://access.redhat.com/errata/RHSA-2026:19576
+    - https://access.redhat.com/errata/RHSA-2026:19589
+    - https://access.redhat.com/errata/RHSA-2026:19590
+    - https://access.redhat.com/errata/RHSA-2026:21275
+    - https://access.redhat.com/errata/RHSA-2026:21682
+    - https://access.redhat.com/errata/RHSA-2026:22144
+    - https://access.redhat.com/errata/RHSA-2026:25096
+    - https://access.redhat.com/errata/RHSA-2026:26187
+    - https://access.redhat.com/errata/RHSA-2026:28247
+    - https://access.redhat.com/errata/RHSA-2026:28581
+    - https://access.redhat.com/errata/RHSA-2026:30078
+    - https://access.redhat.com/errata/RHSA-2026:30087
+    - https://access.redhat.com/errata/RHSA-2026:30088
+    - https://access.redhat.com/errata/RHSA-2026:30089
+    - https://access.redhat.com/errata/RHSA-2026:35838
+    - https://access.redhat.com/errata/RHSA-2026:8822
+    - https://access.redhat.com/errata/RHSA-2026:8824
+    - https://access.redhat.com/errata/RHSA-2026:9228
+    - https://access.redhat.com/security/cve/CVE-2026-4786
+    - https://bugzilla.redhat.com/2458049
+    - https://bugzilla.redhat.com/2460869
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2449649
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2457932
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2458049
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4519
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4786
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-6100
+    - https://errata.almalinux.org/10/ALSA-2026-28581.html
+    - https://errata.rockylinux.org/RLSA-2026:19216
+    - https://github.com/python/cpython/commit/28b4ad38067bbdad34edfcd03ad2de5f06387e53
+    - https://github.com/python/cpython/commit/c5767a72838a8dda9d6dc5d3558075b055c56bca
+    - https://github.com/python/cpython/commit/d22922c8a7958353689dc4763dd72da2dea03fff
+    - https://github.com/python/cpython/commit/d6d68494be70bdbda20f89f83801ba52ec37daa4
+    - https://github.com/python/cpython/commit/f4654824ae0850ac87227fb270f9057477946769
+    - https://github.com/python/cpython/issues/148169
+    - https://github.com/python/cpython/pull/148170
+    - https://linux.oracle.com/cve/CVE-2026-4786.html
+    - https://linux.oracle.com/errata/ELSA-2026-28247.html
+    - https://mail.python.org/archives/list/security-announce@python.org/thread/JQDUNJVB4AQNTJECSUKOBDU3XCJIPSE5/
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-4786
+    - https://security.access.redhat.com/data/csaf/v2/vex/2026/cve-2026-4786.json
+    - https://ubuntu.com/security/notices/USN-8509-1
+    - https://www.cve.org/CVERecord?id=CVE-2026-4786
+    PublishedDate: '2026-04-13T22:16:30.413Z'
+    LastModifiedDate: '2026-07-06T13:17:02.897Z'
+  - VulnerabilityID: CVE-2026-5713
+    PkgID: libpython3.14-stdlib@3.14.4-1
+    PkgName: libpython3.14-stdlib
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/libpython3.14-stdlib@3.14.4-1?arch=amd64&distro=ubuntu-26.04
+      UID: 8841f0bbc38a028c
+    InstalledVersion: 3.14.4-1
+    FixedVersion: 3.14.4-1ubuntu0.1
+    Status: fixed
+    Layer:
+      Digest: sha256:b0113d728796bced1de5d9be3ee71a41fa9ce58cb8e8afb7b978173c12b34a64
+      DiffID: sha256:cea9f9db5d3f4c32d71be9540d330b45d2665b910909e717da85e7ebdd721598
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-5713
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:b1ba57b788c223f9ec8bf25443c22fdede6204e75751c63958376081b70d3118
+    Title: 'python: Python: Information disclosure and arbitrary code execution via remote debugging with a malicious process.'
+    Description: The "profiling.sampling" module (Python 3.15+) and "asyncio introspection capabilities" (3.14+, "python -m asyncio ps" and "python -m asyncio pstree") features could be used to read and write addresses in a privileged process if that process connected to a malicious or "infected" Python process via the remote debugging feature. This vulnerability requires persistently and repeatedly connecting to the process to be exploited, even after the connecting process crashes with high likelihood due to ASLR.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-121
+    - CWE-125
+    VendorSeverity:
+      alma: 3
+      amazon: 2
+      bitnami: 2
+      oracle-oval: 3
+      redhat: 2
+      rocky: 3
+      ubuntu: 2
+    CVSS:
+      bitnami:
+        V40Vector: CVSS:4.0/AV:L/AC:H/AT:P/PR:H/UI:A/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N
+        V40Score: 5.3
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:H/I:H/A:N
+        V3Score: 6
+    References:
+    - http://www.openwall.com/lists/oss-security/2026/04/15/6
+    - https://access.redhat.com/errata/RHSA-2026:19019
+    - https://access.redhat.com/security/cve/CVE-2026-5713
+    - https://bugzilla.redhat.com/2431367
+    - https://bugzilla.redhat.com/2444691
+    - https://bugzilla.redhat.com/2448168
+    - https://bugzilla.redhat.com/2448181
+    - https://bugzilla.redhat.com/2449649
+    - https://bugzilla.redhat.com/2457409
+    - https://bugzilla.redhat.com/2457932
+    - https://bugzilla.redhat.com/2458049
+    - https://bugzilla.redhat.com/2458239
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2431367
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2444691
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2448168
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2448181
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2449649
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2457409
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2457932
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2458049
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2458239
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-0865
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-1502
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-2297
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-3644
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4224
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4519
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4786
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-5713
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-6100
+    - https://errata.almalinux.org/10/ALSA-2026-19019.html
+    - https://errata.rockylinux.org/RLSA-2026:19176
+    - https://github.com/python/cpython/commit/289fd2c97a7e5aecb8b69f94f5e838ccfeee7e67
+    - https://github.com/python/cpython/commit/316f6265b7f9ca4ffed5346b747475ef1943f35d
+    - https://github.com/python/cpython/issues/148178
+    - https://github.com/python/cpython/pull/148187
+    - https://linux.oracle.com/cve/CVE-2026-5713.html
+    - https://linux.oracle.com/errata/ELSA-2026-19176.html
+    - https://mail.python.org/archives/list/security-announce@python.org/thread/OG4RHARYSNIE22GGOMVMCRH76L5HKPLM/
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-5713
+    - https://ubuntu.com/security/notices/USN-8509-1
+    - https://www.cve.org/CVERecord?id=CVE-2026-5713
+    PublishedDate: '2026-04-14T16:16:48.717Z'
+    LastModifiedDate: '2026-06-17T10:59:32.743Z'
+  - VulnerabilityID: CVE-2026-6019
+    PkgID: libpython3.14-stdlib@3.14.4-1
+    PkgName: libpython3.14-stdlib
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/libpython3.14-stdlib@3.14.4-1?arch=amd64&distro=ubuntu-26.04
+      UID: 8841f0bbc38a028c
+    InstalledVersion: 3.14.4-1
+    FixedVersion: 3.14.4-1ubuntu0.1
+    Status: fixed
+    Layer:
+      Digest: sha256:b0113d728796bced1de5d9be3ee71a41fa9ce58cb8e8afb7b978173c12b34a64
+      DiffID: sha256:cea9f9db5d3f4c32d71be9540d330b45d2665b910909e717da85e7ebdd721598
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-6019
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:c3026cb5d16ec2bcb75c27e6dac147fcfb301beac9469adccb6b4dd4a5832999
+    Title: 'python: Python: Cross-Site Scripting (XSS) vulnerability in http.cookies module'
+    Description: http.cookies.Morsel.js_output() returns an inline <script> snippet and only escapes " for JavaScript string context. It does not neutralize the HTML parser-sensitive sequence </script> inside the generated script element. Mitigation base64-encodes the cookie value to disallow escaping using cookie value.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-150
+    - CWE-116
+    VendorSeverity:
+      alma: 3
+      amazon: 2
+      bitnami: 1
+      nvd: 2
+      oracle-oval: 3
+      photon: 2
+      redhat: 2
+      rocky: 3
+      ubuntu: 2
+    CVSS:
+      bitnami:
+        V40Vector: CVSS:4.0/AV:N/AC:L/AT:P/PR:H/UI:N/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N
+        V40Score: 2.1
+      nvd:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N
+        V3Score: 6.1
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:N
+        V3Score: 6.8
+    References:
+    - https://access.redhat.com/errata/RHSA-2026:28581
+    - https://access.redhat.com/security/cve/CVE-2026-6019
+    - https://bugzilla.redhat.com/2458049
+    - https://bugzilla.redhat.com/2460869
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2458049
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2460869
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4786
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-6019
+    - https://errata.almalinux.org/10/ALSA-2026-28581.html
+    - https://errata.rockylinux.org/RLSA-2026:28247
+    - https://github.com/python/cpython/commit/3c59b8b53fc75c7f9578d16fb8201ceb43e8f76c
+    - https://github.com/python/cpython/commit/76b3923d688c0efc580658476c5f525ec8735104
+    - https://github.com/python/cpython/commit/f795e042043dfe26c42e1971d4502c1cdc4c65b8
+    - https://github.com/python/cpython/issues/90309
+    - https://github.com/python/cpython/pull/148848
+    - https://linux.oracle.com/cve/CVE-2026-6019.html
+    - https://linux.oracle.com/errata/ELSA-2026-28247.html
+    - https://mail.python.org/archives/list/security-announce@python.org/thread/IVNWGV2BBNC3RHQAFS22UP4DY56SAXX3/
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-6019
+    - https://ubuntu.com/security/notices/USN-8509-1
+    - https://www.cve.org/CVERecord?id=CVE-2026-6019
+    PublishedDate: '2026-04-22T20:16:42.617Z'
+    LastModifiedDate: '2026-06-17T11:00:10.56Z'
+  - VulnerabilityID: CVE-2026-6100
+    PkgID: libpython3.14-stdlib@3.14.4-1
+    PkgName: libpython3.14-stdlib
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/libpython3.14-stdlib@3.14.4-1?arch=amd64&distro=ubuntu-26.04
+      UID: 8841f0bbc38a028c
+    InstalledVersion: 3.14.4-1
+    FixedVersion: 3.14.4-1ubuntu0.1
+    Status: fixed
+    Layer:
+      Digest: sha256:b0113d728796bced1de5d9be3ee71a41fa9ce58cb8e8afb7b978173c12b34a64
+      DiffID: sha256:cea9f9db5d3f4c32d71be9540d330b45d2665b910909e717da85e7ebdd721598
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-6100
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:a840a5490d9a52f08e2fc8623b524fd0e911b1a7f18bbcec3512f62be1ef8e3d
+    Title: 'python: Python: Arbitrary code execution or information disclosure via use-after-free in decompression modules'
+    Description: |-
+      Use-after-free (UAF) was possible in the `lzma.LZMADecompressor`, `bz2.BZ2Decompressor`, and `gzip.GzipFile` when a memory allocation fails with a `MemoryError` and the decompression instance is re-used. This scenario can be triggered if the process is under memory pressure. The fix cleans up the dangling pointer in this specific error condition.
+
+      The vulnerability is only present if the program re-uses decompressor instances across multiple decompression calls even after a `MemoryError` is raised during decompression. Using the helper functions to one-shot decompress data such as `lzma.decompress()`, `bz2.decompress()`, `gzip.decompress()`, and `zlib.decompress()` are not affected as a new decompressor instance is used per call. If the decompressor instance is not re-used after an error condition, this usage is similarly not vulnerable.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-416
+    - CWE-787
+    - CWE-825
+    VendorSeverity:
+      alma: 3
+      amazon: 3
+      bitnami: 4
+      oracle-oval: 3
+      photon: 3
+      redhat: 3
+      rocky: 3
+      ubuntu: 2
+    CVSS:
+      bitnami:
+        V40Vector: CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N
+        V40Score: 9.1
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H
+        V3Score: 8.1
+    References:
+    - http://www.openwall.com/lists/oss-security/2026/04/13/10
+    - https://access.redhat.com/errata/RHSA-2026:10117
+    - https://access.redhat.com/errata/RHSA-2026:10140
+    - https://access.redhat.com/errata/RHSA-2026:10141
+    - https://access.redhat.com/errata/RHSA-2026:10711
+    - https://access.redhat.com/errata/RHSA-2026:10745
+    - https://access.redhat.com/errata/RHSA-2026:10774
+    - https://access.redhat.com/errata/RHSA-2026:10949
+    - https://access.redhat.com/errata/RHSA-2026:10950
+    - https://access.redhat.com/errata/RHSA-2026:11062
+    - https://access.redhat.com/errata/RHSA-2026:11077
+    - https://access.redhat.com/errata/RHSA-2026:11768
+    - https://access.redhat.com/errata/RHSA-2026:13692
+    - https://access.redhat.com/errata/RHSA-2026:13812
+    - https://access.redhat.com/errata/RHSA-2026:14652
+    - https://access.redhat.com/errata/RHSA-2026:14653
+    - https://access.redhat.com/errata/RHSA-2026:14656
+    - https://access.redhat.com/errata/RHSA-2026:16699
+    - https://access.redhat.com/errata/RHSA-2026:17525
+    - https://access.redhat.com/errata/RHSA-2026:17619
+    - https://access.redhat.com/errata/RHSA-2026:19019
+    - https://access.redhat.com/errata/RHSA-2026:19064
+    - https://access.redhat.com/errata/RHSA-2026:19175
+    - https://access.redhat.com/errata/RHSA-2026:19176
+    - https://access.redhat.com/errata/RHSA-2026:19177
+    - https://access.redhat.com/errata/RHSA-2026:19216
+    - https://access.redhat.com/errata/RHSA-2026:19549
+    - https://access.redhat.com/errata/RHSA-2026:19570
+    - https://access.redhat.com/errata/RHSA-2026:19571
+    - https://access.redhat.com/errata/RHSA-2026:19576
+    - https://access.redhat.com/errata/RHSA-2026:19590
+    - https://access.redhat.com/errata/RHSA-2026:21275
+    - https://access.redhat.com/errata/RHSA-2026:21682
+    - https://access.redhat.com/errata/RHSA-2026:25096
+    - https://access.redhat.com/errata/RHSA-2026:26187
+    - https://access.redhat.com/errata/RHSA-2026:30078
+    - https://access.redhat.com/errata/RHSA-2026:30087
+    - https://access.redhat.com/errata/RHSA-2026:30088
+    - https://access.redhat.com/errata/RHSA-2026:30089
+    - https://access.redhat.com/errata/RHSA-2026:8822
+    - https://access.redhat.com/errata/RHSA-2026:8824
+    - https://access.redhat.com/errata/RHSA-2026:9228
+    - https://access.redhat.com/security/cve/CVE-2026-6100
+    - https://bugzilla.redhat.com/2395108
+    - https://bugzilla.redhat.com/2408891
+    - https://bugzilla.redhat.com/2418084
+    - https://bugzilla.redhat.com/2431366
+    - https://bugzilla.redhat.com/2431374
+    - https://bugzilla.redhat.com/2444691
+    - https://bugzilla.redhat.com/2448168
+    - https://bugzilla.redhat.com/2448181
+    - https://bugzilla.redhat.com/2449649
+    - https://bugzilla.redhat.com/2457409
+    - https://bugzilla.redhat.com/2457932
+    - https://bugzilla.redhat.com/2458049
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2449649
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2457932
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2458049
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4519
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4786
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-6100
+    - https://errata.almalinux.org/10/ALSA-2026-19064.html
+    - https://errata.rockylinux.org/RLSA-2026:19216
+    - https://github.com/python/cpython/commit/47128e64f98c3a20271138a98c2922bea2a3ee0e
+    - https://github.com/python/cpython/commit/6a5f79c8d7bbf22b083b240910c7a8781a59437d
+    - https://github.com/python/cpython/commit/8fc66aef6d7b3ae58f43f5c66f9366cc8cbbfcd2
+    - https://github.com/python/cpython/commit/c3cf71c3366fe49acb776a639405c0eea6169c20
+    - https://github.com/python/cpython/commit/e20c6c9667c99ecaab96e1a2b3767082841ffc8b
+    - https://github.com/python/cpython/issues/148395
+    - https://github.com/python/cpython/pull/148396
+    - https://linux.oracle.com/cve/CVE-2026-6100.html
+    - https://linux.oracle.com/errata/ELSA-2026-19216.html
+    - https://mail.python.org/archives/list/security-announce@python.org/thread/HTWB2Z6KT5QQX4RYEZAFININDHNOSIF3/
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-6100
+    - https://security.access.redhat.com/data/csaf/v2/vex/2026/cve-2026-6100.json
+    - https://ubuntu.com/security/notices/USN-8509-1
+    - https://www.cve.org/CVERecord?id=CVE-2026-6100
+    PublishedDate: '2026-04-13T18:16:31.297Z'
+    LastModifiedDate: '2026-06-30T03:21:11.023Z'
+  - VulnerabilityID: CVE-2026-7774
+    PkgID: libpython3.14-stdlib@3.14.4-1
+    PkgName: libpython3.14-stdlib
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/libpython3.14-stdlib@3.14.4-1?arch=amd64&distro=ubuntu-26.04
+      UID: 8841f0bbc38a028c
+    InstalledVersion: 3.14.4-1
+    FixedVersion: 3.14.4-1ubuntu0.1
+    Status: fixed
+    Layer:
+      Digest: sha256:b0113d728796bced1de5d9be3ee71a41fa9ce58cb8e8afb7b978173c12b34a64
+      DiffID: sha256:cea9f9db5d3f4c32d71be9540d330b45d2665b910909e717da85e7ebdd721598
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-7774
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:22fc560e905bd527c58fa4cdf2a2744718c62d5fa462661103e91f2d401f9d30
+    Title: 'python: CPython: Python tarfile: Arbitrary file write via crafted link entries'
+    Description: tarfile.data_filter could be bypassed using crafted link entries, including symlinks with empty or directory-like names, to redirect later archive members outside the intended extraction directory. This allowed a malicious tar archive to cause tarfile.extractall() to write files outside the destination directory, subject to the permissions of the extracting process.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-22
+    VendorSeverity:
+      bitnami: 2
+      redhat: 2
+      ubuntu: 2
+    CVSS:
+      bitnami:
+        V40Vector: CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:A/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N
+        V40Score: 6.9
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:N
+        V3Score: 6.5
+    References:
+    - http://www.openwall.com/lists/oss-security/2026/06/04/9
+    - https://access.redhat.com/security/cve/CVE-2026-7774
+    - https://github.com/python/cpython/commit/0478bd83d82b255e0f29f613367a59d261e7eaa2
+    - https://github.com/python/cpython/commit/0d28f5e46e151718972dfabd91205444d0037b6d
+    - https://github.com/python/cpython/commit/578411982c16f753f4893532510099ef665117da
+    - https://github.com/python/cpython/commit/5cf47a248c35c375d610b87b2f72fd1ed454b558
+    - https://github.com/python/cpython/commit/74cca9a92fb7d653e404843a56b8bdc7b0afdbbf
+    - https://github.com/python/cpython/issues/149486
+    - https://github.com/python/cpython/pull/149487
+    - https://mail.python.org/archives/list/security-announce@python.org/thread/4FU62L2M6RMMHT2QPGQNPEHHUND7CEX5/
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-7774
+    - https://ubuntu.com/security/notices/USN-8509-1
+    - https://www.cve.org/CVERecord?id=CVE-2026-7774
+    - https://www.openwall.com/lists/oss-security/2026/06/04/9
+    PublishedDate: '2026-06-04T16:16:42.103Z'
+    LastModifiedDate: '2026-06-17T11:02:56.613Z'
+  - VulnerabilityID: CVE-2026-8328
+    PkgID: libpython3.14-stdlib@3.14.4-1
+    PkgName: libpython3.14-stdlib
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/libpython3.14-stdlib@3.14.4-1?arch=amd64&distro=ubuntu-26.04
+      UID: 8841f0bbc38a028c
+    InstalledVersion: 3.14.4-1
+    FixedVersion: 3.14.4-1ubuntu0.1
+    Status: fixed
+    Layer:
+      Digest: sha256:b0113d728796bced1de5d9be3ee71a41fa9ce58cb8e8afb7b978173c12b34a64
+      DiffID: sha256:cea9f9db5d3f4c32d71be9540d330b45d2665b910909e717da85e7ebdd721598
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-8328
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:de7d9c8432f806dce5e29e502897b59a46c0193771d77e2ea795086c25d4cc86
+    Title: The ftpcp() function in Lib/ftplib.py was not updated when  CVE-2021-4 ...
+    Description: "The ftpcp() function in Lib/ftplib.py was not updated when \nCVE-2021-4189 was fixed. While makepasv() was patched to replace \nserver-supplied PASV host addresses with the actual peer address \n(getpeername()[0]), ftpcp() still calls parse227() directly and passes \nthe raw attacker-controllable IP address and port to target.sendport(). This patch is related to\_CVE-2021-4189."
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-918
+    VendorSeverity:
+      bitnami: 2
+      ubuntu: 2
+    CVSS:
+      bitnami:
+        V40Vector: CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:A/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N
+        V40Score: 5.9
+    References:
+    - https://github.com/python/cpython/commit/2bbcf3fb7a420a05605576c0f9468d4675381b5f
+    - https://github.com/python/cpython/commit/5dadc64673ce875ebfb24163907777dae0f6ca06
+    - https://github.com/python/cpython/commit/7d95a1dc7382b55cba7fdd6a110336077584a4f0
+    - https://github.com/python/cpython/commit/bb3446dda6c49b32e67c11dbbbf221b40be00763
+    - https://github.com/python/cpython/commit/c88704431ea3248ca769384c13856330976fac1d
+    - https://github.com/python/cpython/commit/eac4fe3b2c77693790a5ef7dfab127c1fee81bf9
+    - https://github.com/python/cpython/commit/ef12d0dc824baccf737bba1458e5eed3d1e0fceb
+    - https://github.com/python/cpython/issues/87451
+    - https://github.com/python/cpython/pull/149648
+    - https://mail.python.org/archives/list/security-announce@python.org/thread/ITF2BAPBQEPYK3LDMPRSY435JGNHYNDP/
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-8328
+    - https://ubuntu.com/security/notices/USN-8509-1
+    - https://www.cve.org/CVERecord?id=CVE-2026-8328
+    PublishedDate: '2026-05-13T21:16:50.167Z'
+    LastModifiedDate: '2026-06-30T16:16:56.797Z'
+  - VulnerabilityID: CVE-2026-9669
+    PkgID: libpython3.14-stdlib@3.14.4-1
+    PkgName: libpython3.14-stdlib
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/libpython3.14-stdlib@3.14.4-1?arch=amd64&distro=ubuntu-26.04
+      UID: 8841f0bbc38a028c
+    InstalledVersion: 3.14.4-1
+    FixedVersion: 3.14.4-1ubuntu0.1
+    Status: fixed
+    Layer:
+      Digest: sha256:b0113d728796bced1de5d9be3ee71a41fa9ce58cb8e8afb7b978173c12b34a64
+      DiffID: sha256:cea9f9db5d3f4c32d71be9540d330b45d2665b910909e717da85e7ebdd721598
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-9669
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:b1da784631650026f6af6edb481a7b0220060995a2b289822530d81d481b0e57
+    Title: 'python: Python: Denial of Service via out-of-bounds write in BZ2 decompression'
+    Description: bz2.BZ2Decompressor objects could be reused after a decompression error. If an application caught the resulting OSError and retried with the same decompressor, crafted input could cause the decompressor to resume from an invalid internal state and perform out-of-bounds writes to a stack buffer. This could crash the process when processing untrusted data.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-121
+    VendorSeverity:
+      bitnami: 3
+      redhat: 2
+      ubuntu: 2
+    CVSS:
+      bitnami:
+        V40Vector: CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N
+        V40Score: 8.2
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 5.9
+    References:
+    - http://www.openwall.com/lists/oss-security/2026/06/08/17
+    - https://access.redhat.com/security/cve/CVE-2026-9669
+    - https://github.com/python/cpython/commit/157a5df8cb5d82b33f918a7489e72ce95ceb12b6
+    - https://github.com/python/cpython/commit/5755d0f083949ff3c5bf3a37e673e24e306b036e
+    - https://github.com/python/cpython/commit/619a12b2e545391dc436b3af79dda22337382a6f
+    - https://github.com/python/cpython/commit/d3ca26983dfbccdf609f24ff5877dc3118e4702d
+    - https://github.com/python/cpython/issues/150599
+    - https://github.com/python/cpython/pull/150600
+    - https://mail.python.org/archives/list/security-announce@python.org/thread/DBJZETMGUIFK7DVUWMOXHD3Z6IX2QPSX/
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-9669
+    - https://ubuntu.com/security/notices/USN-8509-1
+    - https://www.cve.org/CVERecord?id=CVE-2026-9669
+    PublishedDate: '2026-06-08T23:17:25.17Z'
+    LastModifiedDate: '2026-06-23T18:18:11.127Z'
   - VulnerabilityID: CVE-2026-27456
     PkgID: libsmartcols1@2.41.3-3ubuntu2
     PkgName: libsmartcols1
@@ -2646,6 +4120,1400 @@
     - https://www.cve.org/CVERecord?id=CVE-2024-56433
     PublishedDate: '2024-12-26T09:15:07.267Z'
     LastModifiedDate: '2026-06-17T08:12:10.903Z'
+  - VulnerabilityID: CVE-2026-1502
+    PkgID: python3.14@3.14.4-1
+    PkgName: python3.14
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/python3.14@3.14.4-1?arch=amd64&distro=ubuntu-26.04
+      UID: 5c38e5558a798bb7
+    InstalledVersion: 3.14.4-1
+    FixedVersion: 3.14.4-1ubuntu0.1
+    Status: fixed
+    Layer:
+      Digest: sha256:b0113d728796bced1de5d9be3ee71a41fa9ce58cb8e8afb7b978173c12b34a64
+      DiffID: sha256:cea9f9db5d3f4c32d71be9540d330b45d2665b910909e717da85e7ebdd721598
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-1502
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:f1e5d70f39c9b60553cfaca1ca41927261c1aa538d454cd21003fa2ba22e6146
+    Title: 'python: Python: HTTP header injection via CR/LF in proxy tunnel headers'
+    Description: CR/LF bytes were not rejected by HTTP client proxy tunnel headers or host.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-93
+    VendorSeverity:
+      alma: 3
+      amazon: 2
+      azure: 2
+      bitnami: 2
+      oracle-oval: 3
+      redhat: 2
+      rocky: 3
+      ubuntu: 2
+    CVSS:
+      bitnami:
+        V40Vector: CVSS:4.0/AV:N/AC:L/AT:P/PR:H/UI:P/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N
+        V40Score: 5.7
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:U/C:N/I:H/A:N
+        V3Score: 4.5
+    References:
+    - http://www.openwall.com/lists/oss-security/2026/04/11/4
+    - https://access.redhat.com/errata/RHSA-2026:19064
+    - https://access.redhat.com/security/cve/CVE-2026-1502
+    - https://bugzilla.redhat.com/2395108
+    - https://bugzilla.redhat.com/2408891
+    - https://bugzilla.redhat.com/2418084
+    - https://bugzilla.redhat.com/2431366
+    - https://bugzilla.redhat.com/2431374
+    - https://bugzilla.redhat.com/2444691
+    - https://bugzilla.redhat.com/2448168
+    - https://bugzilla.redhat.com/2448181
+    - https://bugzilla.redhat.com/2449649
+    - https://bugzilla.redhat.com/2457409
+    - https://bugzilla.redhat.com/2457932
+    - https://bugzilla.redhat.com/2458049
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2395108
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2408891
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2418084
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2431366
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2431374
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2444691
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2448168
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2448181
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2449649
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2457409
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2457932
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2458049
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-13837
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-15282
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-59375
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-6075
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-0672
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-1502
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-2297
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-3644
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4224
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4519
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4786
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-6100
+    - https://errata.almalinux.org/10/ALSA-2026-19064.html
+    - https://errata.rockylinux.org/RLSA-2026:19177
+    - https://github.com/python/cpython/commit/05ed7ce7ae9e17c23a04085b2539fe6d6d3cef69
+    - https://github.com/python/cpython/commit/56b7100b04e44ea27989242b176beb8f016b2c53
+    - https://github.com/python/cpython/commit/58703ec1bdd1eb075e8b01a0c427683ce594dd3e
+    - https://github.com/python/cpython/commit/9e071c9b28c17f347f81b388a003d4eeb3c7a8dd
+    - https://github.com/python/cpython/commit/b1cf9016335cb637c5a425032e8274a224f4b2ed
+    - https://github.com/python/cpython/commit/c00c386faa579ad71196d33408644478488e43ec
+    - https://github.com/python/cpython/issues/146211
+    - https://github.com/python/cpython/pull/146212
+    - https://linux.oracle.com/cve/CVE-2026-1502.html
+    - https://linux.oracle.com/errata/ELSA-2026-19177.html
+    - https://mail.python.org/archives/list/security-announce@python.org/thread/2IVPAEQWUJBCTQZEJEVTYCIKSMQPGRZ3/
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-1502
+    - https://ubuntu.com/security/notices/USN-8509-1
+    - https://www.cve.org/CVERecord?id=CVE-2026-1502
+    PublishedDate: '2026-04-10T18:16:40.97Z'
+    LastModifiedDate: '2026-06-30T16:16:48.007Z'
+  - VulnerabilityID: CVE-2026-3276
+    PkgID: python3.14@3.14.4-1
+    PkgName: python3.14
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/python3.14@3.14.4-1?arch=amd64&distro=ubuntu-26.04
+      UID: 5c38e5558a798bb7
+    InstalledVersion: 3.14.4-1
+    FixedVersion: 3.14.4-1ubuntu0.1
+    Status: fixed
+    Layer:
+      Digest: sha256:b0113d728796bced1de5d9be3ee71a41fa9ce58cb8e8afb7b978173c12b34a64
+      DiffID: sha256:cea9f9db5d3f4c32d71be9540d330b45d2665b910909e717da85e7ebdd721598
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-3276
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:e1d6e62efe8d7de15ffda11a8f005c7a5421afc8ee3b92f4eec711fd93dab050
+    Title: 'python: Python unicodedata: Denial of Service due to excessive CPU consumption'
+    Description: |-
+      unicodedata.normalize() can take excessive CPU time when processing
+      specially crafted Unicode input containing long runs of combining characters
+      with alternating Canonical Combining Class values.
+      This affects all normalization forms.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-407
+    VendorSeverity:
+      bitnami: 2
+      redhat: 2
+      ubuntu: 2
+    CVSS:
+      bitnami:
+        V40Vector: CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N
+        V40Score: 6.3
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L
+        V3Score: 5.3
+    References:
+    - http://www.openwall.com/lists/oss-security/2026/06/03/15
+    - https://access.redhat.com/security/cve/CVE-2026-3276
+    - https://github.com/python/cpython/commit/6b505d1f41f8f3ea0fe5a4786d3a8fff1875cfc0
+    - https://github.com/python/cpython/commit/90748760d38ca3ac5fc6788a69becab905c95598
+    - https://github.com/python/cpython/commit/991224b1e8311c85f198f6dd8208bf8cff7fc26f
+    - https://github.com/python/cpython/commit/ba785b88add96acbf403d65cb157fb2743a33a32
+    - https://github.com/python/cpython/commit/c5512bd7c1dc28055660565275012766941d3066
+    - https://github.com/python/cpython/issues/149079
+    - https://github.com/python/cpython/pull/149080
+    - https://mail.python.org/archives/list/security-announce@python.org/thread/PP5HB4K7727OBBM76KA2ILID76K3OZGZ/
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-3276
+    - https://ubuntu.com/security/notices/USN-8509-1
+    - https://www.cve.org/CVERecord?id=CVE-2026-3276
+    - https://www.openwall.com/lists/oss-security/2026/06/03/15
+    PublishedDate: '2026-06-03T16:16:29.253Z'
+    LastModifiedDate: '2026-06-17T10:43:19.58Z'
+  - VulnerabilityID: CVE-2026-4786
+    PkgID: python3.14@3.14.4-1
+    PkgName: python3.14
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/python3.14@3.14.4-1?arch=amd64&distro=ubuntu-26.04
+      UID: 5c38e5558a798bb7
+    InstalledVersion: 3.14.4-1
+    FixedVersion: 3.14.4-1ubuntu0.1
+    Status: fixed
+    Layer:
+      Digest: sha256:b0113d728796bced1de5d9be3ee71a41fa9ce58cb8e8afb7b978173c12b34a64
+      DiffID: sha256:cea9f9db5d3f4c32d71be9540d330b45d2665b910909e717da85e7ebdd721598
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-4786
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:edc41b80bef8b851661b3df0f45f8b4f813cee9ccb3ba8108208efac9709a768
+    Title: 'python: cpython: Python: Arbitrary code execution via command injection in webbrowser.open() API'
+    Description: "Mitgation of\_CVE-2026-4519 was incomplete. If the URL contained \"%action\" the mitigation could be bypassed for certain browser types the \"webbrowser.open()\" API could have commands injected into the underlying shell. See\_CVE-2026-4519 for details."
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-77
+    - CWE-88
+    VendorSeverity:
+      alma: 3
+      amazon: 3
+      bitnami: 3
+      oracle-oval: 3
+      photon: 3
+      redhat: 3
+      rocky: 3
+      ubuntu: 2
+    CVSS:
+      bitnami:
+        V40Vector: CVSS:4.0/AV:L/AC:L/AT:P/PR:N/UI:A/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N
+        V40Score: 7
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:L
+        V3Score: 7.1
+    References:
+    - https://access.redhat.com/errata/RHSA-2026:10117
+    - https://access.redhat.com/errata/RHSA-2026:10140
+    - https://access.redhat.com/errata/RHSA-2026:10141
+    - https://access.redhat.com/errata/RHSA-2026:10711
+    - https://access.redhat.com/errata/RHSA-2026:10745
+    - https://access.redhat.com/errata/RHSA-2026:10774
+    - https://access.redhat.com/errata/RHSA-2026:10949
+    - https://access.redhat.com/errata/RHSA-2026:10950
+    - https://access.redhat.com/errata/RHSA-2026:11062
+    - https://access.redhat.com/errata/RHSA-2026:11077
+    - https://access.redhat.com/errata/RHSA-2026:11768
+    - https://access.redhat.com/errata/RHSA-2026:13692
+    - https://access.redhat.com/errata/RHSA-2026:13812
+    - https://access.redhat.com/errata/RHSA-2026:14652
+    - https://access.redhat.com/errata/RHSA-2026:14653
+    - https://access.redhat.com/errata/RHSA-2026:14656
+    - https://access.redhat.com/errata/RHSA-2026:16699
+    - https://access.redhat.com/errata/RHSA-2026:17525
+    - https://access.redhat.com/errata/RHSA-2026:17619
+    - https://access.redhat.com/errata/RHSA-2026:19019
+    - https://access.redhat.com/errata/RHSA-2026:19064
+    - https://access.redhat.com/errata/RHSA-2026:19175
+    - https://access.redhat.com/errata/RHSA-2026:19176
+    - https://access.redhat.com/errata/RHSA-2026:19177
+    - https://access.redhat.com/errata/RHSA-2026:19216
+    - https://access.redhat.com/errata/RHSA-2026:19549
+    - https://access.redhat.com/errata/RHSA-2026:19570
+    - https://access.redhat.com/errata/RHSA-2026:19571
+    - https://access.redhat.com/errata/RHSA-2026:19576
+    - https://access.redhat.com/errata/RHSA-2026:19589
+    - https://access.redhat.com/errata/RHSA-2026:19590
+    - https://access.redhat.com/errata/RHSA-2026:21275
+    - https://access.redhat.com/errata/RHSA-2026:21682
+    - https://access.redhat.com/errata/RHSA-2026:22144
+    - https://access.redhat.com/errata/RHSA-2026:25096
+    - https://access.redhat.com/errata/RHSA-2026:26187
+    - https://access.redhat.com/errata/RHSA-2026:28247
+    - https://access.redhat.com/errata/RHSA-2026:28581
+    - https://access.redhat.com/errata/RHSA-2026:30078
+    - https://access.redhat.com/errata/RHSA-2026:30087
+    - https://access.redhat.com/errata/RHSA-2026:30088
+    - https://access.redhat.com/errata/RHSA-2026:30089
+    - https://access.redhat.com/errata/RHSA-2026:35838
+    - https://access.redhat.com/errata/RHSA-2026:8822
+    - https://access.redhat.com/errata/RHSA-2026:8824
+    - https://access.redhat.com/errata/RHSA-2026:9228
+    - https://access.redhat.com/security/cve/CVE-2026-4786
+    - https://bugzilla.redhat.com/2458049
+    - https://bugzilla.redhat.com/2460869
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2449649
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2457932
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2458049
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4519
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4786
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-6100
+    - https://errata.almalinux.org/10/ALSA-2026-28581.html
+    - https://errata.rockylinux.org/RLSA-2026:19216
+    - https://github.com/python/cpython/commit/28b4ad38067bbdad34edfcd03ad2de5f06387e53
+    - https://github.com/python/cpython/commit/c5767a72838a8dda9d6dc5d3558075b055c56bca
+    - https://github.com/python/cpython/commit/d22922c8a7958353689dc4763dd72da2dea03fff
+    - https://github.com/python/cpython/commit/d6d68494be70bdbda20f89f83801ba52ec37daa4
+    - https://github.com/python/cpython/commit/f4654824ae0850ac87227fb270f9057477946769
+    - https://github.com/python/cpython/issues/148169
+    - https://github.com/python/cpython/pull/148170
+    - https://linux.oracle.com/cve/CVE-2026-4786.html
+    - https://linux.oracle.com/errata/ELSA-2026-28247.html
+    - https://mail.python.org/archives/list/security-announce@python.org/thread/JQDUNJVB4AQNTJECSUKOBDU3XCJIPSE5/
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-4786
+    - https://security.access.redhat.com/data/csaf/v2/vex/2026/cve-2026-4786.json
+    - https://ubuntu.com/security/notices/USN-8509-1
+    - https://www.cve.org/CVERecord?id=CVE-2026-4786
+    PublishedDate: '2026-04-13T22:16:30.413Z'
+    LastModifiedDate: '2026-07-06T13:17:02.897Z'
+  - VulnerabilityID: CVE-2026-5713
+    PkgID: python3.14@3.14.4-1
+    PkgName: python3.14
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/python3.14@3.14.4-1?arch=amd64&distro=ubuntu-26.04
+      UID: 5c38e5558a798bb7
+    InstalledVersion: 3.14.4-1
+    FixedVersion: 3.14.4-1ubuntu0.1
+    Status: fixed
+    Layer:
+      Digest: sha256:b0113d728796bced1de5d9be3ee71a41fa9ce58cb8e8afb7b978173c12b34a64
+      DiffID: sha256:cea9f9db5d3f4c32d71be9540d330b45d2665b910909e717da85e7ebdd721598
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-5713
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:b54503e9ca5408a34f2cbd4d07aa0d4f8fdf34aa257ef0ef23d74140a78fa7ea
+    Title: 'python: Python: Information disclosure and arbitrary code execution via remote debugging with a malicious process.'
+    Description: The "profiling.sampling" module (Python 3.15+) and "asyncio introspection capabilities" (3.14+, "python -m asyncio ps" and "python -m asyncio pstree") features could be used to read and write addresses in a privileged process if that process connected to a malicious or "infected" Python process via the remote debugging feature. This vulnerability requires persistently and repeatedly connecting to the process to be exploited, even after the connecting process crashes with high likelihood due to ASLR.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-121
+    - CWE-125
+    VendorSeverity:
+      alma: 3
+      amazon: 2
+      bitnami: 2
+      oracle-oval: 3
+      redhat: 2
+      rocky: 3
+      ubuntu: 2
+    CVSS:
+      bitnami:
+        V40Vector: CVSS:4.0/AV:L/AC:H/AT:P/PR:H/UI:A/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N
+        V40Score: 5.3
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:H/I:H/A:N
+        V3Score: 6
+    References:
+    - http://www.openwall.com/lists/oss-security/2026/04/15/6
+    - https://access.redhat.com/errata/RHSA-2026:19019
+    - https://access.redhat.com/security/cve/CVE-2026-5713
+    - https://bugzilla.redhat.com/2431367
+    - https://bugzilla.redhat.com/2444691
+    - https://bugzilla.redhat.com/2448168
+    - https://bugzilla.redhat.com/2448181
+    - https://bugzilla.redhat.com/2449649
+    - https://bugzilla.redhat.com/2457409
+    - https://bugzilla.redhat.com/2457932
+    - https://bugzilla.redhat.com/2458049
+    - https://bugzilla.redhat.com/2458239
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2431367
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2444691
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2448168
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2448181
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2449649
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2457409
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2457932
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2458049
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2458239
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-0865
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-1502
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-2297
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-3644
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4224
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4519
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4786
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-5713
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-6100
+    - https://errata.almalinux.org/10/ALSA-2026-19019.html
+    - https://errata.rockylinux.org/RLSA-2026:19176
+    - https://github.com/python/cpython/commit/289fd2c97a7e5aecb8b69f94f5e838ccfeee7e67
+    - https://github.com/python/cpython/commit/316f6265b7f9ca4ffed5346b747475ef1943f35d
+    - https://github.com/python/cpython/issues/148178
+    - https://github.com/python/cpython/pull/148187
+    - https://linux.oracle.com/cve/CVE-2026-5713.html
+    - https://linux.oracle.com/errata/ELSA-2026-19176.html
+    - https://mail.python.org/archives/list/security-announce@python.org/thread/OG4RHARYSNIE22GGOMVMCRH76L5HKPLM/
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-5713
+    - https://ubuntu.com/security/notices/USN-8509-1
+    - https://www.cve.org/CVERecord?id=CVE-2026-5713
+    PublishedDate: '2026-04-14T16:16:48.717Z'
+    LastModifiedDate: '2026-06-17T10:59:32.743Z'
+  - VulnerabilityID: CVE-2026-6019
+    PkgID: python3.14@3.14.4-1
+    PkgName: python3.14
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/python3.14@3.14.4-1?arch=amd64&distro=ubuntu-26.04
+      UID: 5c38e5558a798bb7
+    InstalledVersion: 3.14.4-1
+    FixedVersion: 3.14.4-1ubuntu0.1
+    Status: fixed
+    Layer:
+      Digest: sha256:b0113d728796bced1de5d9be3ee71a41fa9ce58cb8e8afb7b978173c12b34a64
+      DiffID: sha256:cea9f9db5d3f4c32d71be9540d330b45d2665b910909e717da85e7ebdd721598
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-6019
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:9981bce303d07d32f3681f536514b17fbbd3d69e2166ef17892ad85e53a6328b
+    Title: 'python: Python: Cross-Site Scripting (XSS) vulnerability in http.cookies module'
+    Description: http.cookies.Morsel.js_output() returns an inline <script> snippet and only escapes " for JavaScript string context. It does not neutralize the HTML parser-sensitive sequence </script> inside the generated script element. Mitigation base64-encodes the cookie value to disallow escaping using cookie value.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-150
+    - CWE-116
+    VendorSeverity:
+      alma: 3
+      amazon: 2
+      bitnami: 1
+      nvd: 2
+      oracle-oval: 3
+      photon: 2
+      redhat: 2
+      rocky: 3
+      ubuntu: 2
+    CVSS:
+      bitnami:
+        V40Vector: CVSS:4.0/AV:N/AC:L/AT:P/PR:H/UI:N/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N
+        V40Score: 2.1
+      nvd:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N
+        V3Score: 6.1
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:N
+        V3Score: 6.8
+    References:
+    - https://access.redhat.com/errata/RHSA-2026:28581
+    - https://access.redhat.com/security/cve/CVE-2026-6019
+    - https://bugzilla.redhat.com/2458049
+    - https://bugzilla.redhat.com/2460869
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2458049
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2460869
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4786
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-6019
+    - https://errata.almalinux.org/10/ALSA-2026-28581.html
+    - https://errata.rockylinux.org/RLSA-2026:28247
+    - https://github.com/python/cpython/commit/3c59b8b53fc75c7f9578d16fb8201ceb43e8f76c
+    - https://github.com/python/cpython/commit/76b3923d688c0efc580658476c5f525ec8735104
+    - https://github.com/python/cpython/commit/f795e042043dfe26c42e1971d4502c1cdc4c65b8
+    - https://github.com/python/cpython/issues/90309
+    - https://github.com/python/cpython/pull/148848
+    - https://linux.oracle.com/cve/CVE-2026-6019.html
+    - https://linux.oracle.com/errata/ELSA-2026-28247.html
+    - https://mail.python.org/archives/list/security-announce@python.org/thread/IVNWGV2BBNC3RHQAFS22UP4DY56SAXX3/
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-6019
+    - https://ubuntu.com/security/notices/USN-8509-1
+    - https://www.cve.org/CVERecord?id=CVE-2026-6019
+    PublishedDate: '2026-04-22T20:16:42.617Z'
+    LastModifiedDate: '2026-06-17T11:00:10.56Z'
+  - VulnerabilityID: CVE-2026-6100
+    PkgID: python3.14@3.14.4-1
+    PkgName: python3.14
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/python3.14@3.14.4-1?arch=amd64&distro=ubuntu-26.04
+      UID: 5c38e5558a798bb7
+    InstalledVersion: 3.14.4-1
+    FixedVersion: 3.14.4-1ubuntu0.1
+    Status: fixed
+    Layer:
+      Digest: sha256:b0113d728796bced1de5d9be3ee71a41fa9ce58cb8e8afb7b978173c12b34a64
+      DiffID: sha256:cea9f9db5d3f4c32d71be9540d330b45d2665b910909e717da85e7ebdd721598
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-6100
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:414ccec3317b82a3113afdb53f2c9eebd009b945ec61491cfbe55096c1cc5a27
+    Title: 'python: Python: Arbitrary code execution or information disclosure via use-after-free in decompression modules'
+    Description: |-
+      Use-after-free (UAF) was possible in the `lzma.LZMADecompressor`, `bz2.BZ2Decompressor`, and `gzip.GzipFile` when a memory allocation fails with a `MemoryError` and the decompression instance is re-used. This scenario can be triggered if the process is under memory pressure. The fix cleans up the dangling pointer in this specific error condition.
+
+      The vulnerability is only present if the program re-uses decompressor instances across multiple decompression calls even after a `MemoryError` is raised during decompression. Using the helper functions to one-shot decompress data such as `lzma.decompress()`, `bz2.decompress()`, `gzip.decompress()`, and `zlib.decompress()` are not affected as a new decompressor instance is used per call. If the decompressor instance is not re-used after an error condition, this usage is similarly not vulnerable.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-416
+    - CWE-787
+    - CWE-825
+    VendorSeverity:
+      alma: 3
+      amazon: 3
+      bitnami: 4
+      oracle-oval: 3
+      photon: 3
+      redhat: 3
+      rocky: 3
+      ubuntu: 2
+    CVSS:
+      bitnami:
+        V40Vector: CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N
+        V40Score: 9.1
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H
+        V3Score: 8.1
+    References:
+    - http://www.openwall.com/lists/oss-security/2026/04/13/10
+    - https://access.redhat.com/errata/RHSA-2026:10117
+    - https://access.redhat.com/errata/RHSA-2026:10140
+    - https://access.redhat.com/errata/RHSA-2026:10141
+    - https://access.redhat.com/errata/RHSA-2026:10711
+    - https://access.redhat.com/errata/RHSA-2026:10745
+    - https://access.redhat.com/errata/RHSA-2026:10774
+    - https://access.redhat.com/errata/RHSA-2026:10949
+    - https://access.redhat.com/errata/RHSA-2026:10950
+    - https://access.redhat.com/errata/RHSA-2026:11062
+    - https://access.redhat.com/errata/RHSA-2026:11077
+    - https://access.redhat.com/errata/RHSA-2026:11768
+    - https://access.redhat.com/errata/RHSA-2026:13692
+    - https://access.redhat.com/errata/RHSA-2026:13812
+    - https://access.redhat.com/errata/RHSA-2026:14652
+    - https://access.redhat.com/errata/RHSA-2026:14653
+    - https://access.redhat.com/errata/RHSA-2026:14656
+    - https://access.redhat.com/errata/RHSA-2026:16699
+    - https://access.redhat.com/errata/RHSA-2026:17525
+    - https://access.redhat.com/errata/RHSA-2026:17619
+    - https://access.redhat.com/errata/RHSA-2026:19019
+    - https://access.redhat.com/errata/RHSA-2026:19064
+    - https://access.redhat.com/errata/RHSA-2026:19175
+    - https://access.redhat.com/errata/RHSA-2026:19176
+    - https://access.redhat.com/errata/RHSA-2026:19177
+    - https://access.redhat.com/errata/RHSA-2026:19216
+    - https://access.redhat.com/errata/RHSA-2026:19549
+    - https://access.redhat.com/errata/RHSA-2026:19570
+    - https://access.redhat.com/errata/RHSA-2026:19571
+    - https://access.redhat.com/errata/RHSA-2026:19576
+    - https://access.redhat.com/errata/RHSA-2026:19590
+    - https://access.redhat.com/errata/RHSA-2026:21275
+    - https://access.redhat.com/errata/RHSA-2026:21682
+    - https://access.redhat.com/errata/RHSA-2026:25096
+    - https://access.redhat.com/errata/RHSA-2026:26187
+    - https://access.redhat.com/errata/RHSA-2026:30078
+    - https://access.redhat.com/errata/RHSA-2026:30087
+    - https://access.redhat.com/errata/RHSA-2026:30088
+    - https://access.redhat.com/errata/RHSA-2026:30089
+    - https://access.redhat.com/errata/RHSA-2026:8822
+    - https://access.redhat.com/errata/RHSA-2026:8824
+    - https://access.redhat.com/errata/RHSA-2026:9228
+    - https://access.redhat.com/security/cve/CVE-2026-6100
+    - https://bugzilla.redhat.com/2395108
+    - https://bugzilla.redhat.com/2408891
+    - https://bugzilla.redhat.com/2418084
+    - https://bugzilla.redhat.com/2431366
+    - https://bugzilla.redhat.com/2431374
+    - https://bugzilla.redhat.com/2444691
+    - https://bugzilla.redhat.com/2448168
+    - https://bugzilla.redhat.com/2448181
+    - https://bugzilla.redhat.com/2449649
+    - https://bugzilla.redhat.com/2457409
+    - https://bugzilla.redhat.com/2457932
+    - https://bugzilla.redhat.com/2458049
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2449649
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2457932
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2458049
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4519
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4786
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-6100
+    - https://errata.almalinux.org/10/ALSA-2026-19064.html
+    - https://errata.rockylinux.org/RLSA-2026:19216
+    - https://github.com/python/cpython/commit/47128e64f98c3a20271138a98c2922bea2a3ee0e
+    - https://github.com/python/cpython/commit/6a5f79c8d7bbf22b083b240910c7a8781a59437d
+    - https://github.com/python/cpython/commit/8fc66aef6d7b3ae58f43f5c66f9366cc8cbbfcd2
+    - https://github.com/python/cpython/commit/c3cf71c3366fe49acb776a639405c0eea6169c20
+    - https://github.com/python/cpython/commit/e20c6c9667c99ecaab96e1a2b3767082841ffc8b
+    - https://github.com/python/cpython/issues/148395
+    - https://github.com/python/cpython/pull/148396
+    - https://linux.oracle.com/cve/CVE-2026-6100.html
+    - https://linux.oracle.com/errata/ELSA-2026-19216.html
+    - https://mail.python.org/archives/list/security-announce@python.org/thread/HTWB2Z6KT5QQX4RYEZAFININDHNOSIF3/
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-6100
+    - https://security.access.redhat.com/data/csaf/v2/vex/2026/cve-2026-6100.json
+    - https://ubuntu.com/security/notices/USN-8509-1
+    - https://www.cve.org/CVERecord?id=CVE-2026-6100
+    PublishedDate: '2026-04-13T18:16:31.297Z'
+    LastModifiedDate: '2026-06-30T03:21:11.023Z'
+  - VulnerabilityID: CVE-2026-7774
+    PkgID: python3.14@3.14.4-1
+    PkgName: python3.14
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/python3.14@3.14.4-1?arch=amd64&distro=ubuntu-26.04
+      UID: 5c38e5558a798bb7
+    InstalledVersion: 3.14.4-1
+    FixedVersion: 3.14.4-1ubuntu0.1
+    Status: fixed
+    Layer:
+      Digest: sha256:b0113d728796bced1de5d9be3ee71a41fa9ce58cb8e8afb7b978173c12b34a64
+      DiffID: sha256:cea9f9db5d3f4c32d71be9540d330b45d2665b910909e717da85e7ebdd721598
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-7774
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:bde45d94f6cd09b2d5e89119e68144ff639b7769783e017e2d7b89a0c6ed01af
+    Title: 'python: CPython: Python tarfile: Arbitrary file write via crafted link entries'
+    Description: tarfile.data_filter could be bypassed using crafted link entries, including symlinks with empty or directory-like names, to redirect later archive members outside the intended extraction directory. This allowed a malicious tar archive to cause tarfile.extractall() to write files outside the destination directory, subject to the permissions of the extracting process.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-22
+    VendorSeverity:
+      bitnami: 2
+      redhat: 2
+      ubuntu: 2
+    CVSS:
+      bitnami:
+        V40Vector: CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:A/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N
+        V40Score: 6.9
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:N
+        V3Score: 6.5
+    References:
+    - http://www.openwall.com/lists/oss-security/2026/06/04/9
+    - https://access.redhat.com/security/cve/CVE-2026-7774
+    - https://github.com/python/cpython/commit/0478bd83d82b255e0f29f613367a59d261e7eaa2
+    - https://github.com/python/cpython/commit/0d28f5e46e151718972dfabd91205444d0037b6d
+    - https://github.com/python/cpython/commit/578411982c16f753f4893532510099ef665117da
+    - https://github.com/python/cpython/commit/5cf47a248c35c375d610b87b2f72fd1ed454b558
+    - https://github.com/python/cpython/commit/74cca9a92fb7d653e404843a56b8bdc7b0afdbbf
+    - https://github.com/python/cpython/issues/149486
+    - https://github.com/python/cpython/pull/149487
+    - https://mail.python.org/archives/list/security-announce@python.org/thread/4FU62L2M6RMMHT2QPGQNPEHHUND7CEX5/
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-7774
+    - https://ubuntu.com/security/notices/USN-8509-1
+    - https://www.cve.org/CVERecord?id=CVE-2026-7774
+    - https://www.openwall.com/lists/oss-security/2026/06/04/9
+    PublishedDate: '2026-06-04T16:16:42.103Z'
+    LastModifiedDate: '2026-06-17T11:02:56.613Z'
+  - VulnerabilityID: CVE-2026-8328
+    PkgID: python3.14@3.14.4-1
+    PkgName: python3.14
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/python3.14@3.14.4-1?arch=amd64&distro=ubuntu-26.04
+      UID: 5c38e5558a798bb7
+    InstalledVersion: 3.14.4-1
+    FixedVersion: 3.14.4-1ubuntu0.1
+    Status: fixed
+    Layer:
+      Digest: sha256:b0113d728796bced1de5d9be3ee71a41fa9ce58cb8e8afb7b978173c12b34a64
+      DiffID: sha256:cea9f9db5d3f4c32d71be9540d330b45d2665b910909e717da85e7ebdd721598
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-8328
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:7e3ad2d36f6a64b1e65174ffa154aa43b9320d6db36e4ccb3eb7c348128b5b8c
+    Title: The ftpcp() function in Lib/ftplib.py was not updated when  CVE-2021-4 ...
+    Description: "The ftpcp() function in Lib/ftplib.py was not updated when \nCVE-2021-4189 was fixed. While makepasv() was patched to replace \nserver-supplied PASV host addresses with the actual peer address \n(getpeername()[0]), ftpcp() still calls parse227() directly and passes \nthe raw attacker-controllable IP address and port to target.sendport(). This patch is related to\_CVE-2021-4189."
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-918
+    VendorSeverity:
+      bitnami: 2
+      ubuntu: 2
+    CVSS:
+      bitnami:
+        V40Vector: CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:A/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N
+        V40Score: 5.9
+    References:
+    - https://github.com/python/cpython/commit/2bbcf3fb7a420a05605576c0f9468d4675381b5f
+    - https://github.com/python/cpython/commit/5dadc64673ce875ebfb24163907777dae0f6ca06
+    - https://github.com/python/cpython/commit/7d95a1dc7382b55cba7fdd6a110336077584a4f0
+    - https://github.com/python/cpython/commit/bb3446dda6c49b32e67c11dbbbf221b40be00763
+    - https://github.com/python/cpython/commit/c88704431ea3248ca769384c13856330976fac1d
+    - https://github.com/python/cpython/commit/eac4fe3b2c77693790a5ef7dfab127c1fee81bf9
+    - https://github.com/python/cpython/commit/ef12d0dc824baccf737bba1458e5eed3d1e0fceb
+    - https://github.com/python/cpython/issues/87451
+    - https://github.com/python/cpython/pull/149648
+    - https://mail.python.org/archives/list/security-announce@python.org/thread/ITF2BAPBQEPYK3LDMPRSY435JGNHYNDP/
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-8328
+    - https://ubuntu.com/security/notices/USN-8509-1
+    - https://www.cve.org/CVERecord?id=CVE-2026-8328
+    PublishedDate: '2026-05-13T21:16:50.167Z'
+    LastModifiedDate: '2026-06-30T16:16:56.797Z'
+  - VulnerabilityID: CVE-2026-9669
+    PkgID: python3.14@3.14.4-1
+    PkgName: python3.14
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/python3.14@3.14.4-1?arch=amd64&distro=ubuntu-26.04
+      UID: 5c38e5558a798bb7
+    InstalledVersion: 3.14.4-1
+    FixedVersion: 3.14.4-1ubuntu0.1
+    Status: fixed
+    Layer:
+      Digest: sha256:b0113d728796bced1de5d9be3ee71a41fa9ce58cb8e8afb7b978173c12b34a64
+      DiffID: sha256:cea9f9db5d3f4c32d71be9540d330b45d2665b910909e717da85e7ebdd721598
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-9669
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:9ee5531a195921cc058fe22f9d552beb76dfb80dfeea0a9a46a4243e166f8d74
+    Title: 'python: Python: Denial of Service via out-of-bounds write in BZ2 decompression'
+    Description: bz2.BZ2Decompressor objects could be reused after a decompression error. If an application caught the resulting OSError and retried with the same decompressor, crafted input could cause the decompressor to resume from an invalid internal state and perform out-of-bounds writes to a stack buffer. This could crash the process when processing untrusted data.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-121
+    VendorSeverity:
+      bitnami: 3
+      redhat: 2
+      ubuntu: 2
+    CVSS:
+      bitnami:
+        V40Vector: CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N
+        V40Score: 8.2
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 5.9
+    References:
+    - http://www.openwall.com/lists/oss-security/2026/06/08/17
+    - https://access.redhat.com/security/cve/CVE-2026-9669
+    - https://github.com/python/cpython/commit/157a5df8cb5d82b33f918a7489e72ce95ceb12b6
+    - https://github.com/python/cpython/commit/5755d0f083949ff3c5bf3a37e673e24e306b036e
+    - https://github.com/python/cpython/commit/619a12b2e545391dc436b3af79dda22337382a6f
+    - https://github.com/python/cpython/commit/d3ca26983dfbccdf609f24ff5877dc3118e4702d
+    - https://github.com/python/cpython/issues/150599
+    - https://github.com/python/cpython/pull/150600
+    - https://mail.python.org/archives/list/security-announce@python.org/thread/DBJZETMGUIFK7DVUWMOXHD3Z6IX2QPSX/
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-9669
+    - https://ubuntu.com/security/notices/USN-8509-1
+    - https://www.cve.org/CVERecord?id=CVE-2026-9669
+    PublishedDate: '2026-06-08T23:17:25.17Z'
+    LastModifiedDate: '2026-06-23T18:18:11.127Z'
+  - VulnerabilityID: CVE-2026-1502
+    PkgID: python3.14-minimal@3.14.4-1
+    PkgName: python3.14-minimal
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/python3.14-minimal@3.14.4-1?arch=amd64&distro=ubuntu-26.04
+      UID: da8e2190347b7c6
+    InstalledVersion: 3.14.4-1
+    FixedVersion: 3.14.4-1ubuntu0.1
+    Status: fixed
+    Layer:
+      Digest: sha256:b0113d728796bced1de5d9be3ee71a41fa9ce58cb8e8afb7b978173c12b34a64
+      DiffID: sha256:cea9f9db5d3f4c32d71be9540d330b45d2665b910909e717da85e7ebdd721598
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-1502
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:f6dffeebd3952aae6b11a00639846f6bc9cdabc98ca6e3f927b2fe9c9510ab9d
+    Title: 'python: Python: HTTP header injection via CR/LF in proxy tunnel headers'
+    Description: CR/LF bytes were not rejected by HTTP client proxy tunnel headers or host.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-93
+    VendorSeverity:
+      alma: 3
+      amazon: 2
+      azure: 2
+      bitnami: 2
+      oracle-oval: 3
+      redhat: 2
+      rocky: 3
+      ubuntu: 2
+    CVSS:
+      bitnami:
+        V40Vector: CVSS:4.0/AV:N/AC:L/AT:P/PR:H/UI:P/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N
+        V40Score: 5.7
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:U/C:N/I:H/A:N
+        V3Score: 4.5
+    References:
+    - http://www.openwall.com/lists/oss-security/2026/04/11/4
+    - https://access.redhat.com/errata/RHSA-2026:19064
+    - https://access.redhat.com/security/cve/CVE-2026-1502
+    - https://bugzilla.redhat.com/2395108
+    - https://bugzilla.redhat.com/2408891
+    - https://bugzilla.redhat.com/2418084
+    - https://bugzilla.redhat.com/2431366
+    - https://bugzilla.redhat.com/2431374
+    - https://bugzilla.redhat.com/2444691
+    - https://bugzilla.redhat.com/2448168
+    - https://bugzilla.redhat.com/2448181
+    - https://bugzilla.redhat.com/2449649
+    - https://bugzilla.redhat.com/2457409
+    - https://bugzilla.redhat.com/2457932
+    - https://bugzilla.redhat.com/2458049
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2395108
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2408891
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2418084
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2431366
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2431374
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2444691
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2448168
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2448181
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2449649
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2457409
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2457932
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2458049
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-13837
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-15282
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-59375
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-6075
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-0672
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-1502
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-2297
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-3644
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4224
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4519
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4786
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-6100
+    - https://errata.almalinux.org/10/ALSA-2026-19064.html
+    - https://errata.rockylinux.org/RLSA-2026:19177
+    - https://github.com/python/cpython/commit/05ed7ce7ae9e17c23a04085b2539fe6d6d3cef69
+    - https://github.com/python/cpython/commit/56b7100b04e44ea27989242b176beb8f016b2c53
+    - https://github.com/python/cpython/commit/58703ec1bdd1eb075e8b01a0c427683ce594dd3e
+    - https://github.com/python/cpython/commit/9e071c9b28c17f347f81b388a003d4eeb3c7a8dd
+    - https://github.com/python/cpython/commit/b1cf9016335cb637c5a425032e8274a224f4b2ed
+    - https://github.com/python/cpython/commit/c00c386faa579ad71196d33408644478488e43ec
+    - https://github.com/python/cpython/issues/146211
+    - https://github.com/python/cpython/pull/146212
+    - https://linux.oracle.com/cve/CVE-2026-1502.html
+    - https://linux.oracle.com/errata/ELSA-2026-19177.html
+    - https://mail.python.org/archives/list/security-announce@python.org/thread/2IVPAEQWUJBCTQZEJEVTYCIKSMQPGRZ3/
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-1502
+    - https://ubuntu.com/security/notices/USN-8509-1
+    - https://www.cve.org/CVERecord?id=CVE-2026-1502
+    PublishedDate: '2026-04-10T18:16:40.97Z'
+    LastModifiedDate: '2026-06-30T16:16:48.007Z'
+  - VulnerabilityID: CVE-2026-3276
+    PkgID: python3.14-minimal@3.14.4-1
+    PkgName: python3.14-minimal
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/python3.14-minimal@3.14.4-1?arch=amd64&distro=ubuntu-26.04
+      UID: da8e2190347b7c6
+    InstalledVersion: 3.14.4-1
+    FixedVersion: 3.14.4-1ubuntu0.1
+    Status: fixed
+    Layer:
+      Digest: sha256:b0113d728796bced1de5d9be3ee71a41fa9ce58cb8e8afb7b978173c12b34a64
+      DiffID: sha256:cea9f9db5d3f4c32d71be9540d330b45d2665b910909e717da85e7ebdd721598
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-3276
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:bb98a19dc0e3b4f252305ae2ca653e6cbc9dc51e03d4fbd351d89ce449c1b518
+    Title: 'python: Python unicodedata: Denial of Service due to excessive CPU consumption'
+    Description: |-
+      unicodedata.normalize() can take excessive CPU time when processing
+      specially crafted Unicode input containing long runs of combining characters
+      with alternating Canonical Combining Class values.
+      This affects all normalization forms.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-407
+    VendorSeverity:
+      bitnami: 2
+      redhat: 2
+      ubuntu: 2
+    CVSS:
+      bitnami:
+        V40Vector: CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N
+        V40Score: 6.3
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L
+        V3Score: 5.3
+    References:
+    - http://www.openwall.com/lists/oss-security/2026/06/03/15
+    - https://access.redhat.com/security/cve/CVE-2026-3276
+    - https://github.com/python/cpython/commit/6b505d1f41f8f3ea0fe5a4786d3a8fff1875cfc0
+    - https://github.com/python/cpython/commit/90748760d38ca3ac5fc6788a69becab905c95598
+    - https://github.com/python/cpython/commit/991224b1e8311c85f198f6dd8208bf8cff7fc26f
+    - https://github.com/python/cpython/commit/ba785b88add96acbf403d65cb157fb2743a33a32
+    - https://github.com/python/cpython/commit/c5512bd7c1dc28055660565275012766941d3066
+    - https://github.com/python/cpython/issues/149079
+    - https://github.com/python/cpython/pull/149080
+    - https://mail.python.org/archives/list/security-announce@python.org/thread/PP5HB4K7727OBBM76KA2ILID76K3OZGZ/
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-3276
+    - https://ubuntu.com/security/notices/USN-8509-1
+    - https://www.cve.org/CVERecord?id=CVE-2026-3276
+    - https://www.openwall.com/lists/oss-security/2026/06/03/15
+    PublishedDate: '2026-06-03T16:16:29.253Z'
+    LastModifiedDate: '2026-06-17T10:43:19.58Z'
+  - VulnerabilityID: CVE-2026-4786
+    PkgID: python3.14-minimal@3.14.4-1
+    PkgName: python3.14-minimal
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/python3.14-minimal@3.14.4-1?arch=amd64&distro=ubuntu-26.04
+      UID: da8e2190347b7c6
+    InstalledVersion: 3.14.4-1
+    FixedVersion: 3.14.4-1ubuntu0.1
+    Status: fixed
+    Layer:
+      Digest: sha256:b0113d728796bced1de5d9be3ee71a41fa9ce58cb8e8afb7b978173c12b34a64
+      DiffID: sha256:cea9f9db5d3f4c32d71be9540d330b45d2665b910909e717da85e7ebdd721598
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-4786
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:0949dfeea3f457372cba036669b11439fa5b540938b5c0324a5f42b1e66c8bf6
+    Title: 'python: cpython: Python: Arbitrary code execution via command injection in webbrowser.open() API'
+    Description: "Mitgation of\_CVE-2026-4519 was incomplete. If the URL contained \"%action\" the mitigation could be bypassed for certain browser types the \"webbrowser.open()\" API could have commands injected into the underlying shell. See\_CVE-2026-4519 for details."
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-77
+    - CWE-88
+    VendorSeverity:
+      alma: 3
+      amazon: 3
+      bitnami: 3
+      oracle-oval: 3
+      photon: 3
+      redhat: 3
+      rocky: 3
+      ubuntu: 2
+    CVSS:
+      bitnami:
+        V40Vector: CVSS:4.0/AV:L/AC:L/AT:P/PR:N/UI:A/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N
+        V40Score: 7
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:L
+        V3Score: 7.1
+    References:
+    - https://access.redhat.com/errata/RHSA-2026:10117
+    - https://access.redhat.com/errata/RHSA-2026:10140
+    - https://access.redhat.com/errata/RHSA-2026:10141
+    - https://access.redhat.com/errata/RHSA-2026:10711
+    - https://access.redhat.com/errata/RHSA-2026:10745
+    - https://access.redhat.com/errata/RHSA-2026:10774
+    - https://access.redhat.com/errata/RHSA-2026:10949
+    - https://access.redhat.com/errata/RHSA-2026:10950
+    - https://access.redhat.com/errata/RHSA-2026:11062
+    - https://access.redhat.com/errata/RHSA-2026:11077
+    - https://access.redhat.com/errata/RHSA-2026:11768
+    - https://access.redhat.com/errata/RHSA-2026:13692
+    - https://access.redhat.com/errata/RHSA-2026:13812
+    - https://access.redhat.com/errata/RHSA-2026:14652
+    - https://access.redhat.com/errata/RHSA-2026:14653
+    - https://access.redhat.com/errata/RHSA-2026:14656
+    - https://access.redhat.com/errata/RHSA-2026:16699
+    - https://access.redhat.com/errata/RHSA-2026:17525
+    - https://access.redhat.com/errata/RHSA-2026:17619
+    - https://access.redhat.com/errata/RHSA-2026:19019
+    - https://access.redhat.com/errata/RHSA-2026:19064
+    - https://access.redhat.com/errata/RHSA-2026:19175
+    - https://access.redhat.com/errata/RHSA-2026:19176
+    - https://access.redhat.com/errata/RHSA-2026:19177
+    - https://access.redhat.com/errata/RHSA-2026:19216
+    - https://access.redhat.com/errata/RHSA-2026:19549
+    - https://access.redhat.com/errata/RHSA-2026:19570
+    - https://access.redhat.com/errata/RHSA-2026:19571
+    - https://access.redhat.com/errata/RHSA-2026:19576
+    - https://access.redhat.com/errata/RHSA-2026:19589
+    - https://access.redhat.com/errata/RHSA-2026:19590
+    - https://access.redhat.com/errata/RHSA-2026:21275
+    - https://access.redhat.com/errata/RHSA-2026:21682
+    - https://access.redhat.com/errata/RHSA-2026:22144
+    - https://access.redhat.com/errata/RHSA-2026:25096
+    - https://access.redhat.com/errata/RHSA-2026:26187
+    - https://access.redhat.com/errata/RHSA-2026:28247
+    - https://access.redhat.com/errata/RHSA-2026:28581
+    - https://access.redhat.com/errata/RHSA-2026:30078
+    - https://access.redhat.com/errata/RHSA-2026:30087
+    - https://access.redhat.com/errata/RHSA-2026:30088
+    - https://access.redhat.com/errata/RHSA-2026:30089
+    - https://access.redhat.com/errata/RHSA-2026:35838
+    - https://access.redhat.com/errata/RHSA-2026:8822
+    - https://access.redhat.com/errata/RHSA-2026:8824
+    - https://access.redhat.com/errata/RHSA-2026:9228
+    - https://access.redhat.com/security/cve/CVE-2026-4786
+    - https://bugzilla.redhat.com/2458049
+    - https://bugzilla.redhat.com/2460869
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2449649
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2457932
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2458049
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4519
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4786
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-6100
+    - https://errata.almalinux.org/10/ALSA-2026-28581.html
+    - https://errata.rockylinux.org/RLSA-2026:19216
+    - https://github.com/python/cpython/commit/28b4ad38067bbdad34edfcd03ad2de5f06387e53
+    - https://github.com/python/cpython/commit/c5767a72838a8dda9d6dc5d3558075b055c56bca
+    - https://github.com/python/cpython/commit/d22922c8a7958353689dc4763dd72da2dea03fff
+    - https://github.com/python/cpython/commit/d6d68494be70bdbda20f89f83801ba52ec37daa4
+    - https://github.com/python/cpython/commit/f4654824ae0850ac87227fb270f9057477946769
+    - https://github.com/python/cpython/issues/148169
+    - https://github.com/python/cpython/pull/148170
+    - https://linux.oracle.com/cve/CVE-2026-4786.html
+    - https://linux.oracle.com/errata/ELSA-2026-28247.html
+    - https://mail.python.org/archives/list/security-announce@python.org/thread/JQDUNJVB4AQNTJECSUKOBDU3XCJIPSE5/
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-4786
+    - https://security.access.redhat.com/data/csaf/v2/vex/2026/cve-2026-4786.json
+    - https://ubuntu.com/security/notices/USN-8509-1
+    - https://www.cve.org/CVERecord?id=CVE-2026-4786
+    PublishedDate: '2026-04-13T22:16:30.413Z'
+    LastModifiedDate: '2026-07-06T13:17:02.897Z'
+  - VulnerabilityID: CVE-2026-5713
+    PkgID: python3.14-minimal@3.14.4-1
+    PkgName: python3.14-minimal
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/python3.14-minimal@3.14.4-1?arch=amd64&distro=ubuntu-26.04
+      UID: da8e2190347b7c6
+    InstalledVersion: 3.14.4-1
+    FixedVersion: 3.14.4-1ubuntu0.1
+    Status: fixed
+    Layer:
+      Digest: sha256:b0113d728796bced1de5d9be3ee71a41fa9ce58cb8e8afb7b978173c12b34a64
+      DiffID: sha256:cea9f9db5d3f4c32d71be9540d330b45d2665b910909e717da85e7ebdd721598
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-5713
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:76f12870b8fc63a543de21f1df2342439afe73ab798c20ba665e91bc2b24429c
+    Title: 'python: Python: Information disclosure and arbitrary code execution via remote debugging with a malicious process.'
+    Description: The "profiling.sampling" module (Python 3.15+) and "asyncio introspection capabilities" (3.14+, "python -m asyncio ps" and "python -m asyncio pstree") features could be used to read and write addresses in a privileged process if that process connected to a malicious or "infected" Python process via the remote debugging feature. This vulnerability requires persistently and repeatedly connecting to the process to be exploited, even after the connecting process crashes with high likelihood due to ASLR.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-121
+    - CWE-125
+    VendorSeverity:
+      alma: 3
+      amazon: 2
+      bitnami: 2
+      oracle-oval: 3
+      redhat: 2
+      rocky: 3
+      ubuntu: 2
+    CVSS:
+      bitnami:
+        V40Vector: CVSS:4.0/AV:L/AC:H/AT:P/PR:H/UI:A/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N
+        V40Score: 5.3
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:H/I:H/A:N
+        V3Score: 6
+    References:
+    - http://www.openwall.com/lists/oss-security/2026/04/15/6
+    - https://access.redhat.com/errata/RHSA-2026:19019
+    - https://access.redhat.com/security/cve/CVE-2026-5713
+    - https://bugzilla.redhat.com/2431367
+    - https://bugzilla.redhat.com/2444691
+    - https://bugzilla.redhat.com/2448168
+    - https://bugzilla.redhat.com/2448181
+    - https://bugzilla.redhat.com/2449649
+    - https://bugzilla.redhat.com/2457409
+    - https://bugzilla.redhat.com/2457932
+    - https://bugzilla.redhat.com/2458049
+    - https://bugzilla.redhat.com/2458239
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2431367
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2444691
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2448168
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2448181
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2449649
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2457409
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2457932
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2458049
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2458239
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-0865
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-1502
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-2297
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-3644
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4224
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4519
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4786
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-5713
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-6100
+    - https://errata.almalinux.org/10/ALSA-2026-19019.html
+    - https://errata.rockylinux.org/RLSA-2026:19176
+    - https://github.com/python/cpython/commit/289fd2c97a7e5aecb8b69f94f5e838ccfeee7e67
+    - https://github.com/python/cpython/commit/316f6265b7f9ca4ffed5346b747475ef1943f35d
+    - https://github.com/python/cpython/issues/148178
+    - https://github.com/python/cpython/pull/148187
+    - https://linux.oracle.com/cve/CVE-2026-5713.html
+    - https://linux.oracle.com/errata/ELSA-2026-19176.html
+    - https://mail.python.org/archives/list/security-announce@python.org/thread/OG4RHARYSNIE22GGOMVMCRH76L5HKPLM/
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-5713
+    - https://ubuntu.com/security/notices/USN-8509-1
+    - https://www.cve.org/CVERecord?id=CVE-2026-5713
+    PublishedDate: '2026-04-14T16:16:48.717Z'
+    LastModifiedDate: '2026-06-17T10:59:32.743Z'
+  - VulnerabilityID: CVE-2026-6019
+    PkgID: python3.14-minimal@3.14.4-1
+    PkgName: python3.14-minimal
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/python3.14-minimal@3.14.4-1?arch=amd64&distro=ubuntu-26.04
+      UID: da8e2190347b7c6
+    InstalledVersion: 3.14.4-1
+    FixedVersion: 3.14.4-1ubuntu0.1
+    Status: fixed
+    Layer:
+      Digest: sha256:b0113d728796bced1de5d9be3ee71a41fa9ce58cb8e8afb7b978173c12b34a64
+      DiffID: sha256:cea9f9db5d3f4c32d71be9540d330b45d2665b910909e717da85e7ebdd721598
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-6019
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:71c6da0228b704ff5a51f74f28f18c6bc2129a6aad799abb55ef052dc6ceb405
+    Title: 'python: Python: Cross-Site Scripting (XSS) vulnerability in http.cookies module'
+    Description: http.cookies.Morsel.js_output() returns an inline <script> snippet and only escapes " for JavaScript string context. It does not neutralize the HTML parser-sensitive sequence </script> inside the generated script element. Mitigation base64-encodes the cookie value to disallow escaping using cookie value.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-150
+    - CWE-116
+    VendorSeverity:
+      alma: 3
+      amazon: 2
+      bitnami: 1
+      nvd: 2
+      oracle-oval: 3
+      photon: 2
+      redhat: 2
+      rocky: 3
+      ubuntu: 2
+    CVSS:
+      bitnami:
+        V40Vector: CVSS:4.0/AV:N/AC:L/AT:P/PR:H/UI:N/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N
+        V40Score: 2.1
+      nvd:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N
+        V3Score: 6.1
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:N
+        V3Score: 6.8
+    References:
+    - https://access.redhat.com/errata/RHSA-2026:28581
+    - https://access.redhat.com/security/cve/CVE-2026-6019
+    - https://bugzilla.redhat.com/2458049
+    - https://bugzilla.redhat.com/2460869
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2458049
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2460869
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4786
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-6019
+    - https://errata.almalinux.org/10/ALSA-2026-28581.html
+    - https://errata.rockylinux.org/RLSA-2026:28247
+    - https://github.com/python/cpython/commit/3c59b8b53fc75c7f9578d16fb8201ceb43e8f76c
+    - https://github.com/python/cpython/commit/76b3923d688c0efc580658476c5f525ec8735104
+    - https://github.com/python/cpython/commit/f795e042043dfe26c42e1971d4502c1cdc4c65b8
+    - https://github.com/python/cpython/issues/90309
+    - https://github.com/python/cpython/pull/148848
+    - https://linux.oracle.com/cve/CVE-2026-6019.html
+    - https://linux.oracle.com/errata/ELSA-2026-28247.html
+    - https://mail.python.org/archives/list/security-announce@python.org/thread/IVNWGV2BBNC3RHQAFS22UP4DY56SAXX3/
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-6019
+    - https://ubuntu.com/security/notices/USN-8509-1
+    - https://www.cve.org/CVERecord?id=CVE-2026-6019
+    PublishedDate: '2026-04-22T20:16:42.617Z'
+    LastModifiedDate: '2026-06-17T11:00:10.56Z'
+  - VulnerabilityID: CVE-2026-6100
+    PkgID: python3.14-minimal@3.14.4-1
+    PkgName: python3.14-minimal
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/python3.14-minimal@3.14.4-1?arch=amd64&distro=ubuntu-26.04
+      UID: da8e2190347b7c6
+    InstalledVersion: 3.14.4-1
+    FixedVersion: 3.14.4-1ubuntu0.1
+    Status: fixed
+    Layer:
+      Digest: sha256:b0113d728796bced1de5d9be3ee71a41fa9ce58cb8e8afb7b978173c12b34a64
+      DiffID: sha256:cea9f9db5d3f4c32d71be9540d330b45d2665b910909e717da85e7ebdd721598
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-6100
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:0b772a9d812e938ab6e80d34660987ddd7ec94d267dacba67218de7e63e5e8a2
+    Title: 'python: Python: Arbitrary code execution or information disclosure via use-after-free in decompression modules'
+    Description: |-
+      Use-after-free (UAF) was possible in the `lzma.LZMADecompressor`, `bz2.BZ2Decompressor`, and `gzip.GzipFile` when a memory allocation fails with a `MemoryError` and the decompression instance is re-used. This scenario can be triggered if the process is under memory pressure. The fix cleans up the dangling pointer in this specific error condition.
+
+      The vulnerability is only present if the program re-uses decompressor instances across multiple decompression calls even after a `MemoryError` is raised during decompression. Using the helper functions to one-shot decompress data such as `lzma.decompress()`, `bz2.decompress()`, `gzip.decompress()`, and `zlib.decompress()` are not affected as a new decompressor instance is used per call. If the decompressor instance is not re-used after an error condition, this usage is similarly not vulnerable.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-416
+    - CWE-787
+    - CWE-825
+    VendorSeverity:
+      alma: 3
+      amazon: 3
+      bitnami: 4
+      oracle-oval: 3
+      photon: 3
+      redhat: 3
+      rocky: 3
+      ubuntu: 2
+    CVSS:
+      bitnami:
+        V40Vector: CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N
+        V40Score: 9.1
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H
+        V3Score: 8.1
+    References:
+    - http://www.openwall.com/lists/oss-security/2026/04/13/10
+    - https://access.redhat.com/errata/RHSA-2026:10117
+    - https://access.redhat.com/errata/RHSA-2026:10140
+    - https://access.redhat.com/errata/RHSA-2026:10141
+    - https://access.redhat.com/errata/RHSA-2026:10711
+    - https://access.redhat.com/errata/RHSA-2026:10745
+    - https://access.redhat.com/errata/RHSA-2026:10774
+    - https://access.redhat.com/errata/RHSA-2026:10949
+    - https://access.redhat.com/errata/RHSA-2026:10950
+    - https://access.redhat.com/errata/RHSA-2026:11062
+    - https://access.redhat.com/errata/RHSA-2026:11077
+    - https://access.redhat.com/errata/RHSA-2026:11768
+    - https://access.redhat.com/errata/RHSA-2026:13692
+    - https://access.redhat.com/errata/RHSA-2026:13812
+    - https://access.redhat.com/errata/RHSA-2026:14652
+    - https://access.redhat.com/errata/RHSA-2026:14653
+    - https://access.redhat.com/errata/RHSA-2026:14656
+    - https://access.redhat.com/errata/RHSA-2026:16699
+    - https://access.redhat.com/errata/RHSA-2026:17525
+    - https://access.redhat.com/errata/RHSA-2026:17619
+    - https://access.redhat.com/errata/RHSA-2026:19019
+    - https://access.redhat.com/errata/RHSA-2026:19064
+    - https://access.redhat.com/errata/RHSA-2026:19175
+    - https://access.redhat.com/errata/RHSA-2026:19176
+    - https://access.redhat.com/errata/RHSA-2026:19177
+    - https://access.redhat.com/errata/RHSA-2026:19216
+    - https://access.redhat.com/errata/RHSA-2026:19549
+    - https://access.redhat.com/errata/RHSA-2026:19570
+    - https://access.redhat.com/errata/RHSA-2026:19571
+    - https://access.redhat.com/errata/RHSA-2026:19576
+    - https://access.redhat.com/errata/RHSA-2026:19590
+    - https://access.redhat.com/errata/RHSA-2026:21275
+    - https://access.redhat.com/errata/RHSA-2026:21682
+    - https://access.redhat.com/errata/RHSA-2026:25096
+    - https://access.redhat.com/errata/RHSA-2026:26187
+    - https://access.redhat.com/errata/RHSA-2026:30078
+    - https://access.redhat.com/errata/RHSA-2026:30087
+    - https://access.redhat.com/errata/RHSA-2026:30088
+    - https://access.redhat.com/errata/RHSA-2026:30089
+    - https://access.redhat.com/errata/RHSA-2026:8822
+    - https://access.redhat.com/errata/RHSA-2026:8824
+    - https://access.redhat.com/errata/RHSA-2026:9228
+    - https://access.redhat.com/security/cve/CVE-2026-6100
+    - https://bugzilla.redhat.com/2395108
+    - https://bugzilla.redhat.com/2408891
+    - https://bugzilla.redhat.com/2418084
+    - https://bugzilla.redhat.com/2431366
+    - https://bugzilla.redhat.com/2431374
+    - https://bugzilla.redhat.com/2444691
+    - https://bugzilla.redhat.com/2448168
+    - https://bugzilla.redhat.com/2448181
+    - https://bugzilla.redhat.com/2449649
+    - https://bugzilla.redhat.com/2457409
+    - https://bugzilla.redhat.com/2457932
+    - https://bugzilla.redhat.com/2458049
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2449649
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2457932
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2458049
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4519
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4786
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-6100
+    - https://errata.almalinux.org/10/ALSA-2026-19064.html
+    - https://errata.rockylinux.org/RLSA-2026:19216
+    - https://github.com/python/cpython/commit/47128e64f98c3a20271138a98c2922bea2a3ee0e
+    - https://github.com/python/cpython/commit/6a5f79c8d7bbf22b083b240910c7a8781a59437d
+    - https://github.com/python/cpython/commit/8fc66aef6d7b3ae58f43f5c66f9366cc8cbbfcd2
+    - https://github.com/python/cpython/commit/c3cf71c3366fe49acb776a639405c0eea6169c20
+    - https://github.com/python/cpython/commit/e20c6c9667c99ecaab96e1a2b3767082841ffc8b
+    - https://github.com/python/cpython/issues/148395
+    - https://github.com/python/cpython/pull/148396
+    - https://linux.oracle.com/cve/CVE-2026-6100.html
+    - https://linux.oracle.com/errata/ELSA-2026-19216.html
+    - https://mail.python.org/archives/list/security-announce@python.org/thread/HTWB2Z6KT5QQX4RYEZAFININDHNOSIF3/
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-6100
+    - https://security.access.redhat.com/data/csaf/v2/vex/2026/cve-2026-6100.json
+    - https://ubuntu.com/security/notices/USN-8509-1
+    - https://www.cve.org/CVERecord?id=CVE-2026-6100
+    PublishedDate: '2026-04-13T18:16:31.297Z'
+    LastModifiedDate: '2026-06-30T03:21:11.023Z'
+  - VulnerabilityID: CVE-2026-7774
+    PkgID: python3.14-minimal@3.14.4-1
+    PkgName: python3.14-minimal
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/python3.14-minimal@3.14.4-1?arch=amd64&distro=ubuntu-26.04
+      UID: da8e2190347b7c6
+    InstalledVersion: 3.14.4-1
+    FixedVersion: 3.14.4-1ubuntu0.1
+    Status: fixed
+    Layer:
+      Digest: sha256:b0113d728796bced1de5d9be3ee71a41fa9ce58cb8e8afb7b978173c12b34a64
+      DiffID: sha256:cea9f9db5d3f4c32d71be9540d330b45d2665b910909e717da85e7ebdd721598
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-7774
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:d1d13e9962040f4ca2e18a545c9e13fca4ec72f1d9691ce706da80eb04a2b2b4
+    Title: 'python: CPython: Python tarfile: Arbitrary file write via crafted link entries'
+    Description: tarfile.data_filter could be bypassed using crafted link entries, including symlinks with empty or directory-like names, to redirect later archive members outside the intended extraction directory. This allowed a malicious tar archive to cause tarfile.extractall() to write files outside the destination directory, subject to the permissions of the extracting process.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-22
+    VendorSeverity:
+      bitnami: 2
+      redhat: 2
+      ubuntu: 2
+    CVSS:
+      bitnami:
+        V40Vector: CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:A/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N
+        V40Score: 6.9
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:N
+        V3Score: 6.5
+    References:
+    - http://www.openwall.com/lists/oss-security/2026/06/04/9
+    - https://access.redhat.com/security/cve/CVE-2026-7774
+    - https://github.com/python/cpython/commit/0478bd83d82b255e0f29f613367a59d261e7eaa2
+    - https://github.com/python/cpython/commit/0d28f5e46e151718972dfabd91205444d0037b6d
+    - https://github.com/python/cpython/commit/578411982c16f753f4893532510099ef665117da
+    - https://github.com/python/cpython/commit/5cf47a248c35c375d610b87b2f72fd1ed454b558
+    - https://github.com/python/cpython/commit/74cca9a92fb7d653e404843a56b8bdc7b0afdbbf
+    - https://github.com/python/cpython/issues/149486
+    - https://github.com/python/cpython/pull/149487
+    - https://mail.python.org/archives/list/security-announce@python.org/thread/4FU62L2M6RMMHT2QPGQNPEHHUND7CEX5/
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-7774
+    - https://ubuntu.com/security/notices/USN-8509-1
+    - https://www.cve.org/CVERecord?id=CVE-2026-7774
+    - https://www.openwall.com/lists/oss-security/2026/06/04/9
+    PublishedDate: '2026-06-04T16:16:42.103Z'
+    LastModifiedDate: '2026-06-17T11:02:56.613Z'
+  - VulnerabilityID: CVE-2026-8328
+    PkgID: python3.14-minimal@3.14.4-1
+    PkgName: python3.14-minimal
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/python3.14-minimal@3.14.4-1?arch=amd64&distro=ubuntu-26.04
+      UID: da8e2190347b7c6
+    InstalledVersion: 3.14.4-1
+    FixedVersion: 3.14.4-1ubuntu0.1
+    Status: fixed
+    Layer:
+      Digest: sha256:b0113d728796bced1de5d9be3ee71a41fa9ce58cb8e8afb7b978173c12b34a64
+      DiffID: sha256:cea9f9db5d3f4c32d71be9540d330b45d2665b910909e717da85e7ebdd721598
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-8328
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:d503771cefc39c0a9cd54d0752c7b572db6522d145554b833c2a00d860df356e
+    Title: The ftpcp() function in Lib/ftplib.py was not updated when  CVE-2021-4 ...
+    Description: "The ftpcp() function in Lib/ftplib.py was not updated when \nCVE-2021-4189 was fixed. While makepasv() was patched to replace \nserver-supplied PASV host addresses with the actual peer address \n(getpeername()[0]), ftpcp() still calls parse227() directly and passes \nthe raw attacker-controllable IP address and port to target.sendport(). This patch is related to\_CVE-2021-4189."
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-918
+    VendorSeverity:
+      bitnami: 2
+      ubuntu: 2
+    CVSS:
+      bitnami:
+        V40Vector: CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:A/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N
+        V40Score: 5.9
+    References:
+    - https://github.com/python/cpython/commit/2bbcf3fb7a420a05605576c0f9468d4675381b5f
+    - https://github.com/python/cpython/commit/5dadc64673ce875ebfb24163907777dae0f6ca06
+    - https://github.com/python/cpython/commit/7d95a1dc7382b55cba7fdd6a110336077584a4f0
+    - https://github.com/python/cpython/commit/bb3446dda6c49b32e67c11dbbbf221b40be00763
+    - https://github.com/python/cpython/commit/c88704431ea3248ca769384c13856330976fac1d
+    - https://github.com/python/cpython/commit/eac4fe3b2c77693790a5ef7dfab127c1fee81bf9
+    - https://github.com/python/cpython/commit/ef12d0dc824baccf737bba1458e5eed3d1e0fceb
+    - https://github.com/python/cpython/issues/87451
+    - https://github.com/python/cpython/pull/149648
+    - https://mail.python.org/archives/list/security-announce@python.org/thread/ITF2BAPBQEPYK3LDMPRSY435JGNHYNDP/
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-8328
+    - https://ubuntu.com/security/notices/USN-8509-1
+    - https://www.cve.org/CVERecord?id=CVE-2026-8328
+    PublishedDate: '2026-05-13T21:16:50.167Z'
+    LastModifiedDate: '2026-06-30T16:16:56.797Z'
+  - VulnerabilityID: CVE-2026-9669
+    PkgID: python3.14-minimal@3.14.4-1
+    PkgName: python3.14-minimal
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/python3.14-minimal@3.14.4-1?arch=amd64&distro=ubuntu-26.04
+      UID: da8e2190347b7c6
+    InstalledVersion: 3.14.4-1
+    FixedVersion: 3.14.4-1ubuntu0.1
+    Status: fixed
+    Layer:
+      Digest: sha256:b0113d728796bced1de5d9be3ee71a41fa9ce58cb8e8afb7b978173c12b34a64
+      DiffID: sha256:cea9f9db5d3f4c32d71be9540d330b45d2665b910909e717da85e7ebdd721598
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-9669
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:6c4c42b01fb726b1ceb7bd5b1fd4f3fc4f4afe1e94ad8245e851dfc329a38e83
+    Title: 'python: Python: Denial of Service via out-of-bounds write in BZ2 decompression'
+    Description: bz2.BZ2Decompressor objects could be reused after a decompression error. If an application caught the resulting OSError and retried with the same decompressor, crafted input could cause the decompressor to resume from an invalid internal state and perform out-of-bounds writes to a stack buffer. This could crash the process when processing untrusted data.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-121
+    VendorSeverity:
+      bitnami: 3
+      redhat: 2
+      ubuntu: 2
+    CVSS:
+      bitnami:
+        V40Vector: CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N
+        V40Score: 8.2
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 5.9
+    References:
+    - http://www.openwall.com/lists/oss-security/2026/06/08/17
+    - https://access.redhat.com/security/cve/CVE-2026-9669
+    - https://github.com/python/cpython/commit/157a5df8cb5d82b33f918a7489e72ce95ceb12b6
+    - https://github.com/python/cpython/commit/5755d0f083949ff3c5bf3a37e673e24e306b036e
+    - https://github.com/python/cpython/commit/619a12b2e545391dc436b3af79dda22337382a6f
+    - https://github.com/python/cpython/commit/d3ca26983dfbccdf609f24ff5877dc3118e4702d
+    - https://github.com/python/cpython/issues/150599
+    - https://github.com/python/cpython/pull/150600
+    - https://mail.python.org/archives/list/security-announce@python.org/thread/DBJZETMGUIFK7DVUWMOXHD3Z6IX2QPSX/
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-9669
+    - https://ubuntu.com/security/notices/USN-8509-1
+    - https://www.cve.org/CVERecord?id=CVE-2026-9669
+    PublishedDate: '2026-06-08T23:17:25.17Z'
+    LastModifiedDate: '2026-06-23T18:18:11.127Z'
   - VulnerabilityID: CVE-2026-35341
     PkgID: rust-coreutils@0.8.0-0ubuntu3
     PkgName: rust-coreutils
@@ -2679,6 +5547,8 @@
     References:
     - https://github.com/uutils/coreutils
     - https://github.com/uutils/coreutils/issues/10020
+    - https://github.com/uutils/coreutils/pull/10376
+    - https://github.com/uutils/coreutils/security/advisories/GHSA-pmf6-rcx4-v53v
     - https://nvd.nist.gov/vuln/detail/CVE-2026-35341
     - https://www.cve.org/CVERecord?id=CVE-2026-35341
     PublishedDate: '2026-04-22T17:16:36.06Z'
@@ -3092,6 +5962,7 @@
     References:
     - https://github.com/uutils/coreutils
     - https://github.com/uutils/coreutils/issues/9749
+    - https://github.com/uutils/coreutils/security/advisories/GHSA-89p7-7cq3-hhr2
     - https://nvd.nist.gov/vuln/detail/CVE-2026-35363
     - https://www.cve.org/CVERecord?id=CVE-2026-35363
     PublishedDate: '2026-04-22T17:16:39.12Z'
@@ -3240,6 +6111,7 @@
     References:
     - https://github.com/uutils/coreutils
     - https://github.com/uutils/coreutils/issues/10006
+    - https://github.com/uutils/coreutils/security/advisories/GHSA-47c7-qrm7-mqw7
     - https://nvd.nist.gov/vuln/detail/CVE-2026-35370
     - https://www.cve.org/CVERecord?id=CVE-2026-35370
     PublishedDate: '2026-04-22T17:16:40.833Z'
@@ -3277,6 +6149,7 @@
     References:
     - https://github.com/uutils/coreutils
     - https://github.com/uutils/coreutils/issues/10006
+    - https://github.com/uutils/coreutils/security/advisories/GHSA-xv5w-cw7x-72gj
     - https://nvd.nist.gov/vuln/detail/CVE-2026-35371
     - https://www.cve.org/CVERecord?id=CVE-2026-35371
     PublishedDate: '2026-04-22T17:16:40.987Z'
@@ -3318,6 +6191,7 @@
     References:
     - https://github.com/uutils/coreutils
     - https://github.com/uutils/coreutils/pull/11403
+    - https://github.com/uutils/coreutils/security/advisories/GHSA-jcjr-rh8q-7xqf
     - https://nvd.nist.gov/vuln/detail/CVE-2026-35373
     - https://www.cve.org/CVERecord?id=CVE-2026-35373
     PublishedDate: '2026-04-22T17:16:41.997Z'
@@ -3403,7 +6277,8 @@
       PURL: pkg:deb/ubuntu/tar@1.35%2Bdfsg-4ubuntu0.1?arch=amd64&distro=ubuntu-26.04
       UID: f7a1a3cfff00b5cd
     InstalledVersion: 1.35+dfsg-4ubuntu0.1
-    Status: affected
+    FixedVersion: 1.35+dfsg-4ubuntu0.2
+    Status: fixed
     Layer:
       Digest: sha256:b0113d728796bced1de5d9be3ee71a41fa9ce58cb8e8afb7b978173c12b34a64
       DiffID: sha256:cea9f9db5d3f4c32d71be9540d330b45d2665b910909e717da85e7ebdd721598
@@ -3443,6 +6318,7 @@
     - https://linux.oracle.com/errata/ELSA-2026-0067.html
     - https://lists.gnu.org/archive/html/bug-tar/2025-08/msg00012.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-45582
+    - https://ubuntu.com/security/notices/USN-8510-1
     - https://www.cve.org/CVERecord?id=CVE-2025-45582
     - https://www.gnu.org/software/tar/
     - https://www.gnu.org/software/tar/manual/html_node/Integrity.html
@@ -4104,7 +6980,7 @@
     - https://ubuntu.com/security/notices/USN-8473-1
     - https://www.cve.org/CVERecord?id=CVE-2026-33814
     PublishedDate: '2026-05-07T20:16:42.88Z'
-    LastModifiedDate: '2026-07-02T12:17:06.34Z'
+    LastModifiedDate: '2026-07-06T13:16:39.617Z'
   - VulnerabilityID: CVE-2026-39821
     VendorIDs:
     - GO-2026-5026
@@ -4136,6 +7012,7 @@
       azure: 4
       oracle-oval: 3
       redhat: 3
+      rocky: 3
       ubuntu: 2
     CVSS:
       redhat:
@@ -4162,10 +7039,17 @@
     - https://access.redhat.com/errata/RHSA-2026:34357
     - https://access.redhat.com/errata/RHSA-2026:34359
     - https://access.redhat.com/errata/RHSA-2026:34364
+    - https://access.redhat.com/errata/RHSA-2026:35826
+    - https://access.redhat.com/errata/RHSA-2026:35827
+    - https://access.redhat.com/errata/RHSA-2026:35828
+    - https://access.redhat.com/errata/RHSA-2026:35830
+    - https://access.redhat.com/errata/RHSA-2026:35831
     - https://access.redhat.com/security/cve/CVE-2026-39821
     - https://bugzilla.redhat.com/2480756
     - https://bugzilla.redhat.com/show_bug.cgi?id=2480756
-    - https://errata.almalinux.org/9/ALSA-2026-30854.html
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-39821
+    - https://errata.almalinux.org/10/ALSA-2026-30855.html
+    - https://errata.rockylinux.org/RLSA-2026:30854
     - https://github.com/golang/go/issues/78760
     - https://go.dev/cl/767220
     - https://go.dev/issue/78760
@@ -4178,7 +7062,7 @@
     - https://ubuntu.com/security/notices/USN-8416-1
     - https://www.cve.org/CVERecord?id=CVE-2026-39821
     PublishedDate: '2026-05-22T16:16:20.41Z'
-    LastModifiedDate: '2026-07-02T12:17:12.24Z'
+    LastModifiedDate: '2026-07-06T13:16:41.597Z'
   - VulnerabilityID: CVE-2026-42502
     VendorIDs:
     - GO-2026-5027
@@ -4479,6 +7363,7 @@
     - https://access.redhat.com/errata/RHSA-2026:33574
     - https://access.redhat.com/errata/RHSA-2026:34357
     - https://access.redhat.com/errata/RHSA-2026:34359
+    - https://access.redhat.com/errata/RHSA-2026:35832
     - https://access.redhat.com/security/cve/CVE-2026-27145
     - https://bugzilla.redhat.com/show_bug.cgi?id=2484207
     - https://go.dev/cl/783621
@@ -4489,7 +7374,7 @@
     - https://security.access.redhat.com/data/csaf/v2/vex/2026/cve-2026-27145.json
     - https://www.cve.org/CVERecord?id=CVE-2026-27145
     PublishedDate: '2026-06-02T23:16:35.57Z'
-    LastModifiedDate: '2026-07-02T12:16:59.51Z'
+    LastModifiedDate: '2026-07-06T13:16:35.233Z'
   - VulnerabilityID: CVE-2026-42504
     VendorIDs:
     - GO-2026-5038
@@ -4569,12 +7454,12 @@
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N
         V3Score: 5.3
     References:
-    - https://access.redhat.com/errata/RHSA-2026:29981
+    - https://access.redhat.com/errata/RHSA-2026:29980
     - https://access.redhat.com/security/cve/CVE-2026-42507
     - https://bugzilla.redhat.com/2484205
     - https://bugzilla.redhat.com/show_bug.cgi?id=2484205
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42507
-    - https://errata.almalinux.org/9/ALSA-2026-29981.html
+    - https://errata.almalinux.org/10/ALSA-2026-29980.html
     - https://errata.rockylinux.org/RLSA-2026:29981
     - https://go.dev/cl/777060
     - https://go.dev/issue/79346
