@@ -324,7 +324,8 @@
 │                       │       │                  │       tro=ubuntu-26.04 
 │                       │       │                  ╰ UID : 5ad51bed1e0ec137 
 │                       │       ├ InstalledVersion: 8.18.0-1ubuntu2.1 
-│                       │       ├ Status          : affected 
+│                       │       ├ FixedVersion    : 8.18.0-1ubuntu2.3 
+│                       │       ├ Status          : fixed 
 │                       │       ├ Layer            ╭ Digest: sha256:137f05a578f6a8cf8097842993944a541957316a5fe
 │                       │       │                  │         6eaa18fa67bf369e9e2c6 
 │                       │       │                  ╰ DiffID: sha256:877febc1af9f32b31cdfbca4e58c495e03920a1a941
@@ -362,7 +363,8 @@
 │                       │       │                  ├ [3]: https://curl.se/docs/CVE-2026-10536.json 
 │                       │       │                  ├ [4]: https://hackerone.com/reports/3751697 
 │                       │       │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2026-10536 
-│                       │       │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2026-10536 
+│                       │       │                  ├ [6]: https://ubuntu.com/security/notices/USN-8525-1 
+│                       │       │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2026-10536 
 │                       │       ├ PublishedDate   : 2026-07-03T07:16:23.563Z 
 │                       │       ╰ LastModifiedDate: 2026-07-07T18:02:03.89Z 
 │                       ├ [7]   ╭ VulnerabilityID : CVE-2026-11352 
@@ -372,7 +374,8 @@
 │                       │       │                  │       tro=ubuntu-26.04 
 │                       │       │                  ╰ UID : 5ad51bed1e0ec137 
 │                       │       ├ InstalledVersion: 8.18.0-1ubuntu2.1 
-│                       │       ├ Status          : affected 
+│                       │       ├ FixedVersion    : 8.18.0-1ubuntu2.3 
+│                       │       ├ Status          : fixed 
 │                       │       ├ Layer            ╭ Digest: sha256:137f05a578f6a8cf8097842993944a541957316a5fe
 │                       │       │                  │         6eaa18fa67bf369e9e2c6 
 │                       │       │                  ╰ DiffID: sha256:877febc1af9f32b31cdfbca4e58c495e03920a1a941
@@ -408,7 +411,8 @@
 │                       │       │                  ├ [3]: https://curl.se/docs/CVE-2026-11352.json 
 │                       │       │                  ├ [4]: https://hackerone.com/reports/3783438 
 │                       │       │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2026-11352 
-│                       │       │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2026-11352 
+│                       │       │                  ├ [6]: https://ubuntu.com/security/notices/USN-8525-1 
+│                       │       │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2026-11352 
 │                       │       ├ PublishedDate   : 2026-07-03T07:16:23.693Z 
 │                       │       ╰ LastModifiedDate: 2026-07-07T18:01:19.013Z 
 │                       ├ [8]   ╭ VulnerabilityID : CVE-2026-11564 
@@ -418,7 +422,8 @@
 │                       │       │                  │       tro=ubuntu-26.04 
 │                       │       │                  ╰ UID : 5ad51bed1e0ec137 
 │                       │       ├ InstalledVersion: 8.18.0-1ubuntu2.1 
-│                       │       ├ Status          : affected 
+│                       │       ├ FixedVersion    : 8.18.0-1ubuntu2.3 
+│                       │       ├ Status          : fixed 
 │                       │       ├ Layer            ╭ Digest: sha256:137f05a578f6a8cf8097842993944a541957316a5fe
 │                       │       │                  │         6eaa18fa67bf369e9e2c6 
 │                       │       │                  ╰ DiffID: sha256:877febc1af9f32b31cdfbca4e58c495e03920a1a941
@@ -454,7 +459,8 @@
 │                       │       │                  ├ [3]: https://curl.se/docs/CVE-2026-11564.json 
 │                       │       │                  ├ [4]: https://hackerone.com/reports/3788984 
 │                       │       │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2026-11564 
-│                       │       │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2026-11564 
+│                       │       │                  ├ [6]: https://ubuntu.com/security/notices/USN-8525-1 
+│                       │       │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2026-11564 
 │                       │       ├ PublishedDate   : 2026-07-03T07:16:23.79Z 
 │                       │       ╰ LastModifiedDate: 2026-07-07T18:00:35.84Z 
 │                       ├ [9]   ╭ VulnerabilityID : CVE-2026-11586 
@@ -464,7 +470,8 @@
 │                       │       │                  │       tro=ubuntu-26.04 
 │                       │       │                  ╰ UID : 5ad51bed1e0ec137 
 │                       │       ├ InstalledVersion: 8.18.0-1ubuntu2.1 
-│                       │       ├ Status          : affected 
+│                       │       ├ FixedVersion    : 8.18.0-1ubuntu2.3 
+│                       │       ├ Status          : fixed 
 │                       │       ├ Layer            ╭ Digest: sha256:137f05a578f6a8cf8097842993944a541957316a5fe
 │                       │       │                  │         6eaa18fa67bf369e9e2c6 
 │                       │       │                  ╰ DiffID: sha256:877febc1af9f32b31cdfbca4e58c495e03920a1a941
@@ -497,7 +504,8 @@
 │                       │       │                  ├ [3]: https://curl.se/docs/CVE-2026-11586.json 
 │                       │       │                  ├ [4]: https://hackerone.com/reports/3788931 
 │                       │       │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2026-11586 
-│                       │       │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2026-11586 
+│                       │       │                  ├ [6]: https://ubuntu.com/security/notices/USN-8525-1 
+│                       │       │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2026-11586 
 │                       │       ├ PublishedDate   : 2026-07-03T07:16:23.883Z 
 │                       │       ╰ LastModifiedDate: 2026-07-07T17:59:46.92Z 
 │                       ├ [10]  ╭ VulnerabilityID : CVE-2026-12064 
@@ -507,7 +515,8 @@
 │                       │       │                  │       tro=ubuntu-26.04 
 │                       │       │                  ╰ UID : 5ad51bed1e0ec137 
 │                       │       ├ InstalledVersion: 8.18.0-1ubuntu2.1 
-│                       │       ├ Status          : affected 
+│                       │       ├ FixedVersion    : 8.18.0-1ubuntu2.3 
+│                       │       ├ Status          : fixed 
 │                       │       ├ Layer            ╭ Digest: sha256:137f05a578f6a8cf8097842993944a541957316a5fe
 │                       │       │                  │         6eaa18fa67bf369e9e2c6 
 │                       │       │                  ╰ DiffID: sha256:877febc1af9f32b31cdfbca4e58c495e03920a1a941
@@ -553,7 +562,8 @@
 │                       │       │                  ├ [3]: https://curl.se/docs/CVE-2026-12064.json 
 │                       │       │                  ├ [4]: https://hackerone.com/reports/3797526 
 │                       │       │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2026-12064 
-│                       │       │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2026-12064 
+│                       │       │                  ├ [6]: https://ubuntu.com/security/notices/USN-8525-1 
+│                       │       │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2026-12064 
 │                       │       ├ PublishedDate   : 2026-07-03T07:16:24.217Z 
 │                       │       ╰ LastModifiedDate: 2026-07-07T19:43:11.187Z 
 │                       ├ [11]  ╭ VulnerabilityID : CVE-2026-8286 
@@ -1086,7 +1096,7 @@
 │                       │       │                  ╰ [1]: CWE-787 
 │                       │       ├ VendorSeverity   ╭ azure : 2 
 │                       │       │                  ├ nvd   : 2 
-│                       │       │                  ├ photon: 2 
+│                       │       │                  ├ photon: 3 
 │                       │       │                  ├ redhat: 2 
 │                       │       │                  ╰ ubuntu: 2 
 │                       │       ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:
@@ -2415,7 +2425,8 @@
 │                       │       │                  │       d64&distro=ubuntu-26.04 
 │                       │       │                  ╰ UID : 7366362523ef70d9 
 │                       │       ├ InstalledVersion: 8.18.0-1ubuntu2.1 
-│                       │       ├ Status          : affected 
+│                       │       ├ FixedVersion    : 8.18.0-1ubuntu2.3 
+│                       │       ├ Status          : fixed 
 │                       │       ├ Layer            ╭ Digest: sha256:137f05a578f6a8cf8097842993944a541957316a5fe
 │                       │       │                  │         6eaa18fa67bf369e9e2c6 
 │                       │       │                  ╰ DiffID: sha256:877febc1af9f32b31cdfbca4e58c495e03920a1a941
@@ -2453,7 +2464,8 @@
 │                       │       │                  ├ [3]: https://curl.se/docs/CVE-2026-10536.json 
 │                       │       │                  ├ [4]: https://hackerone.com/reports/3751697 
 │                       │       │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2026-10536 
-│                       │       │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2026-10536 
+│                       │       │                  ├ [6]: https://ubuntu.com/security/notices/USN-8525-1 
+│                       │       │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2026-10536 
 │                       │       ├ PublishedDate   : 2026-07-03T07:16:23.563Z 
 │                       │       ╰ LastModifiedDate: 2026-07-07T18:02:03.89Z 
 │                       ├ [46]  ╭ VulnerabilityID : CVE-2026-11352 
@@ -2463,7 +2475,8 @@
 │                       │       │                  │       d64&distro=ubuntu-26.04 
 │                       │       │                  ╰ UID : 7366362523ef70d9 
 │                       │       ├ InstalledVersion: 8.18.0-1ubuntu2.1 
-│                       │       ├ Status          : affected 
+│                       │       ├ FixedVersion    : 8.18.0-1ubuntu2.3 
+│                       │       ├ Status          : fixed 
 │                       │       ├ Layer            ╭ Digest: sha256:137f05a578f6a8cf8097842993944a541957316a5fe
 │                       │       │                  │         6eaa18fa67bf369e9e2c6 
 │                       │       │                  ╰ DiffID: sha256:877febc1af9f32b31cdfbca4e58c495e03920a1a941
@@ -2499,7 +2512,8 @@
 │                       │       │                  ├ [3]: https://curl.se/docs/CVE-2026-11352.json 
 │                       │       │                  ├ [4]: https://hackerone.com/reports/3783438 
 │                       │       │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2026-11352 
-│                       │       │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2026-11352 
+│                       │       │                  ├ [6]: https://ubuntu.com/security/notices/USN-8525-1 
+│                       │       │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2026-11352 
 │                       │       ├ PublishedDate   : 2026-07-03T07:16:23.693Z 
 │                       │       ╰ LastModifiedDate: 2026-07-07T18:01:19.013Z 
 │                       ├ [47]  ╭ VulnerabilityID : CVE-2026-11564 
@@ -2509,7 +2523,8 @@
 │                       │       │                  │       d64&distro=ubuntu-26.04 
 │                       │       │                  ╰ UID : 7366362523ef70d9 
 │                       │       ├ InstalledVersion: 8.18.0-1ubuntu2.1 
-│                       │       ├ Status          : affected 
+│                       │       ├ FixedVersion    : 8.18.0-1ubuntu2.3 
+│                       │       ├ Status          : fixed 
 │                       │       ├ Layer            ╭ Digest: sha256:137f05a578f6a8cf8097842993944a541957316a5fe
 │                       │       │                  │         6eaa18fa67bf369e9e2c6 
 │                       │       │                  ╰ DiffID: sha256:877febc1af9f32b31cdfbca4e58c495e03920a1a941
@@ -2545,7 +2560,8 @@
 │                       │       │                  ├ [3]: https://curl.se/docs/CVE-2026-11564.json 
 │                       │       │                  ├ [4]: https://hackerone.com/reports/3788984 
 │                       │       │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2026-11564 
-│                       │       │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2026-11564 
+│                       │       │                  ├ [6]: https://ubuntu.com/security/notices/USN-8525-1 
+│                       │       │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2026-11564 
 │                       │       ├ PublishedDate   : 2026-07-03T07:16:23.79Z 
 │                       │       ╰ LastModifiedDate: 2026-07-07T18:00:35.84Z 
 │                       ├ [48]  ╭ VulnerabilityID : CVE-2026-11586 
@@ -2555,7 +2571,8 @@
 │                       │       │                  │       d64&distro=ubuntu-26.04 
 │                       │       │                  ╰ UID : 7366362523ef70d9 
 │                       │       ├ InstalledVersion: 8.18.0-1ubuntu2.1 
-│                       │       ├ Status          : affected 
+│                       │       ├ FixedVersion    : 8.18.0-1ubuntu2.3 
+│                       │       ├ Status          : fixed 
 │                       │       ├ Layer            ╭ Digest: sha256:137f05a578f6a8cf8097842993944a541957316a5fe
 │                       │       │                  │         6eaa18fa67bf369e9e2c6 
 │                       │       │                  ╰ DiffID: sha256:877febc1af9f32b31cdfbca4e58c495e03920a1a941
@@ -2588,7 +2605,8 @@
 │                       │       │                  ├ [3]: https://curl.se/docs/CVE-2026-11586.json 
 │                       │       │                  ├ [4]: https://hackerone.com/reports/3788931 
 │                       │       │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2026-11586 
-│                       │       │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2026-11586 
+│                       │       │                  ├ [6]: https://ubuntu.com/security/notices/USN-8525-1 
+│                       │       │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2026-11586 
 │                       │       ├ PublishedDate   : 2026-07-03T07:16:23.883Z 
 │                       │       ╰ LastModifiedDate: 2026-07-07T17:59:46.92Z 
 │                       ├ [49]  ╭ VulnerabilityID : CVE-2026-12064 
@@ -2598,7 +2616,8 @@
 │                       │       │                  │       d64&distro=ubuntu-26.04 
 │                       │       │                  ╰ UID : 7366362523ef70d9 
 │                       │       ├ InstalledVersion: 8.18.0-1ubuntu2.1 
-│                       │       ├ Status          : affected 
+│                       │       ├ FixedVersion    : 8.18.0-1ubuntu2.3 
+│                       │       ├ Status          : fixed 
 │                       │       ├ Layer            ╭ Digest: sha256:137f05a578f6a8cf8097842993944a541957316a5fe
 │                       │       │                  │         6eaa18fa67bf369e9e2c6 
 │                       │       │                  ╰ DiffID: sha256:877febc1af9f32b31cdfbca4e58c495e03920a1a941
@@ -2644,7 +2663,8 @@
 │                       │       │                  ├ [3]: https://curl.se/docs/CVE-2026-12064.json 
 │                       │       │                  ├ [4]: https://hackerone.com/reports/3797526 
 │                       │       │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2026-12064 
-│                       │       │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2026-12064 
+│                       │       │                  ├ [6]: https://ubuntu.com/security/notices/USN-8525-1 
+│                       │       │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2026-12064 
 │                       │       ├ PublishedDate   : 2026-07-03T07:16:24.217Z 
 │                       │       ╰ LastModifiedDate: 2026-07-07T19:43:11.187Z 
 │                       ├ [50]  ╭ VulnerabilityID : CVE-2026-8286 
@@ -4750,7 +4770,7 @@
 │                       │       │                  ╰ [1]: CWE-787 
 │                       │       ├ VendorSeverity   ╭ azure : 2 
 │                       │       │                  ├ nvd   : 2 
-│                       │       │                  ├ photon: 2 
+│                       │       │                  ├ photon: 3 
 │                       │       │                  ├ redhat: 2 
 │                       │       │                  ╰ ubuntu: 2 
 │                       │       ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:
@@ -5122,10 +5142,11 @@
 │                       │       ├ References       ╭ [0]: https://access.redhat.com/errata/RHSA-2026:37469 
 │                       │       │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2026-13757 
 │                       │       │                  ├ [2]: https://bugzilla.redhat.com/show_bug.cgi?id=2494556 
-│                       │       │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2026-13757 
-│                       │       │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2026-13757 
+│                       │       │                  ├ [3]: https://github.com/advisories/GHSA-p2wm-69qx-x25w 
+│                       │       │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2026-13757 
+│                       │       │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2026-13757 
 │                       │       ├ PublishedDate   : 2026-06-29T19:16:40.907Z 
-│                       │       ╰ LastModifiedDate: 2026-07-10T01:16:28.783Z 
+│                       │       ╰ LastModifiedDate: 2026-07-11T17:16:25Z 
 │                       ├ [83]  ╭ VulnerabilityID : CVE-2026-1502 
 │                       │       ├ PkgID           : libpython3.14-minimal@3.14.4-1 
 │                       │       ├ PkgName         : libpython3.14-minimal 
@@ -18814,7 +18835,7 @@
                         │      │                  ├ [49]: https://groups.google.com/g/golang-announce/c/iI-mYSI
                         │      │                  │       0lu8 
                         │      │                  ├ [50]: https://linux.oracle.com/cve/CVE-2026-39821.html 
-                        │      │                  ├ [51]: https://linux.oracle.com/errata/ELSA-2026-35831.html 
+                        │      │                  ├ [51]: https://linux.oracle.com/errata/ELSA-2026-37435.html 
                         │      │                  ├ [52]: https://nvd.nist.gov/vuln/detail/CVE-2026-39821 
                         │      │                  ├ [53]: https://pkg.go.dev/vuln/GO-2026-5026 
                         │      │                  ├ [54]: https://security.access.redhat.com/data/csaf/v2/vex/2
@@ -19457,7 +19478,8 @@
                         │      │                   pointing outside of the root. 
                         │      ├ Severity        : HIGH 
                         │      ├ CweIDs           ─ [0]: CWE-61 
-                        │      ├ VendorSeverity   ─ redhat: 3 
+                        │      ├ VendorSeverity   ╭ oracle-oval: 3 
+                        │      │                  ╰ redhat     : 3 
                         │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H
                         │      │                           │           /A:H 
                         │      │                           ╰ V3Score : 7.8 
@@ -19466,9 +19488,11 @@
                         │      │                  ├ [2]: https://go.dev/issue/79005 
                         │      │                  ├ [3]: https://groups.google.com/g/golang-announce/c/OrmQE_Yp
                         │      │                  │      5Sc 
-                        │      │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2026-39822 
-                        │      │                  ├ [5]: https://pkg.go.dev/vuln/GO-2026-4970 
-                        │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2026-39822 
+                        │      │                  ├ [4]: https://linux.oracle.com/cve/CVE-2026-39822.html 
+                        │      │                  ├ [5]: https://linux.oracle.com/errata/ELSA-2026-37435.html 
+                        │      │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2026-39822 
+                        │      │                  ├ [7]: https://pkg.go.dev/vuln/GO-2026-4970 
+                        │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2026-39822 
                         │      ├ PublishedDate   : 2026-07-08T17:17:21.31Z 
                         │      ╰ LastModifiedDate: 2026-07-10T18:57:32.923Z 
                         ├ [15] ╭ VulnerabilityID : CVE-2026-39836 
