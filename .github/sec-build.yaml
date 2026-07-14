@@ -163,7 +163,7 @@
     VendorSeverity:
       azure: 2
       nvd: 2
-      photon: 3
+      photon: 2
       redhat: 2
       ubuntu: 2
     CVSS:
@@ -1365,7 +1365,7 @@
     VendorSeverity:
       azure: 2
       nvd: 2
-      photon: 3
+      photon: 2
       redhat: 2
       ubuntu: 2
     CVSS:
@@ -1640,13 +1640,14 @@
         V3Score: 6.2
     References:
     - https://access.redhat.com/errata/RHSA-2026:37469
+    - https://access.redhat.com/errata/RHSA-2026:38342
     - https://access.redhat.com/security/cve/CVE-2026-13757
     - https://bugzilla.redhat.com/show_bug.cgi?id=2494556
     - https://github.com/advisories/GHSA-p2wm-69qx-x25w
     - https://nvd.nist.gov/vuln/detail/CVE-2026-13757
     - https://www.cve.org/CVERecord?id=CVE-2026-13757
     PublishedDate: '2026-06-29T19:16:40.907Z'
-    LastModifiedDate: '2026-07-11T17:16:25Z'
+    LastModifiedDate: '2026-07-13T06:16:24.863Z'
   - VulnerabilityID: CVE-2026-27456
     PkgID: libsmartcols1@2.41.3-3ubuntu2
     PkgName: libsmartcols1
@@ -1740,6 +1741,104 @@
     - https://www.cve.org/CVERecord?id=CVE-2026-3184
     PublishedDate: '2026-04-03T19:17:23.377Z'
     LastModifiedDate: '2026-06-17T10:43:10.203Z'
+  - VulnerabilityID: CVE-2026-58050
+    PkgID: libssh2-1t64@1.11.1-1ubuntu0.26.04.2
+    PkgName: libssh2-1t64
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/libssh2-1t64@1.11.1-1ubuntu0.26.04.2?arch=amd64&distro=ubuntu-26.04
+      UID: 8f81bbacf7e8c874
+    InstalledVersion: 1.11.1-1ubuntu0.26.04.2
+    FixedVersion: 1.11.1-1ubuntu0.26.04.3
+    Status: fixed
+    Layer:
+      Digest: sha256:cf47da87b3c6510ee8d925076dca955b53132e376bf220c20bc2d0a6a7c9d7aa
+      DiffID: sha256:c53ea18d6cf66b5e481468bd670747c3ae510e38dfba832509f168973fce4ec7
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-58050
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:f3c8b0d361de1cc90746a71704354ccae948ea7d4dfdfc2150600a16b86a85a6
+    Title: 'libssh2: libssh2: Heap buffer overflow via integer overflow in publickey attribute allocation'
+    Description: libssh2 through 1.11.1 reads an attacker-controlled 32-bit attribute count from a publickey-subsystem response and uses it in the allocation num_attrs * sizeof(libssh2_publickey_attribute) without bounds checking, so on 32-bit platforms the multiplication overflows to an undersized buffer. A malicious SSH server can then drive the attribute-parsing loop to write past the allocation, causing a heap buffer overflow in a connecting libssh2 client.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-190
+    VendorSeverity:
+      julia: 3
+      nvd: 3
+      redhat: 2
+      ubuntu: 2
+    CVSS:
+      julia:
+        V40Vector: CVSS:4.0/AV:N/AC:H/AT:N/PR:N/UI:N/VC:L/VI:L/VA:H/SC:N/SI:N/SA:N
+        V40Score: 8.3
+      nvd:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 7.5
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:H
+        V3Score: 7
+    References:
+    - https://access.redhat.com/security/cve/CVE-2026-58050
+    - https://github.com/advisories/GHSA-mf77-5hj2-98w9
+    - https://github.com/bikini/exploitarium/tree/main/libssh2-publickey-list-calc-poc
+    - https://github.com/libssh2/libssh2/blob/master/src/publickey.c
+    - https://github.com/libssh2/libssh2/pull/2205#discussion_r3523193089
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-58050
+    - https://ubuntu.com/security/notices/USN-8532-1
+    - https://www.cve.org/CVERecord?id=CVE-2026-58050
+    - https://www.vulncheck.com/advisories/libssh2-integer-overflow-in-publickey-subsystem-attribute-allocation
+    PublishedDate: '2026-06-28T02:16:32.017Z'
+    LastModifiedDate: '2026-06-30T20:27:36.86Z'
+  - VulnerabilityID: CVE-2026-58051
+    PkgID: libssh2-1t64@1.11.1-1ubuntu0.26.04.2
+    PkgName: libssh2-1t64
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/libssh2-1t64@1.11.1-1ubuntu0.26.04.2?arch=amd64&distro=ubuntu-26.04
+      UID: 8f81bbacf7e8c874
+    InstalledVersion: 1.11.1-1ubuntu0.26.04.2
+    FixedVersion: 1.11.1-1ubuntu0.26.04.3
+    Status: fixed
+    Layer:
+      Digest: sha256:cf47da87b3c6510ee8d925076dca955b53132e376bf220c20bc2d0a6a7c9d7aa
+      DiffID: sha256:c53ea18d6cf66b5e481468bd670747c3ae510e38dfba832509f168973fce4ec7
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-58051
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:a0375826d0495d7ce0c58b43672bd2bf4e6dcb9c1caa18a5fbe577af6629db22
+    Title: 'libssh2: libssh2: Denial of service or information disclosure via malformed SSH publickey response'
+    Description: libssh2 through 1.11.1 grows its publickey list with SSH2_REALLOC but does not zero-initialize new entries before parsing populates them, so a parse failure reaching the cleanup path leaves libssh2_publickey_list_free operating on an uninitialized entry. A malicious SSH server offering the publickey subsystem can use a malformed response to make cleanup free an uninitialized, attacker-influenceable attrs pointer in a connecting libssh2 client.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-908
+    VendorSeverity:
+      julia: 3
+      redhat: 2
+      ubuntu: 2
+    CVSS:
+      julia:
+        V40Vector: CVSS:4.0/AV:N/AC:H/AT:N/PR:N/UI:N/VC:N/VI:L/VA:H/SC:N/SI:N/SA:N
+        V40Score: 8.3
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:H
+        V3Score: 6.5
+    References:
+    - https://access.redhat.com/security/cve/CVE-2026-58051
+    - https://github.com/advisories/GHSA-c5f3-hwj2-xp5p
+    - https://github.com/bikini/exploitarium/tree/main/libssh2-publickey-list-calc-poc
+    - https://github.com/libssh2/libssh2/blob/master/src/publickey.c
+    - https://github.com/libssh2/libssh2/pull/2202
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-58051
+    - https://ubuntu.com/security/notices/USN-8532-1
+    - https://www.cve.org/CVERecord?id=CVE-2026-58051
+    - https://www.vulncheck.com/advisories/libssh2-free-of-uninitialized-pointer-in-publickey-list-cleanup
+    PublishedDate: '2026-06-28T02:16:32.153Z'
+    LastModifiedDate: '2026-06-30T17:42:04.473Z'
   - VulnerabilityID: CVE-2026-40228
     PkgID: libsystemd0@259.5-0ubuntu3
     PkgName: libsystemd0
@@ -3204,28 +3303,31 @@
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N
         V3Score: 8.1
     References:
-    - https://access.redhat.com/errata/RHSA-2026:34359
+    - https://access.redhat.com/errata/RHSA-2026:37123
     - https://access.redhat.com/security/cve/CVE-2026-25681
-    - https://bugzilla.redhat.com/2466505
-    - https://bugzilla.redhat.com/2466507
-    - https://bugzilla.redhat.com/2467822
-    - https://bugzilla.redhat.com/2480756
+    - https://bugzilla.redhat.com/2480680
+    - https://bugzilla.redhat.com/2480681
+    - https://bugzilla.redhat.com/2480685
+    - https://bugzilla.redhat.com/2480688
+    - https://bugzilla.redhat.com/2480757
     - https://bugzilla.redhat.com/2480761
-    - https://bugzilla.redhat.com/2484207
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2466505
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2466507
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2467822
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2480756
+    - https://bugzilla.redhat.com/2493620
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2480680
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2480681
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2480685
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2480688
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2480757
     - https://bugzilla.redhat.com/show_bug.cgi?id=2480761
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2484207
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2493620
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-25681
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-27145
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-33811
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-39821
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42151
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42154
-    - https://errata.almalinux.org/9/ALSA-2026-34359.html
-    - https://errata.rockylinux.org/RLSA-2026:34359
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-27136
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-39829
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-39832
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-39835
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42508
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-57231
+    - https://errata.almalinux.org/9/ALSA-2026-37123.html
+    - https://errata.rockylinux.org/RLSA-2026:37123
     - https://go.dev/cl/781703
     - https://go.dev/issue/79574
     - https://groups.google.com/g/golang-announce/c/iI-mYSI0lu8
@@ -3262,16 +3364,42 @@
     CweIDs:
     - CWE-1021
     VendorSeverity:
+      alma: 3
       amazon: 3
       azure: 2
       oracle-oval: 3
       redhat: 3
+      rocky: 3
     CVSS:
       redhat:
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N
         V3Score: 8.1
     References:
+    - https://access.redhat.com/errata/RHSA-2026:37123
     - https://access.redhat.com/security/cve/CVE-2026-27136
+    - https://bugzilla.redhat.com/2480680
+    - https://bugzilla.redhat.com/2480681
+    - https://bugzilla.redhat.com/2480685
+    - https://bugzilla.redhat.com/2480688
+    - https://bugzilla.redhat.com/2480757
+    - https://bugzilla.redhat.com/2480761
+    - https://bugzilla.redhat.com/2493620
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2480680
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2480681
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2480685
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2480688
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2480757
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2480761
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2493620
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-25681
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-27136
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-39829
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-39832
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-39835
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42508
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-57231
+    - https://errata.almalinux.org/9/ALSA-2026-37123.html
+    - https://errata.rockylinux.org/RLSA-2026:37123
     - https://go.dev/cl/781685
     - https://go.dev/issue/79575
     - https://groups.google.com/g/golang-announce/c/iI-mYSI0lu8
@@ -3436,11 +3564,13 @@
     - https://access.redhat.com/errata/RHSA-2026:36820
     - https://access.redhat.com/errata/RHSA-2026:36883
     - https://access.redhat.com/errata/RHSA-2026:37387
+    - https://access.redhat.com/errata/RHSA-2026:37435
+    - https://access.redhat.com/errata/RHSA-2026:37436
     - https://access.redhat.com/security/cve/CVE-2026-39821
     - https://bugzilla.redhat.com/2480756
     - https://bugzilla.redhat.com/show_bug.cgi?id=2480756
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-39821
-    - https://errata.almalinux.org/9/ALSA-2026-35829.html
+    - https://errata.almalinux.org/9/ALSA-2026-37435.html
     - https://errata.rockylinux.org/RLSA-2026:35829
     - https://github.com/golang/go/issues/78760
     - https://go.dev/cl/767220
@@ -3454,7 +3584,7 @@
     - https://ubuntu.com/security/notices/USN-8416-1
     - https://www.cve.org/CVERecord?id=CVE-2026-39821
     PublishedDate: '2026-05-22T16:16:20.41Z'
-    LastModifiedDate: '2026-07-10T12:16:44.313Z'
+    LastModifiedDate: '2026-07-13T13:16:35.167Z'
   - VulnerabilityID: CVE-2025-47911
     VendorIDs:
     - GO-2026-4440
@@ -3773,20 +3903,12 @@
     - https://access.redhat.com/security/cve/CVE-2026-27145
     - https://bugzilla.redhat.com/2445356
     - https://bugzilla.redhat.com/2484207
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2466505
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2466507
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2467822
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2480756
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2480761
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2445356
     - https://bugzilla.redhat.com/show_bug.cgi?id=2484207
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-25681
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-25679
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-27145
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-33811
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-39821
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42151
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42154
     - https://errata.almalinux.org/9/ALSA-2026-36317.html
-    - https://errata.rockylinux.org/RLSA-2026:34359
+    - https://errata.rockylinux.org/RLSA-2026:36317
     - https://go.dev/cl/783621
     - https://go.dev/issue/79694
     - https://groups.google.com/g/golang-announce/c/tKs3rmcBcKw
@@ -3824,6 +3946,7 @@
     CweIDs:
     - CWE-61
     VendorSeverity:
+      alma: 3
       oracle-oval: 3
       redhat: 3
     CVSS:
@@ -3831,7 +3954,10 @@
         V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H
         V3Score: 7.8
     References:
+    - https://access.redhat.com/errata/RHSA-2026:37435
     - https://access.redhat.com/security/cve/CVE-2026-39822
+    - https://bugzilla.redhat.com/2480756
+    - https://errata.almalinux.org/9/ALSA-2026-37435.html
     - https://go.dev/cl/797880
     - https://go.dev/issue/79005
     - https://groups.google.com/g/golang-announce/c/OrmQE_Yp5Sc
@@ -3841,7 +3967,7 @@
     - https://pkg.go.dev/vuln/GO-2026-4970
     - https://www.cve.org/CVERecord?id=CVE-2026-39822
     PublishedDate: '2026-07-08T17:17:21.31Z'
-    LastModifiedDate: '2026-07-10T18:57:32.923Z'
+    LastModifiedDate: '2026-07-13T14:54:26.317Z'
   - VulnerabilityID: CVE-2026-42504
     VendorIDs:
     - GO-2026-5038
@@ -3929,7 +4055,7 @@
     - https://pkg.go.dev/vuln/GO-2026-5856
     - https://www.cve.org/CVERecord?id=CVE-2026-42505
     PublishedDate: '2026-07-08T17:17:21.497Z'
-    LastModifiedDate: '2026-07-10T18:57:32.923Z'
+    LastModifiedDate: '2026-07-13T17:05:36.303Z'
   - VulnerabilityID: CVE-2026-42507
     VendorIDs:
     - GO-2026-5039
@@ -3972,6 +4098,8 @@
     - https://access.redhat.com/security/cve/CVE-2026-42507
     - https://bugzilla.redhat.com/2484205
     - https://bugzilla.redhat.com/show_bug.cgi?id=2484205
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2484207
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-27145
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42507
     - https://errata.almalinux.org/9/ALSA-2026-29981.html
     - https://errata.rockylinux.org/RLSA-2026:29981
