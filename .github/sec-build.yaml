@@ -12,15 +12,15 @@
     InstalledVersion: 1:2.41.3-3ubuntu2
     Status: affected
     Layer:
-      Digest: sha256:cf47da87b3c6510ee8d925076dca955b53132e376bf220c20bc2d0a6a7c9d7aa
-      DiffID: sha256:c53ea18d6cf66b5e481468bd670747c3ae510e38dfba832509f168973fce4ec7
+      Digest: sha256:357710754a797a0b8d7465470fd490cec4d7a79976f5b16137b13867ed9515ce
+      DiffID: sha256:f7bda0de7895baf23a3ecc70b50bb8bc7be3642a95a7a246a8f094628c9083e0
     SeveritySource: ubuntu
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-27456
     DataSource:
       ID: ubuntu
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Fingerprint: sha256:f7791e3bed4ad69d43ff01a96d95b6c185f06797d61ef81cd4b42951b1ffd189
+    Fingerprint: sha256:432c3d16a3f27a6e85903a7c6f7a91689ed5c0053b7a43903aa9fc19771fb4d3
     Title: 'util-linux: TOCTOU in the mount program when setting up loop devices'
     Description: util-linux is a random collection of Linux utilities. Prior to version 2.41.4, a TOCTOU (Time-of-Check-Time-of-Use) vulnerability has been identified in the SUID binary /usr/bin/mount from util-linux. The mount binary, when setting up loop devices, validates the source file path with user privileges via fork() + setuid() + realpath(), but subsequently re-canonicalizes and opens it with root privileges (euid=0) without verifying that the path has not been replaced between both operations. Neither O_NOFOLLOW, nor inode comparison, nor post-open fstat() are employed. This allows a local unprivileged user to replace the source file with a symlink pointing to any root-owned file or device during the race window, causing the SUID binary to open and mount it as root. Exploitation requires an /etc/fstab entry with user,loop options whose path points to a directory where the attacker has write permission, and that /usr/bin/mount has the SUID bit set (the default configuration on virtually all Linux distributions). The impact is unauthorized read access to root-protected files and block devices, including backup images, disk volumes, and any file containing a valid filesystem. This issue has been patched in version 2.41.4.
     Severity: MEDIUM
@@ -61,15 +61,15 @@
     InstalledVersion: 1:2.41.3-3ubuntu2
     Status: affected
     Layer:
-      Digest: sha256:cf47da87b3c6510ee8d925076dca955b53132e376bf220c20bc2d0a6a7c9d7aa
-      DiffID: sha256:c53ea18d6cf66b5e481468bd670747c3ae510e38dfba832509f168973fce4ec7
+      Digest: sha256:357710754a797a0b8d7465470fd490cec4d7a79976f5b16137b13867ed9515ce
+      DiffID: sha256:f7bda0de7895baf23a3ecc70b50bb8bc7be3642a95a7a246a8f094628c9083e0
     SeveritySource: ubuntu
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-3184
     DataSource:
       ID: ubuntu
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Fingerprint: sha256:16ae83484aef25ccdbf36b7c11e2fb8dd3e25927b9a9e44a9e8d3d21028befd2
+    Fingerprint: sha256:4e8445aed1f2e49b22028a423359b1d2a56a5fd526e9c237d70c9fa7554bb0c6
     Title: 'util-linux: util-linux: Access control bypass due to improper hostname canonicalization'
     Description: A flaw was found in util-linux. Improper hostname canonicalization in the `login(1)` utility, when invoked with the `-h` option, can modify the supplied remote hostname before setting `PAM_RHOST`. A remote attacker could exploit this by providing a specially crafted hostname, potentially bypassing host-based Pluggable Authentication Modules (PAM) access control rules that rely on fully qualified domain names. This could lead to unauthorized access.
     Severity: MEDIUM
@@ -105,15 +105,15 @@
     InstalledVersion: 1.8.1-4ubuntu2
     Status: affected
     Layer:
-      Digest: sha256:cf47da87b3c6510ee8d925076dca955b53132e376bf220c20bc2d0a6a7c9d7aa
-      DiffID: sha256:c53ea18d6cf66b5e481468bd670747c3ae510e38dfba832509f168973fce4ec7
+      Digest: sha256:357710754a797a0b8d7465470fd490cec4d7a79976f5b16137b13867ed9515ce
+      DiffID: sha256:f7bda0de7895baf23a3ecc70b50bb8bc7be3642a95a7a246a8f094628c9083e0
     SeveritySource: ubuntu
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-41256
     DataSource:
       ID: ubuntu
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Fingerprint: sha256:52bac849cfab828998abdd5a23eaa356821d9f69a98e298d030e7286e2952229
+    Fingerprint: sha256:4898693a7d3510403cc39f1588ed068e7aa2ba5c715df155ff34569428287b5b
     Title: 'jq: embedded NUL truncates top-level jq programs loaded with -f'
     Description: jq is a command-line JSON processor. In 1.8.1 and earlier, Top-level jq programs loaded from a file with -f are truncated at the first embedded NUL byte on current upstream HEAD. A crafted filter file such as . followed by \x00 and arbitrary suffix compiles and executes as only the prefix before the NUL. This leaves jq with a post-CVE-2026-33948 prefix/full-buffer mismatch on the compilation path even though the JSON parser path has already been fixed.
     Severity: MEDIUM
@@ -145,15 +145,15 @@
     InstalledVersion: 1.8.1-4ubuntu2
     Status: affected
     Layer:
-      Digest: sha256:cf47da87b3c6510ee8d925076dca955b53132e376bf220c20bc2d0a6a7c9d7aa
-      DiffID: sha256:c53ea18d6cf66b5e481468bd670747c3ae510e38dfba832509f168973fce4ec7
+      Digest: sha256:357710754a797a0b8d7465470fd490cec4d7a79976f5b16137b13867ed9515ce
+      DiffID: sha256:f7bda0de7895baf23a3ecc70b50bb8bc7be3642a95a7a246a8f094628c9083e0
     SeveritySource: ubuntu
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-41257
     DataSource:
       ID: ubuntu
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Fingerprint: sha256:9a203000b602d3500a8c9d529100f3f668c3376742a4bc71e2a320e32cda435f
+    Fingerprint: sha256:3bd4d12127b8ae8ec77737bf8c4e8d4c22d49692fc1c5663e7b45e952b106c91
     Title: 'jq: signed-int overflow in stack_reallocate'
     Description: jq is a command-line JSON processor. In 1.8.1 and earlier, the jq bytecode VM's data stack tracks its allocation size in a signed int. When the stack grows beyond ≈1 GiB (via deeply nested generator forks), the doubling arithmetic overflows. The wrapped value is passed to realloc and then used for a memmove with attacker-influenced offsets.
     Severity: MEDIUM
@@ -190,15 +190,15 @@
     InstalledVersion: 1.8.1-4ubuntu2
     Status: affected
     Layer:
-      Digest: sha256:cf47da87b3c6510ee8d925076dca955b53132e376bf220c20bc2d0a6a7c9d7aa
-      DiffID: sha256:c53ea18d6cf66b5e481468bd670747c3ae510e38dfba832509f168973fce4ec7
+      Digest: sha256:357710754a797a0b8d7465470fd490cec4d7a79976f5b16137b13867ed9515ce
+      DiffID: sha256:f7bda0de7895baf23a3ecc70b50bb8bc7be3642a95a7a246a8f094628c9083e0
     SeveritySource: ubuntu
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-43895
     DataSource:
       ID: ubuntu
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Fingerprint: sha256:4cd4aa2c2d7069dbb2851432d5252d1b18ae90fe4c90dad679ef7c663a94f3a8
+    Fingerprint: sha256:247cecd8f6bf312cb7dd502e41d7ada5d774c0c58b692e0e1165a22e41c45243
     Title: 'jq: embedded NUL in jq import paths causes local redaction-policy bypass and preserves sensitive fields in published artifacts'
     Description: jq is a command-line JSON processor. In 1.8.1 and earlier, jq accepts embedded NUL bytes in import paths at the jq-language level, but later resolves those paths through C string operations during module and data-file lookup. This creates a mismatch between the logical import string that policy or audit code may validate and the on-disk path that jq actually opens.
     Severity: MEDIUM
@@ -231,15 +231,15 @@
     InstalledVersion: 1.8.1-4ubuntu2
     Status: affected
     Layer:
-      Digest: sha256:cf47da87b3c6510ee8d925076dca955b53132e376bf220c20bc2d0a6a7c9d7aa
-      DiffID: sha256:c53ea18d6cf66b5e481468bd670747c3ae510e38dfba832509f168973fce4ec7
+      Digest: sha256:357710754a797a0b8d7465470fd490cec4d7a79976f5b16137b13867ed9515ce
+      DiffID: sha256:f7bda0de7895baf23a3ecc70b50bb8bc7be3642a95a7a246a8f094628c9083e0
     SeveritySource: ubuntu
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-43896
     DataSource:
       ID: ubuntu
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Fingerprint: sha256:091b1f5248e038640d8d41710d3d3827237b16a7faa14a3de6bc7acefc71c081
+    Fingerprint: sha256:42f9ff7ba2ede0430927e91b2603b6d8bb59a61a529f5e8882db9ab0847dbb68
     Title: 'jq: stack overflow in recursive object merge'
     Description: jq is a command-line JSON processor. In 1.8.1 and earlier, unbounded recursion in jv_object_merge_recursive() allows a crafted jq program to crash the process with a segfault. The function is reachable through the * operator when both operands are objects.
     Severity: MEDIUM
@@ -276,15 +276,15 @@
     InstalledVersion: 1.8.1-4ubuntu2
     Status: affected
     Layer:
-      Digest: sha256:cf47da87b3c6510ee8d925076dca955b53132e376bf220c20bc2d0a6a7c9d7aa
-      DiffID: sha256:c53ea18d6cf66b5e481468bd670747c3ae510e38dfba832509f168973fce4ec7
+      Digest: sha256:357710754a797a0b8d7465470fd490cec4d7a79976f5b16137b13867ed9515ce
+      DiffID: sha256:f7bda0de7895baf23a3ecc70b50bb8bc7be3642a95a7a246a8f094628c9083e0
     SeveritySource: ubuntu
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-44777
     DataSource:
       ID: ubuntu
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Fingerprint: sha256:a09ca721b08618577974d4d2e036d0d2aa511b1103d12337fb9b64c0a62c5b0f
+    Fingerprint: sha256:1ae95873a23993d029ee4f43bfdc2b65d34bc0916e06334aafcd3253a116fc39
     Title: 'jq: stack overflow in module loading on mutual include'
     Description: |-
       jq is a command-line JSON processor. In 1.8.2rc1 and earlier, the ordinary module loader recurses without cycle detection when two
@@ -322,15 +322,15 @@
     InstalledVersion: 2.41.3-3ubuntu2
     Status: affected
     Layer:
-      Digest: sha256:cf47da87b3c6510ee8d925076dca955b53132e376bf220c20bc2d0a6a7c9d7aa
-      DiffID: sha256:c53ea18d6cf66b5e481468bd670747c3ae510e38dfba832509f168973fce4ec7
+      Digest: sha256:357710754a797a0b8d7465470fd490cec4d7a79976f5b16137b13867ed9515ce
+      DiffID: sha256:f7bda0de7895baf23a3ecc70b50bb8bc7be3642a95a7a246a8f094628c9083e0
     SeveritySource: ubuntu
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-27456
     DataSource:
       ID: ubuntu
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Fingerprint: sha256:cf62226ead0d5b973358ad103bef541022290c6bed82bf550024118c8da630db
+    Fingerprint: sha256:daf835738f24f08b2f92af19193e37a138e7064371d28a17b9eab4d950663ee6
     Title: 'util-linux: TOCTOU in the mount program when setting up loop devices'
     Description: util-linux is a random collection of Linux utilities. Prior to version 2.41.4, a TOCTOU (Time-of-Check-Time-of-Use) vulnerability has been identified in the SUID binary /usr/bin/mount from util-linux. The mount binary, when setting up loop devices, validates the source file path with user privileges via fork() + setuid() + realpath(), but subsequently re-canonicalizes and opens it with root privileges (euid=0) without verifying that the path has not been replaced between both operations. Neither O_NOFOLLOW, nor inode comparison, nor post-open fstat() are employed. This allows a local unprivileged user to replace the source file with a symlink pointing to any root-owned file or device during the race window, causing the SUID binary to open and mount it as root. Exploitation requires an /etc/fstab entry with user,loop options whose path points to a directory where the attacker has write permission, and that /usr/bin/mount has the SUID bit set (the default configuration on virtually all Linux distributions). The impact is unauthorized read access to root-protected files and block devices, including backup images, disk volumes, and any file containing a valid filesystem. This issue has been patched in version 2.41.4.
     Severity: MEDIUM
@@ -371,15 +371,15 @@
     InstalledVersion: 2.41.3-3ubuntu2
     Status: affected
     Layer:
-      Digest: sha256:cf47da87b3c6510ee8d925076dca955b53132e376bf220c20bc2d0a6a7c9d7aa
-      DiffID: sha256:c53ea18d6cf66b5e481468bd670747c3ae510e38dfba832509f168973fce4ec7
+      Digest: sha256:357710754a797a0b8d7465470fd490cec4d7a79976f5b16137b13867ed9515ce
+      DiffID: sha256:f7bda0de7895baf23a3ecc70b50bb8bc7be3642a95a7a246a8f094628c9083e0
     SeveritySource: ubuntu
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-3184
     DataSource:
       ID: ubuntu
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Fingerprint: sha256:0e8d9a8e9cdbcfdfc4441f94e778bbd77dd62008e6e79f567b2fed1af0d3766a
+    Fingerprint: sha256:48695d552c86f8b65970b5dea57b6b4e0631a324605080b615b7f6435cbc2e1b
     Title: 'util-linux: util-linux: Access control bypass due to improper hostname canonicalization'
     Description: A flaw was found in util-linux. Improper hostname canonicalization in the `login(1)` utility, when invoked with the `-h` option, can modify the supplied remote hostname before setting `PAM_RHOST`. A remote attacker could exploit this by providing a specially crafted hostname, potentially bypassing host-based Pluggable Authentication Modules (PAM) access control rules that rely on fully qualified domain names. This could lead to unauthorized access.
     Severity: MEDIUM
@@ -415,15 +415,15 @@
     InstalledVersion: 2.43-2ubuntu2
     Status: affected
     Layer:
-      Digest: sha256:cf47da87b3c6510ee8d925076dca955b53132e376bf220c20bc2d0a6a7c9d7aa
-      DiffID: sha256:c53ea18d6cf66b5e481468bd670747c3ae510e38dfba832509f168973fce4ec7
+      Digest: sha256:357710754a797a0b8d7465470fd490cec4d7a79976f5b16137b13867ed9515ce
+      DiffID: sha256:f7bda0de7895baf23a3ecc70b50bb8bc7be3642a95a7a246a8f094628c9083e0
     SeveritySource: ubuntu
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-4046
     DataSource:
       ID: ubuntu
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Fingerprint: sha256:d1b76087cc01a5185c56d7d1f2d97565fbff6ef8a5fc4e697617cca65d7e2805
+    Fingerprint: sha256:48b5bdd07e719f56cd74fa669d762b937926dbe276bae625d7b8cf2b45cf3c31
     Title: 'glibc: glibc: Denial of Service via iconv() function with specific character sets'
     Description: |-
       The iconv() function in the GNU C Library versions 2.43 and earlier may crash due to an assertion failure when converting inputs from the IBM1390 or IBM1399 character sets, which may be used to remotely crash an application.
@@ -482,15 +482,15 @@
     InstalledVersion: 2.43-2ubuntu2
     Status: affected
     Layer:
-      Digest: sha256:cf47da87b3c6510ee8d925076dca955b53132e376bf220c20bc2d0a6a7c9d7aa
-      DiffID: sha256:c53ea18d6cf66b5e481468bd670747c3ae510e38dfba832509f168973fce4ec7
+      Digest: sha256:357710754a797a0b8d7465470fd490cec4d7a79976f5b16137b13867ed9515ce
+      DiffID: sha256:f7bda0de7895baf23a3ecc70b50bb8bc7be3642a95a7a246a8f094628c9083e0
     SeveritySource: ubuntu
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-4437
     DataSource:
       ID: ubuntu
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Fingerprint: sha256:38276b195b849da9fb49596f77daf2308152fbbeb19d7d80827ca770cebd6a4c
+    Fingerprint: sha256:ece577ea507f3cfb8fda90e8860d954fa90a400dffc42d3b5361cd11c72325d8
     Title: 'glibc: glibc: Incorrect DNS response parsing via crafted DNS server response'
     Description: Calling gethostbyaddr or gethostbyaddr_r with a configured nsswitch.conf that specifies the library's DNS backend in the GNU C Library version 2.34 to version 2.43 could, with a crafted response from the configured DNS server, result in a violation of the DNS specification that causes the application to treat a non-answer section of the DNS response as a valid answer.
     Severity: MEDIUM
@@ -540,15 +540,15 @@
     InstalledVersion: 2.43-2ubuntu2
     Status: affected
     Layer:
-      Digest: sha256:cf47da87b3c6510ee8d925076dca955b53132e376bf220c20bc2d0a6a7c9d7aa
-      DiffID: sha256:c53ea18d6cf66b5e481468bd670747c3ae510e38dfba832509f168973fce4ec7
+      Digest: sha256:357710754a797a0b8d7465470fd490cec4d7a79976f5b16137b13867ed9515ce
+      DiffID: sha256:f7bda0de7895baf23a3ecc70b50bb8bc7be3642a95a7a246a8f094628c9083e0
     SeveritySource: ubuntu
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-4438
     DataSource:
       ID: ubuntu
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Fingerprint: sha256:e93bd07895ae30c0062d507a9593c93ddd9dfb5cf5746168947a61ff10c52502
+    Fingerprint: sha256:117a002750ad50186acab0d313265fb83f8934f380ef555f86c8aa777f8fc2ce
     Title: 'glibc: glibc: Invalid DNS hostname returned via gethostbyaddr functions'
     Description: Calling gethostbyaddr or gethostbyaddr_r with a configured nsswitch.conf that specifies the library's DNS backend in the GNU C library version 2.34 to version 2.43 could result in an invalid DNS hostname being returned to the caller in violation of the DNS specification.
     Severity: MEDIUM
@@ -599,15 +599,15 @@
     InstalledVersion: 2.43-2ubuntu2
     Status: affected
     Layer:
-      Digest: sha256:cf47da87b3c6510ee8d925076dca955b53132e376bf220c20bc2d0a6a7c9d7aa
-      DiffID: sha256:c53ea18d6cf66b5e481468bd670747c3ae510e38dfba832509f168973fce4ec7
+      Digest: sha256:357710754a797a0b8d7465470fd490cec4d7a79976f5b16137b13867ed9515ce
+      DiffID: sha256:f7bda0de7895baf23a3ecc70b50bb8bc7be3642a95a7a246a8f094628c9083e0
     SeveritySource: ubuntu
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-5435
     DataSource:
       ID: ubuntu
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Fingerprint: sha256:a92b393fb1edf6bdc0f39cea5ca53b62defe71cbdd10f5766ac134d34c5b5c25
+    Fingerprint: sha256:12459ab07b0caa92fd10f0a3b6b4ca053289fa6a8fdff0181c1f9c071d4758a1
     Title: 'glibc: glibc: Out-of-bounds write via TSIG record processing'
     Description: The deprecated functions ns_printrrf, ns_printrr and fp_nquery in the GNU C Library version 2.2 and newer fail to enforce the caller-supplied buffer length, and can result in an out-of-bounds write when printing TSIG records.
     Severity: MEDIUM
@@ -640,15 +640,15 @@
     InstalledVersion: 2.43-2ubuntu2
     Status: affected
     Layer:
-      Digest: sha256:cf47da87b3c6510ee8d925076dca955b53132e376bf220c20bc2d0a6a7c9d7aa
-      DiffID: sha256:c53ea18d6cf66b5e481468bd670747c3ae510e38dfba832509f168973fce4ec7
+      Digest: sha256:357710754a797a0b8d7465470fd490cec4d7a79976f5b16137b13867ed9515ce
+      DiffID: sha256:f7bda0de7895baf23a3ecc70b50bb8bc7be3642a95a7a246a8f094628c9083e0
     SeveritySource: ubuntu
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-6238
     DataSource:
       ID: ubuntu
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Fingerprint: sha256:7fd5b23bcfb322cd0b75b5d9885c179c26472305d3c5f56cf2123a78057dcd34
+    Fingerprint: sha256:3f15bb50934c46fb80627db51f94eef8ba6c603f6768323ccd30fdda1e384d32
     Title: 'glibc: glibc: Application crash or uninitialized memory read via crafted DNS response'
     Description: |-
       The deprecated functions ns_printrrf, ns_printrr and fp_nquery in the GNU C Library version 2.0.1 to version 2.43 fail to validate the RDATA content against the RDATA length in a DNS response when processing A6, CERT, LOC, TKEY or TSIG records, which may allow an attacker to craft a DNS response, causing a target application to crash or read uninitialized memory.
@@ -684,15 +684,15 @@
     InstalledVersion: 2.43-2ubuntu2
     Status: affected
     Layer:
-      Digest: sha256:cf47da87b3c6510ee8d925076dca955b53132e376bf220c20bc2d0a6a7c9d7aa
-      DiffID: sha256:c53ea18d6cf66b5e481468bd670747c3ae510e38dfba832509f168973fce4ec7
+      Digest: sha256:357710754a797a0b8d7465470fd490cec4d7a79976f5b16137b13867ed9515ce
+      DiffID: sha256:f7bda0de7895baf23a3ecc70b50bb8bc7be3642a95a7a246a8f094628c9083e0
     SeveritySource: ubuntu
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-4046
     DataSource:
       ID: ubuntu
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Fingerprint: sha256:de1525dc4e10ab86d04c2262e814e22d9ad68f4f2caffccc7f7bce81ffb135f1
+    Fingerprint: sha256:66be575dd923fa7d7bd18830301d56481aa72ecf3806960724ed7bca163d6b07
     Title: 'glibc: glibc: Denial of Service via iconv() function with specific character sets'
     Description: |-
       The iconv() function in the GNU C Library versions 2.43 and earlier may crash due to an assertion failure when converting inputs from the IBM1390 or IBM1399 character sets, which may be used to remotely crash an application.
@@ -751,15 +751,15 @@
     InstalledVersion: 2.43-2ubuntu2
     Status: affected
     Layer:
-      Digest: sha256:cf47da87b3c6510ee8d925076dca955b53132e376bf220c20bc2d0a6a7c9d7aa
-      DiffID: sha256:c53ea18d6cf66b5e481468bd670747c3ae510e38dfba832509f168973fce4ec7
+      Digest: sha256:357710754a797a0b8d7465470fd490cec4d7a79976f5b16137b13867ed9515ce
+      DiffID: sha256:f7bda0de7895baf23a3ecc70b50bb8bc7be3642a95a7a246a8f094628c9083e0
     SeveritySource: ubuntu
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-4437
     DataSource:
       ID: ubuntu
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Fingerprint: sha256:f76ef8d4242919f30189878d358c23f24172890e8a6fb1107548dda76defa1e2
+    Fingerprint: sha256:a3c528f95263ed5089b04205df9f25ec2c47a976d12c80d505ba907fbb19960f
     Title: 'glibc: glibc: Incorrect DNS response parsing via crafted DNS server response'
     Description: Calling gethostbyaddr or gethostbyaddr_r with a configured nsswitch.conf that specifies the library's DNS backend in the GNU C Library version 2.34 to version 2.43 could, with a crafted response from the configured DNS server, result in a violation of the DNS specification that causes the application to treat a non-answer section of the DNS response as a valid answer.
     Severity: MEDIUM
@@ -809,15 +809,15 @@
     InstalledVersion: 2.43-2ubuntu2
     Status: affected
     Layer:
-      Digest: sha256:cf47da87b3c6510ee8d925076dca955b53132e376bf220c20bc2d0a6a7c9d7aa
-      DiffID: sha256:c53ea18d6cf66b5e481468bd670747c3ae510e38dfba832509f168973fce4ec7
+      Digest: sha256:357710754a797a0b8d7465470fd490cec4d7a79976f5b16137b13867ed9515ce
+      DiffID: sha256:f7bda0de7895baf23a3ecc70b50bb8bc7be3642a95a7a246a8f094628c9083e0
     SeveritySource: ubuntu
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-4438
     DataSource:
       ID: ubuntu
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Fingerprint: sha256:68dc1584013874446013ba0267b7080e5f84b744d76343047f784583de5af6e1
+    Fingerprint: sha256:e0e61813b6d470faaf99a05375e151b05e84fabe40be6d7674993cae0ed44b2d
     Title: 'glibc: glibc: Invalid DNS hostname returned via gethostbyaddr functions'
     Description: Calling gethostbyaddr or gethostbyaddr_r with a configured nsswitch.conf that specifies the library's DNS backend in the GNU C library version 2.34 to version 2.43 could result in an invalid DNS hostname being returned to the caller in violation of the DNS specification.
     Severity: MEDIUM
@@ -868,15 +868,15 @@
     InstalledVersion: 2.43-2ubuntu2
     Status: affected
     Layer:
-      Digest: sha256:cf47da87b3c6510ee8d925076dca955b53132e376bf220c20bc2d0a6a7c9d7aa
-      DiffID: sha256:c53ea18d6cf66b5e481468bd670747c3ae510e38dfba832509f168973fce4ec7
+      Digest: sha256:357710754a797a0b8d7465470fd490cec4d7a79976f5b16137b13867ed9515ce
+      DiffID: sha256:f7bda0de7895baf23a3ecc70b50bb8bc7be3642a95a7a246a8f094628c9083e0
     SeveritySource: ubuntu
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-5435
     DataSource:
       ID: ubuntu
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Fingerprint: sha256:3bf1cae9d8822e6cb170ebf401b813664638cbe0185a7f15affdf33007b6ec30
+    Fingerprint: sha256:6b96f2847cb1bf371f88985e74884c503d75c833791220f67574fde47a96cbcd
     Title: 'glibc: glibc: Out-of-bounds write via TSIG record processing'
     Description: The deprecated functions ns_printrrf, ns_printrr and fp_nquery in the GNU C Library version 2.2 and newer fail to enforce the caller-supplied buffer length, and can result in an out-of-bounds write when printing TSIG records.
     Severity: MEDIUM
@@ -909,15 +909,15 @@
     InstalledVersion: 2.43-2ubuntu2
     Status: affected
     Layer:
-      Digest: sha256:cf47da87b3c6510ee8d925076dca955b53132e376bf220c20bc2d0a6a7c9d7aa
-      DiffID: sha256:c53ea18d6cf66b5e481468bd670747c3ae510e38dfba832509f168973fce4ec7
+      Digest: sha256:357710754a797a0b8d7465470fd490cec4d7a79976f5b16137b13867ed9515ce
+      DiffID: sha256:f7bda0de7895baf23a3ecc70b50bb8bc7be3642a95a7a246a8f094628c9083e0
     SeveritySource: ubuntu
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-6238
     DataSource:
       ID: ubuntu
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Fingerprint: sha256:4b8e687ac1c413ebf4956b6f6007bb768236034784d2c8f62002d81a18217d22
+    Fingerprint: sha256:caa83d4930aeb940abff722c942b3cffa8725c9ea5c06a2b839b3784c93d5202
     Title: 'glibc: glibc: Application crash or uninitialized memory read via crafted DNS response'
     Description: |-
       The deprecated functions ns_printrrf, ns_printrr and fp_nquery in the GNU C Library version 2.0.1 to version 2.43 fail to validate the RDATA content against the RDATA length in a DNS response when processing A6, CERT, LOC, TKEY or TSIG records, which may allow an attacker to craft a DNS response, causing a target application to crash or read uninitialized memory.
@@ -953,15 +953,15 @@
     InstalledVersion: 2.43-2ubuntu2
     Status: affected
     Layer:
-      Digest: sha256:cf47da87b3c6510ee8d925076dca955b53132e376bf220c20bc2d0a6a7c9d7aa
-      DiffID: sha256:c53ea18d6cf66b5e481468bd670747c3ae510e38dfba832509f168973fce4ec7
+      Digest: sha256:357710754a797a0b8d7465470fd490cec4d7a79976f5b16137b13867ed9515ce
+      DiffID: sha256:f7bda0de7895baf23a3ecc70b50bb8bc7be3642a95a7a246a8f094628c9083e0
     SeveritySource: ubuntu
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-4046
     DataSource:
       ID: ubuntu
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Fingerprint: sha256:2d70d08ac53bd6c7425a6b4161c5a905b882e999ca7f4f0d4fa4def3b6273b31
+    Fingerprint: sha256:40277db67a6b63e4f5940c7443adeb8bdd4beb7fab69e61173d3ef4ada2a5d78
     Title: 'glibc: glibc: Denial of Service via iconv() function with specific character sets'
     Description: |-
       The iconv() function in the GNU C Library versions 2.43 and earlier may crash due to an assertion failure when converting inputs from the IBM1390 or IBM1399 character sets, which may be used to remotely crash an application.
@@ -1020,15 +1020,15 @@
     InstalledVersion: 2.43-2ubuntu2
     Status: affected
     Layer:
-      Digest: sha256:cf47da87b3c6510ee8d925076dca955b53132e376bf220c20bc2d0a6a7c9d7aa
-      DiffID: sha256:c53ea18d6cf66b5e481468bd670747c3ae510e38dfba832509f168973fce4ec7
+      Digest: sha256:357710754a797a0b8d7465470fd490cec4d7a79976f5b16137b13867ed9515ce
+      DiffID: sha256:f7bda0de7895baf23a3ecc70b50bb8bc7be3642a95a7a246a8f094628c9083e0
     SeveritySource: ubuntu
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-4437
     DataSource:
       ID: ubuntu
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Fingerprint: sha256:24dda3e2cf7e11e446b2b1efd0e02234429a6c5fa578a5adcaaa5602148ffa80
+    Fingerprint: sha256:4904a628b49f07d0ceb48591a8e83f975f056a12eb5d39f42952f82a5364191f
     Title: 'glibc: glibc: Incorrect DNS response parsing via crafted DNS server response'
     Description: Calling gethostbyaddr or gethostbyaddr_r with a configured nsswitch.conf that specifies the library's DNS backend in the GNU C Library version 2.34 to version 2.43 could, with a crafted response from the configured DNS server, result in a violation of the DNS specification that causes the application to treat a non-answer section of the DNS response as a valid answer.
     Severity: MEDIUM
@@ -1078,15 +1078,15 @@
     InstalledVersion: 2.43-2ubuntu2
     Status: affected
     Layer:
-      Digest: sha256:cf47da87b3c6510ee8d925076dca955b53132e376bf220c20bc2d0a6a7c9d7aa
-      DiffID: sha256:c53ea18d6cf66b5e481468bd670747c3ae510e38dfba832509f168973fce4ec7
+      Digest: sha256:357710754a797a0b8d7465470fd490cec4d7a79976f5b16137b13867ed9515ce
+      DiffID: sha256:f7bda0de7895baf23a3ecc70b50bb8bc7be3642a95a7a246a8f094628c9083e0
     SeveritySource: ubuntu
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-4438
     DataSource:
       ID: ubuntu
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Fingerprint: sha256:170f7ed7a87258fe9c905d7138fe2f02076f8f979436373df94f46002d849666
+    Fingerprint: sha256:619b9dd8529a46bad9950714abc3890eebf59b67968505f1865f3e895969383d
     Title: 'glibc: glibc: Invalid DNS hostname returned via gethostbyaddr functions'
     Description: Calling gethostbyaddr or gethostbyaddr_r with a configured nsswitch.conf that specifies the library's DNS backend in the GNU C library version 2.34 to version 2.43 could result in an invalid DNS hostname being returned to the caller in violation of the DNS specification.
     Severity: MEDIUM
@@ -1137,15 +1137,15 @@
     InstalledVersion: 2.43-2ubuntu2
     Status: affected
     Layer:
-      Digest: sha256:cf47da87b3c6510ee8d925076dca955b53132e376bf220c20bc2d0a6a7c9d7aa
-      DiffID: sha256:c53ea18d6cf66b5e481468bd670747c3ae510e38dfba832509f168973fce4ec7
+      Digest: sha256:357710754a797a0b8d7465470fd490cec4d7a79976f5b16137b13867ed9515ce
+      DiffID: sha256:f7bda0de7895baf23a3ecc70b50bb8bc7be3642a95a7a246a8f094628c9083e0
     SeveritySource: ubuntu
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-5435
     DataSource:
       ID: ubuntu
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Fingerprint: sha256:358eca06f2a85110c873600a4f041e7dccd4ecb100280c6d3ed9b0b246c69b1f
+    Fingerprint: sha256:ee15f08642ff6578a7e5883826131c9bdef70376cbcddf4dd3709169c10b9de7
     Title: 'glibc: glibc: Out-of-bounds write via TSIG record processing'
     Description: The deprecated functions ns_printrrf, ns_printrr and fp_nquery in the GNU C Library version 2.2 and newer fail to enforce the caller-supplied buffer length, and can result in an out-of-bounds write when printing TSIG records.
     Severity: MEDIUM
@@ -1178,15 +1178,15 @@
     InstalledVersion: 2.43-2ubuntu2
     Status: affected
     Layer:
-      Digest: sha256:cf47da87b3c6510ee8d925076dca955b53132e376bf220c20bc2d0a6a7c9d7aa
-      DiffID: sha256:c53ea18d6cf66b5e481468bd670747c3ae510e38dfba832509f168973fce4ec7
+      Digest: sha256:357710754a797a0b8d7465470fd490cec4d7a79976f5b16137b13867ed9515ce
+      DiffID: sha256:f7bda0de7895baf23a3ecc70b50bb8bc7be3642a95a7a246a8f094628c9083e0
     SeveritySource: ubuntu
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-6238
     DataSource:
       ID: ubuntu
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Fingerprint: sha256:3670b39bfbc0b9343b211bce9c2aa241596afe560a3ec5ac36b66722fbf454c2
+    Fingerprint: sha256:02b52f052e12dba924bab5899994b995e05a46e0c6708ce31f735a57aee597c1
     Title: 'glibc: glibc: Application crash or uninitialized memory read via crafted DNS response'
     Description: |-
       The deprecated functions ns_printrrf, ns_printrr and fp_nquery in the GNU C Library version 2.0.1 to version 2.43 fail to validate the RDATA content against the RDATA length in a DNS response when processing A6, CERT, LOC, TKEY or TSIG records, which may allow an attacker to craft a DNS response, causing a target application to crash or read uninitialized memory.
@@ -1222,15 +1222,15 @@
     InstalledVersion: 2.7.4-1
     Status: affected
     Layer:
-      Digest: sha256:cf47da87b3c6510ee8d925076dca955b53132e376bf220c20bc2d0a6a7c9d7aa
-      DiffID: sha256:c53ea18d6cf66b5e481468bd670747c3ae510e38dfba832509f168973fce4ec7
+      Digest: sha256:357710754a797a0b8d7465470fd490cec4d7a79976f5b16137b13867ed9515ce
+      DiffID: sha256:f7bda0de7895baf23a3ecc70b50bb8bc7be3642a95a7a246a8f094628c9083e0
     SeveritySource: ubuntu
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-66382
     DataSource:
       ID: ubuntu
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Fingerprint: sha256:878d9cc7310318239ff4448738883d2b20912331715d98175f7556f297bd5f46
+    Fingerprint: sha256:b7226ec768e2b1c8fd9e1e271031814d46e92f433d262633931e095f8fe1b066
     Title: 'libexpat: libexpat: Denial of service via crafted file processing'
     Description: In libexpat through 2.7.3, a crafted file with an approximate size of 2 MiB can lead to dozens of seconds of processing time.
     Severity: MEDIUM
@@ -1238,10 +1238,14 @@
     - CWE-407
     VendorSeverity:
       azure: 1
+      julia: 2
       nvd: 2
       redhat: 1
       ubuntu: 2
     CVSS:
+      julia:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H
+        V3Score: 5.5
       nvd:
         V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H
         V3Score: 5.5
@@ -1267,15 +1271,15 @@
     InstalledVersion: 1.12.0-2ubuntu1
     Status: affected
     Layer:
-      Digest: sha256:cf47da87b3c6510ee8d925076dca955b53132e376bf220c20bc2d0a6a7c9d7aa
-      DiffID: sha256:c53ea18d6cf66b5e481468bd670747c3ae510e38dfba832509f168973fce4ec7
+      Digest: sha256:357710754a797a0b8d7465470fd490cec4d7a79976f5b16137b13867ed9515ce
+      DiffID: sha256:f7bda0de7895baf23a3ecc70b50bb8bc7be3642a95a7a246a8f094628c9083e0
     SeveritySource: ubuntu
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2024-2236
     DataSource:
       ID: ubuntu
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Fingerprint: sha256:c06e2b22decfa35802da5e49521b8ad45298876b1cf2caa9386f0dc8c570f2fe
+    Fingerprint: sha256:e96799e9529d10ac50b087bf80f1f3f7fb6ac0c0c88078569d5c53066476c644
     Title: 'libgcrypt: vulnerable to Marvin Attack'
     Description: A timing-based side-channel flaw was found in libgcrypt's RSA implementation. This issue may allow a remote attacker to initiate a Bleichenbacher-style attack, which can lead to the decryption of RSA ciphertexts.
     Severity: LOW
@@ -1322,15 +1326,15 @@
     InstalledVersion: 1.8.1-4ubuntu2
     Status: affected
     Layer:
-      Digest: sha256:cf47da87b3c6510ee8d925076dca955b53132e376bf220c20bc2d0a6a7c9d7aa
-      DiffID: sha256:c53ea18d6cf66b5e481468bd670747c3ae510e38dfba832509f168973fce4ec7
+      Digest: sha256:357710754a797a0b8d7465470fd490cec4d7a79976f5b16137b13867ed9515ce
+      DiffID: sha256:f7bda0de7895baf23a3ecc70b50bb8bc7be3642a95a7a246a8f094628c9083e0
     SeveritySource: ubuntu
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-41256
     DataSource:
       ID: ubuntu
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Fingerprint: sha256:f610af69b8f80a1cff4ca534f2cf349c6e4fa8aa859f393f3b97e023043d7de5
+    Fingerprint: sha256:1161c03bb97f4f5d05361393fb8b5692bcd741102ea94d74acc9537454c1f0cc
     Title: 'jq: embedded NUL truncates top-level jq programs loaded with -f'
     Description: jq is a command-line JSON processor. In 1.8.1 and earlier, Top-level jq programs loaded from a file with -f are truncated at the first embedded NUL byte on current upstream HEAD. A crafted filter file such as . followed by \x00 and arbitrary suffix compiles and executes as only the prefix before the NUL. This leaves jq with a post-CVE-2026-33948 prefix/full-buffer mismatch on the compilation path even though the JSON parser path has already been fixed.
     Severity: MEDIUM
@@ -1362,15 +1366,15 @@
     InstalledVersion: 1.8.1-4ubuntu2
     Status: affected
     Layer:
-      Digest: sha256:cf47da87b3c6510ee8d925076dca955b53132e376bf220c20bc2d0a6a7c9d7aa
-      DiffID: sha256:c53ea18d6cf66b5e481468bd670747c3ae510e38dfba832509f168973fce4ec7
+      Digest: sha256:357710754a797a0b8d7465470fd490cec4d7a79976f5b16137b13867ed9515ce
+      DiffID: sha256:f7bda0de7895baf23a3ecc70b50bb8bc7be3642a95a7a246a8f094628c9083e0
     SeveritySource: ubuntu
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-41257
     DataSource:
       ID: ubuntu
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Fingerprint: sha256:eb78937b6c225aa074571fe0fe22cd3c8c21e2d78007e7d5586c2b26d20e6771
+    Fingerprint: sha256:aacf33f007837e30d3471a4d33f66bb0df573ad79188fe43e7e708721891d114
     Title: 'jq: signed-int overflow in stack_reallocate'
     Description: jq is a command-line JSON processor. In 1.8.1 and earlier, the jq bytecode VM's data stack tracks its allocation size in a signed int. When the stack grows beyond ≈1 GiB (via deeply nested generator forks), the doubling arithmetic overflows. The wrapped value is passed to realloc and then used for a memmove with attacker-influenced offsets.
     Severity: MEDIUM
@@ -1407,15 +1411,15 @@
     InstalledVersion: 1.8.1-4ubuntu2
     Status: affected
     Layer:
-      Digest: sha256:cf47da87b3c6510ee8d925076dca955b53132e376bf220c20bc2d0a6a7c9d7aa
-      DiffID: sha256:c53ea18d6cf66b5e481468bd670747c3ae510e38dfba832509f168973fce4ec7
+      Digest: sha256:357710754a797a0b8d7465470fd490cec4d7a79976f5b16137b13867ed9515ce
+      DiffID: sha256:f7bda0de7895baf23a3ecc70b50bb8bc7be3642a95a7a246a8f094628c9083e0
     SeveritySource: ubuntu
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-43895
     DataSource:
       ID: ubuntu
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Fingerprint: sha256:73234f8c0b265000533a459909e1ef63f8b5eae275122f27ae82ba1961df6f95
+    Fingerprint: sha256:da1b61e8cffb4468290ccd575b9ebb226d2009a060a502f442f3513cce4f98ca
     Title: 'jq: embedded NUL in jq import paths causes local redaction-policy bypass and preserves sensitive fields in published artifacts'
     Description: jq is a command-line JSON processor. In 1.8.1 and earlier, jq accepts embedded NUL bytes in import paths at the jq-language level, but later resolves those paths through C string operations during module and data-file lookup. This creates a mismatch between the logical import string that policy or audit code may validate and the on-disk path that jq actually opens.
     Severity: MEDIUM
@@ -1448,15 +1452,15 @@
     InstalledVersion: 1.8.1-4ubuntu2
     Status: affected
     Layer:
-      Digest: sha256:cf47da87b3c6510ee8d925076dca955b53132e376bf220c20bc2d0a6a7c9d7aa
-      DiffID: sha256:c53ea18d6cf66b5e481468bd670747c3ae510e38dfba832509f168973fce4ec7
+      Digest: sha256:357710754a797a0b8d7465470fd490cec4d7a79976f5b16137b13867ed9515ce
+      DiffID: sha256:f7bda0de7895baf23a3ecc70b50bb8bc7be3642a95a7a246a8f094628c9083e0
     SeveritySource: ubuntu
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-43896
     DataSource:
       ID: ubuntu
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Fingerprint: sha256:8809bc7c7022d791de5213def14b4b45460b8297a48188117ec5a7c1ffe5427e
+    Fingerprint: sha256:b62926257c5fcf6958e9e0b9a25156f58c33e28de362399519f0b1421e9fd95e
     Title: 'jq: stack overflow in recursive object merge'
     Description: jq is a command-line JSON processor. In 1.8.1 and earlier, unbounded recursion in jv_object_merge_recursive() allows a crafted jq program to crash the process with a segfault. The function is reachable through the * operator when both operands are objects.
     Severity: MEDIUM
@@ -1493,15 +1497,15 @@
     InstalledVersion: 1.8.1-4ubuntu2
     Status: affected
     Layer:
-      Digest: sha256:cf47da87b3c6510ee8d925076dca955b53132e376bf220c20bc2d0a6a7c9d7aa
-      DiffID: sha256:c53ea18d6cf66b5e481468bd670747c3ae510e38dfba832509f168973fce4ec7
+      Digest: sha256:357710754a797a0b8d7465470fd490cec4d7a79976f5b16137b13867ed9515ce
+      DiffID: sha256:f7bda0de7895baf23a3ecc70b50bb8bc7be3642a95a7a246a8f094628c9083e0
     SeveritySource: ubuntu
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-44777
     DataSource:
       ID: ubuntu
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Fingerprint: sha256:0ccea4a31628f1e2a9ae3c8c447a479162659012f6e2cc44cdd457e53b43bff6
+    Fingerprint: sha256:1146addf1161da2a19d12d7b942f6f8a495c649a50e35a8bbd709a4184d05300
     Title: 'jq: stack overflow in module loading on mutual include'
     Description: |-
       jq is a command-line JSON processor. In 1.8.2rc1 and earlier, the ordinary module loader recurses without cycle detection when two
@@ -1539,15 +1543,15 @@
     InstalledVersion: 2.41.3-3ubuntu2
     Status: affected
     Layer:
-      Digest: sha256:cf47da87b3c6510ee8d925076dca955b53132e376bf220c20bc2d0a6a7c9d7aa
-      DiffID: sha256:c53ea18d6cf66b5e481468bd670747c3ae510e38dfba832509f168973fce4ec7
+      Digest: sha256:357710754a797a0b8d7465470fd490cec4d7a79976f5b16137b13867ed9515ce
+      DiffID: sha256:f7bda0de7895baf23a3ecc70b50bb8bc7be3642a95a7a246a8f094628c9083e0
     SeveritySource: ubuntu
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-27456
     DataSource:
       ID: ubuntu
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Fingerprint: sha256:e452208e2bcef5ca9852b12f81fb3c2a1821016c05ce15f39a053a41a88d4653
+    Fingerprint: sha256:872c3621647a09437825d1c5c31cb8997467a0433793bf1eab424f1faa1f4f06
     Title: 'util-linux: TOCTOU in the mount program when setting up loop devices'
     Description: util-linux is a random collection of Linux utilities. Prior to version 2.41.4, a TOCTOU (Time-of-Check-Time-of-Use) vulnerability has been identified in the SUID binary /usr/bin/mount from util-linux. The mount binary, when setting up loop devices, validates the source file path with user privileges via fork() + setuid() + realpath(), but subsequently re-canonicalizes and opens it with root privileges (euid=0) without verifying that the path has not been replaced between both operations. Neither O_NOFOLLOW, nor inode comparison, nor post-open fstat() are employed. This allows a local unprivileged user to replace the source file with a symlink pointing to any root-owned file or device during the race window, causing the SUID binary to open and mount it as root. Exploitation requires an /etc/fstab entry with user,loop options whose path points to a directory where the attacker has write permission, and that /usr/bin/mount has the SUID bit set (the default configuration on virtually all Linux distributions). The impact is unauthorized read access to root-protected files and block devices, including backup images, disk volumes, and any file containing a valid filesystem. This issue has been patched in version 2.41.4.
     Severity: MEDIUM
@@ -1588,15 +1592,15 @@
     InstalledVersion: 2.41.3-3ubuntu2
     Status: affected
     Layer:
-      Digest: sha256:cf47da87b3c6510ee8d925076dca955b53132e376bf220c20bc2d0a6a7c9d7aa
-      DiffID: sha256:c53ea18d6cf66b5e481468bd670747c3ae510e38dfba832509f168973fce4ec7
+      Digest: sha256:357710754a797a0b8d7465470fd490cec4d7a79976f5b16137b13867ed9515ce
+      DiffID: sha256:f7bda0de7895baf23a3ecc70b50bb8bc7be3642a95a7a246a8f094628c9083e0
     SeveritySource: ubuntu
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-3184
     DataSource:
       ID: ubuntu
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Fingerprint: sha256:e49d1eb8c165d43c043f192d86e38faa08bc917af30afbf76d7077b18d9cf167
+    Fingerprint: sha256:90d1cf421adb78d3f7b65687444ae17deff3a20486e0b5960b00d909d442b1fb
     Title: 'util-linux: util-linux: Access control bypass due to improper hostname canonicalization'
     Description: A flaw was found in util-linux. Improper hostname canonicalization in the `login(1)` utility, when invoked with the `-h` option, can modify the supplied remote hostname before setting `PAM_RHOST`. A remote attacker could exploit this by providing a specially crafted hostname, potentially bypassing host-based Pluggable Authentication Modules (PAM) access control rules that rely on fully qualified domain names. This could lead to unauthorized access.
     Severity: MEDIUM
@@ -1632,15 +1636,15 @@
     InstalledVersion: 0.26.2-2
     Status: affected
     Layer:
-      Digest: sha256:cf47da87b3c6510ee8d925076dca955b53132e376bf220c20bc2d0a6a7c9d7aa
-      DiffID: sha256:c53ea18d6cf66b5e481468bd670747c3ae510e38dfba832509f168973fce4ec7
+      Digest: sha256:357710754a797a0b8d7465470fd490cec4d7a79976f5b16137b13867ed9515ce
+      DiffID: sha256:f7bda0de7895baf23a3ecc70b50bb8bc7be3642a95a7a246a8f094628c9083e0
     SeveritySource: ubuntu
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-13757
     DataSource:
       ID: ubuntu
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Fingerprint: sha256:6869e6ba6dbd61dd44b42b54410f47e16cd992e41271a9c785e4e95dfcc319f8
+    Fingerprint: sha256:2bcca5fed3b1081903bc97574c8e5a91b87a58e6e46c49ff877364be9300dca6
     Title: 'p11-kit: Stack exhaustion via unbounded recursion in RPC attribute parsing'
     Description: A flaw was found in p11-kit. The RPC message attribute parsing functions p11_rpc_message_get_attribute() and p11_rpc_message_get_attribute_array_value() form a mutually-recursive call chain with no recursion depth limit when processing nested CKA_WRAP_TEMPLATE, CKA_UNWRAP_TEMPLATE, and CKA_DERIVE_TEMPLATE attributes. An unauthenticated attacker with local access to the p11-kit RPC Unix domain socket can send a specially crafted request with deeply nested template attributes, causing stack exhaustion and crashing the p11-kit server process and its dependent services.
     Severity: MEDIUM
@@ -1672,15 +1676,15 @@
     InstalledVersion: 2.41.3-3ubuntu2
     Status: affected
     Layer:
-      Digest: sha256:cf47da87b3c6510ee8d925076dca955b53132e376bf220c20bc2d0a6a7c9d7aa
-      DiffID: sha256:c53ea18d6cf66b5e481468bd670747c3ae510e38dfba832509f168973fce4ec7
+      Digest: sha256:357710754a797a0b8d7465470fd490cec4d7a79976f5b16137b13867ed9515ce
+      DiffID: sha256:f7bda0de7895baf23a3ecc70b50bb8bc7be3642a95a7a246a8f094628c9083e0
     SeveritySource: ubuntu
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-27456
     DataSource:
       ID: ubuntu
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Fingerprint: sha256:aaa785c6a7c521ce2e6f374e164bac82c0a80c45d537c90a1f51168aebd9b11a
+    Fingerprint: sha256:aeb1463b7cd1539220c807e19962a54197344580419c5f93bec5b978c7c5ed4d
     Title: 'util-linux: TOCTOU in the mount program when setting up loop devices'
     Description: util-linux is a random collection of Linux utilities. Prior to version 2.41.4, a TOCTOU (Time-of-Check-Time-of-Use) vulnerability has been identified in the SUID binary /usr/bin/mount from util-linux. The mount binary, when setting up loop devices, validates the source file path with user privileges via fork() + setuid() + realpath(), but subsequently re-canonicalizes and opens it with root privileges (euid=0) without verifying that the path has not been replaced between both operations. Neither O_NOFOLLOW, nor inode comparison, nor post-open fstat() are employed. This allows a local unprivileged user to replace the source file with a symlink pointing to any root-owned file or device during the race window, causing the SUID binary to open and mount it as root. Exploitation requires an /etc/fstab entry with user,loop options whose path points to a directory where the attacker has write permission, and that /usr/bin/mount has the SUID bit set (the default configuration on virtually all Linux distributions). The impact is unauthorized read access to root-protected files and block devices, including backup images, disk volumes, and any file containing a valid filesystem. This issue has been patched in version 2.41.4.
     Severity: MEDIUM
@@ -1721,15 +1725,15 @@
     InstalledVersion: 2.41.3-3ubuntu2
     Status: affected
     Layer:
-      Digest: sha256:cf47da87b3c6510ee8d925076dca955b53132e376bf220c20bc2d0a6a7c9d7aa
-      DiffID: sha256:c53ea18d6cf66b5e481468bd670747c3ae510e38dfba832509f168973fce4ec7
+      Digest: sha256:357710754a797a0b8d7465470fd490cec4d7a79976f5b16137b13867ed9515ce
+      DiffID: sha256:f7bda0de7895baf23a3ecc70b50bb8bc7be3642a95a7a246a8f094628c9083e0
     SeveritySource: ubuntu
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-3184
     DataSource:
       ID: ubuntu
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Fingerprint: sha256:032710eda0b770f1900b6aa540eab10c2c5d2258ab079ebc5b6aa24c93ee13e3
+    Fingerprint: sha256:8352529af95e08c552c17c64dce3229d7c4e6240f4669fecdb5e18337e289c0d
     Title: 'util-linux: util-linux: Access control bypass due to improper hostname canonicalization'
     Description: A flaw was found in util-linux. Improper hostname canonicalization in the `login(1)` utility, when invoked with the `-h` option, can modify the supplied remote hostname before setting `PAM_RHOST`. A remote attacker could exploit this by providing a specially crafted hostname, potentially bypassing host-based Pluggable Authentication Modules (PAM) access control rules that rely on fully qualified domain names. This could lead to unauthorized access.
     Severity: MEDIUM
@@ -1756,104 +1760,6 @@
     - https://www.cve.org/CVERecord?id=CVE-2026-3184
     PublishedDate: '2026-04-03T19:17:23.377Z'
     LastModifiedDate: '2026-06-17T10:43:10.203Z'
-  - VulnerabilityID: CVE-2026-58050
-    PkgID: libssh2-1t64@1.11.1-1ubuntu0.26.04.2
-    PkgName: libssh2-1t64
-    PkgIdentifier:
-      PURL: pkg:deb/ubuntu/libssh2-1t64@1.11.1-1ubuntu0.26.04.2?arch=amd64&distro=ubuntu-26.04
-      UID: 8f81bbacf7e8c874
-    InstalledVersion: 1.11.1-1ubuntu0.26.04.2
-    FixedVersion: 1.11.1-1ubuntu0.26.04.3
-    Status: fixed
-    Layer:
-      Digest: sha256:cf47da87b3c6510ee8d925076dca955b53132e376bf220c20bc2d0a6a7c9d7aa
-      DiffID: sha256:c53ea18d6cf66b5e481468bd670747c3ae510e38dfba832509f168973fce4ec7
-    SeveritySource: ubuntu
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-58050
-    DataSource:
-      ID: ubuntu
-      Name: Ubuntu CVE Tracker
-      URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Fingerprint: sha256:f3c8b0d361de1cc90746a71704354ccae948ea7d4dfdfc2150600a16b86a85a6
-    Title: 'libssh2: libssh2: Heap buffer overflow via integer overflow in publickey attribute allocation'
-    Description: libssh2 through 1.11.1 reads an attacker-controlled 32-bit attribute count from a publickey-subsystem response and uses it in the allocation num_attrs * sizeof(libssh2_publickey_attribute) without bounds checking, so on 32-bit platforms the multiplication overflows to an undersized buffer. A malicious SSH server can then drive the attribute-parsing loop to write past the allocation, causing a heap buffer overflow in a connecting libssh2 client.
-    Severity: MEDIUM
-    CweIDs:
-    - CWE-190
-    VendorSeverity:
-      julia: 3
-      nvd: 3
-      redhat: 2
-      ubuntu: 2
-    CVSS:
-      julia:
-        V40Vector: CVSS:4.0/AV:N/AC:H/AT:N/PR:N/UI:N/VC:L/VI:L/VA:H/SC:N/SI:N/SA:N
-        V40Score: 8.3
-      nvd:
-        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
-        V3Score: 7.5
-      redhat:
-        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:H
-        V3Score: 7
-    References:
-    - https://access.redhat.com/security/cve/CVE-2026-58050
-    - https://github.com/advisories/GHSA-mf77-5hj2-98w9
-    - https://github.com/bikini/exploitarium/tree/main/libssh2-publickey-list-calc-poc
-    - https://github.com/libssh2/libssh2/blob/master/src/publickey.c
-    - https://github.com/libssh2/libssh2/pull/2205#discussion_r3523193089
-    - https://nvd.nist.gov/vuln/detail/CVE-2026-58050
-    - https://ubuntu.com/security/notices/USN-8532-1
-    - https://www.cve.org/CVERecord?id=CVE-2026-58050
-    - https://www.vulncheck.com/advisories/libssh2-integer-overflow-in-publickey-subsystem-attribute-allocation
-    PublishedDate: '2026-06-28T02:16:32.017Z'
-    LastModifiedDate: '2026-06-30T20:27:36.86Z'
-  - VulnerabilityID: CVE-2026-58051
-    PkgID: libssh2-1t64@1.11.1-1ubuntu0.26.04.2
-    PkgName: libssh2-1t64
-    PkgIdentifier:
-      PURL: pkg:deb/ubuntu/libssh2-1t64@1.11.1-1ubuntu0.26.04.2?arch=amd64&distro=ubuntu-26.04
-      UID: 8f81bbacf7e8c874
-    InstalledVersion: 1.11.1-1ubuntu0.26.04.2
-    FixedVersion: 1.11.1-1ubuntu0.26.04.3
-    Status: fixed
-    Layer:
-      Digest: sha256:cf47da87b3c6510ee8d925076dca955b53132e376bf220c20bc2d0a6a7c9d7aa
-      DiffID: sha256:c53ea18d6cf66b5e481468bd670747c3ae510e38dfba832509f168973fce4ec7
-    SeveritySource: ubuntu
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-58051
-    DataSource:
-      ID: ubuntu
-      Name: Ubuntu CVE Tracker
-      URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Fingerprint: sha256:a0375826d0495d7ce0c58b43672bd2bf4e6dcb9c1caa18a5fbe577af6629db22
-    Title: 'libssh2: libssh2: Denial of service or information disclosure via malformed SSH publickey response'
-    Description: libssh2 through 1.11.1 grows its publickey list with SSH2_REALLOC but does not zero-initialize new entries before parsing populates them, so a parse failure reaching the cleanup path leaves libssh2_publickey_list_free operating on an uninitialized entry. A malicious SSH server offering the publickey subsystem can use a malformed response to make cleanup free an uninitialized, attacker-influenceable attrs pointer in a connecting libssh2 client.
-    Severity: MEDIUM
-    CweIDs:
-    - CWE-908
-    VendorSeverity:
-      julia: 3
-      redhat: 2
-      ubuntu: 2
-    CVSS:
-      julia:
-        V40Vector: CVSS:4.0/AV:N/AC:H/AT:N/PR:N/UI:N/VC:N/VI:L/VA:H/SC:N/SI:N/SA:N
-        V40Score: 8.3
-      redhat:
-        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:H
-        V3Score: 6.5
-    References:
-    - https://access.redhat.com/security/cve/CVE-2026-58051
-    - https://github.com/advisories/GHSA-c5f3-hwj2-xp5p
-    - https://github.com/bikini/exploitarium/tree/main/libssh2-publickey-list-calc-poc
-    - https://github.com/libssh2/libssh2/blob/master/src/publickey.c
-    - https://github.com/libssh2/libssh2/pull/2202
-    - https://nvd.nist.gov/vuln/detail/CVE-2026-58051
-    - https://ubuntu.com/security/notices/USN-8532-1
-    - https://www.cve.org/CVERecord?id=CVE-2026-58051
-    - https://www.vulncheck.com/advisories/libssh2-free-of-uninitialized-pointer-in-publickey-list-cleanup
-    PublishedDate: '2026-06-28T02:16:32.153Z'
-    LastModifiedDate: '2026-06-30T17:42:04.473Z'
   - VulnerabilityID: CVE-2026-40228
     PkgID: libsystemd0@259.5-0ubuntu3
     PkgName: libsystemd0
@@ -1863,15 +1769,15 @@
     InstalledVersion: 259.5-0ubuntu3
     Status: affected
     Layer:
-      Digest: sha256:cf47da87b3c6510ee8d925076dca955b53132e376bf220c20bc2d0a6a7c9d7aa
-      DiffID: sha256:c53ea18d6cf66b5e481468bd670747c3ae510e38dfba832509f168973fce4ec7
+      Digest: sha256:357710754a797a0b8d7465470fd490cec4d7a79976f5b16137b13867ed9515ce
+      DiffID: sha256:f7bda0de7895baf23a3ecc70b50bb8bc7be3642a95a7a246a8f094628c9083e0
     SeveritySource: ubuntu
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-40228
     DataSource:
       ID: ubuntu
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Fingerprint: sha256:53339896c43f859f72188a8b4a534760f436958f2fb16c3ca31c7f7af8091e01
+    Fingerprint: sha256:ce1cbd3fdcbc12fef08f5e062b33b533421f0b82b96551caa3a54a0d486c48bf
     Title: 'systemd: systemd-journald: Unintended output to user terminals via logger command'
     Description: In systemd 259, systemd-journald can send ANSI escape sequences to the terminals of arbitrary users when a "logger -p emerg" command is executed, if ForwardToWall=yes is set.
     Severity: LOW
@@ -1905,15 +1811,15 @@
     InstalledVersion: 259.5-0ubuntu3
     Status: affected
     Layer:
-      Digest: sha256:cf47da87b3c6510ee8d925076dca955b53132e376bf220c20bc2d0a6a7c9d7aa
-      DiffID: sha256:c53ea18d6cf66b5e481468bd670747c3ae510e38dfba832509f168973fce4ec7
+      Digest: sha256:357710754a797a0b8d7465470fd490cec4d7a79976f5b16137b13867ed9515ce
+      DiffID: sha256:f7bda0de7895baf23a3ecc70b50bb8bc7be3642a95a7a246a8f094628c9083e0
     SeveritySource: ubuntu
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-40228
     DataSource:
       ID: ubuntu
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Fingerprint: sha256:5b6a0f1d91a83bd73b31b6e98bd522c80d7a98e11a91b865b0831bcb9552017a
+    Fingerprint: sha256:d492f9edf373b80536c2e1678065d96dedc71d80de3a268213e717ef067f3be5
     Title: 'systemd: systemd-journald: Unintended output to user terminals via logger command'
     Description: In systemd 259, systemd-journald can send ANSI escape sequences to the terminals of arbitrary users when a "logger -p emerg" command is executed, if ForwardToWall=yes is set.
     Severity: LOW
@@ -1947,15 +1853,15 @@
     InstalledVersion: 2.41.3-3ubuntu2
     Status: affected
     Layer:
-      Digest: sha256:cf47da87b3c6510ee8d925076dca955b53132e376bf220c20bc2d0a6a7c9d7aa
-      DiffID: sha256:c53ea18d6cf66b5e481468bd670747c3ae510e38dfba832509f168973fce4ec7
+      Digest: sha256:357710754a797a0b8d7465470fd490cec4d7a79976f5b16137b13867ed9515ce
+      DiffID: sha256:f7bda0de7895baf23a3ecc70b50bb8bc7be3642a95a7a246a8f094628c9083e0
     SeveritySource: ubuntu
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-27456
     DataSource:
       ID: ubuntu
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Fingerprint: sha256:8c9ab117e9c22517365de86b2020f6c939a753f0388c09a3f5a796c8d122777c
+    Fingerprint: sha256:0c1702b5327642ffcaf322c3fc57f4a6f69f5a6002377b73bb366a139007d31a
     Title: 'util-linux: TOCTOU in the mount program when setting up loop devices'
     Description: util-linux is a random collection of Linux utilities. Prior to version 2.41.4, a TOCTOU (Time-of-Check-Time-of-Use) vulnerability has been identified in the SUID binary /usr/bin/mount from util-linux. The mount binary, when setting up loop devices, validates the source file path with user privileges via fork() + setuid() + realpath(), but subsequently re-canonicalizes and opens it with root privileges (euid=0) without verifying that the path has not been replaced between both operations. Neither O_NOFOLLOW, nor inode comparison, nor post-open fstat() are employed. This allows a local unprivileged user to replace the source file with a symlink pointing to any root-owned file or device during the race window, causing the SUID binary to open and mount it as root. Exploitation requires an /etc/fstab entry with user,loop options whose path points to a directory where the attacker has write permission, and that /usr/bin/mount has the SUID bit set (the default configuration on virtually all Linux distributions). The impact is unauthorized read access to root-protected files and block devices, including backup images, disk volumes, and any file containing a valid filesystem. This issue has been patched in version 2.41.4.
     Severity: MEDIUM
@@ -1996,15 +1902,15 @@
     InstalledVersion: 2.41.3-3ubuntu2
     Status: affected
     Layer:
-      Digest: sha256:cf47da87b3c6510ee8d925076dca955b53132e376bf220c20bc2d0a6a7c9d7aa
-      DiffID: sha256:c53ea18d6cf66b5e481468bd670747c3ae510e38dfba832509f168973fce4ec7
+      Digest: sha256:357710754a797a0b8d7465470fd490cec4d7a79976f5b16137b13867ed9515ce
+      DiffID: sha256:f7bda0de7895baf23a3ecc70b50bb8bc7be3642a95a7a246a8f094628c9083e0
     SeveritySource: ubuntu
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-3184
     DataSource:
       ID: ubuntu
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Fingerprint: sha256:67b370dfa68a7e175c84f1580f340d366989ee7daf84379a27bc88a54d7edc2d
+    Fingerprint: sha256:7423abe0bc0e773c0795c00b26077cdc57a78f0565150ea3569bb9a89e07ab73
     Title: 'util-linux: util-linux: Access control bypass due to improper hostname canonicalization'
     Description: A flaw was found in util-linux. Improper hostname canonicalization in the `login(1)` utility, when invoked with the `-h` option, can modify the supplied remote hostname before setting `PAM_RHOST`. A remote attacker could exploit this by providing a specially crafted hostname, potentially bypassing host-based Pluggable Authentication Modules (PAM) access control rules that rely on fully qualified domain names. This could lead to unauthorized access.
     Severity: MEDIUM
@@ -2040,15 +1946,15 @@
     InstalledVersion: 1:4.16.0-2+really2.41.3-3ubuntu2
     Status: affected
     Layer:
-      Digest: sha256:cf47da87b3c6510ee8d925076dca955b53132e376bf220c20bc2d0a6a7c9d7aa
-      DiffID: sha256:c53ea18d6cf66b5e481468bd670747c3ae510e38dfba832509f168973fce4ec7
+      Digest: sha256:357710754a797a0b8d7465470fd490cec4d7a79976f5b16137b13867ed9515ce
+      DiffID: sha256:f7bda0de7895baf23a3ecc70b50bb8bc7be3642a95a7a246a8f094628c9083e0
     SeveritySource: ubuntu
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-27456
     DataSource:
       ID: ubuntu
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Fingerprint: sha256:7210f07f9176f05376da02c88cf42b10d798e5eaf4b3a4cf4ef43f117a81be9d
+    Fingerprint: sha256:19eb6a62e71d79d2ffe7344b9eba3363892d38d369705e1ac76c46de4258dd33
     Title: 'util-linux: TOCTOU in the mount program when setting up loop devices'
     Description: util-linux is a random collection of Linux utilities. Prior to version 2.41.4, a TOCTOU (Time-of-Check-Time-of-Use) vulnerability has been identified in the SUID binary /usr/bin/mount from util-linux. The mount binary, when setting up loop devices, validates the source file path with user privileges via fork() + setuid() + realpath(), but subsequently re-canonicalizes and opens it with root privileges (euid=0) without verifying that the path has not been replaced between both operations. Neither O_NOFOLLOW, nor inode comparison, nor post-open fstat() are employed. This allows a local unprivileged user to replace the source file with a symlink pointing to any root-owned file or device during the race window, causing the SUID binary to open and mount it as root. Exploitation requires an /etc/fstab entry with user,loop options whose path points to a directory where the attacker has write permission, and that /usr/bin/mount has the SUID bit set (the default configuration on virtually all Linux distributions). The impact is unauthorized read access to root-protected files and block devices, including backup images, disk volumes, and any file containing a valid filesystem. This issue has been patched in version 2.41.4.
     Severity: MEDIUM
@@ -2089,15 +1995,15 @@
     InstalledVersion: 1:4.16.0-2+really2.41.3-3ubuntu2
     Status: affected
     Layer:
-      Digest: sha256:cf47da87b3c6510ee8d925076dca955b53132e376bf220c20bc2d0a6a7c9d7aa
-      DiffID: sha256:c53ea18d6cf66b5e481468bd670747c3ae510e38dfba832509f168973fce4ec7
+      Digest: sha256:357710754a797a0b8d7465470fd490cec4d7a79976f5b16137b13867ed9515ce
+      DiffID: sha256:f7bda0de7895baf23a3ecc70b50bb8bc7be3642a95a7a246a8f094628c9083e0
     SeveritySource: ubuntu
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-3184
     DataSource:
       ID: ubuntu
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Fingerprint: sha256:55939dfd0cd71c4e0958a317d72989fe87f757b863a89adff3d2ebc419b93b72
+    Fingerprint: sha256:b892e91651fc5c654f41b7eb1c3dbe02c27237a3cd3af10f2ff5517d2ca70757
     Title: 'util-linux: util-linux: Access control bypass due to improper hostname canonicalization'
     Description: A flaw was found in util-linux. Improper hostname canonicalization in the `login(1)` utility, when invoked with the `-h` option, can modify the supplied remote hostname before setting `PAM_RHOST`. A remote attacker could exploit this by providing a specially crafted hostname, potentially bypassing host-based Pluggable Authentication Modules (PAM) access control rules that rely on fully qualified domain names. This could lead to unauthorized access.
     Severity: MEDIUM
@@ -2133,15 +2039,15 @@
     InstalledVersion: 1:4.17.4-2ubuntu3
     Status: affected
     Layer:
-      Digest: sha256:cf47da87b3c6510ee8d925076dca955b53132e376bf220c20bc2d0a6a7c9d7aa
-      DiffID: sha256:c53ea18d6cf66b5e481468bd670747c3ae510e38dfba832509f168973fce4ec7
+      Digest: sha256:357710754a797a0b8d7465470fd490cec4d7a79976f5b16137b13867ed9515ce
+      DiffID: sha256:f7bda0de7895baf23a3ecc70b50bb8bc7be3642a95a7a246a8f094628c9083e0
     SeveritySource: ubuntu
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2024-56433
     DataSource:
       ID: ubuntu
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Fingerprint: sha256:fd639d8cc67b821546ed3781362af06392a86f37c4b49430051aca294cbe684f
+    Fingerprint: sha256:00af47b4b1b40166fa255c1ea8d14fa488dd0256d4c022a2c0a3ae22a1b583bc
     Title: 'shadow-utils: Default subordinate ID configuration in /etc/login.defs could lead to compromise'
     Description: 'shadow-utils (aka shadow) 4.4 through 4.17.0 establishes a default /etc/subuid behavior (e.g., uid 100000 through 165535 for the first user account) that can realistically conflict with the uids of users defined on locally administered networks, potentially leading to account takeover, e.g., by leveraging newuidmap for access to an NFS home directory (or same-host resources in the case of remote logins by these local network users). NOTE: it may also be argued that system administrators should not have assigned uids, within local networks, that are within the range that can occur in /etc/subuid.'
     Severity: LOW
@@ -2184,15 +2090,15 @@
     InstalledVersion: 2.41.3-3ubuntu2
     Status: affected
     Layer:
-      Digest: sha256:cf47da87b3c6510ee8d925076dca955b53132e376bf220c20bc2d0a6a7c9d7aa
-      DiffID: sha256:c53ea18d6cf66b5e481468bd670747c3ae510e38dfba832509f168973fce4ec7
+      Digest: sha256:357710754a797a0b8d7465470fd490cec4d7a79976f5b16137b13867ed9515ce
+      DiffID: sha256:f7bda0de7895baf23a3ecc70b50bb8bc7be3642a95a7a246a8f094628c9083e0
     SeveritySource: ubuntu
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-27456
     DataSource:
       ID: ubuntu
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Fingerprint: sha256:7aa444ca445a36163021a4d99f23ab20f821567977c008d6e333fb46b0489adf
+    Fingerprint: sha256:ed52b1e712d8355bfe6a5fce1cbb2c8fed8a6592f73fc6bce0c6fa83d99a2afd
     Title: 'util-linux: TOCTOU in the mount program when setting up loop devices'
     Description: util-linux is a random collection of Linux utilities. Prior to version 2.41.4, a TOCTOU (Time-of-Check-Time-of-Use) vulnerability has been identified in the SUID binary /usr/bin/mount from util-linux. The mount binary, when setting up loop devices, validates the source file path with user privileges via fork() + setuid() + realpath(), but subsequently re-canonicalizes and opens it with root privileges (euid=0) without verifying that the path has not been replaced between both operations. Neither O_NOFOLLOW, nor inode comparison, nor post-open fstat() are employed. This allows a local unprivileged user to replace the source file with a symlink pointing to any root-owned file or device during the race window, causing the SUID binary to open and mount it as root. Exploitation requires an /etc/fstab entry with user,loop options whose path points to a directory where the attacker has write permission, and that /usr/bin/mount has the SUID bit set (the default configuration on virtually all Linux distributions). The impact is unauthorized read access to root-protected files and block devices, including backup images, disk volumes, and any file containing a valid filesystem. This issue has been patched in version 2.41.4.
     Severity: MEDIUM
@@ -2233,15 +2139,15 @@
     InstalledVersion: 2.41.3-3ubuntu2
     Status: affected
     Layer:
-      Digest: sha256:cf47da87b3c6510ee8d925076dca955b53132e376bf220c20bc2d0a6a7c9d7aa
-      DiffID: sha256:c53ea18d6cf66b5e481468bd670747c3ae510e38dfba832509f168973fce4ec7
+      Digest: sha256:357710754a797a0b8d7465470fd490cec4d7a79976f5b16137b13867ed9515ce
+      DiffID: sha256:f7bda0de7895baf23a3ecc70b50bb8bc7be3642a95a7a246a8f094628c9083e0
     SeveritySource: ubuntu
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-3184
     DataSource:
       ID: ubuntu
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Fingerprint: sha256:2c7f3a875a8abe79ce7abb19c6d6ebc3445789d67cd49398940c81844462ff7c
+    Fingerprint: sha256:321115c9b01925b8eda97b4a48fe1f3260eb071cb9d623723e2e0e909b1cf132
     Title: 'util-linux: util-linux: Access control bypass due to improper hostname canonicalization'
     Description: A flaw was found in util-linux. Improper hostname canonicalization in the `login(1)` utility, when invoked with the `-h` option, can modify the supplied remote hostname before setting `PAM_RHOST`. A remote attacker could exploit this by providing a specially crafted hostname, potentially bypassing host-based Pluggable Authentication Modules (PAM) access control rules that rely on fully qualified domain names. This could lead to unauthorized access.
     Severity: MEDIUM
@@ -2277,15 +2183,15 @@
     InstalledVersion: 1:4.17.4-2ubuntu3
     Status: affected
     Layer:
-      Digest: sha256:cf47da87b3c6510ee8d925076dca955b53132e376bf220c20bc2d0a6a7c9d7aa
-      DiffID: sha256:c53ea18d6cf66b5e481468bd670747c3ae510e38dfba832509f168973fce4ec7
+      Digest: sha256:357710754a797a0b8d7465470fd490cec4d7a79976f5b16137b13867ed9515ce
+      DiffID: sha256:f7bda0de7895baf23a3ecc70b50bb8bc7be3642a95a7a246a8f094628c9083e0
     SeveritySource: ubuntu
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2024-56433
     DataSource:
       ID: ubuntu
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Fingerprint: sha256:ad6bc8eda78c84d636b49865d0ce4fbc982b182efe2b71999ceaf063d075ac10
+    Fingerprint: sha256:b5852ca7fc978fcb5dd699217b7965abed1e1ae4ba9466c20a629d3b78d6aa4e
     Title: 'shadow-utils: Default subordinate ID configuration in /etc/login.defs could lead to compromise'
     Description: 'shadow-utils (aka shadow) 4.4 through 4.17.0 establishes a default /etc/subuid behavior (e.g., uid 100000 through 165535 for the first user account) that can realistically conflict with the uids of users defined on locally administered networks, potentially leading to account takeover, e.g., by leveraging newuidmap for access to an NFS home directory (or same-host resources in the case of remote logins by these local network users). NOTE: it may also be argued that system administrators should not have assigned uids, within local networks, that are within the range that can occur in /etc/subuid.'
     Severity: LOW
@@ -2328,15 +2234,15 @@
     InstalledVersion: 0.8.0-0ubuntu3
     Status: affected
     Layer:
-      Digest: sha256:cf47da87b3c6510ee8d925076dca955b53132e376bf220c20bc2d0a6a7c9d7aa
-      DiffID: sha256:c53ea18d6cf66b5e481468bd670747c3ae510e38dfba832509f168973fce4ec7
+      Digest: sha256:357710754a797a0b8d7465470fd490cec4d7a79976f5b16137b13867ed9515ce
+      DiffID: sha256:f7bda0de7895baf23a3ecc70b50bb8bc7be3642a95a7a246a8f094628c9083e0
     SeveritySource: ubuntu
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-35341
     DataSource:
       ID: ubuntu
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Fingerprint: sha256:4c59295c876f1d4cf0d0fb8330e59c4f674a13bf8e910c0f83d3d5eafb81c145
+    Fingerprint: sha256:6ac84e9e6b13c2484a8fc7805ff825b9554411e3a50ce2f70b423b0f422bbd92
     Title: A vulnerability in uutils coreutils mkfifo allows for the unauthorized ...
     Description: A vulnerability in uutils coreutils mkfifo allows for the unauthorized modification of permissions on existing files. When mkfifo fails to create a FIFO because a file already exists at the target path, it fails to terminate the operation for that path and continues to execute a follow-up set_permissions call. This results in the existing file's permissions being changed to the default mode (often 644 after umask), potentially exposing sensitive files such as SSH private keys to other users on the system.
     Severity: MEDIUM
@@ -2367,15 +2273,15 @@
     InstalledVersion: 0.8.0-0ubuntu3
     Status: affected
     Layer:
-      Digest: sha256:cf47da87b3c6510ee8d925076dca955b53132e376bf220c20bc2d0a6a7c9d7aa
-      DiffID: sha256:c53ea18d6cf66b5e481468bd670747c3ae510e38dfba832509f168973fce4ec7
+      Digest: sha256:357710754a797a0b8d7465470fd490cec4d7a79976f5b16137b13867ed9515ce
+      DiffID: sha256:f7bda0de7895baf23a3ecc70b50bb8bc7be3642a95a7a246a8f094628c9083e0
     SeveritySource: ubuntu
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-35344
     DataSource:
       ID: ubuntu
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Fingerprint: sha256:51ffc1c18675afc1476ff007334adce2ae5c27b0cb6e2f7e235f40533e753cd9
+    Fingerprint: sha256:010abdf8dd7f842619d03d4133c7f8615b98f8acfcbe10e48784d9d6722f4737
     Title: The dd utility in uutils coreutils suppresses errors during file trunc ...
     Description: The dd utility in uutils coreutils suppresses errors during file truncation operations by unconditionally calling Result::ok() on truncation attempts. While intended to mimic GNU behavior for special files like /dev/null, the uutils implementation also hides failures on regular files and directories caused by full disks or read-only file systems. This can lead to silent data corruption in backup or migration scripts, as the utility may report a successful operation even when the destination file contains old or garbage data.
     Severity: MEDIUM
@@ -2404,15 +2310,15 @@
     InstalledVersion: 0.8.0-0ubuntu3
     Status: affected
     Layer:
-      Digest: sha256:cf47da87b3c6510ee8d925076dca955b53132e376bf220c20bc2d0a6a7c9d7aa
-      DiffID: sha256:c53ea18d6cf66b5e481468bd670747c3ae510e38dfba832509f168973fce4ec7
+      Digest: sha256:357710754a797a0b8d7465470fd490cec4d7a79976f5b16137b13867ed9515ce
+      DiffID: sha256:f7bda0de7895baf23a3ecc70b50bb8bc7be3642a95a7a246a8f094628c9083e0
     SeveritySource: ubuntu
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-35345
     DataSource:
       ID: ubuntu
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Fingerprint: sha256:623f0e56013bc805ebb63bd7a6eaed24dfe86fda32405153997040bf1273d9e5
+    Fingerprint: sha256:3ac705677810c9c8e72d285aa8418a85f6c3534960089761a7c4697886ff2516
     Title: A vulnerability in the tail utility of uutils coreutils allows for the ...
     Description: A vulnerability in the tail utility of uutils coreutils allows for the exfiltration of sensitive file contents when using the --follow=name option. Unlike GNU tail, the uutils implementation continues to monitor a path after it has been replaced by a symbolic link, subsequently outputting the contents of the link's target. In environments where a privileged user (e.g., root) monitors a log directory, a local attacker with write access to that directory can replace a log file with a symlink to a sensitive system file (such as /etc/shadow), causing tail to disclose the contents of the sensitive file.
     Severity: MEDIUM
@@ -2442,15 +2348,15 @@
     InstalledVersion: 0.8.0-0ubuntu3
     Status: affected
     Layer:
-      Digest: sha256:cf47da87b3c6510ee8d925076dca955b53132e376bf220c20bc2d0a6a7c9d7aa
-      DiffID: sha256:c53ea18d6cf66b5e481468bd670747c3ae510e38dfba832509f168973fce4ec7
+      Digest: sha256:357710754a797a0b8d7465470fd490cec4d7a79976f5b16137b13867ed9515ce
+      DiffID: sha256:f7bda0de7895baf23a3ecc70b50bb8bc7be3642a95a7a246a8f094628c9083e0
     SeveritySource: ubuntu
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-35348
     DataSource:
       ID: ubuntu
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Fingerprint: sha256:344bb7f543ae21657bfba9242290e0e9086d6d7ea9285e49df801f4457d2ae21
+    Fingerprint: sha256:87322725a71fbd5c809a318905a4b394a942f59d794d1b29bf12c3cda212a7f2
     Title: The sort utility in uutils coreutils is vulnerable to a process panic  ...
     Description: The sort utility in uutils coreutils is vulnerable to a process panic when using the --files0-from option with inputs containing non-UTF-8 filenames. The implementation enforces UTF-8 encoding and utilizes expect(), causing an immediate crash when encountering valid but non-UTF-8 paths. This diverges from GNU sort, which treats filenames as raw bytes. A local attacker can exploit this to crash the utility and disrupt automated pipelines.
     Severity: MEDIUM
@@ -2479,15 +2385,15 @@
     InstalledVersion: 0.8.0-0ubuntu3
     Status: affected
     Layer:
-      Digest: sha256:cf47da87b3c6510ee8d925076dca955b53132e376bf220c20bc2d0a6a7c9d7aa
-      DiffID: sha256:c53ea18d6cf66b5e481468bd670747c3ae510e38dfba832509f168973fce4ec7
+      Digest: sha256:357710754a797a0b8d7465470fd490cec4d7a79976f5b16137b13867ed9515ce
+      DiffID: sha256:f7bda0de7895baf23a3ecc70b50bb8bc7be3642a95a7a246a8f094628c9083e0
     SeveritySource: ubuntu
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-35350
     DataSource:
       ID: ubuntu
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Fingerprint: sha256:e0bf60f9c4ea028d72273bb8e84ada684d47fc11f6f88b82646a20c94bb8563b
+    Fingerprint: sha256:7a4a8fab697a48bf93b797f12448d4351888524f9b1530beb6169bf0dbb71ede
     Title: The cp utility in uutils coreutils fails to properly handle setuid and ...
     Description: The cp utility in uutils coreutils fails to properly handle setuid and setgid bits when ownership preservation fails. When copying with the -p (preserve) flag, the utility applies the source mode bits even if the chown operation is unsuccessful. This can result in a user-owned copy retaining original privileged bits, creating unexpected privileged executables that violate local security policies. This differs from GNU cp, which clears these bits when ownership cannot be preserved.
     Severity: MEDIUM
@@ -2516,15 +2422,15 @@
     InstalledVersion: 0.8.0-0ubuntu3
     Status: affected
     Layer:
-      Digest: sha256:cf47da87b3c6510ee8d925076dca955b53132e376bf220c20bc2d0a6a7c9d7aa
-      DiffID: sha256:c53ea18d6cf66b5e481468bd670747c3ae510e38dfba832509f168973fce4ec7
+      Digest: sha256:357710754a797a0b8d7465470fd490cec4d7a79976f5b16137b13867ed9515ce
+      DiffID: sha256:f7bda0de7895baf23a3ecc70b50bb8bc7be3642a95a7a246a8f094628c9083e0
     SeveritySource: ubuntu
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-35351
     DataSource:
       ID: ubuntu
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Fingerprint: sha256:c2b6e704a97664f16428ac6f86cd0f07df5d3b0a3b4638df4412ecb506c07dff
+    Fingerprint: sha256:7cbab4a8e21f1899fc69cc80d2a3cd31bd1a7b864b0bb7567fadc471f88588b9
     Title: The mv utility in uutils coreutils fails to preserve file ownership du ...
     Description: The mv utility in uutils coreutils fails to preserve file ownership during moves across different filesystem boundaries. The utility falls back to a copy-and-delete routine that creates the destination file using the caller's UID/GID rather than the source's metadata. This flaw breaks backups and migrations, causing files moved by a privileged user (e.g., root) to become root-owned unexpectedly, which can lead to information disclosure or restricted access for the intended owners.
     Severity: MEDIUM
@@ -2554,15 +2460,15 @@
     InstalledVersion: 0.8.0-0ubuntu3
     Status: affected
     Layer:
-      Digest: sha256:cf47da87b3c6510ee8d925076dca955b53132e376bf220c20bc2d0a6a7c9d7aa
-      DiffID: sha256:c53ea18d6cf66b5e481468bd670747c3ae510e38dfba832509f168973fce4ec7
+      Digest: sha256:357710754a797a0b8d7465470fd490cec4d7a79976f5b16137b13867ed9515ce
+      DiffID: sha256:f7bda0de7895baf23a3ecc70b50bb8bc7be3642a95a7a246a8f094628c9083e0
     SeveritySource: ubuntu
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-35352
     DataSource:
       ID: ubuntu
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Fingerprint: sha256:b1bfc600db263ee3296d3d6525b5a0f07ba796dee8f9b7f96693e9fad4f9d989
+    Fingerprint: sha256:120cc604d498bf7f7155ae11e53ef4e466b71da31f396d6ddb9c4f756b4bd13c
     Title: A Time-of-Check to Time-of-Use (TOCTOU) race condition exists in the m ...
     Description: A Time-of-Check to Time-of-Use (TOCTOU) race condition exists in the mkfifo utility of uutils coreutils. The utility creates a FIFO and then performs a path-based chmod to set permissions. A local attacker with write access to the parent directory can swap the newly created FIFO for a symbolic link between these two operations. This redirects the chmod call to an arbitrary file, potentially enabling privilege escalation if the utility is run with elevated privileges.
     Severity: MEDIUM
@@ -2594,15 +2500,15 @@
     InstalledVersion: 0.8.0-0ubuntu3
     Status: affected
     Layer:
-      Digest: sha256:cf47da87b3c6510ee8d925076dca955b53132e376bf220c20bc2d0a6a7c9d7aa
-      DiffID: sha256:c53ea18d6cf66b5e481468bd670747c3ae510e38dfba832509f168973fce4ec7
+      Digest: sha256:357710754a797a0b8d7465470fd490cec4d7a79976f5b16137b13867ed9515ce
+      DiffID: sha256:f7bda0de7895baf23a3ecc70b50bb8bc7be3642a95a7a246a8f094628c9083e0
     SeveritySource: ubuntu
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-35354
     DataSource:
       ID: ubuntu
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Fingerprint: sha256:f6bafbc42d11f39be769c4319fd0bc0d30f90914838376f31eb035ec2bd6d999
+    Fingerprint: sha256:c8d964ef19b2dd14bda4c97364d6cd8d2786433a9bf84239841ba602fdf803b4
     Title: A Time-of-Check to Time-of-Use (TOCTOU) vulnerability exists in the mv ...
     Description: A Time-of-Check to Time-of-Use (TOCTOU) vulnerability exists in the mv utility of uutils coreutils during cross-device moves. The extended attribute (xattr) preservation logic uses multiple path-based system calls that perform fresh path-to-inode lookups for each operation. A local attacker with write access to the directory can exploit this race to swap files between calls, causing the destination file to receive an inconsistent mix of security xattrs, such as SELinux labels or file capabilities.
     Severity: MEDIUM
@@ -2631,15 +2537,15 @@
     InstalledVersion: 0.8.0-0ubuntu3
     Status: affected
     Layer:
-      Digest: sha256:cf47da87b3c6510ee8d925076dca955b53132e376bf220c20bc2d0a6a7c9d7aa
-      DiffID: sha256:c53ea18d6cf66b5e481468bd670747c3ae510e38dfba832509f168973fce4ec7
+      Digest: sha256:357710754a797a0b8d7465470fd490cec4d7a79976f5b16137b13867ed9515ce
+      DiffID: sha256:f7bda0de7895baf23a3ecc70b50bb8bc7be3642a95a7a246a8f094628c9083e0
     SeveritySource: ubuntu
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-35357
     DataSource:
       ID: ubuntu
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Fingerprint: sha256:092e565899fe0a2fb6e90ae3fda94a3b33af6bef23fb2abb2268127d66ed39f4
+    Fingerprint: sha256:c2ad7622c797bdd5b815738cbdef9de7728a8eee368ecb59b72e716ed7a1590d
     Title: The cp utility in uutils coreutils is vulnerable to an information dis ...
     Description: The cp utility in uutils coreutils is vulnerable to an information disclosure race condition. Destination files are initially created with umask-derived permissions (e.g., 0644) before being restricted to their final mode (e.g., 0600) later in the process. A local attacker can race to open the file during this window; once obtained, the file descriptor remains valid and readable even after the permissions are tightened, exposing sensitive or private file contents.
     Severity: MEDIUM
@@ -2668,15 +2574,15 @@
     InstalledVersion: 0.8.0-0ubuntu3
     Status: affected
     Layer:
-      Digest: sha256:cf47da87b3c6510ee8d925076dca955b53132e376bf220c20bc2d0a6a7c9d7aa
-      DiffID: sha256:c53ea18d6cf66b5e481468bd670747c3ae510e38dfba832509f168973fce4ec7
+      Digest: sha256:357710754a797a0b8d7465470fd490cec4d7a79976f5b16137b13867ed9515ce
+      DiffID: sha256:f7bda0de7895baf23a3ecc70b50bb8bc7be3642a95a7a246a8f094628c9083e0
     SeveritySource: ubuntu
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-35359
     DataSource:
       ID: ubuntu
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Fingerprint: sha256:a03e134636e6dfd7d6d672ddd9deb2d1233ac5bcb4b11fca2f89795d63aa5850
+    Fingerprint: sha256:8b4aacad30905cffdf68a86f009b1d96bbac29446a030848c4ee1717903d8de9
     Title: A Time-of-Check to Time-of-Use (TOCTOU) vulnerability in the cp utilit ...
     Description: A Time-of-Check to Time-of-Use (TOCTOU) vulnerability in the cp utility of uutils coreutils allows an attacker to bypass no-dereference intent. The utility checks if a source path is a symbolic link using path-based metadata but subsequently opens it without the O_NOFOLLOW flag. An attacker with concurrent write access can swap a regular file for a symbolic link during this window, causing a privileged cp process to copy the contents of arbitrary sensitive files into a destination controlled by the attacker.
     Severity: MEDIUM
@@ -2706,15 +2612,15 @@
     InstalledVersion: 0.8.0-0ubuntu3
     Status: affected
     Layer:
-      Digest: sha256:cf47da87b3c6510ee8d925076dca955b53132e376bf220c20bc2d0a6a7c9d7aa
-      DiffID: sha256:c53ea18d6cf66b5e481468bd670747c3ae510e38dfba832509f168973fce4ec7
+      Digest: sha256:357710754a797a0b8d7465470fd490cec4d7a79976f5b16137b13867ed9515ce
+      DiffID: sha256:f7bda0de7895baf23a3ecc70b50bb8bc7be3642a95a7a246a8f094628c9083e0
     SeveritySource: ubuntu
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-35360
     DataSource:
       ID: ubuntu
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Fingerprint: sha256:64c436dd3e264e8dd49a6ed3c4afcbac898164cf9cdce6e302e159cc5ca99d61
+    Fingerprint: sha256:77ff668b7d1f2607b396500d107b57e9acc136c1e5e629ce5c06821a83aa0057
     Title: The touch utility in uutils coreutils is vulnerable to a Time-of-Check ...
     Description: The touch utility in uutils coreutils is vulnerable to a Time-of-Check to Time-of-Use (TOCTOU) race condition during file creation. When the utility identifies a missing path, it later attempts creation using File::create(), which internally uses O_TRUNC. An attacker can exploit this window to create a file or swap a symlink at the target path, causing touch to truncate an existing file and leading to permanent data loss.
     Severity: MEDIUM
@@ -2743,15 +2649,15 @@
     InstalledVersion: 0.8.0-0ubuntu3
     Status: affected
     Layer:
-      Digest: sha256:cf47da87b3c6510ee8d925076dca955b53132e376bf220c20bc2d0a6a7c9d7aa
-      DiffID: sha256:c53ea18d6cf66b5e481468bd670747c3ae510e38dfba832509f168973fce4ec7
+      Digest: sha256:357710754a797a0b8d7465470fd490cec4d7a79976f5b16137b13867ed9515ce
+      DiffID: sha256:f7bda0de7895baf23a3ecc70b50bb8bc7be3642a95a7a246a8f094628c9083e0
     SeveritySource: ubuntu
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-35363
     DataSource:
       ID: ubuntu
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Fingerprint: sha256:964edd94d7af11305e95f7a5fb87614473b6599db59870fc514186bfa4513c21
+    Fingerprint: sha256:38961c29f74e6bcea2005eec99644c0e3e6f32579e8a3ea9155c5e4cb7c28e4e
     Title: A vulnerability in the rm utility of uutils coreutils allows the bypas ...
     Description: A vulnerability in the rm utility of uutils coreutils allows the bypass of safeguard mechanisms intended to protect the current directory. While the utility correctly refuses to delete . or .., it fails to recognize equivalent paths with trailing slashes, such as ./ or .///. An accidental or malicious execution of rm -rf ./ results in the silent recursive deletion of all contents within the current directory. The command further obscures the data loss by reporting a misleading 'Invalid input' error, which may cause users to miss the critical window for data recovery.
     Severity: MEDIUM
@@ -2781,15 +2687,15 @@
     InstalledVersion: 0.8.0-0ubuntu3
     Status: affected
     Layer:
-      Digest: sha256:cf47da87b3c6510ee8d925076dca955b53132e376bf220c20bc2d0a6a7c9d7aa
-      DiffID: sha256:c53ea18d6cf66b5e481468bd670747c3ae510e38dfba832509f168973fce4ec7
+      Digest: sha256:357710754a797a0b8d7465470fd490cec4d7a79976f5b16137b13867ed9515ce
+      DiffID: sha256:f7bda0de7895baf23a3ecc70b50bb8bc7be3642a95a7a246a8f094628c9083e0
     SeveritySource: ubuntu
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-35364
     DataSource:
       ID: ubuntu
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Fingerprint: sha256:1fa2acf0d01bf8120a7c16286a365f443b6e19f4d58a464d44d41c2277540c93
+    Fingerprint: sha256:d3ba1bad8b825a7bfe096e523232956750d53a93509a6443cbc9bf51569add76
     Title: A Time-of-Check to Time-of-Use (TOCTOU) race condition exists in the m ...
     Description: A Time-of-Check to Time-of-Use (TOCTOU) race condition exists in the mv utility of uutils coreutils during cross-device operations. The utility removes the destination path before recreating it through a copy operation. A local attacker with write access to the destination directory can exploit this window to replace the destination with a symbolic link. The subsequent privileged move operation will follow the symlink, allowing the attacker to redirect the write and overwrite an arbitrary target file with contents from the source.
     Severity: MEDIUM
@@ -2818,15 +2724,15 @@
     InstalledVersion: 0.8.0-0ubuntu3
     Status: affected
     Layer:
-      Digest: sha256:cf47da87b3c6510ee8d925076dca955b53132e376bf220c20bc2d0a6a7c9d7aa
-      DiffID: sha256:c53ea18d6cf66b5e481468bd670747c3ae510e38dfba832509f168973fce4ec7
+      Digest: sha256:357710754a797a0b8d7465470fd490cec4d7a79976f5b16137b13867ed9515ce
+      DiffID: sha256:f7bda0de7895baf23a3ecc70b50bb8bc7be3642a95a7a246a8f094628c9083e0
     SeveritySource: ubuntu
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-35367
     DataSource:
       ID: ubuntu
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Fingerprint: sha256:c66afb489049a0468257473326c9fd1080c37ca58efd8e1ae80644d340834340
+    Fingerprint: sha256:22a9072550b97bfacdf952e06b98d4431b8fe634de4a842acd6b69a0230e4b31
     Title: The nohup utility in uutils coreutils creates its default output file, ...
     Description: The nohup utility in uutils coreutils creates its default output file, nohup.out, without specifying explicit restricted permissions. This causes the file to inherit umask-based permissions, typically resulting in a world-readable file (0644). In multi-user environments, this allows any user on the system to read the captured stdout/stderr output of a command, potentially exposing sensitive information. This behavior diverges from GNU coreutils, which creates nohup.out with owner-only (0600) permissions.
     Severity: MEDIUM
@@ -2855,15 +2761,15 @@
     InstalledVersion: 0.8.0-0ubuntu3
     Status: affected
     Layer:
-      Digest: sha256:cf47da87b3c6510ee8d925076dca955b53132e376bf220c20bc2d0a6a7c9d7aa
-      DiffID: sha256:c53ea18d6cf66b5e481468bd670747c3ae510e38dfba832509f168973fce4ec7
+      Digest: sha256:357710754a797a0b8d7465470fd490cec4d7a79976f5b16137b13867ed9515ce
+      DiffID: sha256:f7bda0de7895baf23a3ecc70b50bb8bc7be3642a95a7a246a8f094628c9083e0
     SeveritySource: ubuntu
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-35368
     DataSource:
       ID: ubuntu
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Fingerprint: sha256:3b31dc658d1bb33e5ec71dad4155f33cca9b67f5d0204ce9299a35e38de24ae5
+    Fingerprint: sha256:83eb6fbf52195aff3ea5a46be85db585a065afc70b5107fcf62d8b864acfb82d
     Title: A vulnerability exists in the chroot utility of uutils coreutils when  ...
     Description: A vulnerability exists in the chroot utility of uutils coreutils when using the --userspec option. The utility resolves the user specification via getpwnam() after entering the chroot but before dropping root privileges. On glibc-based systems, this can trigger the Name Service Switch (NSS) to load shared libraries (e.g., libnss_*.so.2) from the new root directory. If the NEWROOT is writable by an attacker, they can inject a malicious NSS module to execute arbitrary code as root, facilitating a full container escape or privilege escalation.
     Severity: MEDIUM
@@ -2892,15 +2798,15 @@
     InstalledVersion: 0.8.0-0ubuntu3
     Status: affected
     Layer:
-      Digest: sha256:cf47da87b3c6510ee8d925076dca955b53132e376bf220c20bc2d0a6a7c9d7aa
-      DiffID: sha256:c53ea18d6cf66b5e481468bd670747c3ae510e38dfba832509f168973fce4ec7
+      Digest: sha256:357710754a797a0b8d7465470fd490cec4d7a79976f5b16137b13867ed9515ce
+      DiffID: sha256:f7bda0de7895baf23a3ecc70b50bb8bc7be3642a95a7a246a8f094628c9083e0
     SeveritySource: ubuntu
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-35370
     DataSource:
       ID: ubuntu
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Fingerprint: sha256:7ec740066cd85dea610beddcb8cf89e44a24f6fd334c8b8c063cbea1da3ffd89
+    Fingerprint: sha256:9e4a076c2570712cce8c12ad598a7e169898b339db1b5fbdaefc4729f7588d56
     Title: The id utility in uutils coreutils miscalculates the groups= section o ...
     Description: The id utility in uutils coreutils miscalculates the groups= section of its output. The implementation uses a user's real GID instead of their effective GID to compute the group list, leading to potentially divergent output compared to GNU coreutils. Because many scripts and automated processes rely on the output of id to make security-critical access-control or permission decisions, this discrepancy can lead to unauthorized access or security misconfigurations.
     Severity: MEDIUM
@@ -2930,15 +2836,15 @@
     InstalledVersion: 0.8.0-0ubuntu3
     Status: affected
     Layer:
-      Digest: sha256:cf47da87b3c6510ee8d925076dca955b53132e376bf220c20bc2d0a6a7c9d7aa
-      DiffID: sha256:c53ea18d6cf66b5e481468bd670747c3ae510e38dfba832509f168973fce4ec7
+      Digest: sha256:357710754a797a0b8d7465470fd490cec4d7a79976f5b16137b13867ed9515ce
+      DiffID: sha256:f7bda0de7895baf23a3ecc70b50bb8bc7be3642a95a7a246a8f094628c9083e0
     SeveritySource: ubuntu
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-35371
     DataSource:
       ID: ubuntu
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Fingerprint: sha256:3cbdee4a2a60bc8f8f7d453c443386c746c15fa1a6f94f362feab895d1ba1293
+    Fingerprint: sha256:87e2d07be362b57583dbf35336e17ee3d68f9f259ba504ad8b1d3a78ed9721a6
     Title: The id utility in uutils coreutils exhibits incorrect behavior in its  ...
     Description: The id utility in uutils coreutils exhibits incorrect behavior in its "pretty print" output when the real UID and effective UID differ. The implementation incorrectly uses the effective GID instead of the effective UID when performing a name lookup for the effective user. This results in misleading diagnostic output that can cause automated scripts or system administrators to make incorrect decisions regarding file permissions or access control.
     Severity: MEDIUM
@@ -2968,15 +2874,15 @@
     InstalledVersion: 0.8.0-0ubuntu3
     Status: affected
     Layer:
-      Digest: sha256:cf47da87b3c6510ee8d925076dca955b53132e376bf220c20bc2d0a6a7c9d7aa
-      DiffID: sha256:c53ea18d6cf66b5e481468bd670747c3ae510e38dfba832509f168973fce4ec7
+      Digest: sha256:357710754a797a0b8d7465470fd490cec4d7a79976f5b16137b13867ed9515ce
+      DiffID: sha256:f7bda0de7895baf23a3ecc70b50bb8bc7be3642a95a7a246a8f094628c9083e0
     SeveritySource: ubuntu
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-35373
     DataSource:
       ID: ubuntu
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Fingerprint: sha256:3728ed3cfcd632af23c0be957522e7920fd41b0ad8d485f67bcfb0b4323870de
+    Fingerprint: sha256:e5ac7adb6df1259413a0829adabd172855ef417ebbe7e76a154b2ade873d080e
     Title: A logic error in the ln utility of uutils coreutils causes the program ...
     Description: A logic error in the ln utility of uutils coreutils causes the program to reject source paths containing non-UTF-8 filename bytes when using target-directory forms (e.g., ln SOURCE... DIRECTORY). While GNU ln treats filenames as raw bytes and creates the links correctly, the uutils implementation enforces UTF-8 encoding, resulting in a failure to stat the file and a non-zero exit code. In environments where automated scripts or system tasks process valid but non-UTF-8 filenames common on Unix filesystems, this divergence causes the utility to fail, leading to a local denial of service for those specific operations.
     Severity: MEDIUM
@@ -3010,15 +2916,15 @@
     InstalledVersion: 0.8.0-0ubuntu3
     Status: affected
     Layer:
-      Digest: sha256:cf47da87b3c6510ee8d925076dca955b53132e376bf220c20bc2d0a6a7c9d7aa
-      DiffID: sha256:c53ea18d6cf66b5e481468bd670747c3ae510e38dfba832509f168973fce4ec7
+      Digest: sha256:357710754a797a0b8d7465470fd490cec4d7a79976f5b16137b13867ed9515ce
+      DiffID: sha256:f7bda0de7895baf23a3ecc70b50bb8bc7be3642a95a7a246a8f094628c9083e0
     SeveritySource: ubuntu
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-35374
     DataSource:
       ID: ubuntu
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Fingerprint: sha256:3fb321991431c87746ac14eb67c049f1cccb111195f03d1c1754aa87d354473a
+    Fingerprint: sha256:ce6e60cfed76838964eddcda997664c4d76c6179a5a255e3551f4f88ddbfd966
     Title: A Time-of-Check to Time-of-Use (TOCTOU) vulnerability exists in the sp ...
     Description: A Time-of-Check to Time-of-Use (TOCTOU) vulnerability exists in the split utility of uutils coreutils. The program attempts to prevent data loss by checking for identity between input and output files using their file paths before initiating the split operation. However, the utility subsequently opens the output file with truncation after this path-based validation is complete. A local attacker with write access to the directory can exploit this race window by manipulating mutable path components (e.g., swapping a path with a symbolic link). This can cause split to truncate and write to an unintended target file, potentially including the input file itself or other sensitive files accessible to the process, leading to permanent data loss.
     Severity: MEDIUM
@@ -3047,15 +2953,15 @@
     InstalledVersion: 0.8.0-0ubuntu3
     Status: affected
     Layer:
-      Digest: sha256:cf47da87b3c6510ee8d925076dca955b53132e376bf220c20bc2d0a6a7c9d7aa
-      DiffID: sha256:c53ea18d6cf66b5e481468bd670747c3ae510e38dfba832509f168973fce4ec7
+      Digest: sha256:357710754a797a0b8d7465470fd490cec4d7a79976f5b16137b13867ed9515ce
+      DiffID: sha256:f7bda0de7895baf23a3ecc70b50bb8bc7be3642a95a7a246a8f094628c9083e0
     SeveritySource: ubuntu
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-35377
     DataSource:
       ID: ubuntu
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Fingerprint: sha256:309a0b01afceb2b3b64a9bb3882413bbd00236222a4c144676130da54a2b2c38
+    Fingerprint: sha256:10699ffcf08acb8d94f790187a3e61c2eb858e87e6bc6f2e9b6127cc7e5737c7
     Title: A logic error in the env utility of uutils coreutils causes a failure  ...
     Description: A logic error in the env utility of uutils coreutils causes a failure to correctly parse command-line arguments when utilizing the -S (split-string) option. In GNU env, backslashes within single quotes are treated literally (with the exceptions of \\ and \'). However, the uutils implementation incorrectly attempts to validate these sequences, resulting in an "invalid sequence" error and an immediate process termination with an exit status of 125 when encountering valid but unrecognized sequences like \a or \x. This divergence from GNU behavior breaks compatibility for automated scripts and administrative workflows that rely on standard split-string semantics, leading to a local denial of service for those operations.
     Severity: MEDIUM
@@ -3084,15 +2990,15 @@
     InstalledVersion: 2.41.3-3ubuntu2
     Status: affected
     Layer:
-      Digest: sha256:cf47da87b3c6510ee8d925076dca955b53132e376bf220c20bc2d0a6a7c9d7aa
-      DiffID: sha256:c53ea18d6cf66b5e481468bd670747c3ae510e38dfba832509f168973fce4ec7
+      Digest: sha256:357710754a797a0b8d7465470fd490cec4d7a79976f5b16137b13867ed9515ce
+      DiffID: sha256:f7bda0de7895baf23a3ecc70b50bb8bc7be3642a95a7a246a8f094628c9083e0
     SeveritySource: ubuntu
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-27456
     DataSource:
       ID: ubuntu
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Fingerprint: sha256:042e26d6328c2c8468d66b7972c4e783c16e6ac2e2ea37b2e0fe125c70f19769
+    Fingerprint: sha256:94c29e1ddc015d96db5b789fad3efd1a47ea3785960c2d388094bab66cf4aac4
     Title: 'util-linux: TOCTOU in the mount program when setting up loop devices'
     Description: util-linux is a random collection of Linux utilities. Prior to version 2.41.4, a TOCTOU (Time-of-Check-Time-of-Use) vulnerability has been identified in the SUID binary /usr/bin/mount from util-linux. The mount binary, when setting up loop devices, validates the source file path with user privileges via fork() + setuid() + realpath(), but subsequently re-canonicalizes and opens it with root privileges (euid=0) without verifying that the path has not been replaced between both operations. Neither O_NOFOLLOW, nor inode comparison, nor post-open fstat() are employed. This allows a local unprivileged user to replace the source file with a symlink pointing to any root-owned file or device during the race window, causing the SUID binary to open and mount it as root. Exploitation requires an /etc/fstab entry with user,loop options whose path points to a directory where the attacker has write permission, and that /usr/bin/mount has the SUID bit set (the default configuration on virtually all Linux distributions). The impact is unauthorized read access to root-protected files and block devices, including backup images, disk volumes, and any file containing a valid filesystem. This issue has been patched in version 2.41.4.
     Severity: MEDIUM
@@ -3133,15 +3039,15 @@
     InstalledVersion: 2.41.3-3ubuntu2
     Status: affected
     Layer:
-      Digest: sha256:cf47da87b3c6510ee8d925076dca955b53132e376bf220c20bc2d0a6a7c9d7aa
-      DiffID: sha256:c53ea18d6cf66b5e481468bd670747c3ae510e38dfba832509f168973fce4ec7
+      Digest: sha256:357710754a797a0b8d7465470fd490cec4d7a79976f5b16137b13867ed9515ce
+      DiffID: sha256:f7bda0de7895baf23a3ecc70b50bb8bc7be3642a95a7a246a8f094628c9083e0
     SeveritySource: ubuntu
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-3184
     DataSource:
       ID: ubuntu
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Fingerprint: sha256:d38971dd436cab9d418864ba2c225c3c4653b0a9eab0b6cd8a6ce3af8b124ae4
+    Fingerprint: sha256:3f848bcb6f0e205bb68f50a01fa5178d19558b200bd8548370d6ed6a5af5de1c
     Title: 'util-linux: util-linux: Access control bypass due to improper hostname canonicalization'
     Description: A flaw was found in util-linux. Improper hostname canonicalization in the `login(1)` utility, when invoked with the `-h` option, can modify the supplied remote hostname before setting `PAM_RHOST`. A remote attacker could exploit this by providing a specially crafted hostname, potentially bypassing host-based Pluggable Authentication Modules (PAM) access control rules that rely on fully qualified domain names. This could lead to unauthorized access.
     Severity: MEDIUM
@@ -3177,15 +3083,15 @@
     InstalledVersion: 1:1.3.dfsg+really1.3.1-1ubuntu3
     Status: affected
     Layer:
-      Digest: sha256:cf47da87b3c6510ee8d925076dca955b53132e376bf220c20bc2d0a6a7c9d7aa
-      DiffID: sha256:c53ea18d6cf66b5e481468bd670747c3ae510e38dfba832509f168973fce4ec7
+      Digest: sha256:357710754a797a0b8d7465470fd490cec4d7a79976f5b16137b13867ed9515ce
+      DiffID: sha256:f7bda0de7895baf23a3ecc70b50bb8bc7be3642a95a7a246a8f094628c9083e0
     SeveritySource: ubuntu
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-27171
     DataSource:
       ID: ubuntu
       Name: Ubuntu CVE Tracker
       URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Fingerprint: sha256:f5e70ebeefc449878eed61aab0057b439e2fe8f101ae32d3029390a6f8f04d3e
+    Fingerprint: sha256:1a1de45c5c8b63105f0eb3410fe026e48685f79b1e3668118c070fb50ca23004
     Title: 'zlib: zlib: Denial of Service via infinite loop in CRC32 combine functions'
     Description: zlib before 1.3.2 allows CPU consumption via crc32_combine64 and crc32_combine_gen64 because x2nmodp can do right shifts within a loop that has no termination condition.
     Severity: LOW
@@ -3195,15 +3101,15 @@
       amazon: 1
       azure: 1
       cbl-mariner: 1
-      julia: 1
+      julia: 2
       nvd: 2
       photon: 2
       redhat: 1
       ubuntu: 1
     CVSS:
       julia:
-        V3Vector: CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L
-        V3Score: 2.9
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 5.5
       nvd:
         V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H
         V3Score: 5.5
@@ -3241,15 +3147,15 @@
     FixedVersion: 3.1.4, 2.18.9, 2.21.5, 2.22.1
     Status: fixed
     Layer:
-      Digest: sha256:cf47da87b3c6510ee8d925076dca955b53132e376bf220c20bc2d0a6a7c9d7aa
-      DiffID: sha256:c53ea18d6cf66b5e481468bd670747c3ae510e38dfba832509f168973fce4ec7
+      Digest: sha256:357710754a797a0b8d7465470fd490cec4d7a79976f5b16137b13867ed9515ce
+      DiffID: sha256:f7bda0de7895baf23a3ecc70b50bb8bc7be3642a95a7a246a8f094628c9083e0
     SeveritySource: ghsa
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-54515
     DataSource:
       ID: ghsa
       Name: GitHub Security Advisory Maven
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven
-    Fingerprint: sha256:63f37b6da5869e9cb2e5063e8e6e4831fb7adb4d529acfa5dfceaa4a660febdf
+    Fingerprint: sha256:23d57f4ec4804139b6e91e350259d2067a435e8afc0d79cac56e22e8d81dc5a4
     Title: 'jackson-databind: jackson-databind: Ignored properties can be unexpectedly modified'
     Description: jackson-databind contains the general-purpose data-binding functionality and tree-model for Jackson Data Processor. From 2.8.0 until 2.18.9, 2.21.5, and 3.1.4, in BeanDeserializerBase.createContextual(), per-property @JsonIgnoreProperties exclusions are applied by _handleByNameInclusion(), producing a contextual deserializer whose BeanPropertyMap has the ignored properties removed. The subsequent per-property case-insensitivity block (triggered by @JsonFormat(ACCEPT_CASE_INSENSITIVE_PROPERTIES)) rebuilds from this._beanProperties (the original, unfiltered map) instead of contextual._beanProperties, then overwrites the filtered map — restoring every property _handleByNameInclusion had just removed. The ignored property becomes writable again. This vulnerability is fixed in 2.18.9, 2.21.5, and 3.1.4.
     Severity: MEDIUM
@@ -3293,14 +3199,14 @@
     FixedVersion: 0.55.0
     Status: fixed
     Layer:
-      Digest: sha256:cf47da87b3c6510ee8d925076dca955b53132e376bf220c20bc2d0a6a7c9d7aa
-      DiffID: sha256:c53ea18d6cf66b5e481468bd670747c3ae510e38dfba832509f168973fce4ec7
+      Digest: sha256:357710754a797a0b8d7465470fd490cec4d7a79976f5b16137b13867ed9515ce
+      DiffID: sha256:f7bda0de7895baf23a3ecc70b50bb8bc7be3642a95a7a246a8f094628c9083e0
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-25681
     DataSource:
       ID: govulndb
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
-    Fingerprint: sha256:f883593378ed6c8d39d6179e2321fbae4a7f5c469ac3b1b86734e8d57fbc0400
+    Fingerprint: sha256:eb035f12b792b79e321823d7116f7ec6f21276051aba8f1d1b5852fc8023f179
     Title: 'golang.org/x/net/html: golang.org/x/net/html: Arbitrary code execution via Cross-Site Scripting'
     Description: Parsing arbitrary HTML which is then rendered using Render can result in an unexpected HTML tree. This can be leveraged to execute XSS attacks in applications that attempt to sanitize input HTML before rendering.
     Severity: HIGH
@@ -3365,14 +3271,14 @@
     FixedVersion: 0.55.0
     Status: fixed
     Layer:
-      Digest: sha256:cf47da87b3c6510ee8d925076dca955b53132e376bf220c20bc2d0a6a7c9d7aa
-      DiffID: sha256:c53ea18d6cf66b5e481468bd670747c3ae510e38dfba832509f168973fce4ec7
+      Digest: sha256:357710754a797a0b8d7465470fd490cec4d7a79976f5b16137b13867ed9515ce
+      DiffID: sha256:f7bda0de7895baf23a3ecc70b50bb8bc7be3642a95a7a246a8f094628c9083e0
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-27136
     DataSource:
       ID: govulndb
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
-    Fingerprint: sha256:002bcebbd4d22088c0521faf07916894a147551b430b2b19647853eedd3bbaa4
+    Fingerprint: sha256:2a4fe0d5c813e8906cab2d8086847583b47b1680c94ad1b4fba207ba26c6d03d
     Title: 'golang.org/x/net/html: golang: golang.org/x/net/html: Cross-Site Scripting via HTML parsing bypass'
     Description: Parsing arbitrary HTML which is then rendered using Render can result in an unexpected HTML tree. This can be leveraged to execute XSS attacks in applications that attempt to sanitize input HTML before rendering.
     Severity: HIGH
@@ -3437,15 +3343,15 @@
     FixedVersion: 0.53.0
     Status: fixed
     Layer:
-      Digest: sha256:cf47da87b3c6510ee8d925076dca955b53132e376bf220c20bc2d0a6a7c9d7aa
-      DiffID: sha256:c53ea18d6cf66b5e481468bd670747c3ae510e38dfba832509f168973fce4ec7
+      Digest: sha256:357710754a797a0b8d7465470fd490cec4d7a79976f5b16137b13867ed9515ce
+      DiffID: sha256:f7bda0de7895baf23a3ecc70b50bb8bc7be3642a95a7a246a8f094628c9083e0
     SeveritySource: nvd
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-33814
     DataSource:
       ID: govulndb
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
-    Fingerprint: sha256:da0f4518c3924e1ec46a82ea7d0ca81da511e7ba242b9d51924ca2f1ab3e46f2
+    Fingerprint: sha256:7e4e3f746c6c7728e754382aba73e51306218906dbd06f886a6a926cb24a057a
     Title: 'net/http/internal/http2: golang: golang.org/x/net: Go HTTP/2: Denial of Service via malformed SETTINGS_MAX_FRAME_SIZE frame'
     Description: When processing HTTP/2 SETTINGS frames, transport will enter an infinite loop of writing CONTINUATION frames if it receives a SETTINGS_MAX_FRAME_SIZE with a value of 0.
     Severity: HIGH
@@ -3513,14 +3419,14 @@
     FixedVersion: 0.55.0
     Status: fixed
     Layer:
-      Digest: sha256:cf47da87b3c6510ee8d925076dca955b53132e376bf220c20bc2d0a6a7c9d7aa
-      DiffID: sha256:c53ea18d6cf66b5e481468bd670747c3ae510e38dfba832509f168973fce4ec7
+      Digest: sha256:357710754a797a0b8d7465470fd490cec4d7a79976f5b16137b13867ed9515ce
+      DiffID: sha256:f7bda0de7895baf23a3ecc70b50bb8bc7be3642a95a7a246a8f094628c9083e0
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-39821
     DataSource:
       ID: govulndb
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
-    Fingerprint: sha256:24570195942b818d1e7681b079325c35261fe58e6d4d7b8405a2007fb901c0f0
+    Fingerprint: sha256:6113bd3751537e1af7fe38b48b7e9f634b4e7d1ed68c6626a56c40a864764d68
     Title: 'golang.org/x/net/idna: golang: golang.org/x/net/idna: Privilege escalation via incorrect Punycode label processing'
     Description: The ToASCII and ToUnicode functions incorrectly accept Punycode-encoded labels that decode to an ASCII-only label. For example, ToUnicode("xn--example-.com") incorrectly returns the name "example.com" rather than an error. This behavior can lead to privilege escalation in programs using the idna package. For example, a program which performs privilege checks on the ASCII hostname may reject "example.com" but permit "xn--example-.com". If that program subsequently converts the ASCII hostname to Unicode, it will inadvertently permits access to the Unicode name "example.com".
     Severity: HIGH
@@ -3588,6 +3494,13 @@
     - https://access.redhat.com/errata/RHSA-2026:40118
     - https://access.redhat.com/errata/RHSA-2026:40119
     - https://access.redhat.com/errata/RHSA-2026:40262
+    - https://access.redhat.com/errata/RHSA-2026:40945
+    - https://access.redhat.com/errata/RHSA-2026:41019
+    - https://access.redhat.com/errata/RHSA-2026:41030
+    - https://access.redhat.com/errata/RHSA-2026:41031
+    - https://access.redhat.com/errata/RHSA-2026:41036
+    - https://access.redhat.com/errata/RHSA-2026:41055
+    - https://access.redhat.com/errata/RHSA-2026:41066
     - https://access.redhat.com/security/cve/CVE-2026-39821
     - https://bugzilla.redhat.com/2480756
     - https://bugzilla.redhat.com/show_bug.cgi?id=2480756
@@ -3608,7 +3521,7 @@
     - https://ubuntu.com/security/notices/USN-8416-1
     - https://www.cve.org/CVERecord?id=CVE-2026-39821
     PublishedDate: '2026-05-22T16:16:20.41Z'
-    LastModifiedDate: '2026-07-16T12:17:37.98Z'
+    LastModifiedDate: '2026-07-17T13:18:31.383Z'
   - VulnerabilityID: CVE-2025-47911
     VendorIDs:
     - GO-2026-4440
@@ -3621,15 +3534,15 @@
     FixedVersion: 0.45.0
     Status: fixed
     Layer:
-      Digest: sha256:cf47da87b3c6510ee8d925076dca955b53132e376bf220c20bc2d0a6a7c9d7aa
-      DiffID: sha256:c53ea18d6cf66b5e481468bd670747c3ae510e38dfba832509f168973fce4ec7
+      Digest: sha256:357710754a797a0b8d7465470fd490cec4d7a79976f5b16137b13867ed9515ce
+      DiffID: sha256:f7bda0de7895baf23a3ecc70b50bb8bc7be3642a95a7a246a8f094628c9083e0
     SeveritySource: nvd
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-47911
     DataSource:
       ID: govulndb
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
-    Fingerprint: sha256:0aebc1ad00890b6cc83b87873a62473d1f072c3de21e9ee8c4c8898220363e19
+    Fingerprint: sha256:1a263a2e9b1d8dc173f54444e199be11c5ece3e6d00f4426a7a9717f6ed7381c
     Title: 'golang.org/x/net/html: Quadratic parsing complexity in golang.org/x/net/html'
     Description: The html.Parse function in golang.org/x/net/html has quadratic parsing complexity when processing certain inputs, which can lead to denial of service (DoS) if an attacker provides specially crafted HTML content.
     Severity: MEDIUM
@@ -3673,15 +3586,15 @@
     FixedVersion: 0.45.0
     Status: fixed
     Layer:
-      Digest: sha256:cf47da87b3c6510ee8d925076dca955b53132e376bf220c20bc2d0a6a7c9d7aa
-      DiffID: sha256:c53ea18d6cf66b5e481468bd670747c3ae510e38dfba832509f168973fce4ec7
+      Digest: sha256:357710754a797a0b8d7465470fd490cec4d7a79976f5b16137b13867ed9515ce
+      DiffID: sha256:f7bda0de7895baf23a3ecc70b50bb8bc7be3642a95a7a246a8f094628c9083e0
     SeveritySource: nvd
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-58190
     DataSource:
       ID: govulndb
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
-    Fingerprint: sha256:37a41e84d7f71681c3cd0457b54265555a155c543dc624e4f9a4882a6acd0ad2
+    Fingerprint: sha256:1648ae8e077304a81e01c731da2dcf35cc502269c22a6f70dd81d3bfcf5d35a5
     Title: 'golang.org/x/net/html: Infinite parsing loop in golang.org/x/net'
     Description: The html.Parse function in golang.org/x/net/html has an infinite parsing loop when processing certain inputs, which can lead to denial of service (DoS) if an attacker provides specially crafted HTML content.
     Severity: MEDIUM
@@ -3727,14 +3640,14 @@
     FixedVersion: 0.55.0
     Status: fixed
     Layer:
-      Digest: sha256:cf47da87b3c6510ee8d925076dca955b53132e376bf220c20bc2d0a6a7c9d7aa
-      DiffID: sha256:c53ea18d6cf66b5e481468bd670747c3ae510e38dfba832509f168973fce4ec7
+      Digest: sha256:357710754a797a0b8d7465470fd490cec4d7a79976f5b16137b13867ed9515ce
+      DiffID: sha256:f7bda0de7895baf23a3ecc70b50bb8bc7be3642a95a7a246a8f094628c9083e0
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-25680
     DataSource:
       ID: govulndb
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
-    Fingerprint: sha256:2fa349b402337760fcabf6387ec172f1c86e9134d1c40362a23bdab503ffd495
+    Fingerprint: sha256:c84a923ab1ad802e6b299b87e997c9ebaeb8dc58096c90a2780efa8da97f61f0
     Title: 'golang.org/x/net/html: golang.org/x/net/html: Denial of Service due to excessive HTML parsing'
     Description: Parsing arbitrary HTML can consume excessive CPU time, possibly leading to denial of service.
     Severity: MEDIUM
@@ -3770,14 +3683,14 @@
     FixedVersion: 0.55.0
     Status: fixed
     Layer:
-      Digest: sha256:cf47da87b3c6510ee8d925076dca955b53132e376bf220c20bc2d0a6a7c9d7aa
-      DiffID: sha256:c53ea18d6cf66b5e481468bd670747c3ae510e38dfba832509f168973fce4ec7
+      Digest: sha256:357710754a797a0b8d7465470fd490cec4d7a79976f5b16137b13867ed9515ce
+      DiffID: sha256:f7bda0de7895baf23a3ecc70b50bb8bc7be3642a95a7a246a8f094628c9083e0
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-42502
     DataSource:
       ID: govulndb
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
-    Fingerprint: sha256:b19cfd1809607e447152b4ea48551e3955e8b768ca4b6881e9e9243bbc9fd7e9
+    Fingerprint: sha256:f7457118956ab39b90b8516e9007a0d144d5cda62f9f914e25aba23d8c73e84d
     Title: 'golang.org/x/net/html: golang: golang.org/x/net/html: Cross-Site Scripting via unexpected HTML tree rendering'
     Description: Parsing arbitrary HTML which is then rendered using Render can result in an unexpected HTML tree. This can be leveraged to execute XSS attacks in applications that attempt to sanitize input HTML before rendering.
     Severity: MEDIUM
@@ -3813,14 +3726,14 @@
     FixedVersion: 0.55.0
     Status: fixed
     Layer:
-      Digest: sha256:cf47da87b3c6510ee8d925076dca955b53132e376bf220c20bc2d0a6a7c9d7aa
-      DiffID: sha256:c53ea18d6cf66b5e481468bd670747c3ae510e38dfba832509f168973fce4ec7
+      Digest: sha256:357710754a797a0b8d7465470fd490cec4d7a79976f5b16137b13867ed9515ce
+      DiffID: sha256:f7bda0de7895baf23a3ecc70b50bb8bc7be3642a95a7a246a8f094628c9083e0
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-42506
     DataSource:
       ID: govulndb
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
-    Fingerprint: sha256:4a036ef098e0e5167bbc13ac54a1a9fee8ec4f911f2e1c5936e61268c2981b33
+    Fingerprint: sha256:ef5cac3727fb5c229b870443466ee826178dfa0cfb68d1e83cde5c7b5fc4a07d
     Title: 'golang.org/x/net/html: golang.org/x/net/html: Cross-Site Scripting (XSS) via arbitrary HTML parsing'
     Description: Parsing arbitrary HTML which is then rendered using Render can result in an unexpected HTML tree. This can be leveraged to execute XSS attacks in applications that attempt to sanitize input HTML before rendering.
     Severity: MEDIUM
@@ -3856,14 +3769,14 @@
     FixedVersion: 0.56.0
     Status: fixed
     Layer:
-      Digest: sha256:cf47da87b3c6510ee8d925076dca955b53132e376bf220c20bc2d0a6a7c9d7aa
-      DiffID: sha256:c53ea18d6cf66b5e481468bd670747c3ae510e38dfba832509f168973fce4ec7
+      Digest: sha256:357710754a797a0b8d7465470fd490cec4d7a79976f5b16137b13867ed9515ce
+      DiffID: sha256:f7bda0de7895baf23a3ecc70b50bb8bc7be3642a95a7a246a8f094628c9083e0
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-46600
     DataSource:
       ID: govulndb
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
-    Fingerprint: sha256:8b12e482aeff734fbba225b57c31335956360725d40219b979144b6d49fd75c3
+    Fingerprint: sha256:5c89340ab18d15f0886de61c0f36d4f6d85844cfb2d80261b927c30ddd5f96a9
     Title: Parsing an invalid SVCB or HTTPS RR can panic in golang.org/x/net/dns/dnsmessage
     Description: Parsing an invalid SVCB or HTTPS RR can panic when the size of a parameter value overflows the message buffer.
     Severity: UNKNOWN
@@ -3883,14 +3796,14 @@
     FixedVersion: 0.44.0
     Status: fixed
     Layer:
-      Digest: sha256:cf47da87b3c6510ee8d925076dca955b53132e376bf220c20bc2d0a6a7c9d7aa
-      DiffID: sha256:c53ea18d6cf66b5e481468bd670747c3ae510e38dfba832509f168973fce4ec7
+      Digest: sha256:357710754a797a0b8d7465470fd490cec4d7a79976f5b16137b13867ed9515ce
+      DiffID: sha256:f7bda0de7895baf23a3ecc70b50bb8bc7be3642a95a7a246a8f094628c9083e0
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-39824
     DataSource:
       ID: govulndb
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
-    Fingerprint: sha256:865a026637e831a1914c9c19e4456420d8bdf6ab413fe0c8d86b6c34e8e39bee
+    Fingerprint: sha256:b1872752491d600fee4715a6da380c514e706698313ff968c0853588d0f1b4df
     Title: Invoking integer overflow in NewNTUnicodeString in golang.org/x/sys/windows
     Description: NewNTUnicodeString does not check for string length overflow. When provided with a string that overflows the maximum size of a NTUnicodeString (a 16-bit number of bytes), it returns a truncated string rather than an error.
     Severity: UNKNOWN
@@ -3903,100 +3816,26 @@
     - https://pkg.go.dev/vuln/GO-2026-5024
     PublishedDate: '2026-05-22T20:16:33.057Z'
     LastModifiedDate: '2026-06-17T10:42:38.62Z'
-  - VulnerabilityID: CVE-2026-27145
-    VendorIDs:
-    - GO-2026-5037
-    PkgID: stdlib@v1.26.3
-    PkgName: stdlib
-    PkgIdentifier:
-      PURL: pkg:golang/stdlib@v1.26.3
-      UID: 88b4097712908b9b
-    InstalledVersion: v1.26.3
-    FixedVersion: 1.25.11, 1.26.4
-    Status: fixed
-    Layer:
-      Digest: sha256:cf47da87b3c6510ee8d925076dca955b53132e376bf220c20bc2d0a6a7c9d7aa
-      DiffID: sha256:c53ea18d6cf66b5e481468bd670747c3ae510e38dfba832509f168973fce4ec7
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-27145
-    DataSource:
-      ID: govulndb
-      Name: The Go Vulnerability Database
-      URL: https://pkg.go.dev/vuln/
-    Fingerprint: sha256:8adf0c392d3f5d357092b91fb50a647761bdc918afac4d6ae31b8984979ebd09
-    Title: 'crypto/x509: golang: golang crypto/x509: Denial of Service via excessive processing of DNS SAN entries'
-    Description: (*x509.Certificate).VerifyHostname previously called matchHostnames in a loop over all DNS Subject Alternative Name (SAN) entries. This caused strings.Split(host, ".") to execute repeatedly on the same input hostname. With a large DNS SAN list, verification costs scaled quadratically based on the number of SAN entries multiplied by the hostname's label count. Because x509.Verify validates hostnames before building the certificate chain, this overhead occurred even for untrusted certificates.
-    Severity: HIGH
-    CweIDs:
-    - CWE-606
-    VendorSeverity:
-      alma: 3
-      amazon: 2
-      bitnami: 2
-      oracle-oval: 3
-      redhat: 3
-      rocky: 3
-    CVSS:
-      bitnami:
-        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:H
-        V3Score: 6.5
-      redhat:
-        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
-        V3Score: 7.5
-    References:
-    - https://access.redhat.com/errata/RHSA-2026:23262
-    - https://access.redhat.com/errata/RHSA-2026:23264
-    - https://access.redhat.com/errata/RHSA-2026:29981
-    - https://access.redhat.com/errata/RHSA-2026:33574
-    - https://access.redhat.com/errata/RHSA-2026:34357
-    - https://access.redhat.com/errata/RHSA-2026:34359
-    - https://access.redhat.com/errata/RHSA-2026:35832
-    - https://access.redhat.com/errata/RHSA-2026:36317
-    - https://access.redhat.com/errata/RHSA-2026:36648
-    - https://access.redhat.com/errata/RHSA-2026:36797
-    - https://access.redhat.com/errata/RHSA-2026:38995
-    - https://access.redhat.com/errata/RHSA-2026:39005
-    - https://access.redhat.com/errata/RHSA-2026:39573
-    - https://access.redhat.com/errata/RHSA-2026:39879
-    - https://access.redhat.com/security/cve/CVE-2026-27145
-    - https://bugzilla.redhat.com/2445356
-    - https://bugzilla.redhat.com/2484207
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2445356
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2484207
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-25679
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-27145
-    - https://errata.almalinux.org/9/ALSA-2026-36317.html
-    - https://errata.rockylinux.org/RLSA-2026:36317
-    - https://go.dev/cl/783621
-    - https://go.dev/issue/79694
-    - https://groups.google.com/g/golang-announce/c/tKs3rmcBcKw
-    - https://linux.oracle.com/cve/CVE-2026-27145.html
-    - https://linux.oracle.com/errata/ELSA-2026-38995.html
-    - https://nvd.nist.gov/vuln/detail/CVE-2026-27145
-    - https://pkg.go.dev/vuln/GO-2026-5037
-    - https://security.access.redhat.com/data/csaf/v2/vex/2026/cve-2026-27145.json
-    - https://www.cve.org/CVERecord?id=CVE-2026-27145
-    PublishedDate: '2026-06-02T23:16:35.57Z'
-    LastModifiedDate: '2026-07-16T12:17:16.803Z'
   - VulnerabilityID: CVE-2026-39822
     VendorIDs:
     - GO-2026-4970
-    PkgID: stdlib@v1.26.3
+    PkgID: stdlib@v1.26.4
     PkgName: stdlib
     PkgIdentifier:
-      PURL: pkg:golang/stdlib@v1.26.3
-      UID: 88b4097712908b9b
-    InstalledVersion: v1.26.3
+      PURL: pkg:golang/stdlib@v1.26.4
+      UID: 364846ec8fe81bdc
+    InstalledVersion: v1.26.4
     FixedVersion: 1.25.12, 1.26.5, 1.27.0-rc.2
     Status: fixed
     Layer:
-      Digest: sha256:cf47da87b3c6510ee8d925076dca955b53132e376bf220c20bc2d0a6a7c9d7aa
-      DiffID: sha256:c53ea18d6cf66b5e481468bd670747c3ae510e38dfba832509f168973fce4ec7
+      Digest: sha256:357710754a797a0b8d7465470fd490cec4d7a79976f5b16137b13867ed9515ce
+      DiffID: sha256:f7bda0de7895baf23a3ecc70b50bb8bc7be3642a95a7a246a8f094628c9083e0
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-39822
     DataSource:
       ID: govulndb
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
-    Fingerprint: sha256:8891d710463ba3f764953f520afb62868428191b854d8bed3fb3a749ba68163e
+    Fingerprint: sha256:1fc9db6f6446baa4589a39b204ec572adbeef5061c876476e8485afe6c9b94ad
     Title: 'os: golang: Go os.Root: Symlink following vulnerability allows directory traversal'
     Description: On Unix systems, opening a file in an os.Root improperly follows symlinks to locations outside of the Root when the final path component of the a path is a symbolic link and the path ends in /. For example, 'root.Open("symlink/")' will open "symlink" even when "symlink" is a symbolic link pointing outside of the root.
     Severity: HIGH
@@ -4033,73 +3872,26 @@
     - https://www.cve.org/CVERecord?id=CVE-2026-39822
     PublishedDate: '2026-07-08T17:17:21.31Z'
     LastModifiedDate: '2026-07-13T14:54:26.317Z'
-  - VulnerabilityID: CVE-2026-42504
-    VendorIDs:
-    - GO-2026-5038
-    PkgID: stdlib@v1.26.3
-    PkgName: stdlib
-    PkgIdentifier:
-      PURL: pkg:golang/stdlib@v1.26.3
-      UID: 88b4097712908b9b
-    InstalledVersion: v1.26.3
-    FixedVersion: 1.25.11, 1.26.4
-    Status: fixed
-    Layer:
-      Digest: sha256:cf47da87b3c6510ee8d925076dca955b53132e376bf220c20bc2d0a6a7c9d7aa
-      DiffID: sha256:c53ea18d6cf66b5e481468bd670747c3ae510e38dfba832509f168973fce4ec7
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-42504
-    DataSource:
-      ID: govulndb
-      Name: The Go Vulnerability Database
-      URL: https://pkg.go.dev/vuln/
-    Fingerprint: sha256:a4d0cfa7d5a12e3041387fdf3a74684b5383f5f01c425a560972fadec667c63d
-    Title: 'mime: golang: Golang MIME: Denial of Service via maliciously-crafted MIME header'
-    Description: Decoding a maliciously-crafted MIME header containing many invalid encoded-words can consume excessive CPU.
-    Severity: HIGH
-    CweIDs:
-    - CWE-407
-    VendorSeverity:
-      amazon: 2
-      azure: 3
-      bitnami: 3
-      redhat: 3
-    CVSS:
-      bitnami:
-        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
-        V3Score: 7.5
-      redhat:
-        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
-        V3Score: 7.5
-    References:
-    - https://access.redhat.com/security/cve/CVE-2026-42504
-    - https://go.dev/cl/774481
-    - https://go.dev/issue/79217
-    - https://groups.google.com/g/golang-announce/c/tKs3rmcBcKw
-    - https://nvd.nist.gov/vuln/detail/CVE-2026-42504
-    - https://pkg.go.dev/vuln/GO-2026-5038
-    - https://www.cve.org/CVERecord?id=CVE-2026-42504
-    PublishedDate: '2026-06-02T23:16:37.927Z'
-    LastModifiedDate: '2026-06-17T10:47:56.86Z'
   - VulnerabilityID: CVE-2026-42505
     VendorIDs:
     - GO-2026-5856
-    PkgID: stdlib@v1.26.3
+    PkgID: stdlib@v1.26.4
     PkgName: stdlib
     PkgIdentifier:
-      PURL: pkg:golang/stdlib@v1.26.3
-      UID: 88b4097712908b9b
-    InstalledVersion: v1.26.3
+      PURL: pkg:golang/stdlib@v1.26.4
+      UID: 364846ec8fe81bdc
+    InstalledVersion: v1.26.4
     FixedVersion: 1.25.12, 1.26.5, 1.27.0-rc.2
     Status: fixed
     Layer:
-      Digest: sha256:cf47da87b3c6510ee8d925076dca955b53132e376bf220c20bc2d0a6a7c9d7aa
-      DiffID: sha256:c53ea18d6cf66b5e481468bd670747c3ae510e38dfba832509f168973fce4ec7
+      Digest: sha256:357710754a797a0b8d7465470fd490cec4d7a79976f5b16137b13867ed9515ce
+      DiffID: sha256:f7bda0de7895baf23a3ecc70b50bb8bc7be3642a95a7a246a8f094628c9083e0
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-42505
     DataSource:
       ID: govulndb
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
-    Fingerprint: sha256:fb81df6c961dcfd0d4501bc6ee6eb141336b705ff1a4a1eaaa2d4bc321ee81da
+    Fingerprint: sha256:05f935aa63595eb46a1d7d7bc825b5447b9fb9d6520f2741b2a6e6ca43d1e98c
     Title: 'crypto/tls: golang: Go crypto/tls: Information disclosure in Encrypted Client Hello'
     Description: Handshakes which used Encrypted Client Hello could be de-anonymized by a passive network observer due to a disclosure of pre-shared key identities in the unencrypted client hello.
     Severity: MEDIUM
@@ -4125,60 +3917,3 @@
     - https://www.cve.org/CVERecord?id=CVE-2026-42505
     PublishedDate: '2026-07-08T17:17:21.497Z'
     LastModifiedDate: '2026-07-13T17:05:36.303Z'
-  - VulnerabilityID: CVE-2026-42507
-    VendorIDs:
-    - GO-2026-5039
-    PkgID: stdlib@v1.26.3
-    PkgName: stdlib
-    PkgIdentifier:
-      PURL: pkg:golang/stdlib@v1.26.3
-      UID: 88b4097712908b9b
-    InstalledVersion: v1.26.3
-    FixedVersion: 1.25.11, 1.26.4
-    Status: fixed
-    Layer:
-      Digest: sha256:cf47da87b3c6510ee8d925076dca955b53132e376bf220c20bc2d0a6a7c9d7aa
-      DiffID: sha256:c53ea18d6cf66b5e481468bd670747c3ae510e38dfba832509f168973fce4ec7
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-42507
-    DataSource:
-      ID: govulndb
-      Name: The Go Vulnerability Database
-      URL: https://pkg.go.dev/vuln/
-    Fingerprint: sha256:de41de6fdd5d947d064fb22328ff6adac2e78c09b21af1358ef867c3be10a506
-    Title: 'net/textproto: golang: Golang net/textproto: Misleading error messages via input injection'
-    Description: When returning errors, functions in the net/textproto package would include its input as part of the error. This might allow an attacker to inject misleading content to errors that are printed or logged.
-    Severity: MEDIUM
-    VendorSeverity:
-      alma: 2
-      amazon: 2
-      bitnami: 2
-      oracle-oval: 2
-      redhat: 2
-      rocky: 2
-    CVSS:
-      bitnami:
-        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N
-        V3Score: 5.3
-      redhat:
-        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N
-        V3Score: 5.3
-    References:
-    - https://access.redhat.com/errata/RHSA-2026:29981
-    - https://access.redhat.com/security/cve/CVE-2026-42507
-    - https://bugzilla.redhat.com/2484205
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2484205
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2484207
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-27145
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42507
-    - https://errata.almalinux.org/9/ALSA-2026-29981.html
-    - https://errata.rockylinux.org/RLSA-2026:29981
-    - https://go.dev/cl/777060
-    - https://go.dev/issue/79346
-    - https://groups.google.com/g/golang-announce/c/tKs3rmcBcKw
-    - https://linux.oracle.com/cve/CVE-2026-42507.html
-    - https://linux.oracle.com/errata/ELSA-2026-29981.html
-    - https://nvd.nist.gov/vuln/detail/CVE-2026-42507
-    - https://pkg.go.dev/vuln/GO-2026-5039
-    - https://www.cve.org/CVERecord?id=CVE-2026-42507
-    PublishedDate: '2026-06-02T23:16:38.027Z'
-    LastModifiedDate: '2026-06-17T10:47:57.137Z'
