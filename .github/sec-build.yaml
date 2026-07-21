@@ -448,7 +448,7 @@
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L
         V3Score: 5.3
     References:
-    - https://access.redhat.com/errata/RHSA-2026:20587
+    - https://access.redhat.com/errata/RHSA-2026:20594
     - https://access.redhat.com/security/cve/CVE-2026-4046
     - https://bugzilla.redhat.com/2453117
     - https://bugzilla.redhat.com/show_bug.cgi?id=2449777
@@ -458,7 +458,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4046
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4437
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4438
-    - https://errata.almalinux.org/8/ALSA-2026-20587.html
+    - https://errata.almalinux.org/10/ALSA-2026-20594.html
     - https://errata.rockylinux.org/RLSA-2026:20597
     - https://inbox.sourceware.org/libc-announce/76814edf-cf7f-47ec-979d-2dce0a2c76bf@gotplt.org/T/#u
     - https://linux.oracle.com/cve/CVE-2026-4046.html
@@ -713,7 +713,7 @@
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L
         V3Score: 5.3
     References:
-    - https://access.redhat.com/errata/RHSA-2026:20587
+    - https://access.redhat.com/errata/RHSA-2026:20594
     - https://access.redhat.com/security/cve/CVE-2026-4046
     - https://bugzilla.redhat.com/2453117
     - https://bugzilla.redhat.com/show_bug.cgi?id=2449777
@@ -723,7 +723,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4046
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4437
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4438
-    - https://errata.almalinux.org/8/ALSA-2026-20587.html
+    - https://errata.almalinux.org/10/ALSA-2026-20594.html
     - https://errata.rockylinux.org/RLSA-2026:20597
     - https://inbox.sourceware.org/libc-announce/76814edf-cf7f-47ec-979d-2dce0a2c76bf@gotplt.org/T/#u
     - https://linux.oracle.com/cve/CVE-2026-4046.html
@@ -978,7 +978,7 @@
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L
         V3Score: 5.3
     References:
-    - https://access.redhat.com/errata/RHSA-2026:20587
+    - https://access.redhat.com/errata/RHSA-2026:20594
     - https://access.redhat.com/security/cve/CVE-2026-4046
     - https://bugzilla.redhat.com/2453117
     - https://bugzilla.redhat.com/show_bug.cgi?id=2449777
@@ -988,7 +988,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4046
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4437
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4438
-    - https://errata.almalinux.org/8/ALSA-2026-20587.html
+    - https://errata.almalinux.org/10/ALSA-2026-20594.html
     - https://errata.rockylinux.org/RLSA-2026:20597
     - https://inbox.sourceware.org/libc-announce/76814edf-cf7f-47ec-979d-2dce0a2c76bf@gotplt.org/T/#u
     - https://linux.oracle.com/cve/CVE-2026-4046.html
@@ -1748,6 +1748,74 @@
     - https://www.cve.org/CVERecord?id=CVE-2026-3184
     PublishedDate: '2026-04-03T19:17:23.377Z'
     LastModifiedDate: '2026-06-17T10:43:10.203Z'
+  - VulnerabilityID: CVE-2026-50812
+    PkgID: libsqlite3-0@3.46.1-9ubuntu0.1
+    PkgName: libsqlite3-0
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/libsqlite3-0@3.46.1-9ubuntu0.1?arch=amd64&distro=ubuntu-26.04
+      UID: 658677f661dbc54d
+    InstalledVersion: 3.46.1-9ubuntu0.1
+    FixedVersion: 3.46.1-9ubuntu0.2
+    Status: fixed
+    Layer:
+      Digest: sha256:357710754a797a0b8d7465470fd490cec4d7a79976f5b16137b13867ed9515ce
+      DiffID: sha256:f7bda0de7895baf23a3ecc70b50bb8bc7be3642a95a7a246a8f094628c9083e0
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-50812
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:f241b6b979d01cb71bf5069bda00f97aeb3315db82382d68e5ce85e287e25a80
+    Title: A NULL pointer dereference in the SQLite Session Extension in SQLite 3 ...
+    Description: A NULL pointer dereference in the SQLite Session Extension in SQLite 3.53.1 and SQLite trunk builds before check-in e807d4e3798efd53 allows an attacker who can supply a malformed changeset blob to cause a denial of service. The issue occurs when sqlite3changeset_apply_v3() applies a corrupt changeset and reaches sqlite3_value_type() with a NULL sqlite3_value pointer.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-476
+    VendorSeverity:
+      ubuntu: 2
+    References:
+    - https://gist.github.com/junius-sec/bb556f333957c5226dede314db0e9e91
+    - https://github.com/sqlite/sqlite/commit/b869ed6b067d623cb1383549f2a18aa35508385d
+    - https://sqlite.org/src/info/e807d4e3798efd53
+    - https://ubuntu.com/security/notices/USN-8565-1
+    - https://www.cve.org/CVERecord?id=CVE-2026-50812
+    PublishedDate: '2026-07-08T18:16:32.4Z'
+    LastModifiedDate: '2026-07-09T19:48:15.277Z'
+  - VulnerabilityID: CVE-2026-50813
+    PkgID: libsqlite3-0@3.46.1-9ubuntu0.1
+    PkgName: libsqlite3-0
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/libsqlite3-0@3.46.1-9ubuntu0.1?arch=amd64&distro=ubuntu-26.04
+      UID: 658677f661dbc54d
+    InstalledVersion: 3.46.1-9ubuntu0.1
+    FixedVersion: 3.46.1-9ubuntu0.2
+    Status: fixed
+    Layer:
+      Digest: sha256:357710754a797a0b8d7465470fd490cec4d7a79976f5b16137b13867ed9515ce
+      DiffID: sha256:f7bda0de7895baf23a3ecc70b50bb8bc7be3642a95a7a246a8f094628c9083e0
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-50813
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:9ea1d4a4b16a0ac69db1e2bbe4d3eaac8d31e422611366f65d7fb6d288b95dfa
+    Title: An issue in SQLite before Fossil check-in 869a51ae84df allows a local  ...
+    Description: An issue in SQLite before Fossil check-in 869a51ae84df allows a local attacker to obtain sensitive information via the Session Extension changeset concat/changegroup merge path
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-126
+    VendorSeverity:
+      ubuntu: 2
+    References:
+    - https://gist.github.com/junius-sec/f8acb66bafb80134c8e1a1c8c7c9f4f4
+    - https://github.com/sqlite/sqlite/commit/c597ed79d1bd03f57198d10d1f431adda293cf2e
+    - https://sqlite.org/src/info/869a51ae84df
+    - https://ubuntu.com/security/notices/USN-8565-1
+    - https://www.cve.org/CVERecord?id=CVE-2026-50813
+    PublishedDate: '2026-07-08T18:16:32.56Z'
+    LastModifiedDate: '2026-07-09T19:48:15.277Z'
   - VulnerabilityID: CVE-2026-40228
     PkgID: libsystemd0@259.5-0ubuntu3
     PkgName: libsystemd0
@@ -3150,6 +3218,7 @@
     CweIDs:
     - CWE-915
     VendorSeverity:
+      amazon: 3
       ghsa: 2
       redhat: 2
     CVSS:
@@ -3393,7 +3462,7 @@
     - https://ubuntu.com/security/notices/USN-8473-1
     - https://www.cve.org/CVERecord?id=CVE-2026-33814
     PublishedDate: '2026-05-07T20:16:42.88Z'
-    LastModifiedDate: '2026-07-15T02:20:18.21Z'
+    LastModifiedDate: '2026-07-20T12:18:43.933Z'
   - VulnerabilityID: CVE-2026-39821
     VendorIDs:
     - GO-2026-5026
@@ -3479,7 +3548,6 @@
     - https://access.redhat.com/errata/RHSA-2026:39573
     - https://access.redhat.com/errata/RHSA-2026:39879
     - https://access.redhat.com/errata/RHSA-2026:40118
-    - https://access.redhat.com/errata/RHSA-2026:40119
     - https://access.redhat.com/errata/RHSA-2026:40262
     - https://access.redhat.com/errata/RHSA-2026:40945
     - https://access.redhat.com/errata/RHSA-2026:41019
@@ -3488,15 +3556,14 @@
     - https://access.redhat.com/errata/RHSA-2026:41036
     - https://access.redhat.com/errata/RHSA-2026:41055
     - https://access.redhat.com/errata/RHSA-2026:41066
+    - https://access.redhat.com/errata/RHSA-2026:41930
     - https://access.redhat.com/security/cve/CVE-2026-39821
     - https://bugzilla.redhat.com/2480756
-    - https://bugzilla.redhat.com/2484207
-    - https://bugzilla.redhat.com/2498152
     - https://bugzilla.redhat.com/show_bug.cgi?id=2480756
     - https://bugzilla.redhat.com/show_bug.cgi?id=2498152
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-39821
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-39822
-    - https://errata.almalinux.org/8/ALSA-2026-38995.html
+    - https://errata.almalinux.org/10/ALSA-2026-37436.html
     - https://errata.rockylinux.org/RLSA-2026:37435
     - https://github.com/golang/go/issues/78760
     - https://go.dev/cl/767220
@@ -3510,7 +3577,7 @@
     - https://ubuntu.com/security/notices/USN-8416-1
     - https://www.cve.org/CVERecord?id=CVE-2026-39821
     PublishedDate: '2026-05-22T16:16:20.41Z'
-    LastModifiedDate: '2026-07-17T13:18:31.383Z'
+    LastModifiedDate: '2026-07-20T12:18:53.62Z'
   - VulnerabilityID: CVE-2025-47911
     VendorIDs:
     - GO-2026-4440
@@ -3832,6 +3899,7 @@
     - CWE-61
     VendorSeverity:
       alma: 3
+      amazon: 2
       bitnami: 3
       oracle-oval: 3
       redhat: 3
@@ -3844,14 +3912,12 @@
         V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H
         V3Score: 7.8
     References:
-    - https://access.redhat.com/errata/RHSA-2026:38995
+    - https://access.redhat.com/errata/RHSA-2026:38495
     - https://access.redhat.com/security/cve/CVE-2026-39822
-    - https://bugzilla.redhat.com/2480756
-    - https://bugzilla.redhat.com/2484207
     - https://bugzilla.redhat.com/2498152
     - https://bugzilla.redhat.com/show_bug.cgi?id=2498152
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-39822
-    - https://errata.almalinux.org/8/ALSA-2026-38995.html
+    - https://errata.almalinux.org/10/ALSA-2026-38495.html
     - https://errata.rockylinux.org/RLSA-2026:38878
     - https://go.dev/cl/797880
     - https://go.dev/issue/79005
@@ -3889,6 +3955,7 @@
     CweIDs:
     - CWE-201
     VendorSeverity:
+      amazon: 2
       bitnami: 2
       redhat: 2
     CVSS:
