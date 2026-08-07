@@ -847,6 +847,7 @@
       alma: 2
       oracle-oval: 2
       redhat: 2
+      rocky: 2
       ubuntu: 2
     CVSS:
       redhat:
@@ -860,7 +861,9 @@
     - https://access.redhat.com/security/cve/CVE-2026-13757
     - https://bugzilla.redhat.com/2494556
     - https://bugzilla.redhat.com/show_bug.cgi?id=2494556
-    - https://errata.almalinux.org/10/ALSA-2026-49668.html
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-13757
+    - https://errata.almalinux.org/9/ALSA-2026-49667.html
+    - https://errata.rockylinux.org/RLSA-2026:49667
     - https://github.com/advisories/GHSA-p2wm-69qx-x25w
     - https://linux.oracle.com/cve/CVE-2026-13757.html
     - https://linux.oracle.com/errata/ELSA-2026-49668.html
@@ -2335,6 +2338,47 @@
   Class: lang-pkgs
   Type: jar
   Packages: []
+  Vulnerabilities:
+  - VulnerabilityID: CVE-2026-71497
+    VendorIDs:
+    - GHSA-pmhh-3w7g-xqp8
+    PkgName: org.jsoup:jsoup
+    PkgPath: openaf/Jsoup/jsoup-1.22.2.jar
+    PkgIdentifier:
+      PURL: pkg:maven/org.jsoup/jsoup@1.22.2
+      UID: 42350ae8a8c1de42
+    InstalledVersion: 1.22.2
+    FixedVersion: 1.23.1
+    Status: fixed
+    Layer:
+      Digest: sha256:713e3308388414f2f7f05bb0ff15b54c6b6ea5359b967828edf6679a8f5e17d5
+      DiffID: sha256:0b8c99e57009500ec484ab8c7213d9f70ebe1b21f49dea866173663c7b9a58be
+    SeveritySource: ghsa
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-71497
+    DataSource:
+      ID: ghsa
+      Name: GitHub Security Advisory Maven
+      URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven
+    Fingerprint: sha256:1e530dc4733c6c77cfe7e270e1ce0128fc2308a8c8cca7a05e38754c940608f5
+    Title: 'jsoup: Cleaner may expose markup with custom raw-text elements'
+    Description: jsoup is a Java library for working with real-world HTML. From 1.14.3 until 1.23.1, jsoup's HTML parser could incorrectly handle a malformed tag name ending in a control character, causing the tag to acquire the parsing behavior of a different element. When a custom Safelist permits certain raw-text elements, this misparsing can cause content that should remain inert text to be emitted as active markup after serialization, potentially resulting in cross-site scripting. jsoup's built-in Safelists are not affected. This issue is fixed in version 1.23.1.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-79
+    VendorSeverity:
+      ghsa: 2
+    CVSS:
+      ghsa:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:L/I:L/A:N
+        V3Score: 4.7
+    References:
+    - https://github.com/jhy/jsoup
+    - https://github.com/jhy/jsoup/commit/92f1aca552548b484bc7d4b94c51e48b8e6eca70
+    - https://github.com/jhy/jsoup/issues/2538
+    - https://github.com/jhy/jsoup/releases/tag/jsoup-1.23.1
+    - https://github.com/jhy/jsoup/security/advisories/GHSA-pmhh-3w7g-xqp8
+    PublishedDate: '2026-08-06T22:18:32.043Z'
+    LastModifiedDate: '2026-08-06T22:18:32.043Z'
 - Target: usr/bin/pebble
   Class: lang-pkgs
   Type: gobinary
@@ -2377,14 +2421,15 @@
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N
         V3Score: 8.1
     References:
-    - https://access.redhat.com/errata/RHSA-2026:34357
+    - https://access.redhat.com/errata/RHSA-2026:37123
     - https://access.redhat.com/security/cve/CVE-2026-25681
-    - https://bugzilla.redhat.com/2466505
-    - https://bugzilla.redhat.com/2466507
-    - https://bugzilla.redhat.com/2467822
-    - https://bugzilla.redhat.com/2480756
+    - https://bugzilla.redhat.com/2480680
+    - https://bugzilla.redhat.com/2480681
+    - https://bugzilla.redhat.com/2480685
+    - https://bugzilla.redhat.com/2480688
+    - https://bugzilla.redhat.com/2480757
     - https://bugzilla.redhat.com/2480761
-    - https://bugzilla.redhat.com/2484207
+    - https://bugzilla.redhat.com/2493620
     - https://bugzilla.redhat.com/show_bug.cgi?id=2480680
     - https://bugzilla.redhat.com/show_bug.cgi?id=2480681
     - https://bugzilla.redhat.com/show_bug.cgi?id=2480685
@@ -2399,7 +2444,7 @@
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-39835
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42508
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-57231
-    - https://errata.almalinux.org/10/ALSA-2026-34357.html
+    - https://errata.almalinux.org/9/ALSA-2026-37123.html
     - https://errata.rockylinux.org/RLSA-2026:37123
     - https://go.dev/cl/781703
     - https://go.dev/issue/79574
@@ -2687,15 +2732,15 @@
     - https://access.redhat.com/errata/RHSA-2026:47737
     - https://access.redhat.com/errata/RHSA-2026:47952
     - https://access.redhat.com/errata/RHSA-2026:50300
+    - https://access.redhat.com/errata/RHSA-2026:50843
+    - https://access.redhat.com/errata/RHSA-2026:51033
     - https://access.redhat.com/security/cve/CVE-2026-39821
     - https://bugzilla.redhat.com/2480756
-    - https://bugzilla.redhat.com/2484207
-    - https://bugzilla.redhat.com/2498152
     - https://bugzilla.redhat.com/show_bug.cgi?id=2480756
     - https://bugzilla.redhat.com/show_bug.cgi?id=2498152
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-39821
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-39822
-    - https://errata.almalinux.org/8/ALSA-2026-38995.html
+    - https://errata.almalinux.org/9/ALSA-2026-37435.html
     - https://errata.rockylinux.org/RLSA-2026:37435
     - https://github.com/golang/go/issues/78760
     - https://go.dev/cl/767220
@@ -2709,7 +2754,7 @@
     - https://ubuntu.com/security/notices/USN-8416-1
     - https://www.cve.org/CVERecord?id=CVE-2026-39821
     PublishedDate: '2026-05-22T16:16:20.41Z'
-    LastModifiedDate: '2026-08-05T13:22:02.877Z'
+    LastModifiedDate: '2026-08-06T13:17:59.18Z'
   - VulnerabilityID: CVE-2025-47911
     VendorIDs:
     - GO-2026-4440
@@ -3049,14 +3094,12 @@
         V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H
         V3Score: 7.8
     References:
-    - https://access.redhat.com/errata/RHSA-2026:38995
+    - https://access.redhat.com/errata/RHSA-2026:38878
     - https://access.redhat.com/security/cve/CVE-2026-39822
-    - https://bugzilla.redhat.com/2480756
-    - https://bugzilla.redhat.com/2484207
     - https://bugzilla.redhat.com/2498152
     - https://bugzilla.redhat.com/show_bug.cgi?id=2498152
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-39822
-    - https://errata.almalinux.org/8/ALSA-2026-38995.html
+    - https://errata.almalinux.org/9/ALSA-2026-38878.html
     - https://errata.rockylinux.org/RLSA-2026:38878
     - https://go.dev/cl/797880
     - https://go.dev/issue/79005
