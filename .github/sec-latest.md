@@ -264,6 +264,7 @@
 │                       │       ├ CweIDs           ─ [0]: CWE-294 
 │                       │       ├ VendorSeverity   ╭ azure : 2 
 │                       │       │                  ├ julia : 4 
+│                       │       │                  ├ photon: 4 
 │                       │       │                  ├ redhat: 3 
 │                       │       │                  ╰ ubuntu: 2 
 │                       │       ├ CVSS             ╭ julia  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:
@@ -477,6 +478,7 @@
 │                       │       ├ Severity        : LOW 
 │                       │       ├ CweIDs           ─ [0]: CWE-295 
 │                       │       ├ VendorSeverity   ╭ julia : 4 
+│                       │       │                  ├ photon: 4 
 │                       │       │                  ├ redhat: 2 
 │                       │       │                  ╰ ubuntu: 1 
 │                       │       ├ CVSS             ╭ julia  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:
@@ -591,6 +593,7 @@
 │                       │       ├ CweIDs           ─ [0]: CWE-295 
 │                       │       ├ VendorSeverity   ╭ azure : 3 
 │                       │       │                  ├ julia : 3 
+│                       │       │                  ├ photon: 3 
 │                       │       │                  ├ redhat: 3 
 │                       │       │                  ╰ ubuntu: 1 
 │                       │       ├ CVSS             ╭ julia  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
@@ -641,6 +644,7 @@
 │                       │       ├ CweIDs           ─ [0]: CWE-295 
 │                       │       ├ VendorSeverity   ╭ azure : 3 
 │                       │       │                  ├ julia : 3 
+│                       │       │                  ├ photon: 3 
 │                       │       │                  ├ redhat: 3 
 │                       │       │                  ╰ ubuntu: 1 
 │                       │       ├ CVSS             ╭ julia  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:
@@ -701,6 +705,7 @@
 │                       │       ├ Severity        : LOW 
 │                       │       ├ VendorSeverity   ╭ azure : 2 
 │                       │       │                  ├ julia : 2 
+│                       │       │                  ├ photon: 2 
 │                       │       │                  ├ redhat: 3 
 │                       │       │                  ╰ ubuntu: 1 
 │                       │       ├ CVSS             ╭ julia  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:
@@ -752,6 +757,7 @@
 │                       │       ├ Severity        : LOW 
 │                       │       ├ VendorSeverity   ╭ azure : 3 
 │                       │       │                  ├ julia : 4 
+│                       │       │                  ├ photon: 4 
 │                       │       │                  ├ redhat: 2 
 │                       │       │                  ╰ ubuntu: 1 
 │                       │       ├ CVSS             ╭ julia  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:
@@ -857,6 +863,7 @@
 │                       │       ├ Severity        : LOW 
 │                       │       ├ CweIDs           ─ [0]: CWE-416 
 │                       │       ├ VendorSeverity   ╭ julia : 3 
+│                       │       │                  ├ photon: 3 
 │                       │       │                  ├ redhat: 2 
 │                       │       │                  ╰ ubuntu: 1 
 │                       │       ├ CVSS             ╭ julia  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:
@@ -918,6 +925,7 @@
 │                       │       │                   information. 
 │                       │       ├ Severity        : LOW 
 │                       │       ├ VendorSeverity   ╭ julia : 3 
+│                       │       │                  ├ photon: 3 
 │                       │       │                  ├ redhat: 2 
 │                       │       │                  ╰ ubuntu: 1 
 │                       │       ├ CVSS             ╭ julia  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:
@@ -974,6 +982,7 @@
 │                       │       │                   man-in-the-middle attack. 
 │                       │       ├ Severity        : LOW 
 │                       │       ├ VendorSeverity   ╭ julia : 3 
+│                       │       │                  ├ photon: 3 
 │                       │       │                  ├ redhat: 3 
 │                       │       │                  ╰ ubuntu: 1 
 │                       │       ├ CVSS             ╭ julia  ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:
@@ -2857,6 +2866,7 @@
 │                       │       ├ CweIDs           ─ [0]: CWE-294 
 │                       │       ├ VendorSeverity   ╭ azure : 2 
 │                       │       │                  ├ julia : 4 
+│                       │       │                  ├ photon: 4 
 │                       │       │                  ├ redhat: 3 
 │                       │       │                  ╰ ubuntu: 2 
 │                       │       ├ CVSS             ╭ julia  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:
@@ -3070,6 +3080,7 @@
 │                       │       ├ Severity        : LOW 
 │                       │       ├ CweIDs           ─ [0]: CWE-295 
 │                       │       ├ VendorSeverity   ╭ julia : 4 
+│                       │       │                  ├ photon: 4 
 │                       │       │                  ├ redhat: 2 
 │                       │       │                  ╰ ubuntu: 1 
 │                       │       ├ CVSS             ╭ julia  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:
@@ -3184,6 +3195,7 @@
 │                       │       ├ CweIDs           ─ [0]: CWE-295 
 │                       │       ├ VendorSeverity   ╭ azure : 3 
 │                       │       │                  ├ julia : 3 
+│                       │       │                  ├ photon: 3 
 │                       │       │                  ├ redhat: 3 
 │                       │       │                  ╰ ubuntu: 1 
 │                       │       ├ CVSS             ╭ julia  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
@@ -3234,6 +3246,7 @@
 │                       │       ├ CweIDs           ─ [0]: CWE-295 
 │                       │       ├ VendorSeverity   ╭ azure : 3 
 │                       │       │                  ├ julia : 3 
+│                       │       │                  ├ photon: 3 
 │                       │       │                  ├ redhat: 3 
 │                       │       │                  ╰ ubuntu: 1 
 │                       │       ├ CVSS             ╭ julia  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:
@@ -3294,6 +3307,7 @@
 │                       │       ├ Severity        : LOW 
 │                       │       ├ VendorSeverity   ╭ azure : 2 
 │                       │       │                  ├ julia : 2 
+│                       │       │                  ├ photon: 2 
 │                       │       │                  ├ redhat: 3 
 │                       │       │                  ╰ ubuntu: 1 
 │                       │       ├ CVSS             ╭ julia  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:
@@ -3345,6 +3359,7 @@
 │                       │       ├ Severity        : LOW 
 │                       │       ├ VendorSeverity   ╭ azure : 3 
 │                       │       │                  ├ julia : 4 
+│                       │       │                  ├ photon: 4 
 │                       │       │                  ├ redhat: 2 
 │                       │       │                  ╰ ubuntu: 1 
 │                       │       ├ CVSS             ╭ julia  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:
@@ -3450,6 +3465,7 @@
 │                       │       ├ Severity        : LOW 
 │                       │       ├ CweIDs           ─ [0]: CWE-416 
 │                       │       ├ VendorSeverity   ╭ julia : 3 
+│                       │       │                  ├ photon: 3 
 │                       │       │                  ├ redhat: 2 
 │                       │       │                  ╰ ubuntu: 1 
 │                       │       ├ CVSS             ╭ julia  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:
@@ -3511,6 +3527,7 @@
 │                       │       │                   information. 
 │                       │       ├ Severity        : LOW 
 │                       │       ├ VendorSeverity   ╭ julia : 3 
+│                       │       │                  ├ photon: 3 
 │                       │       │                  ├ redhat: 2 
 │                       │       │                  ╰ ubuntu: 1 
 │                       │       ├ CVSS             ╭ julia  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:
@@ -3567,6 +3584,7 @@
 │                       │       │                   man-in-the-middle attack. 
 │                       │       ├ Severity        : LOW 
 │                       │       ├ VendorSeverity   ╭ julia : 3 
+│                       │       │                  ├ photon: 3 
 │                       │       │                  ├ redhat: 3 
 │                       │       │                  ╰ ubuntu: 1 
 │                       │       ├ CVSS             ╭ julia  ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:
@@ -7269,7 +7287,7 @@
 │                       │       ├ CweIDs           ╭ [0]: CWE-150 
 │                       │       │                  ╰ [1]: CWE-116 
 │                       │       ├ VendorSeverity   ╭ alma       : 3 
-│                       │       │                  ├ amazon     : 3 
+│                       │       │                  ├ amazon     : 2 
 │                       │       │                  ├ bitnami    : 1 
 │                       │       │                  ├ nvd        : 2 
 │                       │       │                  ├ oracle-oval: 3 
@@ -8113,7 +8131,7 @@
 │                       │       ├ CweIDs           ╭ [0]: CWE-150 
 │                       │       │                  ╰ [1]: CWE-116 
 │                       │       ├ VendorSeverity   ╭ alma       : 3 
-│                       │       │                  ├ amazon     : 3 
+│                       │       │                  ├ amazon     : 2 
 │                       │       │                  ├ bitnami    : 1 
 │                       │       │                  ├ nvd        : 2 
 │                       │       │                  ├ oracle-oval: 3 
@@ -18176,7 +18194,7 @@
 │                       │       ├ CweIDs           ╭ [0]: CWE-150 
 │                       │       │                  ╰ [1]: CWE-116 
 │                       │       ├ VendorSeverity   ╭ alma       : 3 
-│                       │       │                  ├ amazon     : 3 
+│                       │       │                  ├ amazon     : 2 
 │                       │       │                  ├ bitnami    : 1 
 │                       │       │                  ├ nvd        : 2 
 │                       │       │                  ├ oracle-oval: 3 
@@ -19020,7 +19038,7 @@
 │                       │       ├ CweIDs           ╭ [0]: CWE-150 
 │                       │       │                  ╰ [1]: CWE-116 
 │                       │       ├ VendorSeverity   ╭ alma       : 3 
-│                       │       │                  ├ amazon     : 3 
+│                       │       │                  ├ amazon     : 2 
 │                       │       │                  ├ bitnami    : 1 
 │                       │       │                  ├ nvd        : 2 
 │                       │       │                  ├ oracle-oval: 3 
