@@ -221,6 +221,7 @@
     VendorSeverity:
       azure: 2
       julia: 4
+      photon: 4
       redhat: 3
       ubuntu: 2
     CVSS:
@@ -431,6 +432,7 @@
     - CWE-295
     VendorSeverity:
       julia: 4
+      photon: 4
       redhat: 2
       ubuntu: 1
     CVSS:
@@ -540,6 +542,7 @@
     VendorSeverity:
       azure: 3
       julia: 3
+      photon: 3
       redhat: 3
       ubuntu: 1
     CVSS:
@@ -591,6 +594,7 @@
     VendorSeverity:
       azure: 3
       julia: 3
+      photon: 3
       redhat: 3
       ubuntu: 1
     CVSS:
@@ -648,6 +652,7 @@
     VendorSeverity:
       azure: 2
       julia: 2
+      photon: 2
       redhat: 3
       ubuntu: 1
     CVSS:
@@ -698,6 +703,7 @@
     VendorSeverity:
       azure: 3
       julia: 4
+      photon: 4
       redhat: 2
       ubuntu: 1
     CVSS:
@@ -802,6 +808,7 @@
     - CWE-416
     VendorSeverity:
       julia: 3
+      photon: 3
       redhat: 2
       ubuntu: 1
     CVSS:
@@ -857,6 +864,7 @@
     Severity: LOW
     VendorSeverity:
       julia: 3
+      photon: 3
       redhat: 2
       ubuntu: 1
     CVSS:
@@ -909,6 +917,7 @@
     Severity: LOW
     VendorSeverity:
       julia: 3
+      photon: 3
       redhat: 3
       ubuntu: 1
     CVSS:
@@ -2515,6 +2524,7 @@
     VendorSeverity:
       azure: 2
       julia: 4
+      photon: 4
       redhat: 3
       ubuntu: 2
     CVSS:
@@ -2725,6 +2735,7 @@
     - CWE-295
     VendorSeverity:
       julia: 4
+      photon: 4
       redhat: 2
       ubuntu: 1
     CVSS:
@@ -2834,6 +2845,7 @@
     VendorSeverity:
       azure: 3
       julia: 3
+      photon: 3
       redhat: 3
       ubuntu: 1
     CVSS:
@@ -2885,6 +2897,7 @@
     VendorSeverity:
       azure: 3
       julia: 3
+      photon: 3
       redhat: 3
       ubuntu: 1
     CVSS:
@@ -2942,6 +2955,7 @@
     VendorSeverity:
       azure: 2
       julia: 2
+      photon: 2
       redhat: 3
       ubuntu: 1
     CVSS:
@@ -2992,6 +3006,7 @@
     VendorSeverity:
       azure: 3
       julia: 4
+      photon: 4
       redhat: 2
       ubuntu: 1
     CVSS:
@@ -3096,6 +3111,7 @@
     - CWE-416
     VendorSeverity:
       julia: 3
+      photon: 3
       redhat: 2
       ubuntu: 1
     CVSS:
@@ -3151,6 +3167,7 @@
     Severity: LOW
     VendorSeverity:
       julia: 3
+      photon: 3
       redhat: 2
       ubuntu: 1
     CVSS:
@@ -3203,6 +3220,7 @@
     Severity: LOW
     VendorSeverity:
       julia: 3
+      photon: 3
       redhat: 3
       ubuntu: 1
     CVSS:
@@ -6336,7 +6354,7 @@
     - CWE-116
     VendorSeverity:
       alma: 3
-      amazon: 3
+      amazon: 2
       bitnami: 1
       nvd: 2
       oracle-oval: 3
@@ -7037,7 +7055,7 @@
     - CWE-116
     VendorSeverity:
       alma: 3
-      amazon: 3
+      amazon: 2
       bitnami: 1
       nvd: 2
       oracle-oval: 3
@@ -15101,7 +15119,7 @@
     - CWE-116
     VendorSeverity:
       alma: 3
-      amazon: 3
+      amazon: 2
       bitnami: 1
       nvd: 2
       oracle-oval: 3
@@ -15802,7 +15820,7 @@
     - CWE-116
     VendorSeverity:
       alma: 3
-      amazon: 3
+      amazon: 2
       bitnami: 1
       nvd: 2
       oracle-oval: 3
