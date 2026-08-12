@@ -1007,20 +1007,21 @@
 │                       │      │                  ├ [1] : https://access.redhat.com/errata/RHSA-2026:38342 
 │                       │      │                  ├ [2] : https://access.redhat.com/errata/RHSA-2026:49667 
 │                       │      │                  ├ [3] : https://access.redhat.com/errata/RHSA-2026:49668 
-│                       │      │                  ├ [4] : https://access.redhat.com/security/cve/CVE-2026-13757 
-│                       │      │                  ├ [5] : https://bugzilla.redhat.com/2494556 
-│                       │      │                  ├ [6] : https://bugzilla.redhat.com/show_bug.cgi?id=2494556 
-│                       │      │                  ├ [7] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+│                       │      │                  ├ [4] : https://access.redhat.com/errata/RHSA-2026:53371 
+│                       │      │                  ├ [5] : https://access.redhat.com/security/cve/CVE-2026-13757 
+│                       │      │                  ├ [6] : https://bugzilla.redhat.com/2494556 
+│                       │      │                  ├ [7] : https://bugzilla.redhat.com/show_bug.cgi?id=2494556 
+│                       │      │                  ├ [8] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
 │                       │      │                  │       26-13757 
-│                       │      │                  ├ [8] : https://errata.almalinux.org/10/ALSA-2026-49668.html 
-│                       │      │                  ├ [9] : https://errata.rockylinux.org/RLSA-2026:49667 
-│                       │      │                  ├ [10]: https://github.com/advisories/GHSA-p2wm-69qx-x25w 
-│                       │      │                  ├ [11]: https://linux.oracle.com/cve/CVE-2026-13757.html 
-│                       │      │                  ├ [12]: https://linux.oracle.com/errata/ELSA-2026-49668.html 
-│                       │      │                  ├ [13]: https://nvd.nist.gov/vuln/detail/CVE-2026-13757 
-│                       │      │                  ╰ [14]: https://www.cve.org/CVERecord?id=CVE-2026-13757 
+│                       │      │                  ├ [9] : https://errata.almalinux.org/9/ALSA-2026-49667.html 
+│                       │      │                  ├ [10]: https://errata.rockylinux.org/RLSA-2026:49667 
+│                       │      │                  ├ [11]: https://github.com/advisories/GHSA-p2wm-69qx-x25w 
+│                       │      │                  ├ [12]: https://linux.oracle.com/cve/CVE-2026-13757.html 
+│                       │      │                  ├ [13]: https://linux.oracle.com/errata/ELSA-2026-49668.html 
+│                       │      │                  ├ [14]: https://nvd.nist.gov/vuln/detail/CVE-2026-13757 
+│                       │      │                  ╰ [15]: https://www.cve.org/CVERecord?id=CVE-2026-13757 
 │                       │      ├ PublishedDate   : 2026-06-29T19:16:40.907Z 
-│                       │      ╰ LastModifiedDate: 2026-08-03T22:16:48.113Z 
+│                       │      ╰ LastModifiedDate: 2026-08-11T10:17:11.68Z 
 │                       ├ [19] ╭ VulnerabilityID : CVE-2026-27456 
 │                       │      ├ PkgID           : libsmartcols1@2.41.3-3ubuntu2 
 │                       │      ├ PkgName         : libsmartcols1 
