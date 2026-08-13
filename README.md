@@ -78,7 +78,7 @@ Run interactive Mini-A console:
 ```bash
 docker run --rm -ti \
   -e OAF_MODEL="$OAF_MODEL" \
-  openaf/mini-a-ghc
+  nmaguiar/mini-a-ghc
 ```
 
 Run one-off goal:
@@ -87,7 +87,7 @@ Run one-off goal:
 docker run --rm -ti \
   -e OAF_MODEL="$OAF_MODEL" \
   -v "$(pwd)":/work -w /work \
-  openaf/mini-a-ghc \
+  nmaguiar/mini-a-ghc \
   goal="Summarize this repository and propose next refactors" useshell=true
 ```
 
@@ -97,7 +97,7 @@ Run web UI:
 docker run --rm -d \
   -e OAF_MODEL="$OAF_MODEL" \
   -p 12345:12345 \
-  openaf/mini-a-ghc onport=12345
+  nmaguiar/mini-a-ghc onport=12345
 ```
 
 Then open: <http://localhost:12345>
@@ -109,7 +109,7 @@ Because this image ultimately executes `mini-a`, you can pass the same parameter
 ```bash
 docker run --rm -ti \
   -e OAF_MODEL="$OAF_MODEL" \
-  openaf/mini-a-ghc \
+  nmaguiar/mini-a-ghc \
   goal="What time is it in Tokyo?" \
   mcp="(cmd: 'ojob mcps/mcp-time.yaml')"
 ```
@@ -119,7 +119,7 @@ If the first argument is an executable available in the container, the entrypoin
 ```bash
 docker run --rm -ti \
   -e OAF_MODEL="$OAF_MODEL" \
-  openaf/mini-a-ghc \
+  /mini-a-ghc \
   bash
 ```
 
@@ -144,7 +144,7 @@ You can also run the model listing directly through the entrypoint:
 ```bash
 docker run --rm -ti \
   -e OAF_MODEL="$OAF_MODEL" \
-  openaf/mini-a-ghc list
+  /mini-a-ghc list
 ```
 
 ## Optional initialization hook
@@ -163,7 +163,7 @@ docker run --rm -ti \
   -e OAF_MODEL="$OAF_MODEL" \
   -e INIT_SCRIPT=/work/init.sh \
   -v "$(pwd)":/work -w /work \
-  openaf/mini-a-ghc
+  nmaguiar/mini-a-ghc
 ```
 
 Example `init.sh` to install `kubectl`:
@@ -262,7 +262,7 @@ If you already use `gh` on the host:
 export GH_TOKEN="$(gh auth token)"
 export OAF_MODEL="(type: ghcopilot, options: (model: gpt-4.1, token: '$GH_TOKEN', timeout: 900000, useStdio: true))"
 
-docker run --rm -ti -e OAF_MODEL="$OAF_MODEL" openaf/mini-a-ghc
+docker run --rm -ti -e OAF_MODEL="$OAF_MODEL" nmaguiar/mini-a-ghc
 ```
 
 ## Security notes
