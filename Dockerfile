@@ -8,7 +8,7 @@ RUN apt-get update -y\
  && rm -rf /var/lib/apt/lists/*\
  && rm -rf /tmp/*\
  && rm -rf /var/tmp/*\
- && /openaf/opack install ghcopilot\
+ && /openaf/opack install ghcopilot,lucene\
  && /openaf/opack install mini-a -force\
  && mkdir -p /openaf/ojobs\
  && curl -s https://ojob.io/oaf/colorFormats.yaml > /openaf/ojobs/colorFormats.yaml\
