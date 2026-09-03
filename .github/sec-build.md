@@ -884,7 +884,7 @@
 │                       │       │                          aversal-privilege-escalation-via-getfattr-setfattr[
 │                       │       │                          m 
 │                       │       ├ PublishedDate   : 2026-06-29T14:16:57.823Z 
-│                       │       ╰ LastModifiedDate: 2026-09-01T13:19:48.13Z 
+│                       │       ╰ LastModifiedDate: 2026-09-02T13:18:02.227Z 
 │                       ├ [16]  ╭ VulnerabilityID : CVE-2026-13595 
 │                       │       ├ PkgID           : libblkid1@2.41.3-3ubuntu2 
 │                       │       ├ PkgName         : libblkid1 
@@ -4817,10 +4817,12 @@
 │                       │       │                   issue. 
 │                       │       ├ Severity        : MEDIUM 
 │                       │       ├ CweIDs           ─ [0]: CWE-367 
-│                       │       ├ VendorSeverity   ╭ alma  : 2 
-│                       │       │                  ├ julia : 2 
-│                       │       │                  ├ redhat: 2 
-│                       │       │                  ╰ ubuntu: 2 
+│                       │       ├ VendorSeverity   ╭ alma       : 2 
+│                       │       │                  ├ julia      : 2 
+│                       │       │                  ├ oracle-oval: 2 
+│                       │       │                  ├ redhat     : 2 
+│                       │       │                  ├ rocky      : 2 
+│                       │       │                  ╰ ubuntu     : 2 
 │                       │       ├ CVSS             ╭ julia  ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:N/I:
 │                       │       │                  │        │           H/A:N 
 │                       │       │                  │        ╰ V3Score : 4.4 
@@ -4835,10 +4837,22 @@
 │                       │       │                  ├ [5] : https://bugzilla.redhat.com/2455360 
 │                       │       │                  ├ [6] : https://bugzilla.redhat.com/2509735 
 │                       │       │                  ├ [7] : https://bugzilla.redhat.com/2509843 
-│                       │       │                  ├ [8] : https://bugzilla.redhat.com/show_bug.cgi?id=2509735 
-│                       │       │                  ├ [9] : https://errata.almalinux.org/9/ALSA-2026-61581.html 
-│                       │       │                  ├ [10]: https://nvd.nist.gov/vuln/detail/CVE-2026-18477 
-│                       │       │                  ╰ [11]: https://www.cve.org/CVERecord?id=CVE-2026-18477 
+│                       │       │                  ├ [8] : https://bugzilla.redhat.com/show_bug.cgi?id=2455360 
+│                       │       │                  ├ [9] : https://bugzilla.redhat.com/show_bug.cgi?id=2509735 
+│                       │       │                  ├ [10]: https://bugzilla.redhat.com/show_bug.cgi?id=2509843 
+│                       │       │                  ├ [11]: https://creativecommons.org/licenses/by/4.0/ 
+│                       │       │                  ├ [12]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
+│                       │       │                  │       026-18477 
+│                       │       │                  ├ [13]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
+│                       │       │                  │       026-18508 
+│                       │       │                  ├ [14]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
+│                       │       │                  │       026-5704 
+│                       │       │                  ├ [15]: https://errata.almalinux.org/9/ALSA-2026-61581.html 
+│                       │       │                  ├ [16]: https://errata.rockylinux.org/RLSA-2026:61581 
+│                       │       │                  ├ [17]: https://linux.oracle.com/cve/CVE-2026-18477.html 
+│                       │       │                  ├ [18]: https://linux.oracle.com/errata/ELSA-2026-61581-0.html 
+│                       │       │                  ├ [19]: https://nvd.nist.gov/vuln/detail/CVE-2026-18477 
+│                       │       │                  ╰ [20]: https://www.cve.org/CVERecord?id=CVE-2026-18477 
 │                       │       ├ PublishedDate   : 2026-08-03T17:16:33.897Z 
 │                       │       ╰ LastModifiedDate: 2026-09-01T15:17:12.357Z 
 │                       ├ [95]  ╭ VulnerabilityID : CVE-2026-18508 
@@ -4873,9 +4887,11 @@
 │                       │       │                   m 
 │                       │       ├ Severity        : MEDIUM 
 │                       │       ├ CweIDs           ─ [0]: CWE-59 
-│                       │       ├ VendorSeverity   ╭ alma  : 2 
-│                       │       │                  ├ redhat: 2 
-│                       │       │                  ╰ ubuntu: 2 
+│                       │       ├ VendorSeverity   ╭ alma       : 2 
+│                       │       │                  ├ oracle-oval: 2 
+│                       │       │                  ├ redhat     : 2 
+│                       │       │                  ├ rocky      : 2 
+│                       │       │                  ╰ ubuntu     : 2 
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:L/I:
 │                       │       │                           │           L/A:N 
 │                       │       │                           ╰ V3Score : 4.4 
@@ -4887,10 +4903,22 @@
 │                       │       │                  ├ [5] : https://bugzilla.redhat.com/2455360 
 │                       │       │                  ├ [6] : https://bugzilla.redhat.com/2509735 
 │                       │       │                  ├ [7] : https://bugzilla.redhat.com/2509843 
-│                       │       │                  ├ [8] : https://bugzilla.redhat.com/show_bug.cgi?id=2509843 
-│                       │       │                  ├ [9] : https://errata.almalinux.org/9/ALSA-2026-61581.html 
-│                       │       │                  ├ [10]: https://nvd.nist.gov/vuln/detail/CVE-2026-18508 
-│                       │       │                  ╰ [11]: https://www.cve.org/CVERecord?id=CVE-2026-18508 
+│                       │       │                  ├ [8] : https://bugzilla.redhat.com/show_bug.cgi?id=2455360 
+│                       │       │                  ├ [9] : https://bugzilla.redhat.com/show_bug.cgi?id=2509735 
+│                       │       │                  ├ [10]: https://bugzilla.redhat.com/show_bug.cgi?id=2509843 
+│                       │       │                  ├ [11]: https://creativecommons.org/licenses/by/4.0/ 
+│                       │       │                  ├ [12]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
+│                       │       │                  │       026-18477 
+│                       │       │                  ├ [13]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
+│                       │       │                  │       026-18508 
+│                       │       │                  ├ [14]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
+│                       │       │                  │       026-5704 
+│                       │       │                  ├ [15]: https://errata.almalinux.org/9/ALSA-2026-61581.html 
+│                       │       │                  ├ [16]: https://errata.rockylinux.org/RLSA-2026:61581 
+│                       │       │                  ├ [17]: https://linux.oracle.com/cve/CVE-2026-18508.html 
+│                       │       │                  ├ [18]: https://linux.oracle.com/errata/ELSA-2026-61581-0.html 
+│                       │       │                  ├ [19]: https://nvd.nist.gov/vuln/detail/CVE-2026-18508 
+│                       │       │                  ╰ [20]: https://www.cve.org/CVERecord?id=CVE-2026-18508 
 │                       │       ├ PublishedDate   : 2026-08-03T16:16:28.387Z 
 │                       │       ╰ LastModifiedDate: 2026-09-01T15:17:12.553Z 
 │                       ├ [96]  ╭ VulnerabilityID : CVE-2026-13595 
