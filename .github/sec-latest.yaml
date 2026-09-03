@@ -205,7 +205,7 @@
       URL: https://git.launchpad.net/ubuntu-cve-tracker
     Fingerprint: sha256:70838958c6bfbf98bda227f64d57beff449de8992b5efdb66aa3e6fd9fb558bc
     Title: 'util-linux: util-linux: TOCTOU in the mount program via ancestor directory swap on target path'
-    Description: A flaw was found in util-linux. When an /etc/fstab entry is configured with the user or users option, mount(8) validates the target path before performing the mount syscall, creating a Time-of-Check-Time-of-Use (TOCTOU) window. A local unprivileged user with write access to an ancestor directory of the mount target can swap that directory to redirect the mount to an arbitrary root-owned location, potentially escalating privileges to root.
+    Description: When an /etc/fstab entry is configured with the user or users option, mount(8) validates the target path before performing the mount syscall, creating a Time-of-Check-Time-of-Use (TOCTOU) window. A local unprivileged user with write access to an ancestor directory of the mount target can swap that directory to redirect the mount to an arbitrary root-owned location, potentially escalating privileges to root.
     Severity: MEDIUM
     VendorSeverity:
       redhat: 3
@@ -457,6 +457,53 @@
     - https://www.openwall.com/lists/oss-security/2025/05/27/2
     PublishedDate: '2025-05-27T21:15:23.197Z'
     LastModifiedDate: '2026-09-01T12:17:25.457Z'
+  - VulnerabilityID: CVE-2026-57062
+    PkgID: gpgv@2.4.8-4ubuntu3
+    PkgName: gpgv
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/gpgv@2.4.8-4ubuntu3?arch=amd64&distro=ubuntu-26.04
+      UID: 9734b1200df7179f
+    InstalledVersion: 2.4.8-4ubuntu3
+    Status: affected
+    Layer:
+      Digest: sha256:48192e8ec8d30fe485384bd4d385e8eb4b9f15f2f54fdb27ca7b3af28b7d6e6e
+      DiffID: sha256:ccd1cc15e9911436538ea7fa4eeeebc2f8cbcec5dcad9e167ee7db3060c0c20c
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-57062
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:faa5736ee3707bd7263e58b398514ca39640c3642004c4b2ebf33c9437951b88
+    Title: 'GnuPG: Incorrect cryptographic message parsing'
+    Description: 'CMS (Cryptographic Message Syntax) parsing in gpgsm in GnuPG through 2.5.20 mishandles the CMS format for AES-GCM because aes-ICVlen is supposed to be 12 bytes but 4 bytes is accepted. NOTE: this is related to CVE-2026-34182.'
+    Severity: LOW
+    CweIDs:
+    - CWE-1284
+    VendorSeverity:
+      amazon: 1
+      azure: 1
+      julia: 1
+      photon: 1
+      redhat: 1
+      ubuntu: 1
+    CVSS:
+      julia:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:N
+        V3Score: 2.9
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:N
+        V3Score: 2.9
+    References:
+    - https://access.redhat.com/security/cve/CVE-2026-57062
+    - https://blog.calif.io/p/how-to-format-a-ciphertext
+    - https://github.com/advisories/GHSA-m6x2-4hhh-669j
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-57062
+    - https://www.cve.org/CVERecord?id=CVE-2026-57062
+    - https://www.gnupg.org/download
+    - https://www.gnupg.org/download/
+    PublishedDate: '2026-06-23T18:18:10.973Z'
+    LastModifiedDate: '2026-06-25T20:16:05.473Z'
   - VulnerabilityID: CVE-2026-41256
     PkgID: jq@1.8.1-4ubuntu2
     PkgName: jq
@@ -936,7 +983,7 @@
       URL: https://git.launchpad.net/ubuntu-cve-tracker
     Fingerprint: sha256:bdaf2ecfeddc3d3fee02f49cc6abb031e84ca2749b8eb88d5f91be8769af8246
     Title: 'util-linux: util-linux: TOCTOU in the mount program via ancestor directory swap on target path'
-    Description: A flaw was found in util-linux. When an /etc/fstab entry is configured with the user or users option, mount(8) validates the target path before performing the mount syscall, creating a Time-of-Check-Time-of-Use (TOCTOU) window. A local unprivileged user with write access to an ancestor directory of the mount target can swap that directory to redirect the mount to an arbitrary root-owned location, potentially escalating privileges to root.
+    Description: When an /etc/fstab entry is configured with the user or users option, mount(8) validates the target path before performing the mount syscall, creating a Time-of-Check-Time-of-Use (TOCTOU) window. A local unprivileged user with write access to an ancestor directory of the mount target can swap that directory to redirect the mount to an arbitrary root-owned location, potentially escalating privileges to root.
     Severity: MEDIUM
     VendorSeverity:
       redhat: 3
@@ -1584,7 +1631,7 @@
       URL: https://git.launchpad.net/ubuntu-cve-tracker
     Fingerprint: sha256:298d47f7344f3ba65e1a52a3b4e8605ac51d394f5477b23a9755c1ba09ab712e
     Title: 'util-linux: util-linux: TOCTOU in the mount program via ancestor directory swap on target path'
-    Description: A flaw was found in util-linux. When an /etc/fstab entry is configured with the user or users option, mount(8) validates the target path before performing the mount syscall, creating a Time-of-Check-Time-of-Use (TOCTOU) window. A local unprivileged user with write access to an ancestor directory of the mount target can swap that directory to redirect the mount to an arbitrary root-owned location, potentially escalating privileges to root.
+    Description: When an /etc/fstab entry is configured with the user or users option, mount(8) validates the target path before performing the mount syscall, creating a Time-of-Check-Time-of-Use (TOCTOU) window. A local unprivileged user with write access to an ancestor directory of the mount target can swap that directory to redirect the mount to an arbitrary root-owned location, potentially escalating privileges to root.
     Severity: MEDIUM
     VendorSeverity:
       redhat: 3
@@ -1923,7 +1970,7 @@
       URL: https://git.launchpad.net/ubuntu-cve-tracker
     Fingerprint: sha256:fd2e772aa63620f4ea5de23c624c22d33e52f4d99d969b1b32069a38d4d04746
     Title: 'util-linux: util-linux: TOCTOU in the mount program via ancestor directory swap on target path'
-    Description: A flaw was found in util-linux. When an /etc/fstab entry is configured with the user or users option, mount(8) validates the target path before performing the mount syscall, creating a Time-of-Check-Time-of-Use (TOCTOU) window. A local unprivileged user with write access to an ancestor directory of the mount target can swap that directory to redirect the mount to an arbitrary root-owned location, potentially escalating privileges to root.
+    Description: When an /etc/fstab entry is configured with the user or users option, mount(8) validates the target path before performing the mount syscall, creating a Time-of-Check-Time-of-Use (TOCTOU) window. A local unprivileged user with write access to an ancestor directory of the mount target can swap that directory to redirect the mount to an arbitrary root-owned location, potentially escalating privileges to root.
     Severity: MEDIUM
     VendorSeverity:
       redhat: 3
@@ -3039,7 +3086,7 @@
       URL: https://git.launchpad.net/ubuntu-cve-tracker
     Fingerprint: sha256:c87347a110d2b58d73fa074013db1fb9ca649e6fdf0b9e090d5fa78ec295f387
     Title: 'util-linux: util-linux: TOCTOU in the mount program via ancestor directory swap on target path'
-    Description: A flaw was found in util-linux. When an /etc/fstab entry is configured with the user or users option, mount(8) validates the target path before performing the mount syscall, creating a Time-of-Check-Time-of-Use (TOCTOU) window. A local unprivileged user with write access to an ancestor directory of the mount target can swap that directory to redirect the mount to an arbitrary root-owned location, potentially escalating privileges to root.
+    Description: When an /etc/fstab entry is configured with the user or users option, mount(8) validates the target path before performing the mount syscall, creating a Time-of-Check-Time-of-Use (TOCTOU) window. A local unprivileged user with write access to an ancestor directory of the mount target can swap that directory to redirect the mount to an arbitrary root-owned location, potentially escalating privileges to root.
     Severity: MEDIUM
     VendorSeverity:
       redhat: 3
@@ -3320,7 +3367,7 @@
       URL: https://git.launchpad.net/ubuntu-cve-tracker
     Fingerprint: sha256:d83bdd52026ed6725b726548712caf3742735ddf5862c1b0dccd6b2d4fcad6fd
     Title: 'util-linux: util-linux: TOCTOU in the mount program via ancestor directory swap on target path'
-    Description: A flaw was found in util-linux. When an /etc/fstab entry is configured with the user or users option, mount(8) validates the target path before performing the mount syscall, creating a Time-of-Check-Time-of-Use (TOCTOU) window. A local unprivileged user with write access to an ancestor directory of the mount target can swap that directory to redirect the mount to an arbitrary root-owned location, potentially escalating privileges to root.
+    Description: When an /etc/fstab entry is configured with the user or users option, mount(8) validates the target path before performing the mount syscall, creating a Time-of-Check-Time-of-Use (TOCTOU) window. A local unprivileged user with write access to an ancestor directory of the mount target can swap that directory to redirect the mount to an arbitrary root-owned location, potentially escalating privileges to root.
     Severity: MEDIUM
     VendorSeverity:
       redhat: 3
@@ -3653,7 +3700,7 @@
       URL: https://git.launchpad.net/ubuntu-cve-tracker
     Fingerprint: sha256:7b7b8bf1c9b536272c5da5d100dd32a2ee8d8abafbe558346aedb9012c95f8d7
     Title: 'util-linux: util-linux: TOCTOU in the mount program via ancestor directory swap on target path'
-    Description: A flaw was found in util-linux. When an /etc/fstab entry is configured with the user or users option, mount(8) validates the target path before performing the mount syscall, creating a Time-of-Check-Time-of-Use (TOCTOU) window. A local unprivileged user with write access to an ancestor directory of the mount target can swap that directory to redirect the mount to an arbitrary root-owned location, potentially escalating privileges to root.
+    Description: When an /etc/fstab entry is configured with the user or users option, mount(8) validates the target path before performing the mount syscall, creating a Time-of-Check-Time-of-Use (TOCTOU) window. A local unprivileged user with write access to an ancestor directory of the mount target can swap that directory to redirect the mount to an arbitrary root-owned location, potentially escalating privileges to root.
     Severity: MEDIUM
     VendorSeverity:
       redhat: 3
@@ -6362,7 +6409,7 @@
       URL: https://git.launchpad.net/ubuntu-cve-tracker
     Fingerprint: sha256:8449a9cebad5fedc00220ed07500068d2f3e093b5d0aa6c811fb267102e5c16d
     Title: 'util-linux: util-linux: TOCTOU in the mount program via ancestor directory swap on target path'
-    Description: A flaw was found in util-linux. When an /etc/fstab entry is configured with the user or users option, mount(8) validates the target path before performing the mount syscall, creating a Time-of-Check-Time-of-Use (TOCTOU) window. A local unprivileged user with write access to an ancestor directory of the mount target can swap that directory to redirect the mount to an arbitrary root-owned location, potentially escalating privileges to root.
+    Description: When an /etc/fstab entry is configured with the user or users option, mount(8) validates the target path before performing the mount syscall, creating a Time-of-Check-Time-of-Use (TOCTOU) window. A local unprivileged user with write access to an ancestor directory of the mount target can swap that directory to redirect the mount to an arbitrary root-owned location, potentially escalating privileges to root.
     Severity: MEDIUM
     VendorSeverity:
       redhat: 3
@@ -6575,12 +6622,12 @@
     - https://go.dev/issue/80405
     - https://groups.google.com/g/golang-announce/c/94pEornpRlI
     - https://linux.oracle.com/cve/CVE-2026-33818.html
-    - https://linux.oracle.com/errata/ELSA-2026-60306-0.html
+    - https://linux.oracle.com/errata/ELSA-2026-62631-0.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-33818
     - https://pkg.go.dev/vuln/GO-2026-5972
     - https://www.cve.org/CVERecord?id=CVE-2026-33818
     PublishedDate: '2026-08-13T22:17:19.84Z'
-    LastModifiedDate: '2026-08-14T16:16:55.317Z'
+    LastModifiedDate: '2026-09-03T16:37:52.17Z'
   - VulnerabilityID: CVE-2026-39821
     VendorIDs:
     - GO-2026-5026
@@ -6887,12 +6934,12 @@
     - https://go.dev/issue/80205
     - https://groups.google.com/g/golang-announce/c/94pEornpRlI
     - https://linux.oracle.com/cve/CVE-2026-56853.html
-    - https://linux.oracle.com/errata/ELSA-2026-60306-0.html
+    - https://linux.oracle.com/errata/ELSA-2026-62631-0.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-56853
     - https://pkg.go.dev/vuln/GO-2026-6089
     - https://www.cve.org/CVERecord?id=CVE-2026-56853
     PublishedDate: '2026-08-13T22:17:22.093Z'
-    LastModifiedDate: '2026-08-14T16:16:57.21Z'
+    LastModifiedDate: '2026-09-03T16:37:52.17Z'
   - VulnerabilityID: CVE-2026-56858
     VendorIDs:
     - GO-2026-6091
@@ -6965,7 +7012,7 @@
     - https://pkg.go.dev/vuln/GO-2026-6091
     - https://www.cve.org/CVERecord?id=CVE-2026-56858
     PublishedDate: '2026-08-13T22:17:22.207Z'
-    LastModifiedDate: '2026-08-14T16:16:57.367Z'
+    LastModifiedDate: '2026-09-03T16:37:52.17Z'
   - VulnerabilityID: CVE-2026-56859
     VendorIDs:
     - GO-2026-6088
@@ -7033,12 +7080,12 @@
     - https://go.dev/issue/80481
     - https://groups.google.com/g/golang-announce/c/94pEornpRlI
     - https://linux.oracle.com/cve/CVE-2026-56859.html
-    - https://linux.oracle.com/errata/ELSA-2026-60306-0.html
+    - https://linux.oracle.com/errata/ELSA-2026-62631-0.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-56859
     - https://pkg.go.dev/vuln/GO-2026-6088
     - https://www.cve.org/CVERecord?id=CVE-2026-56859
     PublishedDate: '2026-08-13T22:17:22.32Z'
-    LastModifiedDate: '2026-08-14T16:16:57.523Z'
+    LastModifiedDate: '2026-09-03T16:37:52.17Z'
   - VulnerabilityID: CVE-2026-56860
     VendorIDs:
     - GO-2026-6218
@@ -7106,12 +7153,12 @@
     - https://go.dev/issue/80494
     - https://groups.google.com/g/golang-announce/c/94pEornpRlI
     - https://linux.oracle.com/cve/CVE-2026-56860.html
-    - https://linux.oracle.com/errata/ELSA-2026-60306-0.html
+    - https://linux.oracle.com/errata/ELSA-2026-62631-0.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-56860
     - https://pkg.go.dev/vuln/GO-2026-6218
     - https://www.cve.org/CVERecord?id=CVE-2026-56860
     PublishedDate: '2026-08-13T22:17:22.44Z'
-    LastModifiedDate: '2026-08-14T17:19:13.91Z'
+    LastModifiedDate: '2026-09-03T16:37:52.17Z'
   - VulnerabilityID: CVE-2026-56862
     VendorIDs:
     - GO-2026-6090
@@ -7179,9 +7226,9 @@
     - https://go.dev/issue/80528
     - https://groups.google.com/g/golang-announce/c/94pEornpRlI
     - https://linux.oracle.com/cve/CVE-2026-56862.html
-    - https://linux.oracle.com/errata/ELSA-2026-60306-0.html
+    - https://linux.oracle.com/errata/ELSA-2026-62631-0.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-56862
     - https://pkg.go.dev/vuln/GO-2026-6090
     - https://www.cve.org/CVERecord?id=CVE-2026-56862
     PublishedDate: '2026-08-13T22:17:22.55Z'
-    LastModifiedDate: '2026-08-14T16:16:57.717Z'
+    LastModifiedDate: '2026-09-03T16:37:52.17Z'
