@@ -10,7 +10,8 @@
       PURL: pkg:deb/ubuntu/gpgv@2.4.8-4ubuntu3?arch=amd64&distro=ubuntu-26.04
       UID: 73c540e5d11f9055
     InstalledVersion: 2.4.8-4ubuntu3
-    Status: affected
+    FixedVersion: 2.4.8-4ubuntu3.1
+    Status: fixed
     Layer:
       Digest: sha256:9828e86a4f220c858c27038e827ed54fef1a63f08eb010a14fd7af13590da543
       DiffID: sha256:718b0340b30f7422f9f61e64777c181088d68ab9a1c5cd184d97031d5cafaee0
@@ -45,6 +46,7 @@
     - https://blog.calif.io/p/how-to-format-a-ciphertext
     - https://github.com/advisories/GHSA-m6x2-4hhh-669j
     - https://nvd.nist.gov/vuln/detail/CVE-2026-57062
+    - https://ubuntu.com/security/notices/USN-8720-1
     - https://www.cve.org/CVERecord?id=CVE-2026-57062
     - https://www.gnupg.org/download
     - https://www.gnupg.org/download/
@@ -267,6 +269,141 @@
     - https://www.cve.org/CVERecord?id=CVE-2026-44777
     PublishedDate: '2026-05-11T18:16:38.517Z'
     LastModifiedDate: '2026-06-17T10:51:19.04Z'
+  - VulnerabilityID: CVE-2026-18374
+    PkgID: libc-bin@2.43-2ubuntu2.3
+    PkgName: libc-bin
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/libc-bin@2.43-2ubuntu2.3?arch=amd64&distro=ubuntu-26.04
+      UID: b5a90107454ed975
+    InstalledVersion: 2.43-2ubuntu2.3
+    Status: affected
+    Layer:
+      Digest: sha256:9828e86a4f220c858c27038e827ed54fef1a63f08eb010a14fd7af13590da543
+      DiffID: sha256:718b0340b30f7422f9f61e64777c181088d68ab9a1c5cd184d97031d5cafaee0
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-18374
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:1cfba6b388f376f2dfc4541813daf51c3fd71f8b3290ed7588c351a995dae953
+    Title: 'glibc: glibc: Heap buffer overflow via attacker-controlled fopen mode string'
+    Description: |-
+      Passing an effectively empty string to the `,ccs=` syntax extension of the mode argument in the `fopen` function in the GNU C Library version 2.45 or earlier may result in a heap buffer overflow when the mode string input to the function is attacker controlled.
+
+
+
+      This usage pattern is not seen in applications in common GNU/Linux distributions and applications that process user-supplied values for `ccs` should not pass them through without validation.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-787
+    VendorSeverity:
+      redhat: 2
+      ubuntu: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L
+        V3Score: 4.9
+    References:
+    - http://www.openwall.com/lists/oss-security/2026/08/27/6
+    - https://access.redhat.com/security/cve/CVE-2026-18374
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-18374
+    - https://sourceware.org/bugzilla/show_bug.cgi?id=34574
+    - https://sourceware.org/git/?p=glibc.git;a=blob;f=advisories/GLIBC-SA-2026-0015
+    - https://sourceware.org/git/?p=glibc.git;a=blob_plain;f=advisories/GLIBC-SA-2026-0015
+    - https://www.cve.org/CVERecord?id=CVE-2026-18374
+    PublishedDate: '2026-08-27T20:17:03.553Z'
+    LastModifiedDate: '2026-09-03T16:43:15.293Z'
+  - VulnerabilityID: CVE-2026-18374
+    PkgID: libc-gconv-modules-extra@2.43-2ubuntu2.3
+    PkgName: libc-gconv-modules-extra
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/libc-gconv-modules-extra@2.43-2ubuntu2.3?arch=amd64&distro=ubuntu-26.04
+      UID: 7b69c26113a31c8
+    InstalledVersion: 2.43-2ubuntu2.3
+    Status: affected
+    Layer:
+      Digest: sha256:9828e86a4f220c858c27038e827ed54fef1a63f08eb010a14fd7af13590da543
+      DiffID: sha256:718b0340b30f7422f9f61e64777c181088d68ab9a1c5cd184d97031d5cafaee0
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-18374
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:9c5e5b58fac0d83a2803382fa8d03cbfd3d5c951690d5e42a58cd07833a20ec6
+    Title: 'glibc: glibc: Heap buffer overflow via attacker-controlled fopen mode string'
+    Description: |-
+      Passing an effectively empty string to the `,ccs=` syntax extension of the mode argument in the `fopen` function in the GNU C Library version 2.45 or earlier may result in a heap buffer overflow when the mode string input to the function is attacker controlled.
+
+
+
+      This usage pattern is not seen in applications in common GNU/Linux distributions and applications that process user-supplied values for `ccs` should not pass them through without validation.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-787
+    VendorSeverity:
+      redhat: 2
+      ubuntu: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L
+        V3Score: 4.9
+    References:
+    - http://www.openwall.com/lists/oss-security/2026/08/27/6
+    - https://access.redhat.com/security/cve/CVE-2026-18374
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-18374
+    - https://sourceware.org/bugzilla/show_bug.cgi?id=34574
+    - https://sourceware.org/git/?p=glibc.git;a=blob;f=advisories/GLIBC-SA-2026-0015
+    - https://sourceware.org/git/?p=glibc.git;a=blob_plain;f=advisories/GLIBC-SA-2026-0015
+    - https://www.cve.org/CVERecord?id=CVE-2026-18374
+    PublishedDate: '2026-08-27T20:17:03.553Z'
+    LastModifiedDate: '2026-09-03T16:43:15.293Z'
+  - VulnerabilityID: CVE-2026-18374
+    PkgID: libc6@2.43-2ubuntu2.3
+    PkgName: libc6
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/libc6@2.43-2ubuntu2.3?arch=amd64&distro=ubuntu-26.04
+      UID: 521129d431961416
+    InstalledVersion: 2.43-2ubuntu2.3
+    Status: affected
+    Layer:
+      Digest: sha256:9828e86a4f220c858c27038e827ed54fef1a63f08eb010a14fd7af13590da543
+      DiffID: sha256:718b0340b30f7422f9f61e64777c181088d68ab9a1c5cd184d97031d5cafaee0
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-18374
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:18cf32c8d412918def37099568aa9d867dac1b9f5add1044e68159ab1b648c2c
+    Title: 'glibc: glibc: Heap buffer overflow via attacker-controlled fopen mode string'
+    Description: |-
+      Passing an effectively empty string to the `,ccs=` syntax extension of the mode argument in the `fopen` function in the GNU C Library version 2.45 or earlier may result in a heap buffer overflow when the mode string input to the function is attacker controlled.
+
+
+
+      This usage pattern is not seen in applications in common GNU/Linux distributions and applications that process user-supplied values for `ccs` should not pass them through without validation.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-787
+    VendorSeverity:
+      redhat: 2
+      ubuntu: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L
+        V3Score: 4.9
+    References:
+    - http://www.openwall.com/lists/oss-security/2026/08/27/6
+    - https://access.redhat.com/security/cve/CVE-2026-18374
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-18374
+    - https://sourceware.org/bugzilla/show_bug.cgi?id=34574
+    - https://sourceware.org/git/?p=glibc.git;a=blob;f=advisories/GLIBC-SA-2026-0015
+    - https://sourceware.org/git/?p=glibc.git;a=blob_plain;f=advisories/GLIBC-SA-2026-0015
+    - https://www.cve.org/CVERecord?id=CVE-2026-18374
+    PublishedDate: '2026-08-27T20:17:03.553Z'
+    LastModifiedDate: '2026-09-03T16:43:15.293Z'
   - VulnerabilityID: CVE-2025-66382
     PkgID: libexpat1@2.7.4-1
     PkgName: libexpat1
@@ -591,6 +728,192 @@
     - https://www.cve.org/CVERecord?id=CVE-2026-13757
     PublishedDate: '2026-06-29T19:16:40.907Z'
     LastModifiedDate: '2026-09-01T13:18:10.253Z'
+  - VulnerabilityID: CVE-2026-39113
+    PkgID: libsqlite3-0@3.46.1-9ubuntu0.2
+    PkgName: libsqlite3-0
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/libsqlite3-0@3.46.1-9ubuntu0.2?arch=amd64&distro=ubuntu-26.04
+      UID: 43e137998d428fb9
+    InstalledVersion: 3.46.1-9ubuntu0.2
+    Status: affected
+    Layer:
+      Digest: sha256:9828e86a4f220c858c27038e827ed54fef1a63f08eb010a14fd7af13590da543
+      DiffID: sha256:718b0340b30f7422f9f61e64777c181088d68ab9a1c5cd184d97031d5cafaee0
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-39113
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:eccf3d011afae2f5893ff059b36e1629a3eba60d50feab27554213585f16e1aa
+    Title: Buffer Overflow vulnerability in SQLite affected version source snapsh ...
+    Description: Buffer Overflow vulnerability in SQLite affected version source snapshots/builds containing Fossil check-in 8bdc0d485e3ad0c7a1e818da66f106951d496b05cbe61d12c2c448f2f24b6d5d (Git mirror 169f68ed88b34cb68f720191c64c058f2ccec508, 2026-03-11) and later snapshots/builds allows an attacker to cause a denial of service via the ext/misc/sqlar.c, sqlarUncompressFunc(), sqlar_uncompress(), sqlite3_value_int64(), sqlite3_malloc(int), uncompress() components
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-122
+    VendorSeverity:
+      ubuntu: 2
+    References:
+    - https://github.com/20000419/CVE-2026-39113
+    - https://github.com/sqlite/sqlite/blob/169f68ed88b34cb68f720191c64c058f2ccec508/ext/misc/sqlar.c
+    - https://github.com/sqlite/sqlite/commit/169f68ed88b34cb68f720191c64c058f2ccec508
+    - https://github.com/sqlite/sqlite/commit/169f68ed88b34cb68f720191c64c058f2ccec508%20%28version-3.53.0%29
+    - https://www.cve.org/CVERecord?id=CVE-2026-39113
+    - https://www.sqlite.org/
+    - https://www.sqlite.org/sqlar.html
+    PublishedDate: '2026-08-25T21:17:00.08Z'
+    LastModifiedDate: '2026-08-31T16:17:59.35Z'
+  - VulnerabilityID: CVE-2026-66032
+    PkgID: libssh2-1t64@1.11.1-1ubuntu0.26.04.3
+    PkgName: libssh2-1t64
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/libssh2-1t64@1.11.1-1ubuntu0.26.04.3?arch=amd64&distro=ubuntu-26.04
+      UID: cf82fbaef14cfe62
+    InstalledVersion: 1.11.1-1ubuntu0.26.04.3
+    FixedVersion: 1.11.1-1ubuntu0.26.04.4
+    Status: fixed
+    Layer:
+      Digest: sha256:9828e86a4f220c858c27038e827ed54fef1a63f08eb010a14fd7af13590da543
+      DiffID: sha256:718b0340b30f7422f9f61e64777c181088d68ab9a1c5cd184d97031d5cafaee0
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-66032
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:5d85bd2674bf37b6a313480e30a943580cdbcf4db0e3438b40b20f41a4c31d80
+    Title: 'libssh2: libssh2: Arbitrary code execution via double-free in SFTP session'
+    Description: libssh2 through 1.11.1, fixed in commit 5e47761, contains a double-free vulnerability in the sftp_open() function in src/sftp.c that allows a malicious SSH server to corrupt the heap of any authenticated client opening an SFTP session. When a server responds to SSH_FXP_OPEN with SSH_FXP_STATUS containing FX_OK, the response data buffer is freed, and if a subsequent sftp_packet_require() call returns a specific error such as LIBSSH2_ERROR_CHANNEL_PACKET_EXCEEDED, the same pointer is freed a second time, enabling tcache dup conditions on glibc systems that allow overlapping allocations and function pointer overwrites.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-415
+    VendorSeverity:
+      amazon: 3
+      azure: 3
+      julia: 3
+      redhat: 2
+      ubuntu: 2
+    CVSS:
+      julia:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
+        V40Vector: CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N
+        V3Score: 8.8
+        V40Score: 8.7
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H
+        V3Score: 6.5
+    References:
+    - https://access.redhat.com/security/cve/CVE-2026-66032
+    - https://github.com/advisories/GHSA-83r8-6c29-8gwr
+    - https://github.com/libssh2/libssh2/commit/5e4776146552d898b9c0e1b313cd093fa8dc92d0
+    - https://github.com/libssh2/libssh2/pull/2180
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-66032
+    - https://ubuntu.com/security/notices/USN-8722-1
+    - https://www.cve.org/CVERecord?id=CVE-2026-66032
+    - https://www.vulncheck.com/advisories/libssh2-double-free-heap-corruption-via-sftp-open
+    PublishedDate: '2026-07-24T17:17:35.12Z'
+    LastModifiedDate: '2026-08-07T01:07:10.71Z'
+  - VulnerabilityID: CVE-2026-66033
+    PkgID: libssh2-1t64@1.11.1-1ubuntu0.26.04.3
+    PkgName: libssh2-1t64
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/libssh2-1t64@1.11.1-1ubuntu0.26.04.3?arch=amd64&distro=ubuntu-26.04
+      UID: cf82fbaef14cfe62
+    InstalledVersion: 1.11.1-1ubuntu0.26.04.3
+    FixedVersion: 1.11.1-1ubuntu0.26.04.4
+    Status: fixed
+    Layer:
+      Digest: sha256:9828e86a4f220c858c27038e827ed54fef1a63f08eb010a14fd7af13590da543
+      DiffID: sha256:718b0340b30f7422f9f61e64777c181088d68ab9a1c5cd184d97031d5cafaee0
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-66033
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:142975da119d75097665bbc7a90d8921053d647455e78473c53fe7c575b1cd2f
+    Title: 'libssh2: libssh2: Denial of Service via integer underflow in AES-GCM cipher negotiation'
+    Description: libssh2 through 1.11.1, fixed in commit a2ed82d, contains a pre-authentication integer underflow vulnerability in the ssh2_cipher_crypt() function in src/openssl.c that allows a malicious SSH server to crash any connecting client by negotiating AES-GCM ciphers during handshake. Attackers can exploit the underflow in the expression computing blocksize minus aadlen minus authentication tag length to trigger an out-of-bounds read and a memcpy call with a near-SIZE_MAX length argument, causing immediate process crash before any authentication occurs.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-125
+    - CWE-191
+    VendorSeverity:
+      amazon: 3
+      azure: 3
+      julia: 3
+      redhat: 2
+      ubuntu: 2
+    CVSS:
+      julia:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V40Vector: CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N
+        V3Score: 7.5
+        V40Score: 8.7
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H
+        V3Score: 6.5
+    References:
+    - https://access.redhat.com/security/cve/CVE-2026-66033
+    - https://github.com/advisories/GHSA-2g8c-wcg8-r65c
+    - https://github.com/libssh2/libssh2/commit/a2ed82d40964bbc0d64cd717aa0a5a892117d2e6
+    - https://github.com/libssh2/libssh2/pull/2401
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-66033
+    - https://ubuntu.com/security/notices/USN-8722-1
+    - https://www.cve.org/CVERecord?id=CVE-2026-66033
+    - https://www.vulncheck.com/advisories/libssh2-integer-underflow-dos-via-aes-gcm-cipher-negotiation
+    PublishedDate: '2026-07-24T17:17:35.263Z'
+    LastModifiedDate: '2026-07-30T15:44:47.257Z'
+  - VulnerabilityID: CVE-2026-66035
+    PkgID: libssh2-1t64@1.11.1-1ubuntu0.26.04.3
+    PkgName: libssh2-1t64
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/libssh2-1t64@1.11.1-1ubuntu0.26.04.3?arch=amd64&distro=ubuntu-26.04
+      UID: cf82fbaef14cfe62
+    InstalledVersion: 1.11.1-1ubuntu0.26.04.3
+    FixedVersion: 1.11.1-1ubuntu0.26.04.4
+    Status: fixed
+    Layer:
+      Digest: sha256:9828e86a4f220c858c27038e827ed54fef1a63f08eb010a14fd7af13590da543
+      DiffID: sha256:718b0340b30f7422f9f61e64777c181088d68ab9a1c5cd184d97031d5cafaee0
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-66035
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:999d33b4314696d6fec3549106d39f31493f4e7901ee0682e0b870297ff90aa0
+    Title: 'libssh2: libssh2: Arbitrary code execution via heap buffer overflow during SSH negotiation'
+    Description: libssh2 through 1.11.1, fixed in commit 42e33d8, contains a pre-authentication heap buffer overflow vulnerability that allows a malicious SSH server to corrupt heap metadata in any connecting client by sending a packet with a packet_length smaller than the cipher's block size during Encrypt-then-MAC cipher negotiation. In the fullpacket() function in src/transport.c, the ETM path allocates a buffer of packet_length bytes but copies blocksize minus one bytes via memcpy, causing an overflow that on 32-bit glibc writes attacker-controlled bytes into an adjacent chunk's SIZE field, enabling tcache bin confusion, overlapping live objects, and function pointer overwrite during the session handshake before authentication.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-122
+    VendorSeverity:
+      amazon: 3
+      azure: 3
+      julia: 3
+      redhat: 2
+      ubuntu: 2
+    CVSS:
+      julia:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H
+        V40Vector: CVSS:4.0/AV:N/AC:H/AT:N/PR:N/UI:P/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N
+        V3Score: 7.5
+        V40Score: 7.7
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:N/I:N/A:H
+        V3Score: 5.3
+    References:
+    - https://access.redhat.com/security/cve/CVE-2026-66035
+    - https://github.com/advisories/GHSA-v6rf-8q4r-r495
+    - https://github.com/libssh2/libssh2/commit/42e33d81577ed4b95d4b4f6f845e5ee8efe5eeb4
+    - https://github.com/libssh2/libssh2/pull/2198
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-66035
+    - https://ubuntu.com/security/notices/USN-8722-1
+    - https://www.cve.org/CVERecord?id=CVE-2026-66035
+    - https://www.vulncheck.com/advisories/libssh2-heap-buffer-overflow-via-etm-cipher-negotiation
+    PublishedDate: '2026-07-24T17:17:35.547Z'
+    LastModifiedDate: '2026-07-30T15:41:05.69Z'
   - VulnerabilityID: CVE-2026-40228
     PkgID: libsystemd0@259.5-0ubuntu3.4
     PkgName: libsystemd0
