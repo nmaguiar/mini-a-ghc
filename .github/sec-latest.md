@@ -3,7 +3,302 @@
 │     ├ Class          : os-pkgs 
 │     ├ Type           : ubuntu 
 │     ├ Packages        
-│     ╰ Vulnerabilities ╭ [0]   ╭ VulnerabilityID : CVE-2026-8932 
+│     ╰ Vulnerabilities ╭ [0]   ╭ VulnerabilityID : CVE-2026-13608 
+│                       │       ├ PkgID           : curl@8.18.0-1ubuntu2.4 
+│                       │       ├ PkgName         : curl 
+│                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/curl@8.18.0-1ubuntu2.4?arch=amd64&dis
+│                       │       │                  │       tro=ubuntu-26.04 
+│                       │       │                  ╰ UID : b03c5c9c9edf9b21 
+│                       │       ├ InstalledVersion: 8.18.0-1ubuntu2.4 
+│                       │       ├ Status          : affected 
+│                       │       ├ Layer            ╭ Digest: sha256:9828e86a4f220c858c27038e827ed54fef1a63f08eb
+│                       │       │                  │         010a14fd7af13590da543 
+│                       │       │                  ╰ DiffID: sha256:718b0340b30f7422f9f61e64777c181088d68ab9a1c
+│                       │       │                            5cd184d97031d5cafaee0 
+│                       │       ├ SeveritySource  : ubuntu 
+│                       │       ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-13608 
+│                       │       ├ DataSource       ╭ ID  : ubuntu 
+│                       │       │                  ├ Name: Ubuntu CVE Tracker 
+│                       │       │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                       │       ├ Fingerprint     : sha256:9c2ab0f2e240c9a07e3059ca842fa3fc3d3d876466fbc922f7ec
+│                       │       │                   04626d56fc63 
+│                       │       ├ Title           : A flaw in the libcurl SASL negotiation for LDAP
+│                       │       │                   authentication allows  ... 
+│                       │       ├ Description     : A flaw in the libcurl SASL negotiation for LDAP
+│                       │       │                   authentication allows an
+│                       │       │                   incomplete handshake sequence to be misinterpreted as a
+│                       │       │                   successful
+│                       │       │                   cryptographic verification. An attacker executing a
+│                       │       │                   Man-in-the-Middle (MITM)
+│                       │       │                   attack can inject a premature or shortcut response that
+│                       │       │                   bypasses complete peer
+│                       │       │                   validation. 
+│                       │       ├ Severity        : MEDIUM 
+│                       │       ├ CweIDs           ─ [0]: CWE-923 
+│                       │       ├ VendorSeverity   ─ ubuntu: 2 
+│                       │       ├ References       ╭ [0]: https://curl.se/docs/CVE-2026-13608.html 
+│                       │       │                  ├ [1]: https://curl.se/docs/CVE-2026-13608.json 
+│                       │       │                  ├ [2]: https://github.com/curl/curl/pull/22213/changes/1a00e
+│                       │       │                  │      2a73675c9521d214aafd6c02b553bfeb022 
+│                       │       │                  ├ [3]: https://hackerone.com/reports/3822248 
+│                       │       │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2026-13608 
+│                       │       ├ PublishedDate   : 2026-09-06T18:17:19.81Z 
+│                       │       ╰ LastModifiedDate: 2026-09-11T19:59:55.2Z 
+│                       ├ [1]   ╭ VulnerabilityID : CVE-2026-18924 
+│                       │       ├ PkgID           : curl@8.18.0-1ubuntu2.4 
+│                       │       ├ PkgName         : curl 
+│                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/curl@8.18.0-1ubuntu2.4?arch=amd64&dis
+│                       │       │                  │       tro=ubuntu-26.04 
+│                       │       │                  ╰ UID : b03c5c9c9edf9b21 
+│                       │       ├ InstalledVersion: 8.18.0-1ubuntu2.4 
+│                       │       ├ Status          : affected 
+│                       │       ├ Layer            ╭ Digest: sha256:9828e86a4f220c858c27038e827ed54fef1a63f08eb
+│                       │       │                  │         010a14fd7af13590da543 
+│                       │       │                  ╰ DiffID: sha256:718b0340b30f7422f9f61e64777c181088d68ab9a1c
+│                       │       │                            5cd184d97031d5cafaee0 
+│                       │       ├ SeveritySource  : ubuntu 
+│                       │       ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-18924 
+│                       │       ├ DataSource       ╭ ID  : ubuntu 
+│                       │       │                  ├ Name: Ubuntu CVE Tracker 
+│                       │       │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                       │       ├ Fingerprint     : sha256:03cab0a9d0463073cbcd3aa4d28b619c44aac9ee9c882703a906
+│                       │       │                   4b9e2d116209 
+│                       │       ├ Title           : A flaw in libcurl's handling of HTTP/2 Server Push streams,
+│                       │       │                    when the p ... 
+│                       │       ├ Description     : A flaw in libcurl's handling of HTTP/2 Server Push streams,
+│                       │       │                    when the parent
+│                       │       │                   handle is set to share connections with other handles, can
+│                       │       │                   lead to
+│                       │       │                   use-after-free in the cleanup process. 
+│                       │       ├ Severity        : MEDIUM 
+│                       │       ├ CweIDs           ─ [0]: CWE-416 
+│                       │       ├ VendorSeverity   ─ ubuntu: 2 
+│                       │       ├ References       ╭ [0]: https://curl.se/docs/CVE-2026-18924.html 
+│                       │       │                  ├ [1]: https://curl.se/docs/CVE-2026-18924.json 
+│                       │       │                  ├ [2]: https://github.com/curl/curl/commit/90325ff0444cbdff3
+│                       │       │                  │      68bda5d26d6 
+│                       │       │                  ├ [3]: https://hackerone.com/reports/3916059 
+│                       │       │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2026-18924 
+│                       │       ├ PublishedDate   : 2026-09-06T18:17:20.553Z 
+│                       │       ╰ LastModifiedDate: 2026-09-11T20:01:29.6Z 
+│                       ├ [2]   ╭ VulnerabilityID : CVE-2026-19931 
+│                       │       ├ PkgID           : curl@8.18.0-1ubuntu2.4 
+│                       │       ├ PkgName         : curl 
+│                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/curl@8.18.0-1ubuntu2.4?arch=amd64&dis
+│                       │       │                  │       tro=ubuntu-26.04 
+│                       │       │                  ╰ UID : b03c5c9c9edf9b21 
+│                       │       ├ InstalledVersion: 8.18.0-1ubuntu2.4 
+│                       │       ├ Status          : affected 
+│                       │       ├ Layer            ╭ Digest: sha256:9828e86a4f220c858c27038e827ed54fef1a63f08eb
+│                       │       │                  │         010a14fd7af13590da543 
+│                       │       │                  ╰ DiffID: sha256:718b0340b30f7422f9f61e64777c181088d68ab9a1c
+│                       │       │                            5cd184d97031d5cafaee0 
+│                       │       ├ SeveritySource  : ubuntu 
+│                       │       ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-19931 
+│                       │       ├ DataSource       ╭ ID  : ubuntu 
+│                       │       │                  ├ Name: Ubuntu CVE Tracker 
+│                       │       │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                       │       ├ Fingerprint     : sha256:5e78afe13d779ddb0d9d5f51a12085caf1c7112a9b85a06b4754
+│                       │       │                   51fe8bedab6c 
+│                       │       ├ Title           : A flaw in libcurl makes it wrongly reuse an HTTP connection
+│                       │       │                    setup for  ... 
+│                       │       ├ Description     : A flaw in libcurl makes it wrongly reuse an HTTP connection
+│                       │       │                    setup for a given
+│                       │       │                   hostname using Negotiate authentication, when the initial
+│                       │       │                   request is done
+│                       │       │                   using empty credentials. This can make user B's request get
+│                       │       │                    sent over user A's
+│                       │       │                   previously authenticated connection. 
+│                       │       ├ Severity        : MEDIUM 
+│                       │       ├ CweIDs           ─ [0]: CWE-488 
+│                       │       ├ VendorSeverity   ─ ubuntu: 2 
+│                       │       ├ References       ╭ [0]: https://curl.se/docs/CVE-2026-19931.html 
+│                       │       │                  ├ [1]: https://curl.se/docs/CVE-2026-19931.json 
+│                       │       │                  ├ [2]: https://github.com/curl/curl/commit/7103a93b05bc69ea9
+│                       │       │                  │      8ed9d 
+│                       │       │                  ├ [3]: https://hackerone.com/reports/3923520 
+│                       │       │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2026-19931 
+│                       │       ├ PublishedDate   : 2026-09-06T18:17:20.733Z 
+│                       │       ╰ LastModifiedDate: 2026-09-11T20:01:46.607Z 
+│                       ├ [3]   ╭ VulnerabilityID : CVE-2026-80229 
+│                       │       ├ PkgID           : curl@8.18.0-1ubuntu2.4 
+│                       │       ├ PkgName         : curl 
+│                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/curl@8.18.0-1ubuntu2.4?arch=amd64&dis
+│                       │       │                  │       tro=ubuntu-26.04 
+│                       │       │                  ╰ UID : b03c5c9c9edf9b21 
+│                       │       ├ InstalledVersion: 8.18.0-1ubuntu2.4 
+│                       │       ├ Status          : affected 
+│                       │       ├ Layer            ╭ Digest: sha256:9828e86a4f220c858c27038e827ed54fef1a63f08eb
+│                       │       │                  │         010a14fd7af13590da543 
+│                       │       │                  ╰ DiffID: sha256:718b0340b30f7422f9f61e64777c181088d68ab9a1c
+│                       │       │                            5cd184d97031d5cafaee0 
+│                       │       ├ SeveritySource  : ubuntu 
+│                       │       ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-80229 
+│                       │       ├ DataSource       ╭ ID  : ubuntu 
+│                       │       │                  ├ Name: Ubuntu CVE Tracker 
+│                       │       │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                       │       ├ Fingerprint     : sha256:01cf4a27ccc49fb7252f59093346242af210246129d6f3720c51
+│                       │       │                   d805ff9201d6 
+│                       │       ├ Title           : When performing transfers via libcurl\u2019s multi
+│                       │       │                   interface, pooled T ... 
+│                       │       ├ Description     : When performing transfers via libcurl’s multi interface,
+│                       │       │                   pooled TLS
+│                       │       │                   connections can outlive their originating easy handles. In
+│                       │       │                   OpenSSL 3 provider
+│                       │       │                   configurations, libcurl attaches an allocated library
+│                       │       │                   context to the easy
+│                       │       │                   handle's state and passes it to OpenSSL without acquiring
+│                       │       │                   an ownership
+│                       │       │                   reference; destroying the easy handle prematurely frees
+│                       │       │                   this context while the
+│                       │       │                   active connection retains a dangling pointer, leading to a
+│                       │       │                   heap-use-after-free
+│                       │       │                   upon subsequent I/O or post-handshake operations. 
+│                       │       ├ Severity        : MEDIUM 
+│                       │       ├ CweIDs           ─ [0]: CWE-416 
+│                       │       ├ VendorSeverity   ─ ubuntu: 2 
+│                       │       ├ References       ╭ [0]: https://curl.se/docs/CVE-2026-80229.html 
+│                       │       │                  ├ [1]: https://curl.se/docs/CVE-2026-80229.json 
+│                       │       │                  ├ [2]: https://github.com/curl/curl/commit/7ea37abc6ac0120ba
+│                       │       │                  │      5f6d9 
+│                       │       │                  ├ [3]: https://hackerone.com/reports/3969255 
+│                       │       │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2026-80229 
+│                       │       ├ PublishedDate   : 2026-09-06T18:17:22.217Z 
+│                       │       ╰ LastModifiedDate: 2026-09-11T20:06:12.563Z 
+│                       ├ [4]   ╭ VulnerabilityID : CVE-2026-80230 
+│                       │       ├ PkgID           : curl@8.18.0-1ubuntu2.4 
+│                       │       ├ PkgName         : curl 
+│                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/curl@8.18.0-1ubuntu2.4?arch=amd64&dis
+│                       │       │                  │       tro=ubuntu-26.04 
+│                       │       │                  ╰ UID : b03c5c9c9edf9b21 
+│                       │       ├ InstalledVersion: 8.18.0-1ubuntu2.4 
+│                       │       ├ Status          : affected 
+│                       │       ├ Layer            ╭ Digest: sha256:9828e86a4f220c858c27038e827ed54fef1a63f08eb
+│                       │       │                  │         010a14fd7af13590da543 
+│                       │       │                  ╰ DiffID: sha256:718b0340b30f7422f9f61e64777c181088d68ab9a1c
+│                       │       │                            5cd184d97031d5cafaee0 
+│                       │       ├ SeveritySource  : ubuntu 
+│                       │       ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-80230 
+│                       │       ├ DataSource       ╭ ID  : ubuntu 
+│                       │       │                  ├ Name: Ubuntu CVE Tracker 
+│                       │       │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                       │       ├ Fingerprint     : sha256:64c5bcb6266461c3626940bf8a32e7695cecc4d0f085ad840821
+│                       │       │                   34cb9b6ff1f0 
+│                       │       ├ Title           : When `CURLOPT_PINNEDPUBLICKEY` is configured alongside
+│                       │       │                   options that di ... 
+│                       │       ├ Description     : When `CURLOPT_PINNEDPUBLICKEY` is configured alongside
+│                       │       │                   options that disable
+│                       │       │                   standard peer verification (`CURLOPT_SSL_VERIFYPEER = 0`
+│                       │       │                   and
+│                       │       │                   `CURLOPT_SSL_VERIFYHOST = 0`), libcurl fails to enforce
+│                       │       │                   public key pinning on
+│                       │       │                   connections established without a presented server
+│                       │       │                   certificate. Bypassing the
+│                       │       │                   pinning check under these disabled-verification conditions
+│                       │       │                   allows
+│                       │       │                   unauthenticated connections to succeed when they should be
+│                       │       │                   rejected. 
+│                       │       ├ Severity        : MEDIUM 
+│                       │       ├ CweIDs           ─ [0]: CWE-295 
+│                       │       ├ VendorSeverity   ─ ubuntu: 2 
+│                       │       ├ References       ╭ [0]: https://curl.se/docs/CVE-2026-80230.html 
+│                       │       │                  ├ [1]: https://curl.se/docs/CVE-2026-80230.json 
+│                       │       │                  ├ [2]: https://github.com/curl/curl/commit/5267ed859d545534d
+│                       │       │                  │      0c21 
+│                       │       │                  ├ [3]: https://hackerone.com/reports/3969300 
+│                       │       │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2026-80230 
+│                       │       ├ PublishedDate   : 2026-09-06T18:17:22.327Z 
+│                       │       ╰ LastModifiedDate: 2026-09-11T20:05:56.143Z 
+│                       ├ [5]   ╭ VulnerabilityID : CVE-2026-80255 
+│                       │       ├ PkgID           : curl@8.18.0-1ubuntu2.4 
+│                       │       ├ PkgName         : curl 
+│                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/curl@8.18.0-1ubuntu2.4?arch=amd64&dis
+│                       │       │                  │       tro=ubuntu-26.04 
+│                       │       │                  ╰ UID : b03c5c9c9edf9b21 
+│                       │       ├ InstalledVersion: 8.18.0-1ubuntu2.4 
+│                       │       ├ Status          : affected 
+│                       │       ├ Layer            ╭ Digest: sha256:9828e86a4f220c858c27038e827ed54fef1a63f08eb
+│                       │       │                  │         010a14fd7af13590da543 
+│                       │       │                  ╰ DiffID: sha256:718b0340b30f7422f9f61e64777c181088d68ab9a1c
+│                       │       │                            5cd184d97031d5cafaee0 
+│                       │       ├ SeveritySource  : ubuntu 
+│                       │       ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-80255 
+│                       │       ├ DataSource       ╭ ID  : ubuntu 
+│                       │       │                  ├ Name: Ubuntu CVE Tracker 
+│                       │       │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                       │       ├ Fingerprint     : sha256:9d0217e5f35f8e5a0b1d5a12f5581fff3570309f778e6e62c416
+│                       │       │                   607dae3cb392 
+│                       │       ├ Title           : A `Set-Cookie:` header using tab (horizontal tab, ASCII
+│                       │       │                   code 9) instea ... 
+│                       │       ├ Description     : A `Set-Cookie:` header using tab (horizontal tab, ASCII
+│                       │       │                   code 9) instead of
+│                       │       │                   space (ascii code 32) immediately before the `Secure`
+│                       │       │                   attribute causes curl to
+│                       │       │                   store the cookie without its Secure flag. The cookie might
+│                       │       │                   then wrongfully be
+│                       │       │                   sent over plaintext HTTP on subsequent requests to the same
+│                       │       │                    host. 
+│                       │       ├ Severity        : MEDIUM 
+│                       │       ├ CweIDs           ─ [0]: CWE-201 
+│                       │       ├ VendorSeverity   ─ ubuntu: 2 
+│                       │       ├ References       ╭ [0]: https://curl.se/docs/CVE-2026-80255.html 
+│                       │       │                  ├ [1]: https://curl.se/docs/CVE-2026-80255.json 
+│                       │       │                  ├ [2]: https://github.com/curl/curl/commit/4f6aa41a0145e930e
+│                       │       │                  │      76677 
+│                       │       │                  ├ [3]: https://hackerone.com/reports/3972395 
+│                       │       │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2026-80255 
+│                       │       ├ PublishedDate   : 2026-09-06T18:17:22.623Z 
+│                       │       ╰ LastModifiedDate: 2026-09-11T20:02:30.16Z 
+│                       ├ [6]   ╭ VulnerabilityID : CVE-2026-82209 
+│                       │       ├ PkgID           : curl@8.18.0-1ubuntu2.4 
+│                       │       ├ PkgName         : curl 
+│                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/curl@8.18.0-1ubuntu2.4?arch=amd64&dis
+│                       │       │                  │       tro=ubuntu-26.04 
+│                       │       │                  ╰ UID : b03c5c9c9edf9b21 
+│                       │       ├ InstalledVersion: 8.18.0-1ubuntu2.4 
+│                       │       ├ Status          : affected 
+│                       │       ├ Layer            ╭ Digest: sha256:9828e86a4f220c858c27038e827ed54fef1a63f08eb
+│                       │       │                  │         010a14fd7af13590da543 
+│                       │       │                  ╰ DiffID: sha256:718b0340b30f7422f9f61e64777c181088d68ab9a1c
+│                       │       │                            5cd184d97031d5cafaee0 
+│                       │       ├ SeveritySource  : ubuntu 
+│                       │       ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-82209 
+│                       │       ├ DataSource       ╭ ID  : ubuntu 
+│                       │       │                  ├ Name: Ubuntu CVE Tracker 
+│                       │       │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                       │       ├ Fingerprint     : sha256:306787777dad95e0d2de862238dab6d87f461e0e2a05c169e377
+│                       │       │                   808d15cae68b 
+│                       │       ├ Title           : When libpsl support is enabled, libcurl fails to enforce
+│                       │       │                   the Public Su ... 
+│                       │       ├ Description     : When libpsl support is enabled, libcurl fails to enforce
+│                       │       │                   the Public Suffix
+│                       │       │                   List boundary check when processing a `Set-Cookie` header
+│                       │       │                   where the `Domain`
+│                       │       │                   attribute explicitly matches an origin host that is itself
+│                       │       │                   a public suffix
+│                       │       │                   (e.g., `Domain=co.uk` set by `co.uk`).
+│                       │       │                   
+│                       │       │                   Instead of coercing it into a strict host-only cookie,
+│                       │       │                   libcurl saves the
+│                       │       │                   cookie with wildcard domain scope (`.co.uk`). Consequently,
+│                       │       │                    the cookie is
+│                       │       │                   inappropriately included in subsequent outbound requests or
+│                       │       │                    HTTP redirects to
+│                       │       │                   arbitrary sibling subdomains under the same public suffix
+│                       │       │                   (e.g.,
+│                       │       │                   `attacker.co.uk`). 
+│                       │       ├ Severity        : MEDIUM 
+│                       │       ├ CweIDs           ─ [0]: CWE-201 
+│                       │       ├ VendorSeverity   ─ ubuntu: 2 
+│                       │       ├ References       ╭ [0]: https://curl.se/docs/CVE-2026-82209.html 
+│                       │       │                  ├ [1]: https://curl.se/docs/CVE-2026-82209.json 
+│                       │       │                  ├ [2]: https://github.com/curl/curl/commit/95c1e8915dce64606
+│                       │       │                  │      bd753fd47f 
+│                       │       │                  ├ [3]: https://hackerone.com/reports/3972385 
+│                       │       │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2026-82209 
+│                       │       ├ PublishedDate   : 2026-09-06T18:17:22.847Z 
+│                       │       ╰ LastModifiedDate: 2026-09-11T20:01:57.943Z 
+│                       ├ [7]   ╭ VulnerabilityID : CVE-2026-8932 
 │                       │       ├ PkgID           : curl@8.18.0-1ubuntu2.4 
 │                       │       ├ PkgName         : curl 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/curl@8.18.0-1ubuntu2.4?arch=amd64&dis
@@ -64,7 +359,7 @@
 │                       │       │                  ╰ [10]: https://www.cve.org/CVERecord?id=CVE-2026-8932 
 │                       │       ├ PublishedDate   : 2026-07-03T07:16:25.363Z 
 │                       │       ╰ LastModifiedDate: 2026-07-07T23:18:32.137Z 
-│                       ├ [1]   ╭ VulnerabilityID : CVE-2026-57062 
+│                       ├ [8]   ╭ VulnerabilityID : CVE-2026-57062 
 │                       │       ├ PkgID           : gpgv@2.4.8-4ubuntu3 
 │                       │       ├ PkgName         : gpgv 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/gpgv@2.4.8-4ubuntu3?arch=amd64&distro
@@ -113,7 +408,7 @@
 │                       │       │                  ╰ [7]: https://www.gnupg.org/download/ 
 │                       │       ├ PublishedDate   : 2026-06-23T18:18:10.973Z 
 │                       │       ╰ LastModifiedDate: 2026-06-25T20:16:05.473Z 
-│                       ├ [2]   ╭ VulnerabilityID : CVE-2026-41256 
+│                       ├ [9]   ╭ VulnerabilityID : CVE-2026-41256 
 │                       │       ├ PkgID           : jq@1.8.1-4ubuntu2 
 │                       │       ├ PkgName         : jq 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/jq@1.8.1-4ubuntu2?arch=amd64&distro=u
@@ -161,7 +456,7 @@
 │                       │       │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2026-41256 
 │                       │       ├ PublishedDate   : 2026-05-11T18:16:33.983Z 
 │                       │       ╰ LastModifiedDate: 2026-06-17T10:46:23.713Z 
-│                       ├ [3]   ╭ VulnerabilityID : CVE-2026-41257 
+│                       ├ [10]  ╭ VulnerabilityID : CVE-2026-41257 
 │                       │       ├ PkgID           : jq@1.8.1-4ubuntu2 
 │                       │       ├ PkgName         : jq 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/jq@1.8.1-4ubuntu2?arch=amd64&distro=u
@@ -210,7 +505,7 @@
 │                       │       │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2026-41257 
 │                       │       ├ PublishedDate   : 2026-05-11T18:16:34.127Z 
 │                       │       ╰ LastModifiedDate: 2026-06-17T10:46:23.82Z 
-│                       ├ [4]   ╭ VulnerabilityID : CVE-2026-43895 
+│                       ├ [11]  ╭ VulnerabilityID : CVE-2026-43895 
 │                       │       ├ PkgID           : jq@1.8.1-4ubuntu2 
 │                       │       ├ PkgName         : jq 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/jq@1.8.1-4ubuntu2?arch=amd64&distro=u
@@ -258,7 +553,7 @@
 │                       │       │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2026-43895 
 │                       │       ├ PublishedDate   : 2026-05-11T18:16:37.387Z 
 │                       │       ╰ LastModifiedDate: 2026-06-17T10:50:02.68Z 
-│                       ├ [5]   ╭ VulnerabilityID : CVE-2026-43896 
+│                       ├ [12]  ╭ VulnerabilityID : CVE-2026-43896 
 │                       │       ├ PkgID           : jq@1.8.1-4ubuntu2 
 │                       │       ├ PkgName         : jq 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/jq@1.8.1-4ubuntu2?arch=amd64&distro=u
@@ -306,7 +601,7 @@
 │                       │       │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2026-43896 
 │                       │       ├ PublishedDate   : 2026-05-11T18:16:37.53Z 
 │                       │       ╰ LastModifiedDate: 2026-06-17T10:50:02.79Z 
-│                       ├ [6]   ╭ VulnerabilityID : CVE-2026-44777 
+│                       ├ [13]  ╭ VulnerabilityID : CVE-2026-44777 
 │                       │       ├ PkgID           : jq@1.8.1-4ubuntu2 
 │                       │       ├ PkgName         : jq 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/jq@1.8.1-4ubuntu2?arch=amd64&distro=u
@@ -352,7 +647,7 @@
 │                       │       │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2026-44777 
 │                       │       ├ PublishedDate   : 2026-05-11T18:16:38.517Z 
 │                       │       ╰ LastModifiedDate: 2026-06-17T10:51:19.04Z 
-│                       ├ [7]   ╭ VulnerabilityID : CVE-2026-18374 
+│                       ├ [14]  ╭ VulnerabilityID : CVE-2026-18374 
 │                       │       ├ PkgID           : libc-bin@2.43-2ubuntu2.3 
 │                       │       ├ PkgName         : libc-bin 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libc-bin@2.43-2ubuntu2.3?arch=amd64&d
@@ -401,7 +696,7 @@
 │                       │       │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2026-18374 
 │                       │       ├ PublishedDate   : 2026-08-27T20:17:03.553Z 
 │                       │       ╰ LastModifiedDate: 2026-09-03T16:43:15.293Z 
-│                       ├ [8]   ╭ VulnerabilityID : CVE-2026-19499 
+│                       ├ [15]  ╭ VulnerabilityID : CVE-2026-19499 
 │                       │       ├ PkgID           : libc-bin@2.43-2ubuntu2.3 
 │                       │       ├ PkgName         : libc-bin 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libc-bin@2.43-2ubuntu2.3?arch=amd64&d
@@ -441,7 +736,7 @@
 │                       │                          ├ [2]: https://ubuntu.com/security/notices/USN-8737-1 
 │                       │                          ├ [3]: https://ubuntu.com/security/notices/USN-8737-2 
 │                       │                          ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2026-19499 
-│                       ├ [9]   ╭ VulnerabilityID : CVE-2026-19542 
+│                       ├ [16]  ╭ VulnerabilityID : CVE-2026-19542 
 │                       │       ├ PkgID           : libc-bin@2.43-2ubuntu2.3 
 │                       │       ├ PkgName         : libc-bin 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libc-bin@2.43-2ubuntu2.3?arch=amd64&d
@@ -479,7 +774,7 @@
 │                       │                          ├ [2]: https://ubuntu.com/security/notices/USN-8737-1 
 │                       │                          ├ [3]: https://ubuntu.com/security/notices/USN-8737-2 
 │                       │                          ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2026-19542 
-│                       ├ [10]  ╭ VulnerabilityID : CVE-2026-6368 
+│                       ├ [17]  ╭ VulnerabilityID : CVE-2026-6368 
 │                       │       ├ PkgID           : libc-bin@2.43-2ubuntu2.3 
 │                       │       ├ PkgName         : libc-bin 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libc-bin@2.43-2ubuntu2.3?arch=amd64&d
@@ -524,7 +819,7 @@
 │                       │       │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2026-6368 
 │                       │       ├ PublishedDate   : 2026-08-10T19:17:30.713Z 
 │                       │       ╰ LastModifiedDate: 2026-09-03T16:43:15.293Z 
-│                       ├ [11]  ╭ VulnerabilityID : CVE-2026-6791 
+│                       ├ [18]  ╭ VulnerabilityID : CVE-2026-6791 
 │                       │       ├ PkgID           : libc-bin@2.43-2ubuntu2.3 
 │                       │       ├ PkgName         : libc-bin 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libc-bin@2.43-2ubuntu2.3?arch=amd64&d
@@ -575,7 +870,7 @@
 │                       │       │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2026-6791 
 │                       │       ├ PublishedDate   : 2026-08-10T19:17:30.877Z 
 │                       │       ╰ LastModifiedDate: 2026-09-03T16:43:15.293Z 
-│                       ├ [12]  ╭ VulnerabilityID : CVE-2026-77117 
+│                       ├ [19]  ╭ VulnerabilityID : CVE-2026-77117 
 │                       │       ├ PkgID           : libc-bin@2.43-2ubuntu2.3 
 │                       │       ├ PkgName         : libc-bin 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libc-bin@2.43-2ubuntu2.3?arch=amd64&d
@@ -615,7 +910,7 @@
 │                       │                          ├ [2]: https://ubuntu.com/security/notices/USN-8737-1 
 │                       │                          ├ [3]: https://ubuntu.com/security/notices/USN-8737-2 
 │                       │                          ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2026-77117 
-│                       ├ [13]  ╭ VulnerabilityID : CVE-2026-80489 
+│                       ├ [20]  ╭ VulnerabilityID : CVE-2026-80489 
 │                       │       ├ PkgID           : libc-bin@2.43-2ubuntu2.3 
 │                       │       ├ PkgName         : libc-bin 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libc-bin@2.43-2ubuntu2.3?arch=amd64&d
@@ -656,7 +951,7 @@
 │                       │                          ├ [2]: https://ubuntu.com/security/notices/USN-8737-1 
 │                       │                          ├ [3]: https://ubuntu.com/security/notices/USN-8737-2 
 │                       │                          ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2026-80489 
-│                       ├ [14]  ╭ VulnerabilityID : CVE-2026-18374 
+│                       ├ [21]  ╭ VulnerabilityID : CVE-2026-18374 
 │                       │       ├ PkgID           : libc-gconv-modules-extra@2.43-2ubuntu2.3 
 │                       │       ├ PkgName         : libc-gconv-modules-extra 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libc-gconv-modules-extra@2.43-2ubuntu
@@ -705,7 +1000,7 @@
 │                       │       │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2026-18374 
 │                       │       ├ PublishedDate   : 2026-08-27T20:17:03.553Z 
 │                       │       ╰ LastModifiedDate: 2026-09-03T16:43:15.293Z 
-│                       ├ [15]  ╭ VulnerabilityID : CVE-2026-19499 
+│                       ├ [22]  ╭ VulnerabilityID : CVE-2026-19499 
 │                       │       ├ PkgID           : libc-gconv-modules-extra@2.43-2ubuntu2.3 
 │                       │       ├ PkgName         : libc-gconv-modules-extra 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libc-gconv-modules-extra@2.43-2ubuntu
@@ -745,7 +1040,7 @@
 │                       │                          ├ [2]: https://ubuntu.com/security/notices/USN-8737-1 
 │                       │                          ├ [3]: https://ubuntu.com/security/notices/USN-8737-2 
 │                       │                          ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2026-19499 
-│                       ├ [16]  ╭ VulnerabilityID : CVE-2026-19542 
+│                       ├ [23]  ╭ VulnerabilityID : CVE-2026-19542 
 │                       │       ├ PkgID           : libc-gconv-modules-extra@2.43-2ubuntu2.3 
 │                       │       ├ PkgName         : libc-gconv-modules-extra 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libc-gconv-modules-extra@2.43-2ubuntu
@@ -783,7 +1078,7 @@
 │                       │                          ├ [2]: https://ubuntu.com/security/notices/USN-8737-1 
 │                       │                          ├ [3]: https://ubuntu.com/security/notices/USN-8737-2 
 │                       │                          ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2026-19542 
-│                       ├ [17]  ╭ VulnerabilityID : CVE-2026-6368 
+│                       ├ [24]  ╭ VulnerabilityID : CVE-2026-6368 
 │                       │       ├ PkgID           : libc-gconv-modules-extra@2.43-2ubuntu2.3 
 │                       │       ├ PkgName         : libc-gconv-modules-extra 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libc-gconv-modules-extra@2.43-2ubuntu
@@ -828,7 +1123,7 @@
 │                       │       │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2026-6368 
 │                       │       ├ PublishedDate   : 2026-08-10T19:17:30.713Z 
 │                       │       ╰ LastModifiedDate: 2026-09-03T16:43:15.293Z 
-│                       ├ [18]  ╭ VulnerabilityID : CVE-2026-6791 
+│                       ├ [25]  ╭ VulnerabilityID : CVE-2026-6791 
 │                       │       ├ PkgID           : libc-gconv-modules-extra@2.43-2ubuntu2.3 
 │                       │       ├ PkgName         : libc-gconv-modules-extra 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libc-gconv-modules-extra@2.43-2ubuntu
@@ -879,7 +1174,7 @@
 │                       │       │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2026-6791 
 │                       │       ├ PublishedDate   : 2026-08-10T19:17:30.877Z 
 │                       │       ╰ LastModifiedDate: 2026-09-03T16:43:15.293Z 
-│                       ├ [19]  ╭ VulnerabilityID : CVE-2026-77117 
+│                       ├ [26]  ╭ VulnerabilityID : CVE-2026-77117 
 │                       │       ├ PkgID           : libc-gconv-modules-extra@2.43-2ubuntu2.3 
 │                       │       ├ PkgName         : libc-gconv-modules-extra 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libc-gconv-modules-extra@2.43-2ubuntu
@@ -919,7 +1214,7 @@
 │                       │                          ├ [2]: https://ubuntu.com/security/notices/USN-8737-1 
 │                       │                          ├ [3]: https://ubuntu.com/security/notices/USN-8737-2 
 │                       │                          ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2026-77117 
-│                       ├ [20]  ╭ VulnerabilityID : CVE-2026-80489 
+│                       ├ [27]  ╭ VulnerabilityID : CVE-2026-80489 
 │                       │       ├ PkgID           : libc-gconv-modules-extra@2.43-2ubuntu2.3 
 │                       │       ├ PkgName         : libc-gconv-modules-extra 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libc-gconv-modules-extra@2.43-2ubuntu
@@ -960,7 +1255,7 @@
 │                       │                          ├ [2]: https://ubuntu.com/security/notices/USN-8737-1 
 │                       │                          ├ [3]: https://ubuntu.com/security/notices/USN-8737-2 
 │                       │                          ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2026-80489 
-│                       ├ [21]  ╭ VulnerabilityID : CVE-2026-18374 
+│                       ├ [28]  ╭ VulnerabilityID : CVE-2026-18374 
 │                       │       ├ PkgID           : libc6@2.43-2ubuntu2.3 
 │                       │       ├ PkgName         : libc6 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libc6@2.43-2ubuntu2.3?arch=amd64&dist
@@ -1009,7 +1304,7 @@
 │                       │       │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2026-18374 
 │                       │       ├ PublishedDate   : 2026-08-27T20:17:03.553Z 
 │                       │       ╰ LastModifiedDate: 2026-09-03T16:43:15.293Z 
-│                       ├ [22]  ╭ VulnerabilityID : CVE-2026-19499 
+│                       ├ [29]  ╭ VulnerabilityID : CVE-2026-19499 
 │                       │       ├ PkgID           : libc6@2.43-2ubuntu2.3 
 │                       │       ├ PkgName         : libc6 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libc6@2.43-2ubuntu2.3?arch=amd64&dist
@@ -1049,7 +1344,7 @@
 │                       │                          ├ [2]: https://ubuntu.com/security/notices/USN-8737-1 
 │                       │                          ├ [3]: https://ubuntu.com/security/notices/USN-8737-2 
 │                       │                          ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2026-19499 
-│                       ├ [23]  ╭ VulnerabilityID : CVE-2026-19542 
+│                       ├ [30]  ╭ VulnerabilityID : CVE-2026-19542 
 │                       │       ├ PkgID           : libc6@2.43-2ubuntu2.3 
 │                       │       ├ PkgName         : libc6 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libc6@2.43-2ubuntu2.3?arch=amd64&dist
@@ -1087,7 +1382,7 @@
 │                       │                          ├ [2]: https://ubuntu.com/security/notices/USN-8737-1 
 │                       │                          ├ [3]: https://ubuntu.com/security/notices/USN-8737-2 
 │                       │                          ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2026-19542 
-│                       ├ [24]  ╭ VulnerabilityID : CVE-2026-6368 
+│                       ├ [31]  ╭ VulnerabilityID : CVE-2026-6368 
 │                       │       ├ PkgID           : libc6@2.43-2ubuntu2.3 
 │                       │       ├ PkgName         : libc6 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libc6@2.43-2ubuntu2.3?arch=amd64&dist
@@ -1132,7 +1427,7 @@
 │                       │       │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2026-6368 
 │                       │       ├ PublishedDate   : 2026-08-10T19:17:30.713Z 
 │                       │       ╰ LastModifiedDate: 2026-09-03T16:43:15.293Z 
-│                       ├ [25]  ╭ VulnerabilityID : CVE-2026-6791 
+│                       ├ [32]  ╭ VulnerabilityID : CVE-2026-6791 
 │                       │       ├ PkgID           : libc6@2.43-2ubuntu2.3 
 │                       │       ├ PkgName         : libc6 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libc6@2.43-2ubuntu2.3?arch=amd64&dist
@@ -1183,7 +1478,7 @@
 │                       │       │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2026-6791 
 │                       │       ├ PublishedDate   : 2026-08-10T19:17:30.877Z 
 │                       │       ╰ LastModifiedDate: 2026-09-03T16:43:15.293Z 
-│                       ├ [26]  ╭ VulnerabilityID : CVE-2026-77117 
+│                       ├ [33]  ╭ VulnerabilityID : CVE-2026-77117 
 │                       │       ├ PkgID           : libc6@2.43-2ubuntu2.3 
 │                       │       ├ PkgName         : libc6 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libc6@2.43-2ubuntu2.3?arch=amd64&dist
@@ -1223,7 +1518,7 @@
 │                       │                          ├ [2]: https://ubuntu.com/security/notices/USN-8737-1 
 │                       │                          ├ [3]: https://ubuntu.com/security/notices/USN-8737-2 
 │                       │                          ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2026-77117 
-│                       ├ [27]  ╭ VulnerabilityID : CVE-2026-80489 
+│                       ├ [34]  ╭ VulnerabilityID : CVE-2026-80489 
 │                       │       ├ PkgID           : libc6@2.43-2ubuntu2.3 
 │                       │       ├ PkgName         : libc6 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libc6@2.43-2ubuntu2.3?arch=amd64&dist
@@ -1264,7 +1559,302 @@
 │                       │                          ├ [2]: https://ubuntu.com/security/notices/USN-8737-1 
 │                       │                          ├ [3]: https://ubuntu.com/security/notices/USN-8737-2 
 │                       │                          ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2026-80489 
-│                       ├ [28]  ╭ VulnerabilityID : CVE-2026-8932 
+│                       ├ [35]  ╭ VulnerabilityID : CVE-2026-13608 
+│                       │       ├ PkgID           : libcurl4t64@8.18.0-1ubuntu2.4 
+│                       │       ├ PkgName         : libcurl4t64 
+│                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libcurl4t64@8.18.0-1ubuntu2.4?arch=am
+│                       │       │                  │       d64&distro=ubuntu-26.04 
+│                       │       │                  ╰ UID : 7abe0215def5bdbc 
+│                       │       ├ InstalledVersion: 8.18.0-1ubuntu2.4 
+│                       │       ├ Status          : affected 
+│                       │       ├ Layer            ╭ Digest: sha256:9828e86a4f220c858c27038e827ed54fef1a63f08eb
+│                       │       │                  │         010a14fd7af13590da543 
+│                       │       │                  ╰ DiffID: sha256:718b0340b30f7422f9f61e64777c181088d68ab9a1c
+│                       │       │                            5cd184d97031d5cafaee0 
+│                       │       ├ SeveritySource  : ubuntu 
+│                       │       ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-13608 
+│                       │       ├ DataSource       ╭ ID  : ubuntu 
+│                       │       │                  ├ Name: Ubuntu CVE Tracker 
+│                       │       │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                       │       ├ Fingerprint     : sha256:caf6f11333ecc15fc5eb752aae751d59cdcb62ccd64efd4a5f1f
+│                       │       │                   e1e19ab0bf25 
+│                       │       ├ Title           : A flaw in the libcurl SASL negotiation for LDAP
+│                       │       │                   authentication allows  ... 
+│                       │       ├ Description     : A flaw in the libcurl SASL negotiation for LDAP
+│                       │       │                   authentication allows an
+│                       │       │                   incomplete handshake sequence to be misinterpreted as a
+│                       │       │                   successful
+│                       │       │                   cryptographic verification. An attacker executing a
+│                       │       │                   Man-in-the-Middle (MITM)
+│                       │       │                   attack can inject a premature or shortcut response that
+│                       │       │                   bypasses complete peer
+│                       │       │                   validation. 
+│                       │       ├ Severity        : MEDIUM 
+│                       │       ├ CweIDs           ─ [0]: CWE-923 
+│                       │       ├ VendorSeverity   ─ ubuntu: 2 
+│                       │       ├ References       ╭ [0]: https://curl.se/docs/CVE-2026-13608.html 
+│                       │       │                  ├ [1]: https://curl.se/docs/CVE-2026-13608.json 
+│                       │       │                  ├ [2]: https://github.com/curl/curl/pull/22213/changes/1a00e
+│                       │       │                  │      2a73675c9521d214aafd6c02b553bfeb022 
+│                       │       │                  ├ [3]: https://hackerone.com/reports/3822248 
+│                       │       │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2026-13608 
+│                       │       ├ PublishedDate   : 2026-09-06T18:17:19.81Z 
+│                       │       ╰ LastModifiedDate: 2026-09-11T19:59:55.2Z 
+│                       ├ [36]  ╭ VulnerabilityID : CVE-2026-18924 
+│                       │       ├ PkgID           : libcurl4t64@8.18.0-1ubuntu2.4 
+│                       │       ├ PkgName         : libcurl4t64 
+│                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libcurl4t64@8.18.0-1ubuntu2.4?arch=am
+│                       │       │                  │       d64&distro=ubuntu-26.04 
+│                       │       │                  ╰ UID : 7abe0215def5bdbc 
+│                       │       ├ InstalledVersion: 8.18.0-1ubuntu2.4 
+│                       │       ├ Status          : affected 
+│                       │       ├ Layer            ╭ Digest: sha256:9828e86a4f220c858c27038e827ed54fef1a63f08eb
+│                       │       │                  │         010a14fd7af13590da543 
+│                       │       │                  ╰ DiffID: sha256:718b0340b30f7422f9f61e64777c181088d68ab9a1c
+│                       │       │                            5cd184d97031d5cafaee0 
+│                       │       ├ SeveritySource  : ubuntu 
+│                       │       ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-18924 
+│                       │       ├ DataSource       ╭ ID  : ubuntu 
+│                       │       │                  ├ Name: Ubuntu CVE Tracker 
+│                       │       │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                       │       ├ Fingerprint     : sha256:bf596eaa82b0e031f200f4ccad14d17c24fb391c58681b8a4b3e
+│                       │       │                   bd0f64d17a61 
+│                       │       ├ Title           : A flaw in libcurl's handling of HTTP/2 Server Push streams,
+│                       │       │                    when the p ... 
+│                       │       ├ Description     : A flaw in libcurl's handling of HTTP/2 Server Push streams,
+│                       │       │                    when the parent
+│                       │       │                   handle is set to share connections with other handles, can
+│                       │       │                   lead to
+│                       │       │                   use-after-free in the cleanup process. 
+│                       │       ├ Severity        : MEDIUM 
+│                       │       ├ CweIDs           ─ [0]: CWE-416 
+│                       │       ├ VendorSeverity   ─ ubuntu: 2 
+│                       │       ├ References       ╭ [0]: https://curl.se/docs/CVE-2026-18924.html 
+│                       │       │                  ├ [1]: https://curl.se/docs/CVE-2026-18924.json 
+│                       │       │                  ├ [2]: https://github.com/curl/curl/commit/90325ff0444cbdff3
+│                       │       │                  │      68bda5d26d6 
+│                       │       │                  ├ [3]: https://hackerone.com/reports/3916059 
+│                       │       │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2026-18924 
+│                       │       ├ PublishedDate   : 2026-09-06T18:17:20.553Z 
+│                       │       ╰ LastModifiedDate: 2026-09-11T20:01:29.6Z 
+│                       ├ [37]  ╭ VulnerabilityID : CVE-2026-19931 
+│                       │       ├ PkgID           : libcurl4t64@8.18.0-1ubuntu2.4 
+│                       │       ├ PkgName         : libcurl4t64 
+│                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libcurl4t64@8.18.0-1ubuntu2.4?arch=am
+│                       │       │                  │       d64&distro=ubuntu-26.04 
+│                       │       │                  ╰ UID : 7abe0215def5bdbc 
+│                       │       ├ InstalledVersion: 8.18.0-1ubuntu2.4 
+│                       │       ├ Status          : affected 
+│                       │       ├ Layer            ╭ Digest: sha256:9828e86a4f220c858c27038e827ed54fef1a63f08eb
+│                       │       │                  │         010a14fd7af13590da543 
+│                       │       │                  ╰ DiffID: sha256:718b0340b30f7422f9f61e64777c181088d68ab9a1c
+│                       │       │                            5cd184d97031d5cafaee0 
+│                       │       ├ SeveritySource  : ubuntu 
+│                       │       ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-19931 
+│                       │       ├ DataSource       ╭ ID  : ubuntu 
+│                       │       │                  ├ Name: Ubuntu CVE Tracker 
+│                       │       │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                       │       ├ Fingerprint     : sha256:8acea7a50bb905916a381d24d5d957283b41c23b433e53947092
+│                       │       │                   d325c20dd294 
+│                       │       ├ Title           : A flaw in libcurl makes it wrongly reuse an HTTP connection
+│                       │       │                    setup for  ... 
+│                       │       ├ Description     : A flaw in libcurl makes it wrongly reuse an HTTP connection
+│                       │       │                    setup for a given
+│                       │       │                   hostname using Negotiate authentication, when the initial
+│                       │       │                   request is done
+│                       │       │                   using empty credentials. This can make user B's request get
+│                       │       │                    sent over user A's
+│                       │       │                   previously authenticated connection. 
+│                       │       ├ Severity        : MEDIUM 
+│                       │       ├ CweIDs           ─ [0]: CWE-488 
+│                       │       ├ VendorSeverity   ─ ubuntu: 2 
+│                       │       ├ References       ╭ [0]: https://curl.se/docs/CVE-2026-19931.html 
+│                       │       │                  ├ [1]: https://curl.se/docs/CVE-2026-19931.json 
+│                       │       │                  ├ [2]: https://github.com/curl/curl/commit/7103a93b05bc69ea9
+│                       │       │                  │      8ed9d 
+│                       │       │                  ├ [3]: https://hackerone.com/reports/3923520 
+│                       │       │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2026-19931 
+│                       │       ├ PublishedDate   : 2026-09-06T18:17:20.733Z 
+│                       │       ╰ LastModifiedDate: 2026-09-11T20:01:46.607Z 
+│                       ├ [38]  ╭ VulnerabilityID : CVE-2026-80229 
+│                       │       ├ PkgID           : libcurl4t64@8.18.0-1ubuntu2.4 
+│                       │       ├ PkgName         : libcurl4t64 
+│                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libcurl4t64@8.18.0-1ubuntu2.4?arch=am
+│                       │       │                  │       d64&distro=ubuntu-26.04 
+│                       │       │                  ╰ UID : 7abe0215def5bdbc 
+│                       │       ├ InstalledVersion: 8.18.0-1ubuntu2.4 
+│                       │       ├ Status          : affected 
+│                       │       ├ Layer            ╭ Digest: sha256:9828e86a4f220c858c27038e827ed54fef1a63f08eb
+│                       │       │                  │         010a14fd7af13590da543 
+│                       │       │                  ╰ DiffID: sha256:718b0340b30f7422f9f61e64777c181088d68ab9a1c
+│                       │       │                            5cd184d97031d5cafaee0 
+│                       │       ├ SeveritySource  : ubuntu 
+│                       │       ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-80229 
+│                       │       ├ DataSource       ╭ ID  : ubuntu 
+│                       │       │                  ├ Name: Ubuntu CVE Tracker 
+│                       │       │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                       │       ├ Fingerprint     : sha256:621f99b8b18a3a87ad59902f86e72b24a5f35fad1276c5298672
+│                       │       │                   34ef11162de3 
+│                       │       ├ Title           : When performing transfers via libcurl\u2019s multi
+│                       │       │                   interface, pooled T ... 
+│                       │       ├ Description     : When performing transfers via libcurl’s multi interface,
+│                       │       │                   pooled TLS
+│                       │       │                   connections can outlive their originating easy handles. In
+│                       │       │                   OpenSSL 3 provider
+│                       │       │                   configurations, libcurl attaches an allocated library
+│                       │       │                   context to the easy
+│                       │       │                   handle's state and passes it to OpenSSL without acquiring
+│                       │       │                   an ownership
+│                       │       │                   reference; destroying the easy handle prematurely frees
+│                       │       │                   this context while the
+│                       │       │                   active connection retains a dangling pointer, leading to a
+│                       │       │                   heap-use-after-free
+│                       │       │                   upon subsequent I/O or post-handshake operations. 
+│                       │       ├ Severity        : MEDIUM 
+│                       │       ├ CweIDs           ─ [0]: CWE-416 
+│                       │       ├ VendorSeverity   ─ ubuntu: 2 
+│                       │       ├ References       ╭ [0]: https://curl.se/docs/CVE-2026-80229.html 
+│                       │       │                  ├ [1]: https://curl.se/docs/CVE-2026-80229.json 
+│                       │       │                  ├ [2]: https://github.com/curl/curl/commit/7ea37abc6ac0120ba
+│                       │       │                  │      5f6d9 
+│                       │       │                  ├ [3]: https://hackerone.com/reports/3969255 
+│                       │       │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2026-80229 
+│                       │       ├ PublishedDate   : 2026-09-06T18:17:22.217Z 
+│                       │       ╰ LastModifiedDate: 2026-09-11T20:06:12.563Z 
+│                       ├ [39]  ╭ VulnerabilityID : CVE-2026-80230 
+│                       │       ├ PkgID           : libcurl4t64@8.18.0-1ubuntu2.4 
+│                       │       ├ PkgName         : libcurl4t64 
+│                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libcurl4t64@8.18.0-1ubuntu2.4?arch=am
+│                       │       │                  │       d64&distro=ubuntu-26.04 
+│                       │       │                  ╰ UID : 7abe0215def5bdbc 
+│                       │       ├ InstalledVersion: 8.18.0-1ubuntu2.4 
+│                       │       ├ Status          : affected 
+│                       │       ├ Layer            ╭ Digest: sha256:9828e86a4f220c858c27038e827ed54fef1a63f08eb
+│                       │       │                  │         010a14fd7af13590da543 
+│                       │       │                  ╰ DiffID: sha256:718b0340b30f7422f9f61e64777c181088d68ab9a1c
+│                       │       │                            5cd184d97031d5cafaee0 
+│                       │       ├ SeveritySource  : ubuntu 
+│                       │       ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-80230 
+│                       │       ├ DataSource       ╭ ID  : ubuntu 
+│                       │       │                  ├ Name: Ubuntu CVE Tracker 
+│                       │       │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                       │       ├ Fingerprint     : sha256:1b5f47e8b9fb7ea9d836a85b78f867c0f3d10c0ada663ed04940
+│                       │       │                   fb89fdc3fcb8 
+│                       │       ├ Title           : When `CURLOPT_PINNEDPUBLICKEY` is configured alongside
+│                       │       │                   options that di ... 
+│                       │       ├ Description     : When `CURLOPT_PINNEDPUBLICKEY` is configured alongside
+│                       │       │                   options that disable
+│                       │       │                   standard peer verification (`CURLOPT_SSL_VERIFYPEER = 0`
+│                       │       │                   and
+│                       │       │                   `CURLOPT_SSL_VERIFYHOST = 0`), libcurl fails to enforce
+│                       │       │                   public key pinning on
+│                       │       │                   connections established without a presented server
+│                       │       │                   certificate. Bypassing the
+│                       │       │                   pinning check under these disabled-verification conditions
+│                       │       │                   allows
+│                       │       │                   unauthenticated connections to succeed when they should be
+│                       │       │                   rejected. 
+│                       │       ├ Severity        : MEDIUM 
+│                       │       ├ CweIDs           ─ [0]: CWE-295 
+│                       │       ├ VendorSeverity   ─ ubuntu: 2 
+│                       │       ├ References       ╭ [0]: https://curl.se/docs/CVE-2026-80230.html 
+│                       │       │                  ├ [1]: https://curl.se/docs/CVE-2026-80230.json 
+│                       │       │                  ├ [2]: https://github.com/curl/curl/commit/5267ed859d545534d
+│                       │       │                  │      0c21 
+│                       │       │                  ├ [3]: https://hackerone.com/reports/3969300 
+│                       │       │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2026-80230 
+│                       │       ├ PublishedDate   : 2026-09-06T18:17:22.327Z 
+│                       │       ╰ LastModifiedDate: 2026-09-11T20:05:56.143Z 
+│                       ├ [40]  ╭ VulnerabilityID : CVE-2026-80255 
+│                       │       ├ PkgID           : libcurl4t64@8.18.0-1ubuntu2.4 
+│                       │       ├ PkgName         : libcurl4t64 
+│                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libcurl4t64@8.18.0-1ubuntu2.4?arch=am
+│                       │       │                  │       d64&distro=ubuntu-26.04 
+│                       │       │                  ╰ UID : 7abe0215def5bdbc 
+│                       │       ├ InstalledVersion: 8.18.0-1ubuntu2.4 
+│                       │       ├ Status          : affected 
+│                       │       ├ Layer            ╭ Digest: sha256:9828e86a4f220c858c27038e827ed54fef1a63f08eb
+│                       │       │                  │         010a14fd7af13590da543 
+│                       │       │                  ╰ DiffID: sha256:718b0340b30f7422f9f61e64777c181088d68ab9a1c
+│                       │       │                            5cd184d97031d5cafaee0 
+│                       │       ├ SeveritySource  : ubuntu 
+│                       │       ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-80255 
+│                       │       ├ DataSource       ╭ ID  : ubuntu 
+│                       │       │                  ├ Name: Ubuntu CVE Tracker 
+│                       │       │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                       │       ├ Fingerprint     : sha256:d052d5931e7f84d012f3f126373ec06b439f28e031a2fe31adca
+│                       │       │                   706a0036e83a 
+│                       │       ├ Title           : A `Set-Cookie:` header using tab (horizontal tab, ASCII
+│                       │       │                   code 9) instea ... 
+│                       │       ├ Description     : A `Set-Cookie:` header using tab (horizontal tab, ASCII
+│                       │       │                   code 9) instead of
+│                       │       │                   space (ascii code 32) immediately before the `Secure`
+│                       │       │                   attribute causes curl to
+│                       │       │                   store the cookie without its Secure flag. The cookie might
+│                       │       │                   then wrongfully be
+│                       │       │                   sent over plaintext HTTP on subsequent requests to the same
+│                       │       │                    host. 
+│                       │       ├ Severity        : MEDIUM 
+│                       │       ├ CweIDs           ─ [0]: CWE-201 
+│                       │       ├ VendorSeverity   ─ ubuntu: 2 
+│                       │       ├ References       ╭ [0]: https://curl.se/docs/CVE-2026-80255.html 
+│                       │       │                  ├ [1]: https://curl.se/docs/CVE-2026-80255.json 
+│                       │       │                  ├ [2]: https://github.com/curl/curl/commit/4f6aa41a0145e930e
+│                       │       │                  │      76677 
+│                       │       │                  ├ [3]: https://hackerone.com/reports/3972395 
+│                       │       │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2026-80255 
+│                       │       ├ PublishedDate   : 2026-09-06T18:17:22.623Z 
+│                       │       ╰ LastModifiedDate: 2026-09-11T20:02:30.16Z 
+│                       ├ [41]  ╭ VulnerabilityID : CVE-2026-82209 
+│                       │       ├ PkgID           : libcurl4t64@8.18.0-1ubuntu2.4 
+│                       │       ├ PkgName         : libcurl4t64 
+│                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libcurl4t64@8.18.0-1ubuntu2.4?arch=am
+│                       │       │                  │       d64&distro=ubuntu-26.04 
+│                       │       │                  ╰ UID : 7abe0215def5bdbc 
+│                       │       ├ InstalledVersion: 8.18.0-1ubuntu2.4 
+│                       │       ├ Status          : affected 
+│                       │       ├ Layer            ╭ Digest: sha256:9828e86a4f220c858c27038e827ed54fef1a63f08eb
+│                       │       │                  │         010a14fd7af13590da543 
+│                       │       │                  ╰ DiffID: sha256:718b0340b30f7422f9f61e64777c181088d68ab9a1c
+│                       │       │                            5cd184d97031d5cafaee0 
+│                       │       ├ SeveritySource  : ubuntu 
+│                       │       ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-82209 
+│                       │       ├ DataSource       ╭ ID  : ubuntu 
+│                       │       │                  ├ Name: Ubuntu CVE Tracker 
+│                       │       │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                       │       ├ Fingerprint     : sha256:361cf22f22fd01db53a4d13ddf5f234a555ea3aa7961f67a4606
+│                       │       │                   c0824dc2044f 
+│                       │       ├ Title           : When libpsl support is enabled, libcurl fails to enforce
+│                       │       │                   the Public Su ... 
+│                       │       ├ Description     : When libpsl support is enabled, libcurl fails to enforce
+│                       │       │                   the Public Suffix
+│                       │       │                   List boundary check when processing a `Set-Cookie` header
+│                       │       │                   where the `Domain`
+│                       │       │                   attribute explicitly matches an origin host that is itself
+│                       │       │                   a public suffix
+│                       │       │                   (e.g., `Domain=co.uk` set by `co.uk`).
+│                       │       │                   
+│                       │       │                   Instead of coercing it into a strict host-only cookie,
+│                       │       │                   libcurl saves the
+│                       │       │                   cookie with wildcard domain scope (`.co.uk`). Consequently,
+│                       │       │                    the cookie is
+│                       │       │                   inappropriately included in subsequent outbound requests or
+│                       │       │                    HTTP redirects to
+│                       │       │                   arbitrary sibling subdomains under the same public suffix
+│                       │       │                   (e.g.,
+│                       │       │                   `attacker.co.uk`). 
+│                       │       ├ Severity        : MEDIUM 
+│                       │       ├ CweIDs           ─ [0]: CWE-201 
+│                       │       ├ VendorSeverity   ─ ubuntu: 2 
+│                       │       ├ References       ╭ [0]: https://curl.se/docs/CVE-2026-82209.html 
+│                       │       │                  ├ [1]: https://curl.se/docs/CVE-2026-82209.json 
+│                       │       │                  ├ [2]: https://github.com/curl/curl/commit/95c1e8915dce64606
+│                       │       │                  │      bd753fd47f 
+│                       │       │                  ├ [3]: https://hackerone.com/reports/3972385 
+│                       │       │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2026-82209 
+│                       │       ├ PublishedDate   : 2026-09-06T18:17:22.847Z 
+│                       │       ╰ LastModifiedDate: 2026-09-11T20:01:57.943Z 
+│                       ├ [42]  ╭ VulnerabilityID : CVE-2026-8932 
 │                       │       ├ PkgID           : libcurl4t64@8.18.0-1ubuntu2.4 
 │                       │       ├ PkgName         : libcurl4t64 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libcurl4t64@8.18.0-1ubuntu2.4?arch=am
@@ -1325,7 +1915,7 @@
 │                       │       │                  ╰ [10]: https://www.cve.org/CVERecord?id=CVE-2026-8932 
 │                       │       ├ PublishedDate   : 2026-07-03T07:16:25.363Z 
 │                       │       ╰ LastModifiedDate: 2026-07-07T23:18:32.137Z 
-│                       ├ [29]  ╭ VulnerabilityID : CVE-2025-66382 
+│                       ├ [43]  ╭ VulnerabilityID : CVE-2025-66382 
 │                       │       ├ PkgID           : libexpat1@2.7.4-1 
 │                       │       ├ PkgName         : libexpat1 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libexpat1@2.7.4-1?arch=amd64&distro=u
@@ -1376,7 +1966,7 @@
 │                       │       │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-66382 
 │                       │       ├ PublishedDate   : 2025-11-28T07:15:57.9Z 
 │                       │       ╰ LastModifiedDate: 2026-06-17T09:56:45.24Z 
-│                       ├ [30]  ╭ VulnerabilityID : CVE-2026-32776 
+│                       ├ [44]  ╭ VulnerabilityID : CVE-2026-32776 
 │                       │       ├ PkgID           : libexpat1@2.7.4-1 
 │                       │       ├ PkgName         : libexpat1 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libexpat1@2.7.4-1?arch=amd64&distro=u
@@ -1426,7 +2016,7 @@
 │                       │       │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2026-32776 
 │                       │       ├ PublishedDate   : 2026-03-16T14:19:44.6Z 
 │                       │       ╰ LastModifiedDate: 2026-07-14T13:18:49.53Z 
-│                       ├ [31]  ╭ VulnerabilityID : CVE-2026-32777 
+│                       ├ [45]  ╭ VulnerabilityID : CVE-2026-32777 
 │                       │       ├ PkgID           : libexpat1@2.7.4-1 
 │                       │       ├ PkgName         : libexpat1 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libexpat1@2.7.4-1?arch=amd64&distro=u
@@ -1478,7 +2068,7 @@
 │                       │       │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2026-32777 
 │                       │       ├ PublishedDate   : 2026-03-16T14:19:44.78Z 
 │                       │       ╰ LastModifiedDate: 2026-07-14T13:18:49.687Z 
-│                       ├ [32]  ╭ VulnerabilityID : CVE-2026-32778 
+│                       ├ [46]  ╭ VulnerabilityID : CVE-2026-32778 
 │                       │       ├ PkgID           : libexpat1@2.7.4-1 
 │                       │       ├ PkgName         : libexpat1 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libexpat1@2.7.4-1?arch=amd64&distro=u
@@ -1529,7 +2119,7 @@
 │                       │       │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2026-32778 
 │                       │       ├ PublishedDate   : 2026-03-16T14:19:44.97Z 
 │                       │       ╰ LastModifiedDate: 2026-07-14T13:18:49.843Z 
-│                       ├ [33]  ╭ VulnerabilityID : CVE-2026-41080 
+│                       ├ [47]  ╭ VulnerabilityID : CVE-2026-41080 
 │                       │       ├ PkgID           : libexpat1@2.7.4-1 
 │                       │       ├ PkgName         : libexpat1 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libexpat1@2.7.4-1?arch=amd64&distro=u
@@ -1580,7 +2170,7 @@
 │                       │       │                         6/1 
 │                       │       ├ PublishedDate   : 2026-04-16T17:16:54.917Z 
 │                       │       ╰ LastModifiedDate: 2026-07-14T13:18:51.257Z 
-│                       ├ [34]  ╭ VulnerabilityID : CVE-2026-45186 
+│                       ├ [48]  ╭ VulnerabilityID : CVE-2026-45186 
 │                       │       ├ PkgID           : libexpat1@2.7.4-1 
 │                       │       ├ PkgName         : libexpat1 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libexpat1@2.7.4-1?arch=amd64&distro=u
@@ -1652,7 +2242,7 @@
 │                       │       │                  ╰ [21]: https://www.cve.org/CVERecord?id=CVE-2026-45186 
 │                       │       ├ PublishedDate   : 2026-05-10T07:16:07.883Z 
 │                       │       ╰ LastModifiedDate: 2026-08-25T13:19:12.733Z 
-│                       ├ [35]  ╭ VulnerabilityID : CVE-2026-50219 
+│                       ├ [49]  ╭ VulnerabilityID : CVE-2026-50219 
 │                       │       ├ PkgID           : libexpat1@2.7.4-1 
 │                       │       ├ PkgName         : libexpat1 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libexpat1@2.7.4-1?arch=amd64&distro=u
@@ -1718,7 +2308,7 @@
 │                       │       │                  ╰ [15]: https://www.cve.org/CVERecord?id=CVE-2026-50219 
 │                       │       ├ PublishedDate   : 2026-06-04T06:16:25.05Z 
 │                       │       ╰ LastModifiedDate: 2026-07-22T20:10:00.127Z 
-│                       ├ [36]  ╭ VulnerabilityID : CVE-2026-56131 
+│                       ├ [50]  ╭ VulnerabilityID : CVE-2026-56131 
 │                       │       ├ PkgID           : libexpat1@2.7.4-1 
 │                       │       ├ PkgName         : libexpat1 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libexpat1@2.7.4-1?arch=amd64&distro=u
@@ -1762,7 +2352,7 @@
 │                       │       │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2026-56131 
 │                       │       ├ PublishedDate   : 2026-06-19T06:17:10.107Z 
 │                       │       ╰ LastModifiedDate: 2026-06-23T20:15:48.007Z 
-│                       ├ [37]  ╭ VulnerabilityID : CVE-2026-56132 
+│                       ├ [51]  ╭ VulnerabilityID : CVE-2026-56132 
 │                       │       ├ PkgID           : libexpat1@2.7.4-1 
 │                       │       ├ PkgName         : libexpat1 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libexpat1@2.7.4-1?arch=amd64&distro=u
@@ -1827,7 +2417,7 @@
 │                       │       │                  ╰ [15]: https://www.cve.org/CVERecord?id=CVE-2026-56132 
 │                       │       ├ PublishedDate   : 2026-06-19T06:17:10.253Z 
 │                       │       ╰ LastModifiedDate: 2026-06-23T20:15:26.23Z 
-│                       ├ [38]  ╭ VulnerabilityID : CVE-2026-56403 
+│                       ├ [52]  ╭ VulnerabilityID : CVE-2026-56403 
 │                       │       ├ PkgID           : libexpat1@2.7.4-1 
 │                       │       ├ PkgName         : libexpat1 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libexpat1@2.7.4-1?arch=amd64&distro=u
@@ -1872,7 +2462,7 @@
 │                       │       │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2026-56403 
 │                       │       ├ PublishedDate   : 2026-06-21T16:16:26.59Z 
 │                       │       ╰ LastModifiedDate: 2026-06-23T20:15:16.76Z 
-│                       ├ [39]  ╭ VulnerabilityID : CVE-2026-56404 
+│                       ├ [53]  ╭ VulnerabilityID : CVE-2026-56404 
 │                       │       ├ PkgID           : libexpat1@2.7.4-1 
 │                       │       ├ PkgName         : libexpat1 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libexpat1@2.7.4-1?arch=amd64&distro=u
@@ -1917,7 +2507,7 @@
 │                       │       │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2026-56404 
 │                       │       ├ PublishedDate   : 2026-06-21T16:16:27.62Z 
 │                       │       ╰ LastModifiedDate: 2026-06-23T20:15:05.85Z 
-│                       ├ [40]  ╭ VulnerabilityID : CVE-2026-56405 
+│                       ├ [54]  ╭ VulnerabilityID : CVE-2026-56405 
 │                       │       ├ PkgID           : libexpat1@2.7.4-1 
 │                       │       ├ PkgName         : libexpat1 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libexpat1@2.7.4-1?arch=amd64&distro=u
@@ -1963,7 +2553,7 @@
 │                       │       │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2026-56405 
 │                       │       ├ PublishedDate   : 2026-06-21T16:16:27.74Z 
 │                       │       ╰ LastModifiedDate: 2026-06-23T20:14:51.73Z 
-│                       ├ [41]  ╭ VulnerabilityID : CVE-2026-56406 
+│                       ├ [55]  ╭ VulnerabilityID : CVE-2026-56406 
 │                       │       ├ PkgID           : libexpat1@2.7.4-1 
 │                       │       ├ PkgName         : libexpat1 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libexpat1@2.7.4-1?arch=amd64&distro=u
@@ -2006,7 +2596,7 @@
 │                       │       │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2026-56406 
 │                       │       ├ PublishedDate   : 2026-06-21T16:16:27.87Z 
 │                       │       ╰ LastModifiedDate: 2026-06-23T16:29:06.077Z 
-│                       ├ [42]  ╭ VulnerabilityID : CVE-2026-56407 
+│                       ├ [56]  ╭ VulnerabilityID : CVE-2026-56407 
 │                       │       ├ PkgID           : libexpat1@2.7.4-1 
 │                       │       ├ PkgName         : libexpat1 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libexpat1@2.7.4-1?arch=amd64&distro=u
@@ -2048,7 +2638,7 @@
 │                       │       │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2026-56407 
 │                       │       ├ PublishedDate   : 2026-06-21T16:16:27.987Z 
 │                       │       ╰ LastModifiedDate: 2026-06-23T16:28:29.983Z 
-│                       ├ [43]  ╭ VulnerabilityID : CVE-2026-56408 
+│                       ├ [57]  ╭ VulnerabilityID : CVE-2026-56408 
 │                       │       ├ PkgID           : libexpat1@2.7.4-1 
 │                       │       ├ PkgName         : libexpat1 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libexpat1@2.7.4-1?arch=amd64&distro=u
@@ -2084,7 +2674,7 @@
 │                       │       │                  ╰ [2]: https://www.cve.org/CVERecord?id=CVE-2026-56408 
 │                       │       ├ PublishedDate   : 2026-06-21T16:16:28.11Z 
 │                       │       ╰ LastModifiedDate: 2026-06-23T16:27:26.523Z 
-│                       ├ [44]  ╭ VulnerabilityID : CVE-2026-56409 
+│                       ├ [58]  ╭ VulnerabilityID : CVE-2026-56409 
 │                       │       ├ PkgID           : libexpat1@2.7.4-1 
 │                       │       ├ PkgName         : libexpat1 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libexpat1@2.7.4-1?arch=amd64&distro=u
@@ -2120,7 +2710,7 @@
 │                       │       │                  ╰ [2]: https://www.cve.org/CVERecord?id=CVE-2026-56409 
 │                       │       ├ PublishedDate   : 2026-06-21T16:16:28.23Z 
 │                       │       ╰ LastModifiedDate: 2026-06-23T16:21:55.607Z 
-│                       ├ [45]  ╭ VulnerabilityID : CVE-2026-56410 
+│                       ├ [59]  ╭ VulnerabilityID : CVE-2026-56410 
 │                       │       ├ PkgID           : libexpat1@2.7.4-1 
 │                       │       ├ PkgName         : libexpat1 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libexpat1@2.7.4-1?arch=amd64&distro=u
@@ -2161,7 +2751,7 @@
 │                       │       │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2026-56410 
 │                       │       ├ PublishedDate   : 2026-06-21T16:16:28.36Z 
 │                       │       ╰ LastModifiedDate: 2026-06-23T16:18:16.427Z 
-│                       ├ [46]  ╭ VulnerabilityID : CVE-2026-56411 
+│                       ├ [60]  ╭ VulnerabilityID : CVE-2026-56411 
 │                       │       ├ PkgID           : libexpat1@2.7.4-1 
 │                       │       ├ PkgName         : libexpat1 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libexpat1@2.7.4-1?arch=amd64&distro=u
@@ -2202,7 +2792,7 @@
 │                       │       │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2026-56411 
 │                       │       ├ PublishedDate   : 2026-06-21T17:16:44.523Z 
 │                       │       ╰ LastModifiedDate: 2026-06-23T16:16:36.417Z 
-│                       ├ [47]  ╭ VulnerabilityID : CVE-2026-56412 
+│                       ├ [61]  ╭ VulnerabilityID : CVE-2026-56412 
 │                       │       ├ PkgID           : libexpat1@2.7.4-1 
 │                       │       ├ PkgName         : libexpat1 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libexpat1@2.7.4-1?arch=amd64&distro=u
@@ -2252,7 +2842,7 @@
 │                       │       │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2026-56412 
 │                       │       ├ PublishedDate   : 2026-06-21T17:16:44.657Z 
 │                       │       ╰ LastModifiedDate: 2026-06-23T15:31:30.853Z 
-│                       ├ [48]  ╭ VulnerabilityID : CVE-2026-66046 
+│                       ├ [62]  ╭ VulnerabilityID : CVE-2026-66046 
 │                       │       ├ PkgID           : libexpat1@2.7.4-1 
 │                       │       ├ PkgName         : libexpat1 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libexpat1@2.7.4-1?arch=amd64&distro=u
@@ -2296,7 +2886,7 @@
 │                       │       │                         service-via-storeatts-quadratic-complexity 
 │                       │       ├ PublishedDate   : 2026-08-18T15:16:57Z 
 │                       │       ╰ LastModifiedDate: 2026-08-20T16:17:40.66Z 
-│                       ├ [49]  ╭ VulnerabilityID : CVE-2026-72522 
+│                       ├ [63]  ╭ VulnerabilityID : CVE-2026-72522 
 │                       │       ├ PkgID           : libexpat1@2.7.4-1 
 │                       │       ├ PkgName         : libexpat1 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libexpat1@2.7.4-1?arch=amd64&distro=u
@@ -2338,7 +2928,7 @@
 │                       │       │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2026-72522 
 │                       │       ├ PublishedDate   : 2026-08-10T04:16:50.91Z 
 │                       │       ╰ LastModifiedDate: 2026-08-31T19:33:11.197Z 
-│                       ├ [50]  ╭ VulnerabilityID : CVE-2026-76641 
+│                       ├ [64]  ╭ VulnerabilityID : CVE-2026-76641 
 │                       │       ├ PkgID           : libexpat1@2.7.4-1 
 │                       │       ├ PkgName         : libexpat1 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libexpat1@2.7.4-1?arch=amd64&distro=u
@@ -2382,7 +2972,7 @@
 │                       │       │                         nds-read-via-dtdcopy 
 │                       │       ├ PublishedDate   : 2026-08-20T18:16:51.887Z 
 │                       │       ╰ LastModifiedDate: 2026-08-20T19:17:04.43Z 
-│                       ├ [51]  ╭ VulnerabilityID : CVE-2026-76957 
+│                       ├ [65]  ╭ VulnerabilityID : CVE-2026-76957 
 │                       │       ├ PkgID           : libexpat1@2.7.4-1 
 │                       │       ├ PkgName         : libexpat1 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libexpat1@2.7.4-1?arch=amd64&distro=u
@@ -2427,7 +3017,7 @@
 │                       │       │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2026-76957 
 │                       │       ├ PublishedDate   : 2026-08-20T05:16:29.747Z 
 │                       │       ╰ LastModifiedDate: 2026-09-08T20:56:31.86Z 
-│                       ├ [52]  ╭ VulnerabilityID : CVE-2026-41256 
+│                       ├ [66]  ╭ VulnerabilityID : CVE-2026-41256 
 │                       │       ├ PkgID           : libjq1@1.8.1-4ubuntu2 
 │                       │       ├ PkgName         : libjq1 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libjq1@1.8.1-4ubuntu2?arch=amd64&dist
@@ -2475,7 +3065,7 @@
 │                       │       │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2026-41256 
 │                       │       ├ PublishedDate   : 2026-05-11T18:16:33.983Z 
 │                       │       ╰ LastModifiedDate: 2026-06-17T10:46:23.713Z 
-│                       ├ [53]  ╭ VulnerabilityID : CVE-2026-41257 
+│                       ├ [67]  ╭ VulnerabilityID : CVE-2026-41257 
 │                       │       ├ PkgID           : libjq1@1.8.1-4ubuntu2 
 │                       │       ├ PkgName         : libjq1 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libjq1@1.8.1-4ubuntu2?arch=amd64&dist
@@ -2524,7 +3114,7 @@
 │                       │       │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2026-41257 
 │                       │       ├ PublishedDate   : 2026-05-11T18:16:34.127Z 
 │                       │       ╰ LastModifiedDate: 2026-06-17T10:46:23.82Z 
-│                       ├ [54]  ╭ VulnerabilityID : CVE-2026-43895 
+│                       ├ [68]  ╭ VulnerabilityID : CVE-2026-43895 
 │                       │       ├ PkgID           : libjq1@1.8.1-4ubuntu2 
 │                       │       ├ PkgName         : libjq1 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libjq1@1.8.1-4ubuntu2?arch=amd64&dist
@@ -2572,7 +3162,7 @@
 │                       │       │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2026-43895 
 │                       │       ├ PublishedDate   : 2026-05-11T18:16:37.387Z 
 │                       │       ╰ LastModifiedDate: 2026-06-17T10:50:02.68Z 
-│                       ├ [55]  ╭ VulnerabilityID : CVE-2026-43896 
+│                       ├ [69]  ╭ VulnerabilityID : CVE-2026-43896 
 │                       │       ├ PkgID           : libjq1@1.8.1-4ubuntu2 
 │                       │       ├ PkgName         : libjq1 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libjq1@1.8.1-4ubuntu2?arch=amd64&dist
@@ -2620,7 +3210,7 @@
 │                       │       │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2026-43896 
 │                       │       ├ PublishedDate   : 2026-05-11T18:16:37.53Z 
 │                       │       ╰ LastModifiedDate: 2026-06-17T10:50:02.79Z 
-│                       ├ [56]  ╭ VulnerabilityID : CVE-2026-44777 
+│                       ├ [70]  ╭ VulnerabilityID : CVE-2026-44777 
 │                       │       ├ PkgID           : libjq1@1.8.1-4ubuntu2 
 │                       │       ├ PkgName         : libjq1 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libjq1@1.8.1-4ubuntu2?arch=amd64&dist
@@ -2666,7 +3256,7 @@
 │                       │       │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2026-44777 
 │                       │       ├ PublishedDate   : 2026-05-11T18:16:38.517Z 
 │                       │       ╰ LastModifiedDate: 2026-06-17T10:51:19.04Z 
-│                       ├ [57]  ╭ VulnerabilityID : CVE-2026-13757 
+│                       ├ [71]  ╭ VulnerabilityID : CVE-2026-13757 
 │                       │       ├ PkgID           : libp11-kit0@0.26.2-2 
 │                       │       ├ PkgName         : libp11-kit0 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libp11-kit0@0.26.2-2?arch=amd64&distr
@@ -2733,7 +3323,7 @@
 │                       │       │                  ╰ [20]: https://www.cve.org/CVERecord?id=CVE-2026-13757 
 │                       │       ├ PublishedDate   : 2026-06-29T19:16:40.907Z 
 │                       │       ╰ LastModifiedDate: 2026-09-01T13:18:10.253Z 
-│                       ├ [58]  ╭ VulnerabilityID : CVE-2026-15308 
+│                       ├ [72]  ╭ VulnerabilityID : CVE-2026-15308 
 │                       │       ├ PkgID           : libpython3.14-minimal@3.14.4-1ubuntu0.1 
 │                       │       ├ PkgName         : libpython3.14-minimal 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libpython3.14-minimal@3.14.4-1ubuntu0
@@ -2819,7 +3409,7 @@
 │                       │       │                  ╰ [24]: https://www.cve.org/CVERecord?id=CVE-2026-15308 
 │                       │       ├ PublishedDate   : 2026-07-09T17:16:58.26Z 
 │                       │       ╰ LastModifiedDate: 2026-08-20T17:02:59.313Z 
-│                       ├ [59]  ╭ VulnerabilityID : CVE-2026-4360 
+│                       ├ [73]  ╭ VulnerabilityID : CVE-2026-4360 
 │                       │       ├ PkgID           : libpython3.14-minimal@3.14.4-1ubuntu0.1 
 │                       │       ├ PkgName         : libpython3.14-minimal 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libpython3.14-minimal@3.14.4-1ubuntu0
@@ -2889,7 +3479,7 @@
 │                       │       │                  ╰ [13]: https://www.cve.org/CVERecord?id=CVE-2026-4360 
 │                       │       ├ PublishedDate   : 2026-06-30T15:16:57.193Z 
 │                       │       ╰ LastModifiedDate: 2026-08-13T01:16:53.42Z 
-│                       ├ [60]  ╭ VulnerabilityID : CVE-2026-15308 
+│                       ├ [74]  ╭ VulnerabilityID : CVE-2026-15308 
 │                       │       ├ PkgID           : libpython3.14-stdlib@3.14.4-1ubuntu0.1 
 │                       │       ├ PkgName         : libpython3.14-stdlib 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libpython3.14-stdlib@3.14.4-1ubuntu0.
@@ -2975,7 +3565,7 @@
 │                       │       │                  ╰ [24]: https://www.cve.org/CVERecord?id=CVE-2026-15308 
 │                       │       ├ PublishedDate   : 2026-07-09T17:16:58.26Z 
 │                       │       ╰ LastModifiedDate: 2026-08-20T17:02:59.313Z 
-│                       ├ [61]  ╭ VulnerabilityID : CVE-2026-4360 
+│                       ├ [75]  ╭ VulnerabilityID : CVE-2026-4360 
 │                       │       ├ PkgID           : libpython3.14-stdlib@3.14.4-1ubuntu0.1 
 │                       │       ├ PkgName         : libpython3.14-stdlib 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libpython3.14-stdlib@3.14.4-1ubuntu0.
@@ -3045,7 +3635,7 @@
 │                       │       │                  ╰ [13]: https://www.cve.org/CVERecord?id=CVE-2026-4360 
 │                       │       ├ PublishedDate   : 2026-06-30T15:16:57.193Z 
 │                       │       ╰ LastModifiedDate: 2026-08-13T01:16:53.42Z 
-│                       ├ [62]  ╭ VulnerabilityID : CVE-2026-39113 
+│                       ├ [76]  ╭ VulnerabilityID : CVE-2026-39113 
 │                       │       ├ PkgID           : libsqlite3-0@3.46.1-9ubuntu0.2 
 │                       │       ├ PkgName         : libsqlite3-0 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libsqlite3-0@3.46.1-9ubuntu0.2?arch=a
@@ -3090,7 +3680,7 @@
 │                       │       │                  ╰ [6]: https://www.sqlite.org/sqlar.html 
 │                       │       ├ PublishedDate   : 2026-08-25T21:17:00.08Z 
 │                       │       ╰ LastModifiedDate: 2026-09-09T16:04:24.933Z 
-│                       ├ [63]  ╭ VulnerabilityID : CVE-2026-66032 
+│                       ├ [77]  ╭ VulnerabilityID : CVE-2026-66032 
 │                       │       ├ PkgID           : libssh2-1t64@1.11.1-1ubuntu0.26.04.3 
 │                       │       ├ PkgName         : libssh2-1t64 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libssh2-1t64@1.11.1-1ubuntu0.26.04.3?
@@ -3152,7 +3742,7 @@
 │                       │       │                         ree-heap-corruption-via-sftp-open 
 │                       │       ├ PublishedDate   : 2026-07-24T17:17:35.12Z 
 │                       │       ╰ LastModifiedDate: 2026-08-07T01:07:10.71Z 
-│                       ├ [64]  ╭ VulnerabilityID : CVE-2026-66033 
+│                       ├ [78]  ╭ VulnerabilityID : CVE-2026-66033 
 │                       │       ├ PkgID           : libssh2-1t64@1.11.1-1ubuntu0.26.04.3 
 │                       │       ├ PkgName         : libssh2-1t64 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libssh2-1t64@1.11.1-1ubuntu0.26.04.3?
@@ -3213,7 +3803,7 @@
 │                       │       │                         underflow-dos-via-aes-gcm-cipher-negotiation 
 │                       │       ├ PublishedDate   : 2026-07-24T17:17:35.263Z 
 │                       │       ╰ LastModifiedDate: 2026-07-30T15:44:47.257Z 
-│                       ├ [65]  ╭ VulnerabilityID : CVE-2026-66035 
+│                       ├ [79]  ╭ VulnerabilityID : CVE-2026-66035 
 │                       │       ├ PkgID           : libssh2-1t64@1.11.1-1ubuntu0.26.04.3 
 │                       │       ├ PkgName         : libssh2-1t64 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libssh2-1t64@1.11.1-1ubuntu0.26.04.3?
@@ -3276,7 +3866,7 @@
 │                       │       │                         fer-overflow-via-etm-cipher-negotiation 
 │                       │       ├ PublishedDate   : 2026-07-24T17:17:35.547Z 
 │                       │       ╰ LastModifiedDate: 2026-07-30T15:41:05.69Z 
-│                       ├ [66]  ╭ VulnerabilityID : CVE-2026-40228 
+│                       ├ [80]  ╭ VulnerabilityID : CVE-2026-40228 
 │                       │       ├ PkgID           : libsystemd0@259.5-0ubuntu3.4 
 │                       │       ├ PkgName         : libsystemd0 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libsystemd0@259.5-0ubuntu3.4?arch=amd
@@ -3320,7 +3910,7 @@
 │                       │       │                         8/1 
 │                       │       ├ PublishedDate   : 2026-04-10T16:16:33.753Z 
 │                       │       ╰ LastModifiedDate: 2026-06-17T10:44:53.31Z 
-│                       ├ [67]  ╭ VulnerabilityID : CVE-2026-40228 
+│                       ├ [81]  ╭ VulnerabilityID : CVE-2026-40228 
 │                       │       ├ PkgID           : libudev1@259.5-0ubuntu3.4 
 │                       │       ├ PkgName         : libudev1 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libudev1@259.5-0ubuntu3.4?arch=amd64&
@@ -3364,7 +3954,7 @@
 │                       │       │                         8/1 
 │                       │       ├ PublishedDate   : 2026-04-10T16:16:33.753Z 
 │                       │       ╰ LastModifiedDate: 2026-06-17T10:44:53.31Z 
-│                       ├ [68]  ╭ VulnerabilityID : CVE-2024-56433 
+│                       ├ [82]  ╭ VulnerabilityID : CVE-2024-56433 
 │                       │       ├ PkgID           : login.defs@1:4.17.4-2ubuntu3 
 │                       │       ├ PkgName         : login.defs 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/login.defs@4.17.4-2ubuntu3?arch=all&d
@@ -3428,7 +4018,7 @@
 │                       │       │                  ╰ [14]: https://www.cve.org/CVERecord?id=CVE-2024-56433 
 │                       │       ├ PublishedDate   : 2024-12-26T09:15:07.267Z 
 │                       │       ╰ LastModifiedDate: 2026-06-17T08:12:10.903Z 
-│                       ├ [69]  ╭ VulnerabilityID : CVE-2024-56433 
+│                       ├ [83]  ╭ VulnerabilityID : CVE-2024-56433 
 │                       │       ├ PkgID           : passwd@1:4.17.4-2ubuntu3 
 │                       │       ├ PkgName         : passwd 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/passwd@4.17.4-2ubuntu3?arch=amd64&dis
@@ -3492,7 +4082,7 @@
 │                       │       │                  ╰ [14]: https://www.cve.org/CVERecord?id=CVE-2024-56433 
 │                       │       ├ PublishedDate   : 2024-12-26T09:15:07.267Z 
 │                       │       ╰ LastModifiedDate: 2026-06-17T08:12:10.903Z 
-│                       ├ [70]  ╭ VulnerabilityID : CVE-2026-12087 
+│                       ├ [84]  ╭ VulnerabilityID : CVE-2026-12087 
 │                       │       ├ PkgID           : perl-base@5.40.1-7ubuntu0.1 
 │                       │       ├ PkgName         : perl-base 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/perl-base@5.40.1-7ubuntu0.1?arch=amd6
@@ -3554,7 +4144,7 @@
 │                       │       │                  ╰ [9]: https://www.cve.org/CVERecord?id=CVE-2026-12087 
 │                       │       ├ PublishedDate   : 2026-06-15T22:16:16.197Z 
 │                       │       ╰ LastModifiedDate: 2026-06-17T10:14:37.383Z 
-│                       ├ [71]  ╭ VulnerabilityID : CVE-2026-13221 
+│                       ├ [85]  ╭ VulnerabilityID : CVE-2026-13221 
 │                       │       ├ PkgID           : perl-base@5.40.1-7ubuntu0.1 
 │                       │       ├ PkgName         : perl-base 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/perl-base@5.40.1-7ubuntu0.1?arch=amd6
@@ -3619,7 +4209,7 @@
 │                       │       │                  ╰ [9]: https://www.cve.org/CVERecord?id=CVE-2026-13221 
 │                       │       ├ PublishedDate   : 2026-07-13T17:16:48.923Z 
 │                       │       ╰ LastModifiedDate: 2026-09-08T22:17:37.217Z 
-│                       ├ [72]  ╭ VulnerabilityID : CVE-2026-15534 
+│                       ├ [86]  ╭ VulnerabilityID : CVE-2026-15534 
 │                       │       ├ PkgID           : perl-base@5.40.1-7ubuntu0.1 
 │                       │       ├ PkgName         : perl-base 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/perl-base@5.40.1-7ubuntu0.1?arch=amd6
@@ -3682,7 +4272,7 @@
 │                       │       │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2026-15534 
 │                       │       ├ PublishedDate   : 2026-08-09T18:16:42.8Z 
 │                       │       ╰ LastModifiedDate: 2026-09-08T22:17:38.113Z 
-│                       ├ [73]  ╭ VulnerabilityID : CVE-2026-19487 
+│                       ├ [87]  ╭ VulnerabilityID : CVE-2026-19487 
 │                       │       ├ PkgID           : perl-base@5.40.1-7ubuntu0.1 
 │                       │       ├ PkgName         : perl-base 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/perl-base@5.40.1-7ubuntu0.1?arch=amd6
@@ -3744,7 +4334,7 @@
 │                       │       │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2026-19487 
 │                       │       ├ PublishedDate   : 2026-08-13T16:17:59.44Z 
 │                       │       ╰ LastModifiedDate: 2026-08-28T15:42:20.06Z 
-│                       ├ [74]  ╭ VulnerabilityID : CVE-2026-57432 
+│                       ├ [88]  ╭ VulnerabilityID : CVE-2026-57432 
 │                       │       ├ PkgID           : perl-base@5.40.1-7ubuntu0.1 
 │                       │       ├ PkgName         : perl-base 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/perl-base@5.40.1-7ubuntu0.1?arch=amd6
@@ -3809,7 +4399,7 @@
 │                       │       │                  ╰ [9]: https://www.cve.org/CVERecord?id=CVE-2026-57432 
 │                       │       ├ PublishedDate   : 2026-07-13T17:17:55.67Z 
 │                       │       ╰ LastModifiedDate: 2026-09-08T22:18:30.64Z 
-│                       ├ [75]  ╭ VulnerabilityID : CVE-2026-57433 
+│                       ├ [89]  ╭ VulnerabilityID : CVE-2026-57433 
 │                       │       ├ PkgID           : perl-base@5.40.1-7ubuntu0.1 
 │                       │       ├ PkgName         : perl-base 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/perl-base@5.40.1-7ubuntu0.1?arch=amd6
@@ -3863,7 +4453,7 @@
 │                       │       │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2026-57433 
 │                       │       ├ PublishedDate   : 2026-07-13T17:17:55.783Z 
 │                       │       ╰ LastModifiedDate: 2026-07-14T17:47:20.473Z 
-│                       ├ [76]  ╭ VulnerabilityID : CVE-2026-15308 
+│                       ├ [90]  ╭ VulnerabilityID : CVE-2026-15308 
 │                       │       ├ PkgID           : python3.14@3.14.4-1ubuntu0.1 
 │                       │       ├ PkgName         : python3.14 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/python3.14@3.14.4-1ubuntu0.1?arch=amd
@@ -3949,7 +4539,7 @@
 │                       │       │                  ╰ [24]: https://www.cve.org/CVERecord?id=CVE-2026-15308 
 │                       │       ├ PublishedDate   : 2026-07-09T17:16:58.26Z 
 │                       │       ╰ LastModifiedDate: 2026-08-20T17:02:59.313Z 
-│                       ├ [77]  ╭ VulnerabilityID : CVE-2026-4360 
+│                       ├ [91]  ╭ VulnerabilityID : CVE-2026-4360 
 │                       │       ├ PkgID           : python3.14@3.14.4-1ubuntu0.1 
 │                       │       ├ PkgName         : python3.14 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/python3.14@3.14.4-1ubuntu0.1?arch=amd
@@ -4019,7 +4609,7 @@
 │                       │       │                  ╰ [13]: https://www.cve.org/CVERecord?id=CVE-2026-4360 
 │                       │       ├ PublishedDate   : 2026-06-30T15:16:57.193Z 
 │                       │       ╰ LastModifiedDate: 2026-08-13T01:16:53.42Z 
-│                       ├ [78]  ╭ VulnerabilityID : CVE-2026-15308 
+│                       ├ [92]  ╭ VulnerabilityID : CVE-2026-15308 
 │                       │       ├ PkgID           : python3.14-minimal@3.14.4-1ubuntu0.1 
 │                       │       ├ PkgName         : python3.14-minimal 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/python3.14-minimal@3.14.4-1ubuntu0.1?
@@ -4105,7 +4695,7 @@
 │                       │       │                  ╰ [24]: https://www.cve.org/CVERecord?id=CVE-2026-15308 
 │                       │       ├ PublishedDate   : 2026-07-09T17:16:58.26Z 
 │                       │       ╰ LastModifiedDate: 2026-08-20T17:02:59.313Z 
-│                       ├ [79]  ╭ VulnerabilityID : CVE-2026-4360 
+│                       ├ [93]  ╭ VulnerabilityID : CVE-2026-4360 
 │                       │       ├ PkgID           : python3.14-minimal@3.14.4-1ubuntu0.1 
 │                       │       ├ PkgName         : python3.14-minimal 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/python3.14-minimal@3.14.4-1ubuntu0.1?
@@ -4175,7 +4765,7 @@
 │                       │       │                  ╰ [13]: https://www.cve.org/CVERecord?id=CVE-2026-4360 
 │                       │       ├ PublishedDate   : 2026-06-30T15:16:57.193Z 
 │                       │       ╰ LastModifiedDate: 2026-08-13T01:16:53.42Z 
-│                       ├ [80]  ╭ VulnerabilityID : CVE-2026-35341 
+│                       ├ [94]  ╭ VulnerabilityID : CVE-2026-35341 
 │                       │       ├ PkgID           : rust-coreutils@0.8.0-0ubuntu3 
 │                       │       ├ PkgName         : rust-coreutils 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/rust-coreutils@0.8.0-0ubuntu3?arch=am
@@ -4222,7 +4812,7 @@
 │                       │       │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2026-35341 
 │                       │       ├ PublishedDate   : 2026-04-22T17:16:36.06Z 
 │                       │       ╰ LastModifiedDate: 2026-06-17T10:40:25.5Z 
-│                       ├ [81]  ╭ VulnerabilityID : CVE-2026-35344 
+│                       ├ [95]  ╭ VulnerabilityID : CVE-2026-35344 
 │                       │       ├ PkgID           : rust-coreutils@0.8.0-0ubuntu3 
 │                       │       ├ PkgName         : rust-coreutils 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/rust-coreutils@0.8.0-0ubuntu3?arch=am
@@ -4266,7 +4856,7 @@
 │                       │       │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2026-35344 
 │                       │       ├ PublishedDate   : 2026-04-22T17:16:36.49Z 
 │                       │       ╰ LastModifiedDate: 2026-06-17T10:40:25.833Z 
-│                       ├ [82]  ╭ VulnerabilityID : CVE-2026-35345 
+│                       ├ [96]  ╭ VulnerabilityID : CVE-2026-35345 
 │                       │       ├ PkgID           : rust-coreutils@0.8.0-0ubuntu3 
 │                       │       ├ PkgName         : rust-coreutils 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/rust-coreutils@0.8.0-0ubuntu3?arch=am
@@ -4312,7 +4902,7 @@
 │                       │       │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2026-35345 
 │                       │       ├ PublishedDate   : 2026-04-22T17:16:36.627Z 
 │                       │       ╰ LastModifiedDate: 2026-06-17T10:40:25.943Z 
-│                       ├ [83]  ╭ VulnerabilityID : CVE-2026-35348 
+│                       ├ [97]  ╭ VulnerabilityID : CVE-2026-35348 
 │                       │       ├ PkgID           : rust-coreutils@0.8.0-0ubuntu3 
 │                       │       ├ PkgName         : rust-coreutils 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/rust-coreutils@0.8.0-0ubuntu3?arch=am
@@ -4354,7 +4944,7 @@
 │                       │       │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2026-35348 
 │                       │       ├ PublishedDate   : 2026-04-22T17:16:37.04Z 
 │                       │       ╰ LastModifiedDate: 2026-06-17T10:40:26.27Z 
-│                       ├ [84]  ╭ VulnerabilityID : CVE-2026-35350 
+│                       ├ [98]  ╭ VulnerabilityID : CVE-2026-35350 
 │                       │       ├ PkgID           : rust-coreutils@0.8.0-0ubuntu3 
 │                       │       ├ PkgName         : rust-coreutils 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/rust-coreutils@0.8.0-0ubuntu3?arch=am
@@ -4397,7 +4987,7 @@
 │                       │       │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2026-35350 
 │                       │       ├ PublishedDate   : 2026-04-22T17:16:37.327Z 
 │                       │       ╰ LastModifiedDate: 2026-06-17T10:40:26.48Z 
-│                       ├ [85]  ╭ VulnerabilityID : CVE-2026-35351 
+│                       ├ [99]  ╭ VulnerabilityID : CVE-2026-35351 
 │                       │       ├ PkgID           : rust-coreutils@0.8.0-0ubuntu3 
 │                       │       ├ PkgName         : rust-coreutils 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/rust-coreutils@0.8.0-0ubuntu3?arch=am
@@ -4441,7 +5031,7 @@
 │                       │       │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2026-35351 
 │                       │       ├ PublishedDate   : 2026-04-22T17:16:37.457Z 
 │                       │       ╰ LastModifiedDate: 2026-06-17T10:40:26.587Z 
-│                       ├ [86]  ╭ VulnerabilityID : CVE-2026-35352 
+│                       ├ [100] ╭ VulnerabilityID : CVE-2026-35352 
 │                       │       ├ PkgID           : rust-coreutils@0.8.0-0ubuntu3 
 │                       │       ├ PkgName         : rust-coreutils 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/rust-coreutils@0.8.0-0ubuntu3?arch=am
@@ -4487,7 +5077,7 @@
 │                       │       │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2026-35352 
 │                       │       ├ PublishedDate   : 2026-04-22T17:16:37.597Z 
 │                       │       ╰ LastModifiedDate: 2026-06-17T10:40:26.69Z 
-│                       ├ [87]  ╭ VulnerabilityID : CVE-2026-35354 
+│                       ├ [101] ╭ VulnerabilityID : CVE-2026-35354 
 │                       │       ├ PkgID           : rust-coreutils@0.8.0-0ubuntu3 
 │                       │       ├ PkgName         : rust-coreutils 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/rust-coreutils@0.8.0-0ubuntu3?arch=am
@@ -4531,7 +5121,7 @@
 │                       │       │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2026-35354 
 │                       │       ├ PublishedDate   : 2026-04-22T17:16:37.867Z 
 │                       │       ╰ LastModifiedDate: 2026-06-17T10:40:26.907Z 
-│                       ├ [88]  ╭ VulnerabilityID : CVE-2026-35357 
+│                       ├ [102] ╭ VulnerabilityID : CVE-2026-35357 
 │                       │       ├ PkgID           : rust-coreutils@0.8.0-0ubuntu3 
 │                       │       ├ PkgName         : rust-coreutils 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/rust-coreutils@0.8.0-0ubuntu3?arch=am
@@ -4574,7 +5164,7 @@
 │                       │       │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2026-35357 
 │                       │       ├ PublishedDate   : 2026-04-22T17:16:38.267Z 
 │                       │       ╰ LastModifiedDate: 2026-06-17T10:40:27.223Z 
-│                       ├ [89]  ╭ VulnerabilityID : CVE-2026-35359 
+│                       ├ [103] ╭ VulnerabilityID : CVE-2026-35359 
 │                       │       ├ PkgID           : rust-coreutils@0.8.0-0ubuntu3 
 │                       │       ├ PkgName         : rust-coreutils 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/rust-coreutils@0.8.0-0ubuntu3?arch=am
@@ -4619,7 +5209,7 @@
 │                       │       │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2026-35359 
 │                       │       ├ PublishedDate   : 2026-04-22T17:16:38.537Z 
 │                       │       ╰ LastModifiedDate: 2026-06-17T10:40:27.437Z 
-│                       ├ [90]  ╭ VulnerabilityID : CVE-2026-35360 
+│                       ├ [104] ╭ VulnerabilityID : CVE-2026-35360 
 │                       │       ├ PkgID           : rust-coreutils@0.8.0-0ubuntu3 
 │                       │       ├ PkgName         : rust-coreutils 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/rust-coreutils@0.8.0-0ubuntu3?arch=am
@@ -4661,7 +5251,7 @@
 │                       │       │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2026-35360 
 │                       │       ├ PublishedDate   : 2026-04-22T17:16:38.673Z 
 │                       │       ╰ LastModifiedDate: 2026-06-17T10:40:27.543Z 
-│                       ├ [91]  ╭ VulnerabilityID : CVE-2026-35363 
+│                       ├ [105] ╭ VulnerabilityID : CVE-2026-35363 
 │                       │       ├ PkgID           : rust-coreutils@0.8.0-0ubuntu3 
 │                       │       ├ PkgName         : rust-coreutils 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/rust-coreutils@0.8.0-0ubuntu3?arch=am
@@ -4708,7 +5298,7 @@
 │                       │       │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2026-35363 
 │                       │       ├ PublishedDate   : 2026-04-22T17:16:39.12Z 
 │                       │       ╰ LastModifiedDate: 2026-06-17T10:40:27.867Z 
-│                       ├ [92]  ╭ VulnerabilityID : CVE-2026-35364 
+│                       ├ [106] ╭ VulnerabilityID : CVE-2026-35364 
 │                       │       ├ PkgID           : rust-coreutils@0.8.0-0ubuntu3 
 │                       │       ├ PkgName         : rust-coreutils 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/rust-coreutils@0.8.0-0ubuntu3?arch=am
@@ -4752,7 +5342,7 @@
 │                       │       │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2026-35364 
 │                       │       ├ PublishedDate   : 2026-04-22T17:16:39.737Z 
 │                       │       ╰ LastModifiedDate: 2026-06-17T10:40:27.97Z 
-│                       ├ [93]  ╭ VulnerabilityID : CVE-2026-35367 
+│                       ├ [107] ╭ VulnerabilityID : CVE-2026-35367 
 │                       │       ├ PkgID           : rust-coreutils@0.8.0-0ubuntu3 
 │                       │       ├ PkgName         : rust-coreutils 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/rust-coreutils@0.8.0-0ubuntu3?arch=am
@@ -4796,7 +5386,7 @@
 │                       │       │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2026-35367 
 │                       │       ├ PublishedDate   : 2026-04-22T17:16:40.423Z 
 │                       │       ╰ LastModifiedDate: 2026-06-17T10:40:28.297Z 
-│                       ├ [94]  ╭ VulnerabilityID : CVE-2026-35368 
+│                       ├ [108] ╭ VulnerabilityID : CVE-2026-35368 
 │                       │       ├ PkgID           : rust-coreutils@0.8.0-0ubuntu3 
 │                       │       ├ PkgName         : rust-coreutils 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/rust-coreutils@0.8.0-0ubuntu3?arch=am
@@ -4840,7 +5430,7 @@
 │                       │       │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2026-35368 
 │                       │       ├ PublishedDate   : 2026-04-22T17:16:40.56Z 
 │                       │       ╰ LastModifiedDate: 2026-06-17T10:40:28.4Z 
-│                       ├ [95]  ╭ VulnerabilityID : CVE-2026-35370 
+│                       ├ [109] ╭ VulnerabilityID : CVE-2026-35370 
 │                       │       ├ PkgID           : rust-coreutils@0.8.0-0ubuntu3 
 │                       │       ├ PkgName         : rust-coreutils 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/rust-coreutils@0.8.0-0ubuntu3?arch=am
@@ -4885,7 +5475,7 @@
 │                       │       │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2026-35370 
 │                       │       ├ PublishedDate   : 2026-04-22T17:16:40.833Z 
 │                       │       ╰ LastModifiedDate: 2026-06-17T10:40:28.613Z 
-│                       ├ [96]  ╭ VulnerabilityID : CVE-2026-35371 
+│                       ├ [110] ╭ VulnerabilityID : CVE-2026-35371 
 │                       │       ├ PkgID           : rust-coreutils@0.8.0-0ubuntu3 
 │                       │       ├ PkgName         : rust-coreutils 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/rust-coreutils@0.8.0-0ubuntu3?arch=am
@@ -4930,7 +5520,7 @@
 │                       │       │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2026-35371 
 │                       │       ├ PublishedDate   : 2026-04-22T17:16:40.987Z 
 │                       │       ╰ LastModifiedDate: 2026-06-17T10:40:28.723Z 
-│                       ├ [97]  ╭ VulnerabilityID : CVE-2026-35373 
+│                       ├ [111] ╭ VulnerabilityID : CVE-2026-35373 
 │                       │       ├ PkgID           : rust-coreutils@0.8.0-0ubuntu3 
 │                       │       ├ PkgName         : rust-coreutils 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/rust-coreutils@0.8.0-0ubuntu3?arch=am
@@ -4982,7 +5572,7 @@
 │                       │       │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2026-35373 
 │                       │       ├ PublishedDate   : 2026-04-22T17:16:41.997Z 
 │                       │       ╰ LastModifiedDate: 2026-06-17T10:40:28.933Z 
-│                       ├ [98]  ╭ VulnerabilityID : CVE-2026-35374 
+│                       ├ [112] ╭ VulnerabilityID : CVE-2026-35374 
 │                       │       ├ PkgID           : rust-coreutils@0.8.0-0ubuntu3 
 │                       │       ├ PkgName         : rust-coreutils 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/rust-coreutils@0.8.0-0ubuntu3?arch=am
@@ -5030,7 +5620,7 @@
 │                       │       │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2026-35374 
 │                       │       ├ PublishedDate   : 2026-04-22T17:16:42.127Z 
 │                       │       ╰ LastModifiedDate: 2026-06-17T10:40:29.04Z 
-│                       ├ [99]  ╭ VulnerabilityID : CVE-2026-35377 
+│                       ├ [113] ╭ VulnerabilityID : CVE-2026-35377 
 │                       │       ├ PkgID           : rust-coreutils@0.8.0-0ubuntu3 
 │                       │       ├ PkgName         : rust-coreutils 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/rust-coreutils@0.8.0-0ubuntu3?arch=am
@@ -5078,7 +5668,7 @@
 │                       │       │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2026-35377 
 │                       │       ├ PublishedDate   : 2026-04-22T17:16:42.577Z 
 │                       │       ╰ LastModifiedDate: 2026-06-17T10:40:29.357Z 
-│                       ├ [100] ╭ VulnerabilityID : CVE-2026-18477 
+│                       ├ [114] ╭ VulnerabilityID : CVE-2026-18477 
 │                       │       ├ PkgID           : tar@1.35+dfsg-4ubuntu0.4 
 │                       │       ├ PkgName         : tar 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/tar@1.35%2Bdfsg-4ubuntu0.4?arch=amd64
@@ -5154,73 +5744,114 @@
 │                       │       │                  ╰ [21]: https://www.cve.org/CVERecord?id=CVE-2026-18477 
 │                       │       ├ PublishedDate   : 2026-08-03T17:16:33.897Z 
 │                       │       ╰ LastModifiedDate: 2026-09-10T18:17:56.97Z 
-│                       ╰ [101] ╭ VulnerabilityID : CVE-2026-18508 
-│                               ├ PkgID           : tar@1.35+dfsg-4ubuntu0.4 
-│                               ├ PkgName         : tar 
-│                               ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/tar@1.35%2Bdfsg-4ubuntu0.4?arch=amd64
-│                               │                  │       &distro=ubuntu-26.04 
-│                               │                  ╰ UID : 5867f93e7d45b368 
-│                               ├ InstalledVersion: 1.35+dfsg-4ubuntu0.4 
+│                       ├ [115] ╭ VulnerabilityID : CVE-2026-18508 
+│                       │       ├ PkgID           : tar@1.35+dfsg-4ubuntu0.4 
+│                       │       ├ PkgName         : tar 
+│                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/tar@1.35%2Bdfsg-4ubuntu0.4?arch=amd64
+│                       │       │                  │       &distro=ubuntu-26.04 
+│                       │       │                  ╰ UID : 5867f93e7d45b368 
+│                       │       ├ InstalledVersion: 1.35+dfsg-4ubuntu0.4 
+│                       │       ├ Status          : affected 
+│                       │       ├ Layer            ╭ Digest: sha256:9828e86a4f220c858c27038e827ed54fef1a63f08eb
+│                       │       │                  │         010a14fd7af13590da543 
+│                       │       │                  ╰ DiffID: sha256:718b0340b30f7422f9f61e64777c181088d68ab9a1c
+│                       │       │                            5cd184d97031d5cafaee0 
+│                       │       ├ SeveritySource  : ubuntu 
+│                       │       ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-18508 
+│                       │       ├ DataSource       ╭ ID  : ubuntu 
+│                       │       │                  ├ Name: Ubuntu CVE Tracker 
+│                       │       │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                       │       ├ Fingerprint     : sha256:a257aa4a74b73f19299007a0b48d29b1a9a5c0c4fe4d1a5cf30f
+│                       │       │                   a47d7c7114f1 
+│                       │       ├ Title           : tar: tar: --one-top-level hardlink targets not confined to
+│                       │       │                   top-level directory enabling arbitrary file overwrite 
+│                       │       ├ Description     : A flaw was found in GNU tar. When extracting an archive
+│                       │       │                   with the --one-top-level option, hardlink targets are not
+│                       │       │                   confined to the designated top-level directory and may
+│                       │       │                   resolve relative to the extraction working directory. A
+│                       │       │                   crafted archive can create hardlinks that escape the
+│                       │       │                   intended boundary and, when combined with a preexisting
+│                       │       │                   symbolic link under the working directory, may allow
+│                       │       │                   writing outside that boundary during a single extraction.[
+│                       │       │                   m 
+│                       │       ├ Severity        : MEDIUM 
+│                       │       ├ CweIDs           ─ [0]: CWE-59 
+│                       │       ├ VendorSeverity   ╭ alma       : 2 
+│                       │       │                  ├ oracle-oval: 2 
+│                       │       │                  ├ redhat     : 2 
+│                       │       │                  ├ rocky      : 2 
+│                       │       │                  ╰ ubuntu     : 2 
+│                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:L/I:
+│                       │       │                           │           L/A:N 
+│                       │       │                           ╰ V3Score : 4.4 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:50807 
+│                       │       │                  ├ [1] : https://access.redhat.com/errata/RHSA-2026:61581 
+│                       │       │                  ├ [2] : https://access.redhat.com/errata/RHSA-2026:61586 
+│                       │       │                  ├ [3] : https://access.redhat.com/errata/RHSA-2026:61783 
+│                       │       │                  ├ [4] : https://access.redhat.com/errata/RHSA-2026:66018 
+│                       │       │                  ├ [5] : https://access.redhat.com/security/cve/CVE-2026-18508 
+│                       │       │                  ├ [6] : https://bugzilla.redhat.com/2455360 
+│                       │       │                  ├ [7] : https://bugzilla.redhat.com/2509735 
+│                       │       │                  ├ [8] : https://bugzilla.redhat.com/2509843 
+│                       │       │                  ├ [9] : https://bugzilla.redhat.com/show_bug.cgi?id=2455360 
+│                       │       │                  ├ [10]: https://bugzilla.redhat.com/show_bug.cgi?id=2509735 
+│                       │       │                  ├ [11]: https://bugzilla.redhat.com/show_bug.cgi?id=2509843 
+│                       │       │                  ├ [12]: https://creativecommons.org/licenses/by/4.0/ 
+│                       │       │                  ├ [13]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
+│                       │       │                  │       026-18477 
+│                       │       │                  ├ [14]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
+│                       │       │                  │       026-18508 
+│                       │       │                  ├ [15]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
+│                       │       │                  │       026-5704 
+│                       │       │                  ├ [16]: https://errata.almalinux.org/9/ALSA-2026-61581.html 
+│                       │       │                  ├ [17]: https://errata.rockylinux.org/RLSA-2026:61581 
+│                       │       │                  ├ [18]: https://linux.oracle.com/cve/CVE-2026-18508.html 
+│                       │       │                  ├ [19]: https://linux.oracle.com/errata/ELSA-2026-61586-0.html 
+│                       │       │                  ├ [20]: https://nvd.nist.gov/vuln/detail/CVE-2026-18508 
+│                       │       │                  ╰ [21]: https://www.cve.org/CVERecord?id=CVE-2026-18508 
+│                       │       ├ PublishedDate   : 2026-08-03T16:16:28.387Z 
+│                       │       ╰ LastModifiedDate: 2026-09-10T18:17:57.193Z 
+│                       ╰ [116] ╭ VulnerabilityID : CVE-2026-85091 
+│                               ├ PkgID           : zlib1g@1:1.3.dfsg+really1.3.1-1ubuntu3.1 
+│                               ├ PkgName         : zlib1g 
+│                               ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/zlib1g@1.3.dfsg%2Breally1.3.1-1ubuntu
+│                               │                  │       3.1?arch=amd64&distro=ubuntu-26.04&epoch=1 
+│                               │                  ╰ UID : 8ceb327f3d7d343c 
+│                               ├ InstalledVersion: 1:1.3.dfsg+really1.3.1-1ubuntu3.1 
 │                               ├ Status          : affected 
 │                               ├ Layer            ╭ Digest: sha256:9828e86a4f220c858c27038e827ed54fef1a63f08eb
 │                               │                  │         010a14fd7af13590da543 
 │                               │                  ╰ DiffID: sha256:718b0340b30f7422f9f61e64777c181088d68ab9a1c
 │                               │                            5cd184d97031d5cafaee0 
 │                               ├ SeveritySource  : ubuntu 
-│                               ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-18508 
+│                               ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-85091 
 │                               ├ DataSource       ╭ ID  : ubuntu 
 │                               │                  ├ Name: Ubuntu CVE Tracker 
 │                               │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
-│                               ├ Fingerprint     : sha256:a257aa4a74b73f19299007a0b48d29b1a9a5c0c4fe4d1a5cf30f
-│                               │                   a47d7c7114f1 
-│                               ├ Title           : tar: tar: --one-top-level hardlink targets not confined to
-│                               │                   top-level directory enabling arbitrary file overwrite 
-│                               ├ Description     : A flaw was found in GNU tar. When extracting an archive
-│                               │                   with the --one-top-level option, hardlink targets are not
-│                               │                   confined to the designated top-level directory and may
-│                               │                   resolve relative to the extraction working directory. A
-│                               │                   crafted archive can create hardlinks that escape the
-│                               │                   intended boundary and, when combined with a preexisting
-│                               │                   symbolic link under the working directory, may allow
-│                               │                   writing outside that boundary during a single extraction.[
-│                               │                   m 
+│                               ├ Fingerprint     : sha256:51c4a635c3fe765e2efdfa4e357b2eaa6b24d331d8edf5b13c35
+│                               │                   b9d95d6e7e1f 
+│                               ├ Title           : zlib versions 1.3.1.2 through 1.3.2 contain a heap buffer
+│                               │                   overflow vul ... 
+│                               ├ Description     : zlib versions 1.3.1.2 through 1.3.2 contain a heap buffer
+│                               │                   overflow vulnerability in the gz_vacate() function when
+│                               │                   processing non-blocking gzwrite() operations with stale
+│                               │                   external buffer pointers. Attackers can trigger the
+│                               │                   overflow by calling gzprintf() or gzvprintf() after a write
+│                               │                    stall, causing an unchecked memmove() to write beyond the
+│                               │                   internal input buffer boundary. 
 │                               ├ Severity        : MEDIUM 
-│                               ├ CweIDs           ─ [0]: CWE-59 
-│                               ├ VendorSeverity   ╭ alma       : 2 
-│                               │                  ├ oracle-oval: 2 
-│                               │                  ├ redhat     : 2 
-│                               │                  ├ rocky      : 2 
-│                               │                  ╰ ubuntu     : 2 
-│                               ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:L/I:
-│                               │                           │           L/A:N 
-│                               │                           ╰ V3Score : 4.4 
-│                               ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:50807 
-│                               │                  ├ [1] : https://access.redhat.com/errata/RHSA-2026:61581 
-│                               │                  ├ [2] : https://access.redhat.com/errata/RHSA-2026:61586 
-│                               │                  ├ [3] : https://access.redhat.com/errata/RHSA-2026:61783 
-│                               │                  ├ [4] : https://access.redhat.com/errata/RHSA-2026:66018 
-│                               │                  ├ [5] : https://access.redhat.com/security/cve/CVE-2026-18508 
-│                               │                  ├ [6] : https://bugzilla.redhat.com/2455360 
-│                               │                  ├ [7] : https://bugzilla.redhat.com/2509735 
-│                               │                  ├ [8] : https://bugzilla.redhat.com/2509843 
-│                               │                  ├ [9] : https://bugzilla.redhat.com/show_bug.cgi?id=2455360 
-│                               │                  ├ [10]: https://bugzilla.redhat.com/show_bug.cgi?id=2509735 
-│                               │                  ├ [11]: https://bugzilla.redhat.com/show_bug.cgi?id=2509843 
-│                               │                  ├ [12]: https://creativecommons.org/licenses/by/4.0/ 
-│                               │                  ├ [13]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
-│                               │                  │       026-18477 
-│                               │                  ├ [14]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
-│                               │                  │       026-18508 
-│                               │                  ├ [15]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
-│                               │                  │       026-5704 
-│                               │                  ├ [16]: https://errata.almalinux.org/9/ALSA-2026-61581.html 
-│                               │                  ├ [17]: https://errata.rockylinux.org/RLSA-2026:61581 
-│                               │                  ├ [18]: https://linux.oracle.com/cve/CVE-2026-18508.html 
-│                               │                  ├ [19]: https://linux.oracle.com/errata/ELSA-2026-61586-0.html 
-│                               │                  ├ [20]: https://nvd.nist.gov/vuln/detail/CVE-2026-18508 
-│                               │                  ╰ [21]: https://www.cve.org/CVERecord?id=CVE-2026-18508 
-│                               ├ PublishedDate   : 2026-08-03T16:16:28.387Z 
-│                               ╰ LastModifiedDate: 2026-09-10T18:17:57.193Z 
+│                               ├ CweIDs           ─ [0]: CWE-787 
+│                               ├ VendorSeverity   ─ ubuntu: 2 
+│                               ├ References       ╭ [0]: https://gist.github.com/thesmartshadow/e0b9481792afb7
+│                               │                  │      c31e86fee1ff084490 
+│                               │                  ├ [1]: https://github.com/madler/zlib 
+│                               │                  ├ [2]: https://github.com/madler/zlib/blob/v1.3.2/gzwrite.c#
+│                               │                  │      L393 
+│                               │                  ├ [3]: https://www.cve.org/CVERecord?id=CVE-2026-85091 
+│                               │                  ╰ [4]: https://www.vulncheck.com/advisories/zlib-1.3.1.2-thr
+│                               │                         ough-1.3.2-heap-buffer-overflow-via-gz-vacate 
+│                               ├ PublishedDate   : 2026-09-03T13:06:20.573Z 
+│                               ╰ LastModifiedDate: 2026-09-09T20:41:07.123Z 
 ├ [1] ╭ Target  : Java 
 │     ├ Class   : lang-pkgs 
 │     ├ Type    : jar 
@@ -5267,70 +5898,63 @@
                         │     │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N
                         │     │                            │           /A:H 
                         │     │                            ╰ V3Score : 7.5 
-                        │     ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:65117 
-                        │     │                  ├ [1] : https://access.redhat.com/errata/RHSA-2026:65886 
+                        │     ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:65886 
+                        │     │                  ├ [1] : https://access.redhat.com/errata/RHSA-2026:66364 
                         │     │                  ├ [2] : https://access.redhat.com/security/cve/CVE-2026-33818 
-                        │     │                  ├ [3] : https://bugzilla.redhat.com/2467809 
-                        │     │                  ├ [4] : https://bugzilla.redhat.com/2467820 
-                        │     │                  ├ [5] : https://bugzilla.redhat.com/2484204 
-                        │     │                  ├ [6] : https://bugzilla.redhat.com/2484830 
-                        │     │                  ├ [7] : https://bugzilla.redhat.com/2515815 
-                        │     │                  ├ [8] : https://bugzilla.redhat.com/2515820 
-                        │     │                  ├ [9] : https://bugzilla.redhat.com/2515827 
-                        │     │                  ├ [10]: https://bugzilla.redhat.com/2515838 
-                        │     │                  ├ [11]: https://bugzilla.redhat.com/2515839 
-                        │     │                  ├ [12]: https://bugzilla.redhat.com/2515840 
-                        │     │                  ├ [13]: https://bugzilla.redhat.com/show_bug.cgi?id=2456333 
-                        │     │                  ├ [14]: https://bugzilla.redhat.com/show_bug.cgi?id=2456339 
-                        │     │                  ├ [15]: https://bugzilla.redhat.com/show_bug.cgi?id=2467809 
-                        │     │                  ├ [16]: https://bugzilla.redhat.com/show_bug.cgi?id=2467820 
-                        │     │                  ├ [17]: https://bugzilla.redhat.com/show_bug.cgi?id=2467822 
-                        │     │                  ├ [18]: https://bugzilla.redhat.com/show_bug.cgi?id=2480756 
-                        │     │                  ├ [19]: https://bugzilla.redhat.com/show_bug.cgi?id=2484204 
-                        │     │                  ├ [20]: https://bugzilla.redhat.com/show_bug.cgi?id=2515815 
-                        │     │                  ├ [21]: https://bugzilla.redhat.com/show_bug.cgi?id=2515820 
-                        │     │                  ├ [22]: https://bugzilla.redhat.com/show_bug.cgi?id=2515827 
-                        │     │                  ├ [23]: https://bugzilla.redhat.com/show_bug.cgi?id=2515838 
-                        │     │                  ├ [24]: https://bugzilla.redhat.com/show_bug.cgi?id=2515839 
-                        │     │                  ├ [25]: https://bugzilla.redhat.com/show_bug.cgi?id=2515840 
-                        │     │                  ├ [26]: https://creativecommons.org/licenses/by/4.0/ 
-                        │     │                  ├ [27]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-202
+                        │     │                  ├ [3] : https://bugzilla.redhat.com/2515815 
+                        │     │                  ├ [4] : https://bugzilla.redhat.com/2515820 
+                        │     │                  ├ [5] : https://bugzilla.redhat.com/2515839 
+                        │     │                  ├ [6] : https://bugzilla.redhat.com/show_bug.cgi?id=2456333 
+                        │     │                  ├ [7] : https://bugzilla.redhat.com/show_bug.cgi?id=2456339 
+                        │     │                  ├ [8] : https://bugzilla.redhat.com/show_bug.cgi?id=2467809 
+                        │     │                  ├ [9] : https://bugzilla.redhat.com/show_bug.cgi?id=2467820 
+                        │     │                  ├ [10]: https://bugzilla.redhat.com/show_bug.cgi?id=2467822 
+                        │     │                  ├ [11]: https://bugzilla.redhat.com/show_bug.cgi?id=2480756 
+                        │     │                  ├ [12]: https://bugzilla.redhat.com/show_bug.cgi?id=2484204 
+                        │     │                  ├ [13]: https://bugzilla.redhat.com/show_bug.cgi?id=2515815 
+                        │     │                  ├ [14]: https://bugzilla.redhat.com/show_bug.cgi?id=2515820 
+                        │     │                  ├ [15]: https://bugzilla.redhat.com/show_bug.cgi?id=2515827 
+                        │     │                  ├ [16]: https://bugzilla.redhat.com/show_bug.cgi?id=2515838 
+                        │     │                  ├ [17]: https://bugzilla.redhat.com/show_bug.cgi?id=2515839 
+                        │     │                  ├ [18]: https://bugzilla.redhat.com/show_bug.cgi?id=2515840 
+                        │     │                  ├ [19]: https://creativecommons.org/licenses/by/4.0/ 
+                        │     │                  ├ [20]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-202
                         │     │                  │       6-32280 
-                        │     │                  ├ [28]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-202
+                        │     │                  ├ [21]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-202
                         │     │                  │       6-32281 
-                        │     │                  ├ [29]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-202
+                        │     │                  ├ [22]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-202
                         │     │                  │       6-33811 
-                        │     │                  ├ [30]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-202
+                        │     │                  ├ [23]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-202
                         │     │                  │       6-33818 
-                        │     │                  ├ [31]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-202
+                        │     │                  ├ [24]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-202
                         │     │                  │       6-39820 
-                        │     │                  ├ [32]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-202
+                        │     │                  ├ [25]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-202
                         │     │                  │       6-39821 
-                        │     │                  ├ [33]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-202
+                        │     │                  ├ [26]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-202
                         │     │                  │       6-42499 
-                        │     │                  ├ [34]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-202
+                        │     │                  ├ [27]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-202
                         │     │                  │       6-42504 
-                        │     │                  ├ [35]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-202
+                        │     │                  ├ [28]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-202
                         │     │                  │       6-56853 
-                        │     │                  ├ [36]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-202
+                        │     │                  ├ [29]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-202
                         │     │                  │       6-56858 
-                        │     │                  ├ [37]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-202
+                        │     │                  ├ [30]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-202
                         │     │                  │       6-56859 
-                        │     │                  ├ [38]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-202
+                        │     │                  ├ [31]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-202
                         │     │                  │       6-56860 
-                        │     │                  ├ [39]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-202
+                        │     │                  ├ [32]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-202
                         │     │                  │       6-56862 
-                        │     │                  ├ [40]: https://errata.almalinux.org/9/ALSA-2026-65117.html 
-                        │     │                  ├ [41]: https://errata.rockylinux.org/RLSA-2026:65886 
-                        │     │                  ├ [42]: https://go.dev/cl/814980 
-                        │     │                  ├ [43]: https://go.dev/issue/80405 
-                        │     │                  ├ [44]: https://groups.google.com/g/golang-announce/c/94pEornp
+                        │     │                  ├ [33]: https://errata.almalinux.org/9/ALSA-2026-66364.html 
+                        │     │                  ├ [34]: https://errata.rockylinux.org/RLSA-2026:65886 
+                        │     │                  ├ [35]: https://go.dev/cl/814980 
+                        │     │                  ├ [36]: https://go.dev/issue/80405 
+                        │     │                  ├ [37]: https://groups.google.com/g/golang-announce/c/94pEornp
                         │     │                  │       RlI 
-                        │     │                  ├ [45]: https://linux.oracle.com/cve/CVE-2026-33818.html 
-                        │     │                  ├ [46]: https://linux.oracle.com/errata/ELSA-2026-66364-0.html 
-                        │     │                  ├ [47]: https://nvd.nist.gov/vuln/detail/CVE-2026-33818 
-                        │     │                  ├ [48]: https://pkg.go.dev/vuln/GO-2026-5972 
-                        │     │                  ╰ [49]: https://www.cve.org/CVERecord?id=CVE-2026-33818 
+                        │     │                  ├ [38]: https://linux.oracle.com/cve/CVE-2026-33818.html 
+                        │     │                  ├ [39]: https://linux.oracle.com/errata/ELSA-2026-66364-0.html 
+                        │     │                  ├ [40]: https://nvd.nist.gov/vuln/detail/CVE-2026-33818 
+                        │     │                  ├ [41]: https://pkg.go.dev/vuln/GO-2026-5972 
+                        │     │                  ╰ [42]: https://www.cve.org/CVERecord?id=CVE-2026-33818 
                         │     ├ PublishedDate   : 2026-08-13T22:17:19.84Z 
                         │     ╰ LastModifiedDate: 2026-09-03T16:37:52.17Z 
                         ├ [1] ╭ VulnerabilityID : CVE-2026-39821 
@@ -5518,67 +6142,69 @@
                         │     │                  ├ [137]: https://access.redhat.com/errata/RHSA-2026:65534 
                         │     │                  ├ [138]: https://access.redhat.com/errata/RHSA-2026:65886 
                         │     │                  ├ [139]: https://access.redhat.com/errata/RHSA-2026:66016 
-                        │     │                  ├ [140]: https://access.redhat.com/security/cve/CVE-2026-39821 
-                        │     │                  ├ [141]: https://bugzilla.redhat.com/2480756 
-                        │     │                  ├ [142]: https://bugzilla.redhat.com/show_bug.cgi?id=2456333 
-                        │     │                  ├ [143]: https://bugzilla.redhat.com/show_bug.cgi?id=2456339 
-                        │     │                  ├ [144]: https://bugzilla.redhat.com/show_bug.cgi?id=2467809 
-                        │     │                  ├ [145]: https://bugzilla.redhat.com/show_bug.cgi?id=2467820 
-                        │     │                  ├ [146]: https://bugzilla.redhat.com/show_bug.cgi?id=2467822 
-                        │     │                  ├ [147]: https://bugzilla.redhat.com/show_bug.cgi?id=2480756 
-                        │     │                  ├ [148]: https://bugzilla.redhat.com/show_bug.cgi?id=2484204 
-                        │     │                  ├ [149]: https://bugzilla.redhat.com/show_bug.cgi?id=2515815 
-                        │     │                  ├ [150]: https://bugzilla.redhat.com/show_bug.cgi?id=2515820 
-                        │     │                  ├ [151]: https://bugzilla.redhat.com/show_bug.cgi?id=2515827 
-                        │     │                  ├ [152]: https://bugzilla.redhat.com/show_bug.cgi?id=2515838 
-                        │     │                  ├ [153]: https://bugzilla.redhat.com/show_bug.cgi?id=2515839 
-                        │     │                  ├ [154]: https://bugzilla.redhat.com/show_bug.cgi?id=2515840 
-                        │     │                  ├ [155]: https://creativecommons.org/licenses/by/4.0/ 
-                        │     │                  ├ [156]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
-                        │     │                  │        26-32280 
-                        │     │                  ├ [157]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
-                        │     │                  │        26-32281 
+                        │     │                  ├ [140]: https://access.redhat.com/errata/RHSA-2026:66022 
+                        │     │                  ├ [141]: https://access.redhat.com/errata/RHSA-2026:66432 
+                        │     │                  ├ [142]: https://access.redhat.com/security/cve/CVE-2026-39821 
+                        │     │                  ├ [143]: https://bugzilla.redhat.com/2480756 
+                        │     │                  ├ [144]: https://bugzilla.redhat.com/show_bug.cgi?id=2456333 
+                        │     │                  ├ [145]: https://bugzilla.redhat.com/show_bug.cgi?id=2456339 
+                        │     │                  ├ [146]: https://bugzilla.redhat.com/show_bug.cgi?id=2467809 
+                        │     │                  ├ [147]: https://bugzilla.redhat.com/show_bug.cgi?id=2467820 
+                        │     │                  ├ [148]: https://bugzilla.redhat.com/show_bug.cgi?id=2467822 
+                        │     │                  ├ [149]: https://bugzilla.redhat.com/show_bug.cgi?id=2480756 
+                        │     │                  ├ [150]: https://bugzilla.redhat.com/show_bug.cgi?id=2484204 
+                        │     │                  ├ [151]: https://bugzilla.redhat.com/show_bug.cgi?id=2515815 
+                        │     │                  ├ [152]: https://bugzilla.redhat.com/show_bug.cgi?id=2515820 
+                        │     │                  ├ [153]: https://bugzilla.redhat.com/show_bug.cgi?id=2515827 
+                        │     │                  ├ [154]: https://bugzilla.redhat.com/show_bug.cgi?id=2515838 
+                        │     │                  ├ [155]: https://bugzilla.redhat.com/show_bug.cgi?id=2515839 
+                        │     │                  ├ [156]: https://bugzilla.redhat.com/show_bug.cgi?id=2515840 
+                        │     │                  ├ [157]: https://creativecommons.org/licenses/by/4.0/ 
                         │     │                  ├ [158]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
-                        │     │                  │        26-33811 
+                        │     │                  │        26-32280 
                         │     │                  ├ [159]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
-                        │     │                  │        26-33818 
+                        │     │                  │        26-32281 
                         │     │                  ├ [160]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
-                        │     │                  │        26-39820 
+                        │     │                  │        26-33811 
                         │     │                  ├ [161]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
-                        │     │                  │        26-39821 
+                        │     │                  │        26-33818 
                         │     │                  ├ [162]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
-                        │     │                  │        26-42499 
+                        │     │                  │        26-39820 
                         │     │                  ├ [163]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
-                        │     │                  │        26-42504 
+                        │     │                  │        26-39821 
                         │     │                  ├ [164]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
-                        │     │                  │        26-56853 
+                        │     │                  │        26-42499 
                         │     │                  ├ [165]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
-                        │     │                  │        26-56858 
+                        │     │                  │        26-42504 
                         │     │                  ├ [166]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
-                        │     │                  │        26-56859 
+                        │     │                  │        26-56853 
                         │     │                  ├ [167]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
-                        │     │                  │        26-56860 
+                        │     │                  │        26-56858 
                         │     │                  ├ [168]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+                        │     │                  │        26-56859 
+                        │     │                  ├ [169]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+                        │     │                  │        26-56860 
+                        │     │                  ├ [170]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
                         │     │                  │        26-56862 
-                        │     │                  ├ [169]: https://errata.almalinux.org/9/ALSA-2026-37435.html 
-                        │     │                  ├ [170]: https://errata.rockylinux.org/RLSA-2026:65886 
-                        │     │                  ├ [171]: https://github.com/golang/go/issues/78760 
-                        │     │                  ├ [172]: https://go.dev/cl/767220 
-                        │     │                  ├ [173]: https://go.dev/issue/78760 
-                        │     │                  ├ [174]: https://groups.google.com/g/golang-announce/c/94pEorn
+                        │     │                  ├ [171]: https://errata.almalinux.org/9/ALSA-2026-37435.html 
+                        │     │                  ├ [172]: https://errata.rockylinux.org/RLSA-2026:65886 
+                        │     │                  ├ [173]: https://github.com/golang/go/issues/78760 
+                        │     │                  ├ [174]: https://go.dev/cl/767220 
+                        │     │                  ├ [175]: https://go.dev/issue/78760 
+                        │     │                  ├ [176]: https://groups.google.com/g/golang-announce/c/94pEorn
                         │     │                  │        pRlI 
-                        │     │                  ├ [175]: https://groups.google.com/g/golang-announce/c/iI-mYSI
+                        │     │                  ├ [177]: https://groups.google.com/g/golang-announce/c/iI-mYSI
                         │     │                  │        0lu8 
-                        │     │                  ├ [176]: https://linux.oracle.com/cve/CVE-2026-39821.html 
-                        │     │                  ├ [177]: https://linux.oracle.com/errata/ELSA-2026-46395.html 
-                        │     │                  ├ [178]: https://nvd.nist.gov/vuln/detail/CVE-2026-39821 
-                        │     │                  ├ [179]: https://pkg.go.dev/vuln/GO-2026-5026 
-                        │     │                  ├ [180]: https://security.access.redhat.com/data/csaf/v2/vex/2
+                        │     │                  ├ [178]: https://linux.oracle.com/cve/CVE-2026-39821.html 
+                        │     │                  ├ [179]: https://linux.oracle.com/errata/ELSA-2026-65886-0.html 
+                        │     │                  ├ [180]: https://nvd.nist.gov/vuln/detail/CVE-2026-39821 
+                        │     │                  ├ [181]: https://pkg.go.dev/vuln/GO-2026-5026 
+                        │     │                  ├ [182]: https://security.access.redhat.com/data/csaf/v2/vex/2
                         │     │                  │        026/cve-2026-39821.json 
-                        │     │                  ├ [181]: https://ubuntu.com/security/notices/USN-8416-1 
-                        │     │                  ╰ [182]: https://www.cve.org/CVERecord?id=CVE-2026-39821 
+                        │     │                  ├ [183]: https://ubuntu.com/security/notices/USN-8416-1 
+                        │     │                  ╰ [184]: https://www.cve.org/CVERecord?id=CVE-2026-39821 
                         │     ├ PublishedDate   : 2026-05-22T16:16:20.41Z 
-                        │     ╰ LastModifiedDate: 2026-09-10T13:19:50.873Z 
+                        │     ╰ LastModifiedDate: 2026-09-11T13:17:49.237Z 
                         ├ [2] ╭ VulnerabilityID : CVE-2026-46600 
                         │     ├ VendorIDs        ─ [0]: GO-2026-5942 
                         │     ├ PkgID           : stdlib@v1.26.5 
@@ -5722,7 +6348,7 @@
                         │     │                  ├ [44]: https://groups.google.com/g/golang-announce/c/94pEornp
                         │     │                  │       RlI 
                         │     │                  ├ [45]: https://linux.oracle.com/cve/CVE-2026-56853.html 
-                        │     │                  ├ [46]: https://linux.oracle.com/errata/ELSA-2026-64818-0.html 
+                        │     │                  ├ [46]: https://linux.oracle.com/errata/ELSA-2026-65895-0.html 
                         │     │                  ├ [47]: https://nvd.nist.gov/vuln/detail/CVE-2026-56853 
                         │     │                  ├ [48]: https://pkg.go.dev/vuln/GO-2026-6089 
                         │     │                  ╰ [49]: https://www.cve.org/CVERecord?id=CVE-2026-56853 
@@ -5826,7 +6452,7 @@
                         │     │                  ├ [44]: https://groups.google.com/g/golang-announce/c/94pEornp
                         │     │                  │       RlI 
                         │     │                  ├ [45]: https://linux.oracle.com/cve/CVE-2026-56858.html 
-                        │     │                  ├ [46]: https://linux.oracle.com/errata/ELSA-2026-64818-0.html 
+                        │     │                  ├ [46]: https://linux.oracle.com/errata/ELSA-2026-65895-0.html 
                         │     │                  ├ [47]: https://nvd.nist.gov/vuln/detail/CVE-2026-56858 
                         │     │                  ├ [48]: https://pkg.go.dev/vuln/GO-2026-6091 
                         │     │                  ╰ [49]: https://www.cve.org/CVERecord?id=CVE-2026-56858 
@@ -5930,7 +6556,7 @@
                         │     │                  ├ [44]: https://groups.google.com/g/golang-announce/c/94pEornp
                         │     │                  │       RlI 
                         │     │                  ├ [45]: https://linux.oracle.com/cve/CVE-2026-56859.html 
-                        │     │                  ├ [46]: https://linux.oracle.com/errata/ELSA-2026-63163-0.html 
+                        │     │                  ├ [46]: https://linux.oracle.com/errata/ELSA-2026-65895-0.html 
                         │     │                  ├ [47]: https://nvd.nist.gov/vuln/detail/CVE-2026-56859 
                         │     │                  ├ [48]: https://pkg.go.dev/vuln/GO-2026-6088 
                         │     │                  ╰ [49]: https://www.cve.org/CVERecord?id=CVE-2026-56859 
@@ -5971,6 +6597,7 @@
                         │     │                  ├ amazon     : 3 
                         │     │                  ├ bitnami    : 2 
                         │     │                  ├ oracle-oval: 3 
+                        │     │                  ├ photon     : 2 
                         │     │                  ├ redhat     : 3 
                         │     │                  ╰ rocky      : 3 
                         │     ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N
@@ -5979,70 +6606,63 @@
                         │     │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N
                         │     │                            │           /A:H 
                         │     │                            ╰ V3Score : 7.5 
-                        │     ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:65117 
-                        │     │                  ├ [1] : https://access.redhat.com/errata/RHSA-2026:65886 
+                        │     ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:65886 
+                        │     │                  ├ [1] : https://access.redhat.com/errata/RHSA-2026:66364 
                         │     │                  ├ [2] : https://access.redhat.com/security/cve/CVE-2026-56860 
-                        │     │                  ├ [3] : https://bugzilla.redhat.com/2467809 
-                        │     │                  ├ [4] : https://bugzilla.redhat.com/2467820 
-                        │     │                  ├ [5] : https://bugzilla.redhat.com/2484204 
-                        │     │                  ├ [6] : https://bugzilla.redhat.com/2484830 
-                        │     │                  ├ [7] : https://bugzilla.redhat.com/2515815 
-                        │     │                  ├ [8] : https://bugzilla.redhat.com/2515820 
-                        │     │                  ├ [9] : https://bugzilla.redhat.com/2515827 
-                        │     │                  ├ [10]: https://bugzilla.redhat.com/2515838 
-                        │     │                  ├ [11]: https://bugzilla.redhat.com/2515839 
-                        │     │                  ├ [12]: https://bugzilla.redhat.com/2515840 
-                        │     │                  ├ [13]: https://bugzilla.redhat.com/show_bug.cgi?id=2456333 
-                        │     │                  ├ [14]: https://bugzilla.redhat.com/show_bug.cgi?id=2456339 
-                        │     │                  ├ [15]: https://bugzilla.redhat.com/show_bug.cgi?id=2467809 
-                        │     │                  ├ [16]: https://bugzilla.redhat.com/show_bug.cgi?id=2467820 
-                        │     │                  ├ [17]: https://bugzilla.redhat.com/show_bug.cgi?id=2467822 
-                        │     │                  ├ [18]: https://bugzilla.redhat.com/show_bug.cgi?id=2480756 
-                        │     │                  ├ [19]: https://bugzilla.redhat.com/show_bug.cgi?id=2484204 
-                        │     │                  ├ [20]: https://bugzilla.redhat.com/show_bug.cgi?id=2515815 
-                        │     │                  ├ [21]: https://bugzilla.redhat.com/show_bug.cgi?id=2515820 
-                        │     │                  ├ [22]: https://bugzilla.redhat.com/show_bug.cgi?id=2515827 
-                        │     │                  ├ [23]: https://bugzilla.redhat.com/show_bug.cgi?id=2515838 
-                        │     │                  ├ [24]: https://bugzilla.redhat.com/show_bug.cgi?id=2515839 
-                        │     │                  ├ [25]: https://bugzilla.redhat.com/show_bug.cgi?id=2515840 
-                        │     │                  ├ [26]: https://creativecommons.org/licenses/by/4.0/ 
-                        │     │                  ├ [27]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-202
+                        │     │                  ├ [3] : https://bugzilla.redhat.com/2515815 
+                        │     │                  ├ [4] : https://bugzilla.redhat.com/2515820 
+                        │     │                  ├ [5] : https://bugzilla.redhat.com/2515839 
+                        │     │                  ├ [6] : https://bugzilla.redhat.com/show_bug.cgi?id=2456333 
+                        │     │                  ├ [7] : https://bugzilla.redhat.com/show_bug.cgi?id=2456339 
+                        │     │                  ├ [8] : https://bugzilla.redhat.com/show_bug.cgi?id=2467809 
+                        │     │                  ├ [9] : https://bugzilla.redhat.com/show_bug.cgi?id=2467820 
+                        │     │                  ├ [10]: https://bugzilla.redhat.com/show_bug.cgi?id=2467822 
+                        │     │                  ├ [11]: https://bugzilla.redhat.com/show_bug.cgi?id=2480756 
+                        │     │                  ├ [12]: https://bugzilla.redhat.com/show_bug.cgi?id=2484204 
+                        │     │                  ├ [13]: https://bugzilla.redhat.com/show_bug.cgi?id=2515815 
+                        │     │                  ├ [14]: https://bugzilla.redhat.com/show_bug.cgi?id=2515820 
+                        │     │                  ├ [15]: https://bugzilla.redhat.com/show_bug.cgi?id=2515827 
+                        │     │                  ├ [16]: https://bugzilla.redhat.com/show_bug.cgi?id=2515838 
+                        │     │                  ├ [17]: https://bugzilla.redhat.com/show_bug.cgi?id=2515839 
+                        │     │                  ├ [18]: https://bugzilla.redhat.com/show_bug.cgi?id=2515840 
+                        │     │                  ├ [19]: https://creativecommons.org/licenses/by/4.0/ 
+                        │     │                  ├ [20]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-202
                         │     │                  │       6-32280 
-                        │     │                  ├ [28]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-202
+                        │     │                  ├ [21]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-202
                         │     │                  │       6-32281 
-                        │     │                  ├ [29]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-202
+                        │     │                  ├ [22]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-202
                         │     │                  │       6-33811 
-                        │     │                  ├ [30]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-202
+                        │     │                  ├ [23]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-202
                         │     │                  │       6-33818 
-                        │     │                  ├ [31]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-202
+                        │     │                  ├ [24]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-202
                         │     │                  │       6-39820 
-                        │     │                  ├ [32]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-202
+                        │     │                  ├ [25]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-202
                         │     │                  │       6-39821 
-                        │     │                  ├ [33]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-202
+                        │     │                  ├ [26]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-202
                         │     │                  │       6-42499 
-                        │     │                  ├ [34]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-202
+                        │     │                  ├ [27]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-202
                         │     │                  │       6-42504 
-                        │     │                  ├ [35]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-202
+                        │     │                  ├ [28]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-202
                         │     │                  │       6-56853 
-                        │     │                  ├ [36]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-202
+                        │     │                  ├ [29]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-202
                         │     │                  │       6-56858 
-                        │     │                  ├ [37]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-202
+                        │     │                  ├ [30]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-202
                         │     │                  │       6-56859 
-                        │     │                  ├ [38]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-202
+                        │     │                  ├ [31]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-202
                         │     │                  │       6-56860 
-                        │     │                  ├ [39]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-202
+                        │     │                  ├ [32]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-202
                         │     │                  │       6-56862 
-                        │     │                  ├ [40]: https://errata.almalinux.org/9/ALSA-2026-65117.html 
-                        │     │                  ├ [41]: https://errata.rockylinux.org/RLSA-2026:65886 
-                        │     │                  ├ [42]: https://go.dev/cl/803681 
-                        │     │                  ├ [43]: https://go.dev/issue/80494 
-                        │     │                  ├ [44]: https://groups.google.com/g/golang-announce/c/94pEornp
+                        │     │                  ├ [33]: https://errata.almalinux.org/9/ALSA-2026-66364.html 
+                        │     │                  ├ [34]: https://errata.rockylinux.org/RLSA-2026:65886 
+                        │     │                  ├ [35]: https://go.dev/cl/803681 
+                        │     │                  ├ [36]: https://go.dev/issue/80494 
+                        │     │                  ├ [37]: https://groups.google.com/g/golang-announce/c/94pEornp
                         │     │                  │       RlI 
-                        │     │                  ├ [45]: https://linux.oracle.com/cve/CVE-2026-56860.html 
-                        │     │                  ├ [46]: https://linux.oracle.com/errata/ELSA-2026-66364-0.html 
-                        │     │                  ├ [47]: https://nvd.nist.gov/vuln/detail/CVE-2026-56860 
-                        │     │                  ├ [48]: https://pkg.go.dev/vuln/GO-2026-6218 
-                        │     │                  ╰ [49]: https://www.cve.org/CVERecord?id=CVE-2026-56860 
+                        │     │                  ├ [38]: https://linux.oracle.com/cve/CVE-2026-56860.html 
+                        │     │                  ├ [39]: https://linux.oracle.com/errata/ELSA-2026-66364-0.html 
+                        │     │                  ├ [40]: https://nvd.nist.gov/vuln/detail/CVE-2026-56860 
+                        │     │                  ├ [41]: https://pkg.go.dev/vuln/GO-2026-6218 
+                        │     │                  ╰ [42]: https://www.cve.org/CVERecord?id=CVE-2026-56860 
                         │     ├ PublishedDate   : 2026-08-13T22:17:22.44Z 
                         │     ╰ LastModifiedDate: 2026-09-03T16:37:52.17Z 
                         ╰ [7] ╭ VulnerabilityID : CVE-2026-56862 
@@ -6085,70 +6705,63 @@
                               │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N
                               │                            │           /A:H 
                               │                            ╰ V3Score : 7.5 
-                              ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:65117 
-                              │                  ├ [1] : https://access.redhat.com/errata/RHSA-2026:65886 
+                              ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:65886 
+                              │                  ├ [1] : https://access.redhat.com/errata/RHSA-2026:66364 
                               │                  ├ [2] : https://access.redhat.com/security/cve/CVE-2026-56862 
-                              │                  ├ [3] : https://bugzilla.redhat.com/2467809 
-                              │                  ├ [4] : https://bugzilla.redhat.com/2467820 
-                              │                  ├ [5] : https://bugzilla.redhat.com/2484204 
-                              │                  ├ [6] : https://bugzilla.redhat.com/2484830 
-                              │                  ├ [7] : https://bugzilla.redhat.com/2515815 
-                              │                  ├ [8] : https://bugzilla.redhat.com/2515820 
-                              │                  ├ [9] : https://bugzilla.redhat.com/2515827 
-                              │                  ├ [10]: https://bugzilla.redhat.com/2515838 
-                              │                  ├ [11]: https://bugzilla.redhat.com/2515839 
-                              │                  ├ [12]: https://bugzilla.redhat.com/2515840 
-                              │                  ├ [13]: https://bugzilla.redhat.com/show_bug.cgi?id=2456333 
-                              │                  ├ [14]: https://bugzilla.redhat.com/show_bug.cgi?id=2456339 
-                              │                  ├ [15]: https://bugzilla.redhat.com/show_bug.cgi?id=2467809 
-                              │                  ├ [16]: https://bugzilla.redhat.com/show_bug.cgi?id=2467820 
-                              │                  ├ [17]: https://bugzilla.redhat.com/show_bug.cgi?id=2467822 
-                              │                  ├ [18]: https://bugzilla.redhat.com/show_bug.cgi?id=2480756 
-                              │                  ├ [19]: https://bugzilla.redhat.com/show_bug.cgi?id=2484204 
-                              │                  ├ [20]: https://bugzilla.redhat.com/show_bug.cgi?id=2515815 
-                              │                  ├ [21]: https://bugzilla.redhat.com/show_bug.cgi?id=2515820 
-                              │                  ├ [22]: https://bugzilla.redhat.com/show_bug.cgi?id=2515827 
-                              │                  ├ [23]: https://bugzilla.redhat.com/show_bug.cgi?id=2515838 
-                              │                  ├ [24]: https://bugzilla.redhat.com/show_bug.cgi?id=2515839 
-                              │                  ├ [25]: https://bugzilla.redhat.com/show_bug.cgi?id=2515840 
-                              │                  ├ [26]: https://creativecommons.org/licenses/by/4.0/ 
-                              │                  ├ [27]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-202
+                              │                  ├ [3] : https://bugzilla.redhat.com/2515815 
+                              │                  ├ [4] : https://bugzilla.redhat.com/2515820 
+                              │                  ├ [5] : https://bugzilla.redhat.com/2515839 
+                              │                  ├ [6] : https://bugzilla.redhat.com/show_bug.cgi?id=2456333 
+                              │                  ├ [7] : https://bugzilla.redhat.com/show_bug.cgi?id=2456339 
+                              │                  ├ [8] : https://bugzilla.redhat.com/show_bug.cgi?id=2467809 
+                              │                  ├ [9] : https://bugzilla.redhat.com/show_bug.cgi?id=2467820 
+                              │                  ├ [10]: https://bugzilla.redhat.com/show_bug.cgi?id=2467822 
+                              │                  ├ [11]: https://bugzilla.redhat.com/show_bug.cgi?id=2480756 
+                              │                  ├ [12]: https://bugzilla.redhat.com/show_bug.cgi?id=2484204 
+                              │                  ├ [13]: https://bugzilla.redhat.com/show_bug.cgi?id=2515815 
+                              │                  ├ [14]: https://bugzilla.redhat.com/show_bug.cgi?id=2515820 
+                              │                  ├ [15]: https://bugzilla.redhat.com/show_bug.cgi?id=2515827 
+                              │                  ├ [16]: https://bugzilla.redhat.com/show_bug.cgi?id=2515838 
+                              │                  ├ [17]: https://bugzilla.redhat.com/show_bug.cgi?id=2515839 
+                              │                  ├ [18]: https://bugzilla.redhat.com/show_bug.cgi?id=2515840 
+                              │                  ├ [19]: https://creativecommons.org/licenses/by/4.0/ 
+                              │                  ├ [20]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-202
                               │                  │       6-32280 
-                              │                  ├ [28]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-202
+                              │                  ├ [21]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-202
                               │                  │       6-32281 
-                              │                  ├ [29]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-202
+                              │                  ├ [22]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-202
                               │                  │       6-33811 
-                              │                  ├ [30]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-202
+                              │                  ├ [23]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-202
                               │                  │       6-33818 
-                              │                  ├ [31]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-202
+                              │                  ├ [24]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-202
                               │                  │       6-39820 
-                              │                  ├ [32]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-202
+                              │                  ├ [25]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-202
                               │                  │       6-39821 
-                              │                  ├ [33]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-202
+                              │                  ├ [26]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-202
                               │                  │       6-42499 
-                              │                  ├ [34]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-202
+                              │                  ├ [27]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-202
                               │                  │       6-42504 
-                              │                  ├ [35]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-202
+                              │                  ├ [28]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-202
                               │                  │       6-56853 
-                              │                  ├ [36]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-202
+                              │                  ├ [29]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-202
                               │                  │       6-56858 
-                              │                  ├ [37]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-202
+                              │                  ├ [30]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-202
                               │                  │       6-56859 
-                              │                  ├ [38]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-202
+                              │                  ├ [31]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-202
                               │                  │       6-56860 
-                              │                  ├ [39]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-202
+                              │                  ├ [32]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-202
                               │                  │       6-56862 
-                              │                  ├ [40]: https://errata.almalinux.org/9/ALSA-2026-65117.html 
-                              │                  ├ [41]: https://errata.rockylinux.org/RLSA-2026:65886 
-                              │                  ├ [42]: https://go.dev/cl/804261 
-                              │                  ├ [43]: https://go.dev/issue/80528 
-                              │                  ├ [44]: https://groups.google.com/g/golang-announce/c/94pEornp
+                              │                  ├ [33]: https://errata.almalinux.org/9/ALSA-2026-66364.html 
+                              │                  ├ [34]: https://errata.rockylinux.org/RLSA-2026:65886 
+                              │                  ├ [35]: https://go.dev/cl/804261 
+                              │                  ├ [36]: https://go.dev/issue/80528 
+                              │                  ├ [37]: https://groups.google.com/g/golang-announce/c/94pEornp
                               │                  │       RlI 
-                              │                  ├ [45]: https://linux.oracle.com/cve/CVE-2026-56862.html 
-                              │                  ├ [46]: https://linux.oracle.com/errata/ELSA-2026-66364-0.html 
-                              │                  ├ [47]: https://nvd.nist.gov/vuln/detail/CVE-2026-56862 
-                              │                  ├ [48]: https://pkg.go.dev/vuln/GO-2026-6090 
-                              │                  ╰ [49]: https://www.cve.org/CVERecord?id=CVE-2026-56862 
+                              │                  ├ [38]: https://linux.oracle.com/cve/CVE-2026-56862.html 
+                              │                  ├ [39]: https://linux.oracle.com/errata/ELSA-2026-66364-0.html 
+                              │                  ├ [40]: https://nvd.nist.gov/vuln/detail/CVE-2026-56862 
+                              │                  ├ [41]: https://pkg.go.dev/vuln/GO-2026-6090 
+                              │                  ╰ [42]: https://www.cve.org/CVERecord?id=CVE-2026-56862 
                               ├ PublishedDate   : 2026-08-13T22:17:22.55Z 
                               ╰ LastModifiedDate: 2026-09-03T16:37:52.17Z 
 ```
