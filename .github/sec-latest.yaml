@@ -54,7 +54,8 @@
       PURL: pkg:deb/ubuntu/curl@8.18.0-1ubuntu2.4?arch=amd64&distro=ubuntu-26.04
       UID: b03c5c9c9edf9b21
     InstalledVersion: 8.18.0-1ubuntu2.4
-    Status: affected
+    FixedVersion: 8.18.0-1ubuntu2.7
+    Status: fixed
     Layer:
       Digest: sha256:9828e86a4f220c858c27038e827ed54fef1a63f08eb010a14fd7af13590da543
       DiffID: sha256:718b0340b30f7422f9f61e64777c181088d68ab9a1c5cd184d97031d5cafaee0
@@ -87,9 +88,10 @@
     - https://access.redhat.com/security/cve/CVE-2026-13608
     - https://curl.se/docs/CVE-2026-13608.html
     - https://curl.se/docs/CVE-2026-13608.json
-    - https://github.com/curl/curl/pull/22213/changes/1a00e2a73675c9521d214aafd6c02b553bfeb022
+    - https://github.com/curl/curl/commit/ea71c3b6b60e563651ea8596a9
     - https://hackerone.com/reports/3822248
     - https://nvd.nist.gov/vuln/detail/CVE-2026-13608
+    - https://ubuntu.com/security/notices/USN-8820-1
     - https://www.cve.org/CVERecord?id=CVE-2026-13608
     PublishedDate: '2026-09-06T18:17:19.81Z'
     LastModifiedDate: '2026-09-15T07:16:26.353Z'
@@ -100,7 +102,8 @@
       PURL: pkg:deb/ubuntu/curl@8.18.0-1ubuntu2.4?arch=amd64&distro=ubuntu-26.04
       UID: b03c5c9c9edf9b21
     InstalledVersion: 8.18.0-1ubuntu2.4
-    Status: affected
+    FixedVersion: 8.18.0-1ubuntu2.7
+    Status: fixed
     Layer:
       Digest: sha256:9828e86a4f220c858c27038e827ed54fef1a63f08eb010a14fd7af13590da543
       DiffID: sha256:718b0340b30f7422f9f61e64777c181088d68ab9a1c5cd184d97031d5cafaee0
@@ -134,54 +137,10 @@
     - https://github.com/curl/curl/commit/90325ff0444cbdff368bda5d26d6
     - https://hackerone.com/reports/3916059
     - https://nvd.nist.gov/vuln/detail/CVE-2026-18924
+    - https://ubuntu.com/security/notices/USN-8820-1
     - https://www.cve.org/CVERecord?id=CVE-2026-18924
     PublishedDate: '2026-09-06T18:17:20.553Z'
     LastModifiedDate: '2026-09-15T07:16:27.063Z'
-  - VulnerabilityID: CVE-2026-19931
-    PkgID: curl@8.18.0-1ubuntu2.4
-    PkgName: curl
-    PkgIdentifier:
-      PURL: pkg:deb/ubuntu/curl@8.18.0-1ubuntu2.4?arch=amd64&distro=ubuntu-26.04
-      UID: b03c5c9c9edf9b21
-    InstalledVersion: 8.18.0-1ubuntu2.4
-    Status: affected
-    Layer:
-      Digest: sha256:9828e86a4f220c858c27038e827ed54fef1a63f08eb010a14fd7af13590da543
-      DiffID: sha256:718b0340b30f7422f9f61e64777c181088d68ab9a1c5cd184d97031d5cafaee0
-    SeveritySource: ubuntu
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-19931
-    DataSource:
-      ID: ubuntu
-      Name: Ubuntu CVE Tracker
-      URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Fingerprint: sha256:5e78afe13d779ddb0d9d5f51a12085caf1c7112a9b85a06b475451fe8bedab6c
-    Title: 'curl: libcurl: Information disclosure via incorrect connection reuse with Negotiate authentication'
-    Description: |-
-      A flaw in libcurl makes it wrongly reuse an HTTP connection setup for a given
-      hostname using Negotiate authentication, when the initial request is done
-      using empty credentials. This can make user B's request get sent over user A's
-      previously authenticated connection.
-    Severity: MEDIUM
-    CweIDs:
-    - CWE-488
-    VendorSeverity:
-      photon: 4
-      redhat: 2
-      ubuntu: 2
-    CVSS:
-      redhat:
-        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N
-        V3Score: 6.5
-    References:
-    - https://access.redhat.com/security/cve/CVE-2026-19931
-    - https://curl.se/docs/CVE-2026-19931.html
-    - https://curl.se/docs/CVE-2026-19931.json
-    - https://github.com/curl/curl/commit/7103a93b05bc69ea98ed9d
-    - https://hackerone.com/reports/3923520
-    - https://nvd.nist.gov/vuln/detail/CVE-2026-19931
-    - https://www.cve.org/CVERecord?id=CVE-2026-19931
-    PublishedDate: '2026-09-06T18:17:20.733Z'
-    LastModifiedDate: '2026-09-15T07:16:27.29Z'
   - VulnerabilityID: CVE-2026-80229
     PkgID: curl@8.18.0-1ubuntu2.4
     PkgName: curl
@@ -189,7 +148,8 @@
       PURL: pkg:deb/ubuntu/curl@8.18.0-1ubuntu2.4?arch=amd64&distro=ubuntu-26.04
       UID: b03c5c9c9edf9b21
     InstalledVersion: 8.18.0-1ubuntu2.4
-    Status: affected
+    FixedVersion: 8.18.0-1ubuntu2.7
+    Status: fixed
     Layer:
       Digest: sha256:9828e86a4f220c858c27038e827ed54fef1a63f08eb010a14fd7af13590da543
       DiffID: sha256:718b0340b30f7422f9f61e64777c181088d68ab9a1c5cd184d97031d5cafaee0
@@ -220,6 +180,7 @@
     - https://curl.se/docs/CVE-2026-80229.json
     - https://github.com/curl/curl/commit/7ea37abc6ac0120ba5f6d9
     - https://hackerone.com/reports/3969255
+    - https://ubuntu.com/security/notices/USN-8820-1
     - https://www.cve.org/CVERecord?id=CVE-2026-80229
     PublishedDate: '2026-09-06T18:17:22.217Z'
     LastModifiedDate: '2026-09-15T07:16:30.157Z'
@@ -230,7 +191,8 @@
       PURL: pkg:deb/ubuntu/curl@8.18.0-1ubuntu2.4?arch=amd64&distro=ubuntu-26.04
       UID: b03c5c9c9edf9b21
     InstalledVersion: 8.18.0-1ubuntu2.4
-    Status: affected
+    FixedVersion: 8.18.0-1ubuntu2.7
+    Status: fixed
     Layer:
       Digest: sha256:9828e86a4f220c858c27038e827ed54fef1a63f08eb010a14fd7af13590da543
       DiffID: sha256:718b0340b30f7422f9f61e64777c181088d68ab9a1c5cd184d97031d5cafaee0
@@ -267,6 +229,7 @@
     - https://github.com/curl/curl/commit/5267ed859d545534d0c21
     - https://hackerone.com/reports/3969300
     - https://nvd.nist.gov/vuln/detail/CVE-2026-80230
+    - https://ubuntu.com/security/notices/USN-8820-1
     - https://www.cve.org/CVERecord?id=CVE-2026-80230
     PublishedDate: '2026-09-06T18:17:22.327Z'
     LastModifiedDate: '2026-09-15T07:16:30.337Z'
@@ -277,7 +240,8 @@
       PURL: pkg:deb/ubuntu/curl@8.18.0-1ubuntu2.4?arch=amd64&distro=ubuntu-26.04
       UID: b03c5c9c9edf9b21
     InstalledVersion: 8.18.0-1ubuntu2.4
-    Status: affected
+    FixedVersion: 8.18.0-1ubuntu2.7
+    Status: fixed
     Layer:
       Digest: sha256:9828e86a4f220c858c27038e827ed54fef1a63f08eb010a14fd7af13590da543
       DiffID: sha256:718b0340b30f7422f9f61e64777c181088d68ab9a1c5cd184d97031d5cafaee0
@@ -312,6 +276,7 @@
     - https://github.com/curl/curl/commit/4f6aa41a0145e930e76677
     - https://hackerone.com/reports/3972395
     - https://nvd.nist.gov/vuln/detail/CVE-2026-80255
+    - https://ubuntu.com/security/notices/USN-8820-1
     - https://www.cve.org/CVERecord?id=CVE-2026-80255
     PublishedDate: '2026-09-06T18:17:22.623Z'
     LastModifiedDate: '2026-09-15T07:16:30.77Z'
@@ -322,7 +287,8 @@
       PURL: pkg:deb/ubuntu/curl@8.18.0-1ubuntu2.4?arch=amd64&distro=ubuntu-26.04
       UID: b03c5c9c9edf9b21
     InstalledVersion: 8.18.0-1ubuntu2.4
-    Status: affected
+    FixedVersion: 8.18.0-1ubuntu2.7
+    Status: fixed
     Layer:
       Digest: sha256:9828e86a4f220c858c27038e827ed54fef1a63f08eb010a14fd7af13590da543
       DiffID: sha256:718b0340b30f7422f9f61e64777c181088d68ab9a1c5cd184d97031d5cafaee0
@@ -363,6 +329,7 @@
     - https://github.com/curl/curl/commit/95c1e8915dce64606bd753fd47f
     - https://hackerone.com/reports/3972385
     - https://nvd.nist.gov/vuln/detail/CVE-2026-82209
+    - https://ubuntu.com/security/notices/USN-8820-1
     - https://www.cve.org/CVERecord?id=CVE-2026-82209
     PublishedDate: '2026-09-06T18:17:22.847Z'
     LastModifiedDate: '2026-09-15T07:16:31.233Z'
@@ -1764,7 +1731,8 @@
       PURL: pkg:deb/ubuntu/libcurl4t64@8.18.0-1ubuntu2.4?arch=amd64&distro=ubuntu-26.04
       UID: 7abe0215def5bdbc
     InstalledVersion: 8.18.0-1ubuntu2.4
-    Status: affected
+    FixedVersion: 8.18.0-1ubuntu2.7
+    Status: fixed
     Layer:
       Digest: sha256:9828e86a4f220c858c27038e827ed54fef1a63f08eb010a14fd7af13590da543
       DiffID: sha256:718b0340b30f7422f9f61e64777c181088d68ab9a1c5cd184d97031d5cafaee0
@@ -1797,9 +1765,10 @@
     - https://access.redhat.com/security/cve/CVE-2026-13608
     - https://curl.se/docs/CVE-2026-13608.html
     - https://curl.se/docs/CVE-2026-13608.json
-    - https://github.com/curl/curl/pull/22213/changes/1a00e2a73675c9521d214aafd6c02b553bfeb022
+    - https://github.com/curl/curl/commit/ea71c3b6b60e563651ea8596a9
     - https://hackerone.com/reports/3822248
     - https://nvd.nist.gov/vuln/detail/CVE-2026-13608
+    - https://ubuntu.com/security/notices/USN-8820-1
     - https://www.cve.org/CVERecord?id=CVE-2026-13608
     PublishedDate: '2026-09-06T18:17:19.81Z'
     LastModifiedDate: '2026-09-15T07:16:26.353Z'
@@ -1810,7 +1779,8 @@
       PURL: pkg:deb/ubuntu/libcurl4t64@8.18.0-1ubuntu2.4?arch=amd64&distro=ubuntu-26.04
       UID: 7abe0215def5bdbc
     InstalledVersion: 8.18.0-1ubuntu2.4
-    Status: affected
+    FixedVersion: 8.18.0-1ubuntu2.7
+    Status: fixed
     Layer:
       Digest: sha256:9828e86a4f220c858c27038e827ed54fef1a63f08eb010a14fd7af13590da543
       DiffID: sha256:718b0340b30f7422f9f61e64777c181088d68ab9a1c5cd184d97031d5cafaee0
@@ -1844,54 +1814,10 @@
     - https://github.com/curl/curl/commit/90325ff0444cbdff368bda5d26d6
     - https://hackerone.com/reports/3916059
     - https://nvd.nist.gov/vuln/detail/CVE-2026-18924
+    - https://ubuntu.com/security/notices/USN-8820-1
     - https://www.cve.org/CVERecord?id=CVE-2026-18924
     PublishedDate: '2026-09-06T18:17:20.553Z'
     LastModifiedDate: '2026-09-15T07:16:27.063Z'
-  - VulnerabilityID: CVE-2026-19931
-    PkgID: libcurl4t64@8.18.0-1ubuntu2.4
-    PkgName: libcurl4t64
-    PkgIdentifier:
-      PURL: pkg:deb/ubuntu/libcurl4t64@8.18.0-1ubuntu2.4?arch=amd64&distro=ubuntu-26.04
-      UID: 7abe0215def5bdbc
-    InstalledVersion: 8.18.0-1ubuntu2.4
-    Status: affected
-    Layer:
-      Digest: sha256:9828e86a4f220c858c27038e827ed54fef1a63f08eb010a14fd7af13590da543
-      DiffID: sha256:718b0340b30f7422f9f61e64777c181088d68ab9a1c5cd184d97031d5cafaee0
-    SeveritySource: ubuntu
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-19931
-    DataSource:
-      ID: ubuntu
-      Name: Ubuntu CVE Tracker
-      URL: https://git.launchpad.net/ubuntu-cve-tracker
-    Fingerprint: sha256:8acea7a50bb905916a381d24d5d957283b41c23b433e53947092d325c20dd294
-    Title: 'curl: libcurl: Information disclosure via incorrect connection reuse with Negotiate authentication'
-    Description: |-
-      A flaw in libcurl makes it wrongly reuse an HTTP connection setup for a given
-      hostname using Negotiate authentication, when the initial request is done
-      using empty credentials. This can make user B's request get sent over user A's
-      previously authenticated connection.
-    Severity: MEDIUM
-    CweIDs:
-    - CWE-488
-    VendorSeverity:
-      photon: 4
-      redhat: 2
-      ubuntu: 2
-    CVSS:
-      redhat:
-        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N
-        V3Score: 6.5
-    References:
-    - https://access.redhat.com/security/cve/CVE-2026-19931
-    - https://curl.se/docs/CVE-2026-19931.html
-    - https://curl.se/docs/CVE-2026-19931.json
-    - https://github.com/curl/curl/commit/7103a93b05bc69ea98ed9d
-    - https://hackerone.com/reports/3923520
-    - https://nvd.nist.gov/vuln/detail/CVE-2026-19931
-    - https://www.cve.org/CVERecord?id=CVE-2026-19931
-    PublishedDate: '2026-09-06T18:17:20.733Z'
-    LastModifiedDate: '2026-09-15T07:16:27.29Z'
   - VulnerabilityID: CVE-2026-80229
     PkgID: libcurl4t64@8.18.0-1ubuntu2.4
     PkgName: libcurl4t64
@@ -1899,7 +1825,8 @@
       PURL: pkg:deb/ubuntu/libcurl4t64@8.18.0-1ubuntu2.4?arch=amd64&distro=ubuntu-26.04
       UID: 7abe0215def5bdbc
     InstalledVersion: 8.18.0-1ubuntu2.4
-    Status: affected
+    FixedVersion: 8.18.0-1ubuntu2.7
+    Status: fixed
     Layer:
       Digest: sha256:9828e86a4f220c858c27038e827ed54fef1a63f08eb010a14fd7af13590da543
       DiffID: sha256:718b0340b30f7422f9f61e64777c181088d68ab9a1c5cd184d97031d5cafaee0
@@ -1930,6 +1857,7 @@
     - https://curl.se/docs/CVE-2026-80229.json
     - https://github.com/curl/curl/commit/7ea37abc6ac0120ba5f6d9
     - https://hackerone.com/reports/3969255
+    - https://ubuntu.com/security/notices/USN-8820-1
     - https://www.cve.org/CVERecord?id=CVE-2026-80229
     PublishedDate: '2026-09-06T18:17:22.217Z'
     LastModifiedDate: '2026-09-15T07:16:30.157Z'
@@ -1940,7 +1868,8 @@
       PURL: pkg:deb/ubuntu/libcurl4t64@8.18.0-1ubuntu2.4?arch=amd64&distro=ubuntu-26.04
       UID: 7abe0215def5bdbc
     InstalledVersion: 8.18.0-1ubuntu2.4
-    Status: affected
+    FixedVersion: 8.18.0-1ubuntu2.7
+    Status: fixed
     Layer:
       Digest: sha256:9828e86a4f220c858c27038e827ed54fef1a63f08eb010a14fd7af13590da543
       DiffID: sha256:718b0340b30f7422f9f61e64777c181088d68ab9a1c5cd184d97031d5cafaee0
@@ -1977,6 +1906,7 @@
     - https://github.com/curl/curl/commit/5267ed859d545534d0c21
     - https://hackerone.com/reports/3969300
     - https://nvd.nist.gov/vuln/detail/CVE-2026-80230
+    - https://ubuntu.com/security/notices/USN-8820-1
     - https://www.cve.org/CVERecord?id=CVE-2026-80230
     PublishedDate: '2026-09-06T18:17:22.327Z'
     LastModifiedDate: '2026-09-15T07:16:30.337Z'
@@ -1987,7 +1917,8 @@
       PURL: pkg:deb/ubuntu/libcurl4t64@8.18.0-1ubuntu2.4?arch=amd64&distro=ubuntu-26.04
       UID: 7abe0215def5bdbc
     InstalledVersion: 8.18.0-1ubuntu2.4
-    Status: affected
+    FixedVersion: 8.18.0-1ubuntu2.7
+    Status: fixed
     Layer:
       Digest: sha256:9828e86a4f220c858c27038e827ed54fef1a63f08eb010a14fd7af13590da543
       DiffID: sha256:718b0340b30f7422f9f61e64777c181088d68ab9a1c5cd184d97031d5cafaee0
@@ -2022,6 +1953,7 @@
     - https://github.com/curl/curl/commit/4f6aa41a0145e930e76677
     - https://hackerone.com/reports/3972395
     - https://nvd.nist.gov/vuln/detail/CVE-2026-80255
+    - https://ubuntu.com/security/notices/USN-8820-1
     - https://www.cve.org/CVERecord?id=CVE-2026-80255
     PublishedDate: '2026-09-06T18:17:22.623Z'
     LastModifiedDate: '2026-09-15T07:16:30.77Z'
@@ -2032,7 +1964,8 @@
       PURL: pkg:deb/ubuntu/libcurl4t64@8.18.0-1ubuntu2.4?arch=amd64&distro=ubuntu-26.04
       UID: 7abe0215def5bdbc
     InstalledVersion: 8.18.0-1ubuntu2.4
-    Status: affected
+    FixedVersion: 8.18.0-1ubuntu2.7
+    Status: fixed
     Layer:
       Digest: sha256:9828e86a4f220c858c27038e827ed54fef1a63f08eb010a14fd7af13590da543
       DiffID: sha256:718b0340b30f7422f9f61e64777c181088d68ab9a1c5cd184d97031d5cafaee0
@@ -2073,6 +2006,7 @@
     - https://github.com/curl/curl/commit/95c1e8915dce64606bd753fd47f
     - https://hackerone.com/reports/3972385
     - https://nvd.nist.gov/vuln/detail/CVE-2026-82209
+    - https://ubuntu.com/security/notices/USN-8820-1
     - https://www.cve.org/CVERecord?id=CVE-2026-82209
     PublishedDate: '2026-09-06T18:17:22.847Z'
     LastModifiedDate: '2026-09-15T07:16:31.233Z'
@@ -3570,6 +3504,49 @@
     - https://www.cve.org/CVERecord?id=CVE-2026-13757
     PublishedDate: '2026-06-29T19:16:40.907Z'
     LastModifiedDate: '2026-09-01T13:18:10.253Z'
+  - VulnerabilityID: CVE-2026-89161
+    PkgID: libpcre2-8-0@10.46-1build1
+    PkgName: libpcre2-8-0
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/libpcre2-8-0@10.46-1build1?arch=amd64&distro=ubuntu-26.04
+      UID: 589ba18a525ea25b
+    InstalledVersion: 10.46-1build1
+    Status: affected
+    Layer:
+      Digest: sha256:9828e86a4f220c858c27038e827ed54fef1a63f08eb010a14fd7af13590da543
+      DiffID: sha256:718b0340b30f7422f9f61e64777c181088d68ab9a1c5cd184d97031d5cafaee0
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-89161
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:577c6c95e4f60ec3abea3f508a9cefb8a9b2d6c0b15fa1c11996692b2d5b1730
+    Title: 'pcre2: PCRE2: Memory corruption vulnerability in pcre2_jit_match'
+    Description: In PCRE2 before 10.48, pcre2_jit_match mishandles a previously copied subject being passed in as a context. An incorrect free operation can occur.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-590
+    VendorSeverity:
+      nvd: 3
+      redhat: 3
+      ubuntu: 2
+    CVSS:
+      nvd:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H
+        V3Score: 7.8
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H
+        V3Score: 7.4
+    References:
+    - https://access.redhat.com/security/cve/CVE-2026-89161
+    - https://github.com/PCRE2Project/pcre2/commit/1dcd0cf42a6a7cb62cc9a7c024196733abcfda95%20%28pcre2-10.48-RC1%29
+    - https://github.com/PCRE2Project/pcre2/pull/937
+    - https://github.com/PCRE2Project/pcre2/releases/tag/pcre2-10.48
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-89161
+    - https://www.cve.org/CVERecord?id=CVE-2026-89161
+    PublishedDate: '2026-09-11T04:18:04.47Z'
+    LastModifiedDate: '2026-09-16T19:10:47.78Z'
   - VulnerabilityID: CVE-2026-15308
     PkgID: libpython3.14-minimal@3.14.4-1ubuntu0.1
     PkgName: libpython3.14-minimal
@@ -5938,7 +5915,6 @@
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
         V3Score: 7.5
     References:
-    - https://access.redhat.com/errata/RHSA-2026:70391
     - https://access.redhat.com/errata/RHSA-2026:70641
     - https://access.redhat.com/security/cve/CVE-2026-33818
     - https://bugzilla.redhat.com/2515815
@@ -5946,19 +5922,21 @@
     - https://bugzilla.redhat.com/2515827
     - https://bugzilla.redhat.com/2515838
     - https://bugzilla.redhat.com/2515839
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2402034
     - https://bugzilla.redhat.com/show_bug.cgi?id=2515815
     - https://bugzilla.redhat.com/show_bug.cgi?id=2515820
     - https://bugzilla.redhat.com/show_bug.cgi?id=2515827
     - https://bugzilla.redhat.com/show_bug.cgi?id=2515838
     - https://bugzilla.redhat.com/show_bug.cgi?id=2515839
     - https://creativecommons.org/licenses/by/4.0/
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-11395
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-33818
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-56853
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-56858
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-56860
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-56862
     - https://errata.almalinux.org/9/ALSA-2026-70641.html
-    - https://errata.rockylinux.org/RLSA-2026:70391
+    - https://errata.rockylinux.org/RLSA-2026:70641
     - https://go.dev/cl/814980
     - https://go.dev/issue/80405
     - https://groups.google.com/g/golang-announce/c/94pEornpRlI
@@ -6299,7 +6277,6 @@
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
         V3Score: 7.5
     References:
-    - https://access.redhat.com/errata/RHSA-2026:70391
     - https://access.redhat.com/errata/RHSA-2026:70641
     - https://access.redhat.com/security/cve/CVE-2026-56853
     - https://bugzilla.redhat.com/2515815
@@ -6307,19 +6284,21 @@
     - https://bugzilla.redhat.com/2515827
     - https://bugzilla.redhat.com/2515838
     - https://bugzilla.redhat.com/2515839
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2402034
     - https://bugzilla.redhat.com/show_bug.cgi?id=2515815
     - https://bugzilla.redhat.com/show_bug.cgi?id=2515820
     - https://bugzilla.redhat.com/show_bug.cgi?id=2515827
     - https://bugzilla.redhat.com/show_bug.cgi?id=2515838
     - https://bugzilla.redhat.com/show_bug.cgi?id=2515839
     - https://creativecommons.org/licenses/by/4.0/
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-11395
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-33818
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-56853
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-56858
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-56860
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-56862
     - https://errata.almalinux.org/9/ALSA-2026-70641.html
-    - https://errata.rockylinux.org/RLSA-2026:70391
+    - https://errata.rockylinux.org/RLSA-2026:70641
     - https://go.dev/cl/795540
     - https://go.dev/issue/80205
     - https://groups.google.com/g/golang-announce/c/94pEornpRlI
@@ -6371,7 +6350,6 @@
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N
         V3Score: 8.1
     References:
-    - https://access.redhat.com/errata/RHSA-2026:70391
     - https://access.redhat.com/errata/RHSA-2026:70641
     - https://access.redhat.com/security/cve/CVE-2026-56858
     - https://bugzilla.redhat.com/2515815
@@ -6379,19 +6357,21 @@
     - https://bugzilla.redhat.com/2515827
     - https://bugzilla.redhat.com/2515838
     - https://bugzilla.redhat.com/2515839
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2402034
     - https://bugzilla.redhat.com/show_bug.cgi?id=2515815
     - https://bugzilla.redhat.com/show_bug.cgi?id=2515820
     - https://bugzilla.redhat.com/show_bug.cgi?id=2515827
     - https://bugzilla.redhat.com/show_bug.cgi?id=2515838
     - https://bugzilla.redhat.com/show_bug.cgi?id=2515839
     - https://creativecommons.org/licenses/by/4.0/
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-11395
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-33818
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-56853
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-56858
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-56860
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-56862
     - https://errata.almalinux.org/9/ALSA-2026-70641.html
-    - https://errata.rockylinux.org/RLSA-2026:70391
+    - https://errata.rockylinux.org/RLSA-2026:70641
     - https://go.dev/cl/807100
     - https://go.dev/issue/80435
     - https://groups.google.com/g/golang-announce/c/94pEornpRlI
@@ -6525,7 +6505,6 @@
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
         V3Score: 7.5
     References:
-    - https://access.redhat.com/errata/RHSA-2026:70391
     - https://access.redhat.com/errata/RHSA-2026:70641
     - https://access.redhat.com/security/cve/CVE-2026-56860
     - https://bugzilla.redhat.com/2515815
@@ -6533,19 +6512,21 @@
     - https://bugzilla.redhat.com/2515827
     - https://bugzilla.redhat.com/2515838
     - https://bugzilla.redhat.com/2515839
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2402034
     - https://bugzilla.redhat.com/show_bug.cgi?id=2515815
     - https://bugzilla.redhat.com/show_bug.cgi?id=2515820
     - https://bugzilla.redhat.com/show_bug.cgi?id=2515827
     - https://bugzilla.redhat.com/show_bug.cgi?id=2515838
     - https://bugzilla.redhat.com/show_bug.cgi?id=2515839
     - https://creativecommons.org/licenses/by/4.0/
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-11395
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-33818
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-56853
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-56858
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-56860
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-56862
     - https://errata.almalinux.org/9/ALSA-2026-70641.html
-    - https://errata.rockylinux.org/RLSA-2026:70391
+    - https://errata.rockylinux.org/RLSA-2026:70641
     - https://go.dev/cl/803681
     - https://go.dev/issue/80494
     - https://groups.google.com/g/golang-announce/c/94pEornpRlI
@@ -6597,7 +6578,6 @@
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
         V3Score: 7.5
     References:
-    - https://access.redhat.com/errata/RHSA-2026:70391
     - https://access.redhat.com/errata/RHSA-2026:70641
     - https://access.redhat.com/security/cve/CVE-2026-56862
     - https://bugzilla.redhat.com/2515815
@@ -6605,19 +6585,21 @@
     - https://bugzilla.redhat.com/2515827
     - https://bugzilla.redhat.com/2515838
     - https://bugzilla.redhat.com/2515839
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2402034
     - https://bugzilla.redhat.com/show_bug.cgi?id=2515815
     - https://bugzilla.redhat.com/show_bug.cgi?id=2515820
     - https://bugzilla.redhat.com/show_bug.cgi?id=2515827
     - https://bugzilla.redhat.com/show_bug.cgi?id=2515838
     - https://bugzilla.redhat.com/show_bug.cgi?id=2515839
     - https://creativecommons.org/licenses/by/4.0/
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-11395
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-33818
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-56853
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-56858
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-56860
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-56862
     - https://errata.almalinux.org/9/ALSA-2026-70641.html
-    - https://errata.rockylinux.org/RLSA-2026:70391
+    - https://errata.rockylinux.org/RLSA-2026:70641
     - https://go.dev/cl/804261
     - https://go.dev/issue/80528
     - https://groups.google.com/g/golang-announce/c/94pEornpRlI
