@@ -88,7 +88,8 @@
 │                       │       │                   validation. 
 │                       │       ├ Severity        : MEDIUM 
 │                       │       ├ CweIDs           ─ [0]: CWE-923 
-│                       │       ├ VendorSeverity   ╭ photon: 3 
+│                       │       ├ VendorSeverity   ╭ amazon: 3 
+│                       │       │                  ├ photon: 3 
 │                       │       │                  ├ redhat: 1 
 │                       │       │                  ╰ ubuntu: 2 
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:
@@ -235,7 +236,8 @@
 │                       │       │                   rejected. 
 │                       │       ├ Severity        : MEDIUM 
 │                       │       ├ CweIDs           ─ [0]: CWE-295 
-│                       │       ├ VendorSeverity   ╭ photon: 3 
+│                       │       ├ VendorSeverity   ╭ amazon: 3 
+│                       │       │                  ├ photon: 3 
 │                       │       │                  ├ redhat: 1 
 │                       │       │                  ╰ ubuntu: 2 
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:
@@ -2096,7 +2098,8 @@
 │                       │       │                   validation. 
 │                       │       ├ Severity        : MEDIUM 
 │                       │       ├ CweIDs           ─ [0]: CWE-923 
-│                       │       ├ VendorSeverity   ╭ photon: 3 
+│                       │       ├ VendorSeverity   ╭ amazon: 3 
+│                       │       │                  ├ photon: 3 
 │                       │       │                  ├ redhat: 1 
 │                       │       │                  ╰ ubuntu: 2 
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:
@@ -2243,7 +2246,8 @@
 │                       │       │                   rejected. 
 │                       │       ├ Severity        : MEDIUM 
 │                       │       ├ CweIDs           ─ [0]: CWE-295 
-│                       │       ├ VendorSeverity   ╭ photon: 3 
+│                       │       ├ VendorSeverity   ╭ amazon: 3 
+│                       │       │                  ├ photon: 3 
 │                       │       │                  ├ redhat: 1 
 │                       │       │                  ╰ ubuntu: 2 
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:
@@ -3465,19 +3469,23 @@
 │                       │       │                   resolution, or non-default parser options. 
 │                       │       ├ Severity        : MEDIUM 
 │                       │       ├ CweIDs           ─ [0]: CWE-407 
-│                       │       ├ VendorSeverity   ╭ amazon: 3 
+│                       │       ├ VendorSeverity   ╭ alma  : 3 
+│                       │       │                  ├ amazon: 3 
 │                       │       │                  ├ azure : 3 
 │                       │       │                  ├ redhat: 3 
 │                       │       │                  ╰ ubuntu: 2 
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
 │                       │       │                           │           N/A:H 
 │                       │       │                           ╰ V3Score : 7.5 
-│                       │       ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2026-66046 
-│                       │       │                  ├ [1]: https://github.com/libexpat/libexpat/pull/1321 
-│                       │       │                  ├ [2]: https://nvd.nist.gov/vuln/detail/CVE-2026-66046 
-│                       │       │                  ├ [3]: https://ubuntu.com/security/notices/USN-8813-1 
-│                       │       │                  ├ [4]: https://www.cve.org/CVERecord?id=CVE-2026-66046 
-│                       │       │                  ╰ [5]: https://www.vulncheck.com/advisories/expat-denial-of-
+│                       │       ├ References       ╭ [0]: https://access.redhat.com/errata/RHSA-2026:72448 
+│                       │       │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2026-66046 
+│                       │       │                  ├ [2]: https://bugzilla.redhat.com/2538967 
+│                       │       │                  ├ [3]: https://errata.almalinux.org/8/ALSA-2026-72448.html 
+│                       │       │                  ├ [4]: https://github.com/libexpat/libexpat/pull/1321 
+│                       │       │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2026-66046 
+│                       │       │                  ├ [6]: https://ubuntu.com/security/notices/USN-8813-1 
+│                       │       │                  ├ [7]: https://www.cve.org/CVERecord?id=CVE-2026-66046 
+│                       │       │                  ╰ [8]: https://www.vulncheck.com/advisories/expat-denial-of-
 │                       │       │                         service-via-storeatts-quadratic-complexity 
 │                       │       ├ PublishedDate   : 2026-08-18T15:16:57Z 
 │                       │       ╰ LastModifiedDate: 2026-09-18T15:07:24.37Z 
@@ -3913,23 +3921,77 @@
 │                       │       │                  ├ [5] : https://access.redhat.com/errata/RHSA-2026:54387 
 │                       │       │                  ├ [6] : https://access.redhat.com/errata/RHSA-2026:54760 
 │                       │       │                  ├ [7] : https://access.redhat.com/errata/RHSA-2026:58981 
-│                       │       │                  ├ [8] : https://access.redhat.com/security/cve/CVE-2026-13757 
-│                       │       │                  ├ [9] : https://bugzilla.redhat.com/2494556 
-│                       │       │                  ├ [10]: https://bugzilla.redhat.com/show_bug.cgi?id=2494556 
-│                       │       │                  ├ [11]: https://creativecommons.org/licenses/by/4.0/ 
-│                       │       │                  ├ [12]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
+│                       │       │                  ├ [8] : https://access.redhat.com/errata/RHSA-2026:72394 
+│                       │       │                  ├ [9] : https://access.redhat.com/errata/RHSA-2026:72395 
+│                       │       │                  ├ [10]: https://access.redhat.com/errata/RHSA-2026:72399 
+│                       │       │                  ├ [11]: https://access.redhat.com/errata/RHSA-2026:72470 
+│                       │       │                  ├ [12]: https://access.redhat.com/errata/RHSA-2026:72475 
+│                       │       │                  ├ [13]: https://access.redhat.com/errata/RHSA-2026:72476 
+│                       │       │                  ├ [14]: https://access.redhat.com/errata/RHSA-2026:72502 
+│                       │       │                  ├ [15]: https://access.redhat.com/security/cve/CVE-2026-13757 
+│                       │       │                  ├ [16]: https://bugzilla.redhat.com/2494556 
+│                       │       │                  ├ [17]: https://bugzilla.redhat.com/show_bug.cgi?id=2494556 
+│                       │       │                  ├ [18]: https://creativecommons.org/licenses/by/4.0/ 
+│                       │       │                  ├ [19]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
 │                       │       │                  │       026-13757 
-│                       │       │                  ├ [13]: https://errata.almalinux.org/9/ALSA-2026-49667.html 
-│                       │       │                  ├ [14]: https://errata.rockylinux.org/RLSA-2026:49667 
-│                       │       │                  ├ [15]: https://github.com/advisories/GHSA-p2wm-69qx-x25w 
-│                       │       │                  ├ [16]: https://linux.oracle.com/cve/CVE-2026-13757.html 
-│                       │       │                  ├ [17]: https://linux.oracle.com/errata/ELSA-2026-49668.html 
-│                       │       │                  ├ [18]: https://nvd.nist.gov/vuln/detail/CVE-2026-13757 
-│                       │       │                  ├ [19]: https://ubuntu.com/security/notices/USN-8687-1 
-│                       │       │                  ╰ [20]: https://www.cve.org/CVERecord?id=CVE-2026-13757 
+│                       │       │                  ├ [20]: https://errata.almalinux.org/9/ALSA-2026-49667.html 
+│                       │       │                  ├ [21]: https://errata.rockylinux.org/RLSA-2026:49667 
+│                       │       │                  ├ [22]: https://github.com/advisories/GHSA-p2wm-69qx-x25w 
+│                       │       │                  ├ [23]: https://linux.oracle.com/cve/CVE-2026-13757.html 
+│                       │       │                  ├ [24]: https://linux.oracle.com/errata/ELSA-2026-49668.html 
+│                       │       │                  ├ [25]: https://nvd.nist.gov/vuln/detail/CVE-2026-13757 
+│                       │       │                  ├ [26]: https://ubuntu.com/security/notices/USN-8687-1 
+│                       │       │                  ╰ [27]: https://www.cve.org/CVERecord?id=CVE-2026-13757 
 │                       │       ├ PublishedDate   : 2026-06-29T19:16:40.907Z 
-│                       │       ╰ LastModifiedDate: 2026-09-01T13:18:10.253Z 
-│                       ├ [74]  ╭ VulnerabilityID : CVE-2026-89161 
+│                       │       ╰ LastModifiedDate: 2026-09-29T01:16:45.04Z 
+│                       ├ [74]  ╭ VulnerabilityID : CVE-2026-86145 
+│                       │       ├ PkgID           : libpcre2-8-0@10.46-1build1 
+│                       │       ├ PkgName         : libpcre2-8-0 
+│                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libpcre2-8-0@10.46-1build1?arch=amd64
+│                       │       │                  │       &distro=ubuntu-26.04 
+│                       │       │                  ╰ UID : 589ba18a525ea25b 
+│                       │       ├ InstalledVersion: 10.46-1build1 
+│                       │       ├ Status          : affected 
+│                       │       ├ Layer            ╭ Digest: sha256:9828e86a4f220c858c27038e827ed54fef1a63f08eb
+│                       │       │                  │         010a14fd7af13590da543 
+│                       │       │                  ╰ DiffID: sha256:718b0340b30f7422f9f61e64777c181088d68ab9a1c
+│                       │       │                            5cd184d97031d5cafaee0 
+│                       │       ├ SeveritySource  : ubuntu 
+│                       │       ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-86145 
+│                       │       ├ DataSource       ╭ ID  : ubuntu 
+│                       │       │                  ├ Name: Ubuntu CVE Tracker 
+│                       │       │                  ╰ URL : https://git.launchpad.net/ubuntu-cve-tracker 
+│                       │       ├ Fingerprint     : sha256:b72d6f38b4213f11c45323ef8fd3bf6099145aa60008a0299b6a
+│                       │       │                   d90685ffe8be 
+│                       │       ├ Title           : pcre2: PCRE2: Out-of-bounds write allows arbitrary code
+│                       │       │                   execution via crafted regular expressions 
+│                       │       ├ Description     : PCRE2 before 10.48 allows a pcre2_dfa_match out-of-bounds
+│                       │       │                   write because reuse of a cached workspace block, in a
+│                       │       │                   recursive DFA matching workspace, lacks a size check (even
+│                       │       │                   though a newly allocated block, for the same purpose, does
+│                       │       │                   have a size check). This outcome requires an
+│                       │       │                   attacker-controlled regular expression, or a recursive
+│                       │       │                   pattern in conjunction with a small heap limit (this can be
+│                       │       │                    set through the API). 
+│                       │       ├ Severity        : MEDIUM 
+│                       │       ├ CweIDs           ─ [0]: CWE-424 
+│                       │       ├ VendorSeverity   ╭ azure : 3 
+│                       │       │                  ├ redhat: 3 
+│                       │       │                  ╰ ubuntu: 2 
+│                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
+│                       │       │                           │           H/A:L 
+│                       │       │                           ╰ V3Score : 8.2 
+│                       │       ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2026/09/05/3 
+│                       │       │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2026-86145 
+│                       │       │                  ├ [2]: https://github.com/PCRE2Project/pcre2/releases/tag/pc
+│                       │       │                  │      re2-10.48 
+│                       │       │                  ├ [3]: https://github.com/PCRE2Project/pcre2/security/adviso
+│                       │       │                  │      ries/GHSA-3r4p-g7gg-ppmf 
+│                       │       │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2026-86145 
+│                       │       │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2026-86145 
+│                       │       ├ PublishedDate   : 2026-09-05T06:17:10.37Z 
+│                       │       ╰ LastModifiedDate: 2026-09-09T16:04:24.933Z 
+│                       ├ [75]  ╭ VulnerabilityID : CVE-2026-89161 
 │                       │       ├ PkgID           : libpcre2-8-0@10.46-1build1 
 │                       │       ├ PkgName         : libpcre2-8-0 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libpcre2-8-0@10.46-1build1?arch=amd64
@@ -3975,7 +4037,7 @@
 │                       │       │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2026-89161 
 │                       │       ├ PublishedDate   : 2026-09-11T04:18:04.47Z 
 │                       │       ╰ LastModifiedDate: 2026-09-16T19:10:47.78Z 
-│                       ├ [75]  ╭ VulnerabilityID : CVE-2026-15308 
+│                       ├ [76]  ╭ VulnerabilityID : CVE-2026-15308 
 │                       │       ├ PkgID           : libpython3.14-minimal@3.14.4-1ubuntu0.1 
 │                       │       ├ PkgName         : libpython3.14-minimal 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libpython3.14-minimal@3.14.4-1ubuntu0
@@ -4061,7 +4123,7 @@
 │                       │       │                  ╰ [24]: https://www.cve.org/CVERecord?id=CVE-2026-15308 
 │                       │       ├ PublishedDate   : 2026-07-09T17:16:58.26Z 
 │                       │       ╰ LastModifiedDate: 2026-08-20T17:02:59.313Z 
-│                       ├ [76]  ╭ VulnerabilityID : CVE-2026-4360 
+│                       ├ [77]  ╭ VulnerabilityID : CVE-2026-4360 
 │                       │       ├ PkgID           : libpython3.14-minimal@3.14.4-1ubuntu0.1 
 │                       │       ├ PkgName         : libpython3.14-minimal 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libpython3.14-minimal@3.14.4-1ubuntu0
@@ -4131,7 +4193,7 @@
 │                       │       │                  ╰ [13]: https://www.cve.org/CVERecord?id=CVE-2026-4360 
 │                       │       ├ PublishedDate   : 2026-06-30T15:16:57.193Z 
 │                       │       ╰ LastModifiedDate: 2026-08-13T01:16:53.42Z 
-│                       ├ [77]  ╭ VulnerabilityID : CVE-2026-15308 
+│                       ├ [78]  ╭ VulnerabilityID : CVE-2026-15308 
 │                       │       ├ PkgID           : libpython3.14-stdlib@3.14.4-1ubuntu0.1 
 │                       │       ├ PkgName         : libpython3.14-stdlib 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libpython3.14-stdlib@3.14.4-1ubuntu0.
@@ -4217,7 +4279,7 @@
 │                       │       │                  ╰ [24]: https://www.cve.org/CVERecord?id=CVE-2026-15308 
 │                       │       ├ PublishedDate   : 2026-07-09T17:16:58.26Z 
 │                       │       ╰ LastModifiedDate: 2026-08-20T17:02:59.313Z 
-│                       ├ [78]  ╭ VulnerabilityID : CVE-2026-4360 
+│                       ├ [79]  ╭ VulnerabilityID : CVE-2026-4360 
 │                       │       ├ PkgID           : libpython3.14-stdlib@3.14.4-1ubuntu0.1 
 │                       │       ├ PkgName         : libpython3.14-stdlib 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libpython3.14-stdlib@3.14.4-1ubuntu0.
@@ -4287,7 +4349,7 @@
 │                       │       │                  ╰ [13]: https://www.cve.org/CVERecord?id=CVE-2026-4360 
 │                       │       ├ PublishedDate   : 2026-06-30T15:16:57.193Z 
 │                       │       ╰ LastModifiedDate: 2026-08-13T01:16:53.42Z 
-│                       ├ [79]  ╭ VulnerabilityID : CVE-2026-39113 
+│                       ├ [80]  ╭ VulnerabilityID : CVE-2026-39113 
 │                       │       ├ PkgID           : libsqlite3-0@3.46.1-9ubuntu0.2 
 │                       │       ├ PkgName         : libsqlite3-0 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libsqlite3-0@3.46.1-9ubuntu0.2?arch=a
@@ -4334,7 +4396,7 @@
 │                       │       │                  ╰ [7]: https://www.sqlite.org/sqlar.html 
 │                       │       ├ PublishedDate   : 2026-08-25T21:17:00.08Z 
 │                       │       ╰ LastModifiedDate: 2026-09-09T16:04:24.933Z 
-│                       ├ [80]  ╭ VulnerabilityID : CVE-2026-66032 
+│                       ├ [81]  ╭ VulnerabilityID : CVE-2026-66032 
 │                       │       ├ PkgID           : libssh2-1t64@1.11.1-1ubuntu0.26.04.3 
 │                       │       ├ PkgName         : libssh2-1t64 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libssh2-1t64@1.11.1-1ubuntu0.26.04.3?
@@ -4397,7 +4459,7 @@
 │                       │       │                         ree-heap-corruption-via-sftp-open 
 │                       │       ├ PublishedDate   : 2026-07-24T17:17:35.12Z 
 │                       │       ╰ LastModifiedDate: 2026-08-07T01:07:10.71Z 
-│                       ├ [81]  ╭ VulnerabilityID : CVE-2026-66033 
+│                       ├ [82]  ╭ VulnerabilityID : CVE-2026-66033 
 │                       │       ├ PkgID           : libssh2-1t64@1.11.1-1ubuntu0.26.04.3 
 │                       │       ├ PkgName         : libssh2-1t64 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libssh2-1t64@1.11.1-1ubuntu0.26.04.3?
@@ -4459,7 +4521,7 @@
 │                       │       │                         underflow-dos-via-aes-gcm-cipher-negotiation 
 │                       │       ├ PublishedDate   : 2026-07-24T17:17:35.263Z 
 │                       │       ╰ LastModifiedDate: 2026-07-30T15:44:47.257Z 
-│                       ├ [82]  ╭ VulnerabilityID : CVE-2026-66035 
+│                       ├ [83]  ╭ VulnerabilityID : CVE-2026-66035 
 │                       │       ├ PkgID           : libssh2-1t64@1.11.1-1ubuntu0.26.04.3 
 │                       │       ├ PkgName         : libssh2-1t64 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libssh2-1t64@1.11.1-1ubuntu0.26.04.3?
@@ -4522,7 +4584,7 @@
 │                       │       │                         fer-overflow-via-etm-cipher-negotiation 
 │                       │       ├ PublishedDate   : 2026-07-24T17:17:35.547Z 
 │                       │       ╰ LastModifiedDate: 2026-07-30T15:41:05.69Z 
-│                       ├ [83]  ╭ VulnerabilityID : CVE-2026-40228 
+│                       ├ [84]  ╭ VulnerabilityID : CVE-2026-40228 
 │                       │       ├ PkgID           : libsystemd0@259.5-0ubuntu3.4 
 │                       │       ├ PkgName         : libsystemd0 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libsystemd0@259.5-0ubuntu3.4?arch=amd
@@ -4566,7 +4628,7 @@
 │                       │       │                         8/1 
 │                       │       ├ PublishedDate   : 2026-04-10T16:16:33.753Z 
 │                       │       ╰ LastModifiedDate: 2026-06-17T10:44:53.31Z 
-│                       ├ [84]  ╭ VulnerabilityID : CVE-2026-40228 
+│                       ├ [85]  ╭ VulnerabilityID : CVE-2026-40228 
 │                       │       ├ PkgID           : libudev1@259.5-0ubuntu3.4 
 │                       │       ├ PkgName         : libudev1 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/libudev1@259.5-0ubuntu3.4?arch=amd64&
@@ -4610,7 +4672,7 @@
 │                       │       │                         8/1 
 │                       │       ├ PublishedDate   : 2026-04-10T16:16:33.753Z 
 │                       │       ╰ LastModifiedDate: 2026-06-17T10:44:53.31Z 
-│                       ├ [85]  ╭ VulnerabilityID : CVE-2024-56433 
+│                       ├ [86]  ╭ VulnerabilityID : CVE-2024-56433 
 │                       │       ├ PkgID           : login.defs@1:4.17.4-2ubuntu3 
 │                       │       ├ PkgName         : login.defs 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/login.defs@4.17.4-2ubuntu3?arch=all&d
@@ -4674,7 +4736,7 @@
 │                       │       │                  ╰ [14]: https://www.cve.org/CVERecord?id=CVE-2024-56433 
 │                       │       ├ PublishedDate   : 2024-12-26T09:15:07.267Z 
 │                       │       ╰ LastModifiedDate: 2026-06-17T08:12:10.903Z 
-│                       ├ [86]  ╭ VulnerabilityID : CVE-2024-56433 
+│                       ├ [87]  ╭ VulnerabilityID : CVE-2024-56433 
 │                       │       ├ PkgID           : passwd@1:4.17.4-2ubuntu3 
 │                       │       ├ PkgName         : passwd 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/passwd@4.17.4-2ubuntu3?arch=amd64&dis
@@ -4738,7 +4800,7 @@
 │                       │       │                  ╰ [14]: https://www.cve.org/CVERecord?id=CVE-2024-56433 
 │                       │       ├ PublishedDate   : 2024-12-26T09:15:07.267Z 
 │                       │       ╰ LastModifiedDate: 2026-06-17T08:12:10.903Z 
-│                       ├ [87]  ╭ VulnerabilityID : CVE-2026-12087 
+│                       ├ [88]  ╭ VulnerabilityID : CVE-2026-12087 
 │                       │       ├ PkgID           : perl-base@5.40.1-7ubuntu0.1 
 │                       │       ├ PkgName         : perl-base 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/perl-base@5.40.1-7ubuntu0.1?arch=amd6
@@ -4802,7 +4864,7 @@
 │                       │       │                  ╰ [9]: https://www.cve.org/CVERecord?id=CVE-2026-12087 
 │                       │       ├ PublishedDate   : 2026-06-15T22:16:16.197Z 
 │                       │       ╰ LastModifiedDate: 2026-06-17T10:14:37.383Z 
-│                       ├ [88]  ╭ VulnerabilityID : CVE-2026-13221 
+│                       ├ [89]  ╭ VulnerabilityID : CVE-2026-13221 
 │                       │       ├ PkgID           : perl-base@5.40.1-7ubuntu0.1 
 │                       │       ├ PkgName         : perl-base 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/perl-base@5.40.1-7ubuntu0.1?arch=amd6
@@ -4881,7 +4943,7 @@
 │                       │       │                  ╰ [18]: https://www.cve.org/CVERecord?id=CVE-2026-13221 
 │                       │       ├ PublishedDate   : 2026-07-13T17:16:48.923Z 
 │                       │       ╰ LastModifiedDate: 2026-09-08T22:17:37.217Z 
-│                       ├ [89]  ╭ VulnerabilityID : CVE-2026-15534 
+│                       ├ [90]  ╭ VulnerabilityID : CVE-2026-15534 
 │                       │       ├ PkgID           : perl-base@5.40.1-7ubuntu0.1 
 │                       │       ├ PkgName         : perl-base 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/perl-base@5.40.1-7ubuntu0.1?arch=amd6
@@ -4946,7 +5008,7 @@
 │                       │       │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2026-15534 
 │                       │       ├ PublishedDate   : 2026-08-09T18:16:42.8Z 
 │                       │       ╰ LastModifiedDate: 2026-09-08T22:17:38.113Z 
-│                       ├ [90]  ╭ VulnerabilityID : CVE-2026-19487 
+│                       ├ [91]  ╭ VulnerabilityID : CVE-2026-19487 
 │                       │       ├ PkgID           : perl-base@5.40.1-7ubuntu0.1 
 │                       │       ├ PkgName         : perl-base 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/perl-base@5.40.1-7ubuntu0.1?arch=amd6
@@ -5009,7 +5071,7 @@
 │                       │       │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2026-19487 
 │                       │       ├ PublishedDate   : 2026-08-13T16:17:59.44Z 
 │                       │       ╰ LastModifiedDate: 2026-08-28T15:42:20.06Z 
-│                       ├ [91]  ╭ VulnerabilityID : CVE-2026-57432 
+│                       ├ [92]  ╭ VulnerabilityID : CVE-2026-57432 
 │                       │       ├ PkgID           : perl-base@5.40.1-7ubuntu0.1 
 │                       │       ├ PkgName         : perl-base 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/perl-base@5.40.1-7ubuntu0.1?arch=amd6
@@ -5074,7 +5136,7 @@
 │                       │       │                  ╰ [9]: https://www.cve.org/CVERecord?id=CVE-2026-57432 
 │                       │       ├ PublishedDate   : 2026-07-13T17:17:55.67Z 
 │                       │       ╰ LastModifiedDate: 2026-09-08T22:18:30.64Z 
-│                       ├ [92]  ╭ VulnerabilityID : CVE-2026-57433 
+│                       ├ [93]  ╭ VulnerabilityID : CVE-2026-57433 
 │                       │       ├ PkgID           : perl-base@5.40.1-7ubuntu0.1 
 │                       │       ├ PkgName         : perl-base 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/perl-base@5.40.1-7ubuntu0.1?arch=amd6
@@ -5128,7 +5190,7 @@
 │                       │       │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2026-57433 
 │                       │       ├ PublishedDate   : 2026-07-13T17:17:55.783Z 
 │                       │       ╰ LastModifiedDate: 2026-07-14T17:47:20.473Z 
-│                       ├ [93]  ╭ VulnerabilityID : CVE-2026-15308 
+│                       ├ [94]  ╭ VulnerabilityID : CVE-2026-15308 
 │                       │       ├ PkgID           : python3.14@3.14.4-1ubuntu0.1 
 │                       │       ├ PkgName         : python3.14 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/python3.14@3.14.4-1ubuntu0.1?arch=amd
@@ -5214,7 +5276,7 @@
 │                       │       │                  ╰ [24]: https://www.cve.org/CVERecord?id=CVE-2026-15308 
 │                       │       ├ PublishedDate   : 2026-07-09T17:16:58.26Z 
 │                       │       ╰ LastModifiedDate: 2026-08-20T17:02:59.313Z 
-│                       ├ [94]  ╭ VulnerabilityID : CVE-2026-4360 
+│                       ├ [95]  ╭ VulnerabilityID : CVE-2026-4360 
 │                       │       ├ PkgID           : python3.14@3.14.4-1ubuntu0.1 
 │                       │       ├ PkgName         : python3.14 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/python3.14@3.14.4-1ubuntu0.1?arch=amd
@@ -5284,7 +5346,7 @@
 │                       │       │                  ╰ [13]: https://www.cve.org/CVERecord?id=CVE-2026-4360 
 │                       │       ├ PublishedDate   : 2026-06-30T15:16:57.193Z 
 │                       │       ╰ LastModifiedDate: 2026-08-13T01:16:53.42Z 
-│                       ├ [95]  ╭ VulnerabilityID : CVE-2026-15308 
+│                       ├ [96]  ╭ VulnerabilityID : CVE-2026-15308 
 │                       │       ├ PkgID           : python3.14-minimal@3.14.4-1ubuntu0.1 
 │                       │       ├ PkgName         : python3.14-minimal 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/python3.14-minimal@3.14.4-1ubuntu0.1?
@@ -5370,7 +5432,7 @@
 │                       │       │                  ╰ [24]: https://www.cve.org/CVERecord?id=CVE-2026-15308 
 │                       │       ├ PublishedDate   : 2026-07-09T17:16:58.26Z 
 │                       │       ╰ LastModifiedDate: 2026-08-20T17:02:59.313Z 
-│                       ├ [96]  ╭ VulnerabilityID : CVE-2026-4360 
+│                       ├ [97]  ╭ VulnerabilityID : CVE-2026-4360 
 │                       │       ├ PkgID           : python3.14-minimal@3.14.4-1ubuntu0.1 
 │                       │       ├ PkgName         : python3.14-minimal 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/python3.14-minimal@3.14.4-1ubuntu0.1?
@@ -5440,7 +5502,7 @@
 │                       │       │                  ╰ [13]: https://www.cve.org/CVERecord?id=CVE-2026-4360 
 │                       │       ├ PublishedDate   : 2026-06-30T15:16:57.193Z 
 │                       │       ╰ LastModifiedDate: 2026-08-13T01:16:53.42Z 
-│                       ├ [97]  ╭ VulnerabilityID : CVE-2026-35341 
+│                       ├ [98]  ╭ VulnerabilityID : CVE-2026-35341 
 │                       │       ├ PkgID           : rust-coreutils@0.8.0-0ubuntu3 
 │                       │       ├ PkgName         : rust-coreutils 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/rust-coreutils@0.8.0-0ubuntu3?arch=am
@@ -5487,7 +5549,7 @@
 │                       │       │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2026-35341 
 │                       │       ├ PublishedDate   : 2026-04-22T17:16:36.06Z 
 │                       │       ╰ LastModifiedDate: 2026-06-17T10:40:25.5Z 
-│                       ├ [98]  ╭ VulnerabilityID : CVE-2026-35344 
+│                       ├ [99]  ╭ VulnerabilityID : CVE-2026-35344 
 │                       │       ├ PkgID           : rust-coreutils@0.8.0-0ubuntu3 
 │                       │       ├ PkgName         : rust-coreutils 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/rust-coreutils@0.8.0-0ubuntu3?arch=am
@@ -5531,7 +5593,7 @@
 │                       │       │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2026-35344 
 │                       │       ├ PublishedDate   : 2026-04-22T17:16:36.49Z 
 │                       │       ╰ LastModifiedDate: 2026-06-17T10:40:25.833Z 
-│                       ├ [99]  ╭ VulnerabilityID : CVE-2026-35345 
+│                       ├ [100] ╭ VulnerabilityID : CVE-2026-35345 
 │                       │       ├ PkgID           : rust-coreutils@0.8.0-0ubuntu3 
 │                       │       ├ PkgName         : rust-coreutils 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/rust-coreutils@0.8.0-0ubuntu3?arch=am
@@ -5577,7 +5639,7 @@
 │                       │       │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2026-35345 
 │                       │       ├ PublishedDate   : 2026-04-22T17:16:36.627Z 
 │                       │       ╰ LastModifiedDate: 2026-06-17T10:40:25.943Z 
-│                       ├ [100] ╭ VulnerabilityID : CVE-2026-35348 
+│                       ├ [101] ╭ VulnerabilityID : CVE-2026-35348 
 │                       │       ├ PkgID           : rust-coreutils@0.8.0-0ubuntu3 
 │                       │       ├ PkgName         : rust-coreutils 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/rust-coreutils@0.8.0-0ubuntu3?arch=am
@@ -5619,7 +5681,7 @@
 │                       │       │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2026-35348 
 │                       │       ├ PublishedDate   : 2026-04-22T17:16:37.04Z 
 │                       │       ╰ LastModifiedDate: 2026-06-17T10:40:26.27Z 
-│                       ├ [101] ╭ VulnerabilityID : CVE-2026-35350 
+│                       ├ [102] ╭ VulnerabilityID : CVE-2026-35350 
 │                       │       ├ PkgID           : rust-coreutils@0.8.0-0ubuntu3 
 │                       │       ├ PkgName         : rust-coreutils 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/rust-coreutils@0.8.0-0ubuntu3?arch=am
@@ -5662,7 +5724,7 @@
 │                       │       │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2026-35350 
 │                       │       ├ PublishedDate   : 2026-04-22T17:16:37.327Z 
 │                       │       ╰ LastModifiedDate: 2026-06-17T10:40:26.48Z 
-│                       ├ [102] ╭ VulnerabilityID : CVE-2026-35351 
+│                       ├ [103] ╭ VulnerabilityID : CVE-2026-35351 
 │                       │       ├ PkgID           : rust-coreutils@0.8.0-0ubuntu3 
 │                       │       ├ PkgName         : rust-coreutils 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/rust-coreutils@0.8.0-0ubuntu3?arch=am
@@ -5706,7 +5768,7 @@
 │                       │       │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2026-35351 
 │                       │       ├ PublishedDate   : 2026-04-22T17:16:37.457Z 
 │                       │       ╰ LastModifiedDate: 2026-06-17T10:40:26.587Z 
-│                       ├ [103] ╭ VulnerabilityID : CVE-2026-35352 
+│                       ├ [104] ╭ VulnerabilityID : CVE-2026-35352 
 │                       │       ├ PkgID           : rust-coreutils@0.8.0-0ubuntu3 
 │                       │       ├ PkgName         : rust-coreutils 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/rust-coreutils@0.8.0-0ubuntu3?arch=am
@@ -5752,7 +5814,7 @@
 │                       │       │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2026-35352 
 │                       │       ├ PublishedDate   : 2026-04-22T17:16:37.597Z 
 │                       │       ╰ LastModifiedDate: 2026-06-17T10:40:26.69Z 
-│                       ├ [104] ╭ VulnerabilityID : CVE-2026-35354 
+│                       ├ [105] ╭ VulnerabilityID : CVE-2026-35354 
 │                       │       ├ PkgID           : rust-coreutils@0.8.0-0ubuntu3 
 │                       │       ├ PkgName         : rust-coreutils 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/rust-coreutils@0.8.0-0ubuntu3?arch=am
@@ -5796,7 +5858,7 @@
 │                       │       │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2026-35354 
 │                       │       ├ PublishedDate   : 2026-04-22T17:16:37.867Z 
 │                       │       ╰ LastModifiedDate: 2026-06-17T10:40:26.907Z 
-│                       ├ [105] ╭ VulnerabilityID : CVE-2026-35357 
+│                       ├ [106] ╭ VulnerabilityID : CVE-2026-35357 
 │                       │       ├ PkgID           : rust-coreutils@0.8.0-0ubuntu3 
 │                       │       ├ PkgName         : rust-coreutils 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/rust-coreutils@0.8.0-0ubuntu3?arch=am
@@ -5839,7 +5901,7 @@
 │                       │       │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2026-35357 
 │                       │       ├ PublishedDate   : 2026-04-22T17:16:38.267Z 
 │                       │       ╰ LastModifiedDate: 2026-06-17T10:40:27.223Z 
-│                       ├ [106] ╭ VulnerabilityID : CVE-2026-35359 
+│                       ├ [107] ╭ VulnerabilityID : CVE-2026-35359 
 │                       │       ├ PkgID           : rust-coreutils@0.8.0-0ubuntu3 
 │                       │       ├ PkgName         : rust-coreutils 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/rust-coreutils@0.8.0-0ubuntu3?arch=am
@@ -5884,7 +5946,7 @@
 │                       │       │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2026-35359 
 │                       │       ├ PublishedDate   : 2026-04-22T17:16:38.537Z 
 │                       │       ╰ LastModifiedDate: 2026-06-17T10:40:27.437Z 
-│                       ├ [107] ╭ VulnerabilityID : CVE-2026-35360 
+│                       ├ [108] ╭ VulnerabilityID : CVE-2026-35360 
 │                       │       ├ PkgID           : rust-coreutils@0.8.0-0ubuntu3 
 │                       │       ├ PkgName         : rust-coreutils 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/rust-coreutils@0.8.0-0ubuntu3?arch=am
@@ -5926,7 +5988,7 @@
 │                       │       │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2026-35360 
 │                       │       ├ PublishedDate   : 2026-04-22T17:16:38.673Z 
 │                       │       ╰ LastModifiedDate: 2026-06-17T10:40:27.543Z 
-│                       ├ [108] ╭ VulnerabilityID : CVE-2026-35363 
+│                       ├ [109] ╭ VulnerabilityID : CVE-2026-35363 
 │                       │       ├ PkgID           : rust-coreutils@0.8.0-0ubuntu3 
 │                       │       ├ PkgName         : rust-coreutils 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/rust-coreutils@0.8.0-0ubuntu3?arch=am
@@ -5973,7 +6035,7 @@
 │                       │       │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2026-35363 
 │                       │       ├ PublishedDate   : 2026-04-22T17:16:39.12Z 
 │                       │       ╰ LastModifiedDate: 2026-06-17T10:40:27.867Z 
-│                       ├ [109] ╭ VulnerabilityID : CVE-2026-35364 
+│                       ├ [110] ╭ VulnerabilityID : CVE-2026-35364 
 │                       │       ├ PkgID           : rust-coreutils@0.8.0-0ubuntu3 
 │                       │       ├ PkgName         : rust-coreutils 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/rust-coreutils@0.8.0-0ubuntu3?arch=am
@@ -6017,7 +6079,7 @@
 │                       │       │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2026-35364 
 │                       │       ├ PublishedDate   : 2026-04-22T17:16:39.737Z 
 │                       │       ╰ LastModifiedDate: 2026-06-17T10:40:27.97Z 
-│                       ├ [110] ╭ VulnerabilityID : CVE-2026-35367 
+│                       ├ [111] ╭ VulnerabilityID : CVE-2026-35367 
 │                       │       ├ PkgID           : rust-coreutils@0.8.0-0ubuntu3 
 │                       │       ├ PkgName         : rust-coreutils 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/rust-coreutils@0.8.0-0ubuntu3?arch=am
@@ -6061,7 +6123,7 @@
 │                       │       │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2026-35367 
 │                       │       ├ PublishedDate   : 2026-04-22T17:16:40.423Z 
 │                       │       ╰ LastModifiedDate: 2026-06-17T10:40:28.297Z 
-│                       ├ [111] ╭ VulnerabilityID : CVE-2026-35368 
+│                       ├ [112] ╭ VulnerabilityID : CVE-2026-35368 
 │                       │       ├ PkgID           : rust-coreutils@0.8.0-0ubuntu3 
 │                       │       ├ PkgName         : rust-coreutils 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/rust-coreutils@0.8.0-0ubuntu3?arch=am
@@ -6105,7 +6167,7 @@
 │                       │       │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2026-35368 
 │                       │       ├ PublishedDate   : 2026-04-22T17:16:40.56Z 
 │                       │       ╰ LastModifiedDate: 2026-06-17T10:40:28.4Z 
-│                       ├ [112] ╭ VulnerabilityID : CVE-2026-35370 
+│                       ├ [113] ╭ VulnerabilityID : CVE-2026-35370 
 │                       │       ├ PkgID           : rust-coreutils@0.8.0-0ubuntu3 
 │                       │       ├ PkgName         : rust-coreutils 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/rust-coreutils@0.8.0-0ubuntu3?arch=am
@@ -6150,7 +6212,7 @@
 │                       │       │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2026-35370 
 │                       │       ├ PublishedDate   : 2026-04-22T17:16:40.833Z 
 │                       │       ╰ LastModifiedDate: 2026-06-17T10:40:28.613Z 
-│                       ├ [113] ╭ VulnerabilityID : CVE-2026-35371 
+│                       ├ [114] ╭ VulnerabilityID : CVE-2026-35371 
 │                       │       ├ PkgID           : rust-coreutils@0.8.0-0ubuntu3 
 │                       │       ├ PkgName         : rust-coreutils 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/rust-coreutils@0.8.0-0ubuntu3?arch=am
@@ -6195,7 +6257,7 @@
 │                       │       │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2026-35371 
 │                       │       ├ PublishedDate   : 2026-04-22T17:16:40.987Z 
 │                       │       ╰ LastModifiedDate: 2026-06-17T10:40:28.723Z 
-│                       ├ [114] ╭ VulnerabilityID : CVE-2026-35373 
+│                       ├ [115] ╭ VulnerabilityID : CVE-2026-35373 
 │                       │       ├ PkgID           : rust-coreutils@0.8.0-0ubuntu3 
 │                       │       ├ PkgName         : rust-coreutils 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/rust-coreutils@0.8.0-0ubuntu3?arch=am
@@ -6247,7 +6309,7 @@
 │                       │       │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2026-35373 
 │                       │       ├ PublishedDate   : 2026-04-22T17:16:41.997Z 
 │                       │       ╰ LastModifiedDate: 2026-06-17T10:40:28.933Z 
-│                       ├ [115] ╭ VulnerabilityID : CVE-2026-35374 
+│                       ├ [116] ╭ VulnerabilityID : CVE-2026-35374 
 │                       │       ├ PkgID           : rust-coreutils@0.8.0-0ubuntu3 
 │                       │       ├ PkgName         : rust-coreutils 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/rust-coreutils@0.8.0-0ubuntu3?arch=am
@@ -6295,7 +6357,7 @@
 │                       │       │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2026-35374 
 │                       │       ├ PublishedDate   : 2026-04-22T17:16:42.127Z 
 │                       │       ╰ LastModifiedDate: 2026-06-17T10:40:29.04Z 
-│                       ├ [116] ╭ VulnerabilityID : CVE-2026-35377 
+│                       ├ [117] ╭ VulnerabilityID : CVE-2026-35377 
 │                       │       ├ PkgID           : rust-coreutils@0.8.0-0ubuntu3 
 │                       │       ├ PkgName         : rust-coreutils 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/rust-coreutils@0.8.0-0ubuntu3?arch=am
@@ -6343,7 +6405,7 @@
 │                       │       │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2026-35377 
 │                       │       ├ PublishedDate   : 2026-04-22T17:16:42.577Z 
 │                       │       ╰ LastModifiedDate: 2026-06-17T10:40:29.357Z 
-│                       ├ [117] ╭ VulnerabilityID : CVE-2026-82474 
+│                       ├ [118] ╭ VulnerabilityID : CVE-2026-82474 
 │                       │       ├ PkgID           : sudo@1.9.17p2-1ubuntu3 
 │                       │       ├ PkgName         : sudo 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/sudo@1.9.17p2-1ubuntu3?arch=amd64&dis
@@ -6405,7 +6467,7 @@
 │                       │       │                          9-17p2-intercept-policy-bypass-via-execveat 
 │                       │       ├ PublishedDate   : 2026-08-29T17:17:59.91Z 
 │                       │       ╰ LastModifiedDate: 2026-09-10T19:54:25.81Z 
-│                       ├ [118] ╭ VulnerabilityID : CVE-2026-18477 
+│                       ├ [119] ╭ VulnerabilityID : CVE-2026-18477 
 │                       │       ├ PkgID           : tar@1.35+dfsg-4ubuntu0.4 
 │                       │       ├ PkgName         : tar 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/tar@1.35%2Bdfsg-4ubuntu0.4?arch=amd64
@@ -6482,7 +6544,7 @@
 │                       │       │                  ╰ [22]: https://www.cve.org/CVERecord?id=CVE-2026-18477 
 │                       │       ├ PublishedDate   : 2026-08-03T17:16:33.897Z 
 │                       │       ╰ LastModifiedDate: 2026-09-22T22:17:11.233Z 
-│                       ├ [119] ╭ VulnerabilityID : CVE-2026-18508 
+│                       ├ [120] ╭ VulnerabilityID : CVE-2026-18508 
 │                       │       ├ PkgID           : tar@1.35+dfsg-4ubuntu0.4 
 │                       │       ├ PkgName         : tar 
 │                       │       ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/tar@1.35%2Bdfsg-4ubuntu0.4?arch=amd64
@@ -6550,7 +6612,7 @@
 │                       │       │                  ╰ [22]: https://www.cve.org/CVERecord?id=CVE-2026-18508 
 │                       │       ├ PublishedDate   : 2026-08-03T16:16:28.387Z 
 │                       │       ╰ LastModifiedDate: 2026-09-22T22:17:11.493Z 
-│                       ╰ [120] ╭ VulnerabilityID : CVE-2026-85091 
+│                       ╰ [121] ╭ VulnerabilityID : CVE-2026-85091 
 │                               ├ PkgID           : zlib1g@1:1.3.dfsg+really1.3.1-1ubuntu3.1 
 │                               ├ PkgName         : zlib1g 
 │                               ├ PkgIdentifier    ╭ PURL: pkg:deb/ubuntu/zlib1g@1.3.dfsg%2Breally1.3.1-1ubuntu
@@ -6595,7 +6657,266 @@
 │     ├ Class          : lang-pkgs 
 │     ├ Type           : jar 
 │     ├ Packages        
-│     ╰ Vulnerabilities ╭ [0] ╭ VulnerabilityID : CVE-2026-8763 
+│     ╰ Vulnerabilities ╭ [0] ╭ VulnerabilityID : CVE-2026-68497 
+│                       │     ├ VendorIDs        ─ [0]: GHSA-q4xh-88c3-wmh7 
+│                       │     ├ PkgName         : com.fasterxml.jackson.core:jackson-databind 
+│                       │     ├ PkgPath         : openaf/ghcopilot/jackson-databind-2.22.1.jar 
+│                       │     ├ PkgIdentifier    ╭ PURL: pkg:maven/com.fasterxml.jackson.core/jackson-databind@
+│                       │     │                  │       2.22.1 
+│                       │     │                  ╰ UID : 6ec7155dea0753b6 
+│                       │     ├ InstalledVersion: 2.22.1 
+│                       │     ├ FixedVersion    : 2.18.10, 2.21.6, 2.22.2 
+│                       │     ├ Status          : fixed 
+│                       │     ├ Layer            ╭ Digest: sha256:9828e86a4f220c858c27038e827ed54fef1a63f08eb01
+│                       │     │                  │         0a14fd7af13590da543 
+│                       │     │                  ╰ DiffID: sha256:718b0340b30f7422f9f61e64777c181088d68ab9a1c5c
+│                       │     │                            d184d97031d5cafaee0 
+│                       │     ├ SeveritySource  : ghsa 
+│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-68497 
+│                       │     ├ DataSource       ╭ ID  : ghsa 
+│                       │     │                  ├ Name: GitHub Security Advisory Maven 
+│                       │     │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
+│                       │     │                          osystem%3Amaven 
+│                       │     ├ Fingerprint     : sha256:7e6913ecb7c6f8f8be4f7402e9259dc19ed2596e6b4ad3c1be5fba
+│                       │     │                   3f729e3b1c 
+│                       │     ├ Title           : com.fasterxml.jackson.core/jackson-databind:
+│                       │     │                   tools.jackson.core/jackson-databind: jackson-databind: CPU
+│                       │     │                   Denial of Service via unbounded numeric parsing 
+│                       │     ├ Description     : jackson-databind binds a JSON string to a
+│                       │     │                   javax.xml.datatype.Duration or
+│                       │     │                   javax.xml.datatype.XMLGregorianCalendar field by passing the
+│                       │     │                   raw string verbatim to DatatypeFactory.newDuration(value) or
+│                       │     │                   newXMLGregorianCalendar(value) in
+│                       │     │                   CoreXMLDeserializers.Std._deserialize. These deserializers
+│                       │     │                   are registered by default with no opt-in, so a plain
+│                       │     │                   ObjectMapper or JsonMapper with no polymorphic typing and no
+│                       │     │                   special configuration reaches this path. The XML Schema
+│                       │     │                   lexical grammar permits numeric components of arbitrary
+│                       │     │                   length, which the JDK materializes through the native
+│                       │     │                   BigInteger(String) and BigDecimal(String) constructors, both
+│                       │     │                   quadratic in digit count. Because the digits sit inside a
+│                       │     │                   JSON string token rather than a JSON number token,
+│                       │     │                   jackson-core's StreamReadConstraints.maxNumberLength guard
+│                       │     │                   never applies; jackson's own NumberDeserializers call
+│                       │     │                   validateIntegerLength or validateFPLength before parsing a
+│                       │     │                   stringified number, but the XML datatype deserializer omits
+│                       │     │                   that pre-check. An unauthenticated attacker can therefore
+│                       │     │                   submit a single request of a few megabytes, such as a
+│                       │     │                   Duration value consisting of the letter P followed by several
+│                       │     │                    million digits and the letter Y, and force tens of seconds
+│                       │     │                   to several minutes of single-threaded CPU work; a handful of
+│                       │     │                   concurrent requests can saturate a server's worker threads.
+│                       │     │                   This affects com.fasterxml.jackson.core:jackson-databind from
+│                       │     │                    2.0.0 before 2.18.10, from 2.19.0 before 2.21.6, and from
+│                       │     │                   2.22.0 before 2.22.2, and tools.jackson.core:jackson-databind
+│                       │     │                    from 3.0.0 before 3.1.6 and from 3.2.0 before 3.2.2. Users
+│                       │     │                   should upgrade to 2.18.10, 2.21.6, 2.22.2, 3.1.6, or 3.2.2.[
+│                       │     │                   m 
+│                       │     ├ Severity        : HIGH 
+│                       │     ├ CweIDs           ╭ [0]: CWE-400 
+│                       │     │                  ╰ [1]: CWE-1333 
+│                       │     ├ VendorSeverity   ╭ ghsa  : 3 
+│                       │     │                  ╰ redhat: 3 
+│                       │     ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/
+│                       │     │                  │        │           A:H 
+│                       │     │                  │        ╰ V3Score : 7.5 
+│                       │     │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/
+│                       │     │                           │           A:H 
+│                       │     │                           ╰ V3Score : 7.5 
+│                       │     ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2026-68497 
+│                       │     │                  ├ [1] : https://github.com/FasterXML/jackson-databind 
+│                       │     │                  ├ [2] : https://github.com/FasterXML/jackson-databind/commit/a
+│                       │     │                  │       99b7e74c8928f43f6975773a8c862c8316178bd 
+│                       │     │                  ├ [3] : https://github.com/FasterXML/jackson-databind/pull/6127 
+│                       │     │                  ├ [4] : https://github.com/FasterXML/jackson-databind/releases
+│                       │     │                  │       /tag/jackson-databind-2.18.10 
+│                       │     │                  ├ [5] : https://github.com/FasterXML/jackson-databind/releases
+│                       │     │                  │       /tag/jackson-databind-2.21.6 
+│                       │     │                  ├ [6] : https://github.com/FasterXML/jackson-databind/releases
+│                       │     │                  │       /tag/jackson-databind-2.22.2 
+│                       │     │                  ├ [7] : https://github.com/FasterXML/jackson-databind/releases
+│                       │     │                  │       /tag/jackson-databind-3.1.6 
+│                       │     │                  ├ [8] : https://github.com/FasterXML/jackson-databind/releases
+│                       │     │                  │       /tag/jackson-databind-3.2.2 
+│                       │     │                  ├ [9] : https://github.com/FasterXML/jackson-databind/security
+│                       │     │                  │       /advisories/GHSA-q4xh-88c3-wmh7 
+│                       │     │                  ├ [10]: https://nvd.nist.gov/vuln/detail/CVE-2026-68497 
+│                       │     │                  ╰ [11]: https://www.cve.org/CVERecord?id=CVE-2026-68497 
+│                       │     ├ PublishedDate   : 2026-09-11T16:17:39.61Z 
+│                       │     ╰ LastModifiedDate: 2026-09-18T19:34:36.657Z 
+│                       ├ [1] ╭ VulnerabilityID : CVE-2026-19032 
+│                       │     ├ VendorIDs        ─ [0]: GHSA-wjgm-6hv5-3cvf 
+│                       │     ├ PkgName         : com.fasterxml.jackson.core:jackson-databind 
+│                       │     ├ PkgPath         : openaf/ghcopilot/jackson-databind-2.22.1.jar 
+│                       │     ├ PkgIdentifier    ╭ PURL: pkg:maven/com.fasterxml.jackson.core/jackson-databind@
+│                       │     │                  │       2.22.1 
+│                       │     │                  ╰ UID : 6ec7155dea0753b6 
+│                       │     ├ InstalledVersion: 2.22.1 
+│                       │     ├ FixedVersion    : 2.18.10, 2.21.6, 2.22.2 
+│                       │     ├ Status          : fixed 
+│                       │     ├ Layer            ╭ Digest: sha256:9828e86a4f220c858c27038e827ed54fef1a63f08eb01
+│                       │     │                  │         0a14fd7af13590da543 
+│                       │     │                  ╰ DiffID: sha256:718b0340b30f7422f9f61e64777c181088d68ab9a1c5c
+│                       │     │                            d184d97031d5cafaee0 
+│                       │     ├ SeveritySource  : ghsa 
+│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-19032 
+│                       │     ├ DataSource       ╭ ID  : ghsa 
+│                       │     │                  ├ Name: GitHub Security Advisory Maven 
+│                       │     │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
+│                       │     │                          osystem%3Amaven 
+│                       │     ├ Fingerprint     : sha256:ab1919ec3eeb0fbf2bdd85f55abbb7361032038c2d54714b754a74
+│                       │     │                   b4c599a365 
+│                       │     ├ Title           : com.fasterxml.jackson.core/jackson-databind:
+│                       │     │                   tools.jackson.core/jackson-databind: Jackson-databind:
+│                       │     │                   Uncontrolled URI scheme resolution in Path deserialization 
+│                       │     ├ Description     : jackson-databind's deserializer for java.nio.file.Path
+│                       │     │                   resolves an attacker-supplied URI without restricting the URI
+│                       │     │                    scheme. In
+│                       │     │                   JDKFromStringDeserializer.NioPathHelper.deserialize, a string
+│                       │     │                    bound from untrusted JSON is passed to new URI(value) and
+│                       │     │                   then to Path.of(uri). When that throws
+│                       │     │                   FileSystemNotFoundException, the code enumerates
+│                       │     │                   ServiceLoader<FileSystemProvider> and calls
+│                       │     │                   provider.getPath(uri) on the first provider whose scheme
+│                       │     │                   matches the attacker-chosen scheme. Untrusted JSON can
+│                       │     │                   therefore select and drive an arbitrary registered
+│                       │     │                   FileSystemProvider during readValue under a default
+│                       │     │                   JsonMapper, and forces provider class loading at the same
+│                       │     │                   time. With only the JDK built-in providers (file, jar/zipfs)
+│                       │     │                   present, the resolved path is inert and no mount or network
+│                       │     │                   I/O occurs; further impact requires a side-effecting
+│                       │     │                   third-party FileSystemProvider on the classpath. This affects
+│                       │     │                    com.fasterxml.jackson.core:jackson-databind from 2.8.0
+│                       │     │                   before 2.18.10, from 2.19.0 before 2.21.6, and from 2.22.0
+│                       │     │                   before 2.22.2, and tools.jackson.core:jackson-databind from
+│                       │     │                   3.0.0 before 3.1.6 and from 3.2.0 before 3.2.2. Users should
+│                       │     │                   upgrade to 2.18.10, 2.21.6, 2.22.2, 3.1.6, or 3.2.2. Binding
+│                       │     │                   java.nio.file.Path from untrusted JSON should be avoided
+│                       │     │                   regardless of version. 
+│                       │     ├ Severity        : MEDIUM 
+│                       │     ├ CweIDs           ╭ [0]: CWE-470 
+│                       │     │                  ╰ [1]: CWE-610 
+│                       │     ├ VendorSeverity   ╭ ghsa  : 2 
+│                       │     │                  ╰ redhat: 2 
+│                       │     ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/
+│                       │     │                  │        │           A:L 
+│                       │     │                  │        ╰ V3Score : 5.3 
+│                       │     │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/
+│                       │     │                           │           A:L 
+│                       │     │                           ╰ V3Score : 5.3 
+│                       │     ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2026-19032 
+│                       │     │                  ├ [1] : https://github.com/FasterXML/jackson-databind 
+│                       │     │                  ├ [2] : https://github.com/FasterXML/jackson-databind/commit/c
+│                       │     │                  │       c6756b61ed90b6b9227f670e0408d5d9bd48551 
+│                       │     │                  ├ [3] : https://github.com/FasterXML/jackson-databind/commit/c
+│                       │     │                  │       e26eda3481cd796f76ba4c53ffe1da23b53f166 
+│                       │     │                  ├ [4] : https://github.com/FasterXML/jackson-databind/commit/d
+│                       │     │                  │       94bb632becfe0ba96926b9909ab06d1f87aad6d 
+│                       │     │                  ├ [5] : https://github.com/FasterXML/jackson-databind/pull/6129 
+│                       │     │                  ├ [6] : https://github.com/FasterXML/jackson-databind/releases
+│                       │     │                  │       /tag/jackson-databind-2.18.10 
+│                       │     │                  ├ [7] : https://github.com/FasterXML/jackson-databind/releases
+│                       │     │                  │       /tag/jackson-databind-2.21.6 
+│                       │     │                  ├ [8] : https://github.com/FasterXML/jackson-databind/releases
+│                       │     │                  │       /tag/jackson-databind-2.22.2 
+│                       │     │                  ├ [9] : https://github.com/FasterXML/jackson-databind/releases
+│                       │     │                  │       /tag/jackson-databind-3.1.6 
+│                       │     │                  ├ [10]: https://github.com/FasterXML/jackson-databind/releases
+│                       │     │                  │       /tag/jackson-databind-3.2.2 
+│                       │     │                  ├ [11]: https://github.com/FasterXML/jackson-databind/security
+│                       │     │                  │       /advisories/GHSA-wjgm-6hv5-3cvf 
+│                       │     │                  ├ [12]: https://nvd.nist.gov/vuln/detail/CVE-2026-19032 
+│                       │     │                  ╰ [13]: https://www.cve.org/CVERecord?id=CVE-2026-19032 
+│                       │     ├ PublishedDate   : 2026-09-01T04:18:00.433Z 
+│                       │     ╰ LastModifiedDate: 2026-09-08T19:29:32.2Z 
+│                       ├ [2] ╭ VulnerabilityID : CVE-2026-83557 
+│                       │     ├ VendorIDs        ─ [0]: GHSA-gx83-3vf8-gh7j 
+│                       │     ├ PkgName         : com.fasterxml.jackson.core:jackson-databind 
+│                       │     ├ PkgPath         : openaf/ghcopilot/jackson-databind-2.22.1.jar 
+│                       │     ├ PkgIdentifier    ╭ PURL: pkg:maven/com.fasterxml.jackson.core/jackson-databind@
+│                       │     │                  │       2.22.1 
+│                       │     │                  ╰ UID : 6ec7155dea0753b6 
+│                       │     ├ InstalledVersion: 2.22.1 
+│                       │     ├ FixedVersion    : 2.18.10, 2.21.6, 2.22.2 
+│                       │     ├ Status          : fixed 
+│                       │     ├ Layer            ╭ Digest: sha256:9828e86a4f220c858c27038e827ed54fef1a63f08eb01
+│                       │     │                  │         0a14fd7af13590da543 
+│                       │     │                  ╰ DiffID: sha256:718b0340b30f7422f9f61e64777c181088d68ab9a1c5c
+│                       │     │                            d184d97031d5cafaee0 
+│                       │     ├ SeveritySource  : ghsa 
+│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-83557 
+│                       │     ├ DataSource       ╭ ID  : ghsa 
+│                       │     │                  ├ Name: GitHub Security Advisory Maven 
+│                       │     │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
+│                       │     │                          osystem%3Amaven 
+│                       │     ├ Fingerprint     : sha256:3a356196e99a93788b0fe657d412ff5886d1ff6719a192e74987ff
+│                       │     │                   624c17b251 
+│                       │     ├ Title           : com.fasterxml.jackson.core/jackson-databind:
+│                       │     │                   tools.jackson.core/jackson-databind: jackson-databind: Path
+│                       │     │                   traversal via incomplete type validation 
+│                       │     ├ Description     : DefaultBaseTypeLimitingValidator is the
+│                       │     │                   PolymorphicTypeValidator applied automatically whenever
+│                       │     │                   @JsonTypeInfo is used without an explicitly configured custom
+│                       │     │                    validator. It denies polymorphic resolution only for a fixed
+│                       │     │                    set of "unsafe base types", and its isSafeSubType method
+│                       │     │                   returns true unconditionally for every base type outside that
+│                       │     │                    set. java.lang.Comparable was absent from the list despite
+│                       │     │                   being implemented by a very large fraction of JDK and
+│                       │     │                   application classes, comparable in breadth to
+│                       │     │                   java.io.Serializable, which is on the list for that reason.
+│                       │     │                   An application declaring an @JsonTypeInfo-annotated property
+│                       │     │                   or class with Comparable as its base type, and no custom
+│                       │     │                   PolymorphicTypeValidator, will accept a type identifier for
+│                       │     │                   essentially any class implementing Comparable. This yields an
+│                       │     │                    attacker-controlled object instantiation primitive; a
+│                       │     │                   demonstrated case constructs a java.io.File for an arbitrary
+│                       │     │                   attacker-chosen path, which becomes path-traversal-adjacent
+│                       │     │                   if the application subsequently calls path-sensitive methods
+│                       │     │                   on the value. No class implementing Comparable has been
+│                       │     │                   identified that yields code execution through deserialization
+│                       │     │                    alone. Global Default Typing via activateDefaultTyping is
+│                       │     │                   not affected, because that method structurally requires an
+│                       │     │                   explicit PolymorphicTypeValidator argument. This affects
+│                       │     │                   com.fasterxml.jackson.core:jackson-databind from 2.11.0
+│                       │     │                   before 2.18.10, from 2.19.0 before 2.21.6, and from 2.22.0
+│                       │     │                   before 2.22.2, and tools.jackson.core:jackson-databind from
+│                       │     │                   3.0.0 before 3.1.6 and from 3.2.0 before 3.2.2. Users should
+│                       │     │                   upgrade to 2.18.10, 2.21.6, 2.22.2, 3.1.6, or 3.2.2. 
+│                       │     ├ Severity        : MEDIUM 
+│                       │     ├ CweIDs           ╭ [0]: CWE-502 
+│                       │     │                  ╰ [1]: CWE-915 
+│                       │     ├ VendorSeverity   ╭ ghsa  : 2 
+│                       │     │                  ╰ redhat: 2 
+│                       │     ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/
+│                       │     │                  │        │           A:L 
+│                       │     │                  │        ╰ V3Score : 5.6 
+│                       │     │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/
+│                       │     │                           │           A:L 
+│                       │     │                           ╰ V3Score : 5.6 
+│                       │     ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2026-83557 
+│                       │     │                  ├ [1] : https://github.com/FasterXML/jackson-databind 
+│                       │     │                  ├ [2] : https://github.com/FasterXML/jackson-databind/commit/e
+│                       │     │                  │       b3b7fc0f9c0d27f471550ac3316b17d1987388f 
+│                       │     │                  ├ [3] : https://github.com/FasterXML/jackson-databind/issues/6
+│                       │     │                  │       156 
+│                       │     │                  ├ [4] : https://github.com/FasterXML/jackson-databind/pull/6155 
+│                       │     │                  ├ [5] : https://github.com/FasterXML/jackson-databind/releases
+│                       │     │                  │       /tag/jackson-databind-2.18.10 
+│                       │     │                  ├ [6] : https://github.com/FasterXML/jackson-databind/releases
+│                       │     │                  │       /tag/jackson-databind-2.21.6 
+│                       │     │                  ├ [7] : https://github.com/FasterXML/jackson-databind/releases
+│                       │     │                  │       /tag/jackson-databind-2.22.2 
+│                       │     │                  ├ [8] : https://github.com/FasterXML/jackson-databind/releases
+│                       │     │                  │       /tag/jackson-databind-3.1.6 
+│                       │     │                  ├ [9] : https://github.com/FasterXML/jackson-databind/releases
+│                       │     │                  │       /tag/jackson-databind-3.2.2 
+│                       │     │                  ├ [10]: https://github.com/FasterXML/jackson-databind/security
+│                       │     │                  │       /advisories/GHSA-gx83-3vf8-gh7j 
+│                       │     │                  ├ [11]: https://nvd.nist.gov/vuln/detail/CVE-2026-83557 
+│                       │     │                  ╰ [12]: https://www.cve.org/CVERecord?id=CVE-2026-83557 
+│                       │     ├ PublishedDate   : 2026-09-01T15:17:37.987Z 
+│                       │     ╰ LastModifiedDate: 2026-09-08T19:29:32.2Z 
+│                       ├ [3] ╭ VulnerabilityID : CVE-2026-8763 
 │                       │     ├ VendorIDs        ─ [0]: GHSA-9pwp-9qqc-pr26 
 │                       │     ├ PkgName         : org.bouncycastle:bcprov-jdk18on 
 │                       │     ├ PkgPath         : openaf/S3/bcprov-jdk18on-1.84.jar 
@@ -6655,7 +6976,7 @@
 │                       │     │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2026-8763 
 │                       │     ├ PublishedDate   : 2026-08-03T01:16:45.807Z 
 │                       │     ╰ LastModifiedDate: 2026-09-02T14:28:48.94Z 
-│                       ╰ [1] ╭ VulnerabilityID : CVE-2026-13506 
+│                       ╰ [4] ╭ VulnerabilityID : CVE-2026-13506 
 │                             ├ VendorIDs        ─ [0]: GHSA-qp49-qgx5-5m26 
 │                             ├ PkgName         : org.bouncycastle:bcprov-jdk18on 
 │                             ├ PkgPath         : openaf/S3/bcprov-jdk18on-1.84.jar 
