@@ -3480,7 +3480,7 @@
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
 │                       │       │                           │           N/A:H 
 │                       │       │                           ╰ V3Score : 7.5 
-│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:72448 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:72663 
 │                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2026-66046 
 │                       │       │                  ├ [2] : https://bugzilla.redhat.com/2538967 
 │                       │       │                  ├ [3] : https://bugzilla.redhat.com/show_bug.cgi?id=2517901 
@@ -3490,11 +3490,11 @@
 │                       │       │                  │       026-66046 
 │                       │       │                  ├ [7] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
 │                       │       │                  │       026-93990 
-│                       │       │                  ├ [8] : https://errata.almalinux.org/8/ALSA-2026-72448.html 
-│                       │       │                  ├ [9] : https://errata.rockylinux.org/RLSA-2026:72448 
+│                       │       │                  ├ [8] : https://errata.almalinux.org/9/ALSA-2026-72663.html 
+│                       │       │                  ├ [9] : https://errata.rockylinux.org/RLSA-2026:72663 
 │                       │       │                  ├ [10]: https://github.com/libexpat/libexpat/pull/1321 
 │                       │       │                  ├ [11]: https://linux.oracle.com/cve/CVE-2026-66046.html 
-│                       │       │                  ├ [12]: https://linux.oracle.com/errata/ELSA-2026-72663.html 
+│                       │       │                  ├ [12]: https://linux.oracle.com/errata/ELSA-2026-74001.html 
 │                       │       │                  ├ [13]: https://nvd.nist.gov/vuln/detail/CVE-2026-66046 
 │                       │       │                  ├ [14]: https://ubuntu.com/security/notices/USN-8813-1 
 │                       │       │                  ├ [15]: https://www.cve.org/CVERecord?id=CVE-2026-66046 
@@ -4449,6 +4449,7 @@
 │                       │       ├ VendorSeverity   ╭ amazon: 3 
 │                       │       │                  ├ azure : 3 
 │                       │       │                  ├ julia : 3 
+│                       │       │                  ├ photon: 3 
 │                       │       │                  ├ redhat: 2 
 │                       │       │                  ╰ ubuntu: 2 
 │                       │       ├ CVSS             ╭ julia  ╭ V3Vector : CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I
@@ -4575,6 +4576,7 @@
 │                       │       ├ VendorSeverity   ╭ amazon: 3 
 │                       │       │                  ├ azure : 3 
 │                       │       │                  ├ julia : 3 
+│                       │       │                  ├ photon: 3 
 │                       │       │                  ├ redhat: 2 
 │                       │       │                  ╰ ubuntu: 2 
 │                       │       ├ CVSS             ╭ julia  ╭ V3Vector : CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I
@@ -4888,7 +4890,8 @@
 │                       │       │                  │       4&distro=ubuntu-26.04 
 │                       │       │                  ╰ UID : 49bea985ed49c259 
 │                       │       ├ InstalledVersion: 3.5.5-1ubuntu3.5 
-│                       │       ├ Status          : affected 
+│                       │       ├ FixedVersion    : 3.5.5-1ubuntu3.7 
+│                       │       ├ Status          : fixed 
 │                       │       ├ Layer            ╭ Digest: sha256:9828e86a4f220c858c27038e827ed54fef1a63f08eb
 │                       │       │                  │         010a14fd7af13590da543 
 │                       │       │                  ╰ DiffID: sha256:718b0340b30f7422f9f61e64777c181088d68ab9a1c
@@ -4952,7 +4955,8 @@
 │                       │       │                  │      a513b3c121d54834040ee4a0eae1a 
 │                       │       │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2026-42772 
 │                       │       │                  ├ [6]: https://openssl-library.org/news/secadv/20260929.txt 
-│                       │       │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2026-42772 
+│                       │       │                  ├ [7]: https://ubuntu.com/security/notices/USN-8861-1 
+│                       │       │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2026-42772 
 │                       │       ├ PublishedDate   : 2026-09-29T16:17:07.64Z 
 │                       │       ╰ LastModifiedDate: 2026-09-30T21:17:10.803Z 
 │                       ├ [88]  ╭ VulnerabilityID : CVE-2026-54872 
@@ -5048,7 +5052,8 @@
 │                       │       │                  │       4&distro=ubuntu-26.04 
 │                       │       │                  ╰ UID : 49bea985ed49c259 
 │                       │       ├ InstalledVersion: 3.5.5-1ubuntu3.5 
-│                       │       ├ Status          : affected 
+│                       │       ├ FixedVersion    : 3.5.5-1ubuntu3.7 
+│                       │       ├ Status          : fixed 
 │                       │       ├ Layer            ╭ Digest: sha256:9828e86a4f220c858c27038e827ed54fef1a63f08eb
 │                       │       │                  │         010a14fd7af13590da543 
 │                       │       │                  ╰ DiffID: sha256:718b0340b30f7422f9f61e64777c181088d68ab9a1c
@@ -5132,7 +5137,8 @@
 │                       │       │                  │      b49711c63128a09e524c0d2d5d0b2 
 │                       │       │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2026-54873 
 │                       │       │                  ├ [6]: https://openssl-library.org/news/secadv/20260929.txt 
-│                       │       │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2026-54873 
+│                       │       │                  ├ [7]: https://ubuntu.com/security/notices/USN-8861-1 
+│                       │       │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2026-54873 
 │                       │       ├ PublishedDate   : 2026-09-29T16:17:08.763Z 
 │                       │       ╰ LastModifiedDate: 2026-09-30T21:17:13.18Z 
 │                       ├ [90]  ╭ VulnerabilityID : CVE-2026-54875 
@@ -6247,7 +6253,8 @@
 │                       │       │                  │       istro=ubuntu-26.04 
 │                       │       │                  ╰ UID : 7cc5688524328341 
 │                       │       ├ InstalledVersion: 3.5.5-1ubuntu3.5 
-│                       │       ├ Status          : affected 
+│                       │       ├ FixedVersion    : 3.5.5-1ubuntu3.7 
+│                       │       ├ Status          : fixed 
 │                       │       ├ Layer            ╭ Digest: sha256:9828e86a4f220c858c27038e827ed54fef1a63f08eb
 │                       │       │                  │         010a14fd7af13590da543 
 │                       │       │                  ╰ DiffID: sha256:718b0340b30f7422f9f61e64777c181088d68ab9a1c
@@ -6311,7 +6318,8 @@
 │                       │       │                  │      a513b3c121d54834040ee4a0eae1a 
 │                       │       │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2026-42772 
 │                       │       │                  ├ [6]: https://openssl-library.org/news/secadv/20260929.txt 
-│                       │       │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2026-42772 
+│                       │       │                  ├ [7]: https://ubuntu.com/security/notices/USN-8861-1 
+│                       │       │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2026-42772 
 │                       │       ├ PublishedDate   : 2026-09-29T16:17:07.64Z 
 │                       │       ╰ LastModifiedDate: 2026-09-30T21:17:10.803Z 
 │                       ├ [104] ╭ VulnerabilityID : CVE-2026-54872 
@@ -6407,7 +6415,8 @@
 │                       │       │                  │       istro=ubuntu-26.04 
 │                       │       │                  ╰ UID : 7cc5688524328341 
 │                       │       ├ InstalledVersion: 3.5.5-1ubuntu3.5 
-│                       │       ├ Status          : affected 
+│                       │       ├ FixedVersion    : 3.5.5-1ubuntu3.7 
+│                       │       ├ Status          : fixed 
 │                       │       ├ Layer            ╭ Digest: sha256:9828e86a4f220c858c27038e827ed54fef1a63f08eb
 │                       │       │                  │         010a14fd7af13590da543 
 │                       │       │                  ╰ DiffID: sha256:718b0340b30f7422f9f61e64777c181088d68ab9a1c
@@ -6491,7 +6500,8 @@
 │                       │       │                  │      b49711c63128a09e524c0d2d5d0b2 
 │                       │       │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2026-54873 
 │                       │       │                  ├ [6]: https://openssl-library.org/news/secadv/20260929.txt 
-│                       │       │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2026-54873 
+│                       │       │                  ├ [7]: https://ubuntu.com/security/notices/USN-8861-1 
+│                       │       │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2026-54873 
 │                       │       ├ PublishedDate   : 2026-09-29T16:17:08.763Z 
 │                       │       ╰ LastModifiedDate: 2026-09-30T21:17:13.18Z 
 │                       ├ [106] ╭ VulnerabilityID : CVE-2026-54875 
@@ -7454,7 +7464,8 @@
 │                       │       │                  │       3.5?arch=amd64&distro=ubuntu-26.04 
 │                       │       │                  ╰ UID : 311e7de6c4a85ba3 
 │                       │       ├ InstalledVersion: 3.5.5-1ubuntu3.5 
-│                       │       ├ Status          : affected 
+│                       │       ├ FixedVersion    : 3.5.5-1ubuntu3.7 
+│                       │       ├ Status          : fixed 
 │                       │       ├ Layer            ╭ Digest: sha256:9828e86a4f220c858c27038e827ed54fef1a63f08eb
 │                       │       │                  │         010a14fd7af13590da543 
 │                       │       │                  ╰ DiffID: sha256:718b0340b30f7422f9f61e64777c181088d68ab9a1c
@@ -7518,7 +7529,8 @@
 │                       │       │                  │      a513b3c121d54834040ee4a0eae1a 
 │                       │       │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2026-42772 
 │                       │       │                  ├ [6]: https://openssl-library.org/news/secadv/20260929.txt 
-│                       │       │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2026-42772 
+│                       │       │                  ├ [7]: https://ubuntu.com/security/notices/USN-8861-1 
+│                       │       │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2026-42772 
 │                       │       ├ PublishedDate   : 2026-09-29T16:17:07.64Z 
 │                       │       ╰ LastModifiedDate: 2026-09-30T21:17:10.803Z 
 │                       ├ [117] ╭ VulnerabilityID : CVE-2026-54872 
@@ -7614,7 +7626,8 @@
 │                       │       │                  │       3.5?arch=amd64&distro=ubuntu-26.04 
 │                       │       │                  ╰ UID : 311e7de6c4a85ba3 
 │                       │       ├ InstalledVersion: 3.5.5-1ubuntu3.5 
-│                       │       ├ Status          : affected 
+│                       │       ├ FixedVersion    : 3.5.5-1ubuntu3.7 
+│                       │       ├ Status          : fixed 
 │                       │       ├ Layer            ╭ Digest: sha256:9828e86a4f220c858c27038e827ed54fef1a63f08eb
 │                       │       │                  │         010a14fd7af13590da543 
 │                       │       │                  ╰ DiffID: sha256:718b0340b30f7422f9f61e64777c181088d68ab9a1c
@@ -7698,7 +7711,8 @@
 │                       │       │                  │      b49711c63128a09e524c0d2d5d0b2 
 │                       │       │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2026-54873 
 │                       │       │                  ├ [6]: https://openssl-library.org/news/secadv/20260929.txt 
-│                       │       │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2026-54873 
+│                       │       │                  ├ [7]: https://ubuntu.com/security/notices/USN-8861-1 
+│                       │       │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2026-54873 
 │                       │       ├ PublishedDate   : 2026-09-29T16:17:08.763Z 
 │                       │       ╰ LastModifiedDate: 2026-09-30T21:17:13.18Z 
 │                       ├ [119] ╭ VulnerabilityID : CVE-2026-54875 
@@ -10292,662 +10306,1000 @@
 │     ├ Class          : lang-pkgs 
 │     ├ Type           : jar 
 │     ├ Packages        
-│     ╰ Vulnerabilities ╭ [0] ╭ VulnerabilityID : CVE-2026-68497 
-│                       │     ├ VendorIDs        ─ [0]: GHSA-q4xh-88c3-wmh7 
-│                       │     ├ PkgName         : com.fasterxml.jackson.core:jackson-databind 
-│                       │     ├ PkgPath         : openaf/ghcopilot/jackson-databind-2.22.1.jar 
-│                       │     ├ PkgIdentifier    ╭ PURL: pkg:maven/com.fasterxml.jackson.core/jackson-databind@
-│                       │     │                  │       2.22.1 
-│                       │     │                  ╰ UID : 6ec7155dea0753b6 
-│                       │     ├ InstalledVersion: 2.22.1 
-│                       │     ├ FixedVersion    : 2.18.10, 2.21.6, 2.22.2 
-│                       │     ├ Status          : fixed 
-│                       │     ├ Layer            ╭ Digest: sha256:9828e86a4f220c858c27038e827ed54fef1a63f08eb01
-│                       │     │                  │         0a14fd7af13590da543 
-│                       │     │                  ╰ DiffID: sha256:718b0340b30f7422f9f61e64777c181088d68ab9a1c5c
-│                       │     │                            d184d97031d5cafaee0 
-│                       │     ├ SeveritySource  : ghsa 
-│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-68497 
-│                       │     ├ DataSource       ╭ ID  : ghsa 
-│                       │     │                  ├ Name: GitHub Security Advisory Maven 
-│                       │     │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
-│                       │     │                          osystem%3Amaven 
-│                       │     ├ Fingerprint     : sha256:7e6913ecb7c6f8f8be4f7402e9259dc19ed2596e6b4ad3c1be5fba
-│                       │     │                   3f729e3b1c 
-│                       │     ├ Title           : com.fasterxml.jackson.core/jackson-databind:
-│                       │     │                   tools.jackson.core/jackson-databind: jackson-databind: CPU
-│                       │     │                   Denial of Service via unbounded numeric parsing 
-│                       │     ├ Description     : jackson-databind binds a JSON string to a
-│                       │     │                   javax.xml.datatype.Duration or
-│                       │     │                   javax.xml.datatype.XMLGregorianCalendar field by passing the
-│                       │     │                   raw string verbatim to DatatypeFactory.newDuration(value) or
-│                       │     │                   newXMLGregorianCalendar(value) in
-│                       │     │                   CoreXMLDeserializers.Std._deserialize. These deserializers
-│                       │     │                   are registered by default with no opt-in, so a plain
-│                       │     │                   ObjectMapper or JsonMapper with no polymorphic typing and no
-│                       │     │                   special configuration reaches this path. The XML Schema
-│                       │     │                   lexical grammar permits numeric components of arbitrary
-│                       │     │                   length, which the JDK materializes through the native
-│                       │     │                   BigInteger(String) and BigDecimal(String) constructors, both
-│                       │     │                   quadratic in digit count. Because the digits sit inside a
-│                       │     │                   JSON string token rather than a JSON number token,
-│                       │     │                   jackson-core's StreamReadConstraints.maxNumberLength guard
-│                       │     │                   never applies; jackson's own NumberDeserializers call
-│                       │     │                   validateIntegerLength or validateFPLength before parsing a
-│                       │     │                   stringified number, but the XML datatype deserializer omits
-│                       │     │                   that pre-check. An unauthenticated attacker can therefore
-│                       │     │                   submit a single request of a few megabytes, such as a
-│                       │     │                   Duration value consisting of the letter P followed by several
-│                       │     │                    million digits and the letter Y, and force tens of seconds
-│                       │     │                   to several minutes of single-threaded CPU work; a handful of
-│                       │     │                   concurrent requests can saturate a server's worker threads.
-│                       │     │                   This affects com.fasterxml.jackson.core:jackson-databind from
-│                       │     │                    2.0.0 before 2.18.10, from 2.19.0 before 2.21.6, and from
-│                       │     │                   2.22.0 before 2.22.2, and tools.jackson.core:jackson-databind
-│                       │     │                    from 3.0.0 before 3.1.6 and from 3.2.0 before 3.2.2. Users
-│                       │     │                   should upgrade to 2.18.10, 2.21.6, 2.22.2, 3.1.6, or 3.2.2.[
-│                       │     │                   m 
-│                       │     ├ Severity        : HIGH 
-│                       │     ├ CweIDs           ╭ [0]: CWE-400 
-│                       │     │                  ╰ [1]: CWE-1333 
-│                       │     ├ VendorSeverity   ╭ ghsa  : 3 
-│                       │     │                  ╰ redhat: 3 
-│                       │     ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/
-│                       │     │                  │        │           A:H 
-│                       │     │                  │        ╰ V3Score : 7.5 
-│                       │     │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/
-│                       │     │                           │           A:H 
-│                       │     │                           ╰ V3Score : 7.5 
-│                       │     ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2026-68497 
-│                       │     │                  ├ [1] : https://github.com/FasterXML/jackson-databind 
-│                       │     │                  ├ [2] : https://github.com/FasterXML/jackson-databind/commit/a
-│                       │     │                  │       99b7e74c8928f43f6975773a8c862c8316178bd 
-│                       │     │                  ├ [3] : https://github.com/FasterXML/jackson-databind/pull/6127 
-│                       │     │                  ├ [4] : https://github.com/FasterXML/jackson-databind/releases
-│                       │     │                  │       /tag/jackson-databind-2.18.10 
-│                       │     │                  ├ [5] : https://github.com/FasterXML/jackson-databind/releases
-│                       │     │                  │       /tag/jackson-databind-2.21.6 
-│                       │     │                  ├ [6] : https://github.com/FasterXML/jackson-databind/releases
-│                       │     │                  │       /tag/jackson-databind-2.22.2 
-│                       │     │                  ├ [7] : https://github.com/FasterXML/jackson-databind/releases
-│                       │     │                  │       /tag/jackson-databind-3.1.6 
-│                       │     │                  ├ [8] : https://github.com/FasterXML/jackson-databind/releases
-│                       │     │                  │       /tag/jackson-databind-3.2.2 
-│                       │     │                  ├ [9] : https://github.com/FasterXML/jackson-databind/security
-│                       │     │                  │       /advisories/GHSA-q4xh-88c3-wmh7 
-│                       │     │                  ├ [10]: https://nvd.nist.gov/vuln/detail/CVE-2026-68497 
-│                       │     │                  ╰ [11]: https://www.cve.org/CVERecord?id=CVE-2026-68497 
-│                       │     ├ PublishedDate   : 2026-09-11T16:17:39.61Z 
-│                       │     ╰ LastModifiedDate: 2026-09-18T19:34:36.657Z 
-│                       ├ [1] ╭ VulnerabilityID : CVE-2026-91776 
-│                       │     ├ VendorIDs        ─ [0]: GHSA-wv8q-qhhj-9h54 
-│                       │     ├ PkgName         : com.fasterxml.jackson.core:jackson-databind 
-│                       │     ├ PkgPath         : openaf/ghcopilot/jackson-databind-2.22.1.jar 
-│                       │     ├ PkgIdentifier    ╭ PURL: pkg:maven/com.fasterxml.jackson.core/jackson-databind@
-│                       │     │                  │       2.22.1 
-│                       │     │                  ╰ UID : 6ec7155dea0753b6 
-│                       │     ├ InstalledVersion: 2.22.1 
-│                       │     ├ FixedVersion    : 2.18.11, 2.21.7, 2.22.3 
-│                       │     ├ Status          : fixed 
-│                       │     ├ Layer            ╭ Digest: sha256:9828e86a4f220c858c27038e827ed54fef1a63f08eb01
-│                       │     │                  │         0a14fd7af13590da543 
-│                       │     │                  ╰ DiffID: sha256:718b0340b30f7422f9f61e64777c181088d68ab9a1c5c
-│                       │     │                            d184d97031d5cafaee0 
-│                       │     ├ SeveritySource  : ghsa 
-│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-91776 
-│                       │     ├ DataSource       ╭ ID  : ghsa 
-│                       │     │                  ├ Name: GitHub Security Advisory Maven 
-│                       │     │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
-│                       │     │                          osystem%3Amaven 
-│                       │     ├ Fingerprint     : sha256:972f0c0e16185d820c7f9de563e5649c86931c83b9b513012835a2
-│                       │     │                   fb3b8cd58c 
-│                       │     ├ Title           : TypeDeserializerBase._findDeserializer() in FasterXML
-│                       │     │                   jackson-databind ... 
-│                       │     ├ Description     : TypeDeserializerBase._findDeserializer() in FasterXML
-│                       │     │                   jackson-databind caches the resolved deserializer under the
-│                       │     │                   raw, attacker-supplied type ID. When name-based polymorphism
-│                       │     │                   is configured with a fallback, for example @JsonTypeInfo(use
-│                       │     │                   = Id.NAME, defaultImpl = ...), every distinct unrecognized
-│                       │     │                   type ID resolves to the same fallback deserializer but is
-│                       │     │                   retained as its own key in the _deserializers map. That map
-│                       │     │                   has no configurable bound and lives for the lifetime of the
-│                       │     │                   type deserializer, so an attacker who can repeatedly supply
-│                       │     │                   fresh unknown type IDs causes monotonic memory retention
-│                       │     │                   across requests. The reporter observed 10,000 retained
-│                       │     │                   entries from 10,000 distinct unknown IDs, against a single
-│                       │     │                   entry for a control that repeated one unknown ID the same
-│                       │     │                   number of times, isolating attacker-controlled key
-│                       │     │                   cardinality from request volume. Exploitation requires an
-│                       │     │                   application that enables name-based polymorphism with a
-│                       │     │                   defaultImpl or equivalent fallback, accepts
-│                       │     │                   attacker-influenced type IDs, and reuses a long-lived
-│                       │     │                   ObjectMapper across requests. The fix stops caching fallback
-│                       │     │                   resolutions for unrecognized IDs and bounds both the number
-│                       │     │                   of cached entries and the length of a cacheable type ID. 
-│                       │     ├ Severity        : HIGH 
-│                       │     ├ CweIDs           ─ [0]: CWE-400 
-│                       │     ├ VendorSeverity   ─ ghsa: 3 
-│                       │     ├ CVSS             ─ ghsa ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H 
-│                       │     │                         ╰ V3Score : 7.5 
-│                       │     ├ References       ╭ [0]: https://github.com/FasterXML/jackson-databind 
-│                       │     │                  ├ [1]: https://github.com/FasterXML/jackson-databind/commit/28
-│                       │     │                  │      70d1d6dc1b7e1c07ee11dd5b04ab71cddbb577 
-│                       │     │                  ├ [2]: https://github.com/FasterXML/jackson-databind/issues/6203 
-│                       │     │                  ├ [3]: https://github.com/FasterXML/jackson-databind/releases/
-│                       │     │                  │      tag/jackson-databind-2.18.11 
-│                       │     │                  ├ [4]: https://github.com/FasterXML/jackson-databind/releases/
-│                       │     │                  │      tag/jackson-databind-2.21.7 
-│                       │     │                  ├ [5]: https://github.com/FasterXML/jackson-databind/releases/
-│                       │     │                  │      tag/jackson-databind-2.22.3 
-│                       │     │                  ├ [6]: https://github.com/FasterXML/jackson-databind/releases/
-│                       │     │                  │      tag/jackson-databind-3.1.7 
-│                       │     │                  ├ [7]: https://github.com/FasterXML/jackson-databind/releases/
-│                       │     │                  │      tag/jackson-databind-3.2.3 
-│                       │     │                  ├ [8]: https://github.com/FasterXML/jackson-databind/security/
-│                       │     │                  │      advisories/GHSA-wv8q-qhhj-9h54 
-│                       │     │                  ╰ [9]: https://nvd.nist.gov/vuln/detail/CVE-2026-91776 
-│                       │     ├ PublishedDate   : 2026-09-23T03:17:04.62Z 
-│                       │     ╰ LastModifiedDate: 2026-09-24T20:43:32.537Z 
-│                       ├ [2] ╭ VulnerabilityID : CVE-2026-91777 
-│                       │     ├ VendorIDs        ─ [0]: GHSA-cxp5-3px4-pw24 
-│                       │     ├ PkgName         : com.fasterxml.jackson.core:jackson-databind 
-│                       │     ├ PkgPath         : openaf/ghcopilot/jackson-databind-2.22.1.jar 
-│                       │     ├ PkgIdentifier    ╭ PURL: pkg:maven/com.fasterxml.jackson.core/jackson-databind@
-│                       │     │                  │       2.22.1 
-│                       │     │                  ╰ UID : 6ec7155dea0753b6 
-│                       │     ├ InstalledVersion: 2.22.1 
-│                       │     ├ FixedVersion    : 2.21.7, 2.18.11, 2.22.3 
-│                       │     ├ Status          : fixed 
-│                       │     ├ Layer            ╭ Digest: sha256:9828e86a4f220c858c27038e827ed54fef1a63f08eb01
-│                       │     │                  │         0a14fd7af13590da543 
-│                       │     │                  ╰ DiffID: sha256:718b0340b30f7422f9f61e64777c181088d68ab9a1c5c
-│                       │     │                            d184d97031d5cafaee0 
-│                       │     ├ SeveritySource  : ghsa 
-│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-91777 
-│                       │     ├ DataSource       ╭ ID  : ghsa 
-│                       │     │                  ├ Name: GitHub Security Advisory Maven 
-│                       │     │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
-│                       │     │                          osystem%3Amaven 
-│                       │     ├ Fingerprint     : sha256:dca7092e5d4a1604d1bb99746f0d26513fa0b9861bdf35cc07762c
-│                       │     │                   0da2e62e64 
-│                       │     ├ Title           : Forward-reference completion for @JsonIdentityInfo object IDs
-│                       │     │                    in Faste ... 
-│                       │     ├ Description     : Forward-reference completion for @JsonIdentityInfo object IDs
-│                       │     │                    in FasterXML jackson-databind performs a linear scan of the
-│                       │     │                   pending-reference accumulator for every resolved ID. The
-│                       │     │                   affected paths are
-│                       │     │                   CollectionDeserializer.CollectionReferringAccumulator.resolve
-│                       │     │                   ForwardReference() and the equivalent implementation in
-│                       │     │                   MapDeserializer. When a document first creates N unresolved
-│                       │     │                   object-ID references in an identity-enabled collection or map
-│                       │     │                    and then defines those same IDs in reverse order, completion
-│                       │     │                    performs on the order of N * (N + 1) / 2 identity
-│                       │     │                   comparisons, so a shallow document whose size grows linearly
-│                       │     │                   causes quadratic CPU work during deserialization. The
-│                       │     │                   reporter instrumented equals() calls on the ID class and
-│                       │     │                   measured exactly 2,003,000 comparisons at N = 2,000, against
-│                       │     │                   zero comparisons in the pending-reference lookup path for an
-│                       │     │                   equally sized control in which every reference was already
-│                       │     │                   resolved. The input requires no deep nesting and no
-│                       │     │                   syntactically unusual JSON. Exploitation requires an
-│                       │     │                   application that deserializes attacker-influenced JSON into
-│                       │     │                   an identity-enabled collection or map. The fix replaces the
-│                       │     │                   repeated linear lookup with a keyed pending-reference
-│                       │     │                   structure. 
-│                       │     ├ Severity        : HIGH 
-│                       │     ├ CweIDs           ─ [0]: CWE-400 
-│                       │     ├ VendorSeverity   ─ ghsa: 3 
-│                       │     ├ CVSS             ─ ghsa ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H 
-│                       │     │                         ╰ V3Score : 7.5 
-│                       │     ├ References       ╭ [0] : https://github.com/FasterXML/jackson-databind 
-│                       │     │                  ├ [1] : https://github.com/FasterXML/jackson-databind/commit/3
-│                       │     │                  │       7ad9b81712cbb9fb62c2d2c1813593252a24b67 
-│                       │     │                  ├ [2] : https://github.com/FasterXML/jackson-databind/issues/6
-│                       │     │                  │       204 
-│                       │     │                  ├ [3] : https://github.com/FasterXML/jackson-databind/pull/6204 
-│                       │     │                  ├ [4] : https://github.com/FasterXML/jackson-databind/releases
-│                       │     │                  │       /tag/jackson-databind-2.18.11 
-│                       │     │                  ├ [5] : https://github.com/FasterXML/jackson-databind/releases
-│                       │     │                  │       /tag/jackson-databind-2.21.7 
-│                       │     │                  ├ [6] : https://github.com/FasterXML/jackson-databind/releases
-│                       │     │                  │       /tag/jackson-databind-2.22.3 
-│                       │     │                  ├ [7] : https://github.com/FasterXML/jackson-databind/releases
-│                       │     │                  │       /tag/jackson-databind-3.1.7 
-│                       │     │                  ├ [8] : https://github.com/FasterXML/jackson-databind/releases
-│                       │     │                  │       /tag/jackson-databind-3.2.3 
-│                       │     │                  ├ [9] : https://github.com/FasterXML/jackson-databind/security
-│                       │     │                  │       /advisories/GHSA-cxp5-3px4-pw24 
-│                       │     │                  ╰ [10]: https://nvd.nist.gov/vuln/detail/CVE-2026-91777 
-│                       │     ├ PublishedDate   : 2026-09-23T03:17:04.783Z 
-│                       │     ╰ LastModifiedDate: 2026-09-24T20:43:32.537Z 
-│                       ├ [3] ╭ VulnerabilityID : CVE-2026-19032 
-│                       │     ├ VendorIDs        ─ [0]: GHSA-wjgm-6hv5-3cvf 
-│                       │     ├ PkgName         : com.fasterxml.jackson.core:jackson-databind 
-│                       │     ├ PkgPath         : openaf/ghcopilot/jackson-databind-2.22.1.jar 
-│                       │     ├ PkgIdentifier    ╭ PURL: pkg:maven/com.fasterxml.jackson.core/jackson-databind@
-│                       │     │                  │       2.22.1 
-│                       │     │                  ╰ UID : 6ec7155dea0753b6 
-│                       │     ├ InstalledVersion: 2.22.1 
-│                       │     ├ FixedVersion    : 2.18.10, 2.21.6, 2.22.2 
-│                       │     ├ Status          : fixed 
-│                       │     ├ Layer            ╭ Digest: sha256:9828e86a4f220c858c27038e827ed54fef1a63f08eb01
-│                       │     │                  │         0a14fd7af13590da543 
-│                       │     │                  ╰ DiffID: sha256:718b0340b30f7422f9f61e64777c181088d68ab9a1c5c
-│                       │     │                            d184d97031d5cafaee0 
-│                       │     ├ SeveritySource  : ghsa 
-│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-19032 
-│                       │     ├ DataSource       ╭ ID  : ghsa 
-│                       │     │                  ├ Name: GitHub Security Advisory Maven 
-│                       │     │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
-│                       │     │                          osystem%3Amaven 
-│                       │     ├ Fingerprint     : sha256:ab1919ec3eeb0fbf2bdd85f55abbb7361032038c2d54714b754a74
-│                       │     │                   b4c599a365 
-│                       │     ├ Title           : com.fasterxml.jackson.core/jackson-databind:
-│                       │     │                   tools.jackson.core/jackson-databind: Jackson-databind:
-│                       │     │                   Uncontrolled URI scheme resolution in Path deserialization 
-│                       │     ├ Description     : jackson-databind's deserializer for java.nio.file.Path
-│                       │     │                   resolves an attacker-supplied URI without restricting the URI
-│                       │     │                    scheme. In
-│                       │     │                   JDKFromStringDeserializer.NioPathHelper.deserialize, a string
-│                       │     │                    bound from untrusted JSON is passed to new URI(value) and
-│                       │     │                   then to Path.of(uri). When that throws
-│                       │     │                   FileSystemNotFoundException, the code enumerates
-│                       │     │                   ServiceLoader<FileSystemProvider> and calls
-│                       │     │                   provider.getPath(uri) on the first provider whose scheme
-│                       │     │                   matches the attacker-chosen scheme. Untrusted JSON can
-│                       │     │                   therefore select and drive an arbitrary registered
-│                       │     │                   FileSystemProvider during readValue under a default
-│                       │     │                   JsonMapper, and forces provider class loading at the same
-│                       │     │                   time. With only the JDK built-in providers (file, jar/zipfs)
-│                       │     │                   present, the resolved path is inert and no mount or network
-│                       │     │                   I/O occurs; further impact requires a side-effecting
-│                       │     │                   third-party FileSystemProvider on the classpath. This affects
-│                       │     │                    com.fasterxml.jackson.core:jackson-databind from 2.8.0
-│                       │     │                   before 2.18.10, from 2.19.0 before 2.21.6, and from 2.22.0
-│                       │     │                   before 2.22.2, and tools.jackson.core:jackson-databind from
-│                       │     │                   3.0.0 before 3.1.6 and from 3.2.0 before 3.2.2. Users should
-│                       │     │                   upgrade to 2.18.10, 2.21.6, 2.22.2, 3.1.6, or 3.2.2. Binding
-│                       │     │                   java.nio.file.Path from untrusted JSON should be avoided
-│                       │     │                   regardless of version. 
-│                       │     ├ Severity        : MEDIUM 
-│                       │     ├ CweIDs           ╭ [0]: CWE-470 
-│                       │     │                  ╰ [1]: CWE-610 
-│                       │     ├ VendorSeverity   ╭ ghsa  : 2 
-│                       │     │                  ╰ redhat: 2 
-│                       │     ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/
-│                       │     │                  │        │           A:L 
-│                       │     │                  │        ╰ V3Score : 5.3 
-│                       │     │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/
-│                       │     │                           │           A:L 
-│                       │     │                           ╰ V3Score : 5.3 
-│                       │     ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2026-19032 
-│                       │     │                  ├ [1] : https://github.com/FasterXML/jackson-databind 
-│                       │     │                  ├ [2] : https://github.com/FasterXML/jackson-databind/commit/c
-│                       │     │                  │       c6756b61ed90b6b9227f670e0408d5d9bd48551 
-│                       │     │                  ├ [3] : https://github.com/FasterXML/jackson-databind/commit/c
-│                       │     │                  │       e26eda3481cd796f76ba4c53ffe1da23b53f166 
-│                       │     │                  ├ [4] : https://github.com/FasterXML/jackson-databind/commit/d
-│                       │     │                  │       94bb632becfe0ba96926b9909ab06d1f87aad6d 
-│                       │     │                  ├ [5] : https://github.com/FasterXML/jackson-databind/pull/6129 
-│                       │     │                  ├ [6] : https://github.com/FasterXML/jackson-databind/releases
-│                       │     │                  │       /tag/jackson-databind-2.18.10 
-│                       │     │                  ├ [7] : https://github.com/FasterXML/jackson-databind/releases
-│                       │     │                  │       /tag/jackson-databind-2.21.6 
-│                       │     │                  ├ [8] : https://github.com/FasterXML/jackson-databind/releases
-│                       │     │                  │       /tag/jackson-databind-2.22.2 
-│                       │     │                  ├ [9] : https://github.com/FasterXML/jackson-databind/releases
-│                       │     │                  │       /tag/jackson-databind-3.1.6 
-│                       │     │                  ├ [10]: https://github.com/FasterXML/jackson-databind/releases
-│                       │     │                  │       /tag/jackson-databind-3.2.2 
-│                       │     │                  ├ [11]: https://github.com/FasterXML/jackson-databind/security
-│                       │     │                  │       /advisories/GHSA-wjgm-6hv5-3cvf 
-│                       │     │                  ├ [12]: https://nvd.nist.gov/vuln/detail/CVE-2026-19032 
-│                       │     │                  ╰ [13]: https://www.cve.org/CVERecord?id=CVE-2026-19032 
-│                       │     ├ PublishedDate   : 2026-09-01T04:18:00.433Z 
-│                       │     ╰ LastModifiedDate: 2026-09-08T19:29:32.2Z 
-│                       ├ [4] ╭ VulnerabilityID : CVE-2026-83557 
-│                       │     ├ VendorIDs        ─ [0]: GHSA-gx83-3vf8-gh7j 
-│                       │     ├ PkgName         : com.fasterxml.jackson.core:jackson-databind 
-│                       │     ├ PkgPath         : openaf/ghcopilot/jackson-databind-2.22.1.jar 
-│                       │     ├ PkgIdentifier    ╭ PURL: pkg:maven/com.fasterxml.jackson.core/jackson-databind@
-│                       │     │                  │       2.22.1 
-│                       │     │                  ╰ UID : 6ec7155dea0753b6 
-│                       │     ├ InstalledVersion: 2.22.1 
-│                       │     ├ FixedVersion    : 2.18.10, 2.21.6, 2.22.2 
-│                       │     ├ Status          : fixed 
-│                       │     ├ Layer            ╭ Digest: sha256:9828e86a4f220c858c27038e827ed54fef1a63f08eb01
-│                       │     │                  │         0a14fd7af13590da543 
-│                       │     │                  ╰ DiffID: sha256:718b0340b30f7422f9f61e64777c181088d68ab9a1c5c
-│                       │     │                            d184d97031d5cafaee0 
-│                       │     ├ SeveritySource  : ghsa 
-│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-83557 
-│                       │     ├ DataSource       ╭ ID  : ghsa 
-│                       │     │                  ├ Name: GitHub Security Advisory Maven 
-│                       │     │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
-│                       │     │                          osystem%3Amaven 
-│                       │     ├ Fingerprint     : sha256:3a356196e99a93788b0fe657d412ff5886d1ff6719a192e74987ff
-│                       │     │                   624c17b251 
-│                       │     ├ Title           : com.fasterxml.jackson.core/jackson-databind:
-│                       │     │                   tools.jackson.core/jackson-databind: jackson-databind: Path
-│                       │     │                   traversal via incomplete type validation 
-│                       │     ├ Description     : DefaultBaseTypeLimitingValidator is the
-│                       │     │                   PolymorphicTypeValidator applied automatically whenever
-│                       │     │                   @JsonTypeInfo is used without an explicitly configured custom
-│                       │     │                    validator. It denies polymorphic resolution only for a fixed
-│                       │     │                    set of "unsafe base types", and its isSafeSubType method
-│                       │     │                   returns true unconditionally for every base type outside that
-│                       │     │                    set. java.lang.Comparable was absent from the list despite
-│                       │     │                   being implemented by a very large fraction of JDK and
-│                       │     │                   application classes, comparable in breadth to
-│                       │     │                   java.io.Serializable, which is on the list for that reason.
-│                       │     │                   An application declaring an @JsonTypeInfo-annotated property
-│                       │     │                   or class with Comparable as its base type, and no custom
-│                       │     │                   PolymorphicTypeValidator, will accept a type identifier for
-│                       │     │                   essentially any class implementing Comparable. This yields an
-│                       │     │                    attacker-controlled object instantiation primitive; a
-│                       │     │                   demonstrated case constructs a java.io.File for an arbitrary
-│                       │     │                   attacker-chosen path, which becomes path-traversal-adjacent
-│                       │     │                   if the application subsequently calls path-sensitive methods
-│                       │     │                   on the value. No class implementing Comparable has been
-│                       │     │                   identified that yields code execution through deserialization
-│                       │     │                    alone. Global Default Typing via activateDefaultTyping is
-│                       │     │                   not affected, because that method structurally requires an
-│                       │     │                   explicit PolymorphicTypeValidator argument. This affects
-│                       │     │                   com.fasterxml.jackson.core:jackson-databind from 2.11.0
-│                       │     │                   before 2.18.10, from 2.19.0 before 2.21.6, and from 2.22.0
-│                       │     │                   before 2.22.2, and tools.jackson.core:jackson-databind from
-│                       │     │                   3.0.0 before 3.1.6 and from 3.2.0 before 3.2.2. Users should
-│                       │     │                   upgrade to 2.18.10, 2.21.6, 2.22.2, 3.1.6, or 3.2.2. 
-│                       │     ├ Severity        : MEDIUM 
-│                       │     ├ CweIDs           ╭ [0]: CWE-502 
-│                       │     │                  ╰ [1]: CWE-915 
-│                       │     ├ VendorSeverity   ╭ ghsa  : 2 
-│                       │     │                  ╰ redhat: 2 
-│                       │     ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/
-│                       │     │                  │        │           A:L 
-│                       │     │                  │        ╰ V3Score : 5.6 
-│                       │     │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/
-│                       │     │                           │           A:L 
-│                       │     │                           ╰ V3Score : 5.6 
-│                       │     ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2026-83557 
-│                       │     │                  ├ [1] : https://github.com/FasterXML/jackson-databind 
-│                       │     │                  ├ [2] : https://github.com/FasterXML/jackson-databind/commit/e
-│                       │     │                  │       b3b7fc0f9c0d27f471550ac3316b17d1987388f 
-│                       │     │                  ├ [3] : https://github.com/FasterXML/jackson-databind/issues/6
-│                       │     │                  │       156 
-│                       │     │                  ├ [4] : https://github.com/FasterXML/jackson-databind/pull/6155 
-│                       │     │                  ├ [5] : https://github.com/FasterXML/jackson-databind/releases
-│                       │     │                  │       /tag/jackson-databind-2.18.10 
-│                       │     │                  ├ [6] : https://github.com/FasterXML/jackson-databind/releases
-│                       │     │                  │       /tag/jackson-databind-2.21.6 
-│                       │     │                  ├ [7] : https://github.com/FasterXML/jackson-databind/releases
-│                       │     │                  │       /tag/jackson-databind-2.22.2 
-│                       │     │                  ├ [8] : https://github.com/FasterXML/jackson-databind/releases
-│                       │     │                  │       /tag/jackson-databind-3.1.6 
-│                       │     │                  ├ [9] : https://github.com/FasterXML/jackson-databind/releases
-│                       │     │                  │       /tag/jackson-databind-3.2.2 
-│                       │     │                  ├ [10]: https://github.com/FasterXML/jackson-databind/security
-│                       │     │                  │       /advisories/GHSA-gx83-3vf8-gh7j 
-│                       │     │                  ├ [11]: https://nvd.nist.gov/vuln/detail/CVE-2026-83557 
-│                       │     │                  ╰ [12]: https://www.cve.org/CVERecord?id=CVE-2026-83557 
-│                       │     ├ PublishedDate   : 2026-09-01T15:17:37.987Z 
-│                       │     ╰ LastModifiedDate: 2026-09-08T19:29:32.2Z 
-│                       ├ [5] ╭ VulnerabilityID : CVE-2026-91776 
-│                       │     ├ VendorIDs        ─ [0]: GHSA-wv8q-qhhj-9h54 
-│                       │     ├ PkgName         : com.fasterxml.jackson.core:jackson-databind 
-│                       │     ├ PkgPath         : openaf/openaf.jar 
-│                       │     ├ PkgIdentifier    ╭ PURL: pkg:maven/com.fasterxml.jackson.core/jackson-databind@
-│                       │     │                  │       2.22.2 
-│                       │     │                  ╰ UID : 91d7bc7f349a4179 
-│                       │     ├ InstalledVersion: 2.22.2 
-│                       │     ├ FixedVersion    : 2.18.11, 2.21.7, 2.22.3 
-│                       │     ├ Status          : fixed 
-│                       │     ├ Layer            ╭ Digest: sha256:9828e86a4f220c858c27038e827ed54fef1a63f08eb01
-│                       │     │                  │         0a14fd7af13590da543 
-│                       │     │                  ╰ DiffID: sha256:718b0340b30f7422f9f61e64777c181088d68ab9a1c5c
-│                       │     │                            d184d97031d5cafaee0 
-│                       │     ├ SeveritySource  : ghsa 
-│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-91776 
-│                       │     ├ DataSource       ╭ ID  : ghsa 
-│                       │     │                  ├ Name: GitHub Security Advisory Maven 
-│                       │     │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
-│                       │     │                          osystem%3Amaven 
-│                       │     ├ Fingerprint     : sha256:972f0c0e16185d820c7f9de563e5649c86931c83b9b513012835a2
-│                       │     │                   fb3b8cd58c 
-│                       │     ├ Title           : TypeDeserializerBase._findDeserializer() in FasterXML
-│                       │     │                   jackson-databind ... 
-│                       │     ├ Description     : TypeDeserializerBase._findDeserializer() in FasterXML
-│                       │     │                   jackson-databind caches the resolved deserializer under the
-│                       │     │                   raw, attacker-supplied type ID. When name-based polymorphism
-│                       │     │                   is configured with a fallback, for example @JsonTypeInfo(use
-│                       │     │                   = Id.NAME, defaultImpl = ...), every distinct unrecognized
-│                       │     │                   type ID resolves to the same fallback deserializer but is
-│                       │     │                   retained as its own key in the _deserializers map. That map
-│                       │     │                   has no configurable bound and lives for the lifetime of the
-│                       │     │                   type deserializer, so an attacker who can repeatedly supply
-│                       │     │                   fresh unknown type IDs causes monotonic memory retention
-│                       │     │                   across requests. The reporter observed 10,000 retained
-│                       │     │                   entries from 10,000 distinct unknown IDs, against a single
-│                       │     │                   entry for a control that repeated one unknown ID the same
-│                       │     │                   number of times, isolating attacker-controlled key
-│                       │     │                   cardinality from request volume. Exploitation requires an
-│                       │     │                   application that enables name-based polymorphism with a
-│                       │     │                   defaultImpl or equivalent fallback, accepts
-│                       │     │                   attacker-influenced type IDs, and reuses a long-lived
-│                       │     │                   ObjectMapper across requests. The fix stops caching fallback
-│                       │     │                   resolutions for unrecognized IDs and bounds both the number
-│                       │     │                   of cached entries and the length of a cacheable type ID. 
-│                       │     ├ Severity        : HIGH 
-│                       │     ├ CweIDs           ─ [0]: CWE-400 
-│                       │     ├ VendorSeverity   ─ ghsa: 3 
-│                       │     ├ CVSS             ─ ghsa ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H 
-│                       │     │                         ╰ V3Score : 7.5 
-│                       │     ├ References       ╭ [0]: https://github.com/FasterXML/jackson-databind 
-│                       │     │                  ├ [1]: https://github.com/FasterXML/jackson-databind/commit/28
-│                       │     │                  │      70d1d6dc1b7e1c07ee11dd5b04ab71cddbb577 
-│                       │     │                  ├ [2]: https://github.com/FasterXML/jackson-databind/issues/6203 
-│                       │     │                  ├ [3]: https://github.com/FasterXML/jackson-databind/releases/
-│                       │     │                  │      tag/jackson-databind-2.18.11 
-│                       │     │                  ├ [4]: https://github.com/FasterXML/jackson-databind/releases/
-│                       │     │                  │      tag/jackson-databind-2.21.7 
-│                       │     │                  ├ [5]: https://github.com/FasterXML/jackson-databind/releases/
-│                       │     │                  │      tag/jackson-databind-2.22.3 
-│                       │     │                  ├ [6]: https://github.com/FasterXML/jackson-databind/releases/
-│                       │     │                  │      tag/jackson-databind-3.1.7 
-│                       │     │                  ├ [7]: https://github.com/FasterXML/jackson-databind/releases/
-│                       │     │                  │      tag/jackson-databind-3.2.3 
-│                       │     │                  ├ [8]: https://github.com/FasterXML/jackson-databind/security/
-│                       │     │                  │      advisories/GHSA-wv8q-qhhj-9h54 
-│                       │     │                  ╰ [9]: https://nvd.nist.gov/vuln/detail/CVE-2026-91776 
-│                       │     ├ PublishedDate   : 2026-09-23T03:17:04.62Z 
-│                       │     ╰ LastModifiedDate: 2026-09-24T20:43:32.537Z 
-│                       ├ [6] ╭ VulnerabilityID : CVE-2026-91777 
-│                       │     ├ VendorIDs        ─ [0]: GHSA-cxp5-3px4-pw24 
-│                       │     ├ PkgName         : com.fasterxml.jackson.core:jackson-databind 
-│                       │     ├ PkgPath         : openaf/openaf.jar 
-│                       │     ├ PkgIdentifier    ╭ PURL: pkg:maven/com.fasterxml.jackson.core/jackson-databind@
-│                       │     │                  │       2.22.2 
-│                       │     │                  ╰ UID : 91d7bc7f349a4179 
-│                       │     ├ InstalledVersion: 2.22.2 
-│                       │     ├ FixedVersion    : 2.21.7, 2.18.11, 2.22.3 
-│                       │     ├ Status          : fixed 
-│                       │     ├ Layer            ╭ Digest: sha256:9828e86a4f220c858c27038e827ed54fef1a63f08eb01
-│                       │     │                  │         0a14fd7af13590da543 
-│                       │     │                  ╰ DiffID: sha256:718b0340b30f7422f9f61e64777c181088d68ab9a1c5c
-│                       │     │                            d184d97031d5cafaee0 
-│                       │     ├ SeveritySource  : ghsa 
-│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-91777 
-│                       │     ├ DataSource       ╭ ID  : ghsa 
-│                       │     │                  ├ Name: GitHub Security Advisory Maven 
-│                       │     │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
-│                       │     │                          osystem%3Amaven 
-│                       │     ├ Fingerprint     : sha256:dca7092e5d4a1604d1bb99746f0d26513fa0b9861bdf35cc07762c
-│                       │     │                   0da2e62e64 
-│                       │     ├ Title           : Forward-reference completion for @JsonIdentityInfo object IDs
-│                       │     │                    in Faste ... 
-│                       │     ├ Description     : Forward-reference completion for @JsonIdentityInfo object IDs
-│                       │     │                    in FasterXML jackson-databind performs a linear scan of the
-│                       │     │                   pending-reference accumulator for every resolved ID. The
-│                       │     │                   affected paths are
-│                       │     │                   CollectionDeserializer.CollectionReferringAccumulator.resolve
-│                       │     │                   ForwardReference() and the equivalent implementation in
-│                       │     │                   MapDeserializer. When a document first creates N unresolved
-│                       │     │                   object-ID references in an identity-enabled collection or map
-│                       │     │                    and then defines those same IDs in reverse order, completion
-│                       │     │                    performs on the order of N * (N + 1) / 2 identity
-│                       │     │                   comparisons, so a shallow document whose size grows linearly
-│                       │     │                   causes quadratic CPU work during deserialization. The
-│                       │     │                   reporter instrumented equals() calls on the ID class and
-│                       │     │                   measured exactly 2,003,000 comparisons at N = 2,000, against
-│                       │     │                   zero comparisons in the pending-reference lookup path for an
-│                       │     │                   equally sized control in which every reference was already
-│                       │     │                   resolved. The input requires no deep nesting and no
-│                       │     │                   syntactically unusual JSON. Exploitation requires an
-│                       │     │                   application that deserializes attacker-influenced JSON into
-│                       │     │                   an identity-enabled collection or map. The fix replaces the
-│                       │     │                   repeated linear lookup with a keyed pending-reference
-│                       │     │                   structure. 
-│                       │     ├ Severity        : HIGH 
-│                       │     ├ CweIDs           ─ [0]: CWE-400 
-│                       │     ├ VendorSeverity   ─ ghsa: 3 
-│                       │     ├ CVSS             ─ ghsa ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H 
-│                       │     │                         ╰ V3Score : 7.5 
-│                       │     ├ References       ╭ [0] : https://github.com/FasterXML/jackson-databind 
-│                       │     │                  ├ [1] : https://github.com/FasterXML/jackson-databind/commit/3
-│                       │     │                  │       7ad9b81712cbb9fb62c2d2c1813593252a24b67 
-│                       │     │                  ├ [2] : https://github.com/FasterXML/jackson-databind/issues/6
-│                       │     │                  │       204 
-│                       │     │                  ├ [3] : https://github.com/FasterXML/jackson-databind/pull/6204 
-│                       │     │                  ├ [4] : https://github.com/FasterXML/jackson-databind/releases
-│                       │     │                  │       /tag/jackson-databind-2.18.11 
-│                       │     │                  ├ [5] : https://github.com/FasterXML/jackson-databind/releases
-│                       │     │                  │       /tag/jackson-databind-2.21.7 
-│                       │     │                  ├ [6] : https://github.com/FasterXML/jackson-databind/releases
-│                       │     │                  │       /tag/jackson-databind-2.22.3 
-│                       │     │                  ├ [7] : https://github.com/FasterXML/jackson-databind/releases
-│                       │     │                  │       /tag/jackson-databind-3.1.7 
-│                       │     │                  ├ [8] : https://github.com/FasterXML/jackson-databind/releases
-│                       │     │                  │       /tag/jackson-databind-3.2.3 
-│                       │     │                  ├ [9] : https://github.com/FasterXML/jackson-databind/security
-│                       │     │                  │       /advisories/GHSA-cxp5-3px4-pw24 
-│                       │     │                  ╰ [10]: https://nvd.nist.gov/vuln/detail/CVE-2026-91777 
-│                       │     ├ PublishedDate   : 2026-09-23T03:17:04.783Z 
-│                       │     ╰ LastModifiedDate: 2026-09-24T20:43:32.537Z 
-│                       ├ [7] ╭ VulnerabilityID : CVE-2026-8763 
-│                       │     ├ VendorIDs        ─ [0]: GHSA-9pwp-9qqc-pr26 
-│                       │     ├ PkgName         : org.bouncycastle:bcprov-jdk18on 
-│                       │     ├ PkgPath         : openaf/S3/bcprov-jdk18on-1.84.jar 
-│                       │     ├ PkgIdentifier    ╭ PURL: pkg:maven/org.bouncycastle/bcprov-jdk18on@1.84 
-│                       │     │                  ╰ UID : aa9cc21dd2336977 
-│                       │     ├ InstalledVersion: 1.84 
-│                       │     ├ FixedVersion    : 1.85 
-│                       │     ├ Status          : fixed 
-│                       │     ├ Layer            ╭ Digest: sha256:9828e86a4f220c858c27038e827ed54fef1a63f08eb01
-│                       │     │                  │         0a14fd7af13590da543 
-│                       │     │                  ╰ DiffID: sha256:718b0340b30f7422f9f61e64777c181088d68ab9a1c5c
-│                       │     │                            d184d97031d5cafaee0 
-│                       │     ├ SeveritySource  : ghsa 
-│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-8763 
-│                       │     ├ DataSource       ╭ ID  : ghsa 
-│                       │     │                  ├ Name: GitHub Security Advisory Maven 
-│                       │     │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
-│                       │     │                          osystem%3Amaven 
-│                       │     ├ Fingerprint     : sha256:dc143c3295c014ea84222494f3ca57b6c0a682b259f198dd9a9f89
-│                       │     │                   e88237f4b0 
-│                       │     ├ Title           : org.bouncycastle/bcprov-jdk15on:
-│                       │     │                   org.bouncycastle/bcpkix-jdk15on: Bouncy Castle for Java: Name
-│                       │     │                    Constraints bypass via trailing dot in rfc822Name and URI 
-│                       │     ├ Description     : In Bouncy Castle for Java before 1.85, Name Constraints
-│                       │     │                   bypass via trailing dot in rfc822Name and URI. This issue
-│                       │     │                   also affects Bouncy Castle for Java LTS before 2.73.12, and
-│                       │     │                   Bouncy Castle for Java FIPS (BC-FJA) before bc-fips 1.0.2.7
-│                       │     │                   (1.0.X series), 2.0.2 (2.0.X series) and 2.1.3 (2.1.X
-│                       │     │                   series). 
-│                       │     ├ Severity        : CRITICAL 
-│                       │     ├ CweIDs           ─ [0]: CWE-295 
-│                       │     ├ VendorSeverity   ╭ amazon: 3 
-│                       │     │                  ├ ghsa  : 4 
-│                       │     │                  ├ nvd   : 4 
-│                       │     │                  ╰ redhat: 3 
-│                       │     ├ CVSS             ╭ ghsa   ╭ V3Vector : CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H
-│                       │     │                  │        │            /A:N 
-│                       │     │                  │        ├ V40Vector: CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/V
-│                       │     │                  │        │            I:H/VA:N/SC:N/SI:N/SA:N/U:Amber 
-│                       │     │                  │        ├ V3Score  : 9.1 
-│                       │     │                  │        ╰ V40Score : 9.3 
-│                       │     │                  ├ nvd    ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/
-│                       │     │                  │        │           A:N 
-│                       │     │                  │        ╰ V3Score : 9.1 
-│                       │     │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/
-│                       │     │                           │           A:N 
-│                       │     │                           ╰ V3Score : 7.4 
-│                       │     ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2026-8763 
-│                       │     │                  ├ [1]: https://github.com/bcgit/bc-java 
-│                       │     │                  ├ [2]: https://github.com/bcgit/bc-java/commit/2c28b253a44681f
-│                       │     │                  │      bbc562561eab6ad383d2ae558 
-│                       │     │                  ├ [3]: https://github.com/bcgit/bc-java/releases/tag/r1rv85v2 
-│                       │     │                  ├ [4]: https://github.com/bcgit/bc-java/wiki/CVE%E2%80%902026%
-│                       │     │                  │      E2%80%908763 
-│                       │     │                  ├ [5]: https://github.com/bcgit/bc-java/wiki/CVE-2026-8763 
-│                       │     │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2026-8763 
-│                       │     │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2026-8763 
-│                       │     ├ PublishedDate   : 2026-08-03T01:16:45.807Z 
-│                       │     ╰ LastModifiedDate: 2026-09-02T14:28:48.94Z 
-│                       ╰ [8] ╭ VulnerabilityID : CVE-2026-13506 
-│                             ├ VendorIDs        ─ [0]: GHSA-qp49-qgx5-5m26 
-│                             ├ PkgName         : org.bouncycastle:bcprov-jdk18on 
-│                             ├ PkgPath         : openaf/S3/bcprov-jdk18on-1.84.jar 
-│                             ├ PkgIdentifier    ╭ PURL: pkg:maven/org.bouncycastle/bcprov-jdk18on@1.84 
-│                             │                  ╰ UID : aa9cc21dd2336977 
-│                             ├ InstalledVersion: 1.84 
-│                             ├ FixedVersion    : 1.85 
-│                             ├ Status          : fixed 
-│                             ├ Layer            ╭ Digest: sha256:9828e86a4f220c858c27038e827ed54fef1a63f08eb01
-│                             │                  │         0a14fd7af13590da543 
-│                             │                  ╰ DiffID: sha256:718b0340b30f7422f9f61e64777c181088d68ab9a1c5c
-│                             │                            d184d97031d5cafaee0 
-│                             ├ SeveritySource  : ghsa 
-│                             ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-13506 
-│                             ├ DataSource       ╭ ID  : ghsa 
-│                             │                  ├ Name: GitHub Security Advisory Maven 
-│                             │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
-│                             │                          osystem%3Amaven 
-│                             ├ Fingerprint     : sha256:4ce71aa2790f50d4752b8f431b78f84554b2d931b0905fec7b3626
-│                             │                   747896c38f 
-│                             ├ Title           : bouncycastle: Bouncy Castle for Java: Denial of Service via
-│                             │                   lazy ASN.1 sequence processing 
-│                             ├ Description     : In Bouncy Castle for Java before 1.85, Lazy ASN.1 sequence
-│                             │                   forcing resets nesting-depth guard. This issue also affects
-│                             │                   Bouncy Castle for Java LTS before 2.73.12, and Bouncy Castle
-│                             │                   for Java FIPS (BC-FJA) before bc-fips 1.0.2.7 (1.0.X series),
-│                             │                    2.0.2 (2.0.X series) and 2.1.3 (2.1.X series). 
-│                             ├ Severity        : HIGH 
-│                             ├ CweIDs           ─ [0]: CWE-674 
-│                             ├ VendorSeverity   ╭ amazon: 3 
-│                             │                  ├ ghsa  : 3 
-│                             │                  ├ nvd   : 3 
-│                             │                  ╰ redhat: 3 
-│                             ├ CVSS             ╭ ghsa   ╭ V3Vector : CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N
-│                             │                  │        │            /A:H 
-│                             │                  │        ├ V40Vector: CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/V
-│                             │                  │        │            I:N/VA:H/SC:N/SI:N/SA:N/U:Amber 
-│                             │                  │        ├ V3Score  : 7.5 
-│                             │                  │        ╰ V40Score : 8.7 
-│                             │                  ├ nvd    ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/
-│                             │                  │        │           A:H 
-│                             │                  │        ╰ V3Score : 7.5 
-│                             │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/
-│                             │                           │           A:H 
-│                             │                           ╰ V3Score : 7.5 
-│                             ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2026-13506 
-│                             │                  ├ [1]: https://github.com/bcgit/bc-java 
-│                             │                  ├ [2]: https://github.com/bcgit/bc-java/commit/77454da9b3dcaaa
-│                             │                  │      2991412d1c3c1a6e1a338ff84 
-│                             │                  ├ [3]: https://github.com/bcgit/bc-java/wiki/CVE-2026-13506 
-│                             │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2026-13506 
-│                             │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2026-13506 
-│                             ├ PublishedDate   : 2026-08-03T04:16:39.957Z 
-│                             ╰ LastModifiedDate: 2026-08-28T16:41:22.84Z 
+│     ╰ Vulnerabilities ╭ [0]  ╭ VulnerabilityID : CVE-2026-89407 
+│                       │      ├ VendorIDs        ─ [0]: GHSA-p6pp-m3f8-5c89 
+│                       │      ├ PkgName         : com.fasterxml.jackson.core:jackson-core 
+│                       │      ├ PkgPath         : openaf/ghcopilot/jackson-core-2.22.1.jar 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:maven/com.fasterxml.jackson.core/jackson-core@2.2
+│                       │      │                  │       2.1 
+│                       │      │                  ╰ UID : c8ac55318adc8084 
+│                       │      ├ InstalledVersion: 2.22.1 
+│                       │      ├ FixedVersion    : 2.18.11, 2.21.7, 2.22.3 
+│                       │      ├ Status          : fixed 
+│                       │      ├ Layer            ╭ Digest: sha256:9828e86a4f220c858c27038e827ed54fef1a63f08eb0
+│                       │      │                  │         10a14fd7af13590da543 
+│                       │      │                  ╰ DiffID: sha256:718b0340b30f7422f9f61e64777c181088d68ab9a1c5
+│                       │      │                            cd184d97031d5cafaee0 
+│                       │      ├ SeveritySource  : ghsa 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-89407 
+│                       │      ├ DataSource       ╭ ID  : ghsa 
+│                       │      │                  ├ Name: GitHub Security Advisory Maven 
+│                       │      │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+e
+│                       │      │                          cosystem%3Amaven 
+│                       │      ├ Fingerprint     : sha256:edc37c5050ed0f838564a610c09351558904b2ec4a07f95373d9d
+│                       │      │                   6a46b8caf84 
+│                       │      ├ Title           : com.fasterxml.jackson/jackson-core:
+│                       │      │                   tools.jackson.core/jackson-core: Jackson-core: Denial of
+│                       │      │                   Service via regular expression backtracking 
+│                       │      ├ Description     : NumberInput.looksLikeValidNumber() in FasterXML jackson-core
+│                       │      │                    pre-validates "stringified numbers" with two regular
+│                       │      │                   expressions: PATTERN_FLOAT
+│                       │      │                   ([+-]?[0-9]*[\.]?[0-9]+([eE][+-]?[0-9]+)?), present since
+│                       │      │                   2.17.0, and PATTERN_FLOAT_TRAILING_DOT, added in 2.17.2.
+│                       │      │                   PATTERN_FLOAT places adjacent quantifiers over the same
+│                       │      │                   character class -- an optional [0-9]* run, an optional dot,
+│                       │      │                   then a required [0-9]+ run -- so input that ultimately fails
+│                       │      │                    to match forces Java's backtracking engine to retry every
+│                       │      │                   possible split point of the digit run. 
+│                       │      │                   
+│                       │      │                   Matching cost therefore grows with the square of the input
+│                       │      │                   length. 
+│                       │      │                   An attacker who can supply JSON that an application
+│                       │      │                   deserializes into a numeric target type reaches this method
+│                       │      │                   through jackson-databind's default String-to-number coercion
+│                       │      │                    (StdDeserializer and NumberDeserializers for BigDecimal,
+│                       │      │                   BigInteger, Double and Float). 
+│                       │      │                   Because StreamReadConstraints.maxStringLength defaults to
+│                       │      │                   20,000,000 characters, no constraint bounds the input before
+│                       │      │                    it reaches the regex. 
+│                       │      │                   Testing by the reporter confirmed O(n^2) growth across five
+│                       │      │                   consecutive input-size doublings, with a single
+│                       │      │                   160,000-character string consuming roughly 74 seconds in one
+│                       │      │                    call; a small number of concurrent requests of ordinary
+│                       │      │                   body size can therefore exhaust a server's request-handling
+│                       │      │                   thread pool. 
+│                       │      │                   The affected method does not exist before 2.17.0, so 2.16.x
+│                       │      │                   and earlier releases are not affected. 
+│                       │      │                   The fix replaces both regular expressions with a hand-rolled
+│                       │      │                    single-pass scan. 
+│                       │      ├ Severity        : HIGH 
+│                       │      ├ CweIDs           ╭ [0]: CWE-400 
+│                       │      │                  ╰ [1]: CWE-1333 
+│                       │      ├ VendorSeverity   ╭ ghsa  : 3 
+│                       │      │                  ╰ redhat: 2 
+│                       │      ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N
+│                       │      │                  │        │           /A:H 
+│                       │      │                  │        ╰ V3Score : 7.5 
+│                       │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N
+│                       │      │                           │           /A:H 
+│                       │      │                           ╰ V3Score : 5.9 
+│                       │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2026-89407 
+│                       │      │                  ├ [1]: https://github.com/FasterXML/jackson-core 
+│                       │      │                  ├ [2]: https://github.com/FasterXML/jackson-core/commit/731e7
+│                       │      │                  │      94f62623aa0d86ced52490166be903fbb1d 
+│                       │      │                  ├ [3]: https://github.com/FasterXML/jackson-core/commit/e7acd
+│                       │      │                  │      64cc99bd346704423dc2bfea1ab0a08ddff 
+│                       │      │                  ├ [4]: https://github.com/FasterXML/jackson-core/issues/1649 
+│                       │      │                  ├ [5]: https://github.com/FasterXML/jackson-core/pull/1650 
+│                       │      │                  ├ [6]: https://github.com/FasterXML/jackson-core/pull/1701 
+│                       │      │                  ├ [7]: https://github.com/FasterXML/jackson-core/security/adv
+│                       │      │                  │      isories/GHSA-p6pp-m3f8-5c89 
+│                       │      │                  ├ [8]: https://nvd.nist.gov/vuln/detail/CVE-2026-89407 
+│                       │      │                  ╰ [9]: https://www.cve.org/CVERecord?id=CVE-2026-89407 
+│                       │      ├ PublishedDate   : 2026-09-22T15:17:21.053Z 
+│                       │      ╰ LastModifiedDate: 2026-09-22T20:00:03.713Z 
+│                       ├ [1]  ╭ VulnerabilityID : CVE-2026-89425 
+│                       │      ├ VendorIDs        ─ [0]: GHSA-7hhh-6rmp-j9qf 
+│                       │      ├ PkgName         : com.fasterxml.jackson.core:jackson-core 
+│                       │      ├ PkgPath         : openaf/ghcopilot/jackson-core-2.22.1.jar 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:maven/com.fasterxml.jackson.core/jackson-core@2.2
+│                       │      │                  │       2.1 
+│                       │      │                  ╰ UID : c8ac55318adc8084 
+│                       │      ├ InstalledVersion: 2.22.1 
+│                       │      ├ FixedVersion    : 2.21.7, 2.22.3, 2.18.11 
+│                       │      ├ Status          : fixed 
+│                       │      ├ Layer            ╭ Digest: sha256:9828e86a4f220c858c27038e827ed54fef1a63f08eb0
+│                       │      │                  │         10a14fd7af13590da543 
+│                       │      │                  ╰ DiffID: sha256:718b0340b30f7422f9f61e64777c181088d68ab9a1c5
+│                       │      │                            cd184d97031d5cafaee0 
+│                       │      ├ SeveritySource  : ghsa 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-89425 
+│                       │      ├ DataSource       ╭ ID  : ghsa 
+│                       │      │                  ├ Name: GitHub Security Advisory Maven 
+│                       │      │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+e
+│                       │      │                          cosystem%3Amaven 
+│                       │      ├ Fingerprint     : sha256:a2bc311c324ed53e6b723e2387b4687a75b0e5d4163a8f2d1d099
+│                       │      │                   6b036eaf70e 
+│                       │      ├ Title           : com.fasterxml.jackson.core/jackson-core: Jackson-core:
+│                       │      │                   Denial of Service via unbounded StringBuilder growth during
+│                       │      │                   malformed token processing 
+│                       │      ├ Description     : UTF8DataInputJsonParser._reportInvalidToken() in FasterXML
+│                       │      │                   jackson-core builds the offending-token text for its error
+│                       │      │                   message by appending Java identifier characters to a
+│                       │      │                   StringBuilder in a loop that has no upper bound. Unlike the
+│                       │      │                   three sibling parser implementations, including
+│                       │      │                   UTF8StreamJsonParser, it never consults
+│                       │      │                   ErrorReportConfiguration.getMaxErrorTokenLength() (default
+│                       │      │                   256). A malformed token supplied to a parser created through
+│                       │      │                    JsonFactory.createParser(DataInput) is therefore
+│                       │      │                   accumulated in full. No StreamReadConstraints setting
+│                       │      │                   mitigates this: maxDocumentLength cannot be applied to
+│                       │      │                   DataInput sources at all, and maxStringLength does not cover
+│                       │      │                    this path because the accumulation bypasses
+│                       │      │                   ReadConstrainedTextBuffer. The reporter measured a
+│                       │      │                   20,000,109-character exception message from a
+│                       │      │                   20-million-character malformed token on the DataInput path,
+│                       │      │                   against 367 characters for identical input on the
+│                       │      │                   InputStream path. Scaling the payload drives the
+│                       │      │                   StringBuilder, which also incurs byte-to-char expansion and
+│                       │      │                   internal array doubling, to many times the raw payload size
+│                       │      │                   and can trigger OutOfMemoryError for the whole JVM.
+│                       │      │                   UTF8DataInputJsonParser was introduced in 2.8.0 together
+│                       │      │                   with createParser(DataInput); releases before 2.8.0 do not
+│                       │      │                   contain the affected class. 
+│                       │      ├ Severity        : HIGH 
+│                       │      ├ CweIDs           ╭ [0]: CWE-400 
+│                       │      │                  ╰ [1]: CWE-770 
+│                       │      ├ VendorSeverity   ╭ ghsa  : 3 
+│                       │      │                  ╰ redhat: 3 
+│                       │      ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N
+│                       │      │                  │        │           /A:H 
+│                       │      │                  │        ╰ V3Score : 7.5 
+│                       │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N
+│                       │      │                           │           /A:H 
+│                       │      │                           ╰ V3Score : 7.5 
+│                       │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2026-89425 
+│                       │      │                  ├ [1]: https://github.com/FasterXML/jackson-core 
+│                       │      │                  ├ [2]: https://github.com/FasterXML/jackson-core/commit/211cf
+│                       │      │                  │      2c5d91abbec38067f37efc1363cd4e88ee3 
+│                       │      │                  ├ [3]: https://github.com/FasterXML/jackson-core/pull/1698 
+│                       │      │                  ├ [4]: https://github.com/FasterXML/jackson-core/releases/tag
+│                       │      │                  │      /jackson-core-2.18.11 
+│                       │      │                  ├ [5]: https://github.com/FasterXML/jackson-core/releases/tag
+│                       │      │                  │      /jackson-core-3.2.3 
+│                       │      │                  ├ [6]: https://github.com/FasterXML/jackson-core/security/adv
+│                       │      │                  │      isories/GHSA-7hhh-6rmp-j9qf 
+│                       │      │                  ├ [7]: https://nvd.nist.gov/vuln/detail/CVE-2026-89425 
+│                       │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2026-89425 
+│                       │      ├ PublishedDate   : 2026-09-23T03:17:04.357Z 
+│                       │      ╰ LastModifiedDate: 2026-09-24T20:43:32.537Z 
+│                       ├ [2]  ╭ VulnerabilityID : CVE-2026-89407 
+│                       │      ├ VendorIDs        ─ [0]: GHSA-p6pp-m3f8-5c89 
+│                       │      ├ PkgName         : com.fasterxml.jackson.core:jackson-core 
+│                       │      ├ PkgPath         : openaf/openaf.jar 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:maven/com.fasterxml.jackson.core/jackson-core@2.2
+│                       │      │                  │       2.2 
+│                       │      │                  ╰ UID : 63e66c68939ce5d5 
+│                       │      ├ InstalledVersion: 2.22.2 
+│                       │      ├ FixedVersion    : 2.18.11, 2.21.7, 2.22.3 
+│                       │      ├ Status          : fixed 
+│                       │      ├ Layer            ╭ Digest: sha256:9828e86a4f220c858c27038e827ed54fef1a63f08eb0
+│                       │      │                  │         10a14fd7af13590da543 
+│                       │      │                  ╰ DiffID: sha256:718b0340b30f7422f9f61e64777c181088d68ab9a1c5
+│                       │      │                            cd184d97031d5cafaee0 
+│                       │      ├ SeveritySource  : ghsa 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-89407 
+│                       │      ├ DataSource       ╭ ID  : ghsa 
+│                       │      │                  ├ Name: GitHub Security Advisory Maven 
+│                       │      │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+e
+│                       │      │                          cosystem%3Amaven 
+│                       │      ├ Fingerprint     : sha256:edc37c5050ed0f838564a610c09351558904b2ec4a07f95373d9d
+│                       │      │                   6a46b8caf84 
+│                       │      ├ Title           : com.fasterxml.jackson/jackson-core:
+│                       │      │                   tools.jackson.core/jackson-core: Jackson-core: Denial of
+│                       │      │                   Service via regular expression backtracking 
+│                       │      ├ Description     : NumberInput.looksLikeValidNumber() in FasterXML jackson-core
+│                       │      │                    pre-validates "stringified numbers" with two regular
+│                       │      │                   expressions: PATTERN_FLOAT
+│                       │      │                   ([+-]?[0-9]*[\.]?[0-9]+([eE][+-]?[0-9]+)?), present since
+│                       │      │                   2.17.0, and PATTERN_FLOAT_TRAILING_DOT, added in 2.17.2.
+│                       │      │                   PATTERN_FLOAT places adjacent quantifiers over the same
+│                       │      │                   character class -- an optional [0-9]* run, an optional dot,
+│                       │      │                   then a required [0-9]+ run -- so input that ultimately fails
+│                       │      │                    to match forces Java's backtracking engine to retry every
+│                       │      │                   possible split point of the digit run. 
+│                       │      │                   
+│                       │      │                   Matching cost therefore grows with the square of the input
+│                       │      │                   length. 
+│                       │      │                   An attacker who can supply JSON that an application
+│                       │      │                   deserializes into a numeric target type reaches this method
+│                       │      │                   through jackson-databind's default String-to-number coercion
+│                       │      │                    (StdDeserializer and NumberDeserializers for BigDecimal,
+│                       │      │                   BigInteger, Double and Float). 
+│                       │      │                   Because StreamReadConstraints.maxStringLength defaults to
+│                       │      │                   20,000,000 characters, no constraint bounds the input before
+│                       │      │                    it reaches the regex. 
+│                       │      │                   Testing by the reporter confirmed O(n^2) growth across five
+│                       │      │                   consecutive input-size doublings, with a single
+│                       │      │                   160,000-character string consuming roughly 74 seconds in one
+│                       │      │                    call; a small number of concurrent requests of ordinary
+│                       │      │                   body size can therefore exhaust a server's request-handling
+│                       │      │                   thread pool. 
+│                       │      │                   The affected method does not exist before 2.17.0, so 2.16.x
+│                       │      │                   and earlier releases are not affected. 
+│                       │      │                   The fix replaces both regular expressions with a hand-rolled
+│                       │      │                    single-pass scan. 
+│                       │      ├ Severity        : HIGH 
+│                       │      ├ CweIDs           ╭ [0]: CWE-400 
+│                       │      │                  ╰ [1]: CWE-1333 
+│                       │      ├ VendorSeverity   ╭ ghsa  : 3 
+│                       │      │                  ╰ redhat: 2 
+│                       │      ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N
+│                       │      │                  │        │           /A:H 
+│                       │      │                  │        ╰ V3Score : 7.5 
+│                       │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N
+│                       │      │                           │           /A:H 
+│                       │      │                           ╰ V3Score : 5.9 
+│                       │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2026-89407 
+│                       │      │                  ├ [1]: https://github.com/FasterXML/jackson-core 
+│                       │      │                  ├ [2]: https://github.com/FasterXML/jackson-core/commit/731e7
+│                       │      │                  │      94f62623aa0d86ced52490166be903fbb1d 
+│                       │      │                  ├ [3]: https://github.com/FasterXML/jackson-core/commit/e7acd
+│                       │      │                  │      64cc99bd346704423dc2bfea1ab0a08ddff 
+│                       │      │                  ├ [4]: https://github.com/FasterXML/jackson-core/issues/1649 
+│                       │      │                  ├ [5]: https://github.com/FasterXML/jackson-core/pull/1650 
+│                       │      │                  ├ [6]: https://github.com/FasterXML/jackson-core/pull/1701 
+│                       │      │                  ├ [7]: https://github.com/FasterXML/jackson-core/security/adv
+│                       │      │                  │      isories/GHSA-p6pp-m3f8-5c89 
+│                       │      │                  ├ [8]: https://nvd.nist.gov/vuln/detail/CVE-2026-89407 
+│                       │      │                  ╰ [9]: https://www.cve.org/CVERecord?id=CVE-2026-89407 
+│                       │      ├ PublishedDate   : 2026-09-22T15:17:21.053Z 
+│                       │      ╰ LastModifiedDate: 2026-09-22T20:00:03.713Z 
+│                       ├ [3]  ╭ VulnerabilityID : CVE-2026-89425 
+│                       │      ├ VendorIDs        ─ [0]: GHSA-7hhh-6rmp-j9qf 
+│                       │      ├ PkgName         : com.fasterxml.jackson.core:jackson-core 
+│                       │      ├ PkgPath         : openaf/openaf.jar 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:maven/com.fasterxml.jackson.core/jackson-core@2.2
+│                       │      │                  │       2.2 
+│                       │      │                  ╰ UID : 63e66c68939ce5d5 
+│                       │      ├ InstalledVersion: 2.22.2 
+│                       │      ├ FixedVersion    : 2.21.7, 2.22.3, 2.18.11 
+│                       │      ├ Status          : fixed 
+│                       │      ├ Layer            ╭ Digest: sha256:9828e86a4f220c858c27038e827ed54fef1a63f08eb0
+│                       │      │                  │         10a14fd7af13590da543 
+│                       │      │                  ╰ DiffID: sha256:718b0340b30f7422f9f61e64777c181088d68ab9a1c5
+│                       │      │                            cd184d97031d5cafaee0 
+│                       │      ├ SeveritySource  : ghsa 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-89425 
+│                       │      ├ DataSource       ╭ ID  : ghsa 
+│                       │      │                  ├ Name: GitHub Security Advisory Maven 
+│                       │      │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+e
+│                       │      │                          cosystem%3Amaven 
+│                       │      ├ Fingerprint     : sha256:a2bc311c324ed53e6b723e2387b4687a75b0e5d4163a8f2d1d099
+│                       │      │                   6b036eaf70e 
+│                       │      ├ Title           : com.fasterxml.jackson.core/jackson-core: Jackson-core:
+│                       │      │                   Denial of Service via unbounded StringBuilder growth during
+│                       │      │                   malformed token processing 
+│                       │      ├ Description     : UTF8DataInputJsonParser._reportInvalidToken() in FasterXML
+│                       │      │                   jackson-core builds the offending-token text for its error
+│                       │      │                   message by appending Java identifier characters to a
+│                       │      │                   StringBuilder in a loop that has no upper bound. Unlike the
+│                       │      │                   three sibling parser implementations, including
+│                       │      │                   UTF8StreamJsonParser, it never consults
+│                       │      │                   ErrorReportConfiguration.getMaxErrorTokenLength() (default
+│                       │      │                   256). A malformed token supplied to a parser created through
+│                       │      │                    JsonFactory.createParser(DataInput) is therefore
+│                       │      │                   accumulated in full. No StreamReadConstraints setting
+│                       │      │                   mitigates this: maxDocumentLength cannot be applied to
+│                       │      │                   DataInput sources at all, and maxStringLength does not cover
+│                       │      │                    this path because the accumulation bypasses
+│                       │      │                   ReadConstrainedTextBuffer. The reporter measured a
+│                       │      │                   20,000,109-character exception message from a
+│                       │      │                   20-million-character malformed token on the DataInput path,
+│                       │      │                   against 367 characters for identical input on the
+│                       │      │                   InputStream path. Scaling the payload drives the
+│                       │      │                   StringBuilder, which also incurs byte-to-char expansion and
+│                       │      │                   internal array doubling, to many times the raw payload size
+│                       │      │                   and can trigger OutOfMemoryError for the whole JVM.
+│                       │      │                   UTF8DataInputJsonParser was introduced in 2.8.0 together
+│                       │      │                   with createParser(DataInput); releases before 2.8.0 do not
+│                       │      │                   contain the affected class. 
+│                       │      ├ Severity        : HIGH 
+│                       │      ├ CweIDs           ╭ [0]: CWE-400 
+│                       │      │                  ╰ [1]: CWE-770 
+│                       │      ├ VendorSeverity   ╭ ghsa  : 3 
+│                       │      │                  ╰ redhat: 3 
+│                       │      ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N
+│                       │      │                  │        │           /A:H 
+│                       │      │                  │        ╰ V3Score : 7.5 
+│                       │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N
+│                       │      │                           │           /A:H 
+│                       │      │                           ╰ V3Score : 7.5 
+│                       │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2026-89425 
+│                       │      │                  ├ [1]: https://github.com/FasterXML/jackson-core 
+│                       │      │                  ├ [2]: https://github.com/FasterXML/jackson-core/commit/211cf
+│                       │      │                  │      2c5d91abbec38067f37efc1363cd4e88ee3 
+│                       │      │                  ├ [3]: https://github.com/FasterXML/jackson-core/pull/1698 
+│                       │      │                  ├ [4]: https://github.com/FasterXML/jackson-core/releases/tag
+│                       │      │                  │      /jackson-core-2.18.11 
+│                       │      │                  ├ [5]: https://github.com/FasterXML/jackson-core/releases/tag
+│                       │      │                  │      /jackson-core-3.2.3 
+│                       │      │                  ├ [6]: https://github.com/FasterXML/jackson-core/security/adv
+│                       │      │                  │      isories/GHSA-7hhh-6rmp-j9qf 
+│                       │      │                  ├ [7]: https://nvd.nist.gov/vuln/detail/CVE-2026-89425 
+│                       │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2026-89425 
+│                       │      ├ PublishedDate   : 2026-09-23T03:17:04.357Z 
+│                       │      ╰ LastModifiedDate: 2026-09-24T20:43:32.537Z 
+│                       ├ [4]  ╭ VulnerabilityID : CVE-2026-68497 
+│                       │      ├ VendorIDs        ─ [0]: GHSA-q4xh-88c3-wmh7 
+│                       │      ├ PkgName         : com.fasterxml.jackson.core:jackson-databind 
+│                       │      ├ PkgPath         : openaf/ghcopilot/jackson-databind-2.22.1.jar 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:maven/com.fasterxml.jackson.core/jackson-databind
+│                       │      │                  │       @2.22.1 
+│                       │      │                  ╰ UID : 6ec7155dea0753b6 
+│                       │      ├ InstalledVersion: 2.22.1 
+│                       │      ├ FixedVersion    : 2.18.10, 2.21.6, 2.22.2 
+│                       │      ├ Status          : fixed 
+│                       │      ├ Layer            ╭ Digest: sha256:9828e86a4f220c858c27038e827ed54fef1a63f08eb0
+│                       │      │                  │         10a14fd7af13590da543 
+│                       │      │                  ╰ DiffID: sha256:718b0340b30f7422f9f61e64777c181088d68ab9a1c5
+│                       │      │                            cd184d97031d5cafaee0 
+│                       │      ├ SeveritySource  : ghsa 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-68497 
+│                       │      ├ DataSource       ╭ ID  : ghsa 
+│                       │      │                  ├ Name: GitHub Security Advisory Maven 
+│                       │      │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+e
+│                       │      │                          cosystem%3Amaven 
+│                       │      ├ Fingerprint     : sha256:7e6913ecb7c6f8f8be4f7402e9259dc19ed2596e6b4ad3c1be5fb
+│                       │      │                   a3f729e3b1c 
+│                       │      ├ Title           : com.fasterxml.jackson.core/jackson-databind:
+│                       │      │                   tools.jackson.core/jackson-databind: jackson-databind: CPU
+│                       │      │                   Denial of Service via unbounded numeric parsing 
+│                       │      ├ Description     : jackson-databind binds a JSON string to a
+│                       │      │                   javax.xml.datatype.Duration or
+│                       │      │                   javax.xml.datatype.XMLGregorianCalendar field by passing the
+│                       │      │                    raw string verbatim to DatatypeFactory.newDuration(value)
+│                       │      │                   or newXMLGregorianCalendar(value) in
+│                       │      │                   CoreXMLDeserializers.Std._deserialize. These deserializers
+│                       │      │                   are registered by default with no opt-in, so a plain
+│                       │      │                   ObjectMapper or JsonMapper with no polymorphic typing and no
+│                       │      │                    special configuration reaches this path. The XML Schema
+│                       │      │                   lexical grammar permits numeric components of arbitrary
+│                       │      │                   length, which the JDK materializes through the native
+│                       │      │                   BigInteger(String) and BigDecimal(String) constructors, both
+│                       │      │                    quadratic in digit count. Because the digits sit inside a
+│                       │      │                   JSON string token rather than a JSON number token,
+│                       │      │                   jackson-core's StreamReadConstraints.maxNumberLength guard
+│                       │      │                   never applies; jackson's own NumberDeserializers call
+│                       │      │                   validateIntegerLength or validateFPLength before parsing a
+│                       │      │                   stringified number, but the XML datatype deserializer omits
+│                       │      │                   that pre-check. An unauthenticated attacker can therefore
+│                       │      │                   submit a single request of a few megabytes, such as a
+│                       │      │                   Duration value consisting of the letter P followed by
+│                       │      │                   several million digits and the letter Y, and force tens of
+│                       │      │                   seconds to several minutes of single-threaded CPU work; a
+│                       │      │                   handful of concurrent requests can saturate a server's
+│                       │      │                   worker threads. This affects
+│                       │      │                   com.fasterxml.jackson.core:jackson-databind from 2.0.0
+│                       │      │                   before 2.18.10, from 2.19.0 before 2.21.6, and from 2.22.0
+│                       │      │                   before 2.22.2, and tools.jackson.core:jackson-databind from
+│                       │      │                   3.0.0 before 3.1.6 and from 3.2.0 before 3.2.2. Users should
+│                       │      │                    upgrade to 2.18.10, 2.21.6, 2.22.2, 3.1.6, or 3.2.2. 
+│                       │      ├ Severity        : HIGH 
+│                       │      ├ CweIDs           ╭ [0]: CWE-400 
+│                       │      │                  ╰ [1]: CWE-1333 
+│                       │      ├ VendorSeverity   ╭ ghsa  : 3 
+│                       │      │                  ╰ redhat: 3 
+│                       │      ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N
+│                       │      │                  │        │           /A:H 
+│                       │      │                  │        ╰ V3Score : 7.5 
+│                       │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N
+│                       │      │                           │           /A:H 
+│                       │      │                           ╰ V3Score : 7.5 
+│                       │      ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2026-68497 
+│                       │      │                  ├ [1] : https://github.com/FasterXML/jackson-databind 
+│                       │      │                  ├ [2] : https://github.com/FasterXML/jackson-databind/commit/
+│                       │      │                  │       a99b7e74c8928f43f6975773a8c862c8316178bd 
+│                       │      │                  ├ [3] : https://github.com/FasterXML/jackson-databind/pull/6127 
+│                       │      │                  ├ [4] : https://github.com/FasterXML/jackson-databind/release
+│                       │      │                  │       s/tag/jackson-databind-2.18.10 
+│                       │      │                  ├ [5] : https://github.com/FasterXML/jackson-databind/release
+│                       │      │                  │       s/tag/jackson-databind-2.21.6 
+│                       │      │                  ├ [6] : https://github.com/FasterXML/jackson-databind/release
+│                       │      │                  │       s/tag/jackson-databind-2.22.2 
+│                       │      │                  ├ [7] : https://github.com/FasterXML/jackson-databind/release
+│                       │      │                  │       s/tag/jackson-databind-3.1.6 
+│                       │      │                  ├ [8] : https://github.com/FasterXML/jackson-databind/release
+│                       │      │                  │       s/tag/jackson-databind-3.2.2 
+│                       │      │                  ├ [9] : https://github.com/FasterXML/jackson-databind/securit
+│                       │      │                  │       y/advisories/GHSA-q4xh-88c3-wmh7 
+│                       │      │                  ├ [10]: https://nvd.nist.gov/vuln/detail/CVE-2026-68497 
+│                       │      │                  ╰ [11]: https://www.cve.org/CVERecord?id=CVE-2026-68497 
+│                       │      ├ PublishedDate   : 2026-09-11T16:17:39.61Z 
+│                       │      ╰ LastModifiedDate: 2026-09-18T19:34:36.657Z 
+│                       ├ [5]  ╭ VulnerabilityID : CVE-2026-91776 
+│                       │      ├ VendorIDs        ─ [0]: GHSA-wv8q-qhhj-9h54 
+│                       │      ├ PkgName         : com.fasterxml.jackson.core:jackson-databind 
+│                       │      ├ PkgPath         : openaf/ghcopilot/jackson-databind-2.22.1.jar 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:maven/com.fasterxml.jackson.core/jackson-databind
+│                       │      │                  │       @2.22.1 
+│                       │      │                  ╰ UID : 6ec7155dea0753b6 
+│                       │      ├ InstalledVersion: 2.22.1 
+│                       │      ├ FixedVersion    : 2.18.11, 2.21.7, 2.22.3 
+│                       │      ├ Status          : fixed 
+│                       │      ├ Layer            ╭ Digest: sha256:9828e86a4f220c858c27038e827ed54fef1a63f08eb0
+│                       │      │                  │         10a14fd7af13590da543 
+│                       │      │                  ╰ DiffID: sha256:718b0340b30f7422f9f61e64777c181088d68ab9a1c5
+│                       │      │                            cd184d97031d5cafaee0 
+│                       │      ├ SeveritySource  : ghsa 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-91776 
+│                       │      ├ DataSource       ╭ ID  : ghsa 
+│                       │      │                  ├ Name: GitHub Security Advisory Maven 
+│                       │      │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+e
+│                       │      │                          cosystem%3Amaven 
+│                       │      ├ Fingerprint     : sha256:972f0c0e16185d820c7f9de563e5649c86931c83b9b513012835a
+│                       │      │                   2fb3b8cd58c 
+│                       │      ├ Title           : jackson-databind: com.fasterxml.jackson/jackson-core:
+│                       │      │                   jackson-databind: Denial of Service via unbounded cache
+│                       │      │                   growth in TypeDeserializerBase 
+│                       │      ├ Description     : TypeDeserializerBase._findDeserializer() in FasterXML
+│                       │      │                   jackson-databind caches the resolved deserializer under the
+│                       │      │                   raw, attacker-supplied type ID. When name-based polymorphism
+│                       │      │                    is configured with a fallback, for example
+│                       │      │                   @JsonTypeInfo(use = Id.NAME, defaultImpl = ...), every
+│                       │      │                   distinct unrecognized type ID resolves to the same fallback
+│                       │      │                   deserializer but is retained as its own key in the
+│                       │      │                   _deserializers map. That map has no configurable bound and
+│                       │      │                   lives for the lifetime of the type deserializer, so an
+│                       │      │                   attacker who can repeatedly supply fresh unknown type IDs
+│                       │      │                   causes monotonic memory retention across requests. The
+│                       │      │                   reporter observed 10,000 retained entries from 10,000
+│                       │      │                   distinct unknown IDs, against a single entry for a control
+│                       │      │                   that repeated one unknown ID the same number of times,
+│                       │      │                   isolating attacker-controlled key cardinality from request
+│                       │      │                   volume. Exploitation requires an application that enables
+│                       │      │                   name-based polymorphism with a defaultImpl or equivalent
+│                       │      │                   fallback, accepts attacker-influenced type IDs, and reuses a
+│                       │      │                    long-lived ObjectMapper across requests. The fix stops
+│                       │      │                   caching fallback resolutions for unrecognized IDs and bounds
+│                       │      │                    both the number of cached entries and the length of a
+│                       │      │                   cacheable type ID. 
+│                       │      ├ Severity        : HIGH 
+│                       │      ├ CweIDs           ─ [0]: CWE-400 
+│                       │      ├ VendorSeverity   ╭ ghsa  : 3 
+│                       │      │                  ╰ redhat: 3 
+│                       │      ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N
+│                       │      │                  │        │           /A:H 
+│                       │      │                  │        ╰ V3Score : 7.5 
+│                       │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N
+│                       │      │                           │           /A:H 
+│                       │      │                           ╰ V3Score : 7.5 
+│                       │      ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2026-91776 
+│                       │      │                  ├ [1] : https://github.com/FasterXML/jackson-databind 
+│                       │      │                  ├ [2] : https://github.com/FasterXML/jackson-databind/commit/
+│                       │      │                  │       2870d1d6dc1b7e1c07ee11dd5b04ab71cddbb577 
+│                       │      │                  ├ [3] : https://github.com/FasterXML/jackson-databind/issues/
+│                       │      │                  │       6203 
+│                       │      │                  ├ [4] : https://github.com/FasterXML/jackson-databind/release
+│                       │      │                  │       s/tag/jackson-databind-2.18.11 
+│                       │      │                  ├ [5] : https://github.com/FasterXML/jackson-databind/release
+│                       │      │                  │       s/tag/jackson-databind-2.21.7 
+│                       │      │                  ├ [6] : https://github.com/FasterXML/jackson-databind/release
+│                       │      │                  │       s/tag/jackson-databind-2.22.3 
+│                       │      │                  ├ [7] : https://github.com/FasterXML/jackson-databind/release
+│                       │      │                  │       s/tag/jackson-databind-3.1.7 
+│                       │      │                  ├ [8] : https://github.com/FasterXML/jackson-databind/release
+│                       │      │                  │       s/tag/jackson-databind-3.2.3 
+│                       │      │                  ├ [9] : https://github.com/FasterXML/jackson-databind/securit
+│                       │      │                  │       y/advisories/GHSA-wv8q-qhhj-9h54 
+│                       │      │                  ├ [10]: https://nvd.nist.gov/vuln/detail/CVE-2026-91776 
+│                       │      │                  ╰ [11]: https://www.cve.org/CVERecord?id=CVE-2026-91776 
+│                       │      ├ PublishedDate   : 2026-09-23T03:17:04.62Z 
+│                       │      ╰ LastModifiedDate: 2026-09-24T20:43:32.537Z 
+│                       ├ [6]  ╭ VulnerabilityID : CVE-2026-91777 
+│                       │      ├ VendorIDs        ─ [0]: GHSA-cxp5-3px4-pw24 
+│                       │      ├ PkgName         : com.fasterxml.jackson.core:jackson-databind 
+│                       │      ├ PkgPath         : openaf/ghcopilot/jackson-databind-2.22.1.jar 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:maven/com.fasterxml.jackson.core/jackson-databind
+│                       │      │                  │       @2.22.1 
+│                       │      │                  ╰ UID : 6ec7155dea0753b6 
+│                       │      ├ InstalledVersion: 2.22.1 
+│                       │      ├ FixedVersion    : 2.21.7, 2.18.11, 2.22.3 
+│                       │      ├ Status          : fixed 
+│                       │      ├ Layer            ╭ Digest: sha256:9828e86a4f220c858c27038e827ed54fef1a63f08eb0
+│                       │      │                  │         10a14fd7af13590da543 
+│                       │      │                  ╰ DiffID: sha256:718b0340b30f7422f9f61e64777c181088d68ab9a1c5
+│                       │      │                            cd184d97031d5cafaee0 
+│                       │      ├ SeveritySource  : ghsa 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-91777 
+│                       │      ├ DataSource       ╭ ID  : ghsa 
+│                       │      │                  ├ Name: GitHub Security Advisory Maven 
+│                       │      │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+e
+│                       │      │                          cosystem%3Amaven 
+│                       │      ├ Fingerprint     : sha256:dca7092e5d4a1604d1bb99746f0d26513fa0b9861bdf35cc07762
+│                       │      │                   c0da2e62e64 
+│                       │      ├ Title           : Forward-reference completion for @JsonIdentityInfo object
+│                       │      │                   IDs in Faste ... 
+│                       │      ├ Description     : Forward-reference completion for @JsonIdentityInfo object
+│                       │      │                   IDs in FasterXML jackson-databind performs a linear scan of
+│                       │      │                   the pending-reference accumulator for every resolved ID. The
+│                       │      │                    affected paths are
+│                       │      │                   CollectionDeserializer.CollectionReferringAccumulator.resolv
+│                       │      │                   eForwardReference() and the equivalent implementation in
+│                       │      │                   MapDeserializer. When a document first creates N unresolved
+│                       │      │                   object-ID references in an identity-enabled collection or
+│                       │      │                   map and then defines those same IDs in reverse order,
+│                       │      │                   completion performs on the order of N * (N + 1) / 2 identity
+│                       │      │                    comparisons, so a shallow document whose size grows
+│                       │      │                   linearly causes quadratic CPU work during deserialization.
+│                       │      │                   The reporter instrumented equals() calls on the ID class and
+│                       │      │                    measured exactly 2,003,000 comparisons at N = 2,000,
+│                       │      │                   against zero comparisons in the pending-reference lookup
+│                       │      │                   path for an equally sized control in which every reference
+│                       │      │                   was already resolved. The input requires no deep nesting and
+│                       │      │                    no syntactically unusual JSON. Exploitation requires an
+│                       │      │                   application that deserializes attacker-influenced JSON into
+│                       │      │                   an identity-enabled collection or map. The fix replaces the
+│                       │      │                   repeated linear lookup with a keyed pending-reference
+│                       │      │                   structure. 
+│                       │      ├ Severity        : HIGH 
+│                       │      ├ CweIDs           ─ [0]: CWE-400 
+│                       │      ├ VendorSeverity   ─ ghsa: 3 
+│                       │      ├ CVSS             ─ ghsa ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H 
+│                       │      │                         ╰ V3Score : 7.5 
+│                       │      ├ References       ╭ [0] : https://github.com/FasterXML/jackson-databind 
+│                       │      │                  ├ [1] : https://github.com/FasterXML/jackson-databind/commit/
+│                       │      │                  │       37ad9b81712cbb9fb62c2d2c1813593252a24b67 
+│                       │      │                  ├ [2] : https://github.com/FasterXML/jackson-databind/issues/
+│                       │      │                  │       6204 
+│                       │      │                  ├ [3] : https://github.com/FasterXML/jackson-databind/pull/6204 
+│                       │      │                  ├ [4] : https://github.com/FasterXML/jackson-databind/release
+│                       │      │                  │       s/tag/jackson-databind-2.18.11 
+│                       │      │                  ├ [5] : https://github.com/FasterXML/jackson-databind/release
+│                       │      │                  │       s/tag/jackson-databind-2.21.7 
+│                       │      │                  ├ [6] : https://github.com/FasterXML/jackson-databind/release
+│                       │      │                  │       s/tag/jackson-databind-2.22.3 
+│                       │      │                  ├ [7] : https://github.com/FasterXML/jackson-databind/release
+│                       │      │                  │       s/tag/jackson-databind-3.1.7 
+│                       │      │                  ├ [8] : https://github.com/FasterXML/jackson-databind/release
+│                       │      │                  │       s/tag/jackson-databind-3.2.3 
+│                       │      │                  ├ [9] : https://github.com/FasterXML/jackson-databind/securit
+│                       │      │                  │       y/advisories/GHSA-cxp5-3px4-pw24 
+│                       │      │                  ╰ [10]: https://nvd.nist.gov/vuln/detail/CVE-2026-91777 
+│                       │      ├ PublishedDate   : 2026-09-23T03:17:04.783Z 
+│                       │      ╰ LastModifiedDate: 2026-09-24T20:43:32.537Z 
+│                       ├ [7]  ╭ VulnerabilityID : CVE-2026-19032 
+│                       │      ├ VendorIDs        ─ [0]: GHSA-wjgm-6hv5-3cvf 
+│                       │      ├ PkgName         : com.fasterxml.jackson.core:jackson-databind 
+│                       │      ├ PkgPath         : openaf/ghcopilot/jackson-databind-2.22.1.jar 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:maven/com.fasterxml.jackson.core/jackson-databind
+│                       │      │                  │       @2.22.1 
+│                       │      │                  ╰ UID : 6ec7155dea0753b6 
+│                       │      ├ InstalledVersion: 2.22.1 
+│                       │      ├ FixedVersion    : 2.18.10, 2.21.6, 2.22.2 
+│                       │      ├ Status          : fixed 
+│                       │      ├ Layer            ╭ Digest: sha256:9828e86a4f220c858c27038e827ed54fef1a63f08eb0
+│                       │      │                  │         10a14fd7af13590da543 
+│                       │      │                  ╰ DiffID: sha256:718b0340b30f7422f9f61e64777c181088d68ab9a1c5
+│                       │      │                            cd184d97031d5cafaee0 
+│                       │      ├ SeveritySource  : ghsa 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-19032 
+│                       │      ├ DataSource       ╭ ID  : ghsa 
+│                       │      │                  ├ Name: GitHub Security Advisory Maven 
+│                       │      │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+e
+│                       │      │                          cosystem%3Amaven 
+│                       │      ├ Fingerprint     : sha256:ab1919ec3eeb0fbf2bdd85f55abbb7361032038c2d54714b754a7
+│                       │      │                   4b4c599a365 
+│                       │      ├ Title           : com.fasterxml.jackson.core/jackson-databind:
+│                       │      │                   tools.jackson.core/jackson-databind: Jackson-databind:
+│                       │      │                   Uncontrolled URI scheme resolution in Path deserialization[
+│                       │      │                   m 
+│                       │      ├ Description     : jackson-databind's deserializer for java.nio.file.Path
+│                       │      │                   resolves an attacker-supplied URI without restricting the
+│                       │      │                   URI scheme. In
+│                       │      │                   JDKFromStringDeserializer.NioPathHelper.deserialize, a
+│                       │      │                   string bound from untrusted JSON is passed to new URI(value)
+│                       │      │                    and then to Path.of(uri). When that throws
+│                       │      │                   FileSystemNotFoundException, the code enumerates
+│                       │      │                   ServiceLoader<FileSystemProvider> and calls
+│                       │      │                   provider.getPath(uri) on the first provider whose scheme
+│                       │      │                   matches the attacker-chosen scheme. Untrusted JSON can
+│                       │      │                   therefore select and drive an arbitrary registered
+│                       │      │                   FileSystemProvider during readValue under a default
+│                       │      │                   JsonMapper, and forces provider class loading at the same
+│                       │      │                   time. With only the JDK built-in providers (file, jar/zipfs)
+│                       │      │                    present, the resolved path is inert and no mount or network
+│                       │      │                    I/O occurs; further impact requires a side-effecting
+│                       │      │                   third-party FileSystemProvider on the classpath. This
+│                       │      │                   affects com.fasterxml.jackson.core:jackson-databind from
+│                       │      │                   2.8.0 before 2.18.10, from 2.19.0 before 2.21.6, and from
+│                       │      │                   2.22.0 before 2.22.2, and
+│                       │      │                   tools.jackson.core:jackson-databind from 3.0.0 before 3.1.6
+│                       │      │                   and from 3.2.0 before 3.2.2. Users should upgrade to
+│                       │      │                   2.18.10, 2.21.6, 2.22.2, 3.1.6, or 3.2.2. Binding
+│                       │      │                   java.nio.file.Path from untrusted JSON should be avoided
+│                       │      │                   regardless of version. 
+│                       │      ├ Severity        : MEDIUM 
+│                       │      ├ CweIDs           ╭ [0]: CWE-470 
+│                       │      │                  ╰ [1]: CWE-610 
+│                       │      ├ VendorSeverity   ╭ ghsa  : 2 
+│                       │      │                  ╰ redhat: 2 
+│                       │      ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N
+│                       │      │                  │        │           /A:L 
+│                       │      │                  │        ╰ V3Score : 5.3 
+│                       │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N
+│                       │      │                           │           /A:L 
+│                       │      │                           ╰ V3Score : 5.3 
+│                       │      ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2026-19032 
+│                       │      │                  ├ [1] : https://github.com/FasterXML/jackson-databind 
+│                       │      │                  ├ [2] : https://github.com/FasterXML/jackson-databind/commit/
+│                       │      │                  │       cc6756b61ed90b6b9227f670e0408d5d9bd48551 
+│                       │      │                  ├ [3] : https://github.com/FasterXML/jackson-databind/commit/
+│                       │      │                  │       ce26eda3481cd796f76ba4c53ffe1da23b53f166 
+│                       │      │                  ├ [4] : https://github.com/FasterXML/jackson-databind/commit/
+│                       │      │                  │       d94bb632becfe0ba96926b9909ab06d1f87aad6d 
+│                       │      │                  ├ [5] : https://github.com/FasterXML/jackson-databind/pull/6129 
+│                       │      │                  ├ [6] : https://github.com/FasterXML/jackson-databind/release
+│                       │      │                  │       s/tag/jackson-databind-2.18.10 
+│                       │      │                  ├ [7] : https://github.com/FasterXML/jackson-databind/release
+│                       │      │                  │       s/tag/jackson-databind-2.21.6 
+│                       │      │                  ├ [8] : https://github.com/FasterXML/jackson-databind/release
+│                       │      │                  │       s/tag/jackson-databind-2.22.2 
+│                       │      │                  ├ [9] : https://github.com/FasterXML/jackson-databind/release
+│                       │      │                  │       s/tag/jackson-databind-3.1.6 
+│                       │      │                  ├ [10]: https://github.com/FasterXML/jackson-databind/release
+│                       │      │                  │       s/tag/jackson-databind-3.2.2 
+│                       │      │                  ├ [11]: https://github.com/FasterXML/jackson-databind/securit
+│                       │      │                  │       y/advisories/GHSA-wjgm-6hv5-3cvf 
+│                       │      │                  ├ [12]: https://nvd.nist.gov/vuln/detail/CVE-2026-19032 
+│                       │      │                  ╰ [13]: https://www.cve.org/CVERecord?id=CVE-2026-19032 
+│                       │      ├ PublishedDate   : 2026-09-01T04:18:00.433Z 
+│                       │      ╰ LastModifiedDate: 2026-09-08T19:29:32.2Z 
+│                       ├ [8]  ╭ VulnerabilityID : CVE-2026-83557 
+│                       │      ├ VendorIDs        ─ [0]: GHSA-gx83-3vf8-gh7j 
+│                       │      ├ PkgName         : com.fasterxml.jackson.core:jackson-databind 
+│                       │      ├ PkgPath         : openaf/ghcopilot/jackson-databind-2.22.1.jar 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:maven/com.fasterxml.jackson.core/jackson-databind
+│                       │      │                  │       @2.22.1 
+│                       │      │                  ╰ UID : 6ec7155dea0753b6 
+│                       │      ├ InstalledVersion: 2.22.1 
+│                       │      ├ FixedVersion    : 2.18.10, 2.21.6, 2.22.2 
+│                       │      ├ Status          : fixed 
+│                       │      ├ Layer            ╭ Digest: sha256:9828e86a4f220c858c27038e827ed54fef1a63f08eb0
+│                       │      │                  │         10a14fd7af13590da543 
+│                       │      │                  ╰ DiffID: sha256:718b0340b30f7422f9f61e64777c181088d68ab9a1c5
+│                       │      │                            cd184d97031d5cafaee0 
+│                       │      ├ SeveritySource  : ghsa 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-83557 
+│                       │      ├ DataSource       ╭ ID  : ghsa 
+│                       │      │                  ├ Name: GitHub Security Advisory Maven 
+│                       │      │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+e
+│                       │      │                          cosystem%3Amaven 
+│                       │      ├ Fingerprint     : sha256:3a356196e99a93788b0fe657d412ff5886d1ff6719a192e74987f
+│                       │      │                   f624c17b251 
+│                       │      ├ Title           : com.fasterxml.jackson.core/jackson-databind:
+│                       │      │                   tools.jackson.core/jackson-databind: jackson-databind: Path
+│                       │      │                   traversal via incomplete type validation 
+│                       │      ├ Description     : DefaultBaseTypeLimitingValidator is the
+│                       │      │                   PolymorphicTypeValidator applied automatically whenever
+│                       │      │                   @JsonTypeInfo is used without an explicitly configured
+│                       │      │                   custom validator. It denies polymorphic resolution only for
+│                       │      │                   a fixed set of "unsafe base types", and its isSafeSubType
+│                       │      │                   method returns true unconditionally for every base type
+│                       │      │                   outside that set. java.lang.Comparable was absent from the
+│                       │      │                   list despite being implemented by a very large fraction of
+│                       │      │                   JDK and application classes, comparable in breadth to
+│                       │      │                   java.io.Serializable, which is on the list for that reason.
+│                       │      │                   An application declaring an @JsonTypeInfo-annotated property
+│                       │      │                    or class with Comparable as its base type, and no custom
+│                       │      │                   PolymorphicTypeValidator, will accept a type identifier for
+│                       │      │                   essentially any class implementing Comparable. This yields
+│                       │      │                   an attacker-controlled object instantiation primitive; a
+│                       │      │                   demonstrated case constructs a java.io.File for an arbitrary
+│                       │      │                    attacker-chosen path, which becomes path-traversal-adjacent
+│                       │      │                    if the application subsequently calls path-sensitive
+│                       │      │                   methods on the value. No class implementing Comparable has
+│                       │      │                   been identified that yields code execution through
+│                       │      │                   deserialization alone. Global Default Typing via
+│                       │      │                   activateDefaultTyping is not affected, because that method
+│                       │      │                   structurally requires an explicit PolymorphicTypeValidator
+│                       │      │                   argument. This affects
+│                       │      │                   com.fasterxml.jackson.core:jackson-databind from 2.11.0
+│                       │      │                   before 2.18.10, from 2.19.0 before 2.21.6, and from 2.22.0
+│                       │      │                   before 2.22.2, and tools.jackson.core:jackson-databind from
+│                       │      │                   3.0.0 before 3.1.6 and from 3.2.0 before 3.2.2. Users should
+│                       │      │                    upgrade to 2.18.10, 2.21.6, 2.22.2, 3.1.6, or 3.2.2. 
+│                       │      ├ Severity        : MEDIUM 
+│                       │      ├ CweIDs           ╭ [0]: CWE-502 
+│                       │      │                  ╰ [1]: CWE-915 
+│                       │      ├ VendorSeverity   ╭ ghsa  : 2 
+│                       │      │                  ╰ redhat: 2 
+│                       │      ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L
+│                       │      │                  │        │           /A:L 
+│                       │      │                  │        ╰ V3Score : 5.6 
+│                       │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L
+│                       │      │                           │           /A:L 
+│                       │      │                           ╰ V3Score : 5.6 
+│                       │      ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2026-83557 
+│                       │      │                  ├ [1] : https://github.com/FasterXML/jackson-databind 
+│                       │      │                  ├ [2] : https://github.com/FasterXML/jackson-databind/commit/
+│                       │      │                  │       eb3b7fc0f9c0d27f471550ac3316b17d1987388f 
+│                       │      │                  ├ [3] : https://github.com/FasterXML/jackson-databind/issues/
+│                       │      │                  │       6156 
+│                       │      │                  ├ [4] : https://github.com/FasterXML/jackson-databind/pull/6155 
+│                       │      │                  ├ [5] : https://github.com/FasterXML/jackson-databind/release
+│                       │      │                  │       s/tag/jackson-databind-2.18.10 
+│                       │      │                  ├ [6] : https://github.com/FasterXML/jackson-databind/release
+│                       │      │                  │       s/tag/jackson-databind-2.21.6 
+│                       │      │                  ├ [7] : https://github.com/FasterXML/jackson-databind/release
+│                       │      │                  │       s/tag/jackson-databind-2.22.2 
+│                       │      │                  ├ [8] : https://github.com/FasterXML/jackson-databind/release
+│                       │      │                  │       s/tag/jackson-databind-3.1.6 
+│                       │      │                  ├ [9] : https://github.com/FasterXML/jackson-databind/release
+│                       │      │                  │       s/tag/jackson-databind-3.2.2 
+│                       │      │                  ├ [10]: https://github.com/FasterXML/jackson-databind/securit
+│                       │      │                  │       y/advisories/GHSA-gx83-3vf8-gh7j 
+│                       │      │                  ├ [11]: https://nvd.nist.gov/vuln/detail/CVE-2026-83557 
+│                       │      │                  ╰ [12]: https://www.cve.org/CVERecord?id=CVE-2026-83557 
+│                       │      ├ PublishedDate   : 2026-09-01T15:17:37.987Z 
+│                       │      ╰ LastModifiedDate: 2026-09-08T19:29:32.2Z 
+│                       ├ [9]  ╭ VulnerabilityID : CVE-2026-91776 
+│                       │      ├ VendorIDs        ─ [0]: GHSA-wv8q-qhhj-9h54 
+│                       │      ├ PkgName         : com.fasterxml.jackson.core:jackson-databind 
+│                       │      ├ PkgPath         : openaf/openaf.jar 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:maven/com.fasterxml.jackson.core/jackson-databind
+│                       │      │                  │       @2.22.2 
+│                       │      │                  ╰ UID : 91d7bc7f349a4179 
+│                       │      ├ InstalledVersion: 2.22.2 
+│                       │      ├ FixedVersion    : 2.18.11, 2.21.7, 2.22.3 
+│                       │      ├ Status          : fixed 
+│                       │      ├ Layer            ╭ Digest: sha256:9828e86a4f220c858c27038e827ed54fef1a63f08eb0
+│                       │      │                  │         10a14fd7af13590da543 
+│                       │      │                  ╰ DiffID: sha256:718b0340b30f7422f9f61e64777c181088d68ab9a1c5
+│                       │      │                            cd184d97031d5cafaee0 
+│                       │      ├ SeveritySource  : ghsa 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-91776 
+│                       │      ├ DataSource       ╭ ID  : ghsa 
+│                       │      │                  ├ Name: GitHub Security Advisory Maven 
+│                       │      │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+e
+│                       │      │                          cosystem%3Amaven 
+│                       │      ├ Fingerprint     : sha256:972f0c0e16185d820c7f9de563e5649c86931c83b9b513012835a
+│                       │      │                   2fb3b8cd58c 
+│                       │      ├ Title           : jackson-databind: com.fasterxml.jackson/jackson-core:
+│                       │      │                   jackson-databind: Denial of Service via unbounded cache
+│                       │      │                   growth in TypeDeserializerBase 
+│                       │      ├ Description     : TypeDeserializerBase._findDeserializer() in FasterXML
+│                       │      │                   jackson-databind caches the resolved deserializer under the
+│                       │      │                   raw, attacker-supplied type ID. When name-based polymorphism
+│                       │      │                    is configured with a fallback, for example
+│                       │      │                   @JsonTypeInfo(use = Id.NAME, defaultImpl = ...), every
+│                       │      │                   distinct unrecognized type ID resolves to the same fallback
+│                       │      │                   deserializer but is retained as its own key in the
+│                       │      │                   _deserializers map. That map has no configurable bound and
+│                       │      │                   lives for the lifetime of the type deserializer, so an
+│                       │      │                   attacker who can repeatedly supply fresh unknown type IDs
+│                       │      │                   causes monotonic memory retention across requests. The
+│                       │      │                   reporter observed 10,000 retained entries from 10,000
+│                       │      │                   distinct unknown IDs, against a single entry for a control
+│                       │      │                   that repeated one unknown ID the same number of times,
+│                       │      │                   isolating attacker-controlled key cardinality from request
+│                       │      │                   volume. Exploitation requires an application that enables
+│                       │      │                   name-based polymorphism with a defaultImpl or equivalent
+│                       │      │                   fallback, accepts attacker-influenced type IDs, and reuses a
+│                       │      │                    long-lived ObjectMapper across requests. The fix stops
+│                       │      │                   caching fallback resolutions for unrecognized IDs and bounds
+│                       │      │                    both the number of cached entries and the length of a
+│                       │      │                   cacheable type ID. 
+│                       │      ├ Severity        : HIGH 
+│                       │      ├ CweIDs           ─ [0]: CWE-400 
+│                       │      ├ VendorSeverity   ╭ ghsa  : 3 
+│                       │      │                  ╰ redhat: 3 
+│                       │      ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N
+│                       │      │                  │        │           /A:H 
+│                       │      │                  │        ╰ V3Score : 7.5 
+│                       │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N
+│                       │      │                           │           /A:H 
+│                       │      │                           ╰ V3Score : 7.5 
+│                       │      ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2026-91776 
+│                       │      │                  ├ [1] : https://github.com/FasterXML/jackson-databind 
+│                       │      │                  ├ [2] : https://github.com/FasterXML/jackson-databind/commit/
+│                       │      │                  │       2870d1d6dc1b7e1c07ee11dd5b04ab71cddbb577 
+│                       │      │                  ├ [3] : https://github.com/FasterXML/jackson-databind/issues/
+│                       │      │                  │       6203 
+│                       │      │                  ├ [4] : https://github.com/FasterXML/jackson-databind/release
+│                       │      │                  │       s/tag/jackson-databind-2.18.11 
+│                       │      │                  ├ [5] : https://github.com/FasterXML/jackson-databind/release
+│                       │      │                  │       s/tag/jackson-databind-2.21.7 
+│                       │      │                  ├ [6] : https://github.com/FasterXML/jackson-databind/release
+│                       │      │                  │       s/tag/jackson-databind-2.22.3 
+│                       │      │                  ├ [7] : https://github.com/FasterXML/jackson-databind/release
+│                       │      │                  │       s/tag/jackson-databind-3.1.7 
+│                       │      │                  ├ [8] : https://github.com/FasterXML/jackson-databind/release
+│                       │      │                  │       s/tag/jackson-databind-3.2.3 
+│                       │      │                  ├ [9] : https://github.com/FasterXML/jackson-databind/securit
+│                       │      │                  │       y/advisories/GHSA-wv8q-qhhj-9h54 
+│                       │      │                  ├ [10]: https://nvd.nist.gov/vuln/detail/CVE-2026-91776 
+│                       │      │                  ╰ [11]: https://www.cve.org/CVERecord?id=CVE-2026-91776 
+│                       │      ├ PublishedDate   : 2026-09-23T03:17:04.62Z 
+│                       │      ╰ LastModifiedDate: 2026-09-24T20:43:32.537Z 
+│                       ├ [10] ╭ VulnerabilityID : CVE-2026-91777 
+│                       │      ├ VendorIDs        ─ [0]: GHSA-cxp5-3px4-pw24 
+│                       │      ├ PkgName         : com.fasterxml.jackson.core:jackson-databind 
+│                       │      ├ PkgPath         : openaf/openaf.jar 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:maven/com.fasterxml.jackson.core/jackson-databind
+│                       │      │                  │       @2.22.2 
+│                       │      │                  ╰ UID : 91d7bc7f349a4179 
+│                       │      ├ InstalledVersion: 2.22.2 
+│                       │      ├ FixedVersion    : 2.21.7, 2.18.11, 2.22.3 
+│                       │      ├ Status          : fixed 
+│                       │      ├ Layer            ╭ Digest: sha256:9828e86a4f220c858c27038e827ed54fef1a63f08eb0
+│                       │      │                  │         10a14fd7af13590da543 
+│                       │      │                  ╰ DiffID: sha256:718b0340b30f7422f9f61e64777c181088d68ab9a1c5
+│                       │      │                            cd184d97031d5cafaee0 
+│                       │      ├ SeveritySource  : ghsa 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-91777 
+│                       │      ├ DataSource       ╭ ID  : ghsa 
+│                       │      │                  ├ Name: GitHub Security Advisory Maven 
+│                       │      │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+e
+│                       │      │                          cosystem%3Amaven 
+│                       │      ├ Fingerprint     : sha256:dca7092e5d4a1604d1bb99746f0d26513fa0b9861bdf35cc07762
+│                       │      │                   c0da2e62e64 
+│                       │      ├ Title           : Forward-reference completion for @JsonIdentityInfo object
+│                       │      │                   IDs in Faste ... 
+│                       │      ├ Description     : Forward-reference completion for @JsonIdentityInfo object
+│                       │      │                   IDs in FasterXML jackson-databind performs a linear scan of
+│                       │      │                   the pending-reference accumulator for every resolved ID. The
+│                       │      │                    affected paths are
+│                       │      │                   CollectionDeserializer.CollectionReferringAccumulator.resolv
+│                       │      │                   eForwardReference() and the equivalent implementation in
+│                       │      │                   MapDeserializer. When a document first creates N unresolved
+│                       │      │                   object-ID references in an identity-enabled collection or
+│                       │      │                   map and then defines those same IDs in reverse order,
+│                       │      │                   completion performs on the order of N * (N + 1) / 2 identity
+│                       │      │                    comparisons, so a shallow document whose size grows
+│                       │      │                   linearly causes quadratic CPU work during deserialization.
+│                       │      │                   The reporter instrumented equals() calls on the ID class and
+│                       │      │                    measured exactly 2,003,000 comparisons at N = 2,000,
+│                       │      │                   against zero comparisons in the pending-reference lookup
+│                       │      │                   path for an equally sized control in which every reference
+│                       │      │                   was already resolved. The input requires no deep nesting and
+│                       │      │                    no syntactically unusual JSON. Exploitation requires an
+│                       │      │                   application that deserializes attacker-influenced JSON into
+│                       │      │                   an identity-enabled collection or map. The fix replaces the
+│                       │      │                   repeated linear lookup with a keyed pending-reference
+│                       │      │                   structure. 
+│                       │      ├ Severity        : HIGH 
+│                       │      ├ CweIDs           ─ [0]: CWE-400 
+│                       │      ├ VendorSeverity   ─ ghsa: 3 
+│                       │      ├ CVSS             ─ ghsa ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H 
+│                       │      │                         ╰ V3Score : 7.5 
+│                       │      ├ References       ╭ [0] : https://github.com/FasterXML/jackson-databind 
+│                       │      │                  ├ [1] : https://github.com/FasterXML/jackson-databind/commit/
+│                       │      │                  │       37ad9b81712cbb9fb62c2d2c1813593252a24b67 
+│                       │      │                  ├ [2] : https://github.com/FasterXML/jackson-databind/issues/
+│                       │      │                  │       6204 
+│                       │      │                  ├ [3] : https://github.com/FasterXML/jackson-databind/pull/6204 
+│                       │      │                  ├ [4] : https://github.com/FasterXML/jackson-databind/release
+│                       │      │                  │       s/tag/jackson-databind-2.18.11 
+│                       │      │                  ├ [5] : https://github.com/FasterXML/jackson-databind/release
+│                       │      │                  │       s/tag/jackson-databind-2.21.7 
+│                       │      │                  ├ [6] : https://github.com/FasterXML/jackson-databind/release
+│                       │      │                  │       s/tag/jackson-databind-2.22.3 
+│                       │      │                  ├ [7] : https://github.com/FasterXML/jackson-databind/release
+│                       │      │                  │       s/tag/jackson-databind-3.1.7 
+│                       │      │                  ├ [8] : https://github.com/FasterXML/jackson-databind/release
+│                       │      │                  │       s/tag/jackson-databind-3.2.3 
+│                       │      │                  ├ [9] : https://github.com/FasterXML/jackson-databind/securit
+│                       │      │                  │       y/advisories/GHSA-cxp5-3px4-pw24 
+│                       │      │                  ╰ [10]: https://nvd.nist.gov/vuln/detail/CVE-2026-91777 
+│                       │      ├ PublishedDate   : 2026-09-23T03:17:04.783Z 
+│                       │      ╰ LastModifiedDate: 2026-09-24T20:43:32.537Z 
+│                       ├ [11] ╭ VulnerabilityID : CVE-2026-8763 
+│                       │      ├ VendorIDs        ─ [0]: GHSA-9pwp-9qqc-pr26 
+│                       │      ├ PkgName         : org.bouncycastle:bcprov-jdk18on 
+│                       │      ├ PkgPath         : openaf/S3/bcprov-jdk18on-1.84.jar 
+│                       │      ├ PkgIdentifier    ╭ PURL: pkg:maven/org.bouncycastle/bcprov-jdk18on@1.84 
+│                       │      │                  ╰ UID : aa9cc21dd2336977 
+│                       │      ├ InstalledVersion: 1.84 
+│                       │      ├ FixedVersion    : 1.85 
+│                       │      ├ Status          : fixed 
+│                       │      ├ Layer            ╭ Digest: sha256:9828e86a4f220c858c27038e827ed54fef1a63f08eb0
+│                       │      │                  │         10a14fd7af13590da543 
+│                       │      │                  ╰ DiffID: sha256:718b0340b30f7422f9f61e64777c181088d68ab9a1c5
+│                       │      │                            cd184d97031d5cafaee0 
+│                       │      ├ SeveritySource  : ghsa 
+│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-8763 
+│                       │      ├ DataSource       ╭ ID  : ghsa 
+│                       │      │                  ├ Name: GitHub Security Advisory Maven 
+│                       │      │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+e
+│                       │      │                          cosystem%3Amaven 
+│                       │      ├ Fingerprint     : sha256:dc143c3295c014ea84222494f3ca57b6c0a682b259f198dd9a9f8
+│                       │      │                   9e88237f4b0 
+│                       │      ├ Title           : org.bouncycastle/bcprov-jdk15on:
+│                       │      │                   org.bouncycastle/bcpkix-jdk15on: Bouncy Castle for Java:
+│                       │      │                   Name Constraints bypass via trailing dot in rfc822Name and
+│                       │      │                   URI 
+│                       │      ├ Description     : In Bouncy Castle for Java before 1.85, Name Constraints
+│                       │      │                   bypass via trailing dot in rfc822Name and URI. This issue
+│                       │      │                   also affects Bouncy Castle for Java LTS before 2.73.12, and
+│                       │      │                   Bouncy Castle for Java FIPS (BC-FJA) before bc-fips 1.0.2.7
+│                       │      │                   (1.0.X series), 2.0.2 (2.0.X series) and 2.1.3 (2.1.X
+│                       │      │                   series). 
+│                       │      ├ Severity        : CRITICAL 
+│                       │      ├ CweIDs           ─ [0]: CWE-295 
+│                       │      ├ VendorSeverity   ╭ amazon: 3 
+│                       │      │                  ├ ghsa  : 4 
+│                       │      │                  ├ nvd   : 4 
+│                       │      │                  ╰ redhat: 3 
+│                       │      ├ CVSS             ╭ ghsa   ╭ V3Vector : CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:
+│                       │      │                  │        │            H/A:N 
+│                       │      │                  │        ├ V40Vector: CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/
+│                       │      │                  │        │            VI:H/VA:N/SC:N/SI:N/SA:N/U:Amber 
+│                       │      │                  │        ├ V3Score  : 9.1 
+│                       │      │                  │        ╰ V40Score : 9.3 
+│                       │      │                  ├ nvd    ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H
+│                       │      │                  │        │           /A:N 
+│                       │      │                  │        ╰ V3Score : 9.1 
+│                       │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H
+│                       │      │                           │           /A:N 
+│                       │      │                           ╰ V3Score : 7.4 
+│                       │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2026-8763 
+│                       │      │                  ├ [1]: https://github.com/bcgit/bc-java 
+│                       │      │                  ├ [2]: https://github.com/bcgit/bc-java/commit/2c28b253a44681
+│                       │      │                  │      fbbc562561eab6ad383d2ae558 
+│                       │      │                  ├ [3]: https://github.com/bcgit/bc-java/releases/tag/r1rv85v2 
+│                       │      │                  ├ [4]: https://github.com/bcgit/bc-java/wiki/CVE%E2%80%902026
+│                       │      │                  │      %E2%80%908763 
+│                       │      │                  ├ [5]: https://github.com/bcgit/bc-java/wiki/CVE-2026-8763 
+│                       │      │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2026-8763 
+│                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2026-8763 
+│                       │      ├ PublishedDate   : 2026-08-03T01:16:45.807Z 
+│                       │      ╰ LastModifiedDate: 2026-09-02T14:28:48.94Z 
+│                       ╰ [12] ╭ VulnerabilityID : CVE-2026-13506 
+│                              ├ VendorIDs        ─ [0]: GHSA-qp49-qgx5-5m26 
+│                              ├ PkgName         : org.bouncycastle:bcprov-jdk18on 
+│                              ├ PkgPath         : openaf/S3/bcprov-jdk18on-1.84.jar 
+│                              ├ PkgIdentifier    ╭ PURL: pkg:maven/org.bouncycastle/bcprov-jdk18on@1.84 
+│                              │                  ╰ UID : aa9cc21dd2336977 
+│                              ├ InstalledVersion: 1.84 
+│                              ├ FixedVersion    : 1.85 
+│                              ├ Status          : fixed 
+│                              ├ Layer            ╭ Digest: sha256:9828e86a4f220c858c27038e827ed54fef1a63f08eb0
+│                              │                  │         10a14fd7af13590da543 
+│                              │                  ╰ DiffID: sha256:718b0340b30f7422f9f61e64777c181088d68ab9a1c5
+│                              │                            cd184d97031d5cafaee0 
+│                              ├ SeveritySource  : ghsa 
+│                              ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-13506 
+│                              ├ DataSource       ╭ ID  : ghsa 
+│                              │                  ├ Name: GitHub Security Advisory Maven 
+│                              │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+e
+│                              │                          cosystem%3Amaven 
+│                              ├ Fingerprint     : sha256:4ce71aa2790f50d4752b8f431b78f84554b2d931b0905fec7b362
+│                              │                   6747896c38f 
+│                              ├ Title           : bouncycastle: Bouncy Castle for Java: Denial of Service via
+│                              │                   lazy ASN.1 sequence processing 
+│                              ├ Description     : In Bouncy Castle for Java before 1.85, Lazy ASN.1 sequence
+│                              │                   forcing resets nesting-depth guard. This issue also affects
+│                              │                   Bouncy Castle for Java LTS before 2.73.12, and Bouncy Castle
+│                              │                    for Java FIPS (BC-FJA) before bc-fips 1.0.2.7 (1.0.X
+│                              │                   series), 2.0.2 (2.0.X series) and 2.1.3 (2.1.X series). 
+│                              ├ Severity        : HIGH 
+│                              ├ CweIDs           ─ [0]: CWE-674 
+│                              ├ VendorSeverity   ╭ amazon: 3 
+│                              │                  ├ ghsa  : 3 
+│                              │                  ├ nvd   : 3 
+│                              │                  ╰ redhat: 3 
+│                              ├ CVSS             ╭ ghsa   ╭ V3Vector : CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
+│                              │                  │        │            N/A:H 
+│                              │                  │        ├ V40Vector: CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/
+│                              │                  │        │            VI:N/VA:H/SC:N/SI:N/SA:N/U:Amber 
+│                              │                  │        ├ V3Score  : 7.5 
+│                              │                  │        ╰ V40Score : 8.7 
+│                              │                  ├ nvd    ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N
+│                              │                  │        │           /A:H 
+│                              │                  │        ╰ V3Score : 7.5 
+│                              │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N
+│                              │                           │           /A:H 
+│                              │                           ╰ V3Score : 7.5 
+│                              ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2026-13506 
+│                              │                  ├ [1]: https://github.com/bcgit/bc-java 
+│                              │                  ├ [2]: https://github.com/bcgit/bc-java/commit/77454da9b3dcaa
+│                              │                  │      a2991412d1c3c1a6e1a338ff84 
+│                              │                  ├ [3]: https://github.com/bcgit/bc-java/wiki/CVE-2026-13506 
+│                              │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2026-13506 
+│                              │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2026-13506 
+│                              ├ PublishedDate   : 2026-08-03T04:16:39.957Z 
+│                              ╰ LastModifiedDate: 2026-08-28T16:41:22.84Z 
 ╰ [2] ╭ Target         : usr/bin/pebble 
       ├ Class          : lang-pkgs 
       ├ Type           : gobinary 
@@ -11071,7 +11423,7 @@
                         │     │                  ├ oracle-oval: 3 
                         │     │                  ├ redhat     : 3 
                         │     │                  ├ rocky      : 3 
-                        │     │                  ╰ ubuntu     : 2 
+                        │     │                  ╰ ubuntu     : 3 
                         │     ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/
                         │     │                           │           A:N 
                         │     │                           ╰ V3Score : 8.2 
