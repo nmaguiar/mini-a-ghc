@@ -10808,8 +10808,9 @@
 │                       │      │                          cosystem%3Amaven 
 │                       │      ├ Fingerprint     : sha256:dca7092e5d4a1604d1bb99746f0d26513fa0b9861bdf35cc07762
 │                       │      │                   c0da2e62e64 
-│                       │      ├ Title           : Forward-reference completion for @JsonIdentityInfo object
-│                       │      │                   IDs in Faste ... 
+│                       │      ├ Title           : com.fasterxml.jackson.core/jackson-databind:
+│                       │      │                   Jackson-databind: Denial of Service via quadratic
+│                       │      │                   forward-reference completion 
 │                       │      ├ Description     : Forward-reference completion for @JsonIdentityInfo object
 │                       │      │                   IDs in FasterXML jackson-databind performs a linear scan of
 │                       │      │                   the pending-reference accumulator for every resolved ID. The
@@ -10834,28 +10835,35 @@
 │                       │      │                   structure. 
 │                       │      ├ Severity        : HIGH 
 │                       │      ├ CweIDs           ─ [0]: CWE-400 
-│                       │      ├ VendorSeverity   ─ ghsa: 3 
-│                       │      ├ CVSS             ─ ghsa ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H 
-│                       │      │                         ╰ V3Score : 7.5 
-│                       │      ├ References       ╭ [0] : https://github.com/FasterXML/jackson-databind 
-│                       │      │                  ├ [1] : https://github.com/FasterXML/jackson-databind/commit/
+│                       │      ├ VendorSeverity   ╭ ghsa  : 3 
+│                       │      │                  ╰ redhat: 3 
+│                       │      ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N
+│                       │      │                  │        │           /A:H 
+│                       │      │                  │        ╰ V3Score : 7.5 
+│                       │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N
+│                       │      │                           │           /A:H 
+│                       │      │                           ╰ V3Score : 7.5 
+│                       │      ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2026-91777 
+│                       │      │                  ├ [1] : https://github.com/FasterXML/jackson-databind 
+│                       │      │                  ├ [2] : https://github.com/FasterXML/jackson-databind/commit/
 │                       │      │                  │       37ad9b81712cbb9fb62c2d2c1813593252a24b67 
-│                       │      │                  ├ [2] : https://github.com/FasterXML/jackson-databind/issues/
+│                       │      │                  ├ [3] : https://github.com/FasterXML/jackson-databind/issues/
 │                       │      │                  │       6204 
-│                       │      │                  ├ [3] : https://github.com/FasterXML/jackson-databind/pull/6204 
-│                       │      │                  ├ [4] : https://github.com/FasterXML/jackson-databind/release
-│                       │      │                  │       s/tag/jackson-databind-2.18.11 
+│                       │      │                  ├ [4] : https://github.com/FasterXML/jackson-databind/pull/6204 
 │                       │      │                  ├ [5] : https://github.com/FasterXML/jackson-databind/release
-│                       │      │                  │       s/tag/jackson-databind-2.21.7 
+│                       │      │                  │       s/tag/jackson-databind-2.18.11 
 │                       │      │                  ├ [6] : https://github.com/FasterXML/jackson-databind/release
-│                       │      │                  │       s/tag/jackson-databind-2.22.3 
+│                       │      │                  │       s/tag/jackson-databind-2.21.7 
 │                       │      │                  ├ [7] : https://github.com/FasterXML/jackson-databind/release
-│                       │      │                  │       s/tag/jackson-databind-3.1.7 
+│                       │      │                  │       s/tag/jackson-databind-2.22.3 
 │                       │      │                  ├ [8] : https://github.com/FasterXML/jackson-databind/release
+│                       │      │                  │       s/tag/jackson-databind-3.1.7 
+│                       │      │                  ├ [9] : https://github.com/FasterXML/jackson-databind/release
 │                       │      │                  │       s/tag/jackson-databind-3.2.3 
-│                       │      │                  ├ [9] : https://github.com/FasterXML/jackson-databind/securit
+│                       │      │                  ├ [10]: https://github.com/FasterXML/jackson-databind/securit
 │                       │      │                  │       y/advisories/GHSA-cxp5-3px4-pw24 
-│                       │      │                  ╰ [10]: https://nvd.nist.gov/vuln/detail/CVE-2026-91777 
+│                       │      │                  ├ [11]: https://nvd.nist.gov/vuln/detail/CVE-2026-91777 
+│                       │      │                  ╰ [12]: https://www.cve.org/CVERecord?id=CVE-2026-91777 
 │                       │      ├ PublishedDate   : 2026-09-23T03:17:04.783Z 
 │                       │      ╰ LastModifiedDate: 2026-09-24T20:43:32.537Z 
 │                       ├ [7]  ╭ VulnerabilityID : CVE-2026-19032 
@@ -11134,8 +11142,9 @@
 │                       │      │                          cosystem%3Amaven 
 │                       │      ├ Fingerprint     : sha256:dca7092e5d4a1604d1bb99746f0d26513fa0b9861bdf35cc07762
 │                       │      │                   c0da2e62e64 
-│                       │      ├ Title           : Forward-reference completion for @JsonIdentityInfo object
-│                       │      │                   IDs in Faste ... 
+│                       │      ├ Title           : com.fasterxml.jackson.core/jackson-databind:
+│                       │      │                   Jackson-databind: Denial of Service via quadratic
+│                       │      │                   forward-reference completion 
 │                       │      ├ Description     : Forward-reference completion for @JsonIdentityInfo object
 │                       │      │                   IDs in FasterXML jackson-databind performs a linear scan of
 │                       │      │                   the pending-reference accumulator for every resolved ID. The
@@ -11160,28 +11169,35 @@
 │                       │      │                   structure. 
 │                       │      ├ Severity        : HIGH 
 │                       │      ├ CweIDs           ─ [0]: CWE-400 
-│                       │      ├ VendorSeverity   ─ ghsa: 3 
-│                       │      ├ CVSS             ─ ghsa ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H 
-│                       │      │                         ╰ V3Score : 7.5 
-│                       │      ├ References       ╭ [0] : https://github.com/FasterXML/jackson-databind 
-│                       │      │                  ├ [1] : https://github.com/FasterXML/jackson-databind/commit/
+│                       │      ├ VendorSeverity   ╭ ghsa  : 3 
+│                       │      │                  ╰ redhat: 3 
+│                       │      ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N
+│                       │      │                  │        │           /A:H 
+│                       │      │                  │        ╰ V3Score : 7.5 
+│                       │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N
+│                       │      │                           │           /A:H 
+│                       │      │                           ╰ V3Score : 7.5 
+│                       │      ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2026-91777 
+│                       │      │                  ├ [1] : https://github.com/FasterXML/jackson-databind 
+│                       │      │                  ├ [2] : https://github.com/FasterXML/jackson-databind/commit/
 │                       │      │                  │       37ad9b81712cbb9fb62c2d2c1813593252a24b67 
-│                       │      │                  ├ [2] : https://github.com/FasterXML/jackson-databind/issues/
+│                       │      │                  ├ [3] : https://github.com/FasterXML/jackson-databind/issues/
 │                       │      │                  │       6204 
-│                       │      │                  ├ [3] : https://github.com/FasterXML/jackson-databind/pull/6204 
-│                       │      │                  ├ [4] : https://github.com/FasterXML/jackson-databind/release
-│                       │      │                  │       s/tag/jackson-databind-2.18.11 
+│                       │      │                  ├ [4] : https://github.com/FasterXML/jackson-databind/pull/6204 
 │                       │      │                  ├ [5] : https://github.com/FasterXML/jackson-databind/release
-│                       │      │                  │       s/tag/jackson-databind-2.21.7 
+│                       │      │                  │       s/tag/jackson-databind-2.18.11 
 │                       │      │                  ├ [6] : https://github.com/FasterXML/jackson-databind/release
-│                       │      │                  │       s/tag/jackson-databind-2.22.3 
+│                       │      │                  │       s/tag/jackson-databind-2.21.7 
 │                       │      │                  ├ [7] : https://github.com/FasterXML/jackson-databind/release
-│                       │      │                  │       s/tag/jackson-databind-3.1.7 
+│                       │      │                  │       s/tag/jackson-databind-2.22.3 
 │                       │      │                  ├ [8] : https://github.com/FasterXML/jackson-databind/release
+│                       │      │                  │       s/tag/jackson-databind-3.1.7 
+│                       │      │                  ├ [9] : https://github.com/FasterXML/jackson-databind/release
 │                       │      │                  │       s/tag/jackson-databind-3.2.3 
-│                       │      │                  ├ [9] : https://github.com/FasterXML/jackson-databind/securit
+│                       │      │                  ├ [10]: https://github.com/FasterXML/jackson-databind/securit
 │                       │      │                  │       y/advisories/GHSA-cxp5-3px4-pw24 
-│                       │      │                  ╰ [10]: https://nvd.nist.gov/vuln/detail/CVE-2026-91777 
+│                       │      │                  ├ [11]: https://nvd.nist.gov/vuln/detail/CVE-2026-91777 
+│                       │      │                  ╰ [12]: https://www.cve.org/CVERecord?id=CVE-2026-91777 
 │                       │      ├ PublishedDate   : 2026-09-23T03:17:04.783Z 
 │                       │      ╰ LastModifiedDate: 2026-09-24T20:43:32.537Z 
 │                       ├ [11] ╭ VulnerabilityID : CVE-2026-8763 
@@ -11631,21 +11647,20 @@
                         │     │                  │        26-56862 
                         │     │                  ├ [189]: https://errata.almalinux.org/9/ALSA-2026-65153.html 
                         │     │                  ├ [190]: https://errata.rockylinux.org/RLSA-2026:65886 
-                        │     │                  ├ [191]: https://github.com/golang/go/issues/78760 
-                        │     │                  ├ [192]: https://go.dev/cl/767220 
-                        │     │                  ├ [193]: https://go.dev/issue/78760 
-                        │     │                  ├ [194]: https://groups.google.com/g/golang-announce/c/94pEorn
+                        │     │                  ├ [191]: https://go.dev/cl/767220 
+                        │     │                  ├ [192]: https://go.dev/issue/78760 
+                        │     │                  ├ [193]: https://groups.google.com/g/golang-announce/c/94pEorn
                         │     │                  │        pRlI 
-                        │     │                  ├ [195]: https://groups.google.com/g/golang-announce/c/iI-mYSI
+                        │     │                  ├ [194]: https://groups.google.com/g/golang-announce/c/iI-mYSI
                         │     │                  │        0lu8 
-                        │     │                  ├ [196]: https://linux.oracle.com/cve/CVE-2026-39821.html 
-                        │     │                  ├ [197]: https://linux.oracle.com/errata/ELSA-2026-66432-0.html 
-                        │     │                  ├ [198]: https://nvd.nist.gov/vuln/detail/CVE-2026-39821 
-                        │     │                  ├ [199]: https://pkg.go.dev/vuln/GO-2026-5026 
-                        │     │                  ├ [200]: https://security.access.redhat.com/data/csaf/v2/vex/2
+                        │     │                  ├ [195]: https://linux.oracle.com/cve/CVE-2026-39821.html 
+                        │     │                  ├ [196]: https://linux.oracle.com/errata/ELSA-2026-66432-0.html 
+                        │     │                  ├ [197]: https://nvd.nist.gov/vuln/detail/CVE-2026-39821 
+                        │     │                  ├ [198]: https://pkg.go.dev/vuln/GO-2026-5026 
+                        │     │                  ├ [199]: https://security.access.redhat.com/data/csaf/v2/vex/2
                         │     │                  │        026/cve-2026-39821.json 
-                        │     │                  ├ [201]: https://ubuntu.com/security/notices/USN-8416-1 
-                        │     │                  ╰ [202]: https://www.cve.org/CVERecord?id=CVE-2026-39821 
+                        │     │                  ├ [200]: https://ubuntu.com/security/notices/USN-8416-1 
+                        │     │                  ╰ [201]: https://www.cve.org/CVERecord?id=CVE-2026-39821 
                         │     ├ PublishedDate   : 2026-05-22T16:16:20.41Z 
                         │     ╰ LastModifiedDate: 2026-09-17T12:18:05.767Z 
                         ├ [2] ╭ VulnerabilityID : CVE-2026-46600 
