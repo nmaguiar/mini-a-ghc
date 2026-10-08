@@ -1011,7 +1011,7 @@
 │                       │      │                  ├ [18]: https://creativecommons.org/licenses/by/4.0/ 
 │                       │      │                  ├ [19]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
 │                       │      │                  │       26-13757 
-│                       │      │                  ├ [20]: https://errata.almalinux.org/10/ALSA-2026-49668.html 
+│                       │      │                  ├ [20]: https://errata.almalinux.org/9/ALSA-2026-49667.html 
 │                       │      │                  ├ [21]: https://errata.rockylinux.org/RLSA-2026:49667 
 │                       │      │                  ├ [22]: https://github.com/advisories/GHSA-p2wm-69qx-x25w 
 │                       │      │                  ├ [23]: https://linux.oracle.com/cve/CVE-2026-13757.html 
@@ -2273,7 +2273,7 @@
 │                       │      │                  │       26-18508 
 │                       │      │                  ├ [16]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
 │                       │      │                  │       26-5704 
-│                       │      │                  ├ [17]: https://errata.almalinux.org/10/ALSA-2026-61586.html 
+│                       │      │                  ├ [17]: https://errata.almalinux.org/9/ALSA-2026-61581.html 
 │                       │      │                  ├ [18]: https://errata.rockylinux.org/RLSA-2026:61581 
 │                       │      │                  ├ [19]: https://linux.oracle.com/cve/CVE-2026-18477.html 
 │                       │      │                  ├ [20]: https://linux.oracle.com/errata/ELSA-2026-70390.html 
@@ -2340,7 +2340,7 @@
 │                       │      │                  │       26-18508 
 │                       │      │                  ├ [16]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
 │                       │      │                  │       26-5704 
-│                       │      │                  ├ [17]: https://errata.almalinux.org/10/ALSA-2026-61586.html 
+│                       │      │                  ├ [17]: https://errata.almalinux.org/9/ALSA-2026-61581.html 
 │                       │      │                  ├ [18]: https://errata.rockylinux.org/RLSA-2026:61581 
 │                       │      │                  ├ [19]: https://linux.oracle.com/cve/CVE-2026-18508.html 
 │                       │      │                  ├ [20]: https://linux.oracle.com/errata/ELSA-2026-70390.html 
