@@ -11423,7 +11423,8 @@
 │                       │      ├ Severity        : HIGH 
 │                       │      ├ CweIDs           ─ [0]: CWE-400 
 │                       │      ├ VendorSeverity   ╭ ghsa  : 3 
-│                       │      │                  ╰ redhat: 3 
+│                       │      │                  ├ redhat: 3 
+│                       │      │                  ╰ ubuntu: 2 
 │                       │      ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N
 │                       │      │                  │        │           /A:H 
 │                       │      │                  │        ╰ V3Score : 7.5 
@@ -11437,20 +11438,21 @@
 │                       │      │                  │       2870d1d6dc1b7e1c07ee11dd5b04ab71cddbb577 
 │                       │      │                  ├ [4] : https://github.com/FasterXML/jackson-databind/issues/
 │                       │      │                  │       6203 
-│                       │      │                  ├ [5] : https://github.com/FasterXML/jackson-databind/release
-│                       │      │                  │       s/tag/jackson-databind-2.18.11 
+│                       │      │                  ├ [5] : https://github.com/FasterXML/jackson-databind/pull/6203 
 │                       │      │                  ├ [6] : https://github.com/FasterXML/jackson-databind/release
-│                       │      │                  │       s/tag/jackson-databind-2.21.7 
+│                       │      │                  │       s/tag/jackson-databind-2.18.11 
 │                       │      │                  ├ [7] : https://github.com/FasterXML/jackson-databind/release
-│                       │      │                  │       s/tag/jackson-databind-2.22.3 
+│                       │      │                  │       s/tag/jackson-databind-2.21.7 
 │                       │      │                  ├ [8] : https://github.com/FasterXML/jackson-databind/release
-│                       │      │                  │       s/tag/jackson-databind-3.1.7 
+│                       │      │                  │       s/tag/jackson-databind-2.22.3 
 │                       │      │                  ├ [9] : https://github.com/FasterXML/jackson-databind/release
+│                       │      │                  │       s/tag/jackson-databind-3.1.7 
+│                       │      │                  ├ [10]: https://github.com/FasterXML/jackson-databind/release
 │                       │      │                  │       s/tag/jackson-databind-3.2.3 
-│                       │      │                  ├ [10]: https://github.com/FasterXML/jackson-databind/securit
+│                       │      │                  ├ [11]: https://github.com/FasterXML/jackson-databind/securit
 │                       │      │                  │       y/advisories/GHSA-wv8q-qhhj-9h54 
-│                       │      │                  ├ [11]: https://nvd.nist.gov/vuln/detail/CVE-2026-91776 
-│                       │      │                  ╰ [12]: https://www.cve.org/CVERecord?id=CVE-2026-91776 
+│                       │      │                  ├ [12]: https://nvd.nist.gov/vuln/detail/CVE-2026-91776 
+│                       │      │                  ╰ [13]: https://www.cve.org/CVERecord?id=CVE-2026-91776 
 │                       │      ├ PublishedDate   : 2026-09-23T03:17:04.62Z 
 │                       │      ╰ LastModifiedDate: 2026-09-24T20:43:32.537Z 
 │                       ├ [6]  ╭ VulnerabilityID : CVE-2026-91777 
@@ -11765,7 +11767,8 @@
 │                       │      ├ Severity        : HIGH 
 │                       │      ├ CweIDs           ─ [0]: CWE-400 
 │                       │      ├ VendorSeverity   ╭ ghsa  : 3 
-│                       │      │                  ╰ redhat: 3 
+│                       │      │                  ├ redhat: 3 
+│                       │      │                  ╰ ubuntu: 2 
 │                       │      ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N
 │                       │      │                  │        │           /A:H 
 │                       │      │                  │        ╰ V3Score : 7.5 
@@ -11779,20 +11782,21 @@
 │                       │      │                  │       2870d1d6dc1b7e1c07ee11dd5b04ab71cddbb577 
 │                       │      │                  ├ [4] : https://github.com/FasterXML/jackson-databind/issues/
 │                       │      │                  │       6203 
-│                       │      │                  ├ [5] : https://github.com/FasterXML/jackson-databind/release
-│                       │      │                  │       s/tag/jackson-databind-2.18.11 
+│                       │      │                  ├ [5] : https://github.com/FasterXML/jackson-databind/pull/6203 
 │                       │      │                  ├ [6] : https://github.com/FasterXML/jackson-databind/release
-│                       │      │                  │       s/tag/jackson-databind-2.21.7 
+│                       │      │                  │       s/tag/jackson-databind-2.18.11 
 │                       │      │                  ├ [7] : https://github.com/FasterXML/jackson-databind/release
-│                       │      │                  │       s/tag/jackson-databind-2.22.3 
+│                       │      │                  │       s/tag/jackson-databind-2.21.7 
 │                       │      │                  ├ [8] : https://github.com/FasterXML/jackson-databind/release
-│                       │      │                  │       s/tag/jackson-databind-3.1.7 
+│                       │      │                  │       s/tag/jackson-databind-2.22.3 
 │                       │      │                  ├ [9] : https://github.com/FasterXML/jackson-databind/release
+│                       │      │                  │       s/tag/jackson-databind-3.1.7 
+│                       │      │                  ├ [10]: https://github.com/FasterXML/jackson-databind/release
 │                       │      │                  │       s/tag/jackson-databind-3.2.3 
-│                       │      │                  ├ [10]: https://github.com/FasterXML/jackson-databind/securit
+│                       │      │                  ├ [11]: https://github.com/FasterXML/jackson-databind/securit
 │                       │      │                  │       y/advisories/GHSA-wv8q-qhhj-9h54 
-│                       │      │                  ├ [11]: https://nvd.nist.gov/vuln/detail/CVE-2026-91776 
-│                       │      │                  ╰ [12]: https://www.cve.org/CVERecord?id=CVE-2026-91776 
+│                       │      │                  ├ [12]: https://nvd.nist.gov/vuln/detail/CVE-2026-91776 
+│                       │      │                  ╰ [13]: https://www.cve.org/CVERecord?id=CVE-2026-91776 
 │                       │      ├ PublishedDate   : 2026-09-23T03:17:04.62Z 
 │                       │      ╰ LastModifiedDate: 2026-09-24T20:43:32.537Z 
 │                       ├ [10] ╭ VulnerabilityID : CVE-2026-91777 
@@ -12501,7 +12505,7 @@
                         │      │                  ├ amazon     : 3 
                         │      │                  ├ bitnami    : 2 
                         │      │                  ├ oracle-oval: 3 
-                        │      │                  ├ photon     : 4 
+                        │      │                  ├ photon     : 2 
                         │      │                  ├ redhat     : 3 
                         │      │                  ╰ rocky      : 3 
                         │      ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:
@@ -12674,7 +12678,7 @@
                         │      │                  ├ amazon     : 3 
                         │      │                  ├ bitnami    : 2 
                         │      │                  ├ oracle-oval: 3 
-                        │      │                  ├ photon     : 3 
+                        │      │                  ├ photon     : 2 
                         │      │                  ├ redhat     : 3 
                         │      │                  ╰ rocky      : 3 
                         │      ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:
