@@ -9657,6 +9657,7 @@
     VendorSeverity:
       ghsa: 3
       redhat: 3
+      ubuntu: 2
     CVSS:
       ghsa:
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
@@ -9670,6 +9671,7 @@
     - https://github.com/FasterXML/jackson-databind
     - https://github.com/FasterXML/jackson-databind/commit/2870d1d6dc1b7e1c07ee11dd5b04ab71cddbb577
     - https://github.com/FasterXML/jackson-databind/issues/6203
+    - https://github.com/FasterXML/jackson-databind/pull/6203
     - https://github.com/FasterXML/jackson-databind/releases/tag/jackson-databind-2.18.11
     - https://github.com/FasterXML/jackson-databind/releases/tag/jackson-databind-2.21.7
     - https://github.com/FasterXML/jackson-databind/releases/tag/jackson-databind-2.22.3
@@ -9873,6 +9875,7 @@
     VendorSeverity:
       ghsa: 3
       redhat: 3
+      ubuntu: 2
     CVSS:
       ghsa:
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
@@ -9886,6 +9889,7 @@
     - https://github.com/FasterXML/jackson-databind
     - https://github.com/FasterXML/jackson-databind/commit/2870d1d6dc1b7e1c07ee11dd5b04ab71cddbb577
     - https://github.com/FasterXML/jackson-databind/issues/6203
+    - https://github.com/FasterXML/jackson-databind/pull/6203
     - https://github.com/FasterXML/jackson-databind/releases/tag/jackson-databind-2.18.11
     - https://github.com/FasterXML/jackson-databind/releases/tag/jackson-databind-2.21.7
     - https://github.com/FasterXML/jackson-databind/releases/tag/jackson-databind-2.22.3
@@ -10531,7 +10535,7 @@
       amazon: 3
       bitnami: 2
       oracle-oval: 3
-      photon: 4
+      photon: 2
       redhat: 3
       rocky: 3
     CVSS:
@@ -10686,7 +10690,7 @@
       amazon: 3
       bitnami: 2
       oracle-oval: 3
-      photon: 3
+      photon: 2
       redhat: 3
       rocky: 3
     CVSS:
