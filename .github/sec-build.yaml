@@ -905,6 +905,7 @@
     - https://access.redhat.com/errata/RHSA-2026:72475
     - https://access.redhat.com/errata/RHSA-2026:72476
     - https://access.redhat.com/errata/RHSA-2026:72502
+    - https://access.redhat.com/errata/RHSA-2026:81201
     - https://access.redhat.com/security/cve/CVE-2026-13757
     - https://bugzilla.redhat.com/2494556
     - https://bugzilla.redhat.com/show_bug.cgi?id=2494556
@@ -919,7 +920,7 @@
     - https://ubuntu.com/security/notices/USN-8687-1
     - https://www.cve.org/CVERecord?id=CVE-2026-13757
     PublishedDate: '2026-06-29T19:16:40.907Z'
-    LastModifiedDate: '2026-09-29T01:16:45.04Z'
+    LastModifiedDate: '2026-10-12T21:17:14.327Z'
   - VulnerabilityID: CVE-2026-86145
     PkgID: libpcre2-8-0@10.46-1build1
     PkgName: libpcre2-8-0
