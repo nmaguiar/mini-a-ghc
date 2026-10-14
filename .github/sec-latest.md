@@ -863,20 +863,35 @@
 │                       │       ├ CweIDs           ─ [0]: CWE-122 
 │                       │       ├ VendorSeverity   ╭ alma  : 2 
 │                       │       │                  ├ redhat: 2 
+│                       │       │                  ├ rocky : 2 
 │                       │       │                  ╰ ubuntu: 2 
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:L/I:
 │                       │       │                           │           H/A:H 
 │                       │       │                           ╰ V3Score : 6.8 
-│                       │       ├ References       ╭ [0]: https://access.redhat.com/errata/RHSA-2026:76781 
-│                       │       │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2026-19499 
-│                       │       │                  ├ [2]: https://errata.almalinux.org/10/ALSA-2026-76781.html 
-│                       │       │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2026-19499 
-│                       │       │                  ├ [4]: https://sourceware.org/bugzilla/show_bug.cgi?id=34510 
-│                       │       │                  ├ [5]: https://sourceware.org/git/?p=glibc.git;a=blob_plain;
-│                       │       │                  │      f=advisories/GLIBC-SA-2026-0017 
-│                       │       │                  ├ [6]: https://ubuntu.com/security/notices/USN-8737-1 
-│                       │       │                  ├ [7]: https://ubuntu.com/security/notices/USN-8737-2 
-│                       │       │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2026-19499 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:76781 
+│                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2026-19499 
+│                       │       │                  ├ [2] : https://bugzilla.redhat.com/show_bug.cgi?id=2513603 
+│                       │       │                  ├ [3] : https://bugzilla.redhat.com/show_bug.cgi?id=2513608 
+│                       │       │                  ├ [4] : https://bugzilla.redhat.com/show_bug.cgi?id=2523249 
+│                       │       │                  ├ [5] : https://bugzilla.redhat.com/show_bug.cgi?id=2523258 
+│                       │       │                  ├ [6] : https://creativecommons.org/licenses/by/4.0/ 
+│                       │       │                  ├ [7] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
+│                       │       │                  │       026-19499 
+│                       │       │                  ├ [8] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
+│                       │       │                  │       026-19542 
+│                       │       │                  ├ [9] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
+│                       │       │                  │       026-6368 
+│                       │       │                  ├ [10]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
+│                       │       │                  │       026-6791 
+│                       │       │                  ├ [11]: https://errata.almalinux.org/10/ALSA-2026-76781.html 
+│                       │       │                  ├ [12]: https://errata.rockylinux.org/RLSA-2026:76781 
+│                       │       │                  ├ [13]: https://nvd.nist.gov/vuln/detail/CVE-2026-19499 
+│                       │       │                  ├ [14]: https://sourceware.org/bugzilla/show_bug.cgi?id=34510 
+│                       │       │                  ├ [15]: https://sourceware.org/git/?p=glibc.git;a=blob_plain
+│                       │       │                  │       ;f=advisories/GLIBC-SA-2026-0017 
+│                       │       │                  ├ [16]: https://ubuntu.com/security/notices/USN-8737-1 
+│                       │       │                  ├ [17]: https://ubuntu.com/security/notices/USN-8737-2 
+│                       │       │                  ╰ [18]: https://www.cve.org/CVERecord?id=CVE-2026-19499 
 │                       │       ├ PublishedDate   : 2026-09-14T18:17:45.753Z 
 │                       │       ╰ LastModifiedDate: 2026-09-18T18:17:47.257Z 
 │                       ├ [16]  ╭ VulnerabilityID : CVE-2026-19542 
@@ -1481,20 +1496,35 @@
 │                       │       ├ CweIDs           ─ [0]: CWE-122 
 │                       │       ├ VendorSeverity   ╭ alma  : 2 
 │                       │       │                  ├ redhat: 2 
+│                       │       │                  ├ rocky : 2 
 │                       │       │                  ╰ ubuntu: 2 
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:L/I:
 │                       │       │                           │           H/A:H 
 │                       │       │                           ╰ V3Score : 6.8 
-│                       │       ├ References       ╭ [0]: https://access.redhat.com/errata/RHSA-2026:76781 
-│                       │       │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2026-19499 
-│                       │       │                  ├ [2]: https://errata.almalinux.org/10/ALSA-2026-76781.html 
-│                       │       │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2026-19499 
-│                       │       │                  ├ [4]: https://sourceware.org/bugzilla/show_bug.cgi?id=34510 
-│                       │       │                  ├ [5]: https://sourceware.org/git/?p=glibc.git;a=blob_plain;
-│                       │       │                  │      f=advisories/GLIBC-SA-2026-0017 
-│                       │       │                  ├ [6]: https://ubuntu.com/security/notices/USN-8737-1 
-│                       │       │                  ├ [7]: https://ubuntu.com/security/notices/USN-8737-2 
-│                       │       │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2026-19499 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:76781 
+│                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2026-19499 
+│                       │       │                  ├ [2] : https://bugzilla.redhat.com/show_bug.cgi?id=2513603 
+│                       │       │                  ├ [3] : https://bugzilla.redhat.com/show_bug.cgi?id=2513608 
+│                       │       │                  ├ [4] : https://bugzilla.redhat.com/show_bug.cgi?id=2523249 
+│                       │       │                  ├ [5] : https://bugzilla.redhat.com/show_bug.cgi?id=2523258 
+│                       │       │                  ├ [6] : https://creativecommons.org/licenses/by/4.0/ 
+│                       │       │                  ├ [7] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
+│                       │       │                  │       026-19499 
+│                       │       │                  ├ [8] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
+│                       │       │                  │       026-19542 
+│                       │       │                  ├ [9] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
+│                       │       │                  │       026-6368 
+│                       │       │                  ├ [10]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
+│                       │       │                  │       026-6791 
+│                       │       │                  ├ [11]: https://errata.almalinux.org/10/ALSA-2026-76781.html 
+│                       │       │                  ├ [12]: https://errata.rockylinux.org/RLSA-2026:76781 
+│                       │       │                  ├ [13]: https://nvd.nist.gov/vuln/detail/CVE-2026-19499 
+│                       │       │                  ├ [14]: https://sourceware.org/bugzilla/show_bug.cgi?id=34510 
+│                       │       │                  ├ [15]: https://sourceware.org/git/?p=glibc.git;a=blob_plain
+│                       │       │                  │       ;f=advisories/GLIBC-SA-2026-0017 
+│                       │       │                  ├ [16]: https://ubuntu.com/security/notices/USN-8737-1 
+│                       │       │                  ├ [17]: https://ubuntu.com/security/notices/USN-8737-2 
+│                       │       │                  ╰ [18]: https://www.cve.org/CVERecord?id=CVE-2026-19499 
 │                       │       ├ PublishedDate   : 2026-09-14T18:17:45.753Z 
 │                       │       ╰ LastModifiedDate: 2026-09-18T18:17:47.257Z 
 │                       ├ [24]  ╭ VulnerabilityID : CVE-2026-19542 
@@ -2099,20 +2129,35 @@
 │                       │       ├ CweIDs           ─ [0]: CWE-122 
 │                       │       ├ VendorSeverity   ╭ alma  : 2 
 │                       │       │                  ├ redhat: 2 
+│                       │       │                  ├ rocky : 2 
 │                       │       │                  ╰ ubuntu: 2 
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:L/I:
 │                       │       │                           │           H/A:H 
 │                       │       │                           ╰ V3Score : 6.8 
-│                       │       ├ References       ╭ [0]: https://access.redhat.com/errata/RHSA-2026:76781 
-│                       │       │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2026-19499 
-│                       │       │                  ├ [2]: https://errata.almalinux.org/10/ALSA-2026-76781.html 
-│                       │       │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2026-19499 
-│                       │       │                  ├ [4]: https://sourceware.org/bugzilla/show_bug.cgi?id=34510 
-│                       │       │                  ├ [5]: https://sourceware.org/git/?p=glibc.git;a=blob_plain;
-│                       │       │                  │      f=advisories/GLIBC-SA-2026-0017 
-│                       │       │                  ├ [6]: https://ubuntu.com/security/notices/USN-8737-1 
-│                       │       │                  ├ [7]: https://ubuntu.com/security/notices/USN-8737-2 
-│                       │       │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2026-19499 
+│                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:76781 
+│                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2026-19499 
+│                       │       │                  ├ [2] : https://bugzilla.redhat.com/show_bug.cgi?id=2513603 
+│                       │       │                  ├ [3] : https://bugzilla.redhat.com/show_bug.cgi?id=2513608 
+│                       │       │                  ├ [4] : https://bugzilla.redhat.com/show_bug.cgi?id=2523249 
+│                       │       │                  ├ [5] : https://bugzilla.redhat.com/show_bug.cgi?id=2523258 
+│                       │       │                  ├ [6] : https://creativecommons.org/licenses/by/4.0/ 
+│                       │       │                  ├ [7] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
+│                       │       │                  │       026-19499 
+│                       │       │                  ├ [8] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
+│                       │       │                  │       026-19542 
+│                       │       │                  ├ [9] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
+│                       │       │                  │       026-6368 
+│                       │       │                  ├ [10]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
+│                       │       │                  │       026-6791 
+│                       │       │                  ├ [11]: https://errata.almalinux.org/10/ALSA-2026-76781.html 
+│                       │       │                  ├ [12]: https://errata.rockylinux.org/RLSA-2026:76781 
+│                       │       │                  ├ [13]: https://nvd.nist.gov/vuln/detail/CVE-2026-19499 
+│                       │       │                  ├ [14]: https://sourceware.org/bugzilla/show_bug.cgi?id=34510 
+│                       │       │                  ├ [15]: https://sourceware.org/git/?p=glibc.git;a=blob_plain
+│                       │       │                  │       ;f=advisories/GLIBC-SA-2026-0017 
+│                       │       │                  ├ [16]: https://ubuntu.com/security/notices/USN-8737-1 
+│                       │       │                  ├ [17]: https://ubuntu.com/security/notices/USN-8737-2 
+│                       │       │                  ╰ [18]: https://www.cve.org/CVERecord?id=CVE-2026-19499 
 │                       │       ├ PublishedDate   : 2026-09-14T18:17:45.753Z 
 │                       │       ╰ LastModifiedDate: 2026-09-18T18:17:47.257Z 
 │                       ├ [32]  ╭ VulnerabilityID : CVE-2026-19542 
@@ -4477,22 +4522,23 @@
 │                       │       │                  ├ [12]: https://access.redhat.com/errata/RHSA-2026:72475 
 │                       │       │                  ├ [13]: https://access.redhat.com/errata/RHSA-2026:72476 
 │                       │       │                  ├ [14]: https://access.redhat.com/errata/RHSA-2026:72502 
-│                       │       │                  ├ [15]: https://access.redhat.com/security/cve/CVE-2026-13757 
-│                       │       │                  ├ [16]: https://bugzilla.redhat.com/2494556 
-│                       │       │                  ├ [17]: https://bugzilla.redhat.com/show_bug.cgi?id=2494556 
-│                       │       │                  ├ [18]: https://creativecommons.org/licenses/by/4.0/ 
-│                       │       │                  ├ [19]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
+│                       │       │                  ├ [15]: https://access.redhat.com/errata/RHSA-2026:81201 
+│                       │       │                  ├ [16]: https://access.redhat.com/security/cve/CVE-2026-13757 
+│                       │       │                  ├ [17]: https://bugzilla.redhat.com/2494556 
+│                       │       │                  ├ [18]: https://bugzilla.redhat.com/show_bug.cgi?id=2494556 
+│                       │       │                  ├ [19]: https://creativecommons.org/licenses/by/4.0/ 
+│                       │       │                  ├ [20]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
 │                       │       │                  │       026-13757 
-│                       │       │                  ├ [20]: https://errata.almalinux.org/9/ALSA-2026-49667.html 
-│                       │       │                  ├ [21]: https://errata.rockylinux.org/RLSA-2026:49667 
-│                       │       │                  ├ [22]: https://github.com/advisories/GHSA-p2wm-69qx-x25w 
-│                       │       │                  ├ [23]: https://linux.oracle.com/cve/CVE-2026-13757.html 
-│                       │       │                  ├ [24]: https://linux.oracle.com/errata/ELSA-2026-49668.html 
-│                       │       │                  ├ [25]: https://nvd.nist.gov/vuln/detail/CVE-2026-13757 
-│                       │       │                  ├ [26]: https://ubuntu.com/security/notices/USN-8687-1 
-│                       │       │                  ╰ [27]: https://www.cve.org/CVERecord?id=CVE-2026-13757 
+│                       │       │                  ├ [21]: https://errata.almalinux.org/9/ALSA-2026-49667.html 
+│                       │       │                  ├ [22]: https://errata.rockylinux.org/RLSA-2026:49667 
+│                       │       │                  ├ [23]: https://github.com/advisories/GHSA-p2wm-69qx-x25w 
+│                       │       │                  ├ [24]: https://linux.oracle.com/cve/CVE-2026-13757.html 
+│                       │       │                  ├ [25]: https://linux.oracle.com/errata/ELSA-2026-49668.html 
+│                       │       │                  ├ [26]: https://nvd.nist.gov/vuln/detail/CVE-2026-13757 
+│                       │       │                  ├ [27]: https://ubuntu.com/security/notices/USN-8687-1 
+│                       │       │                  ╰ [28]: https://www.cve.org/CVERecord?id=CVE-2026-13757 
 │                       │       ├ PublishedDate   : 2026-06-29T19:16:40.907Z 
-│                       │       ╰ LastModifiedDate: 2026-09-29T01:16:45.04Z 
+│                       │       ╰ LastModifiedDate: 2026-10-12T21:17:14.327Z 
 │                       ├ [74]  ╭ VulnerabilityID : CVE-2026-86145 
 │                       │       ├ PkgID           : libpcre2-8-0@10.46-1build1 
 │                       │       ├ PkgName         : libpcre2-8-0 
@@ -5229,8 +5275,9 @@
 │                       │       │                   The affected code is outside the FIPS module boundary. 
 │                       │       ├ Severity        : HIGH 
 │                       │       ├ CweIDs           ─ [0]: CWE-125 
-│                       │       ├ VendorSeverity   ╭ alma       : 3 
-│                       │       │                  ├ oracle-oval: 3 
+│                       │       ├ VendorSeverity   ╭ alma       : 2 
+│                       │       │                  ├ amazon     : 3 
+│                       │       │                  ├ oracle-oval: 2 
 │                       │       │                  ├ redhat     : 3 
 │                       │       │                  ├ rocky      : 3 
 │                       │       │                  ╰ ubuntu     : 3 
@@ -5238,31 +5285,33 @@
 │                       │       │                           │           N/A:H 
 │                       │       │                           ╰ V3Score : 7.4 
 │                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:77396 
-│                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2026-84782 
-│                       │       │                  ├ [2] : https://bugzilla.redhat.com/2537080 
-│                       │       │                  ├ [3] : https://bugzilla.redhat.com/show_bug.cgi?id=2537080 
-│                       │       │                  ├ [4] : https://creativecommons.org/licenses/by/4.0/ 
-│                       │       │                  ├ [5] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
+│                       │       │                  ├ [1] : https://access.redhat.com/errata/RHSA-2026:80514 
+│                       │       │                  ├ [2] : https://access.redhat.com/security/cve/CVE-2026-84782 
+│                       │       │                  ├ [3] : https://bugzilla.redhat.com/2517560 
+│                       │       │                  ├ [4] : https://bugzilla.redhat.com/2537080 
+│                       │       │                  ├ [5] : https://bugzilla.redhat.com/show_bug.cgi?id=2537080 
+│                       │       │                  ├ [6] : https://creativecommons.org/licenses/by/4.0/ 
+│                       │       │                  ├ [7] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
 │                       │       │                  │       026-84782 
-│                       │       │                  ├ [6] : https://errata.almalinux.org/9/ALSA-2026-77396.html 
-│                       │       │                  ├ [7] : https://errata.rockylinux.org/RLSA-2026:77396 
-│                       │       │                  ├ [8] : https://github.com/openssl/openssl/commit/906cf0ef1c
+│                       │       │                  ├ [8] : https://errata.almalinux.org/9/ALSA-2026-80514.html 
+│                       │       │                  ├ [9] : https://errata.rockylinux.org/RLSA-2026:77396 
+│                       │       │                  ├ [10]: https://github.com/openssl/openssl/commit/906cf0ef1c
 │                       │       │                  │       85ca40ce69163e9086d6d3fe292943 
-│                       │       │                  ├ [9] : https://github.com/openssl/openssl/commit/9f6b34422a
+│                       │       │                  ├ [11]: https://github.com/openssl/openssl/commit/9f6b34422a
 │                       │       │                  │       f7eb5dac61322e33dac1ae989fa628 
-│                       │       │                  ├ [10]: https://github.com/openssl/openssl/commit/a383dafdd7
+│                       │       │                  ├ [12]: https://github.com/openssl/openssl/commit/a383dafdd7
 │                       │       │                  │       54eb5b22bf45e37e1bff9d07277a58 
-│                       │       │                  ├ [11]: https://github.com/openssl/openssl/commit/d951e02ede
+│                       │       │                  ├ [13]: https://github.com/openssl/openssl/commit/d951e02ede
 │                       │       │                  │       8f6a6ff8150546db44b34f0518192c 
-│                       │       │                  ├ [12]: https://linux.oracle.com/cve/CVE-2026-84782.html 
-│                       │       │                  ├ [13]: https://linux.oracle.com/errata/ELSA-2026-77396.html 
-│                       │       │                  ├ [14]: https://nvd.nist.gov/vuln/detail/CVE-2026-84782 
-│                       │       │                  ├ [15]: https://openssl-library.org/news/secadv/20260929.txt 
-│                       │       │                  ├ [16]: https://openssl-library.org/news/vulnerabilities/#CV
+│                       │       │                  ├ [14]: https://linux.oracle.com/cve/CVE-2026-84782.html 
+│                       │       │                  ├ [15]: https://linux.oracle.com/errata/ELSA-2026-80514.html 
+│                       │       │                  ├ [16]: https://nvd.nist.gov/vuln/detail/CVE-2026-84782 
+│                       │       │                  ├ [17]: https://openssl-library.org/news/secadv/20260929.txt 
+│                       │       │                  ├ [18]: https://openssl-library.org/news/vulnerabilities/#CV
 │                       │       │                  │       E-2026-84782 
-│                       │       │                  ├ [17]: https://ubuntu.com/security/notices/USN-8847-1 
-│                       │       │                  ├ [18]: https://ubuntu.com/security/notices/USN-8847-2 
-│                       │       │                  ╰ [19]: https://www.cve.org/CVERecord?id=CVE-2026-84782 
+│                       │       │                  ├ [19]: https://ubuntu.com/security/notices/USN-8847-1 
+│                       │       │                  ├ [20]: https://ubuntu.com/security/notices/USN-8847-2 
+│                       │       │                  ╰ [21]: https://www.cve.org/CVERecord?id=CVE-2026-84782 
 │                       │       ├ PublishedDate   : 2026-09-29T16:17:12.5Z 
 │                       │       ╰ LastModifiedDate: 2026-10-08T01:20:56.003Z 
 │                       ├ [85]  ╭ VulnerabilityID : CVE-2026-35189 
@@ -5322,7 +5371,8 @@
 │                       │       │                   The affected code is outside the FIPS module boundary. 
 │                       │       ├ Severity        : LOW 
 │                       │       ├ CweIDs           ─ [0]: CWE-770 
-│                       │       ├ VendorSeverity   ╭ redhat: 1 
+│                       │       ├ VendorSeverity   ╭ amazon: 3 
+│                       │       │                  ├ redhat: 1 
 │                       │       │                  ╰ ubuntu: 1 
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:
 │                       │       │                           │           N/A:L 
@@ -5414,7 +5464,8 @@
 │                       │       │                   are affected by this CVE. 
 │                       │       ├ Severity        : LOW 
 │                       │       ├ CweIDs           ─ [0]: CWE-440 
-│                       │       ├ VendorSeverity   ╭ redhat: 1 
+│                       │       ├ VendorSeverity   ╭ amazon: 3 
+│                       │       │                  ├ redhat: 1 
 │                       │       │                  ╰ ubuntu: 1 
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:
 │                       │       │                           │           N/A:L 
@@ -5488,7 +5539,8 @@
 │                       │       │                   the OpenSSL FIPS module boundary. 
 │                       │       ├ Severity        : LOW 
 │                       │       ├ CweIDs           ─ [0]: CWE-407 
-│                       │       ├ VendorSeverity   ╭ redhat: 2 
+│                       │       ├ VendorSeverity   ╭ amazon: 3 
+│                       │       │                  ├ redhat: 2 
 │                       │       │                  ╰ ubuntu: 1 
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
 │                       │       │                           │           N/A:L 
@@ -5573,7 +5625,8 @@
 │                       │       │                   affected code path. 
 │                       │       ├ Severity        : LOW 
 │                       │       ├ CweIDs           ─ [0]: CWE-208 
-│                       │       ├ VendorSeverity   ╭ redhat: 2 
+│                       │       ├ VendorSeverity   ╭ amazon: 3 
+│                       │       │                  ├ redhat: 2 
 │                       │       │                  ╰ ubuntu: 1 
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:
 │                       │       │                           │           N/A:N 
@@ -5670,7 +5723,8 @@
 │                       │       │                   the OpenSSL FIPS module boundary. 
 │                       │       ├ Severity        : LOW 
 │                       │       ├ CweIDs           ─ [0]: CWE-770 
-│                       │       ├ VendorSeverity   ╭ redhat: 2 
+│                       │       ├ VendorSeverity   ╭ amazon: 3 
+│                       │       │                  ├ redhat: 2 
 │                       │       │                  ╰ ubuntu: 1 
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
 │                       │       │                           │           N/A:L 
@@ -5880,7 +5934,8 @@
 │                       │       │                   the OpenSSL FIPS module boundary. 
 │                       │       ├ Severity        : LOW 
 │                       │       ├ CweIDs           ─ [0]: CWE-787 
-│                       │       ├ VendorSeverity   ╭ redhat: 2 
+│                       │       ├ VendorSeverity   ╭ amazon: 3 
+│                       │       │                  ├ redhat: 2 
 │                       │       │                  ╰ ubuntu: 1 
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:
 │                       │       │                           │           N/A:H 
@@ -5978,7 +6033,8 @@
 │                       │       │                   the OpenSSL FIPS module boundary. 
 │                       │       ├ Severity        : LOW 
 │                       │       ├ CweIDs           ─ [0]: CWE-770 
-│                       │       ├ VendorSeverity   ╭ redhat: 2 
+│                       │       ├ VendorSeverity   ╭ amazon: 3 
+│                       │       │                  ├ redhat: 2 
 │                       │       │                  ╰ ubuntu: 1 
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
 │                       │       │                           │           N/A:L 
@@ -6070,7 +6126,8 @@
 │                       │       │                   boundary. 
 │                       │       ├ Severity        : LOW 
 │                       │       ├ CweIDs           ─ [0]: CWE-476 
-│                       │       ├ VendorSeverity   ╭ redhat: 2 
+│                       │       ├ VendorSeverity   ╭ amazon: 3 
+│                       │       │                  ├ redhat: 2 
 │                       │       │                  ╰ ubuntu: 1 
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:
 │                       │       │                           │           N/A:H 
@@ -6162,7 +6219,8 @@
 │                       │       │                   The affected code is outside the FIPS module boundary. 
 │                       │       ├ Severity        : LOW 
 │                       │       ├ CweIDs           ─ [0]: CWE-1284 
-│                       │       ├ VendorSeverity   ╭ redhat: 2 
+│                       │       ├ VendorSeverity   ╭ amazon: 3 
+│                       │       │                  ├ redhat: 2 
 │                       │       │                  ╰ ubuntu: 1 
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
 │                       │       │                           │           N/A:L 
@@ -6340,7 +6398,8 @@
 │                       │       │                   the OpenSSL FIPS module boundary. 
 │                       │       ├ Severity        : LOW 
 │                       │       ├ CweIDs           ─ [0]: CWE-770 
-│                       │       ├ VendorSeverity   ╭ redhat: 2 
+│                       │       ├ VendorSeverity   ╭ amazon: 3 
+│                       │       │                  ├ redhat: 2 
 │                       │       │                  ╰ ubuntu: 1 
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
 │                       │       │                           │           N/A:L 
@@ -6605,8 +6664,9 @@
 │                       │       │                   The affected code is outside the FIPS module boundary. 
 │                       │       ├ Severity        : HIGH 
 │                       │       ├ CweIDs           ─ [0]: CWE-125 
-│                       │       ├ VendorSeverity   ╭ alma       : 3 
-│                       │       │                  ├ oracle-oval: 3 
+│                       │       ├ VendorSeverity   ╭ alma       : 2 
+│                       │       │                  ├ amazon     : 3 
+│                       │       │                  ├ oracle-oval: 2 
 │                       │       │                  ├ redhat     : 3 
 │                       │       │                  ├ rocky      : 3 
 │                       │       │                  ╰ ubuntu     : 3 
@@ -6614,31 +6674,33 @@
 │                       │       │                           │           N/A:H 
 │                       │       │                           ╰ V3Score : 7.4 
 │                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:77396 
-│                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2026-84782 
-│                       │       │                  ├ [2] : https://bugzilla.redhat.com/2537080 
-│                       │       │                  ├ [3] : https://bugzilla.redhat.com/show_bug.cgi?id=2537080 
-│                       │       │                  ├ [4] : https://creativecommons.org/licenses/by/4.0/ 
-│                       │       │                  ├ [5] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
+│                       │       │                  ├ [1] : https://access.redhat.com/errata/RHSA-2026:80514 
+│                       │       │                  ├ [2] : https://access.redhat.com/security/cve/CVE-2026-84782 
+│                       │       │                  ├ [3] : https://bugzilla.redhat.com/2517560 
+│                       │       │                  ├ [4] : https://bugzilla.redhat.com/2537080 
+│                       │       │                  ├ [5] : https://bugzilla.redhat.com/show_bug.cgi?id=2537080 
+│                       │       │                  ├ [6] : https://creativecommons.org/licenses/by/4.0/ 
+│                       │       │                  ├ [7] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
 │                       │       │                  │       026-84782 
-│                       │       │                  ├ [6] : https://errata.almalinux.org/9/ALSA-2026-77396.html 
-│                       │       │                  ├ [7] : https://errata.rockylinux.org/RLSA-2026:77396 
-│                       │       │                  ├ [8] : https://github.com/openssl/openssl/commit/906cf0ef1c
+│                       │       │                  ├ [8] : https://errata.almalinux.org/9/ALSA-2026-80514.html 
+│                       │       │                  ├ [9] : https://errata.rockylinux.org/RLSA-2026:77396 
+│                       │       │                  ├ [10]: https://github.com/openssl/openssl/commit/906cf0ef1c
 │                       │       │                  │       85ca40ce69163e9086d6d3fe292943 
-│                       │       │                  ├ [9] : https://github.com/openssl/openssl/commit/9f6b34422a
+│                       │       │                  ├ [11]: https://github.com/openssl/openssl/commit/9f6b34422a
 │                       │       │                  │       f7eb5dac61322e33dac1ae989fa628 
-│                       │       │                  ├ [10]: https://github.com/openssl/openssl/commit/a383dafdd7
+│                       │       │                  ├ [12]: https://github.com/openssl/openssl/commit/a383dafdd7
 │                       │       │                  │       54eb5b22bf45e37e1bff9d07277a58 
-│                       │       │                  ├ [11]: https://github.com/openssl/openssl/commit/d951e02ede
+│                       │       │                  ├ [13]: https://github.com/openssl/openssl/commit/d951e02ede
 │                       │       │                  │       8f6a6ff8150546db44b34f0518192c 
-│                       │       │                  ├ [12]: https://linux.oracle.com/cve/CVE-2026-84782.html 
-│                       │       │                  ├ [13]: https://linux.oracle.com/errata/ELSA-2026-77396.html 
-│                       │       │                  ├ [14]: https://nvd.nist.gov/vuln/detail/CVE-2026-84782 
-│                       │       │                  ├ [15]: https://openssl-library.org/news/secadv/20260929.txt 
-│                       │       │                  ├ [16]: https://openssl-library.org/news/vulnerabilities/#CV
+│                       │       │                  ├ [14]: https://linux.oracle.com/cve/CVE-2026-84782.html 
+│                       │       │                  ├ [15]: https://linux.oracle.com/errata/ELSA-2026-80514.html 
+│                       │       │                  ├ [16]: https://nvd.nist.gov/vuln/detail/CVE-2026-84782 
+│                       │       │                  ├ [17]: https://openssl-library.org/news/secadv/20260929.txt 
+│                       │       │                  ├ [18]: https://openssl-library.org/news/vulnerabilities/#CV
 │                       │       │                  │       E-2026-84782 
-│                       │       │                  ├ [17]: https://ubuntu.com/security/notices/USN-8847-1 
-│                       │       │                  ├ [18]: https://ubuntu.com/security/notices/USN-8847-2 
-│                       │       │                  ╰ [19]: https://www.cve.org/CVERecord?id=CVE-2026-84782 
+│                       │       │                  ├ [19]: https://ubuntu.com/security/notices/USN-8847-1 
+│                       │       │                  ├ [20]: https://ubuntu.com/security/notices/USN-8847-2 
+│                       │       │                  ╰ [21]: https://www.cve.org/CVERecord?id=CVE-2026-84782 
 │                       │       ├ PublishedDate   : 2026-09-29T16:17:12.5Z 
 │                       │       ╰ LastModifiedDate: 2026-10-08T01:20:56.003Z 
 │                       ├ [101] ╭ VulnerabilityID : CVE-2026-35189 
@@ -6698,7 +6760,8 @@
 │                       │       │                   The affected code is outside the FIPS module boundary. 
 │                       │       ├ Severity        : LOW 
 │                       │       ├ CweIDs           ─ [0]: CWE-770 
-│                       │       ├ VendorSeverity   ╭ redhat: 1 
+│                       │       ├ VendorSeverity   ╭ amazon: 3 
+│                       │       │                  ├ redhat: 1 
 │                       │       │                  ╰ ubuntu: 1 
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:
 │                       │       │                           │           N/A:L 
@@ -6790,7 +6853,8 @@
 │                       │       │                   are affected by this CVE. 
 │                       │       ├ Severity        : LOW 
 │                       │       ├ CweIDs           ─ [0]: CWE-440 
-│                       │       ├ VendorSeverity   ╭ redhat: 1 
+│                       │       ├ VendorSeverity   ╭ amazon: 3 
+│                       │       │                  ├ redhat: 1 
 │                       │       │                  ╰ ubuntu: 1 
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:
 │                       │       │                           │           N/A:L 
@@ -6864,7 +6928,8 @@
 │                       │       │                   the OpenSSL FIPS module boundary. 
 │                       │       ├ Severity        : LOW 
 │                       │       ├ CweIDs           ─ [0]: CWE-407 
-│                       │       ├ VendorSeverity   ╭ redhat: 2 
+│                       │       ├ VendorSeverity   ╭ amazon: 3 
+│                       │       │                  ├ redhat: 2 
 │                       │       │                  ╰ ubuntu: 1 
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
 │                       │       │                           │           N/A:L 
@@ -6949,7 +7014,8 @@
 │                       │       │                   affected code path. 
 │                       │       ├ Severity        : LOW 
 │                       │       ├ CweIDs           ─ [0]: CWE-208 
-│                       │       ├ VendorSeverity   ╭ redhat: 2 
+│                       │       ├ VendorSeverity   ╭ amazon: 3 
+│                       │       │                  ├ redhat: 2 
 │                       │       │                  ╰ ubuntu: 1 
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:
 │                       │       │                           │           N/A:N 
@@ -7046,7 +7112,8 @@
 │                       │       │                   the OpenSSL FIPS module boundary. 
 │                       │       ├ Severity        : LOW 
 │                       │       ├ CweIDs           ─ [0]: CWE-770 
-│                       │       ├ VendorSeverity   ╭ redhat: 2 
+│                       │       ├ VendorSeverity   ╭ amazon: 3 
+│                       │       │                  ├ redhat: 2 
 │                       │       │                  ╰ ubuntu: 1 
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
 │                       │       │                           │           N/A:L 
@@ -7256,7 +7323,8 @@
 │                       │       │                   the OpenSSL FIPS module boundary. 
 │                       │       ├ Severity        : LOW 
 │                       │       ├ CweIDs           ─ [0]: CWE-787 
-│                       │       ├ VendorSeverity   ╭ redhat: 2 
+│                       │       ├ VendorSeverity   ╭ amazon: 3 
+│                       │       │                  ├ redhat: 2 
 │                       │       │                  ╰ ubuntu: 1 
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:
 │                       │       │                           │           N/A:H 
@@ -7354,7 +7422,8 @@
 │                       │       │                   the OpenSSL FIPS module boundary. 
 │                       │       ├ Severity        : LOW 
 │                       │       ├ CweIDs           ─ [0]: CWE-770 
-│                       │       ├ VendorSeverity   ╭ redhat: 2 
+│                       │       ├ VendorSeverity   ╭ amazon: 3 
+│                       │       │                  ├ redhat: 2 
 │                       │       │                  ╰ ubuntu: 1 
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
 │                       │       │                           │           N/A:L 
@@ -7446,7 +7515,8 @@
 │                       │       │                   boundary. 
 │                       │       ├ Severity        : LOW 
 │                       │       ├ CweIDs           ─ [0]: CWE-476 
-│                       │       ├ VendorSeverity   ╭ redhat: 2 
+│                       │       ├ VendorSeverity   ╭ amazon: 3 
+│                       │       │                  ├ redhat: 2 
 │                       │       │                  ╰ ubuntu: 1 
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:
 │                       │       │                           │           N/A:H 
@@ -7538,7 +7608,8 @@
 │                       │       │                   The affected code is outside the FIPS module boundary. 
 │                       │       ├ Severity        : LOW 
 │                       │       ├ CweIDs           ─ [0]: CWE-1284 
-│                       │       ├ VendorSeverity   ╭ redhat: 2 
+│                       │       ├ VendorSeverity   ╭ amazon: 3 
+│                       │       │                  ├ redhat: 2 
 │                       │       │                  ╰ ubuntu: 1 
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
 │                       │       │                           │           N/A:L 
@@ -7716,7 +7787,8 @@
 │                       │       │                   the OpenSSL FIPS module boundary. 
 │                       │       ├ Severity        : LOW 
 │                       │       ├ CweIDs           ─ [0]: CWE-770 
-│                       │       ├ VendorSeverity   ╭ redhat: 2 
+│                       │       ├ VendorSeverity   ╭ amazon: 3 
+│                       │       │                  ├ redhat: 2 
 │                       │       │                  ╰ ubuntu: 1 
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
 │                       │       │                           │           N/A:L 
@@ -7829,8 +7901,9 @@
 │                       │       │                   The affected code is outside the FIPS module boundary. 
 │                       │       ├ Severity        : HIGH 
 │                       │       ├ CweIDs           ─ [0]: CWE-125 
-│                       │       ├ VendorSeverity   ╭ alma       : 3 
-│                       │       │                  ├ oracle-oval: 3 
+│                       │       ├ VendorSeverity   ╭ alma       : 2 
+│                       │       │                  ├ amazon     : 3 
+│                       │       │                  ├ oracle-oval: 2 
 │                       │       │                  ├ redhat     : 3 
 │                       │       │                  ├ rocky      : 3 
 │                       │       │                  ╰ ubuntu     : 3 
@@ -7838,31 +7911,33 @@
 │                       │       │                           │           N/A:H 
 │                       │       │                           ╰ V3Score : 7.4 
 │                       │       ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:77396 
-│                       │       │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2026-84782 
-│                       │       │                  ├ [2] : https://bugzilla.redhat.com/2537080 
-│                       │       │                  ├ [3] : https://bugzilla.redhat.com/show_bug.cgi?id=2537080 
-│                       │       │                  ├ [4] : https://creativecommons.org/licenses/by/4.0/ 
-│                       │       │                  ├ [5] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
+│                       │       │                  ├ [1] : https://access.redhat.com/errata/RHSA-2026:80514 
+│                       │       │                  ├ [2] : https://access.redhat.com/security/cve/CVE-2026-84782 
+│                       │       │                  ├ [3] : https://bugzilla.redhat.com/2517560 
+│                       │       │                  ├ [4] : https://bugzilla.redhat.com/2537080 
+│                       │       │                  ├ [5] : https://bugzilla.redhat.com/show_bug.cgi?id=2537080 
+│                       │       │                  ├ [6] : https://creativecommons.org/licenses/by/4.0/ 
+│                       │       │                  ├ [7] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2
 │                       │       │                  │       026-84782 
-│                       │       │                  ├ [6] : https://errata.almalinux.org/9/ALSA-2026-77396.html 
-│                       │       │                  ├ [7] : https://errata.rockylinux.org/RLSA-2026:77396 
-│                       │       │                  ├ [8] : https://github.com/openssl/openssl/commit/906cf0ef1c
+│                       │       │                  ├ [8] : https://errata.almalinux.org/9/ALSA-2026-80514.html 
+│                       │       │                  ├ [9] : https://errata.rockylinux.org/RLSA-2026:77396 
+│                       │       │                  ├ [10]: https://github.com/openssl/openssl/commit/906cf0ef1c
 │                       │       │                  │       85ca40ce69163e9086d6d3fe292943 
-│                       │       │                  ├ [9] : https://github.com/openssl/openssl/commit/9f6b34422a
+│                       │       │                  ├ [11]: https://github.com/openssl/openssl/commit/9f6b34422a
 │                       │       │                  │       f7eb5dac61322e33dac1ae989fa628 
-│                       │       │                  ├ [10]: https://github.com/openssl/openssl/commit/a383dafdd7
+│                       │       │                  ├ [12]: https://github.com/openssl/openssl/commit/a383dafdd7
 │                       │       │                  │       54eb5b22bf45e37e1bff9d07277a58 
-│                       │       │                  ├ [11]: https://github.com/openssl/openssl/commit/d951e02ede
+│                       │       │                  ├ [13]: https://github.com/openssl/openssl/commit/d951e02ede
 │                       │       │                  │       8f6a6ff8150546db44b34f0518192c 
-│                       │       │                  ├ [12]: https://linux.oracle.com/cve/CVE-2026-84782.html 
-│                       │       │                  ├ [13]: https://linux.oracle.com/errata/ELSA-2026-77396.html 
-│                       │       │                  ├ [14]: https://nvd.nist.gov/vuln/detail/CVE-2026-84782 
-│                       │       │                  ├ [15]: https://openssl-library.org/news/secadv/20260929.txt 
-│                       │       │                  ├ [16]: https://openssl-library.org/news/vulnerabilities/#CV
+│                       │       │                  ├ [14]: https://linux.oracle.com/cve/CVE-2026-84782.html 
+│                       │       │                  ├ [15]: https://linux.oracle.com/errata/ELSA-2026-80514.html 
+│                       │       │                  ├ [16]: https://nvd.nist.gov/vuln/detail/CVE-2026-84782 
+│                       │       │                  ├ [17]: https://openssl-library.org/news/secadv/20260929.txt 
+│                       │       │                  ├ [18]: https://openssl-library.org/news/vulnerabilities/#CV
 │                       │       │                  │       E-2026-84782 
-│                       │       │                  ├ [17]: https://ubuntu.com/security/notices/USN-8847-1 
-│                       │       │                  ├ [18]: https://ubuntu.com/security/notices/USN-8847-2 
-│                       │       │                  ╰ [19]: https://www.cve.org/CVERecord?id=CVE-2026-84782 
+│                       │       │                  ├ [19]: https://ubuntu.com/security/notices/USN-8847-1 
+│                       │       │                  ├ [20]: https://ubuntu.com/security/notices/USN-8847-2 
+│                       │       │                  ╰ [21]: https://www.cve.org/CVERecord?id=CVE-2026-84782 
 │                       │       ├ PublishedDate   : 2026-09-29T16:17:12.5Z 
 │                       │       ╰ LastModifiedDate: 2026-10-08T01:20:56.003Z 
 │                       ├ [114] ╭ VulnerabilityID : CVE-2026-35189 
@@ -7922,7 +7997,8 @@
 │                       │       │                   The affected code is outside the FIPS module boundary. 
 │                       │       ├ Severity        : LOW 
 │                       │       ├ CweIDs           ─ [0]: CWE-770 
-│                       │       ├ VendorSeverity   ╭ redhat: 1 
+│                       │       ├ VendorSeverity   ╭ amazon: 3 
+│                       │       │                  ├ redhat: 1 
 │                       │       │                  ╰ ubuntu: 1 
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:
 │                       │       │                           │           N/A:L 
@@ -8014,7 +8090,8 @@
 │                       │       │                   are affected by this CVE. 
 │                       │       ├ Severity        : LOW 
 │                       │       ├ CweIDs           ─ [0]: CWE-440 
-│                       │       ├ VendorSeverity   ╭ redhat: 1 
+│                       │       ├ VendorSeverity   ╭ amazon: 3 
+│                       │       │                  ├ redhat: 1 
 │                       │       │                  ╰ ubuntu: 1 
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:
 │                       │       │                           │           N/A:L 
@@ -8088,7 +8165,8 @@
 │                       │       │                   the OpenSSL FIPS module boundary. 
 │                       │       ├ Severity        : LOW 
 │                       │       ├ CweIDs           ─ [0]: CWE-407 
-│                       │       ├ VendorSeverity   ╭ redhat: 2 
+│                       │       ├ VendorSeverity   ╭ amazon: 3 
+│                       │       │                  ├ redhat: 2 
 │                       │       │                  ╰ ubuntu: 1 
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
 │                       │       │                           │           N/A:L 
@@ -8173,7 +8251,8 @@
 │                       │       │                   affected code path. 
 │                       │       ├ Severity        : LOW 
 │                       │       ├ CweIDs           ─ [0]: CWE-208 
-│                       │       ├ VendorSeverity   ╭ redhat: 2 
+│                       │       ├ VendorSeverity   ╭ amazon: 3 
+│                       │       │                  ├ redhat: 2 
 │                       │       │                  ╰ ubuntu: 1 
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:
 │                       │       │                           │           N/A:N 
@@ -8270,7 +8349,8 @@
 │                       │       │                   the OpenSSL FIPS module boundary. 
 │                       │       ├ Severity        : LOW 
 │                       │       ├ CweIDs           ─ [0]: CWE-770 
-│                       │       ├ VendorSeverity   ╭ redhat: 2 
+│                       │       ├ VendorSeverity   ╭ amazon: 3 
+│                       │       │                  ├ redhat: 2 
 │                       │       │                  ╰ ubuntu: 1 
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
 │                       │       │                           │           N/A:L 
@@ -8480,7 +8560,8 @@
 │                       │       │                   the OpenSSL FIPS module boundary. 
 │                       │       ├ Severity        : LOW 
 │                       │       ├ CweIDs           ─ [0]: CWE-787 
-│                       │       ├ VendorSeverity   ╭ redhat: 2 
+│                       │       ├ VendorSeverity   ╭ amazon: 3 
+│                       │       │                  ├ redhat: 2 
 │                       │       │                  ╰ ubuntu: 1 
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:
 │                       │       │                           │           N/A:H 
@@ -8578,7 +8659,8 @@
 │                       │       │                   the OpenSSL FIPS module boundary. 
 │                       │       ├ Severity        : LOW 
 │                       │       ├ CweIDs           ─ [0]: CWE-770 
-│                       │       ├ VendorSeverity   ╭ redhat: 2 
+│                       │       ├ VendorSeverity   ╭ amazon: 3 
+│                       │       │                  ├ redhat: 2 
 │                       │       │                  ╰ ubuntu: 1 
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
 │                       │       │                           │           N/A:L 
@@ -8670,7 +8752,8 @@
 │                       │       │                   boundary. 
 │                       │       ├ Severity        : LOW 
 │                       │       ├ CweIDs           ─ [0]: CWE-476 
-│                       │       ├ VendorSeverity   ╭ redhat: 2 
+│                       │       ├ VendorSeverity   ╭ amazon: 3 
+│                       │       │                  ├ redhat: 2 
 │                       │       │                  ╰ ubuntu: 1 
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:
 │                       │       │                           │           N/A:H 
@@ -8762,7 +8845,8 @@
 │                       │       │                   The affected code is outside the FIPS module boundary. 
 │                       │       ├ Severity        : LOW 
 │                       │       ├ CweIDs           ─ [0]: CWE-1284 
-│                       │       ├ VendorSeverity   ╭ redhat: 2 
+│                       │       ├ VendorSeverity   ╭ amazon: 3 
+│                       │       │                  ├ redhat: 2 
 │                       │       │                  ╰ ubuntu: 1 
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
 │                       │       │                           │           N/A:L 
@@ -8940,7 +9024,8 @@
 │                       │       │                   the OpenSSL FIPS module boundary. 
 │                       │       ├ Severity        : LOW 
 │                       │       ├ CweIDs           ─ [0]: CWE-770 
-│                       │       ├ VendorSeverity   ╭ redhat: 2 
+│                       │       ├ VendorSeverity   ╭ amazon: 3 
+│                       │       │                  ├ redhat: 2 
 │                       │       │                  ╰ ubuntu: 1 
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
 │                       │       │                           │           N/A:L 
@@ -9129,6 +9214,7 @@
 │                       │       ├ Severity        : MEDIUM 
 │                       │       ├ CweIDs           ─ [0]: CWE-190 
 │                       │       ├ VendorSeverity   ╭ alma       : 2 
+│                       │       │                  ├ amazon     : 2 
 │                       │       │                  ├ azure      : 2 
 │                       │       │                  ├ nvd        : 4 
 │                       │       │                  ├ oracle-oval: 2 
@@ -9334,7 +9420,8 @@
 │                       │       ├ Severity        : MEDIUM 
 │                       │       ├ CweIDs           ╭ [0]: CWE-125 
 │                       │       │                  ╰ [1]: CWE-190 
-│                       │       ├ VendorSeverity   ╭ azure : 3 
+│                       │       ├ VendorSeverity   ╭ amazon: 2 
+│                       │       │                  ├ azure : 3 
 │                       │       │                  ├ nvd   : 3 
 │                       │       │                  ├ photon: 3 
 │                       │       │                  ├ redhat: 2 
@@ -9395,7 +9482,8 @@
 │                       │       │                   with a panic, terminating the deserialization. 
 │                       │       ├ Severity        : MEDIUM 
 │                       │       ├ CweIDs           ─ [0]: CWE-190 
-│                       │       ├ VendorSeverity   ╭ azure : 4 
+│                       │       ├ VendorSeverity   ╭ amazon: 2 
+│                       │       │                  ├ azure : 4 
 │                       │       │                  ├ redhat: 3 
 │                       │       │                  ╰ ubuntu: 2 
 │                       │       ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
@@ -10728,6 +10816,7 @@
 │                       │       ├ Severity        : MEDIUM 
 │                       │       ├ CweIDs           ─ [0]: CWE-863 
 │                       │       ├ VendorSeverity   ╭ alma       : 3 
+│                       │       │                  ├ amazon     : 3 
 │                       │       │                  ├ azure      : 3 
 │                       │       │                  ├ oracle-oval: 3 
 │                       │       │                  ├ redhat     : 3 
@@ -11008,7 +11097,8 @@
 │                       │      ├ Severity        : HIGH 
 │                       │      ├ CweIDs           ╭ [0]: CWE-400 
 │                       │      │                  ╰ [1]: CWE-1333 
-│                       │      ├ VendorSeverity   ╭ ghsa  : 3 
+│                       │      ├ VendorSeverity   ╭ amazon: 3 
+│                       │      │                  ├ ghsa  : 3 
 │                       │      │                  ╰ redhat: 2 
 │                       │      ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N
 │                       │      │                  │        │           /A:H 
@@ -11086,7 +11176,8 @@
 │                       │      ├ Severity        : HIGH 
 │                       │      ├ CweIDs           ╭ [0]: CWE-400 
 │                       │      │                  ╰ [1]: CWE-770 
-│                       │      ├ VendorSeverity   ╭ ghsa  : 3 
+│                       │      ├ VendorSeverity   ╭ amazon: 3 
+│                       │      │                  ├ ghsa  : 3 
 │                       │      │                  ╰ redhat: 3 
 │                       │      ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N
 │                       │      │                  │        │           /A:H 
@@ -11169,7 +11260,8 @@
 │                       │      ├ Severity        : HIGH 
 │                       │      ├ CweIDs           ╭ [0]: CWE-400 
 │                       │      │                  ╰ [1]: CWE-1333 
-│                       │      ├ VendorSeverity   ╭ ghsa  : 3 
+│                       │      ├ VendorSeverity   ╭ amazon: 3 
+│                       │      │                  ├ ghsa  : 3 
 │                       │      │                  ╰ redhat: 2 
 │                       │      ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N
 │                       │      │                  │        │           /A:H 
@@ -11247,7 +11339,8 @@
 │                       │      ├ Severity        : HIGH 
 │                       │      ├ CweIDs           ╭ [0]: CWE-400 
 │                       │      │                  ╰ [1]: CWE-770 
-│                       │      ├ VendorSeverity   ╭ ghsa  : 3 
+│                       │      ├ VendorSeverity   ╭ amazon: 3 
+│                       │      │                  ├ ghsa  : 3 
 │                       │      │                  ╰ redhat: 3 
 │                       │      ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N
 │                       │      │                  │        │           /A:H 
@@ -11368,7 +11461,7 @@
 │                       │      │                  ├ [17]: https://github.com/FasterXML/jackson-databind/securit
 │                       │      │                  │       y/advisories/GHSA-q4xh-88c3-wmh7 
 │                       │      │                  ├ [18]: https://linux.oracle.com/cve/CVE-2026-68497.html 
-│                       │      │                  ├ [19]: https://linux.oracle.com/errata/ELSA-2026-77648.html 
+│                       │      │                  ├ [19]: https://linux.oracle.com/errata/ELSA-2026-80504.html 
 │                       │      │                  ├ [20]: https://nvd.nist.gov/vuln/detail/CVE-2026-68497 
 │                       │      │                  ╰ [21]: https://www.cve.org/CVERecord?id=CVE-2026-68497 
 │                       │      ├ PublishedDate   : 2026-09-11T16:17:39.61Z 
@@ -11592,7 +11685,8 @@
 │                       │      ├ Severity        : MEDIUM 
 │                       │      ├ CweIDs           ╭ [0]: CWE-470 
 │                       │      │                  ╰ [1]: CWE-610 
-│                       │      ├ VendorSeverity   ╭ ghsa  : 2 
+│                       │      ├ VendorSeverity   ╭ amazon: 2 
+│                       │      │                  ├ ghsa  : 2 
 │                       │      │                  ╰ redhat: 2 
 │                       │      ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N
 │                       │      │                  │        │           /A:L 
@@ -11683,7 +11777,8 @@
 │                       │      ├ Severity        : MEDIUM 
 │                       │      ├ CweIDs           ╭ [0]: CWE-502 
 │                       │      │                  ╰ [1]: CWE-915 
-│                       │      ├ VendorSeverity   ╭ ghsa  : 2 
+│                       │      ├ VendorSeverity   ╭ amazon: 2 
+│                       │      │                  ├ ghsa  : 2 
 │                       │      │                  ╰ redhat: 2 
 │                       │      ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L
 │                       │      │                  │        │           /A:L 
@@ -12348,7 +12443,8 @@
                         │      │                  ├ [200]: https://ubuntu.com/security/notices/USN-8416-1 
                         │      │                  ├ [201]: https://ubuntu.com/security/notices/USN-8883-1 
                         │      │                  ├ [202]: https://ubuntu.com/security/notices/USN-8900-1 
-                        │      │                  ╰ [203]: https://www.cve.org/CVERecord?id=CVE-2026-39821 
+                        │      │                  ├ [203]: https://ubuntu.com/security/notices/USN-8914-1 
+                        │      │                  ╰ [204]: https://www.cve.org/CVERecord?id=CVE-2026-39821 
                         │      ├ PublishedDate   : 2026-05-22T16:16:20.41Z 
                         │      ╰ LastModifiedDate: 2026-09-17T12:18:05.767Z 
                         ├ [2]  ╭ VulnerabilityID : CVE-2026-46600 
