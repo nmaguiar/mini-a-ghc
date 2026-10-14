@@ -1092,22 +1092,23 @@
 │                       │      │                  ├ [12]: https://access.redhat.com/errata/RHSA-2026:72475 
 │                       │      │                  ├ [13]: https://access.redhat.com/errata/RHSA-2026:72476 
 │                       │      │                  ├ [14]: https://access.redhat.com/errata/RHSA-2026:72502 
-│                       │      │                  ├ [15]: https://access.redhat.com/security/cve/CVE-2026-13757 
-│                       │      │                  ├ [16]: https://bugzilla.redhat.com/2494556 
-│                       │      │                  ├ [17]: https://bugzilla.redhat.com/show_bug.cgi?id=2494556 
-│                       │      │                  ├ [18]: https://creativecommons.org/licenses/by/4.0/ 
-│                       │      │                  ├ [19]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+│                       │      │                  ├ [15]: https://access.redhat.com/errata/RHSA-2026:81201 
+│                       │      │                  ├ [16]: https://access.redhat.com/security/cve/CVE-2026-13757 
+│                       │      │                  ├ [17]: https://bugzilla.redhat.com/2494556 
+│                       │      │                  ├ [18]: https://bugzilla.redhat.com/show_bug.cgi?id=2494556 
+│                       │      │                  ├ [19]: https://creativecommons.org/licenses/by/4.0/ 
+│                       │      │                  ├ [20]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
 │                       │      │                  │       26-13757 
-│                       │      │                  ├ [20]: https://errata.almalinux.org/9/ALSA-2026-49667.html 
-│                       │      │                  ├ [21]: https://errata.rockylinux.org/RLSA-2026:49667 
-│                       │      │                  ├ [22]: https://github.com/advisories/GHSA-p2wm-69qx-x25w 
-│                       │      │                  ├ [23]: https://linux.oracle.com/cve/CVE-2026-13757.html 
-│                       │      │                  ├ [24]: https://linux.oracle.com/errata/ELSA-2026-49668.html 
-│                       │      │                  ├ [25]: https://nvd.nist.gov/vuln/detail/CVE-2026-13757 
-│                       │      │                  ├ [26]: https://ubuntu.com/security/notices/USN-8687-1 
-│                       │      │                  ╰ [27]: https://www.cve.org/CVERecord?id=CVE-2026-13757 
+│                       │      │                  ├ [21]: https://errata.almalinux.org/9/ALSA-2026-49667.html 
+│                       │      │                  ├ [22]: https://errata.rockylinux.org/RLSA-2026:49667 
+│                       │      │                  ├ [23]: https://github.com/advisories/GHSA-p2wm-69qx-x25w 
+│                       │      │                  ├ [24]: https://linux.oracle.com/cve/CVE-2026-13757.html 
+│                       │      │                  ├ [25]: https://linux.oracle.com/errata/ELSA-2026-49668.html 
+│                       │      │                  ├ [26]: https://nvd.nist.gov/vuln/detail/CVE-2026-13757 
+│                       │      │                  ├ [27]: https://ubuntu.com/security/notices/USN-8687-1 
+│                       │      │                  ╰ [28]: https://www.cve.org/CVERecord?id=CVE-2026-13757 
 │                       │      ├ PublishedDate   : 2026-06-29T19:16:40.907Z 
-│                       │      ╰ LastModifiedDate: 2026-09-29T01:16:45.04Z 
+│                       │      ╰ LastModifiedDate: 2026-10-12T21:17:14.327Z 
 │                       ├ [19] ╭ VulnerabilityID : CVE-2026-86145 
 │                       │      ├ PkgID           : libpcre2-8-0@10.46-1build1 
 │                       │      ├ PkgName         : libpcre2-8-0 
