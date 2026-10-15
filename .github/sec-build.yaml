@@ -906,13 +906,19 @@
     - https://access.redhat.com/errata/RHSA-2026:72476
     - https://access.redhat.com/errata/RHSA-2026:72502
     - https://access.redhat.com/errata/RHSA-2026:81201
+    - https://access.redhat.com/errata/RHSA-2026:82304
+    - https://access.redhat.com/errata/RHSA-2026:82322
+    - https://access.redhat.com/errata/RHSA-2026:82336
+    - https://access.redhat.com/errata/RHSA-2026:82347
+    - https://access.redhat.com/errata/RHSA-2026:82354
+    - https://access.redhat.com/errata/RHSA-2026:82372
     - https://access.redhat.com/security/cve/CVE-2026-13757
     - https://bugzilla.redhat.com/2494556
     - https://bugzilla.redhat.com/show_bug.cgi?id=2494556
     - https://creativecommons.org/licenses/by/4.0/
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-13757
     - https://errata.almalinux.org/9/ALSA-2026-49667.html
-    - https://errata.rockylinux.org/RLSA-2026:49667
+    - https://errata.rockylinux.org/RLSA-2026:49668
     - https://github.com/advisories/GHSA-p2wm-69qx-x25w
     - https://linux.oracle.com/cve/CVE-2026-13757.html
     - https://linux.oracle.com/errata/ELSA-2026-49668.html
@@ -920,7 +926,58 @@
     - https://ubuntu.com/security/notices/USN-8687-1
     - https://www.cve.org/CVERecord?id=CVE-2026-13757
     PublishedDate: '2026-06-29T19:16:40.907Z'
-    LastModifiedDate: '2026-10-12T21:17:14.327Z'
+    LastModifiedDate: '2026-10-14T03:17:21.047Z'
+  - VulnerabilityID: CVE-2026-103111
+    PkgID: libpcre2-8-0@10.46-1build1
+    PkgName: libpcre2-8-0
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/libpcre2-8-0@10.46-1build1?arch=amd64&distro=ubuntu-26.04
+      UID: c9d0d8772a6e5e1d
+    InstalledVersion: 10.46-1build1
+    Status: affected
+    Layer:
+      Digest: sha256:1ae8d0bbd77f1be71f7daa39113c0c4750e661e1eb838cb9c5e028b4b02b2c97
+      DiffID: sha256:8c49e80fa5b3aa9042547b0397fbcf9d2ee0c4d8b4916db3b25f4d3649dc55e7
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-103111
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:0171fdf3dad4e34557bba082d5ee5672780a132c9fa27fe6db66f2d249a6da87
+    Title: 'pcre2: pcre2: Out-of-bounds write via crafted regular expression'
+    Description: PCRE2 before 10.49, when there is an attacker-controlled regular expression and certain JIT API usage, allows an out-of-bounds write with arbitrary data.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-787
+    VendorSeverity:
+      alma: 3
+      oracle-oval: 3
+      redhat: 3
+      ubuntu: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:H/A:L
+        V3Score: 7.6
+    References:
+    - https://access.redhat.com/errata/RHSA-2026:81532
+    - https://access.redhat.com/security/cve/CVE-2026-103111
+    - https://bugzilla.redhat.com/2528993
+    - https://bugzilla.redhat.com/2531743
+    - https://bugzilla.redhat.com/2531744
+    - https://bugzilla.redhat.com/2531745
+    - https://bugzilla.redhat.com/2531746
+    - https://bugzilla.redhat.com/2531747
+    - https://bugzilla.redhat.com/2543797
+    - https://errata.almalinux.org/9/ALSA-2026-81532.html
+    - https://github.com/PCRE2Project/pcre2/security/advisories/GHSA-r9hj-j2rw-4q3m
+    - https://linux.oracle.com/cve/CVE-2026-103111.html
+    - https://linux.oracle.com/errata/ELSA-2026-81613.html
+    - https://lists.debian.org/debian-lts-announce/2026/10/msg00008.html
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-103111
+    - https://www.cve.org/CVERecord?id=CVE-2026-103111
+    PublishedDate: '2026-09-30T05:16:45.863Z'
+    LastModifiedDate: '2026-10-04T00:16:35.563Z'
   - VulnerabilityID: CVE-2026-86145
     PkgID: libpcre2-8-0@10.46-1build1
     PkgName: libpcre2-8-0
@@ -945,7 +1002,9 @@
     CweIDs:
     - CWE-424
     VendorSeverity:
+      alma: 3
       azure: 3
+      oracle-oval: 3
       redhat: 3
       ubuntu: 2
     CVSS:
@@ -954,13 +1013,248 @@
         V3Score: 8.2
     References:
     - http://www.openwall.com/lists/oss-security/2026/09/05/3
+    - https://access.redhat.com/errata/RHSA-2026:81532
     - https://access.redhat.com/security/cve/CVE-2026-86145
+    - https://bugzilla.redhat.com/2528993
+    - https://bugzilla.redhat.com/2531743
+    - https://bugzilla.redhat.com/2531744
+    - https://bugzilla.redhat.com/2531745
+    - https://bugzilla.redhat.com/2531746
+    - https://bugzilla.redhat.com/2531747
+    - https://bugzilla.redhat.com/2543797
+    - https://errata.almalinux.org/9/ALSA-2026-81532.html
     - https://github.com/PCRE2Project/pcre2/releases/tag/pcre2-10.48
     - https://github.com/PCRE2Project/pcre2/security/advisories/GHSA-3r4p-g7gg-ppmf
+    - https://linux.oracle.com/cve/CVE-2026-86145.html
+    - https://linux.oracle.com/errata/ELSA-2026-81613.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-86145
     - https://www.cve.org/CVERecord?id=CVE-2026-86145
     PublishedDate: '2026-09-05T06:17:10.37Z'
     LastModifiedDate: '2026-09-09T16:04:24.933Z'
+  - VulnerabilityID: CVE-2026-89156
+    PkgID: libpcre2-8-0@10.46-1build1
+    PkgName: libpcre2-8-0
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/libpcre2-8-0@10.46-1build1?arch=amd64&distro=ubuntu-26.04
+      UID: c9d0d8772a6e5e1d
+    InstalledVersion: 10.46-1build1
+    Status: affected
+    Layer:
+      Digest: sha256:1ae8d0bbd77f1be71f7daa39113c0c4750e661e1eb838cb9c5e028b4b02b2c97
+      DiffID: sha256:8c49e80fa5b3aa9042547b0397fbcf9d2ee0c4d8b4916db3b25f4d3649dc55e7
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-89156
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:b3f54ec2af5805abb50a214128cc135a6fe0c56fc3fd1c4d641d0f28cc1b1def
+    Title: 'PCRE2: PCRE2: Out-of-bounds read via invalid UTF data during JIT fallback'
+    Description: PCRE2 before 10.48 has a pcre2_match out-of-bounds read after a JIT fallback when an attacker can provide invalid UTF data.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-125
+    VendorSeverity:
+      alma: 3
+      azure: 1
+      nvd: 2
+      oracle-oval: 3
+      redhat: 1
+      ubuntu: 2
+    CVSS:
+      nvd:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 5.9
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L
+        V3Score: 2.9
+    References:
+    - https://access.redhat.com/errata/RHSA-2026:81532
+    - https://access.redhat.com/security/cve/CVE-2026-89156
+    - https://bugzilla.redhat.com/2528993
+    - https://bugzilla.redhat.com/2531743
+    - https://bugzilla.redhat.com/2531744
+    - https://bugzilla.redhat.com/2531745
+    - https://bugzilla.redhat.com/2531746
+    - https://bugzilla.redhat.com/2531747
+    - https://bugzilla.redhat.com/2543797
+    - https://errata.almalinux.org/9/ALSA-2026-81532.html
+    - https://github.com/PCRE2Project/pcre2/releases/tag/pcre2-10.48
+    - https://github.com/PCRE2Project/pcre2/security/advisories/GHSA-2p8c-ff85-vh9x
+    - https://linux.oracle.com/cve/CVE-2026-89156.html
+    - https://linux.oracle.com/errata/ELSA-2026-81522.html
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-89156
+    - https://www.cve.org/CVERecord?id=CVE-2026-89156
+    PublishedDate: '2026-09-11T04:18:03.23Z'
+    LastModifiedDate: '2026-09-16T19:27:01.327Z'
+  - VulnerabilityID: CVE-2026-89157
+    PkgID: libpcre2-8-0@10.46-1build1
+    PkgName: libpcre2-8-0
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/libpcre2-8-0@10.46-1build1?arch=amd64&distro=ubuntu-26.04
+      UID: c9d0d8772a6e5e1d
+    InstalledVersion: 10.46-1build1
+    Status: affected
+    Layer:
+      Digest: sha256:1ae8d0bbd77f1be71f7daa39113c0c4750e661e1eb838cb9c5e028b4b02b2c97
+      DiffID: sha256:8c49e80fa5b3aa9042547b0397fbcf9d2ee0c4d8b4916db3b25f4d3649dc55e7
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-89157
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:237860d24813f833f874e8c1b687b2873edc62766533ab6be9797a6fc3f2417b
+    Title: 'pcre2: PCRE2: Out-of-bounds write via large pattern input'
+    Description: PCRE2 before 10.48, on 32-bit platforms, has a pcre2_pattern_convert out-of-bounds write when an attacker can provide a large pattern.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-190
+    VendorSeverity:
+      alma: 3
+      azure: 2
+      nvd: 3
+      oracle-oval: 3
+      redhat: 2
+      ubuntu: 2
+    CVSS:
+      nvd:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:H
+        V3Score: 7.4
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:L
+        V3Score: 5.7
+    References:
+    - https://access.redhat.com/errata/RHSA-2026:81532
+    - https://access.redhat.com/security/cve/CVE-2026-89157
+    - https://bugzilla.redhat.com/2528993
+    - https://bugzilla.redhat.com/2531743
+    - https://bugzilla.redhat.com/2531744
+    - https://bugzilla.redhat.com/2531745
+    - https://bugzilla.redhat.com/2531746
+    - https://bugzilla.redhat.com/2531747
+    - https://bugzilla.redhat.com/2543797
+    - https://errata.almalinux.org/9/ALSA-2026-81532.html
+    - https://github.com/PCRE2Project/pcre2/releases/tag/pcre2-10.48
+    - https://github.com/PCRE2Project/pcre2/security/advisories/GHSA-q8g2-wprr-34m9
+    - https://linux.oracle.com/cve/CVE-2026-89157.html
+    - https://linux.oracle.com/errata/ELSA-2026-81613.html
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-89157
+    - https://www.cve.org/CVERecord?id=CVE-2026-89157
+    PublishedDate: '2026-09-11T04:18:03.753Z'
+    LastModifiedDate: '2026-09-16T19:25:08.88Z'
+  - VulnerabilityID: CVE-2026-89158
+    PkgID: libpcre2-8-0@10.46-1build1
+    PkgName: libpcre2-8-0
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/libpcre2-8-0@10.46-1build1?arch=amd64&distro=ubuntu-26.04
+      UID: c9d0d8772a6e5e1d
+    InstalledVersion: 10.46-1build1
+    Status: affected
+    Layer:
+      Digest: sha256:1ae8d0bbd77f1be71f7daa39113c0c4750e661e1eb838cb9c5e028b4b02b2c97
+      DiffID: sha256:8c49e80fa5b3aa9042547b0397fbcf9d2ee0c4d8b4916db3b25f4d3649dc55e7
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-89158
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:694a310da4d0bf15bd3c5b0986f6944819630a1cd45396749c9823948449ae90
+    Title: 'PCRE2: PCRE2: Out-of-bounds write via integer overflow on 32-bit platforms'
+    Description: PCRE2 before 10.48, on 32-bit platforms, has a pcre2_compile_32 integer overflow and resultant out-of-bounds write.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-190
+    VendorSeverity:
+      alma: 3
+      azure: 2
+      nvd: 2
+      oracle-oval: 3
+      redhat: 2
+      ubuntu: 2
+    CVSS:
+      nvd:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:L
+        V3Score: 6.5
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:L
+        V3Score: 6.5
+    References:
+    - https://access.redhat.com/errata/RHSA-2026:81532
+    - https://access.redhat.com/security/cve/CVE-2026-89158
+    - https://bugzilla.redhat.com/2528993
+    - https://bugzilla.redhat.com/2531743
+    - https://bugzilla.redhat.com/2531744
+    - https://bugzilla.redhat.com/2531745
+    - https://bugzilla.redhat.com/2531746
+    - https://bugzilla.redhat.com/2531747
+    - https://bugzilla.redhat.com/2543797
+    - https://errata.almalinux.org/9/ALSA-2026-81532.html
+    - https://github.com/PCRE2Project/pcre2/releases/tag/pcre2-10.48
+    - https://github.com/PCRE2Project/pcre2/security/advisories/GHSA-fmgr-6ggq-9859
+    - https://linux.oracle.com/cve/CVE-2026-89158.html
+    - https://linux.oracle.com/errata/ELSA-2026-81613.html
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-89158
+    - https://www.cve.org/CVERecord?id=CVE-2026-89158
+    PublishedDate: '2026-09-11T04:18:03.97Z'
+    LastModifiedDate: '2026-09-16T19:23:41.45Z'
+  - VulnerabilityID: CVE-2026-89160
+    PkgID: libpcre2-8-0@10.46-1build1
+    PkgName: libpcre2-8-0
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/libpcre2-8-0@10.46-1build1?arch=amd64&distro=ubuntu-26.04
+      UID: c9d0d8772a6e5e1d
+    InstalledVersion: 10.46-1build1
+    Status: affected
+    Layer:
+      Digest: sha256:1ae8d0bbd77f1be71f7daa39113c0c4750e661e1eb838cb9c5e028b4b02b2c97
+      DiffID: sha256:8c49e80fa5b3aa9042547b0397fbcf9d2ee0c4d8b4916db3b25f4d3649dc55e7
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-89160
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:3f4b2f24e3dd1a66e21756549f3f2f88001f2dcd1493bde6a10d82519ecb3173
+    Title: 'pcre2: PCRE2: Denial of Service via out-of-bounds read during invalid UTF matching'
+    Description: PCRE2 before 10.48 has a pcre2_match out-of-bounds read during the PCRE2_MATCH_INVALID_UTF matching of an invalid UTF subject.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-125
+    VendorSeverity:
+      alma: 3
+      azure: 1
+      nvd: 2
+      oracle-oval: 3
+      redhat: 1
+      ubuntu: 2
+    CVSS:
+      nvd:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:L
+        V3Score: 6.5
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L
+        V3Score: 3.7
+    References:
+    - https://access.redhat.com/errata/RHSA-2026:81532
+    - https://access.redhat.com/security/cve/CVE-2026-89160
+    - https://bugzilla.redhat.com/2528993
+    - https://bugzilla.redhat.com/2531743
+    - https://bugzilla.redhat.com/2531744
+    - https://bugzilla.redhat.com/2531745
+    - https://bugzilla.redhat.com/2531746
+    - https://bugzilla.redhat.com/2531747
+    - https://bugzilla.redhat.com/2543797
+    - https://errata.almalinux.org/9/ALSA-2026-81532.html
+    - https://github.com/PCRE2Project/pcre2/releases/tag/pcre2-10.48
+    - https://github.com/PCRE2Project/pcre2/security/advisories/GHSA-9qww-pwc4-77qq
+    - https://linux.oracle.com/cve/CVE-2026-89160.html
+    - https://linux.oracle.com/errata/ELSA-2026-81522.html
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-89160
+    - https://www.cve.org/CVERecord?id=CVE-2026-89160
+    PublishedDate: '2026-09-11T04:18:04.343Z'
+    LastModifiedDate: '2026-09-16T19:15:29.443Z'
   - VulnerabilityID: CVE-2026-89161
     PkgID: libpcre2-8-0@10.46-1build1
     PkgName: libpcre2-8-0
@@ -985,8 +1279,10 @@
     CweIDs:
     - CWE-590
     VendorSeverity:
+      alma: 3
       amazon: 3
       nvd: 3
+      oracle-oval: 3
       redhat: 3
       ubuntu: 2
     CVSS:
@@ -997,14 +1293,68 @@
         V3Vector: CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H
         V3Score: 7.4
     References:
+    - https://access.redhat.com/errata/RHSA-2026:81532
     - https://access.redhat.com/security/cve/CVE-2026-89161
+    - https://bugzilla.redhat.com/2528993
+    - https://bugzilla.redhat.com/2531743
+    - https://bugzilla.redhat.com/2531744
+    - https://bugzilla.redhat.com/2531745
+    - https://bugzilla.redhat.com/2531746
+    - https://bugzilla.redhat.com/2531747
+    - https://bugzilla.redhat.com/2543797
+    - https://errata.almalinux.org/9/ALSA-2026-81532.html
     - https://github.com/PCRE2Project/pcre2/commit/1dcd0cf42a6a7cb62cc9a7c024196733abcfda95%20%28pcre2-10.48-RC1%29
     - https://github.com/PCRE2Project/pcre2/pull/937
     - https://github.com/PCRE2Project/pcre2/releases/tag/pcre2-10.48
+    - https://linux.oracle.com/cve/CVE-2026-89161.html
+    - https://linux.oracle.com/errata/ELSA-2026-81522.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-89161
     - https://www.cve.org/CVERecord?id=CVE-2026-89161
     PublishedDate: '2026-09-11T04:18:04.47Z'
     LastModifiedDate: '2026-09-16T19:10:47.78Z'
+  - VulnerabilityID: CVE-2026-89162
+    PkgID: libpcre2-8-0@10.46-1build1
+    PkgName: libpcre2-8-0
+    PkgIdentifier:
+      PURL: pkg:deb/ubuntu/libpcre2-8-0@10.46-1build1?arch=amd64&distro=ubuntu-26.04
+      UID: c9d0d8772a6e5e1d
+    InstalledVersion: 10.46-1build1
+    Status: affected
+    Layer:
+      Digest: sha256:1ae8d0bbd77f1be71f7daa39113c0c4750e661e1eb838cb9c5e028b4b02b2c97
+      DiffID: sha256:8c49e80fa5b3aa9042547b0397fbcf9d2ee0c4d8b4916db3b25f4d3649dc55e7
+    SeveritySource: ubuntu
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-89162
+    DataSource:
+      ID: ubuntu
+      Name: Ubuntu CVE Tracker
+      URL: https://git.launchpad.net/ubuntu-cve-tracker
+    Fingerprint: sha256:5ea8af4a805fce21425b644d07e48ea17c4ff146b98dcb023ac24ea3b9b45d5f
+    Title: 'pcre2: PCRE2: Information disclosure via pcre2_serialize_encode'
+    Description: In PCRE2 before 10.48, pcre2_serialize_encode might disclose two bytes to an adversary, typically in a situation where the access available to the adversary is already unsafe.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-669
+    VendorSeverity:
+      nvd: 1
+      redhat: 1
+      ubuntu: 2
+    CVSS:
+      nvd:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N
+        V3Score: 3.3
+      redhat:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N
+        V3Score: 2.9
+    References:
+    - https://access.redhat.com/security/cve/CVE-2026-89162
+    - https://github.com/PCRE2Project/pcre2/commit/edc111a6831591f68b5355a08cc9df8be8f35304%20%28pcre2-10.48-RC1%29
+    - https://github.com/PCRE2Project/pcre2/releases/tag/pcre2-10.48
+    - https://github.com/PCRE2Project/pcre2/security/advisories/GHSA-q7rw-r7qq-2hx6
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-89162
+    - https://www.cve.org/CVERecord?id=CVE-2026-89162
+    PublishedDate: '2026-09-11T05:16:38.697Z'
+    LastModifiedDate: '2026-09-16T18:56:28.643Z'
   - VulnerabilityID: CVE-2026-40228
     PkgID: libsystemd0@259.5-0ubuntu3.4
     PkgName: libsystemd0
@@ -1124,6 +1474,7 @@
         V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:L/I:L/A:N
         V3Score: 3.6
     References:
+    - https://access.redhat.com/errata/RHSA-2025:20145
     - https://access.redhat.com/errata/RHSA-2025:20559
     - https://access.redhat.com/security/cve/CVE-2024-56433
     - https://bugzilla.redhat.com/2334165
@@ -1131,7 +1482,7 @@
     - https://creativecommons.org/licenses/by/4.0/
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-56433
     - https://errata.almalinux.org/9/ALSA-2025-20559.html
-    - https://errata.rockylinux.org/RLSA-2025:20559
+    - https://errata.rockylinux.org/RLSA-2025:20145
     - https://github.com/shadow-maint/shadow/blob/e2512d5741d4a44bdd81a8c2d0029b6222728cf0/etc/login.defs#L238-L241
     - https://github.com/shadow-maint/shadow/issues/1157
     - https://github.com/shadow-maint/shadow/releases/tag/4.4
@@ -1176,6 +1527,7 @@
         V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:L/I:L/A:N
         V3Score: 3.6
     References:
+    - https://access.redhat.com/errata/RHSA-2025:20145
     - https://access.redhat.com/errata/RHSA-2025:20559
     - https://access.redhat.com/security/cve/CVE-2024-56433
     - https://bugzilla.redhat.com/2334165
@@ -1183,7 +1535,7 @@
     - https://creativecommons.org/licenses/by/4.0/
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-56433
     - https://errata.almalinux.org/9/ALSA-2025-20559.html
-    - https://errata.rockylinux.org/RLSA-2025:20559
+    - https://errata.rockylinux.org/RLSA-2025:20145
     - https://github.com/shadow-maint/shadow/blob/e2512d5741d4a44bdd81a8c2d0029b6222728cf0/etc/login.defs#L238-L241
     - https://github.com/shadow-maint/shadow/issues/1157
     - https://github.com/shadow-maint/shadow/releases/tag/4.4
@@ -1997,15 +2349,17 @@
     - https://bugzilla.redhat.com/2455360
     - https://bugzilla.redhat.com/2509735
     - https://bugzilla.redhat.com/2509843
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2379592
     - https://bugzilla.redhat.com/show_bug.cgi?id=2455360
     - https://bugzilla.redhat.com/show_bug.cgi?id=2509735
     - https://bugzilla.redhat.com/show_bug.cgi?id=2509843
     - https://creativecommons.org/licenses/by/4.0/
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-45582
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-18477
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-18508
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-5704
     - https://errata.almalinux.org/9/ALSA-2026-61581.html
-    - https://errata.rockylinux.org/RLSA-2026:61581
+    - https://errata.rockylinux.org/RLSA-2026:70390
     - https://linux.oracle.com/cve/CVE-2026-18477.html
     - https://linux.oracle.com/errata/ELSA-2026-70390.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-18477
@@ -2056,15 +2410,17 @@
     - https://bugzilla.redhat.com/2455360
     - https://bugzilla.redhat.com/2509735
     - https://bugzilla.redhat.com/2509843
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2379592
     - https://bugzilla.redhat.com/show_bug.cgi?id=2455360
     - https://bugzilla.redhat.com/show_bug.cgi?id=2509735
     - https://bugzilla.redhat.com/show_bug.cgi?id=2509843
     - https://creativecommons.org/licenses/by/4.0/
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-45582
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-18477
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-18508
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-5704
     - https://errata.almalinux.org/9/ALSA-2026-61581.html
-    - https://errata.rockylinux.org/RLSA-2026:61581
+    - https://errata.rockylinux.org/RLSA-2026:70390
     - https://linux.oracle.com/cve/CVE-2026-18508.html
     - https://linux.oracle.com/errata/ELSA-2026-70390.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-18508
@@ -2174,7 +2530,7 @@
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
     Fingerprint: sha256:87f2bf34f80b81f5e0880b3ce08dec88e909f43b249be79a943ea33d6fcc5300
-    Title: 'net/http: net/http/internal/http2: golang: golang.org/x/net/http2: net/http: Denial of Service via excessive HTTP/2 SETTINGS frames'
+    Title: 'net/http: net/http/internal/http2: golang.org/x/net/http2: net/http: Denial of Service via excessive HTTP/2 SETTINGS frames'
     Description: A malicious HTTP/2 peer can cause excessive CPU consumption in the client or server by opening a large number of streams and then sending many small SETTINGS frames containing SETTINGS_INITIAL_WINDOW_SIZE values.
     Severity: HIGH
     CweIDs:
