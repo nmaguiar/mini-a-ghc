@@ -533,6 +533,7 @@
     CweIDs:
     - CWE-675
     VendorSeverity:
+      azure: 3
       bitnami: 4
       redhat: 2
       ubuntu: 2
