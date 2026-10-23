@@ -3,346 +3,10 @@
 │     ├ Class   : os-pkgs 
 │     ├ Type    : debian 
 │     ╰ Packages 
-├ [1] ╭ Target         : Java 
-│     ├ Class          : lang-pkgs 
-│     ├ Type           : jar 
-│     ├ Packages        
-│     ╰ Vulnerabilities ╭ [0] ╭ VulnerabilityID : CVE-2026-89407 
-│                       │     ├ VendorIDs        ─ [0]: GHSA-p6pp-m3f8-5c89 
-│                       │     ├ PkgName         : com.fasterxml.jackson.core:jackson-core 
-│                       │     ├ PkgPath         : openaf/ghcopilot/jackson-core-2.22.2.jar 
-│                       │     ├ PkgIdentifier    ╭ PURL: pkg:maven/com.fasterxml.jackson.core/jackson-core@2.22.2 
-│                       │     │                  ╰ UID : c8dddb2c3bfe87b9 
-│                       │     ├ InstalledVersion: 2.22.2 
-│                       │     ├ FixedVersion    : 2.18.11, 2.21.7, 2.22.3 
-│                       │     ├ Status          : fixed 
-│                       │     ├ Layer            ╭ Digest: sha256:173ca374c9379e532daa709cec8632de1474a5b9e2f53
-│                       │     │                  │         f1fda9b3f3e35eae32b 
-│                       │     │                  ╰ DiffID: sha256:97591bb1cc3eb8597ab77e3b5093924e3d7ee3a1bfeab
-│                       │     │                            4e02867b9f5fbfcf8fd 
-│                       │     ├ SeveritySource  : ghsa 
-│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-89407 
-│                       │     ├ DataSource       ╭ ID  : ghsa 
-│                       │     │                  ├ Name: GitHub Security Advisory Maven 
-│                       │     │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
-│                       │     │                          osystem%3Amaven 
-│                       │     ├ Fingerprint     : sha256:fc05302ffcd2c04650f6e8d228a2070a26f9f3617166fd0dfdb9e8
-│                       │     │                   21f8cdb6ac 
-│                       │     ├ Title           : com.fasterxml.jackson/jackson-core:
-│                       │     │                   tools.jackson.core/jackson-core: Jackson-core: Denial of
-│                       │     │                   Service via regular expression backtracking 
-│                       │     ├ Description     : NumberInput.looksLikeValidNumber() in FasterXML jackson-core
-│                       │     │                   pre-validates "stringified numbers" with two regular
-│                       │     │                   expressions: PATTERN_FLOAT
-│                       │     │                   ([+-]?[0-9]*[\.]?[0-9]+([eE][+-]?[0-9]+)?), present since
-│                       │     │                   2.17.0, and PATTERN_FLOAT_TRAILING_DOT, added in 2.17.2.
-│                       │     │                   PATTERN_FLOAT places adjacent quantifiers over the same
-│                       │     │                   character class -- an optional [0-9]* run, an optional dot,
-│                       │     │                   then a required [0-9]+ run -- so input that ultimately fails
-│                       │     │                   to match forces Java's backtracking engine to retry every
-│                       │     │                   possible split point of the digit run. 
-│                       │     │                   
-│                       │     │                   Matching cost therefore grows with the square of the input
-│                       │     │                   length. 
-│                       │     │                   An attacker who can supply JSON that an application
-│                       │     │                   deserializes into a numeric target type reaches this method
-│                       │     │                   through jackson-databind's default String-to-number coercion
-│                       │     │                   (StdDeserializer and NumberDeserializers for BigDecimal,
-│                       │     │                   BigInteger, Double and Float). 
-│                       │     │                   Because StreamReadConstraints.maxStringLength defaults to
-│                       │     │                   20,000,000 characters, no constraint bounds the input before
-│                       │     │                   it reaches the regex. 
-│                       │     │                   Testing by the reporter confirmed O(n^2) growth across five
-│                       │     │                   consecutive input-size doublings, with a single
-│                       │     │                   160,000-character string consuming roughly 74 seconds in one
-│                       │     │                   call; a small number of concurrent requests of ordinary body
-│                       │     │                   size can therefore exhaust a server's request-handling thread
-│                       │     │                    pool. 
-│                       │     │                   The affected method does not exist before 2.17.0, so 2.16.x
-│                       │     │                   and earlier releases are not affected. 
-│                       │     │                   The fix replaces both regular expressions with a hand-rolled
-│                       │     │                   single-pass scan. 
-│                       │     ├ Severity        : HIGH 
-│                       │     ├ CweIDs           ╭ [0]: CWE-400 
-│                       │     │                  ╰ [1]: CWE-1333 
-│                       │     ├ VendorSeverity   ╭ amazon: 3 
-│                       │     │                  ├ ghsa  : 3 
-│                       │     │                  ╰ redhat: 2 
-│                       │     ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/
-│                       │     │                  │        │           A:H 
-│                       │     │                  │        ╰ V3Score : 7.5 
-│                       │     │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/
-│                       │     │                           │           A:H 
-│                       │     │                           ╰ V3Score : 5.9 
-│                       │     ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2026-89407 
-│                       │     │                  ├ [1] : https://advisory.echohq.com/cve/CVE-2026-89407 
-│                       │     │                  ├ [2] : https://getsafety.com/vulnerabilities/SFTY-20260922-89
-│                       │     │                  │       449/CVE-2026-89407 
-│                       │     │                  ├ [3] : https://github.com/FasterXML/jackson-core 
-│                       │     │                  ├ [4] : https://github.com/FasterXML/jackson-core/commit/731e7
-│                       │     │                  │       94f62623aa0d86ced52490166be903fbb1d 
-│                       │     │                  ├ [5] : https://github.com/FasterXML/jackson-core/commit/e7acd
-│                       │     │                  │       64cc99bd346704423dc2bfea1ab0a08ddff 
-│                       │     │                  ├ [6] : https://github.com/FasterXML/jackson-core/issues/1649 
-│                       │     │                  ├ [7] : https://github.com/FasterXML/jackson-core/pull/1650 
-│                       │     │                  ├ [8] : https://github.com/FasterXML/jackson-core/pull/1701 
-│                       │     │                  ├ [9] : https://github.com/FasterXML/jackson-core/security/adv
-│                       │     │                  │       isories/GHSA-p6pp-m3f8-5c89 
-│                       │     │                  ├ [10]: https://nvd.nist.gov/vuln/detail/CVE-2026-89407 
-│                       │     │                  ╰ [11]: https://www.cve.org/CVERecord?id=CVE-2026-89407 
-│                       │     ├ PublishedDate   : 2026-09-22T15:17:21.053Z 
-│                       │     ╰ LastModifiedDate: 2026-09-22T20:00:03.713Z 
-│                       ├ [1] ╭ VulnerabilityID : CVE-2026-89425 
-│                       │     ├ VendorIDs        ─ [0]: GHSA-7hhh-6rmp-j9qf 
-│                       │     ├ PkgName         : com.fasterxml.jackson.core:jackson-core 
-│                       │     ├ PkgPath         : openaf/ghcopilot/jackson-core-2.22.2.jar 
-│                       │     ├ PkgIdentifier    ╭ PURL: pkg:maven/com.fasterxml.jackson.core/jackson-core@2.22.2 
-│                       │     │                  ╰ UID : c8dddb2c3bfe87b9 
-│                       │     ├ InstalledVersion: 2.22.2 
-│                       │     ├ FixedVersion    : 2.21.7, 2.22.3, 2.18.11 
-│                       │     ├ Status          : fixed 
-│                       │     ├ Layer            ╭ Digest: sha256:173ca374c9379e532daa709cec8632de1474a5b9e2f53
-│                       │     │                  │         f1fda9b3f3e35eae32b 
-│                       │     │                  ╰ DiffID: sha256:97591bb1cc3eb8597ab77e3b5093924e3d7ee3a1bfeab
-│                       │     │                            4e02867b9f5fbfcf8fd 
-│                       │     ├ SeveritySource  : ghsa 
-│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-89425 
-│                       │     ├ DataSource       ╭ ID  : ghsa 
-│                       │     │                  ├ Name: GitHub Security Advisory Maven 
-│                       │     │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
-│                       │     │                          osystem%3Amaven 
-│                       │     ├ Fingerprint     : sha256:e75527112ac36a2602e2d4f05b1789113d2206daec2acece329eff
-│                       │     │                   71df67236f 
-│                       │     ├ Title           : com.fasterxml.jackson.core/jackson-core: Jackson-core: Denial
-│                       │     │                    of Service via unbounded StringBuilder growth during
-│                       │     │                   malformed token processing 
-│                       │     ├ Description     : UTF8DataInputJsonParser._reportInvalidToken() in FasterXML
-│                       │     │                   jackson-core builds the offending-token text for its error
-│                       │     │                   message by appending Java identifier characters to a
-│                       │     │                   StringBuilder in a loop that has no upper bound. Unlike the
-│                       │     │                   three sibling parser implementations, including
-│                       │     │                   UTF8StreamJsonParser, it never consults
-│                       │     │                   ErrorReportConfiguration.getMaxErrorTokenLength() (default
-│                       │     │                   256). A malformed token supplied to a parser created through
-│                       │     │                   JsonFactory.createParser(DataInput) is therefore accumulated
-│                       │     │                   in full. No StreamReadConstraints setting mitigates this:
-│                       │     │                   maxDocumentLength cannot be applied to DataInput sources at
-│                       │     │                   all, and maxStringLength does not cover this path because the
-│                       │     │                    accumulation bypasses ReadConstrainedTextBuffer. The
-│                       │     │                   reporter measured a 20,000,109-character exception message
-│                       │     │                   from a 20-million-character malformed token on the DataInput
-│                       │     │                   path, against 367 characters for identical input on the
-│                       │     │                   InputStream path. Scaling the payload drives the
-│                       │     │                   StringBuilder, which also incurs byte-to-char expansion and
-│                       │     │                   internal array doubling, to many times the raw payload size
-│                       │     │                   and can trigger OutOfMemoryError for the whole JVM.
-│                       │     │                   UTF8DataInputJsonParser was introduced in 2.8.0 together with
-│                       │     │                    createParser(DataInput); releases before 2.8.0 do not
-│                       │     │                   contain the affected class. 
-│                       │     ├ Severity        : HIGH 
-│                       │     ├ CweIDs           ╭ [0]: CWE-400 
-│                       │     │                  ╰ [1]: CWE-770 
-│                       │     ├ VendorSeverity   ╭ amazon: 3 
-│                       │     │                  ├ ghsa  : 3 
-│                       │     │                  ╰ redhat: 3 
-│                       │     ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/
-│                       │     │                  │        │           A:H 
-│                       │     │                  │        ╰ V3Score : 7.5 
-│                       │     │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/
-│                       │     │                           │           A:H 
-│                       │     │                           ╰ V3Score : 7.5 
-│                       │     ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2026-89425 
-│                       │     │                  ├ [1]: https://advisory.echohq.com/cve/CVE-2026-89425 
-│                       │     │                  ├ [2]: https://github.com/FasterXML/jackson-core 
-│                       │     │                  ├ [3]: https://github.com/FasterXML/jackson-core/commit/211cf2
-│                       │     │                  │      c5d91abbec38067f37efc1363cd4e88ee3 
-│                       │     │                  ├ [4]: https://github.com/FasterXML/jackson-core/pull/1698 
-│                       │     │                  ├ [5]: https://github.com/FasterXML/jackson-core/releases/tag/
-│                       │     │                  │      jackson-core-2.18.11 
-│                       │     │                  ├ [6]: https://github.com/FasterXML/jackson-core/releases/tag/
-│                       │     │                  │      jackson-core-3.2.3 
-│                       │     │                  ├ [7]: https://github.com/FasterXML/jackson-core/security/advi
-│                       │     │                  │      sories/GHSA-7hhh-6rmp-j9qf 
-│                       │     │                  ├ [8]: https://nvd.nist.gov/vuln/detail/CVE-2026-89425 
-│                       │     │                  ╰ [9]: https://www.cve.org/CVERecord?id=CVE-2026-89425 
-│                       │     ├ PublishedDate   : 2026-09-23T03:17:04.357Z 
-│                       │     ╰ LastModifiedDate: 2026-09-24T20:43:32.537Z 
-│                       ├ [2] ╭ VulnerabilityID : CVE-2026-91776 
-│                       │     ├ VendorIDs        ─ [0]: GHSA-wv8q-qhhj-9h54 
-│                       │     ├ PkgName         : com.fasterxml.jackson.core:jackson-databind 
-│                       │     ├ PkgPath         : openaf/ghcopilot/jackson-databind-2.22.2.jar 
-│                       │     ├ PkgIdentifier    ╭ PURL: pkg:maven/com.fasterxml.jackson.core/jackson-databind@
-│                       │     │                  │       2.22.2 
-│                       │     │                  ╰ UID : b09f79ee50ae8e1d 
-│                       │     ├ InstalledVersion: 2.22.2 
-│                       │     ├ FixedVersion    : 2.18.11, 2.21.7, 2.22.3 
-│                       │     ├ Status          : fixed 
-│                       │     ├ Layer            ╭ Digest: sha256:173ca374c9379e532daa709cec8632de1474a5b9e2f53
-│                       │     │                  │         f1fda9b3f3e35eae32b 
-│                       │     │                  ╰ DiffID: sha256:97591bb1cc3eb8597ab77e3b5093924e3d7ee3a1bfeab
-│                       │     │                            4e02867b9f5fbfcf8fd 
-│                       │     ├ SeveritySource  : ghsa 
-│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-91776 
-│                       │     ├ DataSource       ╭ ID  : ghsa 
-│                       │     │                  ├ Name: GitHub Security Advisory Maven 
-│                       │     │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
-│                       │     │                          osystem%3Amaven 
-│                       │     ├ Fingerprint     : sha256:10e2bac2cb9848fd1153be8f1fd2cd5a93e57e1cbda88d9bd7d166
-│                       │     │                   b292483300 
-│                       │     ├ Title           : jackson-databind: com.fasterxml.jackson/jackson-core:
-│                       │     │                   jackson-databind: Denial of Service via unbounded cache
-│                       │     │                   growth in TypeDeserializerBase 
-│                       │     ├ Description     : TypeDeserializerBase._findDeserializer() in FasterXML
-│                       │     │                   jackson-databind caches the resolved deserializer under the
-│                       │     │                   raw, attacker-supplied type ID. When name-based polymorphism
-│                       │     │                   is configured with a fallback, for example @JsonTypeInfo(use
-│                       │     │                   = Id.NAME, defaultImpl = ...), every distinct unrecognized
-│                       │     │                   type ID resolves to the same fallback deserializer but is
-│                       │     │                   retained as its own key in the _deserializers map. That map
-│                       │     │                   has no configurable bound and lives for the lifetime of the
-│                       │     │                   type deserializer, so an attacker who can repeatedly supply
-│                       │     │                   fresh unknown type IDs causes monotonic memory retention
-│                       │     │                   across requests. The reporter observed 10,000 retained
-│                       │     │                   entries from 10,000 distinct unknown IDs, against a single
-│                       │     │                   entry for a control that repeated one unknown ID the same
-│                       │     │                   number of times, isolating attacker-controlled key
-│                       │     │                   cardinality from request volume. Exploitation requires an
-│                       │     │                   application that enables name-based polymorphism with a
-│                       │     │                   defaultImpl or equivalent fallback, accepts
-│                       │     │                   attacker-influenced type IDs, and reuses a long-lived
-│                       │     │                   ObjectMapper across requests. The fix stops caching fallback
-│                       │     │                   resolutions for unrecognized IDs and bounds both the number
-│                       │     │                   of cached entries and the length of a cacheable type ID. 
-│                       │     ├ Severity        : HIGH 
-│                       │     ├ CweIDs           ─ [0]: CWE-400 
-│                       │     ├ VendorSeverity   ╭ ghsa  : 3 
-│                       │     │                  ├ redhat: 3 
-│                       │     │                  ╰ ubuntu: 2 
-│                       │     ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/
-│                       │     │                  │        │           A:H 
-│                       │     │                  │        ╰ V3Score : 7.5 
-│                       │     │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/
-│                       │     │                           │           A:H 
-│                       │     │                           ╰ V3Score : 7.5 
-│                       │     ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2026-91776 
-│                       │     │                  ├ [1] : https://advisory.echohq.com/cve/CVE-2026-91776 
-│                       │     │                  ├ [2] : https://github.com/FasterXML/jackson-databind 
-│                       │     │                  ├ [3] : https://github.com/FasterXML/jackson-databind/commit/2
-│                       │     │                  │       870d1d6dc1b7e1c07ee11dd5b04ab71cddbb577 
-│                       │     │                  ├ [4] : https://github.com/FasterXML/jackson-databind/issues/6
-│                       │     │                  │       203 
-│                       │     │                  ├ [5] : https://github.com/FasterXML/jackson-databind/pull/6203 
-│                       │     │                  ├ [6] : https://github.com/FasterXML/jackson-databind/releases
-│                       │     │                  │       /tag/jackson-databind-2.18.11 
-│                       │     │                  ├ [7] : https://github.com/FasterXML/jackson-databind/releases
-│                       │     │                  │       /tag/jackson-databind-2.21.7 
-│                       │     │                  ├ [8] : https://github.com/FasterXML/jackson-databind/releases
-│                       │     │                  │       /tag/jackson-databind-2.22.3 
-│                       │     │                  ├ [9] : https://github.com/FasterXML/jackson-databind/releases
-│                       │     │                  │       /tag/jackson-databind-3.1.7 
-│                       │     │                  ├ [10]: https://github.com/FasterXML/jackson-databind/releases
-│                       │     │                  │       /tag/jackson-databind-3.2.3 
-│                       │     │                  ├ [11]: https://github.com/FasterXML/jackson-databind/security
-│                       │     │                  │       /advisories/GHSA-wv8q-qhhj-9h54 
-│                       │     │                  ├ [12]: https://nvd.nist.gov/vuln/detail/CVE-2026-91776 
-│                       │     │                  ╰ [13]: https://www.cve.org/CVERecord?id=CVE-2026-91776 
-│                       │     ├ PublishedDate   : 2026-09-23T03:17:04.62Z 
-│                       │     ╰ LastModifiedDate: 2026-09-24T20:43:32.537Z 
-│                       ╰ [3] ╭ VulnerabilityID : CVE-2026-91777 
-│                             ├ VendorIDs        ─ [0]: GHSA-cxp5-3px4-pw24 
-│                             ├ PkgName         : com.fasterxml.jackson.core:jackson-databind 
-│                             ├ PkgPath         : openaf/ghcopilot/jackson-databind-2.22.2.jar 
-│                             ├ PkgIdentifier    ╭ PURL: pkg:maven/com.fasterxml.jackson.core/jackson-databind@
-│                             │                  │       2.22.2 
-│                             │                  ╰ UID : b09f79ee50ae8e1d 
-│                             ├ InstalledVersion: 2.22.2 
-│                             ├ FixedVersion    : 2.21.7, 2.18.11, 2.22.3 
-│                             ├ Status          : fixed 
-│                             ├ Layer            ╭ Digest: sha256:173ca374c9379e532daa709cec8632de1474a5b9e2f53
-│                             │                  │         f1fda9b3f3e35eae32b 
-│                             │                  ╰ DiffID: sha256:97591bb1cc3eb8597ab77e3b5093924e3d7ee3a1bfeab
-│                             │                            4e02867b9f5fbfcf8fd 
-│                             ├ SeveritySource  : ghsa 
-│                             ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-91777 
-│                             ├ DataSource       ╭ ID  : ghsa 
-│                             │                  ├ Name: GitHub Security Advisory Maven 
-│                             │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
-│                             │                          osystem%3Amaven 
-│                             ├ Fingerprint     : sha256:0d6ccab2769b32f2b2b3c4e282e1fda4952c7903d9df377a40c8b8
-│                             │                   e7c02b6b84 
-│                             ├ Title           : com.fasterxml.jackson.core/jackson-databind:
-│                             │                   tools.jackson.core:jackson-databind: Jackson-databind: Denial
-│                             │                    of Service via quadratic forward-reference completion 
-│                             ├ Description     : Forward-reference completion for @JsonIdentityInfo object IDs
-│                             │                    in FasterXML jackson-databind performs a linear scan of the
-│                             │                   pending-reference accumulator for every resolved ID. The
-│                             │                   affected paths are
-│                             │                   CollectionDeserializer.CollectionReferringAccumulator.resolve
-│                             │                   ForwardReference() and the equivalent implementation in
-│                             │                   MapDeserializer. When a document first creates N unresolved
-│                             │                   object-ID references in an identity-enabled collection or map
-│                             │                    and then defines those same IDs in reverse order, completion
-│                             │                    performs on the order of N * (N + 1) / 2 identity
-│                             │                   comparisons, so a shallow document whose size grows linearly
-│                             │                   causes quadratic CPU work during deserialization. The
-│                             │                   reporter instrumented equals() calls on the ID class and
-│                             │                   measured exactly 2,003,000 comparisons at N = 2,000, against
-│                             │                   zero comparisons in the pending-reference lookup path for an
-│                             │                   equally sized control in which every reference was already
-│                             │                   resolved. The input requires no deep nesting and no
-│                             │                   syntactically unusual JSON. Exploitation requires an
-│                             │                   application that deserializes attacker-influenced JSON into
-│                             │                   an identity-enabled collection or map. The fix replaces the
-│                             │                   repeated linear lookup with a keyed pending-reference
-│                             │                   structure. 
-│                             ├ Severity        : HIGH 
-│                             ├ CweIDs           ─ [0]: CWE-400 
-│                             ├ VendorSeverity   ╭ alma       : 3 
-│                             │                  ├ ghsa       : 3 
-│                             │                  ├ oracle-oval: 3 
-│                             │                  ├ redhat     : 3 
-│                             │                  ├ rocky      : 3 
-│                             │                  ╰ ubuntu     : 2 
-│                             ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/
-│                             │                  │        │           A:H 
-│                             │                  │        ╰ V3Score : 7.5 
-│                             │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/
-│                             │                           │           A:H 
-│                             │                           ╰ V3Score : 7.5 
-│                             ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:85231 
-│                             │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2026-91777 
-│                             │                  ├ [2] : https://advisory.echohq.com/cve/CVE-2026-91777 
-│                             │                  ├ [3] : https://bugzilla.redhat.com/2539085 
-│                             │                  ├ [4] : https://bugzilla.redhat.com/show_bug.cgi?id=2539085 
-│                             │                  ├ [5] : https://creativecommons.org/licenses/by/4.0/ 
-│                             │                  ├ [6] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-202
-│                             │                  │       6-91777 
-│                             │                  ├ [7] : https://errata.almalinux.org/9/ALSA-2026-85231.html 
-│                             │                  ├ [8] : https://errata.rockylinux.org/RLSA-2026:85231 
-│                             │                  ├ [9] : https://github.com/FasterXML/jackson-databind 
-│                             │                  ├ [10]: https://github.com/FasterXML/jackson-databind/commit/3
-│                             │                  │       7ad9b81712cbb9fb62c2d2c1813593252a24b67 
-│                             │                  ├ [11]: https://github.com/FasterXML/jackson-databind/issues/6
-│                             │                  │       204 
-│                             │                  ├ [12]: https://github.com/FasterXML/jackson-databind/pull/6204 
-│                             │                  ├ [13]: https://github.com/FasterXML/jackson-databind/releases
-│                             │                  │       /tag/jackson-databind-2.18.11 
-│                             │                  ├ [14]: https://github.com/FasterXML/jackson-databind/releases
-│                             │                  │       /tag/jackson-databind-2.21.7 
-│                             │                  ├ [15]: https://github.com/FasterXML/jackson-databind/releases
-│                             │                  │       /tag/jackson-databind-2.22.3 
-│                             │                  ├ [16]: https://github.com/FasterXML/jackson-databind/releases
-│                             │                  │       /tag/jackson-databind-3.1.7 
-│                             │                  ├ [17]: https://github.com/FasterXML/jackson-databind/releases
-│                             │                  │       /tag/jackson-databind-3.2.3 
-│                             │                  ├ [18]: https://github.com/FasterXML/jackson-databind/security
-│                             │                  │       /advisories/GHSA-cxp5-3px4-pw24 
-│                             │                  ├ [19]: https://linux.oracle.com/cve/CVE-2026-91777.html 
-│                             │                  ├ [20]: https://linux.oracle.com/errata/ELSA-2026-85231.html 
-│                             │                  ├ [21]: https://nvd.nist.gov/vuln/detail/CVE-2026-91777 
-│                             │                  ╰ [22]: https://www.cve.org/CVERecord?id=CVE-2026-91777 
-│                             ├ PublishedDate   : 2026-09-23T03:17:04.783Z 
-│                             ╰ LastModifiedDate: 2026-09-24T20:43:32.537Z 
+├ [1] ╭ Target  : Java 
+│     ├ Class   : lang-pkgs 
+│     ├ Type    : jar 
+│     ╰ Packages 
 ╰ [2] ╭ Target         : usr/bin/pebble 
       ├ Class          : lang-pkgs 
       ├ Type           : gobinary 
@@ -356,16 +20,16 @@
                         │      ├ InstalledVersion: v1.27.1 
                         │      ├ FixedVersion    : 1.26.10, 1.27.3 
                         │      ├ Status          : fixed 
-                        │      ├ Layer            ╭ Digest: sha256:173ca374c9379e532daa709cec8632de1474a5b9e2f5
-                        │      │                  │         3f1fda9b3f3e35eae32b 
-                        │      │                  ╰ DiffID: sha256:97591bb1cc3eb8597ab77e3b5093924e3d7ee3a1bfea
-                        │      │                            b4e02867b9f5fbfcf8fd 
+                        │      ├ Layer            ╭ Digest: sha256:d527520ad54e338851b190ce2a47f604eae8ba718352
+                        │      │                  │         8de33c26f6812c8b3e5b 
+                        │      │                  ╰ DiffID: sha256:dda15f06cbbc1e44d6b324f37823f4c7f301e5a67d8b
+                        │      │                            16aee496f2b1ee108def 
                         │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-111943 
                         │      ├ DataSource       ╭ ID  : govulndb 
                         │      │                  ├ Name: The Go Vulnerability Database 
                         │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
-                        │      ├ Fingerprint     : sha256:1b0191f4c013bf76ee539da2cf17895750e52e31b9d4236b36189
-                        │      │                   ae99006c527 
+                        │      ├ Fingerprint     : sha256:8910b1eeb22cd71431c65a0126858fe2c7b6d647dbc366d99b6b4
+                        │      │                   5d202ba9f10 
                         │      ├ Title           : crypto/x509: golang: crypto/x509: Man-in-the-middle attacks
                         │      │                   via untrusted intermediate certificates 
                         │      ├ Description     : On most platforms, Go uses the given system root
@@ -377,7 +41,8 @@
                         │      │                    certificates that are no longer considered to be
                         │      │                   trustworthy. 
                         │      ├ Severity        : HIGH 
-                        │      ├ VendorSeverity   ╭ oracle-oval: 3 
+                        │      ├ VendorSeverity   ╭ alma       : 3 
+                        │      │                  ├ oracle-oval: 3 
                         │      │                  ├ redhat     : 3 
                         │      │                  ╰ rocky      : 3 
                         │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H
@@ -385,37 +50,41 @@
                         │      │                           ╰ V3Score : 6.8 
                         │      ├ References       ╭ [0] : http://www.openwall.com/lists/oss-security/2026/10/20
                         │      │                  │       /29 
-                        │      │                  ├ [1] : https://access.redhat.com/errata/RHSA-2026:86203 
-                        │      │                  ├ [2] : https://access.redhat.com/security/cve/CVE-2026-111943 
-                        │      │                  ├ [3] : https://access.redhat.com/security/vulnerabilities/RH
-                        │      │                  │       SB-2026-012 
-                        │      │                  ├ [4] : https://bugzilla.redhat.com/show_bug.cgi?id=2548334 
-                        │      │                  ├ [5] : https://bugzilla.redhat.com/show_bug.cgi?id=2548336 
-                        │      │                  ├ [6] : https://bugzilla.redhat.com/show_bug.cgi?id=2548344 
-                        │      │                  ├ [7] : https://bugzilla.redhat.com/show_bug.cgi?id=2556068 
-                        │      │                  ├ [8] : https://creativecommons.org/licenses/by/4.0/ 
-                        │      │                  ├ [9] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+                        │      │                  ├ [1] : https://access.redhat.com/errata/RHSA-2026:86196 
+                        │      │                  ├ [2] : https://access.redhat.com/errata/RHSA-2026:86203 
+                        │      │                  ├ [3] : https://access.redhat.com/security/cve/CVE-2026-111943 
+                        │      │                  ├ [4] : https://bugzilla.redhat.com/2548334 
+                        │      │                  ├ [5] : https://bugzilla.redhat.com/2548336 
+                        │      │                  ├ [6] : https://bugzilla.redhat.com/2548344 
+                        │      │                  ├ [7] : https://bugzilla.redhat.com/2556068 
+                        │      │                  ├ [8] : https://bugzilla.redhat.com/show_bug.cgi?id=2548334 
+                        │      │                  ├ [9] : https://bugzilla.redhat.com/show_bug.cgi?id=2548336 
+                        │      │                  ├ [10]: https://bugzilla.redhat.com/show_bug.cgi?id=2548344 
+                        │      │                  ├ [11]: https://bugzilla.redhat.com/show_bug.cgi?id=2556068 
+                        │      │                  ├ [12]: https://creativecommons.org/licenses/by/4.0/ 
+                        │      │                  ├ [13]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
                         │      │                  │       26-111943 
-                        │      │                  ├ [10]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+                        │      │                  ├ [14]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
                         │      │                  │       26-78667 
-                        │      │                  ├ [11]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+                        │      │                  ├ [15]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
                         │      │                  │       26-78669 
-                        │      │                  ├ [12]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+                        │      │                  ├ [16]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
                         │      │                  │       26-97031 
-                        │      │                  ├ [13]: https://errata.rockylinux.org/RLSA-2026:86203 
-                        │      │                  ├ [14]: https://github.com/golang/go/issues/82345 
-                        │      │                  ├ [15]: https://go.dev/cl/851047 
-                        │      │                  ├ [16]: https://go.dev/issue/82345 
-                        │      │                  ├ [17]: https://groups.google.com/g/golang-announce/c/66pojue
+                        │      │                  ├ [17]: https://errata.almalinux.org/8/ALSA-2026-86203.html 
+                        │      │                  ├ [18]: https://errata.rockylinux.org/RLSA-2026:86196 
+                        │      │                  ├ [19]: https://github.com/golang/go/issues/82345 
+                        │      │                  ├ [20]: https://go.dev/cl/851047 
+                        │      │                  ├ [21]: https://go.dev/issue/82345 
+                        │      │                  ├ [22]: https://groups.google.com/g/golang-announce/c/66pojue
                         │      │                  │       aQek 
-                        │      │                  ├ [18]: https://groups.google.com/g/golang-nuts/c/K22sG2AYnKU 
-                        │      │                  ├ [19]: https://linux.oracle.com/cve/CVE-2026-111943.html 
-                        │      │                  ├ [20]: https://linux.oracle.com/errata/ELSA-2026-500451.html 
-                        │      │                  ├ [21]: https://nvd.nist.gov/vuln/detail/CVE-2026-111943 
-                        │      │                  ├ [22]: https://pkg.go.dev/vuln/GO-2026-6809 
-                        │      │                  ╰ [23]: https://www.cve.org/CVERecord?id=CVE-2026-111943 
+                        │      │                  ├ [23]: https://groups.google.com/g/golang-nuts/c/K22sG2AYnKU 
+                        │      │                  ├ [24]: https://linux.oracle.com/cve/CVE-2026-111943.html 
+                        │      │                  ├ [25]: https://linux.oracle.com/errata/ELSA-2026-86196.html 
+                        │      │                  ├ [26]: https://nvd.nist.gov/vuln/detail/CVE-2026-111943 
+                        │      │                  ├ [27]: https://pkg.go.dev/vuln/GO-2026-6809 
+                        │      │                  ╰ [28]: https://www.cve.org/CVERecord?id=CVE-2026-111943 
                         │      ├ PublishedDate   : 2026-10-21T01:17:20.797Z 
-                        │      ╰ LastModifiedDate: 2026-10-21T02:17:06.71Z 
+                        │      ╰ LastModifiedDate: 2026-10-22T16:18:19.04Z 
                         ├ [1]  ╭ VulnerabilityID : CVE-2026-78667 
                         │      ├ VendorIDs        ─ [0]: GO-2026-6609 
                         │      ├ PkgID           : stdlib@v1.27.1 
@@ -425,16 +94,16 @@
                         │      ├ InstalledVersion: v1.27.1 
                         │      ├ FixedVersion    : 1.26.9, 1.27.2 
                         │      ├ Status          : fixed 
-                        │      ├ Layer            ╭ Digest: sha256:173ca374c9379e532daa709cec8632de1474a5b9e2f5
-                        │      │                  │         3f1fda9b3f3e35eae32b 
-                        │      │                  ╰ DiffID: sha256:97591bb1cc3eb8597ab77e3b5093924e3d7ee3a1bfea
-                        │      │                            b4e02867b9f5fbfcf8fd 
+                        │      ├ Layer            ╭ Digest: sha256:d527520ad54e338851b190ce2a47f604eae8ba718352
+                        │      │                  │         8de33c26f6812c8b3e5b 
+                        │      │                  ╰ DiffID: sha256:dda15f06cbbc1e44d6b324f37823f4c7f301e5a67d8b
+                        │      │                            16aee496f2b1ee108def 
                         │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-78667 
                         │      ├ DataSource       ╭ ID  : govulndb 
                         │      │                  ├ Name: The Go Vulnerability Database 
                         │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
-                        │      ├ Fingerprint     : sha256:8fa41524f26a1b8de26b49007138d99379832db96fb55a3e435eb
-                        │      │                   bdda6114deb 
+                        │      ├ Fingerprint     : sha256:0ebcbe6a17111a42786674b55d6fd6f57be4935029c9a62278f1b
+                        │      │                   49f927605f9 
                         │      ├ Title           : net/http: golang: golang: Denial of Service via crafted HTTP
                         │      │                    Range headers 
                         │      ├ Description     : When parsing a Range header containing a large number of
@@ -442,42 +111,52 @@
                         │      │                   ServeFile(FS) can consume an excessive amount of CPU. 
                         │      ├ Severity        : HIGH 
                         │      ├ CweIDs           ─ [0]: CWE-770 
-                        │      ├ VendorSeverity   ╭ bitnami: 3 
-                        │      │                  ├ redhat : 3 
-                        │      │                  ├ rocky  : 3 
-                        │      │                  ╰ ubuntu : 2 
+                        │      ├ VendorSeverity   ╭ alma       : 3 
+                        │      │                  ├ bitnami    : 3 
+                        │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ redhat     : 3 
+                        │      │                  ├ rocky      : 3 
+                        │      │                  ╰ ubuntu     : 2 
                         │      ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
                         │      │                  │         │           N/A:H 
                         │      │                  │         ╰ V3Score : 7.5 
                         │      │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
                         │      │                            │           N/A:H 
                         │      │                            ╰ V3Score : 7.5 
-                        │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:86203 
-                        │      │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2026-78667 
-                        │      │                  ├ [2] : https://bugzilla.redhat.com/show_bug.cgi?id=2548334 
-                        │      │                  ├ [3] : https://bugzilla.redhat.com/show_bug.cgi?id=2548336 
-                        │      │                  ├ [4] : https://bugzilla.redhat.com/show_bug.cgi?id=2548344 
-                        │      │                  ├ [5] : https://bugzilla.redhat.com/show_bug.cgi?id=2556068 
-                        │      │                  ├ [6] : https://creativecommons.org/licenses/by/4.0/ 
-                        │      │                  ├ [7] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+                        │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:86196 
+                        │      │                  ├ [1] : https://access.redhat.com/errata/RHSA-2026:86203 
+                        │      │                  ├ [2] : https://access.redhat.com/security/cve/CVE-2026-78667 
+                        │      │                  ├ [3] : https://bugzilla.redhat.com/2548334 
+                        │      │                  ├ [4] : https://bugzilla.redhat.com/2548336 
+                        │      │                  ├ [5] : https://bugzilla.redhat.com/2548344 
+                        │      │                  ├ [6] : https://bugzilla.redhat.com/2556068 
+                        │      │                  ├ [7] : https://bugzilla.redhat.com/show_bug.cgi?id=2548334 
+                        │      │                  ├ [8] : https://bugzilla.redhat.com/show_bug.cgi?id=2548336 
+                        │      │                  ├ [9] : https://bugzilla.redhat.com/show_bug.cgi?id=2548344 
+                        │      │                  ├ [10]: https://bugzilla.redhat.com/show_bug.cgi?id=2556068 
+                        │      │                  ├ [11]: https://creativecommons.org/licenses/by/4.0/ 
+                        │      │                  ├ [12]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
                         │      │                  │       26-111943 
-                        │      │                  ├ [8] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+                        │      │                  ├ [13]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
                         │      │                  │       26-78667 
-                        │      │                  ├ [9] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+                        │      │                  ├ [14]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
                         │      │                  │       26-78669 
-                        │      │                  ├ [10]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+                        │      │                  ├ [15]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
                         │      │                  │       26-97031 
-                        │      │                  ├ [11]: https://errata.rockylinux.org/RLSA-2026:86203 
-                        │      │                  ├ [12]: https://github.com/golang/go/issues/81858 
-                        │      │                  ├ [13]: https://go.dev/cl/847309 
-                        │      │                  ├ [14]: https://go.dev/issue/81858 
-                        │      │                  ├ [15]: https://groups.google.com/g/golang-announce/c/U2fTuyD
+                        │      │                  ├ [16]: https://errata.almalinux.org/8/ALSA-2026-86203.html 
+                        │      │                  ├ [17]: https://errata.rockylinux.org/RLSA-2026:86196 
+                        │      │                  ├ [18]: https://github.com/golang/go/issues/81858 
+                        │      │                  ├ [19]: https://go.dev/cl/847309 
+                        │      │                  ├ [20]: https://go.dev/issue/81858 
+                        │      │                  ├ [21]: https://groups.google.com/g/golang-announce/c/U2fTuyD
                         │      │                  │       JznI 
-                        │      │                  ├ [16]: https://nvd.nist.gov/vuln/detail/CVE-2026-78667 
-                        │      │                  ├ [17]: https://pkg.go.dev/vuln/GO-2026-6609 
-                        │      │                  ├ [18]: https://ubuntu.com/security/notices/USN-8935-1 
-                        │      │                  ├ [19]: https://www.cve.org/CVERecord?id=CVE-2026-78667 
-                        │      │                  ╰ [20]: https://www.openwall.com/lists/oss-security/2026/10/0
+                        │      │                  ├ [22]: https://linux.oracle.com/cve/CVE-2026-78667.html 
+                        │      │                  ├ [23]: https://linux.oracle.com/errata/ELSA-2026-86196.html 
+                        │      │                  ├ [24]: https://nvd.nist.gov/vuln/detail/CVE-2026-78667 
+                        │      │                  ├ [25]: https://pkg.go.dev/vuln/GO-2026-6609 
+                        │      │                  ├ [26]: https://ubuntu.com/security/notices/USN-8935-1 
+                        │      │                  ├ [27]: https://www.cve.org/CVERecord?id=CVE-2026-78667 
+                        │      │                  ╰ [28]: https://www.openwall.com/lists/oss-security/2026/10/0
                         │      │                          8/9 
                         │      ├ PublishedDate   : 2026-10-08T23:17:03.88Z 
                         │      ╰ LastModifiedDate: 2026-10-09T17:16:49.69Z 
@@ -490,16 +169,16 @@
                         │      ├ InstalledVersion: v1.27.1 
                         │      ├ FixedVersion    : 1.26.9, 1.27.2 
                         │      ├ Status          : fixed 
-                        │      ├ Layer            ╭ Digest: sha256:173ca374c9379e532daa709cec8632de1474a5b9e2f5
-                        │      │                  │         3f1fda9b3f3e35eae32b 
-                        │      │                  ╰ DiffID: sha256:97591bb1cc3eb8597ab77e3b5093924e3d7ee3a1bfea
-                        │      │                            b4e02867b9f5fbfcf8fd 
+                        │      ├ Layer            ╭ Digest: sha256:d527520ad54e338851b190ce2a47f604eae8ba718352
+                        │      │                  │         8de33c26f6812c8b3e5b 
+                        │      │                  ╰ DiffID: sha256:dda15f06cbbc1e44d6b324f37823f4c7f301e5a67d8b
+                        │      │                            16aee496f2b1ee108def 
                         │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-78669 
                         │      ├ DataSource       ╭ ID  : govulndb 
                         │      │                  ├ Name: The Go Vulnerability Database 
                         │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
-                        │      ├ Fingerprint     : sha256:46752468f04599643acd3b8ce2731ddaac3dcfb11f60504743702
-                        │      │                   16d512372b3 
+                        │      ├ Fingerprint     : sha256:21d561409beb70247922021f045e32ac629b7f5b4a45e045fd3f8
+                        │      │                   2221b782a04 
                         │      ├ Title           : net/http: net/http/internal/http2: golang.org/x/net/http2:
                         │      │                   net/http: Denial of Service via excessive HTTP/2 SETTINGS
                         │      │                   frames 
@@ -509,46 +188,56 @@
                         │      │                   SETTINGS_INITIAL_WINDOW_SIZE values. 
                         │      ├ Severity        : HIGH 
                         │      ├ CweIDs           ─ [0]: CWE-405 
-                        │      ├ VendorSeverity   ╭ azure  : 3 
-                        │      │                  ├ bitnami: 3 
-                        │      │                  ├ redhat : 3 
-                        │      │                  ├ rocky  : 3 
-                        │      │                  ╰ ubuntu : 2 
+                        │      ├ VendorSeverity   ╭ alma       : 3 
+                        │      │                  ├ azure      : 3 
+                        │      │                  ├ bitnami    : 3 
+                        │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ redhat     : 3 
+                        │      │                  ├ rocky      : 3 
+                        │      │                  ╰ ubuntu     : 2 
                         │      ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
                         │      │                  │         │           N/A:H 
                         │      │                  │         ╰ V3Score : 7.5 
                         │      │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
                         │      │                            │           N/A:H 
                         │      │                            ╰ V3Score : 7.5 
-                        │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:86203 
-                        │      │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2026-78669 
-                        │      │                  ├ [2] : https://bugzilla.redhat.com/show_bug.cgi?id=2548334 
-                        │      │                  ├ [3] : https://bugzilla.redhat.com/show_bug.cgi?id=2548336 
-                        │      │                  ├ [4] : https://bugzilla.redhat.com/show_bug.cgi?id=2548344 
-                        │      │                  ├ [5] : https://bugzilla.redhat.com/show_bug.cgi?id=2556068 
-                        │      │                  ├ [6] : https://creativecommons.org/licenses/by/4.0/ 
-                        │      │                  ├ [7] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+                        │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:86196 
+                        │      │                  ├ [1] : https://access.redhat.com/errata/RHSA-2026:86203 
+                        │      │                  ├ [2] : https://access.redhat.com/security/cve/CVE-2026-78669 
+                        │      │                  ├ [3] : https://bugzilla.redhat.com/2548334 
+                        │      │                  ├ [4] : https://bugzilla.redhat.com/2548336 
+                        │      │                  ├ [5] : https://bugzilla.redhat.com/2548344 
+                        │      │                  ├ [6] : https://bugzilla.redhat.com/2556068 
+                        │      │                  ├ [7] : https://bugzilla.redhat.com/show_bug.cgi?id=2548334 
+                        │      │                  ├ [8] : https://bugzilla.redhat.com/show_bug.cgi?id=2548336 
+                        │      │                  ├ [9] : https://bugzilla.redhat.com/show_bug.cgi?id=2548344 
+                        │      │                  ├ [10]: https://bugzilla.redhat.com/show_bug.cgi?id=2556068 
+                        │      │                  ├ [11]: https://creativecommons.org/licenses/by/4.0/ 
+                        │      │                  ├ [12]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
                         │      │                  │       26-111943 
-                        │      │                  ├ [8] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+                        │      │                  ├ [13]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
                         │      │                  │       26-78667 
-                        │      │                  ├ [9] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+                        │      │                  ├ [14]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
                         │      │                  │       26-78669 
-                        │      │                  ├ [10]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+                        │      │                  ├ [15]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
                         │      │                  │       26-97031 
-                        │      │                  ├ [11]: https://errata.rockylinux.org/RLSA-2026:86203 
-                        │      │                  ├ [12]: https://github.com/golang/go/issues/81742 
-                        │      │                  ├ [13]: https://go.dev/cl/847186 
-                        │      │                  ├ [14]: https://go.dev/cl/847308 
-                        │      │                  ├ [15]: https://go.dev/issue/81742 
-                        │      │                  ├ [16]: https://groups.google.com/g/golang-announce/c/U2fTuyD
+                        │      │                  ├ [16]: https://errata.almalinux.org/8/ALSA-2026-86203.html 
+                        │      │                  ├ [17]: https://errata.rockylinux.org/RLSA-2026:86196 
+                        │      │                  ├ [18]: https://github.com/golang/go/issues/81742 
+                        │      │                  ├ [19]: https://go.dev/cl/847186 
+                        │      │                  ├ [20]: https://go.dev/cl/847308 
+                        │      │                  ├ [21]: https://go.dev/issue/81742 
+                        │      │                  ├ [22]: https://groups.google.com/g/golang-announce/c/U2fTuyD
                         │      │                  │       JznI 
-                        │      │                  ├ [17]: https://groups.google.com/g/golang-announce/c/ZPwCyRU
+                        │      │                  ├ [23]: https://groups.google.com/g/golang-announce/c/ZPwCyRU
                         │      │                  │       uGBs 
-                        │      │                  ├ [18]: https://nvd.nist.gov/vuln/detail/CVE-2026-78669 
-                        │      │                  ├ [19]: https://pkg.go.dev/vuln/GO-2026-6611 
-                        │      │                  ├ [20]: https://ubuntu.com/security/notices/USN-8935-1 
-                        │      │                  ├ [21]: https://www.cve.org/CVERecord?id=CVE-2026-78669 
-                        │      │                  ╰ [22]: https://www.openwall.com/lists/oss-security/2026/10/0
+                        │      │                  ├ [24]: https://linux.oracle.com/cve/CVE-2026-78669.html 
+                        │      │                  ├ [25]: https://linux.oracle.com/errata/ELSA-2026-86196.html 
+                        │      │                  ├ [26]: https://nvd.nist.gov/vuln/detail/CVE-2026-78669 
+                        │      │                  ├ [27]: https://pkg.go.dev/vuln/GO-2026-6611 
+                        │      │                  ├ [28]: https://ubuntu.com/security/notices/USN-8935-1 
+                        │      │                  ├ [29]: https://www.cve.org/CVERecord?id=CVE-2026-78669 
+                        │      │                  ╰ [30]: https://www.openwall.com/lists/oss-security/2026/10/0
                         │      │                          8/9 
                         │      ├ PublishedDate   : 2026-10-08T23:17:04.01Z 
                         │      ╰ LastModifiedDate: 2026-10-09T17:16:49.857Z 
@@ -561,16 +250,16 @@
                         │      ├ InstalledVersion: v1.27.1 
                         │      ├ FixedVersion    : 1.26.9, 1.27.2 
                         │      ├ Status          : fixed 
-                        │      ├ Layer            ╭ Digest: sha256:173ca374c9379e532daa709cec8632de1474a5b9e2f5
-                        │      │                  │         3f1fda9b3f3e35eae32b 
-                        │      │                  ╰ DiffID: sha256:97591bb1cc3eb8597ab77e3b5093924e3d7ee3a1bfea
-                        │      │                            b4e02867b9f5fbfcf8fd 
+                        │      ├ Layer            ╭ Digest: sha256:d527520ad54e338851b190ce2a47f604eae8ba718352
+                        │      │                  │         8de33c26f6812c8b3e5b 
+                        │      │                  ╰ DiffID: sha256:dda15f06cbbc1e44d6b324f37823f4c7f301e5a67d8b
+                        │      │                            16aee496f2b1ee108def 
                         │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-97031 
                         │      ├ DataSource       ╭ ID  : govulndb 
                         │      │                  ├ Name: The Go Vulnerability Database 
                         │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
-                        │      ├ Fingerprint     : sha256:1d354b60525b3f298fe18815596781ad9dc7090eea7fc87e944ec
-                        │      │                   6b1b87229ab 
+                        │      ├ Fingerprint     : sha256:fa870c2a63df32696aab09576f9dfa2a9b6c5f96a0aff52e1aa41
+                        │      │                   5004c725d86 
                         │      ├ Title           : crypto/tls: golang: crypto/tls: Denial of Service via
                         │      │                   multiple ECH outer extension references 
                         │      ├ Description     : Multiple ECH outer extension references are not permitted
@@ -581,38 +270,48 @@
                         │      │                    vector as a result. 
                         │      ├ Severity        : HIGH 
                         │      ├ CweIDs           ─ [0]: CWE-405 
-                        │      ├ VendorSeverity   ╭ bitnami: 3 
-                        │      │                  ├ redhat : 3 
-                        │      │                  ╰ rocky  : 3 
+                        │      ├ VendorSeverity   ╭ alma       : 3 
+                        │      │                  ├ bitnami    : 3 
+                        │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ redhat     : 3 
+                        │      │                  ╰ rocky      : 3 
                         │      ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
                         │      │                  │         │           N/A:H 
                         │      │                  │         ╰ V3Score : 7.5 
                         │      │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
                         │      │                            │           N/A:H 
                         │      │                            ╰ V3Score : 7.5 
-                        │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:86203 
-                        │      │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2026-97031 
-                        │      │                  ├ [2] : https://bugzilla.redhat.com/show_bug.cgi?id=2548334 
-                        │      │                  ├ [3] : https://bugzilla.redhat.com/show_bug.cgi?id=2548336 
-                        │      │                  ├ [4] : https://bugzilla.redhat.com/show_bug.cgi?id=2548344 
-                        │      │                  ├ [5] : https://bugzilla.redhat.com/show_bug.cgi?id=2556068 
-                        │      │                  ├ [6] : https://creativecommons.org/licenses/by/4.0/ 
-                        │      │                  ├ [7] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+                        │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:86196 
+                        │      │                  ├ [1] : https://access.redhat.com/errata/RHSA-2026:86203 
+                        │      │                  ├ [2] : https://access.redhat.com/security/cve/CVE-2026-97031 
+                        │      │                  ├ [3] : https://bugzilla.redhat.com/2548334 
+                        │      │                  ├ [4] : https://bugzilla.redhat.com/2548336 
+                        │      │                  ├ [5] : https://bugzilla.redhat.com/2548344 
+                        │      │                  ├ [6] : https://bugzilla.redhat.com/2556068 
+                        │      │                  ├ [7] : https://bugzilla.redhat.com/show_bug.cgi?id=2548334 
+                        │      │                  ├ [8] : https://bugzilla.redhat.com/show_bug.cgi?id=2548336 
+                        │      │                  ├ [9] : https://bugzilla.redhat.com/show_bug.cgi?id=2548344 
+                        │      │                  ├ [10]: https://bugzilla.redhat.com/show_bug.cgi?id=2556068 
+                        │      │                  ├ [11]: https://creativecommons.org/licenses/by/4.0/ 
+                        │      │                  ├ [12]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
                         │      │                  │       26-111943 
-                        │      │                  ├ [8] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+                        │      │                  ├ [13]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
                         │      │                  │       26-78667 
-                        │      │                  ├ [9] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+                        │      │                  ├ [14]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
                         │      │                  │       26-78669 
-                        │      │                  ├ [10]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+                        │      │                  ├ [15]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
                         │      │                  │       26-97031 
-                        │      │                  ├ [11]: https://errata.rockylinux.org/RLSA-2026:86203 
-                        │      │                  ├ [12]: https://go.dev/cl/847312 
-                        │      │                  ├ [13]: https://go.dev/issue/81855 
-                        │      │                  ├ [14]: https://groups.google.com/g/golang-announce/c/U2fTuyD
+                        │      │                  ├ [16]: https://errata.almalinux.org/8/ALSA-2026-86203.html 
+                        │      │                  ├ [17]: https://errata.rockylinux.org/RLSA-2026:86196 
+                        │      │                  ├ [18]: https://go.dev/cl/847312 
+                        │      │                  ├ [19]: https://go.dev/issue/81855 
+                        │      │                  ├ [20]: https://groups.google.com/g/golang-announce/c/U2fTuyD
                         │      │                  │       JznI 
-                        │      │                  ├ [15]: https://nvd.nist.gov/vuln/detail/CVE-2026-97031 
-                        │      │                  ├ [16]: https://pkg.go.dev/vuln/GO-2026-6607 
-                        │      │                  ╰ [17]: https://www.cve.org/CVERecord?id=CVE-2026-97031 
+                        │      │                  ├ [21]: https://linux.oracle.com/cve/CVE-2026-97031.html 
+                        │      │                  ├ [22]: https://linux.oracle.com/errata/ELSA-2026-86196.html 
+                        │      │                  ├ [23]: https://nvd.nist.gov/vuln/detail/CVE-2026-97031 
+                        │      │                  ├ [24]: https://pkg.go.dev/vuln/GO-2026-6607 
+                        │      │                  ╰ [25]: https://www.cve.org/CVERecord?id=CVE-2026-97031 
                         │      ├ PublishedDate   : 2026-10-08T23:17:06.037Z 
                         │      ╰ LastModifiedDate: 2026-10-09T16:35:35.9Z 
                         ├ [4]  ╭ VulnerabilityID : CVE-2026-56866 
@@ -624,16 +323,16 @@
                         │      ├ InstalledVersion: v1.27.1 
                         │      ├ FixedVersion    : 1.26.9, 1.27.2 
                         │      ├ Status          : fixed 
-                        │      ├ Layer            ╭ Digest: sha256:173ca374c9379e532daa709cec8632de1474a5b9e2f5
-                        │      │                  │         3f1fda9b3f3e35eae32b 
-                        │      │                  ╰ DiffID: sha256:97591bb1cc3eb8597ab77e3b5093924e3d7ee3a1bfea
-                        │      │                            b4e02867b9f5fbfcf8fd 
+                        │      ├ Layer            ╭ Digest: sha256:d527520ad54e338851b190ce2a47f604eae8ba718352
+                        │      │                  │         8de33c26f6812c8b3e5b 
+                        │      │                  ╰ DiffID: sha256:dda15f06cbbc1e44d6b324f37823f4c7f301e5a67d8b
+                        │      │                            16aee496f2b1ee108def 
                         │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-56866 
                         │      ├ DataSource       ╭ ID  : govulndb 
                         │      │                  ├ Name: The Go Vulnerability Database 
                         │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
-                        │      ├ Fingerprint     : sha256:e820cf92722188130b99f7001a4fb424b17c9ce01ed4b4d85eb06
-                        │      │                   66bc82c288c 
+                        │      ├ Fingerprint     : sha256:f1c7f5146ed855870546e6dd176da54d065cc902497eeda272935
+                        │      │                   8063b8083a6 
                         │      ├ Title           : net/http: golang: golang: Cross-user response poisoning via
                         │      │                   desynchronized HTTP CONNECT connections 
                         │      ├ Description     : When http.Transport sends an HTTP/1 CONNECT request with a
@@ -683,16 +382,16 @@
                         │      ├ InstalledVersion: v1.27.1 
                         │      ├ FixedVersion    : 1.26.9, 1.27.2 
                         │      ├ Status          : fixed 
-                        │      ├ Layer            ╭ Digest: sha256:173ca374c9379e532daa709cec8632de1474a5b9e2f5
-                        │      │                  │         3f1fda9b3f3e35eae32b 
-                        │      │                  ╰ DiffID: sha256:97591bb1cc3eb8597ab77e3b5093924e3d7ee3a1bfea
-                        │      │                            b4e02867b9f5fbfcf8fd 
+                        │      ├ Layer            ╭ Digest: sha256:d527520ad54e338851b190ce2a47f604eae8ba718352
+                        │      │                  │         8de33c26f6812c8b3e5b 
+                        │      │                  ╰ DiffID: sha256:dda15f06cbbc1e44d6b324f37823f4c7f301e5a67d8b
+                        │      │                            16aee496f2b1ee108def 
                         │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-78659 
                         │      ├ DataSource       ╭ ID  : govulndb 
                         │      │                  ├ Name: The Go Vulnerability Database 
                         │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
-                        │      ├ Fingerprint     : sha256:10bca7415222f8575b31321da768e899187fd24e974bee91dfc62
-                        │      │                   3df1532d164 
+                        │      ├ Fingerprint     : sha256:f43174c35460b8582587d77592d3c9490389fbd194f1b50f9e374
+                        │      │                   58eaab4662d 
                         │      ├ Title           : When "Trailer" headers are sent by a client, the HTTP server
                         │      │                    internall ... 
                         │      ├ Description     : When "Trailer" headers are sent by a client, the HTTP server
@@ -741,16 +440,16 @@
                         │      ├ InstalledVersion: v1.27.1 
                         │      ├ FixedVersion    : 1.26.9, 1.27.2 
                         │      ├ Status          : fixed 
-                        │      ├ Layer            ╭ Digest: sha256:173ca374c9379e532daa709cec8632de1474a5b9e2f5
-                        │      │                  │         3f1fda9b3f3e35eae32b 
-                        │      │                  ╰ DiffID: sha256:97591bb1cc3eb8597ab77e3b5093924e3d7ee3a1bfea
-                        │      │                            b4e02867b9f5fbfcf8fd 
+                        │      ├ Layer            ╭ Digest: sha256:d527520ad54e338851b190ce2a47f604eae8ba718352
+                        │      │                  │         8de33c26f6812c8b3e5b 
+                        │      │                  ╰ DiffID: sha256:dda15f06cbbc1e44d6b324f37823f4c7f301e5a67d8b
+                        │      │                            16aee496f2b1ee108def 
                         │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-78660 
                         │      ├ DataSource       ╭ ID  : govulndb 
                         │      │                  ├ Name: The Go Vulnerability Database 
                         │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
-                        │      ├ Fingerprint     : sha256:252e6bba94236512d7ebefe40fff18339e3f6448c00506f408c48
-                        │      │                   6cee45a48e4 
+                        │      ├ Fingerprint     : sha256:7851c593e7b4771548dc7873008b1f17f434e38664dc5afce4eb1
+                        │      │                   4f3a8d95b6f 
                         │      ├ Title           : Historically, we have been rather lax about malformed
                         │      │                   framing-related  ... 
                         │      ├ Description     : Historically, we have been rather lax about malformed
@@ -791,16 +490,16 @@
                         │      ├ InstalledVersion: v1.27.1 
                         │      ├ FixedVersion    : 1.26.9, 1.27.2 
                         │      ├ Status          : fixed 
-                        │      ├ Layer            ╭ Digest: sha256:173ca374c9379e532daa709cec8632de1474a5b9e2f5
-                        │      │                  │         3f1fda9b3f3e35eae32b 
-                        │      │                  ╰ DiffID: sha256:97591bb1cc3eb8597ab77e3b5093924e3d7ee3a1bfea
-                        │      │                            b4e02867b9f5fbfcf8fd 
+                        │      ├ Layer            ╭ Digest: sha256:d527520ad54e338851b190ce2a47f604eae8ba718352
+                        │      │                  │         8de33c26f6812c8b3e5b 
+                        │      │                  ╰ DiffID: sha256:dda15f06cbbc1e44d6b324f37823f4c7f301e5a67d8b
+                        │      │                            16aee496f2b1ee108def 
                         │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-78663 
                         │      ├ DataSource       ╭ ID  : govulndb 
                         │      │                  ├ Name: The Go Vulnerability Database 
                         │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
-                        │      ├ Fingerprint     : sha256:20c8b51330a8369d9d2c743353c1365f1f28432f018210ef25d86
-                        │      │                   c3686fdbda6 
+                        │      ├ Fingerprint     : sha256:2a2e4bdcd31634b27479cc21f99bd1553b27734fc03da22f25a08
+                        │      │                   753a8a1680f 
                         │      ├ Title           : net/http: net/http/internal/http2: golang:
                         │      │                   golang.org/x/net/http2: golang: flow control limit bypass
                         │      │                   via double refund in HTTP/2 server 
@@ -851,16 +550,16 @@
                         │      ├ InstalledVersion: v1.27.1 
                         │      ├ FixedVersion    : 1.26.9, 1.27.2 
                         │      ├ Status          : fixed 
-                        │      ├ Layer            ╭ Digest: sha256:173ca374c9379e532daa709cec8632de1474a5b9e2f5
-                        │      │                  │         3f1fda9b3f3e35eae32b 
-                        │      │                  ╰ DiffID: sha256:97591bb1cc3eb8597ab77e3b5093924e3d7ee3a1bfea
-                        │      │                            b4e02867b9f5fbfcf8fd 
+                        │      ├ Layer            ╭ Digest: sha256:d527520ad54e338851b190ce2a47f604eae8ba718352
+                        │      │                  │         8de33c26f6812c8b3e5b 
+                        │      │                  ╰ DiffID: sha256:dda15f06cbbc1e44d6b324f37823f4c7f301e5a67d8b
+                        │      │                            16aee496f2b1ee108def 
                         │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-94439 
                         │      ├ DataSource       ╭ ID  : govulndb 
                         │      │                  ├ Name: The Go Vulnerability Database 
                         │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
-                        │      ├ Fingerprint     : sha256:e54a2a790cf843aa16611fd25f719819072188d5f06a49f085218
-                        │      │                   65db7f88122 
+                        │      ├ Fingerprint     : sha256:95559b4d5af51ff700fb60c6ab5d129bd0fbeb967e1de2e83abd0
+                        │      │                   f11b58aec97 
                         │      ├ Title           : net/http: golang: net/http: HTTP request smuggling via
                         │      │                   improper handling of HTTP/1 CONNECT responses 
                         │      ├ Description     : When an HTTP server handler sends a 2xx response to an
@@ -906,16 +605,16 @@
                         │      ├ InstalledVersion: v1.27.1 
                         │      ├ FixedVersion    : 1.26.9, 1.27.2 
                         │      ├ Status          : fixed 
-                        │      ├ Layer            ╭ Digest: sha256:173ca374c9379e532daa709cec8632de1474a5b9e2f5
-                        │      │                  │         3f1fda9b3f3e35eae32b 
-                        │      │                  ╰ DiffID: sha256:97591bb1cc3eb8597ab77e3b5093924e3d7ee3a1bfea
-                        │      │                            b4e02867b9f5fbfcf8fd 
+                        │      ├ Layer            ╭ Digest: sha256:d527520ad54e338851b190ce2a47f604eae8ba718352
+                        │      │                  │         8de33c26f6812c8b3e5b 
+                        │      │                  ╰ DiffID: sha256:dda15f06cbbc1e44d6b324f37823f4c7f301e5a67d8b
+                        │      │                            16aee496f2b1ee108def 
                         │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-94440 
                         │      ├ DataSource       ╭ ID  : govulndb 
                         │      │                  ├ Name: The Go Vulnerability Database 
                         │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
-                        │      ├ Fingerprint     : sha256:e7b441c19565c1f959adb7e8bf34ac5c0da7bf65858958ec454fc
-                        │      │                   8b6aeba1540 
+                        │      ├ Fingerprint     : sha256:44c05790941a83c21d8bc4e1247cfee604c6c8539e8348d892a34
+                        │      │                   8b0bcf8a74b 
                         │      ├ Title           : Parsing a multipart form can bypass memory limits and read
                         │      │                   an arbitrar ... 
                         │      ├ Description     : Parsing a multipart form can bypass memory limits and read
@@ -949,16 +648,16 @@
                         │      ├ InstalledVersion: v1.27.1 
                         │      ├ FixedVersion    : 1.26.9, 1.27.2 
                         │      ├ Status          : fixed 
-                        │      ├ Layer            ╭ Digest: sha256:173ca374c9379e532daa709cec8632de1474a5b9e2f5
-                        │      │                  │         3f1fda9b3f3e35eae32b 
-                        │      │                  ╰ DiffID: sha256:97591bb1cc3eb8597ab77e3b5093924e3d7ee3a1bfea
-                        │      │                            b4e02867b9f5fbfcf8fd 
+                        │      ├ Layer            ╭ Digest: sha256:d527520ad54e338851b190ce2a47f604eae8ba718352
+                        │      │                  │         8de33c26f6812c8b3e5b 
+                        │      │                  ╰ DiffID: sha256:dda15f06cbbc1e44d6b324f37823f4c7f301e5a67d8b
+                        │      │                            16aee496f2b1ee108def 
                         │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-94448 
                         │      ├ DataSource       ╭ ID  : govulndb 
                         │      │                  ├ Name: The Go Vulnerability Database 
                         │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
-                        │      ├ Fingerprint     : sha256:9176782d5f9a6ef826217d1c698098990e302cc1ed7d6f27ad8db
-                        │      │                   7713bd6b731 
+                        │      ├ Fingerprint     : sha256:b3534420601ef896f3a80d5f26064139438b240bc3fe2688c3df5
+                        │      │                   c8a782ebe3e 
                         │      ├ Title           : html/template: golang: golang: cross-site scripting via
                         │      │                   consecutive expressions in JavaScript template literals 
                         │      ├ Description     : When a JavaScript template literal contains consecutive
@@ -996,16 +695,16 @@
                         │      ├ InstalledVersion: v1.27.1 
                         │      ├ FixedVersion    : 1.26.9, 1.27.2 
                         │      ├ Status          : fixed 
-                        │      ├ Layer            ╭ Digest: sha256:173ca374c9379e532daa709cec8632de1474a5b9e2f5
-                        │      │                  │         3f1fda9b3f3e35eae32b 
-                        │      │                  ╰ DiffID: sha256:97591bb1cc3eb8597ab77e3b5093924e3d7ee3a1bfea
-                        │      │                            b4e02867b9f5fbfcf8fd 
+                        │      ├ Layer            ╭ Digest: sha256:d527520ad54e338851b190ce2a47f604eae8ba718352
+                        │      │                  │         8de33c26f6812c8b3e5b 
+                        │      │                  ╰ DiffID: sha256:dda15f06cbbc1e44d6b324f37823f4c7f301e5a67d8b
+                        │      │                            16aee496f2b1ee108def 
                         │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-97030 
                         │      ├ DataSource       ╭ ID  : govulndb 
                         │      │                  ├ Name: The Go Vulnerability Database 
                         │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
-                        │      ├ Fingerprint     : sha256:561704aa7edf35a1a6f36d0ee8813a392ef25bca1667f36cd24aa
-                        │      │                   cba1082a08a 
+                        │      ├ Fingerprint     : sha256:44021b8be3b62dc2cc983d490e8a2b9b5b12c0ccb639867f25dca
+                        │      │                   fd2177f1bab 
                         │      ├ Title           : A trusted template author may have previously written a
                         │      │                   valid template ... 
                         │      ├ Description     : A trusted template author may have previously written a
@@ -1035,16 +734,16 @@
                         │      ├ InstalledVersion: v1.27.1 
                         │      ├ FixedVersion    : 1.26.9, 1.27.2 
                         │      ├ Status          : fixed 
-                        │      ├ Layer            ╭ Digest: sha256:173ca374c9379e532daa709cec8632de1474a5b9e2f5
-                        │      │                  │         3f1fda9b3f3e35eae32b 
-                        │      │                  ╰ DiffID: sha256:97591bb1cc3eb8597ab77e3b5093924e3d7ee3a1bfea
-                        │      │                            b4e02867b9f5fbfcf8fd 
+                        │      ├ Layer            ╭ Digest: sha256:d527520ad54e338851b190ce2a47f604eae8ba718352
+                        │      │                  │         8de33c26f6812c8b3e5b 
+                        │      │                  ╰ DiffID: sha256:dda15f06cbbc1e44d6b324f37823f4c7f301e5a67d8b
+                        │      │                            16aee496f2b1ee108def 
                         │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-97032 
                         │      ├ DataSource       ╭ ID  : govulndb 
                         │      │                  ├ Name: The Go Vulnerability Database 
                         │      │                  ╰ URL : https://pkg.go.dev/vuln/ 
-                        │      ├ Fingerprint     : sha256:05bd6aa28f39b2305c6723d78021d045d371ea91f5bdcbe406979
-                        │      │                   88c77346169 
+                        │      ├ Fingerprint     : sha256:8c41a1e11781853884d6ec2ff717bef5b8a4e1edec031ebfca544
+                        │      │                   115ccc958ce 
                         │      ├ Title           : net/http: net/http/internal/http2: golang:
                         │      │                   golang.org/x/net/http2: net/http: Denial of Service via
                         │      │                   concurrent HPACK encoder modification 
@@ -1091,16 +790,16 @@
                                ├ InstalledVersion: v1.27.1 
                                ├ FixedVersion    : 1.26.9, 1.27.2 
                                ├ Status          : fixed 
-                               ├ Layer            ╭ Digest: sha256:173ca374c9379e532daa709cec8632de1474a5b9e2f5
-                               │                  │         3f1fda9b3f3e35eae32b 
-                               │                  ╰ DiffID: sha256:97591bb1cc3eb8597ab77e3b5093924e3d7ee3a1bfea
-                               │                            b4e02867b9f5fbfcf8fd 
+                               ├ Layer            ╭ Digest: sha256:d527520ad54e338851b190ce2a47f604eae8ba718352
+                               │                  │         8de33c26f6812c8b3e5b 
+                               │                  ╰ DiffID: sha256:dda15f06cbbc1e44d6b324f37823f4c7f301e5a67d8b
+                               │                            16aee496f2b1ee108def 
                                ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-56857 
                                ├ DataSource       ╭ ID  : govulndb 
                                │                  ├ Name: The Go Vulnerability Database 
                                │                  ╰ URL : https://pkg.go.dev/vuln/ 
-                               ├ Fingerprint     : sha256:bd371cba9b9d2d6a5da58526f4cd8a43b358b484a9dab9c12f3f3
-                               │                   9645ecc21b7 
+                               ├ Fingerprint     : sha256:6013c65dd231cd0f9bf684b7153083f0e004f0a5056651042018e
+                               │                   2bac32199e4 
                                ├ Title           : os: golang: golang: Directory traversal via Windows junction
                                │                    handling 
                                ├ Description     : On Windows, when the target of Root.Mkdir or Root.MkdirAll
