@@ -261,7 +261,7 @@
                         │      ├ VendorSeverity   ╭ alma       : 4 
                         │      │                  ├ amazon     : 3 
                         │      │                  ├ bitnami    : 3 
-                        │      │                  ├ oracle-oval: 4 
+                        │      │                  ├ oracle-oval: 3 
                         │      │                  ├ redhat     : 3 
                         │      │                  ╰ rocky      : 4 
                         │      ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:
@@ -300,7 +300,7 @@
                         │      │                  ├ [22]: https://groups.google.com/g/golang-announce/c/U2fTuyD
                         │      │                  │       JznI 
                         │      │                  ├ [23]: https://linux.oracle.com/cve/CVE-2026-97031.html 
-                        │      │                  ├ [24]: https://linux.oracle.com/errata/ELSA-2026-89744.html 
+                        │      │                  ├ [24]: https://linux.oracle.com/errata/ELSA-2026-89751.html 
                         │      │                  ├ [25]: https://nvd.nist.gov/vuln/detail/CVE-2026-97031 
                         │      │                  ├ [26]: https://pkg.go.dev/vuln/GO-2026-6607 
                         │      │                  ╰ [27]: https://www.cve.org/CVERecord?id=CVE-2026-97031 
