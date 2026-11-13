@@ -10,3 +10,34 @@
   Class: lang-pkgs
   Type: gobinary
   Packages: []
+  Vulnerabilities:
+  - VulnerabilityID: CVE-2026-97054
+    VendorIDs:
+    - GO-2026-6859
+    PkgID: stdlib@v1.27.3
+    PkgName: stdlib
+    PkgIdentifier:
+      PURL: pkg:golang/stdlib@v1.27.3
+      UID: e374b4c8f0056732
+    InstalledVersion: v1.27.3
+    FixedVersion: 1.26.11, 1.27.4
+    Status: fixed
+    Layer:
+      Digest: sha256:1dfacb4d48207b4c2eb81bc723fa581c563f78a997f6d523319e13e68b0eaa1c
+      DiffID: sha256:e3915f64c886601619bd5c388788987aba39cf2ae0f2bf943e4a58a3eaa5a92b
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-97054
+    DataSource:
+      ID: govulndb
+      Name: The Go Vulnerability Database
+      URL: https://pkg.go.dev/vuln/
+    Fingerprint: sha256:d332ed79b65647c7d77f863ef57af0c5b3f0b176adfb79df7a3f2a09c381d3db
+    Title: For HTTP/1 servers, when MaxBytesReader's limit is exceeded, "Connecti ...
+    Description: 'For HTTP/1 servers, when MaxBytesReader''s limit is exceeded, "Connection: close" header is automatically set without synchronization, which might race with another header being set explicitly in the server handler. As a result, an HTTP/1 server that utilizes MaxBytesReader or MaxBytesHandler can crash due to runtime panic if its handler reads the request body concurrently with writing the response header.'
+    Severity: UNKNOWN
+    References:
+    - https://go.dev/cl/862185
+    - https://go.dev/issue/82563
+    - https://groups.google.com/g/golang-announce/c/iY8TY0wWgbM
+    - https://pkg.go.dev/vuln/GO-2026-6859
+    PublishedDate: '2026-11-11T05:19:58.943Z'
+    LastModifiedDate: '2026-11-11T05:19:58.943Z'
