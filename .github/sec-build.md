@@ -45,5 +45,5 @@
                               │                  ├ [2]: https://groups.google.com/g/golang-announce/c/iY8TY0wWgbM 
                               │                  ╰ [3]: https://pkg.go.dev/vuln/GO-2026-6859 
                               ├ PublishedDate   : 2026-11-11T05:19:58.943Z 
-                              ╰ LastModifiedDate: 2026-11-11T05:19:58.943Z 
+                              ╰ LastModifiedDate: 2026-11-12T22:09:39.233Z 
 ```
