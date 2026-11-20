@@ -12,7 +12,9 @@
       ├ Type           : gobinary 
       ├ Packages        
       ╰ Vulnerabilities ─ [0] ╭ VulnerabilityID : CVE-2026-97054 
-                              ├ VendorIDs        ─ [0]: GO-2026-6859 
+                              ├ VendorIDs                    
+                              │                  ────────────
+                              │                  GO-2026-6859
                               ├ PkgID           : stdlib@v1.27.3 
                               ├ PkgName         : stdlib 
                               ├ PkgIdentifier    ╭ PURL: pkg:golang/stdlib@v1.27.3 
@@ -39,14 +41,18 @@
                               │                   server that utilizes MaxBytesReader or MaxBytesHandler can
                               │                   crash due to runtime panic if its handler reads the request
                               │                   body concurrently with writing the response header. 
-                              ├ Severity        : MEDIUM 
-                              ├ CweIDs           ╭ [0]: CWE-362 
-                              │                  ╰ [1]: CWE-820 
-                              ├ VendorSeverity   ─ amazon: 2 
-                              ├ References       ╭ [0]: https://go.dev/cl/862185 
-                              │                  ├ [1]: https://go.dev/issue/82563 
-                              │                  ├ [2]: https://groups.google.com/g/golang-announce/c/iY8TY0wWgbM 
-                              │                  ╰ [3]: https://pkg.go.dev/vuln/GO-2026-6859 
+                              ├ Severity        : HIGH 
+                              ├ CweIDs                  
+                              │                  ───────
+                              │                  CWE-362
+                              │                  CWE-820
+                              ├ VendorSeverity   ─ amazon: 3 
+                              ├ References                                                                
+                              │                  ─────────────────────────────────────────────────────────
+                              │                  https://go.dev/cl/862185                                 
+                              │                  https://go.dev/issue/82563                               
+                              │                  https://groups.google.com/g/golang-announce/c/iY8TY0wWgbM
+                              │                  https://pkg.go.dev/vuln/GO-2026-6859                     
                               ├ PublishedDate   : 2026-11-11T05:19:58.943Z 
                               ╰ LastModifiedDate: 2026-11-16T16:17:56.29Z 
 ```
