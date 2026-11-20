@@ -46,4 +46,3 @@ USER openaf
 
 WORKDIR /home/openaf
 ENTRYPOINT ["/usr/local/bin/mini-a-ghc-entrypoint.sh"]
-CMD ["/openaf/opack", "exec", "mini-a"]

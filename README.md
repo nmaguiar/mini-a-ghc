@@ -102,6 +102,20 @@ docker run --rm -d \
 
 Then open: <http://localhost:12345>
 
+## Running an oJob
+
+Set `OJOB` to a job file or ZIP inside the container to use the base OpenAF
+entrypoint. It passes any arguments after the image name to the job and uses
+the container's working directory. This mode skips Mini-A's GitHub login and
+`INIT_SCRIPT` hook.
+
+```bash
+docker run --rm \
+  -e OJOB=/work/main.yaml \
+  -v "$(pwd)":/work -w /work \
+  nmaguiar/mini-a-ghc message="hello from Docker"
+```
+
 ## Passing extra Mini-A configuration
 
 Because this image ultimately executes `mini-a`, you can pass the same parameters described in `openaf/mini-a` docs, for example:

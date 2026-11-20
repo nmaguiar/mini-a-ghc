@@ -2,6 +2,10 @@
 
 set -euo pipefail
 
+if [ -n "${OJOB:-}" ]; then
+  exec /bin/bash "${OPENAF_ENTRYPOINT:-/openaf/.docker/entrypoint.sh}" "$@"
+fi
+
 OAFP_BIN="${OAFP_BIN:-/openaf/oafp}"
 GH_BIN="${GH_BIN:-/usr/bin/gh}"
 OPACK_BIN="${OPACK_BIN:-/openaf/opack}"

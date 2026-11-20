@@ -17,7 +17,40 @@ setup() {
   export TOKEN_FILE
   export WORKDIR
 
-  unset OAF_MODEL INIT_SCRIPT || true
+  unset OAF_MODEL INIT_SCRIPT OJOB OPENAF_ENTRYPOINT || true
+}
+
+@test "OJOB delegates to OpenAF without Mini-A startup or implicit arguments" {
+  export OJOB="jobs/my job.yaml"
+  export OPENAF_ENTRYPOINT="$BATS_TEST_TMPDIR/openaf-entrypoint.sh"
+  export OAF_MODEL="(type: ghcopilot)"
+  export INIT_SCRIPT="$BATS_TEST_TMPDIR/does-not-exist.sh"
+  export WORKDIR="$BATS_TEST_TMPDIR/does-not-exist"
+  cat > "$OPENAF_ENTRYPOINT" <<'EOF'
+printf '<%s>\n' "$OJOB" "$@"
+exit 23
+EOF
+
+  run "$ENTRYPOINT"
+  [ "$status" -eq 23 ]
+  [ "$output" = '<jobs/my job.yaml>' ]
+
+  run "$ENTRYPOINT" list 'message=two words' ''
+  [ "$status" -eq 23 ]
+  [ "$output" = "$(printf '<%s>\n' "$OJOB" list 'message=two words' '')" ]
+  [ ! -e "$STUB_LOG_DIR/oafp.log" ]
+  [ ! -e "$STUB_LOG_DIR/gh.log" ]
+  [ ! -e "$STUB_LOG_DIR/opack.log" ]
+}
+
+@test "empty OJOB uses the normal Mini-A startup" {
+  export OJOB=""
+  export OPENAF_ENTRYPOINT="$BATS_TEST_TMPDIR/does-not-exist.sh"
+
+  run "$ENTRYPOINT"
+
+  [ "$status" -eq 0 ]
+  grep -q 'exec mini-a' "$STUB_LOG_DIR/opack.log"
 }
 
 @test "ghcopilot OAF_MODEL extracts token, logs in gh, and removes token file" {
