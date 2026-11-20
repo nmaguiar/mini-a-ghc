@@ -23,22 +23,22 @@
     FixedVersion: 1.26.11, 1.27.4
     Status: fixed
     Layer:
-      Digest: sha256:a35e9a96126b3aeb7338ab1ea1c208773e55e4cf15f23f63d90681765cf0e4d3
-      DiffID: sha256:ac98d430d782412b94d242ce55e59119b9e27b491d674196fc73137c015b06b0
+      Digest: sha256:d6ede3afcbb84a15ed37429c16f600937bb066f7e00166ce746d736aebe9ec96
+      DiffID: sha256:ea70b8939230bb7dcc3d7d26c3690c93b0ade6c69f46d510fe36a11464953fe9
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-97054
     DataSource:
       ID: govulndb
       Name: The Go Vulnerability Database
       URL: https://pkg.go.dev/vuln/
-    Fingerprint: sha256:f629c536711787ee4a59ce5064a485d8073321536afeb8399a30dc2a467a351a
+    Fingerprint: sha256:c8b3512808eab104f4d41689b6f4ff58dd5fbc7b727bfb48573d4401e63ddf8e
     Title: For HTTP/1 servers, when MaxBytesReader's limit is exceeded, "Connecti ...
     Description: 'For HTTP/1 servers, when MaxBytesReader''s limit is exceeded, "Connection: close" header is automatically set without synchronization, which might race with another header being set explicitly in the server handler. As a result, an HTTP/1 server that utilizes MaxBytesReader or MaxBytesHandler can crash due to runtime panic if its handler reads the request body concurrently with writing the response header.'
-    Severity: MEDIUM
+    Severity: HIGH
     CweIDs:
     - CWE-362
     - CWE-820
     VendorSeverity:
-      amazon: 2
+      amazon: 3
     References:
     - https://go.dev/cl/862185
     - https://go.dev/issue/82563
