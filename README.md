@@ -92,7 +92,7 @@ The image ships short guides, rendered in the terminal. None of them needs a tok
 | `mini-a-ghc help web` | Console, simple web and Advanced web UIs |
 | `mini-a-ghc help mcp` | MCP servers and client configuration |
 | `mini-a-ghc help batch` | Agent batch mode, tools, presets and agent files |
-| `mini-a-ghc help models` | Model setup: GitHub Copilot, AWS Bedrock, OpenAI (and compatible APIs), Anthropic, Gemini, Ollama |
+| `mini-a-ghc help models` | Model setup: GitHub Copilot, AWS Bedrock, OpenAI (and compatible APIs), Anthropic, Microsoft Foundry, Gemini, Ollama |
 | `mini-a-ghc help reference` | Commands, folders and environment variables |
 
 Without the launcher use `docker run --rm -ti nmaguiar/mini-a-ghc help wiki`; in a container shell, `help wiki` or `help-wiki`. The sources are [`USAGE.md`](USAGE.md) and [`help/`](help/).
