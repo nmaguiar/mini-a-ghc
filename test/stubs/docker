@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Stub for docker: records each argument on its own line.
+set -euo pipefail
+
+printf '%s\n' "$@" > "$STUB_LOG_DIR/docker.log"

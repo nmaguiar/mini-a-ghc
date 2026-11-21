@@ -32,6 +32,7 @@ Serve over MCP (add onport=<port> for HTTP, otherwise STDIO):
   mcp-skills wikiroot=<dir>                 virtual skill-library server
 
 Add -jobhelp after a command to see all of its parameters.
+Step-by-step guide: help-wiki (or: mini-a-ghc help wiki)
 EOF
 }
 

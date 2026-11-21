@@ -16,7 +16,7 @@ If `GH_CONFIG_DIR` points at a mounted gh config (e.g. `-v ~/.config/gh:/gh:ro -
 
 ```bash
 export GH_TOKEN="<your-token>"
-export OAF_MODEL="(type: ghcopilot, options: (model: gpt-4.1, token: '$GH_TOKEN', timeout: 900000, useStdio: true))"
+export OAF_MODEL="(type: ghcopilot, options: (model: gpt-6-luna, token: '$GH_TOKEN', timeout: 900000, useStdio: true))"
 ```
 
 ## Alternative model choices
@@ -25,8 +25,8 @@ export OAF_MODEL="(type: ghcopilot, options: (model: gpt-4.1, token: '$GH_TOKEN'
 # gpt-4o
 export OAF_MODEL="(type: ghcopilot, options: (model: gpt-4o, token: '$GH_TOKEN', timeout: 900000, useStdio: true))"
 
-# gpt-4.1 with additional settings
-export OAF_MODEL="(type: ghcopilot, options: (model: gpt-4.1, token: '$GH_TOKEN', timeout: 900000, useStdio: true, autoRestart: true, logLevel: 'info'))"
+# gpt-6-luna with additional settings
+export OAF_MODEL="(type: ghcopilot, options: (model: gpt-6-luna, token: '$GH_TOKEN', timeout: 900000, useStdio: true, autoRestart: true, logLevel: 'info'))"
 ```
 
 ## Complementary models (low-cost, validation, decision)
@@ -35,10 +35,10 @@ Instead of writing full definitions, set only the Copilot model names. The token
 
 ```bash
 docker run --rm -ti -v ~/.config/gh:/gh:ro -e GH_CONFIG_DIR=/gh \
-  -e MINI_A_MODEL=gpt-4.1 \
-  -e MINI_A_LC_MODEL=gpt-5-mini \
-  -e MINI_A_VAL_MODEL=gpt-4.1 \
-  -e MINI_A_DEC_MODEL=gpt-5-mini \
+  -e MINI_A_MODEL=claude-sonnet-5.5 \
+  -e MINI_A_LC_MODEL=gpt-5.6-luna \
+  -e MINI_A_VAL_MODEL=claude-sonnet-5.5 \
+  -e MINI_A_DEC_MODEL=gpt-6-luna \
   nmaguiar/mini-a-ghc
 ```
 
@@ -51,7 +51,7 @@ docker run --rm -ti -v ~/.config/gh:/gh:ro -e GH_CONFIG_DIR=/gh \
 None has a default, and each is ignored when its `OAF_*` variable is already set. The decision definition also has a top-level `model`, which Mini-A's decision client requires:
 
 ```
-(type: ghcopilot, model: gpt-5-mini, options: (model: gpt-5-mini, timeout: 900000, token: '...'))
+(type: ghcopilot, model: gpt-6-luna, options: (model: gpt-6-luna, timeout: 900000, token: '...'))
 ```
 
 ## JSON-like reference representation
@@ -62,7 +62,7 @@ If you store model settings elsewhere and convert/inject at runtime:
 {
   "type": "ghcopilot",
   "options": {
-    "model": "gpt-4.1",
+    "model": "gpt-6-luna",
     "token": "${GH_TOKEN}",
     "timeout": 900000,
     "useStdio": true

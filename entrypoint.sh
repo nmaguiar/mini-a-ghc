@@ -12,15 +12,31 @@ OPACK_BIN="${OPACK_BIN:-/openaf/opack}"
 TOKEN_FILE="${TOKEN_FILE:-/tmp/token.txt}"
 WORKDIR="${WORKDIR:-$PWD}"
 HELP_FILE="${HELP_FILE:-/openaf/USAGE.md.gz}"
+HELP_DIR="${HELP_DIR:-/openaf/help}"
 
 token_file="$TOKEN_FILE"
 
 # help needs no model or token, so it runs before any authentication
-if [ "${1:-}" = "help" ]; then
+if [ "${1:-}" = "help" ] || [ "${1:-}" = "help-wiki" ]; then
+  topic="${2:-}"
+  [ "$1" = "help-wiki" ] && topic=wiki
+  case "$topic" in
+    "")                                 file="$HELP_FILE" ;;
+    wiki|wikis|studio)                  file="$HELP_DIR/wiki.md.gz" ;;
+    web|console|web-adv)                file="$HELP_DIR/web.md.gz" ;;
+    mcp|mcp-safe|mcp-ops)               file="$HELP_DIR/mcp.md.gz" ;;
+    batch|agent)                        file="$HELP_DIR/batch.md.gz" ;;
+    models|model|providers|copilot)     file="$HELP_DIR/models.md.gz" ;;
+    reference|commands|env|variables)   file="$HELP_DIR/reference.md.gz" ;;
+    *)
+      echo "Unknown help topic: $topic" >&2
+      echo "Topics: wiki (or help-wiki), web, mcp, batch, models, reference" >&2
+      exit 1 ;;
+  esac
   if [ -t 0 ] && [ -t 1 ]; then
-    exec "$OAFP_BIN" "$HELP_FILE" in=md mdtemplate=true -p
+    exec "$OAFP_BIN" "$file" in=md mdtemplate=true -p
   fi
-  exec "$OAFP_BIN" "$HELP_FILE" in=md mdtemplate=true
+  exec "$OAFP_BIN" "$file" in=md mdtemplate=true
 fi
 
 cleanup() {
@@ -73,11 +89,17 @@ configure_extra_models() {
 
 trap cleanup EXIT
 
+# GH_TOKEN/GITHUB_TOKEN alone is enough: build the default ghcopilot model from it
+if [ -z "${OAF_MODEL:-}" ] && [ -n "${GH_TOKEN:-${GITHUB_TOKEN:-}}" ]; then
+  OAF_MODEL="$(ghc_model_def "${MINI_A_MODEL:-gpt-6-luna}" "${GH_TOKEN:-$GITHUB_TOKEN}")"
+  export OAF_MODEL
+fi
+
 # Reuse a mounted gh login (e.g. -v ~/.config/gh:/gh:ro -e GH_CONFIG_DIR=/gh)
 if [ -z "${GH_TOKEN:-}" ] && [ -z "${GITHUB_TOKEN:-}" ] && [ -z "${OAF_MODEL:-}" ]; then
   if gh_token="$("$GH_BIN" auth token 2>/dev/null)" && [ -n "$gh_token" ]; then
     export GH_TOKEN="$gh_token"
-    OAF_MODEL="$(ghc_model_def "${MINI_A_MODEL:-gpt-5-mini}" "$GH_TOKEN")"
+    OAF_MODEL="$(ghc_model_def "${MINI_A_MODEL:-gpt-6-luna}" "$GH_TOKEN")"
     export OAF_MODEL
   elif [ -n "${GH_CONFIG_DIR:-}" ]; then
     echo "No GitHub token found in $GH_CONFIG_DIR. If gh keeps it in the macOS Keychain, run once on the host: gh auth login --insecure-storage" >&2

@@ -1,0 +1,6 @@
+# Scripts copied into the image must keep LF endings, even on Windows checkouts
+*.sh   text eol=lf
+*.bats text eol=lf
+test/stubs/* text eol=lf
+Dockerfile text eol=lf
+*.ps1  text eol=crlf
