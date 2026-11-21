@@ -10,9 +10,18 @@ OAFP_BIN="${OAFP_BIN:-/openaf/oafp}"
 GH_BIN="${GH_BIN:-/usr/bin/gh}"
 OPACK_BIN="${OPACK_BIN:-/openaf/opack}"
 TOKEN_FILE="${TOKEN_FILE:-/tmp/token.txt}"
-WORKDIR="${WORKDIR:-/home/openaf}"
+WORKDIR="${WORKDIR:-$PWD}"
+HELP_FILE="${HELP_FILE:-/openaf/USAGE.md.gz}"
 
 token_file="$TOKEN_FILE"
+
+# help needs no model or token, so it runs before any authentication
+if [ "${1:-}" = "help" ]; then
+  if [ -t 0 ] && [ -t 1 ]; then
+    exec "$OAFP_BIN" "$HELP_FILE" in=md mdtemplate=true -p
+  fi
+  exec "$OAFP_BIN" "$HELP_FILE" in=md mdtemplate=true
+fi
 
 cleanup() {
   rm -f "$token_file"
@@ -33,7 +42,19 @@ run_init_script() {
 
 trap cleanup EXIT
 
-if [[ "${OAF_MODEL:-}" == *ghcopilot* ]]; then
+# Reuse a mounted gh login (e.g. -v ~/.config/gh:/gh:ro -e GH_CONFIG_DIR=/gh)
+if [ -z "${GH_TOKEN:-}" ] && [ -z "${GITHUB_TOKEN:-}" ] && [ -z "${OAF_MODEL:-}" ]; then
+  if gh_token="$("$GH_BIN" auth token 2>/dev/null)" && [ -n "$gh_token" ]; then
+    export GH_TOKEN="$gh_token"
+    export OAF_MODEL="(type: ghcopilot, options: (model: ${MINI_A_MODEL:-gpt-5-mini}, timeout: 900000, token: '$GH_TOKEN'))"
+  elif [ -n "${GH_CONFIG_DIR:-}" ]; then
+    echo "No GitHub token found in $GH_CONFIG_DIR. If gh keeps it in the macOS Keychain, run once on the host: gh auth login --insecure-storage" >&2
+    exit 1
+  fi
+fi
+
+# gh authenticates on its own when GH_TOKEN/GITHUB_TOKEN is set; "auth login" would fail
+if [[ "${OAF_MODEL:-}" == *ghcopilot* && -z "${GH_TOKEN:-}" && -z "${GITHUB_TOKEN:-}" ]]; then
   "$OAFP_BIN" data="$OAF_MODEL" path=options.token outfile="$token_file"
   "$GH_BIN" auth login --with-token < "$token_file"
 
@@ -42,6 +63,9 @@ if [[ "${OAF_MODEL:-}" == *ghcopilot* ]]; then
 fi
 
 cd "$WORKDIR"
+if [ ! -w "$WORKDIR" ]; then
+  echo "warning: $WORKDIR is not writable by uid $(id -u); on Linux hosts run the container with --user \"\$(id -u):\$(id -g)\"" >&2
+fi
 if [ "$#" -eq 0 ]; then
   run_init_script
   "$OPACK_BIN" exec mini-a

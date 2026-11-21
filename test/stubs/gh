@@ -7,3 +7,11 @@ echo "gh $*" >> "$STUB_LOG_DIR/gh.log"
 if [ "${1:-}" = "auth" ] && [ "${2:-}" = "login" ]; then
   cat > "$STUB_LOG_DIR/gh-stdin.txt"
 fi
+
+if [ "${1:-}" = "auth" ] && [ "${2:-}" = "token" ]; then
+  if [ -n "${STUB_GH_TOKEN:-}" ]; then
+    echo "$STUB_GH_TOKEN"
+  else
+    exit 1
+  fi
+fi

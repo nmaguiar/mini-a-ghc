@@ -17,7 +17,7 @@ setup() {
   export TOKEN_FILE
   export WORKDIR
 
-  unset OAF_MODEL INIT_SCRIPT OJOB OPENAF_ENTRYPOINT || true
+  unset OAF_MODEL MINI_A_MODEL GH_CONFIG_DIR STUB_GH_TOKEN INIT_SCRIPT OJOB OPENAF_ENTRYPOINT GH_TOKEN GITHUB_TOKEN HELP_FILE || true
 }
 
 @test "OJOB delegates to OpenAF without Mini-A startup or implicit arguments" {
@@ -149,4 +149,109 @@ EOF
   [ "$status" -eq 0 ]
   [ -f "$marker" ]
   grep -q 'exec mini-a goal=do something useshell=true' "$STUB_LOG_DIR/opack.log"
+}
+
+@test "WORKDIR defaults to the current directory" {
+  unset WORKDIR
+  mkdir -p "$BATS_TEST_TMPDIR/mounted"
+  cd "$BATS_TEST_TMPDIR/mounted"
+  cat > "$BATS_TEST_TMPDIR/opack-pwd" <<'EOS'
+#!/usr/bin/env bash
+pwd -P
+EOS
+  chmod +x "$BATS_TEST_TMPDIR/opack-pwd"
+  export OPACK_BIN="$BATS_TEST_TMPDIR/opack-pwd"
+
+  run "$ENTRYPOINT"
+
+  [ "$status" -eq 0 ]
+  [ "$output" = "$(pwd -P)" ]
+}
+
+@test "GH_TOKEN set skips gh auth login" {
+  export OAF_MODEL="(type: ghcopilot, options: (token: 'abc123'))"
+  export GH_TOKEN="from-env"
+
+  run "$ENTRYPOINT"
+
+  [ "$status" -eq 0 ]
+  [ ! -f "$STUB_LOG_DIR/gh.log" ]
+  [ ! -f "$STUB_LOG_DIR/oafp.log" ]
+}
+
+@test "'help' renders the usage markdown without login, INIT_SCRIPT or mini-a" {
+  export OAF_MODEL="(type: ghcopilot, options: (token: 'abc123'))"
+  export INIT_SCRIPT="$BATS_TEST_TMPDIR/does-not-exist.sh"
+  export HELP_FILE="$BATS_TEST_TMPDIR/USAGE.md.gz"
+
+  run "$ENTRYPOINT" help
+
+  [ "$status" -eq 0 ]
+  grep -q "oafp $HELP_FILE in=md mdtemplate=true" "$STUB_LOG_DIR/oafp.log"
+  [ "$(wc -l < "$STUB_LOG_DIR/oafp.log")" -eq 1 ]
+  [ ! -f "$STUB_LOG_DIR/gh.log" ]
+  [ ! -f "$STUB_LOG_DIR/opack.log" ]
+}
+
+@test "mounted gh login: token from gh auth token configures ghcopilot model" {
+  export GH_CONFIG_DIR="$BATS_TEST_TMPDIR/gh"
+  export STUB_GH_TOKEN="host-token"
+  export OPACK_BIN="$BATS_TEST_TMPDIR/opack-env"
+  cat > "$OPACK_BIN" <<'EOF'
+#!/usr/bin/env bash
+echo "GH_TOKEN=$GH_TOKEN" > "$STUB_LOG_DIR/env.log"
+echo "OAF_MODEL=$OAF_MODEL" >> "$STUB_LOG_DIR/env.log"
+EOF
+  chmod +x "$OPACK_BIN"
+
+  run "$ENTRYPOINT"
+
+  [ "$status" -eq 0 ]
+  grep -q "GH_TOKEN=host-token" "$STUB_LOG_DIR/env.log"
+  grep -q "type: ghcopilot" "$STUB_LOG_DIR/env.log"
+  grep -q "model: gpt-5-mini" "$STUB_LOG_DIR/env.log"
+  grep -q "token: 'host-token'" "$STUB_LOG_DIR/env.log"
+  ! grep -q "auth login" "$STUB_LOG_DIR/gh.log"
+}
+
+@test "mounted gh login: MINI_A_MODEL selects the model" {
+  export STUB_GH_TOKEN="host-token"
+  export MINI_A_MODEL="gpt-4.1"
+  export OPACK_BIN="$BATS_TEST_TMPDIR/opack-env"
+  cat > "$OPACK_BIN" <<'EOF'
+#!/usr/bin/env bash
+echo "OAF_MODEL=$OAF_MODEL" > "$STUB_LOG_DIR/env.log"
+EOF
+  chmod +x "$OPACK_BIN"
+
+  run "$ENTRYPOINT"
+
+  [ "$status" -eq 0 ]
+  grep -q "model: gpt-4.1" "$STUB_LOG_DIR/env.log"
+}
+
+@test "mounted gh login: no token and GH_CONFIG_DIR set fails with Keychain hint" {
+  export GH_CONFIG_DIR="$BATS_TEST_TMPDIR/gh"
+
+  run "$ENTRYPOINT"
+
+  [ "$status" -eq 1 ]
+  [[ "$output" == *"--insecure-storage"* ]]
+  [ ! -f "$STUB_LOG_DIR/opack.log" ]
+}
+
+@test "no token and no GH_CONFIG_DIR keeps the current behaviour" {
+  run "$ENTRYPOINT"
+
+  [ "$status" -eq 0 ]
+  grep -q "exec mini-a" "$STUB_LOG_DIR/opack.log"
+}
+
+@test "explicit OAF_MODEL never calls gh auth token" {
+  export OAF_MODEL="(type: openai, options: (model: gpt-4))"
+
+  run "$ENTRYPOINT"
+
+  [ "$status" -eq 0 ]
+  [ ! -f "$STUB_LOG_DIR/gh.log" ]
 }

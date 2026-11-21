@@ -54,6 +54,17 @@ GitHub's current token-management docs:
 
 - Fine-grained and classic token creation: <https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens>
 
+## Quick start: reuse your host `gh` login
+
+Mount your `gh` config folder and the container configures Copilot for you (no `GH_TOKEN` or `OAF_MODEL` needed):
+
+```bash
+gh auth login --insecure-storage   # once, on the host
+docker run --rm -ti -v ~/.config/gh:/gh:ro -e GH_CONFIG_DIR=/gh -v "$(pwd)":/work -w /work nmaguiar/mini-a-ghc
+```
+
+`--insecure-storage` keeps the token in `~/.config/gh/hosts.yml`; a token held in the macOS Keychain cannot be read from inside a container. Set `-e MINI_A_MODEL=gpt-4.1` to change the model (default `gpt-5-mini`).
+
 ## Important `OAF_MODEL` notes
 
 Mini-A reads model/provider configuration from `OAF_MODEL`.
@@ -71,7 +82,41 @@ export OAF_MODEL="(type: ghcopilot, options: (model: gpt-5-mini, timeout: 900000
 
 More examples (including JSON/YAML-style definitions) are in [`OAF_MODEL.md`](OAF_MODEL.md).
 
-## Quick start
+### Built-in help (other providers)
+
+The image ships a rendered usage guide ([`USAGE.md`](USAGE.md)) with ready-to-copy `OAF_MODEL` setups for GitHub Copilot, AWS Bedrock, OpenAI (and OpenAI-compatible APIs), Anthropic, Google Gemini and Ollama:
+
+```bash
+docker run --rm -ti nmaguiar/mini-a-ghc help
+mini-a-ghc help                              # same, through the laptop launcher (no token needed)
+```
+
+Inside a container shell, `help` shows the same guide.
+
+## Quick start (laptop launcher)
+
+`mini-a-ghc.sh` wraps `docker run` for you. It picks up your token from `GH_TOKEN` or `gh auth token`, builds a default `OAF_MODEL`, mounts the current folder at `/work` (the container starts there), and passes `GH_TOKEN` so `gh` works inside the container.
+
+```bash
+curl -fsSLo ~/bin/mini-a-ghc https://raw.githubusercontent.com/nmaguiar/mini-a-ghc/main/mini-a-ghc.sh && chmod +x ~/bin/mini-a-ghc
+
+cd my-project
+mini-a-ghc                                   # interactive, current folder mounted
+mini-a-ghc goal="fix the failing tests" useshell=true
+mini-a-ghc --no-mount onport=12345           # server/headless: no host folder
+mini-a-ghc bash                              # shell with gh and the mounted folder
+```
+
+Variables: `GH_TOKEN`, `OAF_MODEL`, `MINI_A_MODEL` (default `gpt-5-mini`), `MINI_A_DIR` (folder to mount), `MINI_A_IMAGE`.
+
+Notes:
+
+- The container starts in its current working directory, so `-w /work` (or the `WORKDIR` variable) is honored.
+- On Linux the launcher runs with `--user $(id -u):$(id -g)` so files created in the mounted folder belong to you.
+- If `GH_TOKEN` or `GITHUB_TOKEN` is set, the entrypoint skips `gh auth login` because `gh` uses the variable directly.
+- With `useshell=true` the agent can modify anything in the mounted folder. Mount only what you want it to change.
+
+## Quick start (plain Docker)
 
 Run interactive Mini-A console:
 
@@ -116,6 +161,47 @@ docker run --rm \
   nmaguiar/mini-a-ghc message="hello from Docker"
 ```
 
+## Wiki commands
+
+The image puts a `wiki` command on the `PATH` with short names for the wiki oJobs bundled with Mini-A:
+
+| Command | oJob |
+|---------|------|
+| `wiki hydrate` | `utils/wikiHydrate.yaml` |
+| `wiki ingest` | `mini-a-ingest.yaml` |
+| `wiki absorb` | `mini-a-absorb.yaml` |
+| `wiki dream` | `utils/wikiDream.yaml` |
+| `wiki query` | `utils/wikiQuery.yaml` |
+| `wiki ops` | `utils/wikiOps.yaml` |
+| `wiki compact` | `utils/wikiCompact.yaml` |
+| `wiki graph` | `utils/wikiGraph.yaml` |
+| `wiki studio` | `mini-a-wiki-studio.yaml` |
+| `wiki mcp`, `mcp-ops`, `mcp-safe`, `mcp-skills` | `mcps/mcp-wiki.yaml`, `mcp-wiki-ops.yaml`, `mcp-wiki-safe.yaml`, `mcp-skills.yaml` |
+
+Arguments are passed straight to the oJob, and `wiki <command> -jobhelp` lists them. Run `wiki` with no command for a summary. Two defaults are added for containers: `wiki studio` uses `studiohost=0.0.0.0 openbrowser=false`, and the MCP servers get a `label` (they exit without one). Explicit values override both.
+
+```bash
+# build a wiki from the current folder, then query it
+docker run --rm -ti -e OAF_MODEL -e GH_TOKEN \
+  -v "$(pwd)":/data/src -v "$HOME/wikis":/data/wikis \
+  nmaguiar/mini-a-ghc wiki hydrate source=/data/src wikiroot=/data/wikis/myproject
+
+docker run --rm -ti -e OAF_MODEL -e GH_TOKEN -v "$HOME/wikis":/data/wikis \
+  nmaguiar/mini-a-ghc wiki query wikiroot=/data/wikis/myproject goal="How is the project built?"
+
+# Wiki Studio on http://localhost:8890 (token printed at startup)
+docker run --rm -ti -p 127.0.0.1:8890:8890 -v "$HOME/wikis":/data/wikis \
+  nmaguiar/mini-a-ghc wiki studio studioallowroots='["/data/wikis"]'
+
+# read-only MCP server on http://localhost:12346/mcp
+docker run --rm -d -p 12346:12346 -v "$HOME/wikis":/data/wikis:ro \
+  nmaguiar/mini-a-ghc wiki mcp wikiroot=/data/wikis/myproject onport=12346
+```
+
+Wiki Studio only accepts `/data` or a subfolder as an allowed root, so mount wikis under `/data`.
+
+On Linux hosts, add `--user "$(id -u):$(id -g)"` to commands that write wikis (hydrate, ingest, absorb, dream) so the container can write to the mounted folder.
+
 ## Passing extra Mini-A configuration
 
 Because this image ultimately executes `mini-a`, you can pass the same parameters described in `openaf/mini-a` docs, for example:
@@ -133,7 +219,7 @@ If the first argument is an executable available in the container, the entrypoin
 ```bash
 docker run --rm -ti \
   -e OAF_MODEL="$OAF_MODEL" \
-  /mini-a-ghc \
+  nmaguiar/mini-a-ghc \
   bash
 ```
 
@@ -150,6 +236,8 @@ The image also adds a few shell conveniences:
 
 - `mini-a` as an alias for `/openaf/opack exec mini-a`
 - `list` as a shortcut to print available LLM models
+- `help` to show the usage guide with provider setup instructions
+- `wiki <command>` for the bundled wiki oJobs (see [Wiki commands](#wiki-commands))
 - `oafptab`, `oaf-light-theme`, and `oaf-dark-theme` for OpenAF output formatting
 - `PATH` includes `/openaf` and `/openaf/ojobs`
 
