@@ -71,6 +71,35 @@ docker run --rm -ti -e OAF_MODEL nmaguiar/mini-a-ghc
 
 ---
 
+## 🪟 Microsoft Foundry (Azure AI Foundry)
+
+Use the resource URL (`https://RESOURCE.services.ai.azure.com`) and put your **deployment name** in `model`. Add `mode: foundry` to the `openai` or `anthropic` type; the key is sent as an `api-key` header by default.
+
+OpenAI-compatible deployments (GPT, Mistral, Llama, DeepSeek, ...) use the v1 API at `{url}/openai/v1/...`:
+
+```bash
+export OAF_MODEL="(type: openai, mode: foundry, url: 'https://RESOURCE.services.ai.azure.com', key: '...', model: my-deployment, timeout: 900000)"
+docker run --rm -ti -e OAF_MODEL nmaguiar/mini-a-ghc
+```
+
+Claude deployments use the Anthropic Messages API at `{url}/anthropic`:
+
+```bash
+export OAF_MODEL="(type: anthropic, mode: foundry, url: 'https://RESOURCE.services.ai.azure.com', key: '...', model: my-claude-deployment, timeout: 900000, params: (max_tokens: 64000))"
+```
+
+* **Dated inference API:** add `apiVersion: '2024-05-01-preview'` (and you may end `url` with `/models`) to call `{url}/models/chat/completions?api-version=...`. It uses Chat Completions only.
+* **Microsoft Entra ID instead of a key:** set `authType: bearer` and pass a token for `https://cognitiveservices.azure.com/.default` as `key`, for example `key: '$(az account get-access-token --resource https://cognitiveservices.azure.com --query accessToken -o tsv)'`. Tokens expire (about an hour) and are not renewed.
+* **Microsoft Decision models** for the decision role: deploy Microsoft-Decision-1.1 (or 1) and add `decisionApi: microsoft` (`type: openai`, `mode: foundry`, default `apiVersion`). It calls `{url}/providers/microsoft/v1/systemone`; for project or other custom URLs set `decisionUrl:`.
+
+  ```bash
+  export OAF_DECIDE_MODEL="(type: openai, mode: foundry, decisionApi: microsoft, url: 'https://RESOURCE.services.ai.azure.com', key: '...', model: my-decision-deployment, timeout: 900000)"
+  ```
+
+* `mode: azure-foundry` is an alias of `foundry`. For classic Azure OpenAI resources (`https://RESOURCE.openai.azure.com`) use `mode: azure-openai-v1`, or `mode: azure-openai-legacy` with `deployment:` and `apiVersion:`.
+
+---
+
 ## 💎 Google Gemini
 
 Get a key from Google AI Studio.

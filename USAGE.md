@@ -37,7 +37,7 @@ Mini-A agent runtime with GitHub Copilot support, wiki tools and MCP servers, in
 | `help web` | Console, simple web and Advanced web UIs |
 | `help mcp` | MCP servers (normal, safe, ops) and client configuration |
 | `help batch` | Agent batch mode, goals, agent files, presets and output files |
-| `help models` | Model setup: GitHub Copilot, AWS Bedrock, OpenAI, Anthropic, Gemini, Ollama |
+| `help models` | Model setup: GitHub Copilot, AWS Bedrock, OpenAI, Anthropic, Microsoft Foundry, Gemini, Ollama |
 | `help reference` | Container commands, environment variables and folders |
 
 With the launcher: `mini-a-ghc help wiki`. With Docker: `docker run --rm -ti nmaguiar/mini-a-ghc help wiki`. Inside a container shell: `help wiki`. None of them need a token.
