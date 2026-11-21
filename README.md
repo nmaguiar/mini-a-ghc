@@ -62,7 +62,7 @@ Mount your `gh` config folder and the container configures Copilot for you (no `
 docker run --rm -ti -v ~/.config/gh:/gh:ro -e GH_CONFIG_DIR=/gh -v "$(pwd)":/work -w /work nmaguiar/mini-a-ghc
 ```
 
-Requires `gh auth login` on the host. If the container reports no token found, `gh` is keeping it in the macOS Keychain, which a container cannot read: run `gh auth login --insecure-storage` once. Set `-e MINI_A_MODEL=gpt-4.1` to change the model (default `gpt-5-mini`). Optionally set `-e MINI_A_LC_MODEL=...`, `-e MINI_A_VAL_MODEL=...` and `-e MINI_A_DEC_MODEL=...` to use Copilot models for the low-cost, validation and decision roles (`OAF_LC_MODEL`, `OAF_VAL_MODEL`, `OAF_DECIDE_MODEL`); each is skipped if that `OAF_*` variable is already set.
+Requires `gh auth login` on the host. If the container reports no token found, `gh` is keeping it in the macOS Keychain, which a container cannot read: run `gh auth login --insecure-storage` once. Set `-e MINI_A_MODEL=claude-sonnet-5.5` to change the model (default `gpt-6-luna`). Optionally set `-e MINI_A_LC_MODEL=...`, `-e MINI_A_VAL_MODEL=...` and `-e MINI_A_DEC_MODEL=...` to use Copilot models for the low-cost, validation and decision roles (`OAF_LC_MODEL`, `OAF_VAL_MODEL`, `OAF_DECIDE_MODEL`); each is skipped if that `OAF_*` variable is already set.
 
 ## Important `OAF_MODEL` notes
 
@@ -74,46 +74,124 @@ For `ghcopilot`, the token should be set under `options.token`. This image entry
 
 ```bash
 export GH_TOKEN="<your-token>"
-export OAF_MODEL="(type: ghcopilot, options: (model: gpt-5-mini, timeout: 900000, token: '$GH_TOKEN'))"
+export OAF_MODEL="(type: ghcopilot, options: (model: gpt-6-luna, timeout: 900000, token: '$GH_TOKEN'))"
 ```
 
 > Tip: keep timeout high for agent workloads (`900000` ms = 15 minutes).
 
 More examples (including JSON/YAML-style definitions) are in [`OAF_MODEL.md`](OAF_MODEL.md).
 
-### Built-in help (other providers)
+### Built-in help
 
-The image ships a rendered usage guide ([`USAGE.md`](USAGE.md)) with ready-to-copy `OAF_MODEL` setups for GitHub Copilot, AWS Bedrock, OpenAI (and OpenAI-compatible APIs), Anthropic, Google Gemini and Ollama:
+The image ships short guides, rendered in the terminal. None of them needs a token:
+
+| Command | Guide |
+|---------|-------|
+| `mini-a-ghc help` | Overview: what to run for each task |
+| `mini-a-ghc help wiki` (or `help-wiki`) | Wikis step by step: build, try, Wiki Studio, maintain, serve, troubleshooting |
+| `mini-a-ghc help web` | Console, simple web and Advanced web UIs |
+| `mini-a-ghc help mcp` | MCP servers and client configuration |
+| `mini-a-ghc help batch` | Agent batch mode, tools, presets and agent files |
+| `mini-a-ghc help models` | Model setup: GitHub Copilot, AWS Bedrock, OpenAI (and compatible APIs), Anthropic, Gemini, Ollama |
+| `mini-a-ghc help reference` | Commands, folders and environment variables |
+
+Without the launcher use `docker run --rm -ti nmaguiar/mini-a-ghc help wiki`; in a container shell, `help wiki` or `help-wiki`. The sources are [`USAGE.md`](USAGE.md) and [`help/`](help/).
+
+## Quick start (laptop launcher: macOS, Windows, Linux)
+
+`mini-a-ghc` wraps `docker run` so you never type ports, mounts or model definitions. It needs [Docker Desktop](https://www.docker.com/products/docker-desktop/) and, for Copilot, a host `gh auth login` (or `GH_TOKEN`). The host `gh` reads its token from the macOS Keychain or Windows Credential Manager, so no `--insecure-storage` workaround is needed.
+
+**Install on macOS / Linux / Git Bash:**
 
 ```bash
-docker run --rm -ti nmaguiar/mini-a-ghc help
-mini-a-ghc help                              # same, through the laptop launcher (no token needed)
+mkdir -p ~/bin && curl -fsSLo ~/bin/mini-a-ghc https://raw.githubusercontent.com/nmaguiar/mini-a-ghc/main/mini-a-ghc.sh && chmod +x ~/bin/mini-a-ghc
 ```
 
-Inside a container shell, `help` shows the same guide.
+**Install on Windows (PowerShell):**
 
-## Quick start (laptop launcher)
-
-`mini-a-ghc.sh` wraps `docker run` for you. It picks up your token from `GH_TOKEN` or `gh auth token`, builds a default `OAF_MODEL`, mounts the current folder at `/work` (the container starts there), and passes `GH_TOKEN` so `gh` works inside the container.
-
-```bash
-curl -fsSLo ~/bin/mini-a-ghc https://raw.githubusercontent.com/nmaguiar/mini-a-ghc/main/mini-a-ghc.sh && chmod +x ~/bin/mini-a-ghc
-
-cd my-project
-mini-a-ghc                                   # interactive, current folder mounted
-mini-a-ghc goal="fix the failing tests" useshell=true
-mini-a-ghc --no-mount onport=12345           # server/headless: no host folder
-mini-a-ghc bash                              # shell with gh and the mounted folder
+```powershell
+New-Item -ItemType Directory -Force "$HOME\bin" | Out-Null
+Invoke-WebRequest https://raw.githubusercontent.com/nmaguiar/mini-a-ghc/main/mini-a-ghc.ps1 -OutFile "$HOME\bin\mini-a-ghc.ps1"
+Unblock-File "$HOME\bin\mini-a-ghc.ps1"
+Set-ExecutionPolicy -Scope CurrentUser RemoteSigned          # allow local scripts (once)
+if (!(Test-Path $PROFILE)) { New-Item -ItemType File -Force $PROFILE | Out-Null }
+Add-Content $PROFILE "Set-Alias mini-a-ghc `"$HOME\bin\mini-a-ghc.ps1`""   # then open a new PowerShell window
 ```
 
-Variables: `GH_TOKEN`, `OAF_MODEL`, `MINI_A_MODEL` (default `gpt-5-mini`), `MINI_A_LC_MODEL`, `MINI_A_VAL_MODEL`, `MINI_A_DEC_MODEL`, `MINI_A_DIR` (folder to mount), `MINI_A_IMAGE`. Host `OAF_LC_MODEL`, `OAF_VAL_MODEL` and `OAF_DECIDE_MODEL` are passed through when set, and take precedence over the `MINI_A_*` names.
+Written for PowerShell 7 and Windows PowerShell 5.1 (tested with PowerShell 7). In PowerShell, quote arguments that contain spaces: `mini-a-ghc batch 'goal=Summarize this folder'`.
+
+**Check the setup:** `mini-a-ghc doctor` checks Docker, the image architecture, the token, the folders and the ports. It also warns when `OAF_MODEL` points at `localhost`; inside the container use `host.docker.internal` (for example, for Ollama).
+
+### Everyday commands
+
+Wikis live in `~/mini-a/wikis` (set `MINI_A_DATA` to move it; Wiki Studio keeps its state in `~/mini-a/studio`). `wiki=NAME` is short for `wikiroot=/data/wikis/NAME`.
+
+| Task | Command | Opens |
+|------|---------|-------|
+| Wiki Studio | `mini-a-ghc studio` | <http://localhost:8890> (access token printed at startup) |
+| Build a wiki from the current folder | `mini-a-ghc wiki hydrate source=/work wiki=myproject` | |
+| Test a wiki in the console | `mini-a-ghc console wiki=myproject` | |
+| Test a wiki in the simple web UI | `mini-a-ghc web wiki=myproject` | <http://localhost:12345> |
+| Test a wiki in the Advanced web UI | `mini-a-ghc web-adv wiki=myproject` | <http://localhost:12346/#token=...> |
+| Wiki MCP server, STDIO | `mini-a-ghc mcp wiki=myproject` | |
+| Safe wiki MCP server, STDIO | `mini-a-ghc mcp-safe wiki=myproject` | |
+| Wiki MCP server, HTTP | `mini-a-ghc mcp wiki=myproject --http` (`mcp-safe`: port 12348) | <http://localhost:12347/mcp> |
+| Agent batch run | `mini-a-ghc batch goal="Summarize this repo" outfile=/work/summary.md` | |
+| Shell in the container | `mini-a-ghc bash` | |
+
+Run `mini-a-ghc commands` for the full list. The browser opens once the server is ready (`MINI_A_NO_BROWSER=1` turns that off). Every `onport=N` is published on `127.0.0.1:N` only. If a port is taken, the launcher says so; pass `onport=<other>`. Plain Mini-A arguments still work: `mini-a-ghc goal="fix the failing tests" useshell=true`.
+
+Notes on each mode:
+
+- **Console, web and batch with `wiki=`:** the launcher adds `mode=wiki`, Mini-A's read-only wiki Q&A preset (or `usewiki=true` when you pass your own `mode=`). Add `wikiaccess=rw` to let the agent write to the wiki.
+- **Advanced web:** the launcher generates a `webtoken` and prints the URL with the token.
+- **MCP over STDIO:** the launcher runs `docker run -i` with no TTY, mounts the data folder read-only (except `mcp-ops`). MCP servers never mount `/work`.
+- **Batch:** runs without a TTY, so the output can be piped. Mini-A exits 0 even when it gives up on a goal (for example, when the model is unavailable), so scripts should check the `outfile` rather than the exit code.
+
+### Connect an MCP client (Claude Desktop, VS Code, ...)
+
+Desktop apps start MCP servers themselves, so they need the plain `docker` command. `mini-a-ghc mcp-config wiki=myproject` (add `--safe` for the restricted server) prints a ready-made snippet with your paths:
+
+```json
+"mini-a-wiki-safe-myproject": {
+  "command": "docker",
+  "args": ["run", "-i", "--rm", "-v", "/Users/me/mini-a/wikis:/data/wikis:ro",
+           "nmaguiar/mini-a-ghc", "wiki", "mcp-safe", "wikiroot=/data/wikis/myproject"]
+}
+```
+
+Put it inside `"mcpServers"` in Claude Desktop's `claude_desktop_config.json`, or inside `"servers"` in VS Code's `.vscode/mcp.json`. On Windows the path looks like `C:/Users/me/mini-a/wikis`.
+
+### Variables
+
+`GH_TOKEN`, `OAF_MODEL`, `MINI_A_MODEL` (default `gpt-6-luna`), `MINI_A_LC_MODEL`, `MINI_A_VAL_MODEL`, `MINI_A_DEC_MODEL`, `MINI_A_DIR` (folder mounted at `/work`, default: current folder), `MINI_A_DATA` (folder mounted at `/data`, default `~/mini-a`), `MINI_A_IMAGE`, `MINI_A_NO_BROWSER`. Host `OAF_LC_MODEL`, `OAF_VAL_MODEL`, `OAF_DECIDE_MODEL`, `OAF_MINI_A_LIBS` and the `AWS_*` credentials are passed through when set; the `OAF_*` models take precedence over the `MINI_A_*` names.
+
+A GitHub token is only required when the model is Copilot and the command needs a model. With a non-Copilot `OAF_MODEL`, or for `studio`, `mcp*`, `wiki graph` and `wiki compact`, none is needed.
 
 Notes:
 
 - The container starts in its current working directory, so `-w /work` (or the `WORKDIR` variable) is honored.
-- On Linux the launcher runs with `--user $(id -u):$(id -g)` so files created in the mounted folder belong to you.
-- If `GH_TOKEN` or `GITHUB_TOKEN` is set, the entrypoint skips `gh auth login` because `gh` uses the variable directly.
+- On Linux the launcher runs with `--user $(id -u):$(id -g)` so files created in the mounted folders belong to you.
+- If `GH_TOKEN` or `GITHUB_TOKEN` is set, the entrypoint skips `gh auth login` because `gh` uses the variable directly, and builds the default Copilot `OAF_MODEL` from it when `OAF_MODEL` is unset.
 - With `useshell=true` the agent can modify anything in the mounted folder. Mount only what you want it to change.
+- Wikis on Docker Desktop bind mounts are slower than on Linux. On Windows, keep big wikis inside the WSL filesystem (`\\wsl$\...`) for faster indexing.
+
+## Quick start (Docker Compose)
+
+[`compose.yaml`](compose.yaml) has one service per use case and behaves the same on macOS and Windows (Docker Desktop). On Linux, create `data/wikis` and `data/studio` yourself first and add `user: "<uid>:<gid>"`, or Docker creates them owned by root. Copy `compose.yaml` and [`.env.example`](.env.example) into a folder, then:
+
+```bash
+cp .env.example .env              # set GH_TOKEN (gh auth token), MINI_A_MODEL and WIKI
+docker compose up studio          # http://localhost:8890
+docker compose up web             # http://localhost:12345, wiki $WIKI
+docker compose up web-adv         # Advanced web on 12346, token URL in the output
+docker compose up mcp             # http://localhost:12347/mcp (mcp-safe: 12348)
+docker compose run --rm console
+docker compose run --rm wiki hydrate source=/work wikiroot=/data/wikis/myproject
+docker compose run --rm batch goal="Summarize /work" useutils=true shellbatch=true outfile=/work/summary.md
+```
+
+Wikis are kept in `./data/wikis` next to the compose file (`MINI_A_DATA` in `.env`). Every service is in a profile, so always name one, and stop a detached one with `docker compose --profile studio down`. Do not commit `.env`.
 
 ## Quick start (plain Docker)
 
@@ -235,7 +313,7 @@ The image also adds a few shell conveniences:
 
 - `mini-a` as an alias for `/openaf/opack exec mini-a`
 - `list` as a shortcut to print available LLM models
-- `help` to show the usage guide with provider setup instructions
+- `help [topic]` and `help-wiki` to show the built-in guides (see [Built-in help](#built-in-help))
 - `wiki <command>` for the bundled wiki oJobs (see [Wiki commands](#wiki-commands))
 - `oafptab`, `oaf-light-theme`, and `oaf-dark-theme` for OpenAF output formatting
 - `PATH` includes `/openaf` and `/openaf/ojobs`
@@ -313,7 +391,7 @@ After the hook runs, Mini-A starts with those tools available in the container s
 
 At startup, entrypoint behavior is:
 
-1. If `OAF_MODEL` contains `ghcopilot`, `oafp` reads `options.token` into `/tmp/token.txt`.
+1. If `OAF_MODEL` is unset and `GH_TOKEN` or `GITHUB_TOKEN` is set, the default Copilot `OAF_MODEL` (`MINI_A_MODEL`, default `gpt-6-luna`) is built from that token. Otherwise, if `OAF_MODEL` contains `ghcopilot`, `oafp` reads `options.token` into `/tmp/token.txt` (skipped when a token variable is set).
 2. `gh auth login --with-token` is executed.
 3. `/tmp/token.txt` is removed.
 4. The working directory is set to `/home/openaf`.
@@ -361,7 +439,7 @@ If you already use `gh` on the host:
 
 ```bash
 export GH_TOKEN="$(gh auth token)"
-export OAF_MODEL="(type: ghcopilot, options: (model: gpt-4.1, token: '$GH_TOKEN', timeout: 900000, useStdio: true))"
+export OAF_MODEL="(type: ghcopilot, options: (model: gpt-6-luna, token: '$GH_TOKEN', timeout: 900000, useStdio: true))"
 
 docker run --rm -ti -e OAF_MODEL="$OAF_MODEL" nmaguiar/mini-a-ghc
 ```

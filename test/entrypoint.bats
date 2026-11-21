@@ -209,7 +209,7 @@ EOF
   [ "$status" -eq 0 ]
   grep -q "GH_TOKEN=host-token" "$STUB_LOG_DIR/env.log"
   grep -q "type: ghcopilot" "$STUB_LOG_DIR/env.log"
-  grep -q "model: gpt-5-mini" "$STUB_LOG_DIR/env.log"
+  grep -q "model: gpt-6-luna" "$STUB_LOG_DIR/env.log"
   grep -q "token: 'host-token'" "$STUB_LOG_DIR/env.log"
   ! grep -q "auth login" "$STUB_LOG_DIR/gh.log"
 }
@@ -391,4 +391,58 @@ EOS
   [ "$status" -eq 0 ]
   [[ "$output" == *"ignoring MINI_A_LC_MODEL"* ]]
   grep -qx "OAF_LC_MODEL=" "$STUB_LOG_DIR/env.log"
+}
+
+@test "GH_TOKEN alone builds the default ghcopilot model without gh" {
+  export GH_TOKEN="env-token"
+  export MINI_A_MODEL="gpt-4.1"
+  export OPACK_BIN="$BATS_TEST_TMPDIR/opack-env"
+  cat > "$OPACK_BIN" <<'EOS'
+#!/usr/bin/env bash
+echo "OAF_MODEL=$OAF_MODEL" > "$STUB_LOG_DIR/env.log"
+EOS
+  chmod +x "$OPACK_BIN"
+
+  run "$ENTRYPOINT"
+
+  [ "$status" -eq 0 ]
+  grep -q "type: ghcopilot" "$STUB_LOG_DIR/env.log"
+  grep -q "model: gpt-4.1" "$STUB_LOG_DIR/env.log"
+  grep -q "token: 'env-token'" "$STUB_LOG_DIR/env.log"
+  [ ! -f "$STUB_LOG_DIR/gh.log" ]
+}
+
+@test "'help TOPIC' and 'help-wiki' render the topic pages" {
+  export HELP_DIR="$BATS_TEST_TMPDIR/help"
+
+  run "$ENTRYPOINT" help-wiki
+  [ "$status" -eq 0 ]
+  grep -q "oafp $HELP_DIR/wiki.md.gz in=md mdtemplate=true" "$STUB_LOG_DIR/oafp.log"
+
+  while read -r topic page; do
+    rm -f "$STUB_LOG_DIR/oafp.log"
+    run "$ENTRYPOINT" help "$topic"
+    [ "$status" -eq 0 ]
+    grep -q "oafp $HELP_DIR/$page.md.gz in=md" "$STUB_LOG_DIR/oafp.log"
+  done <<'MAP'
+wiki wiki
+studio wiki
+web web
+web-adv web
+mcp mcp
+mcp-safe mcp
+batch batch
+models models
+reference reference
+commands reference
+MAP
+  [ ! -f "$STUB_LOG_DIR/opack.log" ]
+}
+
+@test "'help' with an unknown topic lists the topics" {
+  run "$ENTRYPOINT" help nope
+  [ "$status" -eq 1 ]
+  [[ "$output" == *"Unknown help topic: nope"* ]]
+  [[ "$output" == *"help-wiki"* ]]
+  [ ! -f "$STUB_LOG_DIR/oafp.log" ]
 }

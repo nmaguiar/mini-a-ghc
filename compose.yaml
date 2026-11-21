@@ -1,0 +1,91 @@
+# mini-a-ghc with Docker Compose: same commands on macOS, Windows and Linux.
+#
+#   cp .env.example .env          # then set GH_TOKEN (or OAF_MODEL) and WIKI
+#   docker compose up studio      # Wiki Studio       -> http://localhost:8890
+#   docker compose up web         # simple web UI     -> http://localhost:12345
+#   docker compose up web-adv     # Advanced web UI   -> URL with token in the log
+#   docker compose up mcp         # wiki MCP (HTTP)   -> http://localhost:12347/mcp
+#   docker compose up mcp-safe    # safe MCP (HTTP)   -> http://localhost:12348/mcp
+#   docker compose run --rm console
+#   docker compose run --rm batch goal="Summarize /work" useutils=true shellbatch=true outfile=/work/summary.md
+#   docker compose run --rm wiki hydrate source=/work wikiroot=/data/wikis/myproject
+#
+# Every service is in a profile, so always name the one you want. Stop a service
+# started with -d by naming its profile: docker compose --profile studio down
+# Wikis live in $MINI_A_DATA/wikis (default ./data/wikis); ports listen on localhost only.
+
+x-base: &base
+  image: ${MINI_A_IMAGE:-nmaguiar/mini-a-ghc}
+  environment: &env
+    GH_TOKEN: ${GH_TOKEN:-}
+    OAF_MODEL: ${OAF_MODEL:-}
+    MINI_A_MODEL: ${MINI_A_MODEL:-}
+    MINI_A_LC_MODEL: ${MINI_A_LC_MODEL:-}
+    MINI_A_VAL_MODEL: ${MINI_A_VAL_MODEL:-}
+    MINI_A_DEC_MODEL: ${MINI_A_DEC_MODEL:-}
+    STUDIO_TOKEN: ${STUDIO_TOKEN:-}
+  # wikis/ and studio/ are mounted separately so Docker creates both on first run
+  volumes:
+    - ${MINI_A_DIR:-.}:/work
+    - ${MINI_A_DATA:-./data}/wikis:/data/wikis
+    - ${MINI_A_DATA:-./data}/studio:/data/studio
+  working_dir: /work
+  stdin_open: true
+  tty: true
+
+x-mcp: &mcp
+  <<: *base
+  volumes:
+    - ${MINI_A_DATA:-./data}/wikis:/data/wikis:ro
+  working_dir: /home/openaf
+  tty: false
+
+services:
+  studio:
+    <<: *base
+    profiles: [studio]
+    command: ["wiki", "studio", "onport=8890", 'studioallowroots=["/data/wikis"]', "studiohome=/data/studio"]
+    ports: ["127.0.0.1:8890:8890"]
+
+  console:
+    <<: *base
+    profiles: [console]
+    command: ["usewiki=true", "wikiroot=/data/wikis/${WIKI:-main}"]
+
+  web:
+    <<: *base
+    profiles: [web]
+    command: ["usewiki=true", "wikiroot=/data/wikis/${WIKI:-main}", "onport=12345"]
+    ports: ["127.0.0.1:12345:12345"]
+
+  web-adv:
+    <<: *base
+    profiles: [web-adv]
+    # Mini-A prints http://localhost:12346/#token=... at startup (docker compose logs web-adv)
+    command: ["usewiki=true", "wikiroot=/data/wikis/${WIKI:-main}", "onport=12346", "webadvanced=true"]
+    ports: ["127.0.0.1:12346:12346"]
+
+  mcp:
+    <<: *mcp
+    profiles: [mcp]
+    command: ["wiki", "mcp", "wikiroot=/data/wikis/${WIKI:-main}", "onport=12347"]
+    ports: ["127.0.0.1:12347:12347"]
+
+  mcp-safe:
+    <<: *mcp
+    profiles: [mcp-safe]
+    command: ["wiki", "mcp-safe", "wikiroot=/data/wikis/${WIKI:-main}", "onport=12348"]
+    ports: ["127.0.0.1:12348:12348"]
+
+  batch:
+    <<: *base
+    profiles: [batch]
+    stdin_open: false
+    tty: false
+    # arguments after "batch" are Mini-A arguments: goal="..." outfile=/work/out.md ...
+
+  wiki:
+    <<: *base
+    profiles: [wiki]
+    entrypoint: ["/usr/local/bin/mini-a-ghc-entrypoint.sh", "wiki"]
+    # arguments after "wiki" are a wiki command: hydrate, ingest, query, graph, ...

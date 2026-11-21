@@ -28,15 +28,17 @@ RUN printf '%s\n' \
   "alias list='/openaf/oafp libs=\"@AWS/aws.js,@ghcopilot/ghcopilot.js\" in=llmmodels data=\"()\"'" \
   "alias mini-a='/openaf/opack exec mini-a'" \
   "alias help='/usr/local/bin/mini-a-ghc-entrypoint.sh help'" \
+  "alias help-wiki='/usr/local/bin/mini-a-ghc-entrypoint.sh help-wiki'" \
   'export PATH="$PATH:/openaf:/openaf/ojobs"' \
   > /etc/profile.d/openaf-mini-a.sh \
  && printf '%s\n' '. /etc/profile.d/openaf-mini-a.sh' >> /etc/bash.bashrc
 
 COPY USAGE.md /openaf/USAGE.md
+COPY help/ /openaf/help/
 COPY entrypoint.sh /usr/local/bin/mini-a-ghc-entrypoint.sh
 COPY wiki.sh /usr/local/bin/wiki
-RUN gzip -9 /openaf/USAGE.md\
- && chmod 644 /openaf/USAGE.md.gz\
+RUN gzip -9 /openaf/USAGE.md /openaf/help/*.md\
+ && chmod 644 /openaf/USAGE.md.gz /openaf/help/*.md.gz\
  && chmod 755 /usr/local/bin/mini-a-ghc-entrypoint.sh /usr/local/bin/wiki
 
 # -------------------
