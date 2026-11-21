@@ -17,7 +17,7 @@ setup() {
   export TOKEN_FILE
   export WORKDIR
 
-  unset STUB_OAFP_MODEL_TOKEN OAF_MODEL MINI_A_MODEL GH_CONFIG_DIR STUB_GH_TOKEN INIT_SCRIPT OJOB OPENAF_ENTRYPOINT GH_TOKEN GITHUB_TOKEN HELP_FILE || true
+  unset STUB_OAFP_MODEL_TOKEN OAF_MODEL MINI_A_MODEL MINI_A_LC_MODEL MINI_A_VAL_MODEL MINI_A_DEC_MODEL OAF_LC_MODEL OAF_VAL_MODEL OAF_DECIDE_MODEL GH_CONFIG_DIR STUB_GH_TOKEN INIT_SCRIPT OJOB OPENAF_ENTRYPOINT GH_TOKEN GITHUB_TOKEN HELP_FILE || true
 }
 
 @test "OJOB delegates to OpenAF without Mini-A startup or implicit arguments" {
@@ -311,4 +311,84 @@ EOF
   [ "$status" -eq 1 ]
   [[ "$output" == *"--insecure-storage"* ]]
   [ ! -f "$STUB_LOG_DIR/opack.log" ]
+}
+
+env_opack() {
+  export OPACK_BIN="$BATS_TEST_TMPDIR/opack-env"
+  cat > "$OPACK_BIN" <<'EOS'
+#!/usr/bin/env bash
+{
+  echo "OAF_MODEL=${OAF_MODEL:-}"
+  echo "OAF_LC_MODEL=${OAF_LC_MODEL:-}"
+  echo "OAF_VAL_MODEL=${OAF_VAL_MODEL:-}"
+  echo "OAF_DECIDE_MODEL=${OAF_DECIDE_MODEL:-}"
+} > "$STUB_LOG_DIR/env.log"
+EOS
+  chmod +x "$OPACK_BIN"
+}
+
+@test "mounted gh login: MINI_A_LC/VAL/DEC_MODEL configure the extra models" {
+  export STUB_GH_TOKEN="host-token"
+  export MINI_A_LC_MODEL="gpt-5-mini"
+  export MINI_A_VAL_MODEL="gpt-4.1"
+  export MINI_A_DEC_MODEL="gpt-4o"
+  env_opack
+
+  run "$ENTRYPOINT"
+
+  [ "$status" -eq 0 ]
+  grep -qx "OAF_LC_MODEL=(type: ghcopilot, options: (model: gpt-5-mini, timeout: 900000, token: 'host-token'))" "$STUB_LOG_DIR/env.log"
+  grep -qx "OAF_VAL_MODEL=(type: ghcopilot, options: (model: gpt-4.1, timeout: 900000, token: 'host-token'))" "$STUB_LOG_DIR/env.log"
+  grep -qx "OAF_DECIDE_MODEL=(type: ghcopilot, model: gpt-4o, options: (model: gpt-4o, timeout: 900000, token: 'host-token'))" "$STUB_LOG_DIR/env.log"
+  [ "$(grep -c 'auth token' "$STUB_LOG_DIR/gh.log")" -eq 1 ]
+}
+
+@test "unset MINI_A_LC/VAL/DEC_MODEL leave the extra models unset" {
+  export STUB_GH_TOKEN="host-token"
+  env_opack
+
+  run "$ENTRYPOINT"
+
+  [ "$status" -eq 0 ]
+  grep -qx "OAF_LC_MODEL=" "$STUB_LOG_DIR/env.log"
+  grep -qx "OAF_VAL_MODEL=" "$STUB_LOG_DIR/env.log"
+  grep -qx "OAF_DECIDE_MODEL=" "$STUB_LOG_DIR/env.log"
+}
+
+@test "explicit OAF_LC_MODEL is not overwritten by MINI_A_LC_MODEL" {
+  export STUB_GH_TOKEN="host-token"
+  export OAF_LC_MODEL="(type: openai, model: custom)"
+  export MINI_A_LC_MODEL="gpt-5-mini"
+  env_opack
+
+  run "$ENTRYPOINT"
+
+  [ "$status" -eq 0 ]
+  grep -qx "OAF_LC_MODEL=(type: openai, model: custom)" "$STUB_LOG_DIR/env.log"
+}
+
+@test "extra models use GH_TOKEN alongside a custom non-ghcopilot OAF_MODEL" {
+  export GH_TOKEN="env-token"
+  export OAF_MODEL="(type: openai, options: (model: gpt-4))"
+  export MINI_A_DEC_MODEL="gpt-5-mini"
+  env_opack
+
+  run "$ENTRYPOINT"
+
+  [ "$status" -eq 0 ]
+  grep -qx "OAF_MODEL=(type: openai, options: (model: gpt-4))" "$STUB_LOG_DIR/env.log"
+  grep -q "OAF_DECIDE_MODEL=.*token: 'env-token'" "$STUB_LOG_DIR/env.log"
+  [ ! -f "$STUB_LOG_DIR/gh.log" ]
+}
+
+@test "extra model without any GitHub token warns and still starts mini-a" {
+  export OAF_MODEL="(type: openai, options: (model: gpt-4))"
+  export MINI_A_LC_MODEL="gpt-5-mini"
+  env_opack
+
+  run "$ENTRYPOINT"
+
+  [ "$status" -eq 0 ]
+  [[ "$output" == *"ignoring MINI_A_LC_MODEL"* ]]
+  grep -qx "OAF_LC_MODEL=" "$STUB_LOG_DIR/env.log"
 }
