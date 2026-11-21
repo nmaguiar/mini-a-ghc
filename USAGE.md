@@ -21,6 +21,7 @@ docker run --rm -ti -v ~/.config/gh:/gh:ro -e GH_CONFIG_DIR=/gh nmaguiar/mini-a-
 ```
 
 * Choose the model with `-e MINI_A_MODEL=gpt-4.1` (default `gpt-5-mini`). Use the `list` command to see the models your Copilot plan allows.
+* Optionally add Copilot models for Mini-A's other roles: `-e MINI_A_LC_MODEL=gpt-5-mini` (low-cost, sets `OAF_LC_MODEL`), `-e MINI_A_VAL_MODEL=gpt-4.1` (validation, sets `OAF_VAL_MODEL`) and `-e MINI_A_DEC_MODEL=gpt-5-mini` (decisions, sets `OAF_DECIDE_MODEL`). They have no default; each one is ignored if its `OAF_*` variable is already set. They also work with `GH_TOKEN` or a custom `OAF_MODEL`.
 * Requires `gh auth login` on the host. If it reports no token found, `gh` is keeping it in the macOS Keychain, which a container cannot read: run `gh auth login --insecure-storage` once, or use the `GH_TOKEN` option below.
 * This only applies when `OAF_MODEL`, `GH_TOKEN` and `GITHUB_TOKEN` are not set.
 
@@ -179,10 +180,15 @@ Environment variables:
 |----------|---------|
 | `OAF_MODEL` | Main model definition (required to use Mini-A) |
 | `OAF_LC_MODEL` | Optional low-cost model definition |
+| `OAF_VAL_MODEL` | Optional validation model definition (deep research) |
+| `OAF_DECIDE_MODEL` | Optional decision model definition (enables decision-assisted selection) |
 | `OAF_MINI_A_LIBS` | Provider libraries to load (default `@ghcopilot/ghcopilot.js`) |
 | `GH_TOKEN` | GitHub token for `gh` and Copilot |
 | `GH_CONFIG_DIR` | Folder with a mounted `gh` login. Copilot is configured automatically when `OAF_MODEL` is unset |
 | `MINI_A_MODEL` | Copilot model for that automatic setup (default `gpt-5-mini`) |
+| `MINI_A_LC_MODEL` | Copilot model name for `OAF_LC_MODEL`, when that is unset |
+| `MINI_A_VAL_MODEL` | Copilot model name for `OAF_VAL_MODEL`, when that is unset |
+| `MINI_A_DEC_MODEL` | Copilot model name for `OAF_DECIDE_MODEL`, when that is unset |
 | `INIT_SCRIPT` | Script to run before Mini-A starts (for example to install extra tools) |
 | `OJOB` | Run an oJob instead of Mini-A |
 | `STUDIO_TOKEN` | Wiki Studio access token (at least 32 characters) |

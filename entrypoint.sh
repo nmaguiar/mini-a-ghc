@@ -40,13 +40,45 @@ run_init_script() {
   /usr/bin/env bash "$INIT_SCRIPT"
 }
 
+# ghcopilot model definition: ghc_model_def MODEL TOKEN [decide]
+# Decision configs also need a top-level "model" (Mini-A validates it there).
+ghc_model_def() {
+  local top=""
+  [ "${3:-}" = "decide" ] && top="model: $1, "
+  printf "(type: ghcopilot, %soptions: (model: %s, timeout: 900000, token: '%s'))" "$top" "$1" "$2"
+}
+
+# MINI_A_LC_MODEL/MINI_A_VAL_MODEL/MINI_A_DEC_MODEL -> OAF_LC_MODEL/OAF_VAL_MODEL/OAF_DECIDE_MODEL
+# (only when the OAF_* variable is unset; needs a GitHub token)
+configure_extra_models() {
+  local token="${GH_TOKEN:-${GITHUB_TOKEN:-}}" looked=0 pair src dst kind
+  for pair in MINI_A_LC_MODEL:OAF_LC_MODEL MINI_A_VAL_MODEL:OAF_VAL_MODEL MINI_A_DEC_MODEL:OAF_DECIDE_MODEL; do
+    src="${pair%%:*}"
+    dst="${pair#*:}"
+    [ -n "${!src:-}" ] || continue
+    [ -z "${!dst:-}" ] || continue
+    if [ -z "$token" ] && [ "$looked" -eq 0 ]; then
+      looked=1
+      token="$("$GH_BIN" auth token 2>/dev/null || true)"
+    fi
+    if [ -z "$token" ]; then
+      echo "warning: no GitHub token found, ignoring $src (set GH_TOKEN or mount a gh login)" >&2
+      continue
+    fi
+    kind=""
+    [ "$dst" = "OAF_DECIDE_MODEL" ] && kind=decide
+    export "$dst=$(ghc_model_def "${!src}" "$token" $kind)"
+  done
+}
+
 trap cleanup EXIT
 
 # Reuse a mounted gh login (e.g. -v ~/.config/gh:/gh:ro -e GH_CONFIG_DIR=/gh)
 if [ -z "${GH_TOKEN:-}" ] && [ -z "${GITHUB_TOKEN:-}" ] && [ -z "${OAF_MODEL:-}" ]; then
   if gh_token="$("$GH_BIN" auth token 2>/dev/null)" && [ -n "$gh_token" ]; then
     export GH_TOKEN="$gh_token"
-    export OAF_MODEL="(type: ghcopilot, options: (model: ${MINI_A_MODEL:-gpt-5-mini}, timeout: 900000, token: '$GH_TOKEN'))"
+    OAF_MODEL="$(ghc_model_def "${MINI_A_MODEL:-gpt-5-mini}" "$GH_TOKEN")"
+    export OAF_MODEL
   elif [ -n "${GH_CONFIG_DIR:-}" ]; then
     echo "No GitHub token found in $GH_CONFIG_DIR. If gh keeps it in the macOS Keychain, run once on the host: gh auth login --insecure-storage" >&2
     exit 1
@@ -81,6 +113,8 @@ if [[ "${OAF_MODEL:-}" == *ghcopilot* && -z "${GH_TOKEN:-}" && -z "${GITHUB_TOKE
   cleanup
   trap - EXIT
 fi
+
+configure_extra_models
 
 cd "$WORKDIR"
 if [ ! -w "$WORKDIR" ]; then

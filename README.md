@@ -62,7 +62,7 @@ Mount your `gh` config folder and the container configures Copilot for you (no `
 docker run --rm -ti -v ~/.config/gh:/gh:ro -e GH_CONFIG_DIR=/gh -v "$(pwd)":/work -w /work nmaguiar/mini-a-ghc
 ```
 
-Requires `gh auth login` on the host. If the container reports no token found, `gh` is keeping it in the macOS Keychain, which a container cannot read: run `gh auth login --insecure-storage` once. Set `-e MINI_A_MODEL=gpt-4.1` to change the model (default `gpt-5-mini`).
+Requires `gh auth login` on the host. If the container reports no token found, `gh` is keeping it in the macOS Keychain, which a container cannot read: run `gh auth login --insecure-storage` once. Set `-e MINI_A_MODEL=gpt-4.1` to change the model (default `gpt-5-mini`). Optionally set `-e MINI_A_LC_MODEL=...`, `-e MINI_A_VAL_MODEL=...` and `-e MINI_A_DEC_MODEL=...` to use Copilot models for the low-cost, validation and decision roles (`OAF_LC_MODEL`, `OAF_VAL_MODEL`, `OAF_DECIDE_MODEL`); each is skipped if that `OAF_*` variable is already set.
 
 ## Important `OAF_MODEL` notes
 
@@ -106,7 +106,7 @@ mini-a-ghc --no-mount onport=12345           # server/headless: no host folder
 mini-a-ghc bash                              # shell with gh and the mounted folder
 ```
 
-Variables: `GH_TOKEN`, `OAF_MODEL`, `MINI_A_MODEL` (default `gpt-5-mini`), `MINI_A_DIR` (folder to mount), `MINI_A_IMAGE`.
+Variables: `GH_TOKEN`, `OAF_MODEL`, `MINI_A_MODEL` (default `gpt-5-mini`), `MINI_A_LC_MODEL`, `MINI_A_VAL_MODEL`, `MINI_A_DEC_MODEL`, `MINI_A_DIR` (folder to mount), `MINI_A_IMAGE`. Host `OAF_LC_MODEL`, `OAF_VAL_MODEL` and `OAF_DECIDE_MODEL` are passed through when set, and take precedence over the `MINI_A_*` names.
 
 Notes:
 

@@ -29,6 +29,31 @@ export OAF_MODEL="(type: ghcopilot, options: (model: gpt-4o, token: '$GH_TOKEN',
 export OAF_MODEL="(type: ghcopilot, options: (model: gpt-4.1, token: '$GH_TOKEN', timeout: 900000, useStdio: true, autoRestart: true, logLevel: 'info'))"
 ```
 
+## Complementary models (low-cost, validation, decision)
+
+Instead of writing full definitions, set only the Copilot model names. The token is reused from `GH_TOKEN`/`GITHUB_TOKEN` or the mounted `gh` login:
+
+```bash
+docker run --rm -ti -v ~/.config/gh:/gh:ro -e GH_CONFIG_DIR=/gh \
+  -e MINI_A_MODEL=gpt-4.1 \
+  -e MINI_A_LC_MODEL=gpt-5-mini \
+  -e MINI_A_VAL_MODEL=gpt-4.1 \
+  -e MINI_A_DEC_MODEL=gpt-5-mini \
+  nmaguiar/mini-a-ghc
+```
+
+| Variable | Sets | Equivalent Mini-A parameter |
+|----------|------|-----------------------------|
+| `MINI_A_LC_MODEL` | `OAF_LC_MODEL` | `modellc=` |
+| `MINI_A_VAL_MODEL` | `OAF_VAL_MODEL` | `modelval=` |
+| `MINI_A_DEC_MODEL` | `OAF_DECIDE_MODEL` | `modeldec=` |
+
+None has a default, and each is ignored when its `OAF_*` variable is already set. The decision definition also has a top-level `model`, which Mini-A's decision client requires:
+
+```
+(type: ghcopilot, model: gpt-5-mini, options: (model: gpt-5-mini, timeout: 900000, token: '...'))
+```
+
 ## JSON-like reference representation
 
 If you store model settings elsewhere and convert/inject at runtime:
