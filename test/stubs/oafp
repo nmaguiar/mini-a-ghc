@@ -12,4 +12,13 @@ for arg in "$@"; do
   esac
 done
 
+for arg in "$@"; do
+  case "$arg" in
+    "path=options.token || ''")
+      echo "${STUB_OAFP_MODEL_TOKEN:-}"
+      exit 0
+      ;;
+  esac
+done
+
 echo "(model: fake-model)"

@@ -17,14 +17,11 @@ Other providers: pick one below, export `OAF_MODEL` on the host and pass `-e OAF
 Needs a GitHub account with Copilot access. The simplest way is to mount your host `gh` login: the container runs `gh auth token` itself and configures Copilot for you.
 
 ```bash
-# 1. once, on the host (skip if already logged in)
-gh auth login --insecure-storage
-# 2. run
 docker run --rm -ti -v ~/.config/gh:/gh:ro -e GH_CONFIG_DIR=/gh nmaguiar/mini-a-ghc
 ```
 
 * Choose the model with `-e MINI_A_MODEL=gpt-4.1` (default `gpt-5-mini`). Use the `list` command to see the models your Copilot plan allows.
-* `--insecure-storage` keeps the token in `~/.config/gh/hosts.yml` so the container can read it. A token stored in the macOS Keychain cannot be read from inside a container.
+* Requires `gh auth login` on the host. If it reports no token found, `gh` is keeping it in the macOS Keychain, which a container cannot read: run `gh auth login --insecure-storage` once, or use the `GH_TOKEN` option below.
 * This only applies when `OAF_MODEL`, `GH_TOKEN` and `GITHUB_TOKEN` are not set.
 
 Or pass the token explicitly (get one with `gh auth token` or from GitHub Settings → Developer settings → Personal access tokens):

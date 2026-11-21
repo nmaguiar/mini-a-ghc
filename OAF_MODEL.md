@@ -10,6 +10,8 @@ For `ghcopilot`, set the token in `options.token`.
 
 That login step is only attempted when `OAF_MODEL` contains `ghcopilot`.
 
+If `GH_CONFIG_DIR` points at a mounted gh config (e.g. `-v ~/.config/gh:/gh:ro -e GH_CONFIG_DIR=/gh`) and a `ghcopilot` `OAF_MODEL` (SLON or JSON) has no `options.token` and no `GH_TOKEN`/`GITHUB_TOKEN` is set, the token is taken from `gh auth token` and added to `OAF_MODEL` automatically.
+
 ## Canonical SLON/OpenAF-style value
 
 ```bash

@@ -59,11 +59,10 @@ GitHub's current token-management docs:
 Mount your `gh` config folder and the container configures Copilot for you (no `GH_TOKEN` or `OAF_MODEL` needed):
 
 ```bash
-gh auth login --insecure-storage   # once, on the host
 docker run --rm -ti -v ~/.config/gh:/gh:ro -e GH_CONFIG_DIR=/gh -v "$(pwd)":/work -w /work nmaguiar/mini-a-ghc
 ```
 
-`--insecure-storage` keeps the token in `~/.config/gh/hosts.yml`; a token held in the macOS Keychain cannot be read from inside a container. Set `-e MINI_A_MODEL=gpt-4.1` to change the model (default `gpt-5-mini`).
+Requires `gh auth login` on the host. If the container reports no token found, `gh` is keeping it in the macOS Keychain, which a container cannot read: run `gh auth login --insecure-storage` once. Set `-e MINI_A_MODEL=gpt-4.1` to change the model (default `gpt-5-mini`).
 
 ## Important `OAF_MODEL` notes
 

@@ -17,7 +17,7 @@ setup() {
   export TOKEN_FILE
   export WORKDIR
 
-  unset OAF_MODEL MINI_A_MODEL GH_CONFIG_DIR STUB_GH_TOKEN INIT_SCRIPT OJOB OPENAF_ENTRYPOINT GH_TOKEN GITHUB_TOKEN HELP_FILE || true
+  unset STUB_OAFP_MODEL_TOKEN OAF_MODEL MINI_A_MODEL GH_CONFIG_DIR STUB_GH_TOKEN INIT_SCRIPT OJOB OPENAF_ENTRYPOINT GH_TOKEN GITHUB_TOKEN HELP_FILE || true
 }
 
 @test "OJOB delegates to OpenAF without Mini-A startup or implicit arguments" {
@@ -254,4 +254,61 @@ EOF
 
   [ "$status" -eq 0 ]
   [ ! -f "$STUB_LOG_DIR/gh.log" ]
+}
+
+@test "custom SLON ghcopilot model without token gets token from gh auth token" {
+  export GH_CONFIG_DIR="$BATS_TEST_TMPDIR/gh"
+  export STUB_GH_TOKEN="host-token"
+  export OAF_MODEL="(type: ghcopilot, options: (model: gpt-4.1))"
+
+  run "$ENTRYPOINT"
+
+  [ "$status" -eq 0 ]
+  grep -q "out=slon" "$STUB_LOG_DIR/oafp.log"
+  grep -q "token: 'host-token'" "$STUB_LOG_DIR/oafp.log"
+  ! grep -q "auth login" "$STUB_LOG_DIR/gh.log"
+}
+
+@test "custom JSON ghcopilot model without token is rewritten as JSON" {
+  export GH_CONFIG_DIR="$BATS_TEST_TMPDIR/gh"
+  export STUB_GH_TOKEN="host-token"
+  export OAF_MODEL='{"type":"ghcopilot","options":{"model":"gpt-4.1"}}'
+
+  run "$ENTRYPOINT"
+
+  [ "$status" -eq 0 ]
+  grep -q "out=ndjson" "$STUB_LOG_DIR/oafp.log"
+}
+
+@test "custom ghcopilot model with token does not call gh auth token" {
+  export GH_CONFIG_DIR="$BATS_TEST_TMPDIR/gh"
+  export STUB_GH_TOKEN="host-token"
+  export STUB_OAFP_MODEL_TOKEN="abc"
+  export OAF_MODEL="(type: ghcopilot, options: (token: 'abc'))"
+
+  run "$ENTRYPOINT"
+
+  [ "$status" -eq 0 ]
+  ! grep -q "auth token" "$STUB_LOG_DIR/gh.log"
+}
+
+@test "custom ghcopilot model without token and no GH_CONFIG_DIR is unchanged" {
+  export STUB_GH_TOKEN="host-token"
+  export OAF_MODEL="(type: ghcopilot, options: (model: gpt-4.1))"
+
+  run "$ENTRYPOINT"
+
+  [ "$status" -eq 0 ]
+  ! grep -q "auth token" "$STUB_LOG_DIR/gh.log"
+}
+
+@test "custom ghcopilot model, GH_CONFIG_DIR set, gh has no token fails with hint" {
+  export GH_CONFIG_DIR="$BATS_TEST_TMPDIR/gh"
+  export OAF_MODEL="(type: ghcopilot, options: (model: gpt-4.1))"
+
+  run "$ENTRYPOINT"
+
+  [ "$status" -eq 1 ]
+  [[ "$output" == *"--insecure-storage"* ]]
+  [ ! -f "$STUB_LOG_DIR/opack.log" ]
 }

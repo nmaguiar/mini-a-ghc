@@ -53,6 +53,26 @@ if [ -z "${GH_TOKEN:-}" ] && [ -z "${GITHUB_TOKEN:-}" ] && [ -z "${OAF_MODEL:-}"
   fi
 fi
 
+# Custom ghcopilot OAF_MODEL without a token + mounted gh login: fill options.token from gh
+if [[ -n "${OAF_MODEL:-}" && "$OAF_MODEL" == *ghcopilot* && -n "${GH_CONFIG_DIR:-}" \
+      && -z "${GH_TOKEN:-}" && -z "${GITHUB_TOKEN:-}" ]]; then
+  model_token="$("$OAFP_BIN" data="$OAF_MODEL" path="options.token || ''" out=raw)"
+  if [ -z "$model_token" ]; then
+    if gh_token="$("$GH_BIN" auth token 2>/dev/null)" && [ -n "$gh_token" ]; then
+      export GH_TOKEN="$gh_token"
+      model_out=slon
+      trimmed_model="${OAF_MODEL#"${OAF_MODEL%%[![:space:]]*}"}"
+      [[ "$trimmed_model" == \{* ]] && model_out=ndjson
+      OAF_MODEL="$("$OAFP_BIN" data="$OAF_MODEL" \
+        path="merge(@, {options: merge(options || \`{}\`, {token: '$GH_TOKEN'})})" out=$model_out)"
+      export OAF_MODEL
+    else
+      echo "No GitHub token found in $GH_CONFIG_DIR. If gh keeps it in the macOS Keychain, run once on the host: gh auth login --insecure-storage" >&2
+      exit 1
+    fi
+  fi
+fi
+
 # gh authenticates on its own when GH_TOKEN/GITHUB_TOKEN is set; "auth login" would fail
 if [[ "${OAF_MODEL:-}" == *ghcopilot* && -z "${GH_TOKEN:-}" && -z "${GITHUB_TOKEN:-}" ]]; then
   "$OAFP_BIN" data="$OAF_MODEL" path=options.token outfile="$token_file"
