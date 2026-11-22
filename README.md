@@ -30,6 +30,8 @@ Compared to the base `openaf/mini-a:deb-t8` image, this image:
 
 ## Prerequisites
 
+For ready-to-paste commands by task and operating system, see the [Docker cheatsheet](CHEATSHEET.md).
+
 - Docker (or compatible runtime).
 - A GitHub account with Copilot access.
 - A GitHub token that can be used by the Copilot CLI (for example from `gh auth token` on a machine where `gh` is already authenticated).
