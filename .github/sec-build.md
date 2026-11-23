@@ -22,16 +22,16 @@
                               ├ InstalledVersion: v1.27.3 
                               ├ FixedVersion    : 1.26.11, 1.27.4 
                               ├ Status          : fixed 
-                              ├ Layer            ╭ Digest: sha256:b4518e2bfaad1c832248203865b4311accf4a69e4dc43
-                              │                  │         5b7bb5dc42a635df42d 
-                              │                  ╰ DiffID: sha256:6aed44d30654f517bf2dff55e512f6c9ee4c77559b48c
-                              │                            d971aad828dd4c181da 
+                              ├ Layer            ╭ Digest: sha256:c76ba584c364e6a156d908afc08c734ae84b2ed140f9e
+                              │                  │         8238b60e2c59e103a21 
+                              │                  ╰ DiffID: sha256:07235b6be28c99f85658f6b7cf1590c8bd68416f03118
+                              │                            e2c0d3c3302ab6575b5 
                               ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-97054 
                               ├ DataSource       ╭ ID  : govulndb 
                               │                  ├ Name: The Go Vulnerability Database 
                               │                  ╰ URL : https://pkg.go.dev/vuln/ 
-                              ├ Fingerprint     : sha256:bb2cc40f815ff3dd2da42b5e94ae94ec78f447b91ff7ed7ae59cf0
-                              │                   a7c10365e0 
+                              ├ Fingerprint     : sha256:543b54370a10097dbc06894d4658cfee2aedd21947fe471ff224dd
+                              │                   ecb58f7eb2 
                               ├ Title           : net/http: golang: net/http: Denial of Service via race
                               │                   condition when handling oversized HTTP/1 requests 
                               ├ Description     : For HTTP/1 servers, when MaxBytesReader's limit is exceeded,
