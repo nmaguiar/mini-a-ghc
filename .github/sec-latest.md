@@ -46,7 +46,8 @@
                               │                  ───────
                               │                  CWE-362
                               │                  CWE-820
-                              ├ VendorSeverity   ╭ amazon: 2 
+                              ├ VendorSeverity   ╭ alma  : 2 
+                              │                  ├ amazon: 2 
                               │                  ├ photon: 2 
                               │                  ╰ redhat: 2 
                               ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/
@@ -54,7 +55,21 @@
                               │                           ╰ V3Score : 5.9 
                               ├ References                                                                
                               │                  ─────────────────────────────────────────────────────────
+                              │                  https://access.redhat.com/errata/RHSA-2026:102587        
                               │                  https://access.redhat.com/security/cve/CVE-2026-97054    
+                              │                  https://bugzilla.redhat.com/2571442                      
+                              │                  https://bugzilla.redhat.com/2571443                      
+                              │                  https://bugzilla.redhat.com/2571444                      
+                              │                  https://bugzilla.redhat.com/2571445                      
+                              │                  https://bugzilla.redhat.com/2571446                      
+                              │                  https://bugzilla.redhat.com/2571447                      
+                              │                  https://bugzilla.redhat.com/2571448                      
+                              │                  https://bugzilla.redhat.com/2571449                      
+                              │                  https://bugzilla.redhat.com/2571450                      
+                              │                  https://bugzilla.redhat.com/2571451                      
+                              │                  https://bugzilla.redhat.com/2571452                      
+                              │                  https://bugzilla.redhat.com/2571453                      
+                              │                  https://errata.almalinux.org/10/ALSA-2026-102587.html    
                               │                  https://go.dev/cl/862185                                 
                               │                  https://go.dev/issue/82563                               
                               │                  https://groups.google.com/g/golang-announce/c/iY8TY0wWgbM
