@@ -22,16 +22,16 @@
                               ├ InstalledVersion: v1.27.3 
                               ├ FixedVersion    : 1.26.11, 1.27.4 
                               ├ Status          : fixed 
-                              ├ Layer            ╭ Digest: sha256:d9f97a3eda0be17cf9c5eb3f9e7195a917a53b327f39d
-                              │                  │         6ad0bce0619db8a3992 
-                              │                  ╰ DiffID: sha256:ca8c2ee54ff8cfecb38519250aacb9a33f078f319917a
-                              │                            e073432ada80cf33748 
+                              ├ Layer            ╭ Digest: sha256:8e61b62cbd027447ff30ad2cc1d3185621ef235fe7aeb
+                              │                  │         6975636011fd2dc5476 
+                              │                  ╰ DiffID: sha256:d87514f14bca0e43c77f5c233eafcb4bab3f08a620055
+                              │                            48e92d17ba10f8fb1a4 
                               ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-97054 
                               ├ DataSource       ╭ ID  : govulndb 
                               │                  ├ Name: The Go Vulnerability Database 
                               │                  ╰ URL : https://pkg.go.dev/vuln/ 
-                              ├ Fingerprint     : sha256:fea9c114a293d44dad625de8038ba4114ee9c558a34a5ae198e9e1
-                              │                   8ebbe942d7 
+                              ├ Fingerprint     : sha256:a803a7f787cc4ae19c7991f41de1902c39f27e637d8bc6975b2ff9
+                              │                   a51e35a312 
                               ├ Title           : net/http: golang: net/http: Denial of Service via race
                               │                   condition when handling oversized HTTP/1 requests 
                               ├ Description     : For HTTP/1 servers, when MaxBytesReader's limit is exceeded,
@@ -97,8 +97,8 @@
                               │                  https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-97042
                               │                  https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-97043
                               │                  https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-97054
-                              │                  https://errata.almalinux.org/9/ALSA-2026-102586.html         
-                              │                  https://errata.rockylinux.org/RLSA-2026:102587               
+                              │                  https://errata.almalinux.org/10/ALSA-2026-102587.html        
+                              │                  https://errata.rockylinux.org/RLSA-2026:102586               
                               │                  https://go.dev/cl/862185                                     
                               │                  https://go.dev/issue/82563                                   
                               │                  https://groups.google.com/g/golang-announce/c/iY8TY0wWgbM    
