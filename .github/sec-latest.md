@@ -97,8 +97,8 @@
                               │                  https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-97042
                               │                  https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-97043
                               │                  https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-97054
-                              │                  https://errata.almalinux.org/9/ALSA-2026-102586.html         
-                              │                  https://errata.rockylinux.org/RLSA-2026:102587               
+                              │                  https://errata.almalinux.org/10/ALSA-2026-102587.html        
+                              │                  https://errata.rockylinux.org/RLSA-2026:102586               
                               │                  https://go.dev/cl/862185                                     
                               │                  https://go.dev/issue/82563                                   
                               │                  https://groups.google.com/g/golang-announce/c/iY8TY0wWgbM    
