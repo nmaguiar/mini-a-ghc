@@ -22,16 +22,16 @@
                               ├ InstalledVersion: v1.27.3 
                               ├ FixedVersion    : 1.26.11, 1.27.4 
                               ├ Status          : fixed 
-                              ├ Layer            ╭ Digest: sha256:8e61b62cbd027447ff30ad2cc1d3185621ef235fe7aeb
-                              │                  │         6975636011fd2dc5476 
-                              │                  ╰ DiffID: sha256:d87514f14bca0e43c77f5c233eafcb4bab3f08a620055
-                              │                            48e92d17ba10f8fb1a4 
+                              ├ Layer            ╭ Digest: sha256:096e3162e49463cc65dadd03ef9366a53483f3c119d34
+                              │                  │         c6fe3c593a83cf5ea06 
+                              │                  ╰ DiffID: sha256:50918fa9e10ff6021f14d217d806fe86567513e45c9d6
+                              │                            0161c65368877e843d9 
                               ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-97054 
                               ├ DataSource       ╭ ID  : govulndb 
                               │                  ├ Name: The Go Vulnerability Database 
                               │                  ╰ URL : https://pkg.go.dev/vuln/ 
-                              ├ Fingerprint     : sha256:a803a7f787cc4ae19c7991f41de1902c39f27e637d8bc6975b2ff9
-                              │                   a51e35a312 
+                              ├ Fingerprint     : sha256:4c4789b3d7ee157b259bbfca072752b66902effa8b13891a4c65c0
+                              │                   4a4d775518 
                               ├ Title           : net/http: golang: net/http: Denial of Service via race
                               │                   condition when handling oversized HTTP/1 requests 
                               ├ Description     : For HTTP/1 servers, when MaxBytesReader's limit is exceeded,
@@ -48,13 +48,17 @@
                               │                  CWE-820
                               ├ VendorSeverity   ╭ alma       : 2 
                               │                  ├ amazon     : 2 
+                              │                  ├ bitnami    : 2 
                               │                  ├ oracle-oval: 2 
                               │                  ├ photon     : 2 
                               │                  ├ redhat     : 2 
                               │                  ╰ rocky      : 2 
-                              ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/
-                              │                           │           A:H 
-                              │                           ╰ V3Score : 5.9 
+                              ├ CVSS             ╭ bitnami ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N
+                              │                  │         │           /A:H 
+                              │                  │         ╰ V3Score : 5.9 
+                              │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N
+                              │                            │           /A:H 
+                              │                            ╰ V3Score : 5.9 
                               ├ References                                                                    
                               │                  ─────────────────────────────────────────────────────────────
                               │                  https://access.redhat.com/errata/RHSA-2026:102586            
@@ -97,13 +101,13 @@
                               │                  https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-97042
                               │                  https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-97043
                               │                  https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-97054
-                              │                  https://errata.almalinux.org/10/ALSA-2026-102587.html        
-                              │                  https://errata.rockylinux.org/RLSA-2026:102586               
+                              │                  https://errata.almalinux.org/9/ALSA-2026-102586.html         
+                              │                  https://errata.rockylinux.org/RLSA-2026:102587               
                               │                  https://go.dev/cl/862185                                     
                               │                  https://go.dev/issue/82563                                   
                               │                  https://groups.google.com/g/golang-announce/c/iY8TY0wWgbM    
                               │                  https://linux.oracle.com/cve/CVE-2026-97054.html             
-                              │                  https://linux.oracle.com/errata/ELSA-2026-102587.html        
+                              │                  https://linux.oracle.com/errata/ELSA-2026-102592.html        
                               │                  https://nvd.nist.gov/vuln/detail/CVE-2026-97054              
                               │                  https://pkg.go.dev/vuln/GO-2026-6859                         
                               │                  https://www.cve.org/CVERecord?id=CVE-2026-97054              
